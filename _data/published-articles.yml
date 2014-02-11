@@ -1,0 +1,425 @@
+---
+- 
+    title: "Keep Employees Engaged in Innovation with Responsive Design"
+    publisher: "Kindling Inc."
+    publisher-link: "http://kindlingapp.com/"
+    publish-date: "Nov 25, 2013"
+    date: 1385337600
+    link: "http://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/"
+    excerpt: "We live in a multi-device world. Choosing which device to use depends on context: where you are, how much time you have, and what you want to accomplish. Great ideas, however, don’t care about context. And they won’t wait until you’re sitting in front of your office computer to materialize."
+- 
+    title: "Implementing the Float Label Form Pattern"
+    publisher: "webdesign tuts+"
+    publisher-link: "http://webdesign.tutsplus.com/"
+    publish-date: "Oct 28, 2013"
+    date: 1382918400
+    link: "http://webdesign.tutsplus.com/tutorials/ux-tutorials/implementing-the-float-label-form-pattern/"
+    excerpt: "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript."
+    tweets: 
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/CodeRanger/statuses/394874441705869312"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Dan Petitt"
+         version: "1.0"
+         author_url: "https://twitter.com/CodeRanger"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Brilliant ux for form fields: Implementing the Float Label Form Pattern <a href=\"http://t.co/2HE5o3ysA1\">http://t.co/2HE5o3ysA1</a></p>&mdash; Dan Petitt (@CodeRanger) <a href=\"https://twitter.com/CodeRanger/statuses/394874441705869312\">October 28, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 394874441705869300
+- 
+    title: "Quick Tip: Name Your SASS Variables Modularly"
+    publisher: "webdesign tuts+"
+    publisher-link: "http://webdesign.tutsplus.com/"
+    publish-date: "Jul 2, 2013"
+    date: 1372723200
+    link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-name-your-sass-variables-modularly/"
+    excerpt: "You should think about organizing your variable names (and project for that matter) modularly. This will bring structure and unity to your project as a whole, making it easier to understand and navigate the whole thing."
+    tweets: 
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/christiannaths/statuses/362336869263998977"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Christian"
+         version: "1.0"
+         author_url: "https://twitter.com/christiannaths"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Two great articles to strengthen your Sass variable names: <a href=\"http://t.co/ska4kex1IQ\">http://t.co/ska4kex1IQ</a> <a href=\"http://t.co/A0Two3j6tX\">http://t.co/A0Two3j6tX</a> (℅ <a href=\"https://twitter.com/SachaGreif\">@SachaGreif</a> / <a href=\"https://twitter.com/wdtuts\">@wdtuts</a>)</p>&mdash; Christian (@christiannaths) <a href=\"https://twitter.com/christiannaths/statuses/362336869263998977\">July 30, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 362336869263999000
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/TJacobDesign/statuses/360807524699607040"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Timothy Miller"
+         version: "1.0"
+         author_url: "https://twitter.com/TJacobDesign"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Naming conventions for Sass. I don’t generally use many variables, but tips anyway - <a href=\"http://t.co/2bxDgkvpvH\">http://t.co/2bxDgkvpvH</a></p>&mdash; Timothy Miller (@TJacobDesign) <a href=\"https://twitter.com/TJacobDesign/statuses/360807524699607040\">July 26, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 360807524699607040
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/csswizardry/statuses/354547144172126209"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Harry Roberts"
+         version: "1.0"
+         author_url: "https://twitter.com/csswizardry"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p><a href=\"https://twitter.com/robinrendle\">@robinrendle</a> This is a pretty decent article <a href=\"http://t.co/0V5aYLkMDO\">http://t.co/0V5aYLkMDO</a> :)</p>&mdash; Harry Roberts (@csswizardry) <a href=\"https://twitter.com/csswizardry/statuses/354547144172126209\">July 9, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 354547144172126200
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/stefsull/statuses/355042505940668420"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Stef. Sullivan Rewis"
+         version: "1.0"
+         author_url: "https://twitter.com/stefsull"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Nice little tip on naming your Sass variables. <a href=\"http://t.co/1UYc5kmiLX\">http://t.co/1UYc5kmiLX</a> Much of it is similar to what I do. Good ideas.</p>&mdash; Stef. Sullivan Rewis (@stefsull) <a href=\"https://twitter.com/stefsull/statuses/355042505940668420\">July 10, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 355042505940668400
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/simonbingham/statuses/354831262277566464"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Simon Bingham"
+         version: "1.0"
+         author_url: "https://twitter.com/simonbingham"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>A good approach to naming SASS variables -  <a href=\"http://t.co/72uJ2W7wIK\">http://t.co/72uJ2W7wIK</a></p>&mdash; Simon Bingham (@simonbingham) <a href=\"https://twitter.com/simonbingham/statuses/354831262277566464\">July 10, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 354831262277566460
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/shawndmann/statuses/354637443242278912"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Shawn Mann"
+         version: "1.0"
+         author_url: "https://twitter.com/shawndmann"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Great tips for working in SASS - Name Your SASS Variables Modularly: <a href=\"http://t.co/ssHCGROnwh\">http://t.co/ssHCGROnwh</a></p>&mdash; Shawn Mann (@shawndmann) <a href=\"https://twitter.com/shawndmann/statuses/354637443242278912\">July 9, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 354637443242278900
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/joshbroton/statuses/353363447095898116"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Josh Broton"
+         version: "1.0"
+         author_url: "https://twitter.com/joshbroton"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>I agree with this <a href=\"https://twitter.com/nettuts\">@nettuts</a> article 100%. Name your Sass variables general -&gt; specific. <a href=\"http://t.co/r9jSg5XY2Z\">http://t.co/r9jSg5XY2Z</a> <a href=\"https://twitter.com/search?q=%23maintainability&amp;src=hash\">#maintainability</a></p>&mdash; Josh Broton (@joshbroton) <a href=\"https://twitter.com/joshbroton/statuses/353363447095898116\">July 6, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 353363447095898100
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/chriscoyier/statuses/353154441660211201"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Chris Coyier"
+         version: "1.0"
+         author_url: "https://twitter.com/chriscoyier"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>general -&gt; specific&#10;&#10;<a href=\"https://twitter.com/search?q=%24border&amp;src=ctag\">$border</a>-blue-light&#10;&#10;<a href=\"http://t.co/IqZG1jxFZn\">http://t.co/IqZG1jxFZn</a></p>&mdash; Chris Coyier (@chriscoyier) <a href=\"https://twitter.com/chriscoyier/statuses/353154441660211201\">July 5, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 353154441660211200
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/ManikRathee/statuses/353264590303399938"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Manik Rathee"
+         version: "1.0"
+         author_url: "https://twitter.com/ManikRathee"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>Generic to Specific Sass naming convetion  —  <a href=\"http://t.co/imJCwOMXdp\">http://t.co/imJCwOMXdp</a></p>&mdash; Manik Rathee (@ManikRathee) <a href=\"https://twitter.com/ManikRathee/statuses/353264590303399938\">July 5, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 353264590303399940
+     - 
+         cache_age: "3153600000"
+         url: "https://twitter.com/philippebarbosa/statuses/352148164242972672"
+         height: null
+         provider_url: "https://twitter.com"
+         provider_name: "Twitter"
+         author_name: "Philippe Barbosa"
+         version: "1.0"
+         author_url: "https://twitter.com/philippebarbosa"
+         type: "rich"
+         html: "<blockquote class=\"twitter-tweet\"><p>A quick but great read : Name Your SASS Variables Modularly • <a href=\"http://t.co/TrF8CzGa0Z\">http://t.co/TrF8CzGa0Z</a> <a href=\"https://twitter.com/search?q=%23css&amp;src=hash\">#css</a> <a href=\"https://twitter.com/search?q=%23sass&amp;src=hash\">#sass</a></p>&mdash; Philippe Barbosa (@philippebarbosa) <a href=\"https://twitter.com/philippebarbosa/statuses/352148164242972672\">July 2, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+         width: 550
+         id: 352148164242972700
+- 
+    title: "Filler Content: Tools, Tips and a Dynamic Example"
+    publisher: "webdesign tuts+"
+    publisher-link: "http://webdesign.tutsplus.com/"
+    publish-date: "May 9, 2013"
+    date: 1368057600
+    link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/filler-content-tools-tips-and-a-dynamic-example/"
+    excerpt: "As designing in the browser becomes more popular (and convenient), the need for helpful design tools is increasing. One set of tools that is becoming quite helpful revolves around filler content. Currently, a variety of resources exist to aid designers who need filler content, whether it be text or images."
+- 
+    title: "Build a Responsive, Single Page Portfolio with Sass and Compass"
+    publisher: "tuts+ premium"
+    publisher-link: "https://tutsplus.com/"
+    publish-date: "Feb. 14, 2013"
+    date: 1360800000
+    link: "https://tutsplus.com/tutorial/build-a-responsive-single-page-portfolio-with-sass-and-compass/"
+    excerpt: "There’s a lot that goes into creating a web site these days. We’re now building websites using HTML5, CSS preprocessors, APIs, custom typography and more. Our design challenges include responsive architecture, resolution independence and multi-device interaction support. In this article, we’ll build a single page portfolio that covers aspects of all these techniques."
+- 
+    title: "Bring Your Forms Up to Date with CSS3 and HTML5 Validation"
+    publisher: "webdesign tuts+"
+    publisher-link: "http://webdesign.tutsplus.com/"
+    publish-date: "Jan. 2, 2013"
+    date: 1357084800
+    link: "http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/"
+    reader-fav: true
+    excerpt: "Let’s look at how to create a functional form which validates users’ data, client-side. With that done, we’ll cover prettying it up using CSS, including some CSS3!"
+    tweets: 
+        - 
+            cache_age: "3153600000"
+            url: "https://twitter.com/rabbitscarrots/statuses/286466551052394496"
+            height: null
+            provider_url: "https://twitter.com"
+            provider_name: "Twitter"
+            author_name: "Rabbits Like Carrots"
+            version: "1.0"
+            author_url: "https://twitter.com/rabbitscarrots"
+            type: "rich"
+            html: "<blockquote class=\"twitter-tweet\"><p>good tutorial! thanks a bunches RT: <a href=\"https://twitter.com/wdtuts\">@wdtuts</a>: Bring Your Forms Up to Date With CSS3 and HTML5 Validation <a href=\"http://t.co/6aH2g3b4\">http://t.co/6aH2g3b4</a></p>&mdash; Rabbits Like Carrots (@rabbitscarrots) <a href=\"https://twitter.com/rabbitscarrots/statuses/286466551052394496\">January 2, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+            width: 550
+            id: 286466551052394500
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/amit_tushar/statuses/189272101008588801"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Amit Erandole"
+          version: "1.0"
+          author_url: "https://twitter.com/amit_tushar"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p><a href=\"https://twitter.com/nikhilkarmokar\">@nikhilkarmokar</a> I love these validations: <a href=\"http://t.co/7MmXodpC\">http://t.co/7MmXodpC</a></p>&mdash; Amit Erandole (@amit_tushar) <a href=\"https://twitter.com/amit_tushar/statuses/189272101008588801\">April 9, 2012</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 189272101008588800
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/Jack_Franklin/statuses/147002915519868928"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Jack Franklin"
+          version: "1.0"
+          author_url: "https://twitter.com/Jack_Franklin"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>Newly bookmarked: Bring Your Forms Up to Date With CSS3 and HTML5 Validation <a href=\"http://t.co/yBlerK5H\">http://t.co/yBlerK5H</a></p>&mdash; Jack Franklin (@Jack_Franklin) <a href=\"https://twitter.com/Jack_Franklin/statuses/147002915519868928\">December 14, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 147002915519868930
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/Dgotty/statuses/146615507196444674"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Richard Gottlieb"
+          version: "1.0"
+          author_url: "https://twitter.com/Dgotty"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>Amazing tutorial <a href=\"http://t.co/wyxD3KiC\">http://t.co/wyxD3KiC</a></p>&mdash; Richard Gottlieb (@Dgotty) <a href=\"https://twitter.com/Dgotty/statuses/146615507196444674\">December 13, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 146615507196444670
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/OOHology/statuses/137220160938459137"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "OOHology"
+          version: "1.0"
+          author_url: "https://twitter.com/OOHology"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>A more pleasing form for your forms: RT <a href=\"https://twitter.com/DesignerDepot\">@DesignerDepot</a> Bring Your Forms Up to Date With CSS3 &amp; <a href=\"https://twitter.com/search?q=%23HTML5&amp;src=hash\">#HTML5</a> Validation - <a href=\"http://t.co/GCtuNwJ4\">http://t.co/GCtuNwJ4</a></p>&mdash; OOHology (@OOHology) <a href=\"https://twitter.com/OOHology/statuses/137220160938459137\">November 17, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 137220160938459140
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/Mut1ey/statuses/137221369837527040"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Matt Morse"
+          version: "1.0"
+          author_url: "https://twitter.com/Mut1ey"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>*Very* informative breakdown indeed: RT <a href=\"https://twitter.com/DesignerDepot\">@DesignerDepot</a>: Bring Your Forms Up to Date With CSS3 and <a href=\"https://twitter.com/search?q=%23HTML5&amp;src=hash\">#HTML5</a> Validation - <a href=\"http://t.co/R0L2iBSw\">http://t.co/R0L2iBSw</a></p>&mdash; Matt Morse (@Mut1ey) <a href=\"https://twitter.com/Mut1ey/statuses/137221369837527040\">November 17, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 137221369837527040
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/seanm297/statuses/135697659896926209"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Sean Dryer"
+          version: "1.0"
+          author_url: "https://twitter.com/seanm297"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>Working on a redesign of my website today, including implementing the functionality showcased in this tutorial: <a href=\"http://t.co/Hu0yGeJL\">http://t.co/Hu0yGeJL</a></p>&mdash; Sean Dryer (@seanm297) <a href=\"https://twitter.com/seanm297/statuses/135697659896926209\">November 13, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 135697659896926200
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/Twikito/statuses/132386723266174977"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Matthieu Bué"
+          version: "1.0"
+          author_url: "https://twitter.com/Twikito"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>Useful! — Bring Your Forms Up to Date With CSS3 and HTML5 Validation <a href=\"http://t.co/yh0phQzM\">http://t.co/yh0phQzM</a> <a href=\"https://twitter.com/search?q=%23HTML5&amp;src=hash\">#HTML5</a> <a href=\"https://twitter.com/search?q=%23CSS3&amp;src=hash\">#CSS3</a></p>&mdash; Matthieu Bué (@Twikito) <a href=\"https://twitter.com/Twikito/statuses/132386723266174977\">November 4, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 132386723266174980
+        - 
+          cache_age: "3153600000"
+          url: "https://twitter.com/DesignerDepot/statuses/137205950602952704"
+          height: null
+          provider_url: "https://twitter.com"
+          provider_name: "Twitter"
+          author_name: "Webdesigner Depot"
+          version: "1.0"
+          author_url: "https://twitter.com/DesignerDepot"
+          type: "rich"
+          html: "<blockquote class=\"twitter-tweet\"><p>Bring Your Forms Up to Date With CSS3 and <a href=\"https://twitter.com/search?q=%23HTML5&amp;src=hash\">#HTML5</a> Validation - <a href=\"http://t.co/ZPfatzij\">http://t.co/ZPfatzij</a></p>&mdash; Webdesigner Depot (@DesignerDepot) <a href=\"https://twitter.com/DesignerDepot/statuses/137205950602952704\">November 17, 2011</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+          width: 550
+          id: 137205950602952700
+- 
+  title: "Don’t Forget the optgroup Element"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Dec. 27, 2012"
+  date: 1356566400
+  link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-optgroup-element/"
+  excerpt: "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus."
+  tweets: 
+    - 
+      cache_age: "3153600000"
+      url: "https://twitter.com/rsturim/statuses/284587477233201152"
+      height: null
+      provider_url: "https://twitter.com"
+      provider_name: "Twitter"
+      author_name: "Rich Sturim"
+      version: "1.0"
+      author_url: "https://twitter.com/rsturim"
+      type: "rich"
+      html: "<blockquote class=\"twitter-tweet\"><p>Sometimes it&#39;s easy to forgot the basic stuff is often the best solution: Quick Tip: Don’t Forget the optgroup Element <a href=\"http://t.co/hfhyyS0j\">http://t.co/hfhyyS0j</a></p>&mdash; Rich Sturim (@rsturim) <a href=\"https://twitter.com/rsturim/statuses/284587477233201152\">December 28, 2012</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+      width: 550
+      id: 284587477233201150
+- 
+  title: "Everything You Need to Know About the CSS Cursor Rule"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Nov. 15, 2012"
+  date: 1352937600
+  link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/everything-you-need-to-know-about-the-css-cursor-rule/"
+  excerpt: "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule."
+- 
+  title: "Quick Tip: Creating Crisp, Pixel Perfect Circles in Photoshop"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Nov. 12, 2012"
+  date: 1352678400
+  link: "http://webdesign.tutsplus.com/tutorials/applications/quick-tip-creating-crisp-pixel-perfect-circles-in-photoshop/"
+  excerpt: "Achieving pixel perfection when designing UI elements can be simple thanks to Photoshop’s “snap to pixels” feature. Unfortunately, this feature is not available for the ellipse tool – creating crisp, pixel-perfect circles can therefore require additional attention to detail. I’m going to let you in on a little secret which will make “snap to pixels” available when creating circles."
+- 
+  title: "Using Web Inspector to Debug Mobile Safari"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Oct. 1, 2012"
+  date: 1349049600
+  link: "http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip-using-web-inspector-to-debug-mobile-safari/"
+  excerpt: "Building and debugging websites and web applications for mobile devices can be a hassle. On the desktop we have powerful debugging tools; most browsers have a web inspector of some kind. But we don’t have those tools for devices like the iPhone and iPad … that is, until now!"
+- 
+  title: "Harnessing the Power of Icon Standards"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Sep. 5, 2012"
+  date: 1346803200
+  link: "http://webdesign.tutsplus.com/articles/general/harnessing-the-power-of-icon-standards/"
+  excerpt: "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects."
+- 
+  title: "Super Simple Lightbox with CSS and jQuery"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Aug. 9, 2012"
+  date: 1344470400
+  link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/"
+  reader-fav: true
+  excerpt: "Rather than using a bloated plugin that has features you’ll never use, this tutorial shows you how to create a super simple lightbox for handling images. It’s perfect for image galleries, portfolios, and more!"
+- 
+  title: "Perfectly Rotate and Mask Thumbnails With CSS3"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "Jun. 8, 2012"
+  date: 1339113600
+  link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/perfectly-rotate-and-mask-thumbnails-with-css3/"
+  reader-fav: true
+  excerpt: "Ever seen a website showcasing image thumbnails that are slightly rotated? It’s a simple effect that adds a layer of visual personality. Saying that, if you’re not achieving the rotation effect with CSS, you’re working too hard! Learn how to do it right!"
+- 
+  title: "Put Users in Control With Confirmation Feedback Buttons"
+  publisher: "webdesign tuts+"
+  publisher-link: "http://webdesign.tutsplus.com/"
+  publish-date: "May 17, 2012"
+  date: 1337212800
+  link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/"
+  excerpt: "This tutorial will teach you how to create a responsive web page with buttons which take on different states depending on the user’s interaction. This type of interaction is especially useful on links such as “purchase” or “delete” where it’s wise to confirm that the user indeed wants to take a specific action."
+- 
+  title: "Building a Mobile-Friendly Form with Email Domain Suggestion"
+  publisher: "Tuts+ Premium"
+  publisher-link: "https://tutsplus.com/"
+  publish-date: "Apr. 11, 2012"
+  date: 1334102400
+  link: "https://tutsplus.com/tutorial/building-a-mobile-friendly-form-with-email-domain-suggestion/"
+  excerpt: "This tutorial will teach you how to create a responsive web form which goes above and beyond setting &lt;input type=\"email\"&gt; to help users enter email address information. This form will assist users (primarily mobile) by automatically suggesting popular email domains."
+- 
+  title: "Password Strength Verification with jQuery"
+  publisher: "Webdesigner Depot"
+  publisher-link: "http://www.webdesignerdepot.com/"
+  publish-date: "Jan. 10, 2012"
+  date: 1326153600
+  link: "http://www.webdesignerdepot.com/2012/01/password-strength-verification-with-jquery/"
+  excerpt: "Many sites that require login credentials enforce a security setting often referred to as password complexity requirements. These requirements ensure that user passwords are sufficiently strong and cannot be easily broken."
+- 
+  title: "Create a Stitched Web Ribbon in Photoshop"
+  publisher: "psd tuts+"
+  publisher-link: "http://psd.tutsplus.com/"
+  publish-date: "Dec. 9, 2011"
+  date: 1323388800
+  link: "http://psd.tutsplus.com/tutorials/interface-tutorials/stitched-web-ribbon/"
+  excerpt: "You don’t have to search the web for very long to find a web ribbon in the corner of an image. In this quick tip tutorial we will show you how to create your own. Let’s get started!"
+- 
+  title: "Realistic Telephone Keypad Using Layer Styles"
+  publisher: "psd tuts+"
+  publisher-link: "http://psd.tutsplus.com/"
+  publish-date: "Oct. 21, 2011"
+  date: 1319155200
+  link: "http://psd.tutsplus.com/tutorials/interface-tutorials/telephone-keypad-photoshop/"
+  excerpt: "Creating real-world objects in Photoshop can be somewhat challenging. The key is to pinpoint and accentuate small details such as shadows, lighting, and extruding edges. In this tutorial, you’ll learn how to achieve acutely life-like telephone dial buttons in Photoshop using shape layers and layer styles!"

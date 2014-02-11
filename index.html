@@ -1,0 +1,25 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+    <ul>
+    {% for post in site.data.published-articles %}
+        
+        <li>{{post.title}} {{post.date | date: "%-d %B %Y"}}<br />
+
+
+        {% if post.tweets %}
+            <ul>
+            {% for tweet in post.tweets %}
+
+        
+            {% endfor %}
+        {% endif %}
+        </li>
+
+    {% endfor %}
+    </ul>
+</div>
