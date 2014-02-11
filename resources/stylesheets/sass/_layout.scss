@@ -1,0 +1,90 @@
+//
+//
+//  Layout
+//  ==============================
+//
+
+.l-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px; // 5em * 16 = 80, 80*2=160px, 960px+160=1120
+    @include border-radius(3px);
+
+    @include respond-to(medium) {
+        width: 88%;
+        padding: 0 6%;
+    }
+
+    @include respond-to(large) {
+        width: 88%;
+        padding: 0 6%;
+    }
+}
+
+//
+//  Page Columns
+//
+.l-left {
+    @include respond-to(large) {
+        width: 25%;
+        float: left;  
+    }
+}
+.l-right {
+    @include respond-to(large) {
+        width: 72%;
+        float: right;
+    }
+}
+
+//
+//  Image Columns
+//
+.l-col-left {
+    @include respond-to(large) {
+        width: 46%;
+        float: left;
+    }
+}
+.l-col-right {
+    @include respond-to(large) {
+        width: 46%;
+        float: right;
+    }
+}
+
+
+//
+//  Main Content
+//
+.main {
+    background: white;
+    margin: 0 auto;
+    position: relative;
+
+    @include respond-to(medium) {
+        margin-top: 3em;
+        padding-bottom: 2em;
+        @include box-shadow(0 0 130px rgba(0,0,0,1));
+    }
+}
+
+//
+//  Footer
+//
+.footer {
+    color: #777;
+    margin-bottom: 4em;
+    padding-top: .5em;
+    text-align: center;
+    border-top: 1px solid $color-border-light;
+
+    a {
+        color: $color-highlight;
+
+        &:hover {
+            color: lighten($color-highlight, 8%);
+        }
+    }
+}

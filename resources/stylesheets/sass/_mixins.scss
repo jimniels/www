@@ -1,0 +1,31 @@
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin respond-to($media) {
+    @if $media == small {
+        @media only screen and (min-width: #{320 / $font-size-base}em) { @content; }
+    }
+    @else if $media == medium {
+        @media only screen and (min-width: #{600 / $font-size-base}em) { @content; }
+    }
+    @else if $media == large {
+        @media only screen and (min-width: #{900 / $font-size-base}em) { @content; }
+    }
+}
+
+.profile-pic {
+  float: left;
+  width: 250px;
+  @include respond-to(handhelds) { width: 100% ;}
+  @include respond-to(medium-screens) { width: 125px; }
+  @include respond-to(wide-screens) { float: none; }
+}

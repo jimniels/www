@@ -1,0 +1,46 @@
+.tweets {
+    clear: both;
+}
+
+.tweet {
+    position: relative;
+    font-size: #{13 / $font-size-base}em;
+    padding: .5em 0 .75em .5em;
+    border-left: 1px double #08c;
+    margin: .25em 0 0 0;
+
+    .icon-twitter {
+        color: #08c;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 1px solid #08c;
+        height: 1px;
+        width: 8px;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.tweet-screen-name {
+    color: #aaa;
+    font-size: .875em;
+}
+.tweet-author-name {
+    color: #08c;
+}
+.tweet-permalink {
+    &:hover {
+        text-decoration: none;
+
+        .tweet-author-name {
+            text-decoration: underline;
+        }
+    }
+}
+.tweet-html {
+    white-space: pre-wrap;
+    color: #777;
+}

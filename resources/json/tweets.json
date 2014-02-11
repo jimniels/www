@@ -1,0 +1,30 @@
+[
+    {
+        "id": 394874441705869312,
+        "cache_age": "3153600000",
+        "url": "https://twitter.com/CodeRanger/statuses/394874441705869312",
+        "height": null,
+        "provider_url": "https://twitter.com",
+        "provider_name": "Twitter",
+        "author_name": "Dan Petitt",
+        "version": "1.0",
+        "author_url": "https://twitter.com/CodeRanger",
+        "type": "rich",
+        "html": "<blockquote class=\"twitter-tweet\"><p>Brilliant ux for form fields: Implementing the Float Label Form Pattern <a href=\"http://t.co/2HE5o3ysA1\">http://t.co/2HE5o3ysA1</a></p>&mdash; Dan Petitt (@CodeRanger) <a href=\"https://twitter.com/CodeRanger/statuses/394874441705869312\">October 28, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "width": 550
+    },
+    {
+        "id": 395185743594651648,
+        "cache_age": "3153600000",
+        "url": "https://twitter.com/rafmanship/statuses/395185743594651648",
+        "height": null,
+        "provider_url": "https://twitter.com",
+        "provider_name": "Twitter",
+        "author_name": "Rafael J. Hernandez",
+        "version": "1.0",
+        "author_url": "https://twitter.com/rafmanship",
+        "type": "rich",
+        "html": "<blockquote class=\"twitter-tweet\"><p>Whoa! Awesome floating label interaction RT <a href=\"https://twitter.com/hogue_webdev\">@hogue_webdev</a>: “<a href=\"https://twitter.com/danielwi\">@danielwi</a>: Great UX/UI tip <a href=\"http://t.co/NxlL0Jnwar\">http://t.co/NxlL0Jnwar</a> <a href=\"https://twitter.com/search?q=%23ux&amp;src=hash\">#ux</a> <a href=\"https://twitter.com/search?q=%23ui&amp;src=hash\">#ui</a> <a href=\"https://twitter.com/search?q=%23form&amp;src=hash\">#form</a> <a href=\"https://twitter.com/search?q=%23label&amp;src=hash\">#label</a>”</p>&mdash; Rafael J. Hernandez (@rafmanship) <a href=\"https://twitter.com/rafmanship/statuses/395185743594651648\">October 29, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "width": 550
+    }
+]
