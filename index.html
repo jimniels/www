@@ -9,7 +9,6 @@ title: Your New Jekyll Site
     </h1>
     <ul class="l-right section__content <?php if($Section->id == 'dribbble'){echo 'clearfix';} ?>">
         {% for article in site.data.published-articles %}
-        
             <li>
                 <a href="{{ article.link }}">
                     <h2 class="link">{{article.title}}</h2>
@@ -36,7 +35,6 @@ title: Your New Jekyll Site
                     </ul>
                 {% endif %}
             </li>
-
         {% endfor %}
     </ul>
 </article>
