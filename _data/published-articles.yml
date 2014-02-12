@@ -15,20 +15,14 @@
     date: 1382918400
     link: "http://webdesign.tutsplus.com/tutorials/ux-tutorials/implementing-the-float-label-form-pattern/"
     excerpt: "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript."
-    tweets: 
-     - 
-         cache_age: "3153600000"
-         url: "https://twitter.com/CodeRanger/statuses/394874441705869312"
-         height: null
-         provider_url: "https://twitter.com"
-         provider_name: "Twitter"
-         author_name: "Dan Petitt"
-         version: "1.0"
-         author_url: "https://twitter.com/CodeRanger"
-         type: "rich"
-         html: "<blockquote class=\"twitter-tweet\"><p>Brilliant ux for form fields: Implementing the Float Label Form Pattern <a href=\"http://t.co/2HE5o3ysA1\">http://t.co/2HE5o3ysA1</a></p>&mdash; Dan Petitt (@CodeRanger) <a href=\"https://twitter.com/CodeRanger/statuses/394874441705869312\">October 28, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-         width: 550
-         id: 394874441705869300
+    tweets:
+    -
+        id: 394874441705869300
+        content: "Brilliant ux for form fields: Implementing the Float Label Form Pattern http://t.co/2HE5o3ysA1"
+        author:
+            handle: CodeRanger
+            name: Dan Petitt
+            followers: 254
 - 
     title: "Quick Tip: Name Your SASS Variables Modularly"
     publisher: "webdesign tuts+"
@@ -38,59 +32,28 @@
     link: "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-name-your-sass-variables-modularly/"
     excerpt: "You should think about organizing your variable names (and project for that matter) modularly. This will bring structure and unity to your project as a whole, making it easier to understand and navigate the whole thing."
     tweets: 
-     - 
-         cache_age: "3153600000"
-         url: "https://twitter.com/christiannaths/statuses/362336869263998977"
-         height: null
-         provider_url: "https://twitter.com"
-         provider_name: "Twitter"
-         author_name: "Christian"
-         version: "1.0"
-         author_url: "https://twitter.com/christiannaths"
-         type: "rich"
-         html: "<blockquote class=\"twitter-tweet\"><p>Two great articles to strengthen your Sass variable names: <a href=\"http://t.co/ska4kex1IQ\">http://t.co/ska4kex1IQ</a> <a href=\"http://t.co/A0Two3j6tX\">http://t.co/A0Two3j6tX</a> (℅ <a href=\"https://twitter.com/SachaGreif\">@SachaGreif</a> / <a href=\"https://twitter.com/wdtuts\">@wdtuts</a>)</p>&mdash; Christian (@christiannaths) <a href=\"https://twitter.com/christiannaths/statuses/362336869263998977\">July 30, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-         width: 550
-         id: 362336869263999000
-     - 
-         cache_age: "3153600000"
-         url: "https://twitter.com/TJacobDesign/statuses/360807524699607040"
-         height: null
-         provider_url: "https://twitter.com"
-         provider_name: "Twitter"
-         author_name: "Timothy Miller"
-         version: "1.0"
-         author_url: "https://twitter.com/TJacobDesign"
-         type: "rich"
-         html: "<blockquote class=\"twitter-tweet\"><p>Naming conventions for Sass. I don’t generally use many variables, but tips anyway - <a href=\"http://t.co/2bxDgkvpvH\">http://t.co/2bxDgkvpvH</a></p>&mdash; Timothy Miller (@TJacobDesign) <a href=\"https://twitter.com/TJacobDesign/statuses/360807524699607040\">July 26, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-         width: 550
-         id: 360807524699607040
-     - 
-         cache_age: "3153600000"
-         url: "https://twitter.com/csswizardry/statuses/354547144172126209"
-         height: null
-         provider_url: "https://twitter.com"
-         provider_name: "Twitter"
-         author_name: "Harry Roberts"
-         version: "1.0"
-         author_url: "https://twitter.com/csswizardry"
-         type: "rich"
-         html: "<blockquote class=\"twitter-tweet\"><p><a href=\"https://twitter.com/robinrendle\">@robinrendle</a> This is a pretty decent article <a href=\"http://t.co/0V5aYLkMDO\">http://t.co/0V5aYLkMDO</a> :)</p>&mdash; Harry Roberts (@csswizardry) <a href=\"https://twitter.com/csswizardry/statuses/354547144172126209\">July 9, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-         width: 550
-         id: 354547144172126200
-     - 
-         cache_age: "3153600000"
-         url: "https://twitter.com/stefsull/statuses/355042505940668420"
-         height: null
-         provider_url: "https://twitter.com"
-         provider_name: "Twitter"
-         author_name: "Stef. Sullivan Rewis"
-         version: "1.0"
-         author_url: "https://twitter.com/stefsull"
-         type: "rich"
-         html: "<blockquote class=\"twitter-tweet\"><p>Nice little tip on naming your Sass variables. <a href=\"http://t.co/1UYc5kmiLX\">http://t.co/1UYc5kmiLX</a> Much of it is similar to what I do. Good ideas.</p>&mdash; Stef. Sullivan Rewis (@stefsull) <a href=\"https://twitter.com/stefsull/statuses/355042505940668420\">July 10, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
-         width: 550
-         id: 355042505940668400
-     - 
+    -
+        id: 362336869263999000
+        content: "Two great articles to strengthen your Sass variable names: http://t.co/ska4kex1IQ http://t.co/A0Two3j6tX (℅ @SachaGreif / @wdtuts)"
+        author:
+            handle: christiannaths
+            name: Christian
+            followers: 555
+    -
+        id: 354547144172126200
+        content: "@robinrendle This is a pretty decent article http://t.co/0V5aYLkMDO :)"
+        author:
+            handle: csswizardry
+            name: Harry Roberts
+            followers: 29800
+    -
+        id: 355042505940668400
+        content: "Nice little tip on naming your Sass variables. http://t.co/1UYc5kmiLX Much of it is similar to what I do. Good ideas."
+        author:
+            handle: stefsull
+            name: Stef. Sullivan Rewis
+            followers: 8831
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/simonbingham/statuses/354831262277566464"
          height: null
@@ -103,7 +66,7 @@
          html: "<blockquote class=\"twitter-tweet\"><p>A good approach to naming SASS variables -  <a href=\"http://t.co/72uJ2W7wIK\">http://t.co/72uJ2W7wIK</a></p>&mdash; Simon Bingham (@simonbingham) <a href=\"https://twitter.com/simonbingham/statuses/354831262277566464\">July 10, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
          width: 550
          id: 354831262277566460
-     - 
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/shawndmann/statuses/354637443242278912"
          height: null
@@ -116,7 +79,7 @@
          html: "<blockquote class=\"twitter-tweet\"><p>Great tips for working in SASS - Name Your SASS Variables Modularly: <a href=\"http://t.co/ssHCGROnwh\">http://t.co/ssHCGROnwh</a></p>&mdash; Shawn Mann (@shawndmann) <a href=\"https://twitter.com/shawndmann/statuses/354637443242278912\">July 9, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
          width: 550
          id: 354637443242278900
-     - 
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/joshbroton/statuses/353363447095898116"
          height: null
@@ -129,7 +92,7 @@
          html: "<blockquote class=\"twitter-tweet\"><p>I agree with this <a href=\"https://twitter.com/nettuts\">@nettuts</a> article 100%. Name your Sass variables general -&gt; specific. <a href=\"http://t.co/r9jSg5XY2Z\">http://t.co/r9jSg5XY2Z</a> <a href=\"https://twitter.com/search?q=%23maintainability&amp;src=hash\">#maintainability</a></p>&mdash; Josh Broton (@joshbroton) <a href=\"https://twitter.com/joshbroton/statuses/353363447095898116\">July 6, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
          width: 550
          id: 353363447095898100
-     - 
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/chriscoyier/statuses/353154441660211201"
          height: null
@@ -142,7 +105,7 @@
          html: "<blockquote class=\"twitter-tweet\"><p>general -&gt; specific&#10;&#10;<a href=\"https://twitter.com/search?q=%24border&amp;src=ctag\">$border</a>-blue-light&#10;&#10;<a href=\"http://t.co/IqZG1jxFZn\">http://t.co/IqZG1jxFZn</a></p>&mdash; Chris Coyier (@chriscoyier) <a href=\"https://twitter.com/chriscoyier/statuses/353154441660211201\">July 5, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
          width: 550
          id: 353154441660211200
-     - 
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/ManikRathee/statuses/353264590303399938"
          height: null
@@ -155,7 +118,7 @@
          html: "<blockquote class=\"twitter-tweet\"><p>Generic to Specific Sass naming convetion  —  <a href=\"http://t.co/imJCwOMXdp\">http://t.co/imJCwOMXdp</a></p>&mdash; Manik Rathee (@ManikRathee) <a href=\"https://twitter.com/ManikRathee/statuses/353264590303399938\">July 5, 2013</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
          width: 550
          id: 353264590303399940
-     - 
+    - 
          cache_age: "3153600000"
          url: "https://twitter.com/philippebarbosa/statuses/352148164242972672"
          height: null
