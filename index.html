@@ -2,39 +2,11 @@
 layout: default
 title: Your New Jekyll Site
 ---
-
-<article class="section clearfix" id="published-articles">
-    <h1 class="l-left section__header icon icon-published-articles">
-        Section Title
-    </h1>
-    <ul class="l-right section__content <?php if($Section->id == 'dribbble'){echo 'clearfix';} ?>">
-        {% for article in site.data.published-articles %}
-            <li>
-                <a href="{{ article.link }}">
-                    <h2 class="link">{{article.title}}</h2>
-                    <ul class="meta">
-                        <li class="publish-date">{{ article.date | date: "%-d %B %Y" }}</li>
-                        <li class="publisher">{{ article.publisher }}</li>
-                        {% if article.reader-fav %}
-                            <li class="readers-fav">readers’ fav</li>
-                        {% endif %}
-                    </ul>
-                </a>
-                {% if article.tweets %}
-                    <ul class="tweets">
-                    {% for tweet in article.tweets %}
-                        <li class="tweet">
-                            <a href="https://twitter.com/{{tweet.author.handle}}/statuses/{{tweet.id}}" class="tweet-permalink"> 
-                                <span class="icon-twitter"></span> 
-                                <span class="tweet-author-name">{{ tweet.author.name }}</span> 
-                                <span class="tweet-screen-name">@{{ tweet.author.handle }}</span>
-                                <p class="tweet-html">{{ tweet.content }}</p>
-                            </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
-            </li>
-        {% endfor %}
-    </ul>
-</article>
+{% for section in site.data.sections %}
+    <article class="section clearfix" id="{{ section.id }}">
+        <h1 class="l-left section__header icon icon-{{ section.icon }}">{{ section.title }}</h1>
+        <ul class="l-right section__content {% if section.id == 'dribbble'%}dribbble{% endif %}">
+            {% include sections.html id=section.id %}
+        </ul>
+    </article>
+{% endfor %}

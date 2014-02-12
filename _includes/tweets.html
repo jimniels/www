@@ -1,0 +1,17 @@
+{% comment %}
+
+    Must pass in the tweet object whic lists all displayable tweets
+
+{% endcomment %}
+<ul class="tweets">
+    {% for tweet in include.tweets %}
+        <li class="tweet">
+            <a href="https://twitter.com/{{tweet.author.handle}}/statuses/{{tweet.id}}" class="tweet-permalink"> 
+                <span class="icon-twitter"></span> 
+                <span class="tweet-author-name">{{ tweet.author.name }}</span> 
+                <span class="tweet-screen-name">@{{ tweet.author.handle }}</span>
+                <p class="tweet-html">{{ tweet.content }}</p>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

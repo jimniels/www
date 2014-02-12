@@ -1,0 +1,73 @@
+[
+    {
+        "id": "kindlingapp",
+        "title": "Kindlingapp",
+        "link": "http://kindlingapp.com",
+        "link-pretty": "kindlingapp.com",
+        "description": "As design lead at Kindling, I did this site redesign showcasing Kindling as a platform for discovering, sharing, and actualizing ideas.",
+        "cta": "http://scriptogr.am/jimniels/post/home-page-redesign-of-kindlingapp.com",
+        "tweets": [
+            {
+                "id": 358225234819694600,
+                "content": "Yeh I'm biased, but the attention to design details by the @kindlingapp team is really damn impressive. Great update. http://www.kindlingapp.com/blog/in-app-notifications/…",
+                "author" : {
+                    "handle": "richziade",
+                    "name": "Rich Ziade",
+                    "followers": 1455
+                }
+            },
+            {
+                "id": 103974927253782530,
+                "content": "Mission Accomplished. A prospect just said that they love @kindlingapp for its design & that a competitor “was obv. designed by engineers”.",
+                "author" : {
+                    "handle": "timothymeaney",
+                    "name": "Timothy Meaney",
+                    "followers": 560
+                }
+            }
+        ]
+    },
+    {
+        "id": "ios-icon-gallery",
+        "title": "iOS Icon Gallery",
+        "link": "http://iosicongallery.com",
+        "link-pretty": "iosicongallery.com",
+        "description": "A gallery showcasing great icon designs from the iOS ecosystem. Designed and curated by me."
+    },
+    {
+        "id": "kindling-loves-startups",
+        "title": "Kindling Loves Startups",
+        "link": "http://kindlinglovesstartups.com",
+        "link-pretty": "kindlinglovesstartups.com",
+        "description": "Landing page design for Kindling. Part of a campaign offering Kindling for free to qualifying startups."
+    },
+    {
+        "id": "sassme",
+        "title": "SassMe",
+        "link": "http://sassme.arc90.com",
+        "link-pretty": "sassme.arc90.com",
+        "description": "Visualize the result of Sass color functions in real-time without compiling; a tool spawned and created in the Arc90 Lab."
+    },
+    {
+        "id": "mac-icon-gallery",
+        "title": "Mac Icon Gallery",
+        "link": "http://macicongallery.com",
+        "link-pretty": "macicongallery.com",
+        "description": "A gallery showcasing great icon designs from the Mac App Store. Designed and curated by me."
+    },
+    {
+        "id": "team-colors",
+        "title": "Team Colors",
+        "link": "http://teamcolors.arc90.com",
+        "link-pretty": "teamcolors.arc90.com",
+        "description": "A reference for finding the team colors of your favorite major league sports teams.",
+        "cta": "http://scriptogr.am/jimniels/post/team-color-codes"
+    },
+    {
+        "id": "css-off-2012",
+        "title": "CSS Off 2012",
+        "link": "http://unmatchedstyle.com/news/cssoff-winners-2012.php",
+        "link-pretty": "unmatchedstyle.com",
+        "description": "Finalist in the global web design competition where entries were meticulously judged by industry-renowned experts on code, UX, browser support, responsiveness, and more."
+    }
+]

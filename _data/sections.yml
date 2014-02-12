@@ -1,0 +1,13 @@
+---
+-
+    id: recent-projects
+    title: "Recent Projects"
+    icon: hammer
+- 
+    id: dribbble
+    title: "Dribbble"
+    icon: dribbble
+- 
+    id: published-articles
+    title: "Published Articles"
+    icon: published-articles
