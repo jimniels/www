@@ -25,7 +25,7 @@
                 <a href="{{ article.link }}">
                     <h2 class="link">{{article.title}}</h2>
                     <ul class="meta">
-                        <li class="publish-date">{{ article.date | date: "%-d %B %Y" }}</li>
+                        <li class="publish-date">{{ article.date | date: "%-d %b, %Y" }}</li>
                         <li class="publisher">{{ article.publisher }}</li>
                         {% if article.reader-fav %}
                             <li class="readers-fav">readers’ fav</li>
@@ -66,6 +66,17 @@
             </li>
         {% endfor %}
 
+    {% when 'blog' %}
+        {% for post in site.data.blog limit:5 %}
+            <li>
+                <a href="{{ post.link }}">
+                    <span class="link">{{ post.title }}</span>
+                    <ul class="meta">
+                        <li><time>{{ post.date | date: "%-d %b, %Y"}}</time></li>
+                    </ul>
+                </a>
+            </li>
+        {% endfor %}
 
 
 {% endcase %}

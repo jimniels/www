@@ -1,5 +1,9 @@
 ---
 -
+    id: blog
+    title: "My Blog"
+    icon: blog
+-
     id: recent-projects
     title: "Recent Projects"
     icon: hammer
