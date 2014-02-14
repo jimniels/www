@@ -1,22 +1,37 @@
 .tweets {
     clear: both;
+    position: relative;
+    padding-left: 2em;
+    margin-top: .5em;
+}
+
+.icon-twitter:before {
+    color: $color-twitter-blue;
+    position: absolute;
+    left: .25em;
+    top: .375em;
 }
 
 .tweet {
     position: relative;
     font-size: #{13 / $font-size-base}em;
     padding: .5em 0 .75em .5em;
-    border-left: 1px double #08c;
-    margin: .25em 0 0 0;
+    border-left: 1px double $color-twitter-blue;    
 
-    .icon-twitter {
-        color: #08c;
+    &:first-child:before {
+        position: absolute;
+        content: '';
+        border-top: 1px solid $color-twitter-blue;
+        height: 1px;
+        width: 8px;
+        top: 0;
+        left: 0;
     }
 
     &:after {
         position: absolute;
         content: '';
-        border-bottom: 1px solid #08c;
+        border-bottom: 1px solid $color-twitter-blue;
         height: 1px;
         width: 8px;
         bottom: 0;
@@ -29,7 +44,7 @@
     font-size: .875em;
 }
 .tweet-author-name {
-    color: #08c;
+    color: $color-twitter-blue;
 }
 .tweet-permalink {
     &:hover {

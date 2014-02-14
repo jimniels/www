@@ -13,15 +13,11 @@
   font-style: normal;
 }
 
+.icon-blog:before,
 .icon-dribbble:before,
 .icon-frown:before,
-.icon-github:before,
 .icon-hammer:before,
-.icon-instagram:before,
-.icon-menu:before,
 .icon-published-articles:before,
-.icon-readability:before,
-.icon-scriptogram:before,
 .icon-twitter:before {
   font-family: "custom-font";
   font-style: normal;
@@ -34,13 +30,9 @@
   text-decoration: inherit;
 }
 
-.icon-dribbble:before { content: "\f100"; }
-.icon-frown:before { content: "\f101"; }
-.icon-github:before { content: "\f102"; }
+.icon-blog:before { content: "\f100"; }
+.icon-dribbble:before { content: "\f101"; }
+.icon-frown:before { content: "\f102"; }
 .icon-hammer:before { content: "\f103"; }
-.icon-instagram:before { content: "\f104"; }
-.icon-menu:before { content: "\f105"; }
-.icon-published-articles:before { content: "\f106"; }
-.icon-readability:before { content: "\f107"; }
-.icon-scriptogram:before { content: "\f108"; }
-.icon-twitter:before { content: "\f109"; }
+.icon-published-articles:before { content: "\f104"; }
+.icon-twitter:before { content: "\f105"; }

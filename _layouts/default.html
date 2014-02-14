@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Jim Nielsen, Designer</title>
+    <meta name="description" content="Jim Nielsen, a web and graphic designer currently living and working in NYC">
+    <meta name="author" content="Jim Nielsen">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="http://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+    <section class="l-wrapper main">
+
+        <header class="header">
+            <h1 class="header__logo"><a href="/">Jim Nielsen</a></h1>
+            <h2 class="header__title">Web Designer. <em>Problem Solver.</em></h2>
+            <h3 class="header__subtitle">Design Lead at <a href="http://kindlingapp.com">Kindling</a>, New York City</h3>
+            <a href="resume" class="header__developer">dev-friendly &raquo;</a>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+        
+    </section>
+
+    <footer class="l-wrapper footer">
+        <p>If you want to contact me, you can email me <a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a> or find me on twitter <a href="http://twitter.com/jimniels">@jimniels</a></p>
+    </footer>
+
+    <!-- Tracking Code -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-19579223-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+</body>
+</html>

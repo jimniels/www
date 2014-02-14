@@ -1,0 +1,82 @@
+{% case include.id %}
+
+    {% when 'dribbbble' %}
+        {% for shot in site.data.dribbble.shots | limit: 2 %}
+            <li>
+                <a href="{{shot.url}}">
+                    <img src="
+                        {% if shot.image_400_url %}
+                            {{ shot.image_400_url }}
+                        {% else %}
+                            {{ shot.image_url }}
+                        {% endif %}" 
+                        alt="{{ shot.title }}" 
+                        title="{{ shot.title }} on Dribbble" 
+                        width="400" 
+                        height="300" />
+                </a>
+            </li>
+        {% endfor %}
+
+
+    {% when 'published-articles' %}
+        {% for article in site.data.published-articles %}
+            <li>
+                <a href="{{ article.link }}">
+                    <h2 class="link">{{article.title}}</h2>
+                    <ul class="meta">
+                        <li class="publish-date">{{ article.date | date: "%-d %b, %Y" }}</li>
+                        <li class="publisher">{{ article.publisher }}</li>
+                        {% if article.reader-fav %}
+                            <li class="readers-fav">readers’ fav</li>
+                        {% endif %}
+                    </ul>
+                </a>
+                {% if article.tweets %}
+                    {% include tweets.html tweets = article.tweets %}
+                {% endif %}
+            </li>
+        {% endfor %}
+
+
+    {% when 'recent-projects' %}
+        {% for project in site.data.recent-projects %}
+            <li>        
+                <a href="{{ project.link }}" class="link">{{ project.title }}</a>
+
+                <ul>
+                    <li class="thumbnail">
+                        <a href="{{ project.link }}">
+                            <img src="{{ site.imageurl }}/{{ project.id }}.png" width="400" height="300" />
+                        </a>
+                    </li>
+                    <li class="meta">
+                        {{ project.description }} 
+                        {% if project.cta %}
+                            <a href="{{ project.cta }}" class="highlight">Case study &raquo;</a>
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if project.tweets %}
+                            {% include tweets.html tweets = project.tweets %}
+                        {% endif %}
+                    </li>
+                </ul>
+                
+            </li>
+        {% endfor %}
+
+    {% when 'blog' %}
+        {% for post in site.data.blog limit:5 %}
+            <li>
+                <a href="{{ post.link }}">
+                    <span class="link">{{ post.title }}</span>
+                    <ul class="meta">
+                        <li><time>{{ post.date | date: "%-d %b, %Y"}}</time></li>
+                    </ul>
+                </a>
+            </li>
+        {% endfor %}
+
+
+{% endcase %}
