@@ -142,18 +142,13 @@
         "excerpt": "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus.",
         "tweets": [
             {
-                "cache_age": "3153600000",
-                "url": "https://twitter.com/rsturim/statuses/284587477233201152",
-                "height": null,
-                "provider_url": "https://twitter.com",
-                "provider_name": "Twitter",
-                "author_name": "Rich Sturim",
-                "version": "1.0",
-                "author_url": "https://twitter.com/rsturim",
-                "type": "rich",
-                "html": "<blockquote class=\"twitter-tweet\"><p>Sometimes it&#39;s easy to forgot the basic stuff is often the best solution: Quick Tip: Don’t Forget the optgroup Element <a href=\"http://t.co/hfhyyS0j\">http://t.co/hfhyyS0j</a></p>&mdash; Rich Sturim (@rsturim) <a href=\"https://twitter.com/rsturim/statuses/284587477233201152\">December 28, 2012</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
-                "width": 550,
-                "id": 284587477233201150
+                "id": 284587477233201150,
+                "content": "Sometimes it's easy to forgot the basic stuff is often the best solution: Quick Tip: Don’t Forget the optgroup Element http://webdesign.tutsplus.com/tutorials…",
+                "author": {
+                    "handle": "rsturim",
+                    "name": "Rich Sturim",
+                    "followers": 324
+                }
             }
         ]
     },

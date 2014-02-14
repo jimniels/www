@@ -66,6 +66,8 @@
         min-height: 200px;
 
         li {
+            border-top: 0;
+            
             &:nth-child(odd) {
                 width: 48%;
                 float: left;

@@ -470,12 +470,16 @@ img.loading {
 #dribbble .section__content {
   min-height: 200px;
 }
-/* line 69, ../../_scss/_section.scss */
+/* line 68, ../../_scss/_section.scss */
+#dribbble .section__content li {
+  border-top: 0;
+}
+/* line 71, ../../_scss/_section.scss */
 #dribbble .section__content li:nth-child(odd) {
   width: 48%;
   float: left;
 }
-/* line 73, ../../_scss/_section.scss */
+/* line 75, ../../_scss/_section.scss */
 #dribbble .section__content li:nth-child(even) {
   width: 48%;
   float: right;
@@ -488,22 +492,22 @@ img.loading {
   }
 }
 
-/* line 88, ../../_scss/_section.scss */
+/* line 90, ../../_scss/_section.scss */
 #published-articles .meta li {
   float: left;
   margin-right: .825em;
 }
-/* line 92, ../../_scss/_section.scss */
+/* line 94, ../../_scss/_section.scss */
 #published-articles .meta li:after {
   content: '\00B7';
   margin-left: .825em;
   color: #ccc;
 }
-/* line 98, ../../_scss/_section.scss */
+/* line 100, ../../_scss/_section.scss */
 #published-articles .meta li:last-child {
   margin-right: 0;
 }
-/* line 101, ../../_scss/_section.scss */
+/* line 103, ../../_scss/_section.scss */
 #published-articles .meta li:last-child:after {
   content: '';
   margin-left: 0;

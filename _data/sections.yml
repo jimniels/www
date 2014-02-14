@@ -3,10 +3,6 @@
     id: blog
     title: "My Blog"
     icon: blog
--
-    id: recent-projects
-    title: "Recent Projects"
-    icon: hammer
 - 
     id: dribbble
     title: "Dribbble"
@@ -15,3 +11,7 @@
     id: published-articles
     title: "Published Articles"
     icon: published-articles
+-
+    id: recent-projects
+    title: "Recent Projects"
+    icon: hammer

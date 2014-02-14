@@ -4,7 +4,7 @@ title: Your New Jekyll Site
 ---
 {% for section in site.data.sections %}
     <article class="section clearfix" id="{{ section.id }}">
-        <h1 class="l-left section__header icon icon-{{ section.icon }}">{{ section.title }}</h1>
+        <h1 class="l-left section__header icon icons-{{ section.icon }}">{{ section.title }}</h1>
         <ul class="l-right section__content {% if section.id == 'dribbble'%}dribbble{% endif %}">
             {% include sections.html id=section.id %}
         </ul>
