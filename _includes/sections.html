@@ -1,6 +1,6 @@
 {% case include.id %}
 
-    {% when 'dribbbble' %}
+    {% when 'dribbble' %}
         {% for shot in site.data.dribbble.shots | limit: 2 %}
             <li>
                 <a href="{{shot.url}}">
