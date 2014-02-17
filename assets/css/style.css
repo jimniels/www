@@ -142,7 +142,7 @@ body {
   font: 1em/1.25 "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #222222;
 }
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 56.25em) {
   /* line 9, ../../_scss/_general.scss */
   body {
     background: #292929;
@@ -221,13 +221,6 @@ img.loading {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-@media only screen and (min-width: 37.5em) {
-  /* line 7, ../../_scss/_layout.scss */
-  .l-wrapper {
-    width: 88%;
-    padding: 0 6%;
-  }
-}
 @media only screen and (min-width: 56.25em) {
   /* line 7, ../../_scss/_layout.scss */
   .l-wrapper {
@@ -274,7 +267,7 @@ img.loading {
   margin: 0 auto;
   position: relative;
 }
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 56.25em) {
   /* line 61, ../../_scss/_layout.scss */
   .main {
     margin-top: 3em;

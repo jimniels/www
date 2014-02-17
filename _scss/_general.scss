@@ -10,7 +10,7 @@ body {
     font: 1em/1.25 #{$font-family-base};
     color: $color-text;
 
-    @include respond-to(medium) {
+    @include respond-to(large) {
         background: $color-background;
     }
 }
