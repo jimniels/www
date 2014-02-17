@@ -1,0 +1,57 @@
+---
+layout: blank
+title: Developer-Friendly Version of Jim Nielsen, Designer / Problem Solver
+---
+<style>
+pre a {color: inherit; text-decoration: none;}
+pre a:hover {text-decoration: underline;}
+</style>
+
+<pre style="white-space: pre">{
+    "<strong style="color: #c02702">people_worth_hiring</strong>": [
+        {
+            "name": "<strong style="color: #c02702">Jim Nielsen</strong>",
+            "role": "Designer, Problem Solver",
+            "info": {
+                "twitter_url": "<a href="http://twitter.com/jimniels">http://twitter.com/jimniels</a>",
+                "dribbble_url": "<a href="http://dribbble.com/jimniels">http://dribbble.com/jimniels</a>",
+                "blog_url": "<a href="http://scriptogr.am/jimniels">http://scriptogr.am/jimniels</a>"
+            },
+            "blog_posts": [
+                {% for post in site.data.blog limit:5 %}{
+                    "title": "{{ post.title }}",
+                    "url": "<a href="{{ post.link }}">{{ post.link }}</a>",
+                    "date": "{{ post.date | date: "%F" }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %} 
+            ],
+            "dribbble_posts": [
+                {% for shot in site.data.dribbble.shots limit:5 %}{
+                    "title": "{{ shot.title }}",
+                    "url": "<a href="{{ shot.url }}">{{ shot.url }}</a>",
+                    "date": "{{ shot.created_at | date: "%F" }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "published_articles": [
+                {% for article in site.data.published-articles %}{
+                    "title": "{{ article.title }}",
+                    "publisher": "{{ article.publisher }}",
+                    "url": "<a href="{{ article.link }}">{{ article.link }}</a>",
+                    "date": "{{ article.date | date: "%F" }}"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "recent_projects": [
+                {% for project in site.data.recent-projects %}{
+                    "title": "{{ project.title }}",
+                    "url": "<a href="{{ project.link }}">{{ project.link }}</a>"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]
+        }, 
+        {
+            "name": "See above"
+        }
+    ]
+}</pre>
