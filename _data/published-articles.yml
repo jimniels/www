@@ -159,7 +159,18 @@
         "publish-date": "Nov. 15, 2012",
         "date": 1352937600,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/everything-you-need-to-know-about-the-css-cursor-rule/",
-        "excerpt": "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule."
+        "excerpt": "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule.",
+        "tweets": [
+            {
+                "id": 316590907870818304,
+                "content": "This post enhanced my skill :) RT @wdtuts Everything you need to know about the CSS Cursor rule http://enva.to/QfGHRT",
+                "author": {
+                    "handle": "matiusnugroho",
+                    "name": "Matius Nugroho A",
+                    "followers": 313
+                }
+            }
+        ]
     },
     {
         "title": "Quick Tip: Creating Crisp, Pixel Perfect Circles in Photoshop",
@@ -168,7 +179,18 @@
         "publish-date": "Nov. 12, 2012",
         "date": 1352678400,
         "link": "http://webdesign.tutsplus.com/tutorials/applications/quick-tip-creating-crisp-pixel-perfect-circles-in-photoshop/",
-        "excerpt": "Achieving pixel perfection when designing UI elements can be simple thanks to Photoshop’s “snap to pixels” feature. Unfortunately, this feature is not available for the ellipse tool – creating crisp, pixel-perfect circles can therefore require additional attention to detail. I’m going to let you in on a little secret which will make “snap to pixels” available when creating circles."
+        "excerpt": "Achieving pixel perfection when designing UI elements can be simple thanks to Photoshop’s “snap to pixels” feature. Unfortunately, this feature is not available for the ellipse tool – creating crisp, pixel-perfect circles can therefore require additional attention to detail. I’m going to let you in on a little secret which will make “snap to pixels” available when creating circles.",
+        "tweets": [
+            {
+                "id": 278869750824697857,
+                "content": "I'll probably never remember it, but it's good to know: Creating Crisp, Pixel Perfect Circles in Photoshop - http://ow.ly/fXKYO",
+                "author": {
+                    "handle": "chrisspooner",
+                    "name": "Chris Spooner",
+                    "followers": 77500
+                }
+            }
+        ]
     },
     {
         "title": "Using Web Inspector to Debug Mobile Safari",
@@ -177,7 +199,27 @@
         "publish-date": "Oct. 1, 2012",
         "date": 1349049600,
         "link": "http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip-using-web-inspector-to-debug-mobile-safari/",
-        "excerpt": "Building and debugging websites and web applications for mobile devices can be a hassle. On the desktop we have powerful debugging tools; most browsers have a web inspector of some kind. But we don’t have those tools for devices like the iPhone and iPad … that is, until now!"
+        "excerpt": "Building and debugging websites and web applications for mobile devices can be a hassle. On the desktop we have powerful debugging tools; most browsers have a web inspector of some kind. But we don’t have those tools for devices like the iPhone and iPad … that is, until now!",
+        "tweets": [
+            {
+                "id": 425070337861353472,
+                "content": "It’s high time I discovered you can inspect sites even inside the XCode simulator: http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip…",
+                "author": {
+                    "handle": "SachaGreif",
+                    "name": "Sacha Greif",
+                    "followers": 13200
+                }
+            },
+            {
+                "id": 344934298551472128,
+                "content": "I didn't realize how easy it is to use Safari's (desktop) web inspector on real iOS devices. http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip…",
+                "author": {
+                    "handle": "chriscoyier",
+                    "name": "Chris Coyier",
+                    "followers": 102000
+                }
+            }
+        ]
     },
     {
         "title": "Harnessing the Power of Icon Standards",
@@ -186,7 +228,18 @@
         "publish-date": "Sep. 5, 2012",
         "date": 1346803200,
         "link": "http://webdesign.tutsplus.com/articles/general/harnessing-the-power-of-icon-standards/",
-        "excerpt": "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects."
+        "excerpt": "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects.",
+        "tweets": [
+            {
+                "id": 243751734185439232,
+                "content": "Harnessing the Power of Icon Standards http://bsa.ly/mqv  via @envatowebdesign",
+                "author": {
+                    "handle": "BuySellAds",
+                    "name": "BuySellAds",
+                    "followers": 37200
+                }
+            }
+        ]
     },
     {
         "title": "Super Simple Lightbox with CSS and jQuery",
