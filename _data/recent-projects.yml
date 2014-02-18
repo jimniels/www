@@ -4,7 +4,7 @@
         "title": "Kindlingapp",
         "link": "http://kindlingapp.com",
         "link-pretty": "kindlingapp.com",
-        "description": "As design lead at Kindling, I did this site redesign showcasing Kindling as a platform for discovering, sharing, and actualizing ideas.",
+        "description": "Product site showcasing Kindling as a platform for discovering, sharing, and actualizing ideas.",
         "cta": "http://scriptogr.am/jimniels/post/home-page-redesign-of-kindlingapp.com",
         "tweets": [
             {
@@ -32,28 +32,28 @@
         "title": "iOS Icon Gallery",
         "link": "http://iosicongallery.com",
         "link-pretty": "iosicongallery.com",
-        "description": "A gallery showcasing great icon designs from the iOS ecosystem. Designed and curated by me."
+        "description": "Gallery, designed and curated by myself, showcasing great icon designs from the iOS ecosystem."
     },
     {
         "id": "kindling-loves-startups",
         "title": "Kindling Loves Startups",
         "link": "http://kindlinglovesstartups.com",
         "link-pretty": "kindlinglovesstartups.com",
-        "description": "Landing page design for Kindling. Part of a campaign offering Kindling for free to qualifying startups."
+        "description": "Campaign landing page offering Kindling for free to startups."
     },
     {
         "id": "sassme",
         "title": "SassMe",
         "link": "http://sassme.arc90.com",
         "link-pretty": "sassme.arc90.com",
-        "description": "Visualize the result of Sass color functions in real-time without compiling; a tool spawned and created in the Arc90 Lab."
+        "description": "A resource for visualizing the result of Sass color functions in real-time (born from the Arc90 Lab)."
     },
     {
         "id": "mac-icon-gallery",
         "title": "Mac Icon Gallery",
         "link": "http://macicongallery.com",
         "link-pretty": "macicongallery.com",
-        "description": "A gallery showcasing great icon designs from the Mac App Store. Designed and curated by me."
+        "description": "Gallery, designed and curated by myself, showcasing great icon designs from the Mac App Store."
     },
     {
         "id": "team-colors",
@@ -68,6 +68,6 @@
         "title": "CSS Off 2012",
         "link": "http://unmatchedstyle.com/news/cssoff-winners-2012.php",
         "link-pretty": "unmatchedstyle.com",
-        "description": "Finalist in the global web design competition where entries were meticulously judged by industry-renowned experts on code, UX, browser support, responsiveness, and more."
+        "description": "Finalist in the global web design competition where entries were judged by industry-renowned experts on code, UX, browser support, responsiveness, and more."
     }
 ]
