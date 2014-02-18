@@ -38,7 +38,7 @@
         "excerpt": "You should think about organizing your variable names (and project for that matter) modularly. This will bring structure and unity to your project as a whole, making it easier to understand and navigate the whole thing.",
         "tweets": [
             {
-                "id": 353154441660211200,
+                "id": 353154441660211201,
                 "content": "general -> specific $border-blue-light http://webdesign.tutsplus.com/tutorials/html…",
                 "author": {
                     "handle": "chriscoyier",
@@ -47,7 +47,7 @@
                 }
             },
             {
-                "id": 354547144172126200,
+                "id": 354547144172126209,
                 "content": "@robinrendle This is a pretty decent article http://t.co/0V5aYLkMDO :)",
                 "author": {
                     "handle": "csswizardry",
@@ -56,7 +56,7 @@
                 }
             },
             {
-                "id": 355042505940668400,
+                "id": 355042505940668420,
                 "content": "Nice little tip on naming your Sass variables. http://t.co/1UYc5kmiLX Much of it is similar to what I do. Good ideas.",
                 "author": {
                     "handle": "stefsull",
@@ -65,7 +65,7 @@
                 }
             }, 
             {
-                "id": 353363447095898100,
+                "id": 353363447095898116,
                 "content": "I agree with this @nettuts article 100%. Name your Sass variables general -> specific. http://bit.ly/128yjaq #maintainability",
                 "author": {
                     "handle": "joshbroton",
@@ -104,7 +104,7 @@
         "excerpt": "Let’s look at how to create a functional form which validates users’ data, client-side. With that done, we’ll cover prettying it up using CSS, including some CSS3!",
         "tweets": [
             {
-                "id": 137205950602952700,
+                "id": 137205950602952704,
                 "content": "Bring Your Forms Up to Date With CSS3 and #HTML5 Validation - http://ow.ly/7wgur",
                 "author": {
                     "handle": "DesignerDepot",
@@ -113,7 +113,7 @@
                 }
             },
             {
-                "id": 147002915519868930,
+                "id": 147002915519868928,
                 "content": "Newly bookmarked: Bring Your Forms Up to Date With CSS3 and HTML5 Validation http://bit.ly/vzlYeF",
                 "author": {
                     "handle": "Jack_Franklin",
@@ -122,7 +122,7 @@
                 }
             },
             {
-                "id": 132386723266174980,
+                "id": 132386723266174977,
                 "content": "Useful! — Bring Your Forms Up to Date With CSS3 and HTML5 Validation http://bit.ly/tbYEyA #HTML5 #CSS3",
                 "author": {
                     "handle": "Twikito",
@@ -142,7 +142,7 @@
         "excerpt": "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus.",
         "tweets": [
             {
-                "id": 284587477233201150,
+                "id": 284587477233201152,
                 "content": "Sometimes it's easy to forgot the basic stuff is often the best solution: Quick Tip: Don’t Forget the optgroup Element http://webdesign.tutsplus.com/tutorials…",
                 "author": {
                     "handle": "rsturim",
