@@ -15,18 +15,7 @@
         "publish-date": "Oct 28, 2013",
         "date": 1382918400,
         "link": "http://webdesign.tutsplus.com/tutorials/ux-tutorials/implementing-the-float-label-form-pattern/",
-        "excerpt": "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript.",
-        "tweets": [
-            {
-                "id": 394874441705869300,
-                "content": "Brilliant ux for form fields: Implementing the Float Label Form Pattern http://t.co/2HE5o3ysA1",
-                "author" : {
-                    "handle": "CodeRanger",
-                    "name": "Dan Petitt",
-                    "followers": 254
-                }
-            }
-        ]
+        "excerpt": "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript."
     },
     {
         "title": "Quick Tip: Name Your SASS Variables Modularly",

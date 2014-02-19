@@ -15,7 +15,7 @@
 .tweet {
     position: relative;
     font-size: #{13 / $font-size-base}em;
-    padding: .5em 0 .75em .5em;
+    padding: .5em 0 .75em .75em;
     border-left: 1px double $color-twitter-blue;    
 
     &:first-child:before {
@@ -23,7 +23,7 @@
         content: '';
         border-top: 1px solid $color-twitter-blue;
         height: 1px;
-        width: 8px;
+        width: .5em;
         top: 0;
         left: 0;
     }
@@ -33,7 +33,7 @@
         content: '';
         border-bottom: 1px solid $color-twitter-blue;
         height: 1px;
-        width: 8px;
+        width: .5em;
         bottom: 0;
         left: 0;
     }
