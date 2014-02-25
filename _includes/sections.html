@@ -67,9 +67,9 @@
         {% endfor %}
 
     {% when 'blog' %}
-        {% for post in site.data.blog limit:5 %}
+        {% for post in site.data.blog.posts limit:5 %}
             <li>
-                <a href="{{ post.link }}">
+                <a href="{{ post.url }}">
                     <span class="link">{{ post.title }}</span>
                     <ul class="meta">
                         <li><time>{{ post.date | date: "%-d %b, %Y"}}</time></li>
