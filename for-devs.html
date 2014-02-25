@@ -18,9 +18,9 @@ pre a:hover {text-decoration: underline;}
                 "blog_url": "<a href="http://scriptogr.am/jimniels">http://scriptogr.am/jimniels</a>"
             },
             "blog_posts": [
-                {% for post in site.data.blog limit:5 %}{
+                {% for post in site.data.blog.posts limit:5 %}{
                     "title": "{{ post.title }}",
-                    "url": "<a href="{{ post.link }}">{{ post.link }}</a>",
+                    "url": "<a href="{{ post.url }}">{{ post.url }}</a>",
                     "date": "{{ post.date | date: "%F" }}"
                 }{% unless forloop.last %},{% endunless %}
                 {% endfor %} 
