@@ -4,12 +4,12 @@
         "title": "Kindlingapp",
         "link": "http://kindlingapp.com",
         "link-pretty": "kindlingapp.com",
-        "description": "Product site showcasing Kindling as a platform for discovering, sharing, and actualizing ideas.",
+        "description": "Marketing site for Kindling, a platform for discovering, sharing, and actualizing ideas.",
         "cta": "http://scriptogr.am/jimniels/post/home-page-redesign-of-kindlingapp.com",
         "tweets": [
             {
                 "id": 358225234819694600,
-                "content": "Yeh I'm biased, but the attention to design details by the @kindlingapp team is really damn impressive. Great update. http://www.kindlingapp.com/blog/in-app-notifications/…",
+                "content": "Yeh I'm biased, but the attention to design details by the @kindlingapp team is really damn impressive. Great update. http://www.kindlingapp.com/blog/in-app…",
                 "author" : {
                     "handle": "richziade",
                     "name": "Rich Ziade",
@@ -32,7 +32,7 @@
         "title": "iOS Icon Gallery",
         "link": "http://iosicongallery.com",
         "link-pretty": "iosicongallery.com",
-        "description": "Gallery, designed and curated by myself, showcasing great icon designs from the iOS ecosystem."
+        "description": "A gallery showcasing great icon designs from the iOS ecosystem."
     },
     {
         "id": "kindling-loves-startups",
@@ -46,21 +46,21 @@
         "title": "SassMe",
         "link": "http://sassme.arc90.com",
         "link-pretty": "sassme.arc90.com",
-        "description": "A resource for visualizing the result of Sass color functions in real-time (born from the Arc90 Lab)."
+        "description": "A resource for visualizing the result of Sass color functions in real-time."
     },
     {
         "id": "mac-icon-gallery",
         "title": "Mac Icon Gallery",
         "link": "http://macicongallery.com",
         "link-pretty": "macicongallery.com",
-        "description": "Gallery, designed and curated by myself, showcasing great icon designs from the Mac App Store."
+        "description": "A gallery showcasing great icon designs from the Mac App Store."
     },
     {
         "id": "team-colors",
         "title": "Team Colors",
         "link": "http://teamcolors.arc90.com",
         "link-pretty": "teamcolors.arc90.com",
-        "description": "A reference for finding the team colors of your favorite major league sports teams.",
+        "description": "A color reference of your favorite major league sports teams.",
         "cta": "http://scriptogr.am/jimniels/post/team-color-codes"
     },
     {
