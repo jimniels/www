@@ -15,7 +15,18 @@
         "publish-date": "Oct 28, 2013",
         "date": 1382918400,
         "link": "http://webdesign.tutsplus.com/tutorials/ux-tutorials/implementing-the-float-label-form-pattern/",
-        "excerpt": "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript."
+        "excerpt": "A multiplicity of form accessibility concerns and best practices can make designing a compelling form interaction very difficult. Using Matt Smith’s mobile form interaction design as a guide, we will create a stunning form interaction for the web that’s beautiful, accessible, and progressively enhanced using HTML, CSS and JavaScript.",
+        "tweets": [
+            {
+                "id": 437962351133089793,
+                "content": "✽ Float Labels with CSS :: http://css-tricks.com/float-labels-css/…",
+                "author": {
+                    "handle": "chriscoyier",
+                    "name": "Chris Coyier",
+                    "followers": 101000
+                }
+            }
+        ]
     },
     {
         "title": "Quick Tip: Name Your SASS Variables Modularly",
@@ -27,21 +38,21 @@
         "excerpt": "You should think about organizing your variable names (and project for that matter) modularly. This will bring structure and unity to your project as a whole, making it easier to understand and navigate the whole thing.",
         "tweets": [
             {
-                "id": 353154441660211201,
-                "content": "general -> specific $border-blue-light http://webdesign.tutsplus.com/tutorials/html…",
-                "author": {
-                    "handle": "chriscoyier",
-                    "name": "Chris Coyier",
-                    "followers": 101000
-                }
-            },
-            {
                 "id": 354547144172126209,
                 "content": "@robinrendle This is a pretty decent article http://t.co/0V5aYLkMDO :)",
                 "author": {
                     "handle": "csswizardry",
                     "name": "Harry Roberts",
                     "followers": 29800
+                }
+            },
+            {
+                "id": 353154441660211201,
+                "content": "general -> specific $border-blue-light http://webdesign.tutsplus.com/tutorials/html…",
+                "author": {
+                    "handle": "chriscoyier",
+                    "name": "Chris Coyier",
+                    "followers": 101000
                 }
             },
             {
