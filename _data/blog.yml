@@ -5,6 +5,12 @@
     "posts": [
         
         {
+            "title":    "A Logo Is an Image, The Image of a Company",
+            "date":     "01 Jan, 2014",
+            "url":      "http://jim-nielsen.com/blog/posts/logo-the-image-of-a-company"
+        },
+        
+        {
             "title":    "Benjamin Franklin, an Open Source Contributor?",
             "date":     "18 Dec, 2013",
             "url":      "http://jim-nielsen.com/blog/posts/ben-franklin-open-source-contributor"
@@ -56,12 +62,6 @@
             "title":    "Workarounds to Variable Interpolation in Sass",
             "date":     "29 Jul, 2013",
             "url":      "http://jim-nielsen.com/blog/posts/sass-variable-interpolation-workarounds"
-        },
-        
-        {
-            "title":    "Things to Be Informed About in Life",
-            "date":     "24 Jul, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/things-to-be-informed-about"
         }
         
     ]    
