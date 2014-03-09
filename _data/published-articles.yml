@@ -259,7 +259,18 @@
         "date": 1339113600,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/perfectly-rotate-and-mask-thumbnails-with-css3/",
         "reader-fav": true,
-        "excerpt": "Ever seen a website showcasing image thumbnails that are slightly rotated? It’s a simple effect that adds a layer of visual personality. Saying that, if you’re not achieving the rotation effect with CSS, you’re working too hard! Learn how to do it right!"
+        "excerpt": "Ever seen a website showcasing image thumbnails that are slightly rotated? It’s a simple effect that adds a layer of visual personality. Saying that, if you’re not achieving the rotation effect with CSS, you’re working too hard! Learn how to do it right!",
+        "tweets": [
+            {
+                "id": 212554894215876608,
+                "content": "A useful tutorial: Rotate and Mask Thumbnails With CSS3 - http://bit.ly/raJxxF",
+                "author": {
+                    "handle": "smashingmag",
+                    "name": "Smashing Magazine",
+                    "followers": 769000
+                }
+            }
+        ]
     },
     {
         "title": "Put Users in Control With Confirmation Feedback Buttons",
@@ -268,7 +279,18 @@
         "publish-date": "May 17, 2012",
         "date": 1337212800,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/",
-        "excerpt": "This tutorial will teach you how to create a responsive web page with buttons which take on different states depending on the user’s interaction. This type of interaction is especially useful on links such as “purchase” or “delete” where it’s wise to confirm that the user indeed wants to take a specific action."
+        "excerpt": "This tutorial will teach you how to create a responsive web page with buttons which take on different states depending on the user’s interaction. This type of interaction is especially useful on links such as “purchase” or “delete” where it’s wise to confirm that the user indeed wants to take a specific action.",
+        "tweets": [
+            {
+                "id": 205269378382577664,
+                "content": "A CSS/JS technique for buttons: Put Users in Control With Confirmation Feedback Buttons - http://bit.ly/Jya5gt",
+                "author": {
+                    "handle": "smashingmag",
+                    "name": "Smashing Magazine",
+                    "followers": 769000
+                }
+            }
+        ]
     },
     {
         "title": "Building a Mobile-Friendly Form with Email Domain Suggestion",
