@@ -5,6 +5,12 @@
     "posts": [
         
         {
+            "title":    "Defining Beauty On The Web",
+            "date":     "11 Mar, 2014",
+            "url":      "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web"
+        },
+        
+        {
             "title":    "A Logo Is an Image, The Image of a Company",
             "date":     "03 Mar, 2014",
             "url":      "http://jim-nielsen.com/blog/posts/logo-the-image-of-a-company"
@@ -56,12 +62,6 @@
             "title":    "Once Again, It’s About Putting the User First",
             "date":     "12 Aug, 2013",
             "url":      "http://jim-nielsen.com/blog/posts/putting-the-user-first"
-        },
-        
-        {
-            "title":    "Workarounds to Variable Interpolation in Sass",
-            "date":     "29 Jul, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/sass-variable-interpolation-workarounds"
         }
         
     ]    
