@@ -168,18 +168,7 @@
         "publish-date": "Dec. 27, 2012",
         "date": 1356566400,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-optgroup-element/",
-        "excerpt": "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus.",
-        "tweets": [
-            {
-                "id": 284587477233201152,
-                "content": "Sometimes it's easy to forgot the basic stuff is often the best solution: Quick Tip: Don’t Forget the optgroup Element http://webdesign.tutsplus.com/tutorials…",
-                "author": {
-                    "handle": "rsturim",
-                    "name": "Rich Sturim",
-                    "followers": 324
-                }
-            }
-        ]
+        "excerpt": "One popular navigation design pattern for the responsive web is collapsing your website’s navigation into a select menu. However, representing hierarchy or categorical distinctions in select elements often leads to butchered HTML with manual hyphens and lots of &nbsp; spaces. In this tutorial we’ll introduce you to a somehwat obscure HTML tag called optgroup which will provide you with an easy (and semantic) way of grouping related content in select menus."
     },
     {
         "title": "Everything You Need to Know About the CSS Cursor Rule",
