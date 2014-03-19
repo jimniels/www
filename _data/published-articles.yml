@@ -1,5 +1,25 @@
 [
     {
+        "title": "Getting the Hang of Hanging Punctuation",
+        "publisher": "webdesign tuts+",
+        "publisher-link": "http://webdesign.tutsplus.com/",
+        "publish-date": "Mar 13, 2014",
+        "date": 1394668800,
+        "link": "http://webdesign.tutsplus.com/articles/getting-the-hang-of-hanging-punctuation--cms-19890",
+        "excerpt": "Hanging Punctuation is a powerful typographic tool for creating optically aligned bodies of text. Unfortunately, it has been largely forgotten on the web … until now. We’ll take a look at the value of hanging punctuation and how you can partially implement it using a little javascript and a CSS rule which has been around for years.",
+        "tweets": [
+            {
+                "id": 445839398018752512,
+                "content": "Getting the hang of hanging punctuation with the help of a little JS and CSS: http://webdesign.tutsplus.com/articles/getting-the-hang… by @jimniels",
+                "author": {
+                    "handle": "smashingmag",
+                    "name": "Smashing Magazine",
+                    "followers": 769000
+                }
+            }
+        ]
+    },
+    {
         "title": "Keep Employees Engaged in Innovation with Responsive Design",
         "publisher": "Kindling Inc.",
         "publisher-link": "http://kindlingapp.com/",
