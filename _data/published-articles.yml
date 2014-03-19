@@ -9,6 +9,15 @@
         "excerpt": "Hanging Punctuation is a powerful typographic tool for creating optically aligned bodies of text. Unfortunately, it has been largely forgotten on the web … until now. We’ll take a look at the value of hanging punctuation and how you can partially implement it using a little javascript and a CSS rule which has been around for years.",
         "tweets": [
             {
+                "id": 445840837369671680,
+                "content": "What a delightful article on hanging punctuation: http://webdesign.tutsplus.com/articles/getting-the-hang…. Full of interesting bites to start the day.",
+                "author": {
+                    "handle": "HugoGiraudel",
+                    "name": "Hugo Giraudel",
+                    "followers": 3503
+                }
+            },
+            {
                 "id": 445839398018752512,
                 "content": "Getting the hang of hanging punctuation with the help of a little JS and CSS: http://webdesign.tutsplus.com/articles/getting-the-hang… by @jimniels",
                 "author": {
