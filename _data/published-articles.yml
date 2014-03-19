@@ -188,18 +188,7 @@
         "publish-date": "Nov. 15, 2012",
         "date": 1352937600,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/everything-you-need-to-know-about-the-css-cursor-rule/",
-        "excerpt": "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule.",
-        "tweets": [
-            {
-                "id": 316590907870818304,
-                "content": "This post enhanced my skill :) RT @wdtuts Everything you need to know about the CSS Cursor rule http://enva.to/QfGHRT",
-                "author": {
-                    "handle": "matiusnugroho",
-                    "name": "Matius Nugroho A",
-                    "followers": 313
-                }
-            }
-        ]
+        "excerpt": "While the world’s going bonkers for touch-controlled interfaces, this article will focus on the more traditional input method of the mouse. I’ll suggest an approach of progressive enhancement for handling interaction design; more specifically, an overview of the CSS cursor rule."
     },
     {
         "title": "Quick Tip: Creating Crisp, Pixel Perfect Circles in Photoshop",
