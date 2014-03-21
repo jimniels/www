@@ -46,7 +46,36 @@
         "title": "SassMe",
         "link": "http://sassme.arc90.com",
         "link-pretty": "sassme.arc90.com",
-        "description": "A resource for visualizing the result of Sass color functions in real-time."
+        "description": "A resource for visualizing the result of Sass color functions in real-time.",
+        "tweets": [
+            {
+                "id": 444486106365435904,
+                "content": "Check out SassMe, a tool for visualizing Sass color functions: http://cog.gd/5xy",
+                "author" : {
+                    "handle": "happycog",
+                    "name": "Happy Cog",
+                    "followers": 222000
+                }
+            },
+            {
+                "id": 361846594364112896,
+                "content": "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head! http://sassme.arc90.com/",
+                "author" : {
+                    "handle": "vlh",
+                    "name": "Val Head",
+                    "followers": 4076
+                }
+            },
+            {
+                "id": 436977632811712512,
+                "content": "Oh, look how helpful this is for Sass colors: http://sassme.arc90.com/",
+                "author" : {
+                    "handle": "elefontpress",
+                    "name": "Matt Griffin",
+                    "followers": 1939
+                }
+            }
+        ]
     },
     {
         "id": "mac-icon-gallery",
