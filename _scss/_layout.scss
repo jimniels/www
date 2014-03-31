@@ -12,8 +12,13 @@
     @include border-radius(3px);
 
     @include respond-to(medium) {
-        //width: 88%;
-        //padding: 0 6%;
+        width: 100%;
+
+        .section__header,
+        .section__content > li {
+            padding-left: .5em;
+            padding-right: .5em;
+        }
     }
 
     @include respond-to(large) {
