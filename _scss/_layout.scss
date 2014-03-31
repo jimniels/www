@@ -11,7 +11,7 @@
     max-width: 1120px; // 5em * 16 = 80, 80*2=160px, 960px+160=1120
     @include border-radius(3px);
 
-    @include respond-to(medium) {
+    @media screen and (max-width: 600px) {
         width: 100%;
 
         .section__header,

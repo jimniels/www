@@ -221,6 +221,18 @@ img.loading {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
+@media screen and (max-width: 600px) {
+  /* line 7, ../../_scss/_layout.scss */
+  .l-wrapper {
+    width: 100%;
+  }
+  /* line 18, ../../_scss/_layout.scss */
+  .l-wrapper .section__header,
+  .l-wrapper .section__content > li {
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+}
 @media only screen and (min-width: 56.25em) {
   /* line 7, ../../_scss/_layout.scss */
   .l-wrapper {
@@ -230,7 +242,7 @@ img.loading {
 }
 
 @media only screen and (min-width: 56.25em) {
-  /* line 28, ../../_scss/_layout.scss */
+  /* line 33, ../../_scss/_layout.scss */
   .l-left {
     width: 25%;
     float: left;
@@ -238,7 +250,7 @@ img.loading {
 }
 
 @media only screen and (min-width: 56.25em) {
-  /* line 34, ../../_scss/_layout.scss */
+  /* line 39, ../../_scss/_layout.scss */
   .l-right {
     width: 72%;
     float: right;
@@ -246,7 +258,7 @@ img.loading {
 }
 
 @media only screen and (min-width: 56.25em) {
-  /* line 44, ../../_scss/_layout.scss */
+  /* line 49, ../../_scss/_layout.scss */
   .l-col-left {
     width: 46%;
     float: left;
@@ -254,21 +266,21 @@ img.loading {
 }
 
 @media only screen and (min-width: 56.25em) {
-  /* line 50, ../../_scss/_layout.scss */
+  /* line 55, ../../_scss/_layout.scss */
   .l-col-right {
     width: 46%;
     float: right;
   }
 }
 
-/* line 61, ../../_scss/_layout.scss */
+/* line 66, ../../_scss/_layout.scss */
 .main {
   background: white;
   margin: 0 auto;
   position: relative;
 }
 @media only screen and (min-width: 56.25em) {
-  /* line 61, ../../_scss/_layout.scss */
+  /* line 66, ../../_scss/_layout.scss */
   .main {
     margin-top: 3em;
     padding-bottom: 2em;
@@ -278,7 +290,7 @@ img.loading {
   }
 }
 
-/* line 76, ../../_scss/_layout.scss */
+/* line 81, ../../_scss/_layout.scss */
 .footer {
   color: #777;
   margin-bottom: 4em;
@@ -286,11 +298,11 @@ img.loading {
   text-align: center;
   border-top: 1px solid #eeeeee;
 }
-/* line 83, ../../_scss/_layout.scss */
+/* line 88, ../../_scss/_layout.scss */
 .footer a {
   color: #c02702;
 }
-/* line 86, ../../_scss/_layout.scss */
+/* line 91, ../../_scss/_layout.scss */
 .footer a:hover {
   color: #e82f02;
 }
