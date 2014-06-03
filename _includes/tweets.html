@@ -3,7 +3,7 @@
     Must pass in the tweet object whic lists all displayable tweets
 
 {% endcomment %}
-<ul class="tweets icon-twitter">
+<ul class="tweets">
     {% for tweet in include.tweets %}
         <li class="tweet">
             <a href="https://twitter.com/{{tweet.author.handle}}/statuses/{{tweet.id}}" class="tweet-permalink"> 

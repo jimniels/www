@@ -1,7 +1,6 @@
 .section {
     
     @include clearfix;
-    font-weight: 300;
     position: relative;
     font-size: #{18 / $font-size-base}em;
 
@@ -18,11 +17,11 @@
 
     @include respond-to(large) {
         padding-top: .75em; 
-        border-top: 1px solid #000;
+        border-top: 2px solid #000;
         border-bottom: 0;
         position: relative; 
         top: -1px;
-        font-weight: 500;
+        font-weight: 700;
     }
 
     &.icon:before {
