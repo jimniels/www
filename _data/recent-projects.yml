@@ -32,7 +32,37 @@
         "title": "iOS Icon Gallery",
         "link": "http://iosicongallery.com",
         "link-pretty": "iosicongallery.com",
-        "description": "A gallery showcasing great icon designs from the iOS ecosystem."
+        "description": "A gallery showcasing great icon designs from the iOS ecosystem.",
+        "tweets": [
+            {
+                "id": 219856804987928576,
+                "content": "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem - http://iosicongallery.com/",
+                "author" : {
+                    "handle": "smashingmag",
+                    "name": "Smashing Magazine",
+                    "followers": 794000
+                }
+            },
+            {
+                "id": 219845371487191042,
+                "content": "Good reference site for icon inspiration http://iosicongallery.com/",
+                "author" : {
+                    "handle": "iamFinch",
+                    "name": "Francisco Inchauste",
+                    "followers": 8411
+                }
+            },
+            {
+                "id": 369583698229723138,
+                "content": "Mac Icon Gallery http://macicongallery.com  and iOS Icon Gallery http://iosicongallery.com  are indeed nice showcases. Nice initiative by @jimniels.",
+                "author" : {
+                    "handle": "dresouzax",
+                    "name": "Andre Souza",
+                    "followers": 1176
+                }
+            }
+        ]
+    
     },
     {
         "id": "kindling-loves-startups",
