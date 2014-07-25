@@ -7,11 +7,12 @@
 }
 
 body {
-    font: 1em/1.25 #{$font-family-base};
+    font: 1em/1.3 #{$font-family-base};
     color: $color-text;
+    background: $color-background;
 
-    @include respond-to(large) {
-        background: $color-background;
+    @include respond-to(medium) {
+        font-size: px-to-em(14);
     }
 }
 
@@ -21,7 +22,7 @@ a {
 
     // <a.link>Text
     &.link:hover {
-        color: $color-highlight;
+        color: $color-link;
         text-decoration: underline; 
     }
     // <a>
@@ -29,7 +30,7 @@ a {
     //  <span>Some other text
     &:hover {
         .link {
-            color: $color-highlight;
+            color: $color-link;
             text-decoration: underline;   
         }
     }

@@ -5,6 +5,7 @@
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Mar 13, 2014",
         "date": 1394668800,
+        "image-type": "jpg",
         "link": "http://webdesign.tutsplus.com/articles/getting-the-hang-of-hanging-punctuation--cms-19890",
         "excerpt": "Hanging Punctuation is a powerful typographic tool for creating optically aligned bodies of text. Unfortunately, it has been largely forgotten on the web … until now. We’ll take a look at the value of hanging punctuation and how you can partially implement it using a little javascript and a CSS rule which has been around for years.",
         "tweets": [
@@ -119,6 +120,7 @@
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "May 9, 2013",
         "date": 1368057600,
+        "image-type": "jpg",
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/filler-content-tools-tips-and-a-dynamic-example/",
         "excerpt": "As designing in the browser becomes more popular (and convenient), the need for helpful design tools is increasing. One set of tools that is becoming quite helpful revolves around filler content. Currently, a variety of resources exist to aid designers who need filler content, whether it be text or images."
     },
@@ -171,7 +173,7 @@
         ]
     },
     {
-        "title": "Don’t Forget the optgroup Element",
+        "title": "Quick Tip: Don’t Forget the optgroup Element",
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Dec. 27, 2012",
@@ -193,6 +195,7 @@
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Nov. 12, 2012",
+        "image-type": "jpg",
         "date": 1352678400,
         "link": "http://webdesign.tutsplus.com/tutorials/applications/quick-tip-creating-crisp-pixel-perfect-circles-in-photoshop/",
         "excerpt": "Achieving pixel perfection when designing UI elements can be simple thanks to Photoshop’s “snap to pixels” feature. Unfortunately, this feature is not available for the ellipse tool – creating crisp, pixel-perfect circles can therefore require additional attention to detail. I’m going to let you in on a little secret which will make “snap to pixels” available when creating circles.",
@@ -209,7 +212,7 @@
         ]
     },
     {
-        "title": "Using Web Inspector to Debug Mobile Safari",
+        "title": "Quick Tip: Using Web Inspector to Debug Mobile Safari",
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Oct. 1, 2012",
@@ -242,26 +245,17 @@
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Sep. 5, 2012",
+        "image-type": "jpg",
         "date": 1346803200,
         "link": "http://webdesign.tutsplus.com/articles/general/harnessing-the-power-of-icon-standards/",
-        "excerpt": "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects.",
-        "tweets": [
-            {
-                "id": 243751734185439232,
-                "content": "Harnessing the Power of Icon Standards http://bsa.ly/mqv  via @envatowebdesign",
-                "author": {
-                    "handle": "BuySellAds",
-                    "name": "BuySellAds",
-                    "followers": 37200
-                }
-            }
-        ]
+        "excerpt": "As effective as an icon’s metaphor may be, truly powerful icons get strength from their universal recognizability and conventional usage — a standardization of sorts. We’ll discuss icon standardization more in this article and then provide suggestions to a few current icon standardization movements which you can explore and incorporate into your own projects."
     },
     {
         "title": "Super Simple Lightbox with CSS and jQuery",
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "Aug. 9, 2012",
+        "image-type": "jpg",
         "date": 1344470400,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/",
         "reader-fav": true,
@@ -293,6 +287,7 @@
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
         "publish-date": "May 17, 2012",
+        "image-type": "jpg",
         "date": 1337212800,
         "link": "http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/",
         "excerpt": "This tutorial will teach you how to create a responsive web page with buttons which take on different states depending on the user’s interaction. This type of interaction is especially useful on links such as “purchase” or “delete” where it’s wise to confirm that the user indeed wants to take a specific action.",
@@ -322,12 +317,13 @@
         "publisher": "Webdesigner Depot",
         "publisher-link": "http://www.webdesignerdepot.com/",
         "publish-date": "Jan. 10, 2012",
+        "image-type": "jpg",
         "date": 1326153600,
         "link": "http://www.webdesignerdepot.com/2012/01/password-strength-verification-with-jquery/",
         "excerpt": "Many sites that require login credentials enforce a security setting often referred to as password complexity requirements. These requirements ensure that user passwords are sufficiently strong and cannot be easily broken."
     },
     {
-        "title": "Create a Stitched Web Ribbon in Photoshop",
+        "title": "Quick Tip: Create a Stitched Web Ribbon in Photoshop",
         "publisher": "psd tuts+",
         "publisher-link": "http://psd.tutsplus.com/",
         "publish-date": "Dec. 9, 2011",
@@ -336,10 +332,11 @@
         "excerpt": "You don’t have to search the web for very long to find a web ribbon in the corner of an image. In this quick tip tutorial we will show you how to create your own. Let’s get started!"
     },
     {
-        "title": "Realistic Telephone Keypad Using Layer Styles",
+        "title": "Create a Realistic Telephone Keypad Using Layer Styles",
         "publisher": "psd tuts+",
         "publisher-link": "http://psd.tutsplus.com/",
         "publish-date": "Oct. 21, 2011",
+        "image-type": "jpg",
         "date": 1319155200,
         "link": "http://psd.tutsplus.com/tutorials/interface-tutorials/telephone-keypad-photoshop/",
         "excerpt": "Creating real-world objects in Photoshop can be somewhat challenging. The key is to pinpoint and accentuate small details such as shadows, lighting, and extruding edges. In this tutorial, you’ll learn how to achieve acutely life-like telephone dial buttons in Photoshop using shape layers and layer styles!"

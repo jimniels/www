@@ -4,60 +4,11 @@
 //  ==============================
 //
 
-.l-wrapper {
-    width: 85%;
+.wrapper {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1120px; // 5em * 16 = 80, 80*2=160px, 960px+160=1120
+    max-width: px-to-em(700);
     @include border-radius(3px);
-
-    @media screen and (max-width: 600px) {
-        width: 100%;
-
-        .section__header,
-        .section__content > li,
-        .footer p {
-            padding-left: .5em;
-            padding-right: .5em;
-        }
-    }
-
-    @include respond-to(large) {
-        width: 88%;
-        padding: 0 6%;
-    }
-}
-
-//
-//  Page Columns
-//
-.l-left {
-    @include respond-to(large) {
-        width: 25%;
-        float: left;  
-    }
-}
-.l-right {
-    @include respond-to(large) {
-        width: 72%;
-        float: right;
-    }
-}
-
-//
-//  Image Columns
-//
-.l-col-left {
-    @include respond-to(large) {
-        width: 46%;
-        float: left;
-    }
-}
-.l-col-right {
-    @include respond-to(large) {
-        width: 46%;
-        float: right;
-    }
 }
 
 
@@ -69,11 +20,11 @@
     margin: 0 auto;
     position: relative;
 
-    @include respond-to(large) {
+    //@include respond-to(large) {
         margin-top: 3em;
         padding-bottom: 2em;
         @include box-shadow(0 0 130px rgba(0,0,0,1));
-    }
+    //}
 }
 
 //

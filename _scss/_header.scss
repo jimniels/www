@@ -1,86 +1,52 @@
 .header {
-    text-align: center;
-    padding: 0 0 12em;
-    line-height: 1.1;
-
+    padding: 6em $padding-left;
     font-family: $font-family-header;
 
     @media screen and (max-width: 600px) {
-        padding: 0 0 3em;
-    }
-}
-
-.header__logo {
-    padding: 5em 0;
-
-    @media screen and (max-width: 600px) {
-        padding: 3em 0
-    }
-    
-    a {
-        display: block;
-        width: 240px;
-        height: 120px;
-        background: url(#{$img-url}/logo.png) no-repeat 0 0;
-        margin: 0 auto;
-        text-indent: -9999px;
-
-        @media (-webkit-min-device-pixel-ratio: 2), 
-        (min-resolution: 192dpi) { 
-            background-image: url(#{$img-url}/logo@2x.png);
-            background-size: 100%;
-        }
+        padding: 3em ($padding-left / 2);
     }
 }
 
 .header__title {
-    font-size: #{60 / $font-size-base}em;
-    
+    font-size: #{42 / $font-size-base}em;
     letter-spacing: -0.025em;
-    margin-bottom: .25em;
+    margin-bottom: .2em;
+
 
     em {
         color: $color-highlight;
-        //white-space: pre;
-    }
-
-    @media screen and (max-width: 600px) {
-        font-size: #{48 / $font-size-base}em;
     }
 }
 
 .header__subtitle {
-    font-weight: 300;
-    color: #444;
-    //font-size: #{21 / $font-size-base}em;
-    line-height: 1.6;
+    font-size: #{21 / $font-size-base}em;
 
-    letter-spacing: .2em;
-    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
 
     a {
         color: inherit;
+        text-decoration: underline;
     }
 }
 
 .header__developer {
-    display: none;
-    
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: #{6 / $font-size-base}em #{10 / $font-size-base}em;
+    background: $color-highlight;
+    color: white;
+    @include border-radius(0 3px 0 3px);
+    font-size: #{14 / $font-size-base}em;
+    font-family: monospace;
 
-    @include respond-to(large) {
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: #{6 / $font-size-base}em #{10 / $font-size-base}em;
-        background: $color-highlight;
+    &:hover {
         color: white;
-        @include border-radius(0 3px 0 3px);
-        font-size: #{14 / $font-size-base}em;
-        font-family: monospace;
+    }
 
-        &:hover {
-            color: white;
-        }
+    @include respond-to(medium) {
+        display: none;  
     }
 }

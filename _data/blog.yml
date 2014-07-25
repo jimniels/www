@@ -5,63 +5,73 @@
     "posts": [
         
         {
-            "title":    "Defining Beauty on the Web",
-            "date":     "11 Mar, 2014",
-            "url":      "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web"
+            "title":        "Defining Beauty on the Web",
+            "date":         "11 Mar, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web",
+            "word-count":   "700"
         },
         
         {
-            "title":    "A Logo Is an Image, The Image of a Company",
-            "date":     "03 Mar, 2014",
-            "url":      "http://jim-nielsen.com/blog/posts/logo-the-image-of-a-company"
+            "title":        "A Logo Is an Image, The Image of a Company",
+            "date":         "03 Mar, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/logo-the-image-of-a-company",
+            "word-count":   "173"
         },
         
         {
-            "title":    "Benjamin Franklin, an Open Source Contributor?",
-            "date":     "18 Dec, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/ben-franklin-open-source-contributor"
+            "title":        "Benjamin Franklin, an Open Source Contributor?",
+            "date":         "18 Dec, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/ben-franklin-open-source-contributor",
+            "word-count":   "248"
         },
         
         {
-            "title":    "The Evolution of Creativity",
-            "date":     "06 Nov, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/evolution-of-creativity"
+            "title":        "The Evolution of Creativity",
+            "date":         "06 Nov, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/evolution-of-creativity",
+            "word-count":   "483"
         },
         
         {
-            "title":    "Wireframes and Gravity",
-            "date":     "21 Oct, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/wireframes-and-gravity"
+            "title":        "Wireframes and Gravity",
+            "date":         "21 Oct, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/wireframes-and-gravity",
+            "word-count":   "267"
         },
         
         {
-            "title":    "Ostentatious Design & Profanity",
-            "date":     "14 Oct, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/ostentatious-design-and-profanity"
+            "title":        "Ostentatious Design & Profanity",
+            "date":         "14 Oct, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/ostentatious-design-and-profanity",
+            "word-count":   "471"
         },
         
         {
-            "title":    "Home Page Redesign of kindlingapp.com",
-            "date":     "26 Sep, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/kindlingapp-home-page-redesign"
+            "title":        "Home Page Redesign of kindlingapp.com",
+            "date":         "26 Sep, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/kindlingapp-home-page-redesign",
+            "word-count":   "466"
         },
         
         {
-            "title":    "The “Kinda-Sorta Looks Like the Internet” Internet",
-            "date":     "26 Sep, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/kinda-sorta-looks-like-the-internet"
+            "title":        "The “Kinda-Sorta Looks Like the Internet” Internet",
+            "date":         "26 Sep, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/kinda-sorta-looks-like-the-internet",
+            "word-count":   "194"
         },
         
         {
-            "title":    "Automating Feelings",
-            "date":     "23 Sep, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/automating-feelings"
+            "title":        "Automating Feelings",
+            "date":         "23 Sep, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/automating-feelings",
+            "word-count":   "256"
         },
         
         {
-            "title":    "Once Again, It’s About Putting the User First",
-            "date":     "12 Aug, 2013",
-            "url":      "http://jim-nielsen.com/blog/posts/putting-the-user-first"
+            "title":        "Once Again, It’s About Putting the User First",
+            "date":         "12 Aug, 2013",
+            "url":          "http://jim-nielsen.com/blog/posts/putting-the-user-first",
+            "word-count":   "512"
         }
         
     ]    

@@ -1,82 +1,94 @@
 {% case include.id %}
-
+    
     {% when 'dribbble' %}
-        {% for shot in site.data.dribbble.shots | limit: 4 %}
-            <li>
-                <a href="{{shot.url}}">
-                    <img src="
-                        {% if shot.image_400_url %}
-                            {{ shot.image_400_url }}
-                        {% else %}
-                            {{ shot.image_url }}
-                        {% endif %}" 
+        {% for shot in site.data.dribbble.shots | limit: 10 %}
+            <li class="item">
+                <a class="item__img" href="{{ shot.url }}">
+                    <img src="{{ shot.image_url }}" 
                         alt="{{ shot.title }}" 
                         title="{{ shot.title }} on Dribbble" 
                         width="400" 
                         height="300" />
                 </a>
+                <div class="item__content">
+                    <h2 class="title"><a href="{{ shot.url }}" class="link">{{ shot.title }}</a></h2>
+                    <p class="byline">{{ shot.created_at | date: "%-d %b, %Y" }}</p>
+                    <p class="description">{{ shot.description }}</p>
+                </div>
             </li>
         {% endfor %}
 
 
     {% when 'published-articles' %}
         {% for article in site.data.published-articles %}
-            <li>
-                <a href="{{ article.link }}">
-                    <h2 class="link">{{article.title}}</h2>
-                    <ul class="meta">
-                        <li class="publish-date">{{ article.date | date: "%-d %b, %Y" }}</li>
-                        <li class="publisher">{{ article.publisher }}</li>
-                        {% if article.reader-fav %}
-                            <li class="readers-fav">readers’ fav</li>
-                        {% endif %}
-                    </ul>
+            {% comment %} 
+                Convert the title to hyphen-sepearted-name
+                Then get the file extension, if there is one, otherwise use .png
+            {% endcomment %}
+            {% assign thumbnail = article.title | downcase | replace:' ','-' | replace:':','' | replace: ',','' | replace:'“','' | replace:'”','' | replace:'‘','' | replace:'’','' %}
+            {% if article.image-type %}
+                {% assign thumbnail = thumbnail | append:'.jpg' %}
+            {% else %}
+                {% assign thumbnail = thumbnail | append:'.png' %}
+            {% endif %}
+
+
+            <li class="item">
+                <a class="item__img" href="{{ article.link }}">
+                    <img src="{{ site.imageurl }}/published-articles/{{ thumbnail }}" />  
                 </a>
-                {% if article.tweets %}
-                    {% include tweets.html tweets = article.tweets %}
-                {% endif %}
+                <div class="item__content">
+                    <a href="{{ article.link }}">
+                        <h2 class="title link">{{article.title}}</h2>
+                        <p class="byline">
+                            {% if article.reader-fav %}
+                                <em class="readers-fav"> readers’ fav</em>
+                            {% endif %}
+                            <time>{{ article.date | date: "%-d %b, %Y" }}</time> via {{ article.publisher }}
+                        </p>
+                    </a> 
+                    {% if article.tweets %}
+                        {% include tweets.html tweets = article.tweets %}
+                    {% endif %}
+                </div>
             </li>
         {% endfor %}
 
 
     {% when 'recent-projects' %}
         {% for project in site.data.recent-projects %}
-            <li>        
-                <a href="{{ project.link }}" class="link">{{ project.title }}</a>
+            <li class="item">        
+                <a class="item__img" href="{{ project.link }}" class="link">
+                    <img src="{{ site.imageurl }}/recent-projects/{{ project.id }}.png" width="70" height="70" />
+                    
+                </a>
+                <div class="item__content">
+                    <a href="{{ project.link }}">
+                        <h2 class="title link">{{ project.title }}</h2>
+                        <p class="byline">{{ project.link-pretty }}</p>
+                    </a>
+                    <p class="description">{{ project.description }}</p>
 
-                <ul>
-                    <li class="thumbnail">
-                        <a href="{{ project.link }}">
-                            <img src="{{ site.imageurl }}/{{ project.id }}.png" width="400" height="300" />
-                        </a>
-                    </li>
-                    <li class="meta">
-                        {{ project.description }} 
-                        {% if project.cta %}
-                            <a href="{{ project.cta }}" class="highlight">Case study &raquo;</a>
-                        {% endif %}
-                    </li>
-                    <li>
-                        {% if project.tweets %}
-                            {% include tweets.html tweets = project.tweets %}
-                        {% endif %}
-                    </li>
-                </ul>
-                
+                    {% if project.cta %}
+                        <a href="{{ project.cta }}" class="highlight">Case study &raquo;</a>
+                    {% endif %}
+                    {% if project.tweets %}
+                        {% include tweets.html tweets = project.tweets %}
+                    {% endif %}
+                </div>                
             </li>
         {% endfor %}
 
     {% when 'blog' %}
-        {% for post in site.data.blog.posts limit:5 %}
-            <li>
-                <a href="{{ post.url }}">
-                    <span class="link">{{ post.title }}</span>
-                    <ul class="meta">
-                        <li><time>{{ post.date | date: "%-d %b, %Y"}}</time></li>
-                    </ul>
+        {% for post in site.data.blog.posts limit:10 %}
+            <li class="item">
+                <div class="item__img item__img--word-count">
+                    <p><b>{{ post.word-count }}</b> words</p>
+                </div>
+                <a class="item__content" href="{{ post.url }}">
+                    <h2 class="title link">{{ post.title }}</h2>
+                    <p class="byline"><time>{{ post.date | date: "%-d %b, %Y"}}</time></p>
                 </a>
             </li>
         {% endfor %}
-
-
 {% endcase %}

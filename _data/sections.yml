@@ -2,16 +2,12 @@
 -
     id: blog
     title: "Blog"
-    icon: blog
 - 
     id: dribbble
     title: "Dribbble"
-    icon: dribbble
 - 
     id: published-articles
     title: "Published Articles"
-    icon: published-articles
 -
     id: recent-projects
     title: "Recent Projects"
-    icon: hammer

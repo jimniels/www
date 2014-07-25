@@ -7,8 +7,8 @@ title: Jim Nielsen, Designer / Problem Solver
 <main>
     {% for section in site.data.sections %}
         <article class="section clearfix" id="{{ section.id }}">
-            <h1 class="l-left section__header icon icons-{{ section.icon }}">{{ section.title }}</h1>
-            <ul class="l-right section__content {% if section.id == 'dribbble'%}dribbble{% endif %}">
+            <h1 class="section__header">{{ section.title }}</h1>
+            <ul class="section__content">
                 {% include sections.html id=section.id %}
             </ul>
         </article>

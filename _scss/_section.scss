@@ -1,110 +1,177 @@
+//
+//
+//  Sections
+//  ==============================
+//
 .section {
-    
     @include clearfix;
     position: relative;
-    font-size: #{18 / $font-size-base}em;
+    margin-bottom: px-to-em(45);
+    overflow: hidden;
 
-    @include respond-to(large) {
-        border-top: 1px solid #ccc;
+    //
+    //  Condensed
+    //  -----
+    &.section--condensed {
+
+        .section__content {
+            max-height: px-to-em(400);
+            overflow: hidden;
+        }
+
+        .section__trigger:after {
+            display: block;
+        }
     }
 }
 
+//
+//  Section Trigger
+//  -----
+.section__trigger {
+    background: #fff;
+    left: 0;
+    margin-left: $padding-left + 5;
+    padding: px-to-em(15) 0;
+
+    &:after {
+        content: '';
+        display: none;
+        height: px-to-em(100);
+        width: 100%;
+        bottom: 3em;
+        left: 0;
+        position: absolute;
+        @include background-image(linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)));
+    }
+
+    a {
+        font-size: px-to-em(14);
+        color: $color-link;
+
+        &:after {
+            content: ' \25BE';
+            position: relative;
+            left: px-to-em(1, 14);
+            top: px-to-em(-1, 14);
+        }
+    }
+}
+
+//
+//  Section Header
+//  -----
 .section__header {
-    font-weight: 700;
-    border-top: 2px solid #333;
-    border-bottom: 2px solid #333;
-    padding: 1em 0;
+    font-size: #{24 / $font-size-base}em;
+    border-bottom: 1px solid $color-border-light;
+    padding: px-to-em($spacing-constant, 24) 0 px-to-em($spacing-constant, 24) $padding-left;
+    color: $color-highlight;
 
-    @include respond-to(large) {
-        padding-top: .75em; 
-        border-top: 2px solid #000;
-        border-bottom: 0;
-        position: relative; 
-        top: -1px;
-        font-weight: 700;
-    }
-
-    &.icon:before {
-        font-size: 1.325em;
-        margin-right: .25em;
-        position: relative;
-        top: .15em;
+    @include respond-to(medium) {
+        padding-left: ($padding-left / 2);
     }
 }
 
+//
+//  Section Content
+//  -----
 .section__content {
     position: relative;
+    margin-left: $padding-left + 5;
+
+    @include respond-to(medium) {
+        margin-left: ($padding-left / 2);
+    }
 
     > li {
-        padding: 1em 0;
-        border-top: 1px solid $color-border-light;
+        padding: px-to-em($spacing-constant) 0;
+        padding-right: px-to-em($spacing-constant);
+        border-bottom: 1px solid $color-border-light;
         overflow: hidden;
-
-        &:first-child {
-            border: 0;
-        }
     }
+}
 
-    #scriptogram &,
-    #published-articles &,
-    #recent-projects & {
-        > li {
-            &:before {
-                //content: '\00BB'; //00B7 middot
-                position: absolute;
-                left: -3%; 
+//
+//
+//  Content Item
+//  ==============================
+//
 
-                @media screen and (max-width: 600px) {
-                    left: -5%;
-                }               
-            }
-        }
-    }
 
-    // Dribble List
+//
+//  Item Image
+//  -----
+.item__img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    float: left;
+
     #dribbble & {
-        min-height: 200px;
+        width: 200px;
+        height: 150px;
 
-        li {
-            border-top: 0;
-            
-            &:nth-child(odd) {
-                width: 48%;
-                float: left;
-            }
-            &:nth-child(even) {
-                width: 48%;
-                float: right;
-            }
-
-            @media screen and (max-width: 650px) {
-                float: none !important;
-                width: 100% !important;
-            }
+        @include respond-to(medium) {
+            width: 100%;
+            height: auto;
         }
     }
 }
 
-.meta {
-    #published-articles & {
-        li {
-            float: left;
-            margin-right: .825em;
+.item__img--word-count {
+    background: #333;
+    text-align: center;
+    line-height: 1;
+    
+    p {
+        margin-top: px-to-em(20, 14);
+        font-size: px-to-em(14);
+        color: #777;
+    }
 
-            &:after {
-                content: '\00B7';
-                margin-left: .825em;
-                color: #ccc;
-            }
+    b {
+        font-size: 1.28575em;
+        color: white;
+        display: block;
+    }
+}
 
-            &:last-child {
-                margin-right: 0;
-                
-                &:after {
-                    content: '';
-                    margin-left: 0;
-                }
-            }
+//
+//  Item Content
+//  -----
+.item__content {
+    display: block;
+    margin-left: 70px + $spacing-constant;
+    margin-top: px-to-em(3);
+
+    @include respond-to(medium) {
+        margin-top: 0;
+    }
+
+    #dribbble & {
+        margin-left: 200px + $spacing-constant;
+
+        @include respond-to(medium) {
+            margin-left: 0;
         }
     }
+}
+
+//
+//
+//  General Typography
+//  ==============================
+//
+.title {
+    font-size: px-to-em(18);
+}
+
+.byline {
+    font-size: px-to-em(14);
+    color: #bbb;
+}
+
+.description {
+    font-size: px-to-em(14);
+    color: #777;
 }
