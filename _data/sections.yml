@@ -2,12 +2,17 @@
 -
     id: blog
     title: "Blog"
-- 
+    url: "http://jim-nielsen.com/blog"
+-
     id: dribbble
     title: "Dribbble"
-- 
+    url: "http://dribbble.com/jimniels"
+-
     id: published-articles
     title: "Published Articles"
 -
     id: recent-projects
     title: "Recent Projects"
+-
+    id: history
+    title: "Employment & Education"

@@ -7,7 +7,11 @@ title: Jim Nielsen, Designer / Problem Solver
 <main>
     {% for section in site.data.sections %}
         <article class="section clearfix" id="{{ section.id }}">
-            <h1 class="section__header">{{ section.title }}</h1>
+            <h1 class="section__header">
+                {% if section.url %}<a href="{{ section.url }}">{% endif %}
+                    {{ section.title }}
+                {% if section.url %}</a>{% endif %}
+            </h1>
             <ul class="section__content">
                 {% include sections.html id=section.id %}
             </ul>

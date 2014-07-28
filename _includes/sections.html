@@ -1,13 +1,27 @@
 {% case include.id %}
-    
+
+    {% when 'history' %}
+        {% for item in site.data.history %}
+            <li class="item">
+                <div class="item__img">
+                    <img src="{{ site.imageurl }}/published-articles/{{ item.thumbnail }}" />
+                </div>
+                <div class="item__content">
+                    <h2 class="title">{{ item.title }}</a></h2>
+                    <p class="byline">{{ item.byline }}</p>
+                    <p class="description">{{ item.description }}</p>
+                </div>
+            </li>
+        {% endfor %}
+
     {% when 'dribbble' %}
         {% for shot in site.data.dribbble.shots | limit: 10 %}
             <li class="item">
                 <a class="item__img" href="{{ shot.url }}">
-                    <img src="{{ shot.image_url }}" 
-                        alt="{{ shot.title }}" 
-                        title="{{ shot.title }} on Dribbble" 
-                        width="400" 
+                    <img src="{{ shot.image_url }}"
+                        alt="{{ shot.title }}"
+                        title="{{ shot.title }} on Dribbble"
+                        width="400"
                         height="300" />
                 </a>
                 <div class="item__content">
@@ -21,7 +35,7 @@
 
     {% when 'published-articles' %}
         {% for article in site.data.published-articles %}
-            {% comment %} 
+            {% comment %}
                 Convert the title to hyphen-sepearted-name
                 Then get the file extension, if there is one, otherwise use .png
             {% endcomment %}
@@ -35,7 +49,7 @@
 
             <li class="item">
                 <a class="item__img" href="{{ article.link }}">
-                    <img src="{{ site.imageurl }}/published-articles/{{ thumbnail }}" />  
+                    <img src="{{ site.imageurl }}/published-articles/{{ thumbnail }}" />
                 </a>
                 <div class="item__content">
                     <a href="{{ article.link }}">
@@ -46,7 +60,7 @@
                             {% endif %}
                             <time>{{ article.date | date: "%-d %b, %Y" }}</time> via {{ article.publisher }}
                         </p>
-                    </a> 
+                    </a>
                     {% if article.tweets %}
                         {% include tweets.html tweets = article.tweets %}
                     {% endif %}
@@ -57,10 +71,10 @@
 
     {% when 'recent-projects' %}
         {% for project in site.data.recent-projects %}
-            <li class="item">        
+            <li class="item">
                 <a class="item__img" href="{{ project.link }}" class="link">
                     <img src="{{ site.imageurl }}/recent-projects/{{ project.id }}.png" width="70" height="70" />
-                    
+
                 </a>
                 <div class="item__content">
                     <a href="{{ project.link }}">
@@ -75,7 +89,7 @@
                     {% if project.tweets %}
                         {% include tweets.html tweets = project.tweets %}
                     {% endif %}
-                </div>                
+                </div>
             </li>
         {% endfor %}
 

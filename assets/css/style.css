@@ -387,19 +387,33 @@ img.loading {
     padding-left: 5%;
   }
 }
+/* line 75, ../../_scss/_section.scss */
+.section__header a:after {
+  content: attr(href) " \25B8";
+  font-size: 0.58333em;
+  color: #bbb;
+  float: right;
+  margin-right: 5%;
+  margin-top: 0.625em;
+}
+/* line 83, ../../_scss/_section.scss */
+.section__header a:hover:after {
+  color: #0088cc;
+  text-decoration: underline;
+}
 
-/* line 78, ../../_scss/_section.scss */
+/* line 93, ../../_scss/_section.scss */
 .section__content {
   position: relative;
   margin-left: 15%;
 }
 @media only screen and (max-width: 37.5em) {
-  /* line 78, ../../_scss/_section.scss */
+  /* line 93, ../../_scss/_section.scss */
   .section__content {
     margin-left: 5%;
   }
 }
-/* line 86, ../../_scss/_section.scss */
+/* line 101, ../../_scss/_section.scss */
 .section__content > li {
   padding: 1.25em 0;
   padding-right: 1.25em;
@@ -407,80 +421,80 @@ img.loading {
   overflow: hidden;
 }
 
-/* line 104, ../../_scss/_section.scss */
+/* line 119, ../../_scss/_section.scss */
 .item__img {
   display: block;
   width: 70px;
   height: 70px;
   float: left;
 }
-/* line 110, ../../_scss/_section.scss */
+/* line 125, ../../_scss/_section.scss */
 #dribbble .item__img {
   width: 200px;
   height: 150px;
 }
 @media only screen and (max-width: 37.5em) {
-  /* line 110, ../../_scss/_section.scss */
+  /* line 125, ../../_scss/_section.scss */
   #dribbble .item__img {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 121, ../../_scss/_section.scss */
+/* line 136, ../../_scss/_section.scss */
 .item__img--word-count {
   background: #333;
   text-align: center;
   line-height: 1;
 }
-/* line 126, ../../_scss/_section.scss */
+/* line 141, ../../_scss/_section.scss */
 .item__img--word-count p {
   margin-top: 1.42857em;
   font-size: 0.875em;
   color: #777;
 }
-/* line 132, ../../_scss/_section.scss */
+/* line 147, ../../_scss/_section.scss */
 .item__img--word-count b {
   font-size: 1.28575em;
   color: white;
   display: block;
 }
 
-/* line 142, ../../_scss/_section.scss */
+/* line 157, ../../_scss/_section.scss */
 .item__content {
   display: block;
   margin-left: 90px;
   margin-top: 0.1875em;
 }
 @media only screen and (max-width: 37.5em) {
-  /* line 142, ../../_scss/_section.scss */
+  /* line 157, ../../_scss/_section.scss */
   .item__content {
     margin-top: 0;
   }
 }
-/* line 151, ../../_scss/_section.scss */
+/* line 166, ../../_scss/_section.scss */
 #dribbble .item__content {
   margin-left: 220px;
 }
 @media only screen and (max-width: 37.5em) {
-  /* line 151, ../../_scss/_section.scss */
+  /* line 166, ../../_scss/_section.scss */
   #dribbble .item__content {
     margin-left: 0;
   }
 }
 
-/* line 165, ../../_scss/_section.scss */
+/* line 180, ../../_scss/_section.scss */
 .title {
   font-size: 1.125em;
 }
 
-/* line 169, ../../_scss/_section.scss */
+/* line 184, ../../_scss/_section.scss */
 .byline {
   font-size: 0.875em;
   color: #bbb;
 }
 
-/* line 174, ../../_scss/_section.scss */
+/* line 189, ../../_scss/_section.scss */
 .description {
   font-size: 0.875em;
   color: #777;
