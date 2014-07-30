@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
  * Dribbble
  *
  */
@@ -27,10 +27,14 @@ if ( $dribbble['shots'][0]['title'] != '' || $dribbble['shots'][0]['title'] != n
     // see if data is up to date
     $file = 'dribbble.yml';
     $oldDribbble = json_decode(file_get_contents($file), true);
-    
+
     if( $dribbble['shots'][0]['title'] == $oldDribbble['shots'][0]['title'] ){
         echo "NOTE: Dribbble data is up to date. \n";
     } else {
+        // Strip HTML tags on description
+        for ($i=0; $i < count($dribbble['shots']); $i++) {
+            $dribbble['shots'][$i]['description'] = strip_tags($dribbble['shots'][$i]['description']);
+        }
         if ( file_exists($file) ) {
             $f = file_put_contents($file, stripslashes_deep( json_encode($dribbble) ) );
             if($f) {
@@ -43,10 +47,10 @@ if ( $dribbble['shots'][0]['title'] != '' || $dribbble['shots'][0]['title'] != n
         }
     }
 } else {
-    echo "WARNING: Dribbble data could not be verified. Something wrong with Dribbble API response. \n";   
+    echo "WARNING: Dribbble data could not be verified. Something wrong with Dribbble API response. \n";
 }
 
-/* 
+/*
  * BLOG
  *
  */
@@ -60,7 +64,7 @@ $response = getBlogJSON();
 $response_array = json_decode($response, true);
 
 // Verify and write data
-if ($response_array['posts'][0]['title'] != '' || 
+if ($response_array['posts'][0]['title'] != '' ||
     $response_array['posts'][0]['title'] != null) {
 
     echo "Verifying Blog ... \n";
@@ -79,5 +83,5 @@ if ($response_array['posts'][0]['title'] != '' ||
         echo "WARNING: Could not write to blog cache file. File does not exist? \n";
     }
 } else {
-    echo "WARNING: Blog data could not be verified. Something wrong with XML Feed? \n";   
+    echo "WARNING: Blog data could not be verified. Something wrong with XML Feed? \n";
 }
