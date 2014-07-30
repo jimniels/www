@@ -77,15 +77,17 @@
 
                 </a>
                 <div class="item__content">
-                    <a href="{{ project.link }}">
-                        <h2 class="title link">{{ project.title }}</h2>
-                        <p class="byline">{{ project.link-pretty }}</p>
-                    </a>
-                    <p class="description">{{ project.description }}</p>
 
-                    {% if project.cta %}
-                        <a href="{{ project.cta }}" class="highlight">Case study &raquo;</a>
-                    {% endif %}
+                    <h2 class="title link">
+                        <a href="{{ project.link }}" class="link">{{ project.title }}</a>
+                        {% if project.cta %}
+                            &nbsp;| &nbsp;<a href="{{ project.cta }}" class="link">Case Study</a>
+                        {% endif %}
+                    </h2>
+
+
+                    <p class="byline"><a href="{{ project.link }}">{{ project.link-pretty }}</a></p>
+                    <p class="description">{{ project.description }}</p>
                     {% if project.tweets %}
                         {% include tweets.html tweets = project.tweets %}
                     {% endif %}

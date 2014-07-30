@@ -1,17 +1,21 @@
 .tweets {
     position: relative;
     margin: px-to-em($spacing-constant) 0;
+
+    @include respond-to(medium) {
+        clear: both;
+    }
 }
 
 .tweet {
     position: relative;
     font-size: #{14 / $font-size-base}em;
     padding: .75em 0 0 .75em;
-    border-left: 3px solid $color-border-light; 
+    border-left: 3px solid $color-border-light;
 
     &:first-child {
         padding-top: 0;
-    }   
+    }
 }
 
 .tweet-screen-name {

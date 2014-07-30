@@ -22,15 +22,15 @@ pre a:hover {text-decoration: underline;}
                 "blog_url": "<a href="http://scriptogr.am/jimniels">http://scriptogr.am/jimniels</a>"
             },
             "blog_posts": [
-                {% for post in site.data.blog.posts limit:5 %}{
+                {% for post in site.data.blog.posts limit:10 %}{
                     "title": "{{ post.title }}",
                     "url": "<a href="{{ post.url }}">{{ post.url }}</a>",
                     "date": "{{ post.date | date: "%F" }}"
                 }{% unless forloop.last %},{% endunless %}
-                {% endfor %} 
+                {% endfor %}
             ],
             "dribbble_posts": [
-                {% for shot in site.data.dribbble.shots limit:5 %}{
+                {% for shot in site.data.dribbble.shots limit:10 %}{
                     "title": "{{ shot.title }}",
                     "url": "<a href="{{ shot.url }}">{{ shot.url }}</a>",
                     "date": "{{ shot.created_at | date: "%F" }}"

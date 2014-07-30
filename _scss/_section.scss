@@ -15,7 +15,7 @@
     &.section--condensed {
 
         .section__content {
-            max-height: px-to-em(400);
+            max-height: px-to-em(500);
             overflow: hidden;
         }
 
@@ -33,6 +33,10 @@
     left: 0;
     margin-left: $padding-left + 5;
     padding: px-to-em(15) 0;
+
+    @include respond-to(medium) {
+        margin-left: ($padding-left / 2);
+    }
 
     &:after {
         content: '';
@@ -106,6 +110,12 @@
     }
 }
 
+#recent-projects {
+    .title .link + .link {
+        color: $color-link;
+    }
+}
+
 //
 //
 //  Content Item
@@ -130,6 +140,11 @@
             width: 100%;
             height: auto;
         }
+    }
+
+    @include respond-to(medium) {
+        margin-right: #{$spacing-constant}px;
+        margin-bottom: #{$spacing-constant}px;
     }
 }
 
@@ -161,6 +176,7 @@
 
     @include respond-to(medium) {
         margin-top: 0;
+        margin-left: 0;
     }
 
     #dribbble & {

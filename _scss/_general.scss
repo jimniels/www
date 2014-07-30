@@ -1,8 +1,8 @@
-*, 
-*:before, 
+*,
+*:before,
 *:after {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -13,6 +13,7 @@ body {
 
     @include respond-to(medium) {
         font-size: px-to-em(14);
+        background: #e9e9e9;
     }
 }
 
@@ -23,7 +24,7 @@ a {
     // <a.link>Text
     &.link:hover {
         color: $color-link;
-        text-decoration: underline; 
+        text-decoration: underline;
     }
     // <a>
     //  <span.link>Text to look like link
@@ -31,7 +32,7 @@ a {
     &:hover {
         .link {
             color: $color-link;
-            text-decoration: underline;   
+            text-decoration: underline;
         }
     }
 }
