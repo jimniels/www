@@ -1,5 +1,5 @@
 name: "Jim Nielsen, Designer"
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 baseurl: ""
 imageurl: assets/img
