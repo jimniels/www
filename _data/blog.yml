@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Logo Integrity Brought into Focus",
+            "date":         "02 Sep, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/logo-integrity",
+            "word-count":   "2912"
+        },
+        
+        {
             "title":        "Defining Beauty on the Web",
             "date":         "11 Mar, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web",
@@ -65,13 +72,6 @@
             "date":         "23 Sep, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/automating-feelings",
             "word-count":   "256"
-        },
-        
-        {
-            "title":        "Once Again, It’s About Putting the User First",
-            "date":         "12 Aug, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/putting-the-user-first",
-            "word-count":   "512"
         }
         
     ]    
