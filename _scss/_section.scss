@@ -14,13 +14,30 @@
     //  -----
     &.section--condensed {
 
+        // Default height
         .section__content {
-            max-height: px-to-em(500);
+            max-height: px-to-em(300);
             overflow: hidden;
         }
 
         .section__trigger:after {
             display: block;
+        }
+        
+        &#dribbble {
+            .section__content {
+                max-height: px-to-em(850);
+            }
+        }
+        &#published-articles {
+            .section__content {
+                max-height: px-to-em(1250);
+            }
+        }
+        &#recent-projects {
+            .section__content {
+                max-height: px-to-em(950);
+            }
         }
     }
 }
