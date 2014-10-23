@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Kindling Rubber Stamp",
+            "date":         "23 Oct, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/kindling-rubber-stamp",
+            "word-count":   "464"
+        },
+        
+        {
             "title":        "Logo Integrity Brought into Focus",
             "date":         "02 Sep, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/logo-integrity",
@@ -65,13 +72,6 @@
             "date":         "26 Sep, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/kinda-sorta-looks-like-the-internet",
             "word-count":   "194"
-        },
-        
-        {
-            "title":        "Automating Feelings",
-            "date":         "23 Sep, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/automating-feelings",
-            "word-count":   "256"
         }
         
     ]    
