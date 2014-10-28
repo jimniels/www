@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Creating Apple Touch Icons",
+            "date":         "28 Oct, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/creating-apple-touch-icons",
+            "word-count":   "293"
+        },
+        
+        {
             "title":        "Kindling Rubber Stamp",
             "date":         "23 Oct, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/kindling-rubber-stamp",
@@ -65,13 +72,6 @@
             "date":         "26 Sep, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/kindlingapp-home-page-redesign",
             "word-count":   "466"
-        },
-        
-        {
-            "title":        "The “Kinda-Sorta Looks Like the Internet” Internet",
-            "date":         "26 Sep, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/kinda-sorta-looks-like-the-internet",
-            "word-count":   "194"
         }
         
     ]    
