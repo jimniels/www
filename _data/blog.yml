@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Words Have Meaning: Creating the “Let’s Talk Innovation” Page",
+            "date":         "19 Nov, 2014",
+            "url":          "http://jim-nielsen.com/blog/posts/innovation-talk-page",
+            "word-count":   "652"
+        },
+        
+        {
             "title":        "Designing a Successful Transaction Receipt",
             "date":         "04 Nov, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/successful-transaction-receipt",
@@ -65,13 +72,6 @@
             "date":         "21 Oct, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/wireframes-and-gravity",
             "word-count":   "267"
-        },
-        
-        {
-            "title":        "Ostentatious Design & Profanity",
-            "date":         "14 Oct, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/ostentatious-design-and-profanity",
-            "word-count":   "471"
         }
         
     ]    
