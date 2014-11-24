@@ -39,7 +39,7 @@
                 Convert the title to hyphen-sepearted-name
                 Then get the file extension, if there is one, otherwise use .png
             {% endcomment %}
-            {% assign thumbnail = article.title | downcase | replace:' ','-' | replace:':','' | replace: ',','' | replace:'“','' | replace:'”','' | replace:'‘','' | replace:'’','' %}
+            {% assign thumbnail = article.title | downcase | replace:' ','-' | replace:':','' | replace:';','' | replace: ',','' | replace:'“','' | replace:'”','' | replace:'‘','' | replace:'’','' %}
             {% if article.image-type %}
                 {% assign thumbnail = thumbnail | append:'.jpg' %}
             {% else %}
