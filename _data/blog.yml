@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Team Colors 2.0",
+            "date":         "16 Jan, 2015",
+            "url":          "http://jim-nielsen.com/blog/posts/team-colors-2-0",
+            "word-count":   "982"
+        },
+        
+        {
             "title":        "Words Have Meaning: Creating the “Let’s Talk Innovation” Page",
             "date":         "19 Nov, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/innovation-talk-page",
@@ -65,13 +72,6 @@
             "date":         "06 Nov, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/evolution-of-creativity",
             "word-count":   "483"
-        },
-        
-        {
-            "title":        "Wireframes and Gravity",
-            "date":         "21 Oct, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/wireframes-and-gravity",
-            "word-count":   "267"
         }
         
     ]    
