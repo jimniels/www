@@ -1,5 +1,13 @@
 [
     {
+        "id": "team-colors",
+        "title": "Team Colors",
+        "link": "http://teamcolors.arc90.com",
+        "link-pretty": "teamcolors.arc90.com",
+        "description": "A color reference of your favorite major league sports teams.",
+        "cta": "http://jim-nielsen.com/blog/posts/team-colors-2-0"
+    },
+    {
         "id": "logo-integrity",
         "title": "Experiment: Logo Integrity in Focus",
         "link": "http://jim-nielsen.com/logo-integrity",
@@ -121,14 +129,6 @@
         "link": "http://macicongallery.com",
         "link-pretty": "macicongallery.com",
         "description": "A gallery showcasing great icon designs from the Mac App Store."
-    },
-    {
-        "id": "team-colors",
-        "title": "Team Colors",
-        "link": "http://teamcolors.arc90.com",
-        "link-pretty": "teamcolors.arc90.com",
-        "description": "A color reference of your favorite major league sports teams.",
-        "cta": "http://jim-nielsen.com/blog/posts/teamcolors/"
     },
     {
         "id": "css-off-2012",
