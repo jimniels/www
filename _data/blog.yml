@@ -5,10 +5,17 @@
     "posts": [
         
         {
+            "title":        "Everything But Visual Design",
+            "date":         "05 Feb, 2015",
+            "url":          "http://jim-nielsen.com/blog/posts/everything-but-visual-design",
+            "word-count":   "475"
+        },
+        
+        {
             "title":        "Team Colors 2.0",
             "date":         "16 Jan, 2015",
             "url":          "http://jim-nielsen.com/blog/posts/team-colors-2-0",
-            "word-count":   "982"
+            "word-count":   "984"
         },
         
         {
@@ -65,13 +72,6 @@
             "date":         "18 Dec, 2013",
             "url":          "http://jim-nielsen.com/blog/posts/ben-franklin-open-source-contributor",
             "word-count":   "248"
-        },
-        
-        {
-            "title":        "The Evolution of Creativity",
-            "date":         "06 Nov, 2013",
-            "url":          "http://jim-nielsen.com/blog/posts/evolution-of-creativity",
-            "word-count":   "483"
         }
         
     ]    
