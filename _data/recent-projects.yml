@@ -5,7 +5,36 @@
         "link": "http://teamcolors.arc90.com",
         "link-pretty": "teamcolors.arc90.com",
         "description": "A color reference of your favorite major league sports teams.",
-        "cta": "http://jim-nielsen.com/blog/posts/team-colors-2-0"
+        "cta": "http://jim-nielsen.com/blog/posts/team-colors-2-0",
+        "tweets": [
+            {
+                "id": 560801635694551040,
+                "content": "http://teamcolors.arc90.com/  — list of loads of sports team hex colours & SVG logos, by @jimniels. So so useful.",
+                "author" : {
+                    "handle": "jongold",
+                    "name": "@jongold",
+                    "followers": 6487
+                }
+            },
+            {
+                "id": 545374325831122944,
+                "content": "Find of the day: hex codes for all major-league teams http://bit.ly/16uf5kY  #infographics",
+                "author" : {
+                    "handle": "tessavanderhart",
+                    "name": "Tessa Vanderhart",
+                    "followers": 2134
+                }
+            },
+            {
+                "id": 545374325831122944,
+                "content": "A bit too happy to find this, thanks @jimniels - Sports Team Hex Codes finder http://bit.ly/1rVqWli  #stillageekatheart",
+                "author" : {
+                    "handle": "seancallanan",
+                    "name": "Sean Callanan",
+                    "followers": 15000
+                }
+            }
+        ]
     },
     {
         "id": "logo-integrity",
