@@ -1,4 +1,5 @@
 name: "Jim Nielsen, Designer"
+description: "Jim Nielsen, a web and graphic designer working for an enterprise software startup in NYC"
 markdown: redcarpet
 highlighter: pygments
 baseurl: ""
