@@ -16,7 +16,7 @@
 
         // Default height
         .section__content {
-            max-height: px-to-em(300);
+            max-height: px-to-em(400);
             overflow: hidden;
         }
 
@@ -26,7 +26,7 @@
         
         &#dribbble {
             .section__content {
-                max-height: px-to-em(850);
+                max-height: px-to-em(1250);
             }
         }
         &#published-articles {
