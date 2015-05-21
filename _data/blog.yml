@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Skinning the Idea Poster Anew",
+            "date":         "20 May, 2015",
+            "url":          "http://jim-nielsen.com/blog/posts/skinning-the-idea-poster-anew",
+            "word-count":   "410"
+        },
+        
+        {
             "title":        "Conceiving Blog Post Artwork",
             "date":         "04 May, 2015",
             "url":          "http://jim-nielsen.com/blog/posts/conceiving-blog-post-artwork",
@@ -65,13 +72,6 @@
             "date":         "11 Mar, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web",
             "word-count":   "700"
-        },
-        
-        {
-            "title":        "A Logo Is an Image, The Image of a Company",
-            "date":         "03 Mar, 2014",
-            "url":          "http://jim-nielsen.com/blog/posts/logo-the-image-of-a-company",
-            "word-count":   "173"
         }
         
     ]    
