@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "A Web of People",
+            "date":         "29 Jun, 2015",
+            "url":          "http://jim-nielsen.com/blog/posts/a-web-of-people",
+            "word-count":   "1974"
+        },
+        
+        {
             "title":        "Skinning the Idea Poster Anew",
             "date":         "20 May, 2015",
             "url":          "http://jim-nielsen.com/blog/posts/skinning-the-idea-poster-anew",
@@ -65,13 +72,6 @@
             "date":         "02 Sep, 2014",
             "url":          "http://jim-nielsen.com/blog/posts/logo-integrity",
             "word-count":   "2913"
-        },
-        
-        {
-            "title":        "Defining Beauty on the Web",
-            "date":         "11 Mar, 2014",
-            "url":          "http://jim-nielsen.com/blog/posts/defining-beauty-on-the-web",
-            "word-count":   "700"
         }
         
     ]    
