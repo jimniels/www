@@ -1,5 +1,45 @@
 [
     {
+        "title": "Connecting an API-Driven Web App with Javascript",
+        "publisher": "webdesign tuts+",
+        "publisher-link": "http://webdesign.tutsplus.com/",
+        "publish-date": "Aug 24, 2015",
+        "date": 1440374400,
+        "link": "http://webdesign.tutsplus.com/tutorials/connecting-an-api-driven-web-app-with-javascript--cms-24576",
+        "excerpt": "Having planned, designed, and marked-up our app, it looks just the way we want, but it doesn’t actually do anything yet. So, let’s work on adding some JavaScript to make the app interactive.",
+        "tweets": []
+    },
+    {
+        "title": "Building an API-Driven Web App With HTML and CSS",
+        "publisher": "webdesign tuts+",
+        "publisher-link": "http://webdesign.tutsplus.com/",
+        "publish-date": "Aug 20, 2015",
+        "date": 1440028800,
+        "link": "http://webdesign.tutsplus.com/tutorials/building-an-api-driven-web-app-with-html-and-css--cms-24575",
+        "excerpt": "Having planned our app and designed some visual mocks to help guide us in building our little app for the browser, let’s get to the exciting part and start building!",
+        "tweets": []
+    },
+    {
+        "title": "Designing an API-Driven Web App in Sketch",
+        "publisher": "webdesign tuts+",
+        "publisher-link": "http://webdesign.tutsplus.com/",
+        "publish-date": "Aug 18, 2015",
+        "date": 1439856000,
+        "link": "http://webdesign.tutsplus.com/tutorials/designing-an-api-driven-web-app-in-sketch--cms-24574",
+        "excerpt": "After accounting for all the elements of our API-driven app, including its different states, we can confidently begin creating visual mockups for each element and its corresponding states.",
+        "tweets": []
+    },
+    {
+        "title": "Planning a Basic API-Driven Web App",
+        "publisher": "webdesign tuts+",
+        "publisher-link": "http://webdesign.tutsplus.com/",
+        "publish-date": "Aug 13, 2015",
+        "date": 1439424000,
+        "link": "http://webdesign.tutsplus.com/tutorials/planning-a-basic-api-driven-web-app--cms-24129",
+        "excerpt": "Interfacing with an API is a big part of web development and design these days. APIs help provide a rich, dynamic experience in the browser. Rather than static markup and images, you can dynamically push and pull data from a server and render it in the browser based on the experience you want to provide for the user. In this tutorial, we’ll look at how to build an API-driven app.",
+        "tweets": []
+    },
+    {
         "title": "Undress to Impress; Check Your Websites Without CSS",
         "publisher": "webdesign tuts+",
         "publisher-link": "http://webdesign.tutsplus.com/",
@@ -113,7 +153,7 @@
                     "name": "Stef. Sullivan Rewis",
                     "followers": 8831
                 }
-            }, 
+            },
             {
                 "id": 353363447095898116,
                 "content": "I agree with this @nettuts article 100%. Name your Sass variables general -> specific. http://bit.ly/128yjaq #maintainability",
