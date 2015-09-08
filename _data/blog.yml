@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Reading Notes, August 2015",
+            "date":         "08 Sep, 2015",
+            "url":          "http://jim-nielsen.com/blog/2015/reading-notes-august",
+            "word-count":   "1423"
+        },
+        
+        {
             "title":        "Designing Kindling’s Pricing Page",
             "date":         "26 Aug, 2015",
             "url":          "http://jim-nielsen.com/blog/2015/designing-kindlings-pricing-page",
@@ -65,13 +72,6 @@
             "date":         "28 Oct, 2014",
             "url":          "http://jim-nielsen.com/blog/2014/creating-apple-touch-icons",
             "word-count":   "292"
-        },
-        
-        {
-            "title":        "Kindling Rubber Stamp",
-            "date":         "23 Oct, 2014",
-            "url":          "http://jim-nielsen.com/blog/2014/kindling-rubber-stamp",
-            "word-count":   "464"
         }
         
     ]    
