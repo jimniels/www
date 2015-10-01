@@ -6,3 +6,4 @@ This is my portfolio, hosted on github pages.
 
 - Open dev friendly in pro.jsonlint.com
 - Create a day/night theme for the page
+- Consider current replacement
