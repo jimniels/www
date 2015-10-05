@@ -5,6 +5,13 @@
     "posts": [
         
         {
+            "title":        "Reading Notes, September 2015",
+            "date":         "05 Oct, 2015",
+            "url":          "http://jim-nielsen.com/blog/2015/reading-notes-october",
+            "word-count":   "2257"
+        },
+        
+        {
             "title":        "Kindling Marketing Site 2.0",
             "date":         "11 Sep, 2015",
             "url":          "http://jim-nielsen.com/blog/2015/marketing2",
@@ -65,13 +72,6 @@
             "date":         "19 Nov, 2014",
             "url":          "http://jim-nielsen.com/blog/2014/innovation-talk-page",
             "word-count":   "648"
-        },
-        
-        {
-            "title":        "Designing a Successful Transaction Receipt",
-            "date":         "04 Nov, 2014",
-            "url":          "http://jim-nielsen.com/blog/2014/successful-transaction-receipt",
-            "word-count":   "525"
         }
         
     ]    
