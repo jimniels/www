@@ -23,7 +23,7 @@
         .section__trigger:after {
             display: block;
         }
-        
+
         &#dribbble {
             .section__content {
                 max-height: px-to-em(1250);
@@ -63,7 +63,7 @@
         bottom: 3em;
         left: 0;
         position: absolute;
-        @include background-image(linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)));
+        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
     }
 
     a {

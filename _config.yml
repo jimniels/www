@@ -4,3 +4,5 @@ markdown: redcarpet
 highlighter: pygments
 baseurl: ""
 imageurl: assets/img
+sass:
+    sass_dir: _sass
