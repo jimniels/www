@@ -5,10 +5,17 @@
     "posts": [
         
         {
+            "title":        "One Algorithm to Rule Them All",
+            "date":         "17 Oct, 2015",
+            "url":          "http://jim-nielsen.com/blog/2015/one-algorithm-to-rule-them-all",
+            "word-count":   "535"
+        },
+        
+        {
             "title":        "Reading Notes, September 2015",
             "date":         "05 Oct, 2015",
             "url":          "http://jim-nielsen.com/blog/2015/reading-notes-october",
-            "word-count":   "2257"
+            "word-count":   "2333"
         },
         
         {
@@ -65,13 +72,6 @@
             "date":         "16 Jan, 2015",
             "url":          "http://jim-nielsen.com/blog/2015/team-colors-2-0",
             "word-count":   "979"
-        },
-        
-        {
-            "title":        "Words Have Meaning: Creating the “Let’s Talk Innovation” Page",
-            "date":         "19 Nov, 2014",
-            "url":          "http://jim-nielsen.com/blog/2014/innovation-talk-page",
-            "word-count":   "648"
         }
         
     ]    
