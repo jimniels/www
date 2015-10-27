@@ -1,0 +1,24 @@
+{
+  "name": "jimniels.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.html",
+  "dependencies": {
+    "request": "^2.65.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "node _data/_get.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimniels/jimniels.github.io.git"
+  },
+  "author": "Jim Nielsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimniels/jimniels.github.io/issues"
+  },
+  "homepage": "https://github.com/jimniels/jimniels.github.io#readme"
+}

@@ -15,10 +15,10 @@
         {% endfor %}
 
     {% when 'dribbble' %}
-        {% for shot in site.data.dribbble.shots | limit: 10 %}
+        {% for shot in site.data.dribbble | limit: 10 %}
             <li class="item">
                 <a class="item__img" href="{{ shot.url }}">
-                    <img src="{{ shot.image_url }}"
+                    <img src="{{ shot.images.normal }}"
                         alt="{{ shot.title }}"
                         title="{{ shot.title }} on Dribbble"
                         width="400"
@@ -96,7 +96,7 @@
         {% endfor %}
 
     {% when 'blog' %}
-        {% for post in site.data.blog.posts limit:10 %}
+        {% for post in site.data.blog limit:10 %}
             <li class="item">
                 <div class="item__img item__img--word-count">
                     <p><b>{{ post.word-count }}</b> words</p>
