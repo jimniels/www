@@ -7,6 +7,33 @@
         "description": "Retrieve full-sized icon artwork for any app in Apple’s ecosystem, based on a tutorial published for Web Design Tuts+."
     },
     {
+        "id": "apple-watch-icon-gallery",
+        "title": "Apple Watch Icon Gallery",
+        "link": "http://applewatchicongallery.com",
+        "link-pretty": "applewatchicongallery.com",
+        "description": "A gallery showcasing great icon designs from the Apple Watch ecosystem.",
+        "tweets": [
+            {
+                "id": 618183624794501120,
+                "content": "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com",
+                "author" : {
+                    "handle": "flarup",
+                    "name": "Michael Flarup",
+                    "followers": 19800
+                }
+            },
+            {
+                "id": 613378256754970624,
+                "content": "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK",
+                "author" : {
+                    "handle": "EdgeAnimate",
+                    "name": "Adobe Edge Animate",
+                    "followers": 47800
+                }
+            }
+        ]
+    },
+    {
         "id": "kindlingapp",
         "title": "Kindlingapp",
         "link": "http://kindlingapp.com",
@@ -114,7 +141,6 @@
                 }
             }
         ]
-
     },
     {
         "id": "kindling-loves-startups",
