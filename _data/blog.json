@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Reading Notes, December 2015",
+        "date":         "01 Dec, 2015",
+        "url":          "http://jim-nielsen.com/blog/2015/reading-notes-december",
+        "word-count":   "889"
+    },
+    
+    {
         "title":        "Reading Notes, November 2015",
         "date":         "02 Nov, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-november",
@@ -61,13 +68,6 @@
         "date":         "04 May, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/conceiving-blog-post-artwork",
         "word-count":   "666"
-    },
-    
-    {
-        "title":        "Everything But Visual Design",
-        "date":         "05 Feb, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/everything-but-visual-design",
-        "word-count":   "522"
     }
     
 ]
