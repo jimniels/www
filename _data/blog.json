@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Assignment Desk Logo",
+        "date":         "03 Dec, 2015",
+        "url":          "http://jim-nielsen.com/blog/2015/assignment-desk-logo",
+        "word-count":   "905"
+    },
+    
+    {
         "title":        "Reading Notes, December 2015",
         "date":         "01 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-december",
@@ -61,13 +68,6 @@
         "date":         "20 May, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/skinning-the-idea-poster-anew",
         "word-count":   "410"
-    },
-    
-    {
-        "title":        "Conceiving Blog Post Artwork",
-        "date":         "04 May, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/conceiving-blog-post-artwork",
-        "word-count":   "666"
     }
     
 ]
