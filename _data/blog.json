@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Innovation Sales Sheet",
+        "date":         "30 Dec, 2015",
+        "url":          "http://jim-nielsen.com/blog/2015/innovation-sales-sheet",
+        "word-count":   "651"
+    },
+    
+    {
         "title":        "Assignment Desk Logo",
         "date":         "03 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/assignment-desk-logo",
@@ -61,13 +68,6 @@
         "date":         "29 Jun, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/a-web-of-people",
         "word-count":   "1973"
-    },
-    
-    {
-        "title":        "Skinning the Idea Poster Anew",
-        "date":         "20 May, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/skinning-the-idea-poster-anew",
-        "word-count":   "410"
     }
     
 ]
