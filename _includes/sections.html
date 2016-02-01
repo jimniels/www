@@ -27,7 +27,7 @@
                 <div class="item__content">
                     <h2 class="title"><a href="{{ shot.html_url }}" class="link">{{ shot.title }}</a></h2>
                     <p class="byline">{{ shot.created_at | date: "%-d %b, %Y" }}</p>
-                    <p class="description">{{ shot.description }}</p>
+                    <div class="description">{{ shot.description }}</div>
                 </div>
             </li>
         {% endfor %}
