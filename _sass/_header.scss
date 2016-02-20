@@ -21,30 +21,40 @@
 .header__subtitle {
     font-size: #{18 / $font-size-base}em;
     color: #888;
+}
 
-    dt {
-        width: 25%;
-        float: left;
-        //color: $color-text;
+.header__nav {
+    margin-top: #{15em / $font-size-base};
+    font-size: #{18 / $font-size-base}em;
+    color: #c02702;
 
-        @media screen and (max-width: 600px) {
-            width: auto;
-            margin-right: .25em;
+    ul {
+      &:before {
+        content: '↓';
+        color: $color-text;
+      }
+
+      li {
+        display: inline;
+
+        &:first-child:before {
+            //display: none;
         }
-    }
 
-    dd {
-        margin-left: 25%;
-
-        @media screen and (max-width: 600px) {
-            margin-left: 0;
+        &:before {
+            content: '·';
+            //color: #888;
+            margin: 0 5px;
         }
+      }
     }
 
     a {
-        color: inherit;
-        //text-decoration: underline;
-        border-bottom: 1px solid;
+        color: $color-highlight;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 

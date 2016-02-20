@@ -203,6 +203,15 @@
             margin-left: 0;
         }
     }
+
+    .projects {
+        margin-top: px-to-em($spacing-constant);
+
+        li {
+            padding: px-to-em($spacing-constant) 0;
+            border-top: 1px dotted $color-border-light;
+        }
+    }
 }
 
 //

@@ -1,15 +1,26 @@
 {% case include.id %}
 
-    {% when 'history' %}
-        {% for item in site.data.history %}
+    {% when 'employment' %}
+        {% for item in site.data.employment %}
             <li class="item">
                 <div class="item__img">
-                    <img src="{{ site.imageurl }}/published-articles/{{ item.thumbnail }}" />
+                    <img src="{{ site.imageurl }}/employment/{{ item.thumbnail }}" />
                 </div>
                 <div class="item__content">
-                    <h2 class="title">{{ item.title }}</a></h2>
+                    <h2 class="title">{{ item.title }} @ <a href="{{ item.companyUrl }}">{{ item.company}}</a></h2>
                     <p class="byline">{{ item.byline }}</p>
                     <p class="description">{{ item.description }}</p>
+                    {% if item.projects %}
+                      <ul class="projects">
+                      {% for project in item.projects %}
+                        <li>
+                          <img src="http://placehold.it/500x150" alt="Project screenshot" />
+                          <h3>{{ project.title }}</h3>
+                          <p class="description">{{ project.description }}</p>
+                        </li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
                 </div>
             </li>
         {% endfor %}
@@ -69,23 +80,19 @@
         {% endfor %}
 
 
-    {% when 'recent-projects' %}
-        {% for project in site.data.recent-projects %}
+    {% when 'side-projects' %}
+        {% for project in site.data.side-projects %}
             <li class="item">
                 <a class="item__img" href="{{ project.link }}" class="link">
-                    <img src="{{ site.imageurl }}/recent-projects/{{ project.id }}.png" width="70" height="70" />
-
+                    <img src="{{ site.imageurl }}/side-projects/{{ project.id }}.png" width="70" height="70" />
                 </a>
                 <div class="item__content">
-
                     <h2 class="title link">
                         <a href="{{ project.link }}" class="link">{{ project.title }}</a>
                         {% if project.cta %}
                             &nbsp;| &nbsp;<a href="{{ project.cta }}" class="link">Case Study</a>
                         {% endif %}
                     </h2>
-
-
                     <p class="byline"><a href="{{ project.link }}">{{ project.link-pretty }}</a></p>
                     <p class="description">{{ project.description }}</p>
                     {% if project.tweets %}
