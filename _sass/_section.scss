@@ -217,10 +217,21 @@
     .projects {
         margin-top: px-to-em($spacing-constant);
 
-        li {
+        > li {
             padding: px-to-em($spacing-constant) 0;
             border-top: 1px dotted $color-border-light;
         }
+    }
+
+    .links {
+      font-size: px-to-em(14);
+      margin: px-to-em(15) 0 0 px-to-em(15);
+      list-style-type: disc;
+      color: #777;
+
+      a {
+        color: $color-link;
+      }
     }
 }
 

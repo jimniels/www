@@ -27,28 +27,6 @@
           name: "Adobe Edge Animate"
           followers: 47800
   -
-    id: "kindlingapp"
-    title: "Kindlingapp"
-    link: "http://kindlingapp.com"
-    link-pretty: "kindlingapp.com"
-    description: "Marketing site for Kindling, a platform for discovering, sharing, and actualizing ideas."
-    cta: "http://jim-nielsen.com/blog/2015/marketing2/"
-    tweets:
-      -
-        id: 358225234819694600
-        content: "Yeh I'm biased, but the attention to design details by the @kindlingapp team is really damn impressive. Great update. http://www.kindlingapp.com/blog/in-app…"
-        author:
-          handle: "richziade"
-          name: "Rich Ziade"
-          followers: 1455
-      -
-        id: 103974927253782530
-        content: "Mission Accomplished. A prospect just said that they love @kindlingapp for its design & that a competitor “was obv. designed by engineers”."
-        author:
-          handle: "timothymeaney"
-          name: "Timothy Meaney"
-          followers: 560
-  -
     id: "team-colors"
     title: "Team Colors"
     link: "http://teamcolors.arc90.com"

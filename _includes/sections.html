@@ -1,28 +1,53 @@
 {% case include.id %}
 
     {% when 'employment' %}
-        {% for item in site.data.employment %}
+        {% for job in site.data.employment %}
             <li class="item">
                 <div class="item__img">
-                    <img src="{{ site.imageurl }}/employment/{{ item.thumbnail }}" />
+                    <img src="{{ site.imageurl }}/employment/{{ job.thumbnail }}" />
                 </div>
                 <div class="item__content">
-                    <h2 class="title">{{ item.title }} @ <a href="{{ item.companyUrl }}">{{ item.company}}</a></h2>
-                    <p class="byline">{{ item.byline }}</p>
-                    <p class="description">{{ item.description }}</p>
-                    {% if item.projects %}
+                    <h2 class="title">{{ job.title }} @ <a href="{{ job.companyUrl }}">{{ job.company}}</a></h2>
+                    <p class="byline">{{ job.byline }}</p>
+                    <p class="description">{{ job.description }}</p>
+                    {% if job.projects %}
                       <ul class="projects">
-                      {% for project in item.projects %}
+                      {% for project in job.projects %}
                         <li>
-                          <img src="http://placehold.it/100x75" alt="Project screenshot" style="float: left; margin-right: 20px; margin-bottom: 10px;" />
+                          <img
+                            {% if project.thumbnail %}
+                              src="{{ site.imageurl }}/employment/{{ project.thumbnail }}"
+                            {% else %}
+                              src="http://placehold.it/100x75"
+                            {% endif %}
+                            alt="Project screenshot"
+                            width="100"
+                            height="75"
+                            style="float: left; margin: 6px 15px 10px 0;"
+                          />
                           <h3>
                             {{ project.title }}
                             {% if project.caseStudy %}
                               &nbsp;|&nbsp; <a href='{{ project.caseStudy}}' class="link">Project Writeup</a>
                             {% endif %}
                           </h3>
-                          <p class="byline">Tools: {{ project.tools }}</p>
-                          <p class="description">{{ project.description }}</p>
+
+                          <p class="description">
+                            {{ project.description }} <br /><br />
+                            Tools used: {{ project.tools }}.
+                          </p>
+
+                          {% if project.links %}
+                          <ul class="links">
+                            {% for link in project.links %}
+                              <li>
+                                <a href='{{ link.url }}'>
+                                  {{ link.title }}
+                                </a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                          {% endif %}
                         </li>
                       {% endfor %}
                       </ul>
