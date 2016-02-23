@@ -14,8 +14,14 @@
                       <ul class="projects">
                       {% for project in item.projects %}
                         <li>
-                          <img src="http://placehold.it/500x150" alt="Project screenshot" />
-                          <h3>{{ project.title }}</h3>
+                          <img src="http://placehold.it/100x75" alt="Project screenshot" style="float: left; margin-right: 20px; margin-bottom: 10px;" />
+                          <h3>
+                            {{ project.title }}
+                            {% if project.caseStudy %}
+                              &nbsp;|&nbsp; <a href='{{ project.caseStudy}}' class="link">Project Writeup</a>
+                            {% endif %}
+                          </h3>
+                          <p class="byline">Tools: {{ project.tools }}</p>
                           <p class="description">{{ project.description }}</p>
                         </li>
                       {% endfor %}

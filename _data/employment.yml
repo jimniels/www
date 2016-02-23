@@ -4,31 +4,35 @@
     company: Postlight
     companyUrl: https://www.postlight.com/
     byline: 2016 – Present · New York City
-    description: More about what I do. And this is more info.
+    description: "Consulted-on, designed, and built-out two web applications for one of Postlight’s biggest clients: Time Inc."
     thumbnail: postlight.png
     projects:
       -
         title: Assignment Desk
-        description: Built an app...
-        caseStudy: http://jim-nielsen.com/blog
+        tools: Sketch app, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
+        description: "A web application for managing client’s internal workflows. From the ground-up, I worked on designing, sketching, wireframing, mocking, engineering, and coding the application. I led the visual and experiential design while also writing the application view layer. The talented <a href='http://damassi.github.io/' class='link'>damassi</a> architected the application framework for interfacing with the client’s backend platform."
+        caseStudy: http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk
       -
-        title: DCP Application
-        description: Another application...
+        title: Digital Content Production
+        tools: Sketch app, Invision App, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
+        description: "A web application for converting print production into digital content. I conceptualized and wireframed this application. Then, based on the Assignment Desk project framework, I realigned this application’s visual aesthetic to match the client’s other digital efforts while also engineering the view layer of the application. Our team was small, so my duties encompassed product design (aesthetics, visual mocks, style guides), product management (technical specifications, task management), and front-end development (react.js components, form development, sass/css architecture)."
         caseStudy: http://jim-nielsen.com/blog
 -
     title: Lead Designer & Front-end Developer
     company: Kindling
     companyUrl: http://kindlingapp.com/
     byline: 2012 – 2016 · New York City
-    description: More about what I do. And this is more info.
+    description: "Led design across the company (product, brand and identity, marketing). Wrote code. Wore many hats (figuratively). Built software people enjoyed using."
     thumbnail: kindling.png
     projects:
       -
         title: Kindling the Application
-        description: An enterprise software application used to discover, discuss, evaluate, and decide on great ideas within an organization. A fully-responsive web application in which I handled 100% of UI/UX, CSS, and HTML.
+        tools: Sketch, Photoshop, PHP, HTML, CSS/Sass, Git, Omnigraffle, Invision App, Mailchimp, Asana, Trac
+        description: A fully-responsive enterprise web application used to discover, discuss, evaluate, and decide on great ideas within an organization. I handled 100% of the product’s fully-responsive user interface and experience; from conception in Photoshop and Sketch (wireframes, visual mocks, aesthetics) to browser layout and code (HTML, CSS/Sass) to custom HTML emails (&lt;table> layouts) to cross-device testing (responsive desktop, mobile, tablet) and so, so much more.
         caseStudy: http://google.com
       -
         title: Kindling the Marketing Site
+        tools: Photoshop, PHP, Wordpress, HTML, CSS/Sass, Javascript, Metalsmith (static site generator), Git, Hubspot, Mailchimp, Asana
         description: A static site (this was built twice, link to both case studies?). Included email campaigns and what not...
         caseStudy: http://google.com
       -

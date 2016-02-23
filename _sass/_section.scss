@@ -34,9 +34,14 @@
                 max-height: px-to-em(1250);
             }
         }
-        &#recent-projects {
+        &#side-projects {
             .section__content {
                 max-height: px-to-em(950);
+            }
+        }
+        &#employment {
+            .section__content {
+                max-height: px-to-em(1500);
             }
         }
     }
@@ -127,9 +132,14 @@
     }
 }
 
-#recent-projects {
+#side-projects {
     .title .link + .link {
         color: $color-link;
+    }
+}
+#employment {
+    .link:last-child {
+      color: $color-link;
     }
 }
 
