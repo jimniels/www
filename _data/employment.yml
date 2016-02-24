@@ -5,13 +5,11 @@
     companyUrl: https://www.postlight.com/
     byline: 2016 – Present · New York City
     description: "Consulted-on, designed, and built-out two web applications for one of Postlight’s biggest clients: Time Inc."
-    thumbnail: postlight.png
     projects:
       -
         title: Assignment Desk
         tools: Sketch app, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
         description: "A web application for managing client’s internal workflows. From the ground-up, I worked on designing, sketching, wireframing, mocking, engineering, and coding the application. I led the visual and experiential design while also writing the application view layer. The talented <a href='http://damassi.github.io/' class='link'>damassi</a> architected the application framework for interfacing with the client’s backend platform."
-        thumbnail: assignment-desk.png
         links:
           -
             title: Designing and Building the Assignment Desk Application
@@ -23,14 +21,12 @@
         title: Digital Content Production
         tools: Sketch app, Invision App, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
         description: "A web application for converting print production into digital content. I conceptualized and wireframed this application. Then, based on the Assignment Desk project framework, I realigned this application’s visual aesthetic to match the client’s other digital efforts while also engineering the view layer of the application. Our team was small, so my duties encompassed product design (aesthetics, visual mocks, style guides), product management (technical specifications, task management), and front-end development (react.js components, form development, sass/css architecture)."
-        thumbnail: digital-content-production.png
 -
     title: Lead Designer & Front-end Developer
     company: Kindling
     companyUrl: http://kindlingapp.com/
     byline: 2012 – 2016 · New York City
     description: "Led design across the company (product, brand and identity, marketing). Wrote code. Wore many hats (figuratively). Built software people enjoyed using."
-    thumbnail: kindling.png
     projects:
       -
         title: Kindling the Application
@@ -48,8 +44,10 @@
             url: http://jim-nielsen.com/blog/2014/creating-apple-touch-icons/
       -
         title: Kindling the Marketing Site
-        tools: Photoshop, PHP, Wordpress, HTML, CSS/Sass, Javascript, Metalsmith (static site generator), Git, Hubspot, Mailchimp, Asana
-        description: A static site (this was built twice, link to both case studies?). Included email campaigns and what not...
+        description: "I designed and built two different versions of this site over time. The first iteration was powered by Wordpress. Then after a few years as our business and clientele changed, we redesigned the site and powered it on a static site generator. I handled the UI/UX of the site based on feedback from analytics, users, and internal employees. Then I built both: initially on Wordpress, then on a static site generator running on Node.js."
+        tools: Photoshop, PHP, Wordpress, HTML, CSS/Sass, Javascript, Metalsmith, Node, Git, Hubspot & Google Analytics, Asana
+        url: http://kindlingapp.com/
+        urlDomain: kindlingapp.com
         links:
           -
             title: Kindling Marketing Site 2.0
@@ -74,36 +72,36 @@
             url: http://jim-nielsen.com/blog/2013/kindlingapp-home-page-redesign/
       -
         title: Kindling the Brand
-        description: Developed a branding buide for the company...
+        description: Designed and developed the Kindling brand and identity, which encompassed everything from business cards to company-wide email signatures. In the process of formulating the company identity, I also designed and produced a printed (and digital) brand and identiy guidebook which helped foster internal standards and awareness around maintaing brand integrity.
+        tools: Photoshop, Illustrator, InDesign
         links:
         -
           title: Kindling Rubber Stamp
           url: http://jim-nielsen.com/blog/2014/kindling-rubber-stamp/
       -
         title: Kindling Loves Startups
-        description: A marketing site promoting our campaign...
-        caseStudy: http://google.com
+        description: As the central piece to market “Kindling Loves Startups” campaign, I designed and developed a landing page which employed a few (at the time) novel web tricks, including slanted lines and a progressively-enhanced hero heart beat anitmation.
+        url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
+        urlDomain: kindlinglovesstartups.com
+        tools: Photoshop, HTML, CSS, Javascript, jQuery
 -
     title: Junior Web Designer
     company: Arc90
     companyUrl: http://arc90.com/
     byline: 2012 · New York City
     description: Solved problems for clients with design and code. Hacked cool (and useful) side projects.
-    thumbnail: arc90.png
 -
     title: Marketing & Multimedia Designer
     company: Dixie State University
     companyUrl: http://dixie.edu/
     byline: 2010 – 2011 · St. George, Utah
     description: "Raised design bar 110% on every public-facing widget I could get my cursor on: web design and development, graphic design, page layout, marketing campaigns, social media promotion, annual reports, brand identity, and more."
-    thumbnail: dixie-state.png
 -
     title: Multimedia Development Intern
     company: SkyWest Airlines
     companyUrl: http://skywest.com/
     byline: 2010 · St. George, Utah
     description: Interface design, logo creation, web maintenance, layout design, product photography, and more.
-    thumbnail: skywest.png
 -
     title: BA Integrated Studies @ Dixie State University, Emphasis in Visual Technologies
     byline: 2007—2010 · St. George, Utah

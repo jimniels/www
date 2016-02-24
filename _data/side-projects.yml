@@ -6,26 +6,33 @@
     link-pretty: "jim-nielsen.com/gimmiedaticon/"
     description: "Retrieve full-sized icon artwork for any app in Apple’s ecosystem, based on a tutorial published for Web Design Tuts+."
   -
-    id: "apple-watch-icon-gallery"
-    title: "Apple Watch Icon Gallery"
-    link: "http://applewatchicongallery.com"
-    link-pretty: "applewatchicongallery.com"
-    description: "A gallery showcasing great icon designs from the Apple Watch ecosystem."
+    id: "ios-icon-gallery"
+    title: "iOS Icon Gallery"
+    link: "http://iosicongallery.com"
+    link-pretty: "iosicongallery.com"
+    description: "A gallery showcasing great icon designs from the iOS ecosystem."
     tweets:
       -
-        id: 618183624794501100
-        content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
+        id: 219856804987928580
+        content: "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem - http://iosicongallery.com/"
         author:
-          handle: "flarup"
-          name: "Michael Flarup"
-          followers: 19800
+          handle: "smashingmag"
+          name: "Smashing Magazine"
+          followers: 794000
       -
-        id: 613378256754970600
-        content: "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK"
+        id: 219845371487191040
+        content: "Good reference site for icon inspiration http://iosicongallery.com/"
         author:
-          handle: "EdgeAnimate"
-          name: "Adobe Edge Animate"
-          followers: 47800
+          handle: "iamFinch"
+          name: "Francisco Inchauste"
+          followers: 8411
+      -
+        id: 369583698229723140
+        content: "Mac Icon Gallery http://macicongallery.com  and iOS Icon Gallery http://iosicongallery.com  are indeed nice showcases. Nice initiative by @jimniels."
+        author:
+          handle: "dresouzax"
+          name: "Andre Souza"
+          followers: 1176
   -
     id: "team-colors"
     title: "Team Colors"
@@ -63,39 +70,26 @@
     description: "An experiment in analyzing the integrity of iconic logos. How well would you recognize a logo out of focus?"
     cta: "http://jim-nielsen.com/blog/posts/logo-integrity/"
   -
-    id: "ios-icon-gallery"
-    title: "iOS Icon Gallery"
-    link: "http://iosicongallery.com"
-    link-pretty: "iosicongallery.com"
-    description: "A gallery showcasing great icon designs from the iOS ecosystem."
+    id: "apple-watch-icon-gallery"
+    title: "Apple Watch Icon Gallery"
+    link: "http://applewatchicongallery.com"
+    link-pretty: "applewatchicongallery.com"
+    description: "A gallery showcasing great icon designs from the Apple Watch ecosystem."
     tweets:
       -
-        id: 219856804987928580
-        content: "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem - http://iosicongallery.com/"
+        id: 618183624794501100
+        content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
         author:
-          handle: "smashingmag"
-          name: "Smashing Magazine"
-          followers: 794000
+          handle: "flarup"
+          name: "Michael Flarup"
+          followers: 19800
       -
-        id: 219845371487191040
-        content: "Good reference site for icon inspiration http://iosicongallery.com/"
+        id: 613378256754970600
+        content: "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK"
         author:
-          handle: "iamFinch"
-          name: "Francisco Inchauste"
-          followers: 8411
-      -
-        id: 369583698229723140
-        content: "Mac Icon Gallery http://macicongallery.com  and iOS Icon Gallery http://iosicongallery.com  are indeed nice showcases. Nice initiative by @jimniels."
-        author:
-          handle: "dresouzax"
-          name: "Andre Souza"
-          followers: 1176
-  -
-    id: "kindling-loves-startups"
-    title: "Kindling Loves Startups"
-    link: "http://jim-nielsen.com/sandbox/kindlinglovesstartups"
-    link-pretty: "kindlinglovesstartups.com"
-    description: "Campaign landing page offering Kindling for free to startups."
+          handle: "EdgeAnimate"
+          name: "Adobe Edge Animate"
+          followers: 47800
   -
     id: "sassme"
     title: "SassMe"
