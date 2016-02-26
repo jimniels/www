@@ -4,12 +4,12 @@
     company: Postlight
     companyUrl: https://www.postlight.com/
     byline: 2016 – Present · New York City
-    description: "Consulted-on, designed, and built-out two web applications for one of Postlight’s biggest clients: Time Inc."
+    description: "Succeeded in consulting, designing, and building internal web applications (on tight deadlines) for one of Postlight’s biggest clients: Time Inc."
     projects:
       -
         title: Assignment Desk
-        tools: Sketch app, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
-        description: "A web application for managing client’s internal workflows. From the ground-up, I worked on designing, sketching, wireframing, mocking, engineering, and coding the application. I led the visual and experiential design while also writing the application view layer. The talented <a href='http://damassi.github.io/' class='link'>damassi</a> architected the application framework for interfacing with the client’s backend platform."
+        tools: Sketch, Sass, Javascript, React.js, Redux, Bootstrap, Git
+        description: Part one in a series of internal web applications for Time Inc. I sketched, wireframed, and mocked the UI/UX of the application while simultaneously engineering the view layer.
         links:
           -
             title: Designing and Building the Assignment Desk Application
@@ -19,19 +19,19 @@
             url: http://jim-nielsen.com/blog/2015/assignment-desk-logo/
       -
         title: Digital Content Production
-        tools: Sketch app, Invision App, HTML, CSS/Sass, Javascript, React.js, Redux, Bootstrap, Git
-        description: "A web application for converting print production into digital content. I conceptualized and wireframed this application. Then, based on the Assignment Desk project framework, I realigned this application’s visual aesthetic to match the client’s other digital efforts while also engineering the view layer of the application. Our team was small, so my duties encompassed product design (aesthetics, visual mocks, style guides), product management (technical specifications, task management), and front-end development (react.js components, form development, sass/css architecture)."
+        tools: Sketch, Invision, Sass, Javascript, React.js, Redux, Bootstrap, Git
+        description: "Based on the Assignment Desk application framework, I designed and engineered this application doing everything from UI/UX design to product management to front-end development."
 -
     title: Lead Designer & Front-end Developer
     company: Kindling
     companyUrl: http://kindlingapp.com/
     byline: 2012 – 2016 · New York City
-    description: "Led design across the company (product, brand and identity, marketing). Wrote code. Wore many hats (figuratively). Built software people enjoyed using."
+    description: "Led this startup’s design vision (product, brand and identity, marketing). Wrote code. Wore lots of hats. Built software people enjoyed using."
     projects:
       -
         title: Kindling the Application
-        tools: Sketch, Photoshop, PHP, HTML, CSS/Sass, Git, Omnigraffle, Invision App, Mailchimp, Asana, Trac
-        description: A fully-responsive enterprise web application used to discover, discuss, evaluate, and decide on great ideas within an organization. I handled 100% of the product’s fully-responsive user interface and experience; from conception in Photoshop and Sketch (wireframes, visual mocks, aesthetics) to browser layout and code (HTML, CSS/Sass) to custom HTML emails (&lt;table> layouts) to cross-device testing (responsive desktop, mobile, tablet) and so, so much more.
+        tools: Sketch, Photoshop, PHP, Sass, Git, Invision, Mailchimp, Asana, Trac
+        description: "A fully-responsive web application used to discover, discuss, evaluate, and decide on great ideas within a company. I handled 100% of the app’s UI/UX: from ideation on paper to digital wireframes/mocks to browser code to cross-device testing and more."
         links:
           -
             title: Innovation Sales Sheet

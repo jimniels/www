@@ -53,7 +53,7 @@
 .section__trigger {
     background: #fff;
     left: 0;
-    margin-left: $padding-left + 5;
+    margin-left: $padding-left;
     padding: px-to-em(15) 0;
 
     @include respond-to(medium) {
@@ -147,6 +147,7 @@
     width: 70px;
     height: 70px;
     float: left;
+    margin-top: 3px;
 
     #dribbble & {
         width: 200px;
@@ -188,7 +189,6 @@
 .item__content {
     display: block;
     margin-left: 70px + $spacing-constant;
-    margin-top: px-to-em(3);
 
     @include respond-to(medium) {
         margin-top: 0;
@@ -209,24 +209,38 @@
 
     > li {
         @include clearfix();
-        padding: px-to-em($spacing-constant) 0;
+        padding: px-to-em($spacing-constant - 5) 0;
         border-top: 1px dotted $color-border-light;
     }
 
     .projects__img {
       float: left;
-      margin: 3px 15px 6px 0;
+      margin: px-to-em(3) px-to-em(15) px-to-em(6) 0;
       width: 100px;
       height: 75px;
       display: block;
+    }
+
+    .projects__content {
+      margin-left: 115px;
     }
 }
 
 .links {
   font-size: px-to-em(14);
-  margin: px-to-em(15) 0 0 px-to-em(15);
   list-style-type: disc;
   color: #777;
+  margin-top: px-to-em(15);
+
+  // &:before {
+  //   content: 'Further reading:';
+  //   display: block;
+  //   margin: px-to-em(10, 14) 0;
+  // }
+
+  li {
+    margin-left: 1em;
+  }
 
   a {
     color: $color-link;

@@ -7,14 +7,17 @@
                     <img src="{{ site.imageurl }}/employment/{{ job.company | downcase | replace: ' ', '-' }}.png" />
                 </div>
                 <div class="item__content">
-                    <h2 class="title">{{ job.title }} @ <a href="{{ job.companyUrl }}" class="link">{{ job.company}}</a></h2>
+                    <h2 class="title">
+                      {{ job.title }} @ <a href="{{ job.companyUrl }}" class="link">{{ job.company}}</a>
+                    </h2>
                     <p class="byline">{{ job.byline }}</p>
                     <p class="description">{{ job.description }}</p>
+
                     {% if job.projects %}
                       <ul class="projects">
+
                       {% for project in job.projects %}
                         <li>
-
                           {% if project.url %}
                             <a href="{{ project.url }}" class="projects__img">
                           {% else %}
@@ -32,6 +35,7 @@
                             </div>
                           {% endif %}
 
+                          <div class='projects__content'>
                           <h3>
                             {% if project.url %}<a href="{{ project.url }}" class="link">{% endif %}
                                 {{ project.title }}
@@ -47,21 +51,22 @@
                           {% endif %}
 
                           <p class="description">
-                            {{ project.description }} <br /><br />
-                            Tools used: {{ project.tools }}.
+                            {{ project.description }}
+                            Tools: {{ project.tools }}.
                           </p>
 
                           {% if project.links %}
                           <ul class="links">
                             {% for link in project.links %}
                               <li>
-                                <a href='{{ link.url }}'>
+                                <a href='{{ link.url }}' class='link'>
                                   {{ link.title }}
                                 </a>
                               </li>
                             {% endfor %}
                           </ul>
                           {% endif %}
+                          </div>
                         </li>
                       {% endfor %}
                       </ul>
