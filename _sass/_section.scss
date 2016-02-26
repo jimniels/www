@@ -34,9 +34,14 @@
                 max-height: px-to-em(1250);
             }
         }
-        &#recent-projects {
+        &#side-projects {
             .section__content {
                 max-height: px-to-em(950);
+            }
+        }
+        &#employment {
+            .section__content {
+                max-height: px-to-em(1500);
             }
         }
     }
@@ -48,7 +53,7 @@
 .section__trigger {
     background: #fff;
     left: 0;
-    margin-left: $padding-left + 5;
+    margin-left: $padding-left;
     padding: px-to-em(15) 0;
 
     @include respond-to(medium) {
@@ -113,7 +118,7 @@
 //  -----
 .section__content {
     position: relative;
-    margin-left: $padding-left + 5;
+    margin-left: $padding-left;
 
     @include respond-to(medium) {
         margin-left: ($padding-left / 2);
@@ -124,12 +129,6 @@
         padding-right: px-to-em($spacing-constant);
         border-bottom: 1px solid $color-border-light;
         overflow: hidden;
-    }
-}
-
-#recent-projects {
-    .title .link + .link {
-        color: $color-link;
     }
 }
 
@@ -148,6 +147,7 @@
     width: 70px;
     height: 70px;
     float: left;
+    margin-top: 3px;
 
     #dribbble & {
         width: 200px;
@@ -189,7 +189,6 @@
 .item__content {
     display: block;
     margin-left: 70px + $spacing-constant;
-    margin-top: px-to-em(3);
 
     @include respond-to(medium) {
         margin-top: 0;
@@ -203,6 +202,77 @@
             margin-left: 0;
         }
     }
+}
+
+.projects {
+    margin-top: px-to-em($spacing-constant);
+
+    > li {
+        @include clearfix();
+        padding: px-to-em($spacing-constant - 5) 0;
+        border-top: 1px dotted $color-border-light;
+    }
+
+    .projects__img {
+      float: left;
+      margin: px-to-em(3) px-to-em(15) px-to-em(6) 0;
+      width: 100px;
+      height: 75px;
+      display: block;
+
+      @include respond-to(medium) {
+          margin: 0 px-to-em(10) 0 0;
+      }
+    }
+
+    .projects__content {
+      margin-left: 115px;
+
+      @include respond-to(medium) {
+          margin-left: 0;
+      }
+    }
+}
+
+.links {
+  font-size: px-to-em(14);
+  list-style-type: disc;
+  color: #777;
+  margin-top: px-to-em(15);
+
+  // &:before {
+  //   content: 'Further reading:';
+  //   display: block;
+  //   margin: px-to-em(10, 14) 0;
+  // }
+
+  li {
+    margin-left: 1em;
+  }
+
+  a {
+    color: $color-link;
+  }
+}
+
+.projects__img,
+.item__img {
+  position: relative;
+
+  img {
+    border-radius: 2px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .075);
+    border-radius: 2px;
+  }
 }
 
 //

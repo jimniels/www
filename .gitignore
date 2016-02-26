@@ -4,3 +4,4 @@ _site
 .DS_STORE
 *.sublime-*
 _data/tokens.json
+.jekyll-metadata

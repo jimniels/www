@@ -11,5 +11,8 @@
     id: published-articles
     title: "Published Articles"
 -
-    id: recent-projects
-    title: "Recent Projects"
+    id: side-projects
+    title: "Side Projects"
+-
+    id: employment
+    title: "Employment"

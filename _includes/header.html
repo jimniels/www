@@ -1,16 +1,20 @@
 <header class="header">
     <h1 class="header__title">
-      <em>Jim Nielsen:</em> Web designer, developer. Problem solver.
+        <em>Jim Nielsen:</em> Web designer &amp; developer. Problem solver.
     </h1>
-    <dl class="header__subtitle">
-      <dt>Design Lead:</dt>
-      <dd><a href="http://kindlingapp.com">Kindling</a>, New York City.</dd>
-      <dt>Expertise:</dt>
-      <dd>CSS, Sass, HTML, UI/UX, Sketch app, Photoshop, Illustrator, InDesign, Identity, Branding, Print production.</dd>
-      <dt>Experience:</dt>
-      <dd>Javascript, React, ES6, NPM, Node, Babel, Webpack/Browserify, Gulp, jQuery, PHP, Git, Bash, CLI.</dd>
-      <dt>Dabbling:</dt>
-      <dd>Python, Ruby.</dd>
-    </dl>
+    <p class="header__subtitle">
+        <em>Expertise</em>: CSS, Sass, HTML, UI/UX, Sketch app, Photoshop, Illustrator, InDesign, Identity, Branding, Print production. <br />
+        <em>Experience</em>: Javascript, React, ES6, NPM, Node, Babel, Webpack/Browserify, Gulp, jQuery, PHP, Git, Bash, CLI. <br />
+        <em>Dabbling:</em> Python, Ruby.
+    </p>
+    <nav class="header__nav">
+      <ul>
+          {% for section in site.data.sections %}
+              <li><a href="#{{ section.id }}">
+                {{ section.title }}
+              </a></li>
+          {% endfor %}
+      </ul>
+    </nav>
     <a href="resume.html" class="header__developer">For Devs</a>
 </header>

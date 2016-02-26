@@ -1,15 +1,76 @@
 {% case include.id %}
 
-    {% when 'history' %}
-        {% for item in site.data.history %}
+    {% when 'employment' %}
+        {% for job in site.data.employment %}
             <li class="item">
                 <div class="item__img">
-                    <img src="{{ site.imageurl }}/published-articles/{{ item.thumbnail }}" />
+                    <img src="{{ site.imageurl }}/employment/{{ job.company | downcase | replace: ' ', '-' }}.png" />
                 </div>
                 <div class="item__content">
-                    <h2 class="title">{{ item.title }}</a></h2>
-                    <p class="byline">{{ item.byline }}</p>
-                    <p class="description">{{ item.description }}</p>
+                    <h2 class="title">
+                      {{ job.title }} @ <a href="{{ job.companyUrl }}" class="link">{{ job.company}}</a>
+                    </h2>
+                    <p class="byline">{{ job.byline }}</p>
+                    <p class="description">{{ job.description }}</p>
+
+                    {% if job.projects %}
+                      <ul class="projects">
+
+                      {% for project in job.projects %}
+                        <li>
+                          {% if project.url %}
+                            <a href="{{ project.url }}" class="projects__img">
+                          {% else %}
+                            <div class="projects__img">
+                          {% endif %}
+                              <img
+                                src="{{ site.imageurl }}/employment/{{ project.title | downcase | replace: ' ', '-' }}.png"
+                                alt="Project screenshot"
+                                width="100"
+                                height="75"
+                              />
+                          {% if project.url %}
+                            </a>
+                          {% else %}
+                            </div>
+                          {% endif %}
+
+                          <div class='projects__content'>
+                          <h3>
+                            {% if project.url %}<a href="{{ project.url }}" class="link">{% endif %}
+                                {{ project.title }}
+                            {% if project.url %}</a>{% endif %}
+                          </h3>
+
+                          {% if project.url %}
+                          <p class='byline'>
+                            <a href="{{ project.url }}">
+                              {{ project.urlDomain }}
+                            </a>
+                          </p>
+                          {% endif %}
+
+                          <p class="description">
+                            {{ project.description }}
+                            Tools: {{ project.tools }}.
+                          </p>
+
+                          {% if project.links %}
+                          <ul class="links">
+                            {% for link in project.links %}
+                              <li>
+                                <a href='{{ link.url }}' class='link'>
+                                  {{ link.title }}
+                                </a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                          {% endif %}
+                          </div>
+                        </li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
                 </div>
             </li>
         {% endfor %}
@@ -69,23 +130,19 @@
         {% endfor %}
 
 
-    {% when 'recent-projects' %}
-        {% for project in site.data.recent-projects %}
+    {% when 'side-projects' %}
+        {% for project in site.data.side-projects %}
             <li class="item">
                 <a class="item__img" href="{{ project.link }}" class="link">
-                    <img src="{{ site.imageurl }}/recent-projects/{{ project.id }}.png" width="70" height="70" />
-
+                    <img src="{{ site.imageurl }}/side-projects/{{ project.id }}.png" width="70" height="70" />
                 </a>
                 <div class="item__content">
-
                     <h2 class="title link">
                         <a href="{{ project.link }}" class="link">{{ project.title }}</a>
                         {% if project.cta %}
                             &nbsp;| &nbsp;<a href="{{ project.cta }}" class="link">Case Study</a>
                         {% endif %}
                     </h2>
-
-
                     <p class="byline"><a href="{{ project.link }}">{{ project.link-pretty }}</a></p>
                     <p class="description">{{ project.description }}</p>
                     {% if project.tweets %}
