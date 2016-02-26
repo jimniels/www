@@ -219,10 +219,18 @@
       width: 100px;
       height: 75px;
       display: block;
+
+      @include respond-to(medium) {
+          margin: 0 px-to-em(10) 0 0;
+      }
     }
 
     .projects__content {
       margin-left: 115px;
+
+      @include respond-to(medium) {
+          margin-left: 0;
+      }
     }
 }
 
