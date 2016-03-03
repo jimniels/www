@@ -15,6 +15,9 @@
             title: Designing and Building the Assignment Desk Application
             url: http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk
           -
+            title: Going the Extra Mile with Tasks and Feature Requests
+            url: http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/
+          -
             title: Assignment Desk Logo
             url: http://jim-nielsen.com/blog/2015/assignment-desk-logo/
       -
@@ -93,7 +96,7 @@
     projects:
       -
         title: Knovel
-        description: Worked on designing product landing pages and diving into application’s code – right before the client’s contract was cut short.
+        description: Worked on designing product landing pages and diving into application code – right before the client’s contract was cut short.
         tools: Photoshop, Javascript, jQuery, Backbone.js
       -
         title: Arc90 Agency Site
