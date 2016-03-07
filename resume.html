@@ -46,10 +46,18 @@ pre a:hover {text-decoration: underline;}
                 }{% unless forloop.last %},{% endunless %}
                 {% endfor %}
             ],
-            "recent_projects": [
-                {% for project in site.data.recent-projects %}{
+            "side_projects": [
+                {% for project in site.data.side-projects %}{
                     "title": "{{ project.title }}",
                     "url": "<a href="{{ project.link }}">{{ project.link }}</a>"
+                }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ],
+            "employment": [
+                {% for job in site.data.employment %}{
+                    "title": "{{ job.title }}",
+                    "company": "{{ job.company }}",
+                    "timeAndLocation": "{{ job.byline }}"
                 }{% unless forloop.last %},{% endunless %}
                 {% endfor %}
             ]
