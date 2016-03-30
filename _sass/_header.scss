@@ -1,80 +1,84 @@
 .header {
-    padding: 6em $padding-left;
-    font-family: $font-family-header;
+  padding: em(40) $padding-left em(80);
+  font-family: $font-family-header;
+  text-align: center;
 
-    @media screen and (max-width: 600px) {
-        padding: 3em ($padding-left / 2);
+  @media screen and (max-width: 600px) {
+    padding: 3em ($padding-left / 2);
+  }
+
+  img {
+    display: block;
+    margin: em(40) auto;
+  }
+
+  h1,
+  h2 {
+  }
+
+  h1 {
+    font-size: #{36 / $font-size-base}em;
+  }
+
+  h2 {
+    font-size: #{24 / $font-size-base}em;
+    margin-bottom: em(20, 24);
+
+    a {
+      border-bottom: 1px solid $color-text;
     }
-}
+  }
 
-.header__title {
-    font-size: #{42 / $font-size-base}em;
-    letter-spacing: -0.025em;
-    margin-bottom: .25em;
-    line-height: 1.2;
+  p {
+    color: $color-text-light;
+    margin-bottom: em(20);
+  }
 
-    em {
-        color: $color-highlight;
-    }
-}
-
-.header__subtitle {
-    font-size: #{18 / $font-size-base}em;
-    color: #888;
-}
-
-.header__nav {
-    margin-top: #{15em / $font-size-base};
-    font-size: #{18 / $font-size-base}em;
-    color: #c02702;
-
+  nav {
     ul {
-      &:before {
-        content: '↓';
-        color: $color-text;
-      }
 
       li {
         display: inline;
 
         &:first-child:before {
-            //display: none;
+          display: none;
         }
 
         &:before {
-            content: '·';
-            //color: #888;
-            margin: 0 5px;
+          content: ' / ';
+          color: $color-text-light;
+          margin: 0 em(5);
         }
       }
     }
 
     a {
-        color: $color-highlight;
+      color: $color-highlight;
 
-        &:hover {
-            text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
 }
 
 .header__developer {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: #{6 / $font-size-base}em #{10 / $font-size-base}em;
-    background: $color-highlight;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: #{6 / $font-size-base}em #{10 / $font-size-base}em;
+  background: $color-highlight;
+  color: white;
+  border-radius: 0 3px 0 3px;
+  font-size: #{14 / $font-size-base}em;
+  font-family: monospace;
+
+  &:hover {
     color: white;
-    border-radius: 0 3px 0 3px;
-    font-size: #{14 / $font-size-base}em;
-    font-family: monospace;
+  }
 
-    &:hover {
-        color: white;
-    }
-
-    @include respond-to(medium) {
-        display: none;
-    }
+  @include respond-to(medium) {
+    display: none;
+  }
 }

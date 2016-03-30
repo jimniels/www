@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="Jim Nielsen">
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <link href="http://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type="text/css">
-
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <meta charset='utf-8'>
+  <title>{{ page.title }}</title>
+  <meta name='description' content='{{ site.description }}'>
+  <meta name='author' content='Jim Nielsen'>
+  <link rel='shortcut icon' href='favicon.ico'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='{{ site.baseurl }}/assets/css/style.css'>
+  <!--[if lt IE 9]>
+    <script src='http://html5shim.googlecode.com/svn/trunk/html5.js'></script>
+  <![endif]-->
 </head>
 <body>
+  <section class='wrapper'>
+  <main class='main'>
+    {{ content }}
+  </main>
 
-    <section class="wrapper main">
-        {{ content }}
-    </section>
+  <div class='skills'>
+    <strong>
+      [ ~ ] ls -skills
+    </strong>
+    <dl>
+      {% for skill in site.data.skills %}
+      <dt class='{% if skill.divider %}divider{% endif %}'>
+        {{ skill.name }}
+      </dt>
+      <dd class='{% if skill.divider %}divider{% endif %}'>
+        -{{ skill.capability }}
+      </dd>
+      {% endfor %}
+    </dl>
+  </div>
+  </section>
 
-    <footer class="wrapper footer">
-        <p>If you want to contact me, you can email me <a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a> or find me on twitter <a href="http://twitter.com/jimniels">@jimniels</a></p>
-    </footer>
+  <footer class='wrapper footer'>
+    <p>
+      Want to contact me? Email <a href='mailto:jimniels@gmail.com'>jimniels at gmail</a> or tweet <a href='http://twitter.com/jimniels'>@jimniels</a>
+    </p>
+  </footer>
 
-    <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+  <!-- Tracking Code -->
+  {% include analytics.html %}
 
-    <!-- Tracking Code -->
-    {% include analytics.html %}
-
+  <script src='assets/js/smoothscroll.js'></script>
+  <script>
+    smoothScroll.init();
+  </script>
 </body>
 </html>

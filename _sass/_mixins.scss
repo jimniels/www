@@ -12,17 +12,17 @@
 
 @mixin respond-to($media) {
     @if $media == small {
-        @media only screen and (max-width: px-to-em(320)) { @content; }
+        @media only screen and (max-width: em(320)) { @content; }
     }
     @else if $media == medium {
-        @media only screen and (max-width: px-to-em(600)) { @content; }
+        @media only screen and (max-width: em(600)) { @content; }
     }
     @else if $media == large {
-        @media only screen and (max-width: px-to-em(900)) { @content; }
+        @media only screen and (max-width: em(900)) { @content; }
     }
 }
 
-@function px-to-em($px, $context: $font-size-base) {
+@function em($px, $context: $font-size-base) {
     @return #{$px / $context}em;
 }
 

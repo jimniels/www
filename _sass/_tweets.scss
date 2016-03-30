@@ -1,6 +1,6 @@
 .tweets {
     position: relative;
-    margin: px-to-em($spacing-constant) 0;
+    margin: em($spacer) 0;
 
     @include respond-to(medium) {
         clear: both;

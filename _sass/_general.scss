@@ -12,7 +12,7 @@ body {
     background: $color-background;
 
     @include respond-to(medium) {
-        font-size: px-to-em(14);
+        font-size: em(14);
         background: #e9e9e9;
     }
 }
@@ -46,6 +46,10 @@ img {
         top: .325em;
         margin-right: .325em;
     }
+}
+
+em {
+  font-style: italic;
 }
 
 

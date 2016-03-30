@@ -4,132 +4,68 @@
 //  ==============================
 //
 .section {
-    @include clearfix;
-    position: relative;
-    margin-bottom: px-to-em(45);
-    overflow: hidden;
-
-    //
-    //  Condensed
-    //  -----
-    &.section--condensed {
-
-        // Default height
-        .section__content {
-            max-height: px-to-em(400);
-            overflow: hidden;
-        }
-
-        .section__trigger:after {
-            display: block;
-        }
-
-        &#dribbble {
-            .section__content {
-                max-height: px-to-em(1250);
-            }
-        }
-        &#published-articles {
-            .section__content {
-                max-height: px-to-em(1250);
-            }
-        }
-        &#side-projects {
-            .section__content {
-                max-height: px-to-em(950);
-            }
-        }
-        &#employment {
-            .section__content {
-                max-height: px-to-em(1500);
-            }
-        }
-    }
-}
-
-//
-//  Section Trigger
-//  -----
-.section__trigger {
-    background: #fff;
-    left: 0;
-    margin-left: $padding-left;
-    padding: px-to-em(15) 0;
-
-    @include respond-to(medium) {
-        margin-left: ($padding-left / 2);
-    }
-
-    &:after {
-        content: '';
-        display: none;
-        height: px-to-em(100);
-        width: 100%;
-        bottom: 3em;
-        left: 0;
-        position: absolute;
-        background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
-    }
-
-    a {
-        font-size: px-to-em(14);
-        color: $color-link;
-
-        &:after {
-            content: ' \25BE';
-            position: relative;
-            left: px-to-em(1, 14);
-            top: px-to-em(-1, 14);
-        }
-    }
+  @include clearfix;
+  position: relative;
+  margin-bottom: em(45);
+  overflow: hidden;
 }
 
 //
 //  Section Header
 //  -----
 .section__header {
-    font-size: #{24 / $font-size-base}em;
-    border-bottom: 1px solid $color-border-light;
-    padding: px-to-em($spacing-constant, 24) 0 px-to-em($spacing-constant, 24) $padding-left;
-    color: $color-highlight;
+  font-size: em(24);
+  border-bottom: 1px solid $color-border-light;
+  padding: em($spacer, 24) 0 em($spacer, 24) $padding-left;
+  color: $color-highlight;
 
-    @include respond-to(medium) {
-        padding-left: ($padding-left / 2);
-    }
+  @include respond-to(medium) {
+    padding-left: ($padding-left / 2);
+  }
 
-    a {
-        &:after {
-            content: attr(href)" \203A";
-            font-size: px-to-em(14, 24);
-            color: #bbb;
-            float: right;
-            margin-right: $padding-left / 2;
-            margin-top: px-to-em(10);
-        }
-        &:hover:after {
-            color: $color-link;
-            text-decoration: underline;
-        }
-    }
+  // a {
+  //   &:after {
+  //     content: attr(href)" \203A";
+  //     font-size: em(14, 24);
+  //     color: #bbb;
+  //     float: right;
+  //     margin-right: $padding-left / 2;
+  //     margin-top: em(10);
+  //   }
+  //
+  //   &:hover:after {
+  //     color: $color-link;
+  //     text-decoration: underline;
+  //   }
+  // }
 }
 
 //
 //  Section Content
 //  -----
 .section__content {
-    position: relative;
-    margin-left: $padding-left;
+  position: relative;
+  margin-left: $padding-left;
 
-    @include respond-to(medium) {
-        margin-left: ($padding-left / 2);
+  @include respond-to(medium) {
+    margin-left: ($padding-left / 2);
+  }
+
+  > li {
+    padding: em($spacer) 0;
+    padding-right: em($spacer);
+    border-bottom: 1px solid $color-border-light;
+    overflow: hidden;
+
+    &:last-child {
+      border-bottom: 0;
     }
 
-    > li {
-        padding: px-to-em($spacing-constant) 0;
-        padding-right: px-to-em($spacing-constant);
-        border-bottom: 1px solid $color-border-light;
-        overflow: hidden;
+    &.view-more {
+      font-size: em(14);
+      color: $color-text-lightest;
     }
+  }
 }
 
 //
@@ -143,90 +79,92 @@
 //  Item Image
 //  -----
 .item__img {
-    display: block;
-    width: 70px;
-    height: 70px;
-    float: left;
-    margin-top: 3px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-top: 3px;
 
-    #dribbble & {
-        width: 200px;
-        height: 150px;
-
-        @include respond-to(medium) {
-            width: 100%;
-            height: auto;
-        }
-    }
+  #dribbble & {
+    width: 200px;
+    height: 150px;
 
     @include respond-to(medium) {
-        margin-right: #{$spacing-constant}px;
-        margin-bottom: #{$spacing-constant}px;
+      width: 100%;
+      height: auto;
     }
-}
+  }
 
-.item__img--word-count {
-    background: #333;
-    text-align: center;
-    line-height: 1;
-
-    p {
-        margin-top: px-to-em(20, 14);
-        font-size: px-to-em(14);
-        color: #777;
-    }
-
-    b {
-        font-size: 1.28575em;
-        color: white;
-        display: block;
-    }
+  @include respond-to(medium) {
+    margin-right: #{$spacer}px;
+    margin-bottom: #{$spacer}px;
+  }
 }
 
 //
 //  Item Content
 //  -----
 .item__content {
-    display: block;
-    margin-left: 70px + $spacing-constant;
+  display: block;
+  margin-left: 70px + $spacer;
+
+  @include respond-to(medium) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #blog & {
+    margin-left: 0;
+  }
+
+  #dribbble & {
+    margin-left: 200px + $spacer;
 
     @include respond-to(medium) {
-        margin-top: 0;
-        margin-left: 0;
+      margin-left: 0;
     }
+  }
+}
 
-    #dribbble & {
-        margin-left: 200px + $spacing-constant;
+.section__back-to-top {
+  position: absolute;
+  right: em($spacer, 14);
+  top: em($spacer + 10, 14);
+  font-size: em(14);
+  color: $color-text-lightest;
 
-        @include respond-to(medium) {
-            margin-left: 0;
-        }
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .projects {
-    margin-top: px-to-em($spacing-constant);
+    margin-top: em($spacer);
 
     > li {
         @include clearfix();
-        padding: px-to-em($spacing-constant - 5) 0;
-        border-top: 1px dotted $color-border-light;
+        padding: em($spacer - 5) 0;
+        border-top: 1px solid $color-border-light;
+    }
+
+    h3 {
+      font-size: em(14);
     }
 
     .projects__img {
       float: left;
-      margin: px-to-em(3) px-to-em(15) px-to-em(6) 0;
+      margin: em(3) 0 em(6) 0;
       width: 100px;
       height: 75px;
       display: block;
 
       @include respond-to(medium) {
-          margin: 0 px-to-em(10) 0 0;
+          margin: 0 em(10) 0 0;
       }
     }
 
     .projects__content {
-      margin-left: 115px;
+      margin-left: 100px + $spacer;
 
       @include respond-to(medium) {
           margin-left: 0;
@@ -235,15 +173,15 @@
 }
 
 .links {
-  font-size: px-to-em(14);
+  font-size: em(14);
   list-style-type: disc;
   color: #777;
-  margin-top: px-to-em(15);
+  margin-top: em(15);
 
   // &:before {
   //   content: 'Further reading:';
   //   display: block;
-  //   margin: px-to-em(10, 14) 0;
+  //   margin: em(10, 14) 0;
   // }
 
   li {
@@ -261,6 +199,10 @@
 
   img {
     border-radius: 2px;
+
+    @include respond-to(medium) {
+      display: block;
+    }
   }
 
   &:after {
@@ -281,15 +223,15 @@
 //  ==============================
 //
 .title {
-    font-size: px-to-em(18);
+  font-size: em(18);
 }
 
 .byline {
-    font-size: px-to-em(14);
-    color: #bbb;
+  font-size: em(14);
+  color: $color-text-lightest;
 }
 
 .description {
-    font-size: px-to-em(14);
-    color: #777;
+  font-size: em(14);
+  color: #777;
 }

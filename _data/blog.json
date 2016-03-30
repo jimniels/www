@@ -4,70 +4,70 @@
         "title":        "Going the Extra Mile with Tasks and Feature Requests",
         "date":         "02 Mar, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/",
-        "word-count":   "1100"
+        "tags":         "#designProcess"
     },
     
     {
         "title":        "Designing and Building the Assignment Desk Application",
         "date":         "28 Jan, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk/",
-        "word-count":   "2266"
+        "tags":         "#designProcess"
     },
     
     {
         "title":        "Innovation Sales Sheet",
         "date":         "30 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/innovation-sales-sheet/",
-        "word-count":   "656"
+        "tags":         "#designProcess"
     },
     
     {
         "title":        "Assignment Desk Logo",
         "date":         "03 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/assignment-desk-logo/",
-        "word-count":   "920"
+        "tags":         "#designProcess"
     },
     
     {
         "title":        "Reading Notes, December 2015",
         "date":         "01 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-december/",
-        "word-count":   "897"
+        "tags":         "#notes"
     },
     
     {
         "title":        "Reading Notes, November 2015",
         "date":         "02 Nov, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-november/",
-        "word-count":   "1115"
+        "tags":         "#notes"
     },
     
     {
         "title":        "One Algorithm to Rule Them All",
         "date":         "17 Oct, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/one-algorithm-to-rule-them-all/",
-        "word-count":   "535"
+        "tags":         "#insights"
     },
     
     {
         "title":        "Reading Notes, September 2015",
         "date":         "05 Oct, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-october/",
-        "word-count":   "2364"
+        "tags":         "#notes"
     },
     
     {
         "title":        "Kindling Marketing Site 2.0",
         "date":         "11 Sep, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/marketing2/",
-        "word-count":   "2803"
+        "tags":         "#designProcess"
     },
     
     {
         "title":        "Reading Notes, August 2015",
         "date":         "08 Sep, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-august/",
-        "word-count":   "1435"
+        "tags":         "#notes"
     }
     
 ]

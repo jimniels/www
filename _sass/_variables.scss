@@ -1,18 +1,19 @@
 $img-url: "../img";
-$color-background: #292929;
+$color-background: #333;
 $color-highlight: #c02702;
+$color-text: #333;
 $color-text-light: #777;
-$color-text: #222;
+$color-text-lightest: #bbb;
 $color-yellow: #fffddf;
 $color-border-light: #eee;
 $color-twitter-blue: #08c;
 $color-link: $color-twitter-blue;
 
 $padding-left: 10%;
-$spacing-constant: 20;
+$spacer: 20;
 
 $font-size-base: 16;
 
-$font-family-base: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font-family-base: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-$font-family-header: 'EB Garamond', serif;
+$font-family-header: 'Times New Roman', Times, serif;

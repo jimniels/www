@@ -1,20 +1,35 @@
-<header class="header">
-    <h1 class="header__title">
-        <em>Jim Nielsen:</em> Web designer &amp; developer. Problem solver.
-    </h1>
-    <p class="header__subtitle">
-        <em>Expertise</em>: CSS, Sass, HTML, UI/UX, Sketch app, Photoshop, Illustrator, InDesign, Identity, Branding, Print production. <br />
-        <em>Experience</em>: Javascript, React, ES6, NPM, Node, Babel, Webpack/Browserify, Gulp, jQuery, PHP, Git, Bash, CLI. <br />
-        <em>Dabbling:</em> Python, Ruby.
-    </p>
-    <nav class="header__nav">
-      <ul>
-          {% for section in site.data.sections %}
-              <li><a href="#{{ section.id }}">
-                {{ section.title }}
-              </a></li>
-          {% endfor %}
-      </ul>
-    </nav>
-    <a href="resume.html" class="header__developer">For Devs</a>
+<header class='header'>
+  <img src='assets/img/logo.png' width='210' height='103' />
+
+  <h1>
+    Jim Nielsen: Problem Solver.
+  </h1>
+
+  <h2>
+    Currently UI Engineer @ <a href='https://thegroundwork.com/'>The Groundwork</a>.
+  </h2>
+
+  <p>
+    I see myself as a “wheelman” of sorts, but for the web. You see, vehicles come in a myriad of types (motorcycles, cars, semis, tractors, etc.) and configurations (2, 4, or 18 wheels, front-, rear-, or all-wheel drive, manual or automatic transmission, etc.), each requiring their own mechanics for operation. A wheelman can skillfully drive any vehicle at any time without necessarily having prior knowledge of the vehicle itself (the term being derived from car thieves).
+  </p>
+
+  <p>
+    Like a wheelman (but for the web) I understand principles which transcend specific implementations or configurations. This enables me to execute on the the myriad of tasks inherent to building web applications – from information architecture to visual design to code.
+  </p>
+
+  <nav>
+    <ul>
+      {% for section in site.data.sections %}
+      <li>
+        <a href='#{{ section.id }}' data-scroll>
+          {{ section.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <a href='resume.html' class='header__developer'>
+    For Devs
+  </a>
 </header>

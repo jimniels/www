@@ -1,0 +1,75 @@
+---
+-
+  name: "&lt;HTML /&gt;"
+  capability: "rwx"
+-
+  name: ".CSS{}, @Sass"
+  capability: "rwx"
+-
+  name: "var javascript;"
+  capability: "rwx"
+-
+  name: "&lt;?php ?&gt;"
+  capability: "rwx"
+-
+  name: "#!/bin/bash"
+  capability: "rw-"
+-
+  name: "def python"
+  capability: "rw-"
+-
+  name: "&lt;React includingJSX='true' /&gt;"
+  capability: "rwx"
+-
+  name: "Babel.presets(['es2015'])"
+  capability: "rwx"
+-
+  name: "$(jQuery)"
+  capability: "rwx"
+-
+  name: "> node.js"
+  capability: "rw-"
+-
+  name: "npm, Webpack, Grunt, Gulp, etc."
+  capability: "rwx"
+-
+  name: "Git"
+  capability: "rw-"
+-
+  name: "CLI"
+  capability: "rw-"
+-
+  name: "{{ handlebars/mustache }}, {% liquid %}, etc."
+  capability: "rwx"
+-
+  name: "Wordpress, Jekyll, Metalsmith, etc."
+  capability: "rwx"
+-
+  name: "Responsive Web Design"
+  capability: "rwx"
+  divider: true
+-
+  name: "UI/UX Design"
+  capability: "rwx"
+-
+  name: "Branding & Identity"
+  capability: "rwx"
+-
+  name: "Print Production"
+  capability: "rwx"
+-
+  name: "Photoshop"
+  capability: "rwx"
+  divider: true
+-
+  name: "Illustrator"
+  capability: "rwx"
+-
+  name: "InDesign"
+  capability: "rwx"
+-
+  name: "Sketch App"
+  capability: "rwx"
+-
+  name: "Atom"
+  capability: "rwx"
