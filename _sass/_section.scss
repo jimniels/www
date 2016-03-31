@@ -3,6 +3,7 @@
 //  Sections
 //  ==============================
 //
+
 .section {
   @include clearfix;
   position: relative;
@@ -13,6 +14,7 @@
 //
 //  Section Header
 //  -----
+
 .section__header {
   font-size: em(24);
   border-bottom: 1px solid $color-border-light;
@@ -22,27 +24,12 @@
   @include respond-to(medium) {
     padding-left: ($padding-left / 2);
   }
-
-  // a {
-  //   &:after {
-  //     content: attr(href)" \203A";
-  //     font-size: em(14, 24);
-  //     color: #bbb;
-  //     float: right;
-  //     margin-right: $padding-left / 2;
-  //     margin-top: em(10);
-  //   }
-  //
-  //   &:hover:after {
-  //     color: $color-link;
-  //     text-decoration: underline;
-  //   }
-  // }
 }
 
 //
 //  Section Content
 //  -----
+
 .section__content {
   position: relative;
   margin-left: $padding-left;
@@ -78,6 +65,7 @@
 //
 //  Item Image
 //  -----
+
 .item__img {
   display: block;
   width: 70px;
@@ -96,14 +84,15 @@
   }
 
   @include respond-to(medium) {
-    margin-right: #{$spacer}px;
-    margin-bottom: #{$spacer}px;
+    margin-right: em($spacer);
+    margin-bottom: em($spacer / 2);
   }
 }
 
 //
 //  Item Content
 //  -----
+
 .item__content {
   display: block;
   margin-left: 70px + $spacer;
@@ -193,7 +182,6 @@
   }
 }
 
-.projects__img,
 .item__img {
   position: relative;
 

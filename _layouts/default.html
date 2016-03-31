@@ -22,16 +22,15 @@
     <strong>
       [ ~ ] ls -skills
     </strong>
-    <dl>
+    <ul>
       {% for skill in site.data.skills %}
-      <dt class='{% if skill.divider %}divider{% endif %}'>
-        {{ skill.name }}
-      </dt>
-      <dd class='{% if skill.divider %}divider{% endif %}'>
-        -{{ skill.capability }}
-      </dd>
+      <li class='{% if skill.divider %}divider{% endif %}'>
+        <span>-{{ skill.capability }}</span>
+        <span>jim-nielsen</span>
+        <span>{{ skill.name }}</span>
+      </li>
       {% endfor %}
-    </dl>
+    </ul>
   </div>
   </section>
 

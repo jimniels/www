@@ -7,54 +7,7 @@
 @import "layout";
 @import "header";
 @import "section";
+@import "skills";
 @import "tweets";
 @import "side-projects";
-@import "recent-projects";
 @import "published-articles";
-
-.skills {
-  margin-top: em($spacer * 2);
-  background: #1E1E1E;
-  color: $color-text-light;
-  font-family: Menlo, monospace;
-  font-size: em(14);
-  padding: em(40, 14);
-  box-shadow: 0 0 60px rgba(0, 0, 0, .5);
-  border-radius: 3px;
-
-  strong {
-    color: $color-highlight;
-    font-weight: bold;
-    display: block;
-    margin-bottom: em($spacer);
-  }
-
-  dl {
-    overflow: scroll;
-  }
-
-  dt,
-  dd {
-    white-space: nowrap;
-    padding: em(1, 14) 0;
-  }
-
-  dt {
-    float: right;
-    width: 85%;
-
-    &:before {
-      content: 'jim-nielsen';
-      margin-right: em(50, 14);
-    }
-  }
-
-  dd {
-    float: left;
-    width: 15%;
-  }
-
-  .divider {
-    margin-top: em($spacer, 14);
-  }
-}

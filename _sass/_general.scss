@@ -1,75 +1,73 @@
 *,
 *:before,
 *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font: 1em/1.3 #{$font-family-base};
-    color: $color-text;
-    background: $color-background;
+  font: 1em/1.3 #{$font-family-base};
+  color: $color-text;
+  background: $color-background;
 
-    @include respond-to(medium) {
-        font-size: em(14);
-        background: #e9e9e9;
-    }
+  @include respond-to(medium) {
+    font-size: em(14);
+  }
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 
-    // <a.link>Text
-    &.link:hover {
-        color: $color-link;
-        text-decoration: underline;
+  // <a.link>Text
+  &.link:hover {
+    color: $color-link;
+    text-decoration: underline;
+  }
+  // <a>
+  //  <span.link>Text to look like link
+  //  <span>Some other text
+  &:hover {
+    .link {
+      color: $color-link;
+      text-decoration: underline;
     }
-    // <a>
-    //  <span.link>Text to look like link
-    //  <span>Some other text
-    &:hover {
-        .link {
-            color: $color-link;
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 
-    &.loading {
-        position: relative;
-        top: .325em;
-        margin-right: .325em;
-    }
+  &.loading {
+    position: relative;
+    top: .325em;
+    margin-right: .325em;
+  }
 }
 
 em {
   font-style: italic;
 }
 
-
 .meta {
-    font-size: #{12 / $font-size-base}em;
-    color: #999;
-    overflow: hidden;
+  font-size: #{12 / $font-size-base}em;
+  color: #999;
+  overflow: hidden;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .highlight {
-    color: $color-highlight;
+  color: $color-highlight;
 }
 .clearfix {
-    @include clearfix;
+  @include clearfix;
 }

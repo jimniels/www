@@ -4,7 +4,7 @@
   text-align: center;
 
   @media screen and (max-width: 600px) {
-    padding: 3em ($padding-left / 2);
+    padding: em($spacer) ($padding-left / 2) em($spacer * 2);
   }
 
   img {
@@ -54,7 +54,8 @@
 
     a {
       color: $color-highlight;
-
+      white-space: nowrap;
+      
       &:hover {
         text-decoration: underline;
       }
