@@ -167,14 +167,8 @@
   color: #777;
   margin-top: em(15);
 
-  // &:before {
-  //   content: 'Further reading:';
-  //   display: block;
-  //   margin: em(10, 14) 0;
-  // }
-
   li {
-    margin-left: 1em;
+    margin-left: em($spacer, 14);
   }
 
   a {
