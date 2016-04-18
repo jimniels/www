@@ -32,6 +32,10 @@
   p {
     color: $color-text-light;
     margin-bottom: em(20);
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   nav {
@@ -55,7 +59,7 @@
     a {
       color: $color-highlight;
       white-space: nowrap;
-      
+
       &:hover {
         text-decoration: underline;
       }
