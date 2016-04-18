@@ -4,4 +4,4 @@ markdown: redcarpet
 baseurl: ""
 imageurl: assets/img
 sass:
-    sass_dir: _sass
+  sass_dir: _sass

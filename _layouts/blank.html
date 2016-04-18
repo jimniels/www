@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="Jim Nielsen">
-    <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="Jim Nielsen">
+  <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
 
+  {{ content }}
 
-    {{ content }}
-
-    <!-- Tracking Code -->
-    {% include analytics.html %}
-
+  <!-- Tracking Code -->
+  {% include analytics.html %}
 </body>
 </html>
