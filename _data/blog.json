@@ -1,10 +1,17 @@
 [
     
     {
+        "title":        "Designing and Developing the DCP Application",
+        "date":         "17 May, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/",
+        "tags":         "#designProcess"
+    },
+    
+    {
         "title":        "Going the Extra Mile with Tasks and Feature Requests",
         "date":         "02 Mar, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/",
-        "tags":         "#designProcess"
+        "tags":         "#designProcess, #tips"
     },
     
     {
@@ -61,13 +68,6 @@
         "date":         "11 Sep, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/marketing2/",
         "tags":         "#designProcess"
-    },
-    
-    {
-        "title":        "Reading Notes, August 2015",
-        "date":         "08 Sep, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/reading-notes-august/",
-        "tags":         "#notes"
     }
     
 ]
