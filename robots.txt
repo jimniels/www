@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /applewatchicongallery
+Disallow: /watchosicongallery
 Disallow: /macicongallery
 Disallow: /iosicongallery
 Disallow: /sandbox/kindlinglovesstartups/
