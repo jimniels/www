@@ -1,5 +1,38 @@
 [
   {
+    "id": 2784608,
+    "title": "Icon galleries updates",
+    "description": "<p>With Apple's new branding around their operating systems, I brought the icon galleries representations into a more unified whole:</p>\n\n<p><a href=\"http://applewatchicongallery.com\" rel=\"nofollow noreferrer\">Apple Watch icon gallery (applewatchicongallery.com)</a> is now <a href=\"http://watchosicongallery.com\" rel=\"nofollow noreferrer\">watchOS icon gallery (watchosicongallery.com)</a></p>\n\n<p><a href=\"http://iosicongallery.com\" rel=\"nofollow noreferrer\">iOS icon gallery (iosicongallery.com)</a> stays the same.</p>\n\n<p><a href=\"http://macicongallery.com\" rel=\"nofollow noreferrer\">Mac icon gallery (macicongallery.com)</a> is now <a href=\"http://macosicongallery.com\" rel=\"nofollow noreferrer\">macOS icon gallery (macosicongallery.com)</a></p>\n\n<p>And tvOS icon gallery is coming soon...</p>",
+    "width": 400,
+    "height": 300,
+    "images": {
+      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries.png",
+      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_1x.png",
+      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_teaser.png"
+    },
+    "views_count": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "attachments_count": 0,
+    "rebounds_count": 0,
+    "buckets_count": 0,
+    "created_at": "2016-06-17T16:43:05Z",
+    "updated_at": "2016-06-17T16:47:28Z",
+    "html_url": "https://dribbble.com/shots/2784608-Icon-galleries-updates",
+    "attachments_url": "https://api.dribbble.com/v1/shots/2784608/attachments",
+    "buckets_url": "https://api.dribbble.com/v1/shots/2784608/buckets",
+    "comments_url": "https://api.dribbble.com/v1/shots/2784608/comments",
+    "likes_url": "https://api.dribbble.com/v1/shots/2784608/likes",
+    "projects_url": "https://api.dribbble.com/v1/shots/2784608/projects",
+    "rebounds_url": "https://api.dribbble.com/v1/shots/2784608/rebounds",
+    "animated": false,
+    "tags": [
+      "logo",
+      "logo design"
+    ],
+    "team": null
+  },
+  {
     "id": 2594230,
     "title": "Table Zero State",
     "description": "<p>Instructive UI for a module’s zero state.</p>",
@@ -10,7 +43,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_teaser.png"
     },
-    "views_count": 143,
+    "views_count": 214,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -42,7 +75,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_teaser.png"
     },
-    "views_count": 214,
+    "views_count": 258,
     "likes_count": 11,
     "comments_count": 0,
     "attachments_count": 0,
@@ -74,7 +107,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract_teaser.png"
     },
-    "views_count": 55,
+    "views_count": 67,
     "likes_count": 3,
     "comments_count": 0,
     "attachments_count": 0,
@@ -106,7 +139,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_teaser.png"
     },
-    "views_count": 129,
+    "views_count": 163,
     "likes_count": 5,
     "comments_count": 0,
     "attachments_count": 0,
@@ -138,7 +171,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_teaser.png"
     },
-    "views_count": 130,
+    "views_count": 155,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -170,7 +203,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_teaser.png"
     },
-    "views_count": 166,
+    "views_count": 180,
     "likes_count": 10,
     "comments_count": 1,
     "attachments_count": 0,
@@ -203,7 +236,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2292911/404_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2292911/404_teaser.png"
     },
-    "views_count": 243,
+    "views_count": 253,
     "likes_count": 12,
     "comments_count": 1,
     "attachments_count": 0,
@@ -235,7 +268,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2266019/team-colors_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2266019/team-colors_teaser.png"
     },
-    "views_count": 147,
+    "views_count": 156,
     "likes_count": 3,
     "comments_count": 0,
     "attachments_count": 0,
@@ -268,7 +301,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2240175/kindling-home_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2240175/kindling-home_teaser.png"
     },
-    "views_count": 116,
+    "views_count": 133,
     "likes_count": 5,
     "comments_count": 0,
     "attachments_count": 0,
@@ -300,7 +333,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2210439/800.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2210439/800_teaser.png"
     },
-    "views_count": 136,
+    "views_count": 154,
     "likes_count": 6,
     "comments_count": 0,
     "attachments_count": 0,
@@ -333,7 +366,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2195933/category-view_1x.jpg",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2195933/category-view_teaser.jpg"
     },
-    "views_count": 105,
+    "views_count": 109,
     "likes_count": 1,
     "comments_count": 0,
     "attachments_count": 0,
@@ -348,38 +381,6 @@
     "likes_url": "https://api.dribbble.com/v1/shots/2195933/likes",
     "projects_url": "https://api.dribbble.com/v1/shots/2195933/projects",
     "rebounds_url": "https://api.dribbble.com/v1/shots/2195933/rebounds",
-    "animated": false,
-    "tags": [
-
-    ],
-    "team": null
-  },
-  {
-    "id": 2192259,
-    "title": "Tour Flow",
-    "description": "<p>Work for Kindling's tour pages, which was eventually collapsed into a <a href=\"https://kindlingapp.com/take-a-tour/\" rel=\"nofollow\">single page tour</a>.</p>",
-    "width": 400,
-    "height": 300,
-    "images": {
-      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2192259/untitled-1.jpg",
-      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2192259/untitled-1_1x.jpg",
-      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2192259/untitled-1_teaser.jpg"
-    },
-    "views_count": 113,
-    "likes_count": 6,
-    "comments_count": 0,
-    "attachments_count": 0,
-    "rebounds_count": 0,
-    "buckets_count": 0,
-    "created_at": "2015-08-12T16:01:11Z",
-    "updated_at": "2015-08-12T16:04:19Z",
-    "html_url": "https://dribbble.com/shots/2192259-Tour-Flow",
-    "attachments_url": "https://api.dribbble.com/v1/shots/2192259/attachments",
-    "buckets_url": "https://api.dribbble.com/v1/shots/2192259/buckets",
-    "comments_url": "https://api.dribbble.com/v1/shots/2192259/comments",
-    "likes_url": "https://api.dribbble.com/v1/shots/2192259/likes",
-    "projects_url": "https://api.dribbble.com/v1/shots/2192259/projects",
-    "rebounds_url": "https://api.dribbble.com/v1/shots/2192259/rebounds",
     "animated": false,
     "tags": [
 
