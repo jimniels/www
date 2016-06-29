@@ -34,6 +34,33 @@
           name: "Andre Souza"
           followers: 1176
   -
+    id: "macos-icon-gallery"
+    title: "macOS Icon Gallery"
+    link: "http://macosicongallery.com"
+    link-pretty: "macosicongallery.com"
+    description: "A gallery showcasing great icon designs from the macOS App Store."
+  -
+    id: "watchos-icon-gallery"
+    title: "watchOS Icon Gallery"
+    link: "http://watchosicongallery.com"
+    link-pretty: "watchosicongallery.com"
+    description: "A gallery showcasing great icon designs from the watchOS ecosystem."
+    tweets:
+      -
+        id: 618183624794501100
+        content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
+        author:
+          handle: "flarup"
+          name: "Michael Flarup"
+          followers: 19800
+      -
+        id: 613378256754970600
+        content: "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK"
+        author:
+          handle: "EdgeAnimate"
+          name: "Adobe Edge Animate"
+          followers: 47800
+  -
     id: "team-colors"
     title: "Team Colors"
     link: "http://teamcolors.arc90.com"
@@ -70,27 +97,6 @@
     description: "An experiment in analyzing the integrity of iconic logos. How well would you recognize a logo out of focus?"
     cta: "http://jim-nielsen.com/blog/posts/logo-integrity/"
   -
-    id: "apple-watch-icon-gallery"
-    title: "Apple Watch Icon Gallery"
-    link: "http://applewatchicongallery.com"
-    link-pretty: "applewatchicongallery.com"
-    description: "A gallery showcasing great icon designs from the Apple Watch ecosystem."
-    tweets:
-      -
-        id: 618183624794501100
-        content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
-        author:
-          handle: "flarup"
-          name: "Michael Flarup"
-          followers: 19800
-      -
-        id: 613378256754970600
-        content: "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK"
-        author:
-          handle: "EdgeAnimate"
-          name: "Adobe Edge Animate"
-          followers: 47800
-  -
     id: "sassme"
     title: "SassMe"
     link: "http://sassme.arc90.com"
@@ -118,12 +124,6 @@
           handle: "elefontpress"
           name: "Matt Griffin"
           followers: 1939
-  -
-    id: "mac-icon-gallery"
-    title: "Mac Icon Gallery"
-    link: "http://macicongallery.com"
-    link-pretty: "macicongallery.com"
-    description: "A gallery showcasing great icon designs from the Mac App Store."
   -
     id: "css-off-2012"
     title: "CSS Off 2012"
