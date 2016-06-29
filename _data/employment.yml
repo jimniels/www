@@ -18,6 +18,9 @@
       description: Part one in a series of internal web applications for Time Inc. Handled sketching, wireframeing, and mocking the UI/UX of the application while simultaneously engineering the view layer.
       links:
         -
+          title: Designing and Developing the DCP Application
+          url: http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/
+        -
           title: Designing and Building the Assignment Desk Application
           url: http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk
         -
