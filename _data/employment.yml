@@ -114,6 +114,10 @@
       urlDomain: arc90.com
       description: Created new artwork and assets for Arc’s exisiting website, then implemented them in code.
       tools: Photoshop, Wordpress, PHP, CSS
+      links:
+        -
+          title: Arc90 “Work” Page Design Updates
+          url: http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/
 -
   title: Marketing & Multimedia Designer
   company: Dixie State University
