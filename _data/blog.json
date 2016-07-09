@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Arc90 “Work” Page Design Updates",
+        "date":         "09 Jul, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/",
+        "tags":         "#designProcess"
+    },
+    
+    {
         "title":        "Designing and Developing the DCP Application",
         "date":         "17 May, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/",
@@ -61,13 +68,6 @@
         "date":         "05 Oct, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-october/",
         "tags":         "#notes"
-    },
-    
-    {
-        "title":        "Kindling Marketing Site 2.0",
-        "date":         "11 Sep, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/marketing2/",
-        "tags":         "#designProcess"
     }
     
 ]
