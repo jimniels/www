@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Paul Rand on Logos",
+        "date":         "11 Jul, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/paul-rand-on-logos/",
+        "tags":         "#notes"
+    },
+    
+    {
         "title":        "Arc90 “Work” Page Design Updates",
         "date":         "09 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/",
@@ -61,13 +68,6 @@
         "date":         "17 Oct, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/one-algorithm-to-rule-them-all/",
         "tags":         "#insights"
-    },
-    
-    {
-        "title":        "Reading Notes, September 2015",
-        "date":         "05 Oct, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/reading-notes-october/",
-        "tags":         "#notes"
     }
     
 ]
