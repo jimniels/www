@@ -1,5 +1,73 @@
 [
   {
+    "id": 2835194,
+    "title": "Individual event view",
+    "description": "<p>Work on the view for an individual event. </p>",
+    "width": 400,
+    "height": 300,
+    "images": {
+      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2835194/event.png",
+      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2835194/event_1x.png",
+      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2835194/event_teaser.png"
+    },
+    "views_count": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "attachments_count": 0,
+    "rebounds_count": 0,
+    "buckets_count": 0,
+    "created_at": "2016-07-13T17:43:50Z",
+    "updated_at": "2016-07-13T17:44:57Z",
+    "html_url": "https://dribbble.com/shots/2835194-Individual-event-view",
+    "attachments_url": "https://api.dribbble.com/v1/shots/2835194/attachments",
+    "buckets_url": "https://api.dribbble.com/v1/shots/2835194/buckets",
+    "comments_url": "https://api.dribbble.com/v1/shots/2835194/comments",
+    "likes_url": "https://api.dribbble.com/v1/shots/2835194/likes",
+    "projects_url": "https://api.dribbble.com/v1/shots/2835194/projects",
+    "rebounds_url": "https://api.dribbble.com/v1/shots/2835194/rebounds",
+    "animated": false,
+    "tags": [
+      "event",
+      "material-design",
+      "material-ui"
+    ],
+    "team": null
+  },
+  {
+    "id": 2833368,
+    "title": "Event list view",
+    "description": "<p>Designing and implementing this list view of events where events occurring today are hoisted to the top.</p>",
+    "width": 400,
+    "height": 300,
+    "images": {
+      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2833368/groundwork-events.png",
+      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2833368/groundwork-events_1x.png",
+      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2833368/groundwork-events_teaser.png"
+    },
+    "views_count": 92,
+    "likes_count": 9,
+    "comments_count": 2,
+    "attachments_count": 0,
+    "rebounds_count": 0,
+    "buckets_count": 0,
+    "created_at": "2016-07-12T22:45:27Z",
+    "updated_at": "2016-07-13T08:59:07Z",
+    "html_url": "https://dribbble.com/shots/2833368-Event-list-view",
+    "attachments_url": "https://api.dribbble.com/v1/shots/2833368/attachments",
+    "buckets_url": "https://api.dribbble.com/v1/shots/2833368/buckets",
+    "comments_url": "https://api.dribbble.com/v1/shots/2833368/comments",
+    "likes_url": "https://api.dribbble.com/v1/shots/2833368/likes",
+    "projects_url": "https://api.dribbble.com/v1/shots/2833368/projects",
+    "rebounds_url": "https://api.dribbble.com/v1/shots/2833368/rebounds",
+    "animated": false,
+    "tags": [
+      "event",
+      "material-design",
+      "material-ui"
+    ],
+    "team": null
+  },
+  {
     "id": 2784608,
     "title": "Icon galleries updates",
     "description": "<p>With Apple's new branding around their operating systems, I brought the icon galleries representations into a more unified whole:</p>\n\n<p><a href=\"http://applewatchicongallery.com\" rel=\"nofollow noreferrer\">Apple Watch icon gallery (applewatchicongallery.com)</a> is now <a href=\"http://watchosicongallery.com\" rel=\"nofollow noreferrer\">watchOS icon gallery (watchosicongallery.com)</a></p>\n\n<p><a href=\"http://iosicongallery.com\" rel=\"nofollow noreferrer\">iOS icon gallery (iosicongallery.com)</a> stays the same.</p>\n\n<p><a href=\"http://macicongallery.com\" rel=\"nofollow noreferrer\">Mac icon gallery (macicongallery.com)</a> is now <a href=\"http://macosicongallery.com\" rel=\"nofollow noreferrer\">macOS icon gallery (macosicongallery.com)</a></p>\n\n<p>And tvOS icon gallery is coming soon...</p>",
@@ -10,14 +78,14 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_teaser.png"
     },
-    "views_count": 1,
-    "likes_count": 0,
+    "views_count": 201,
+    "likes_count": 13,
     "comments_count": 0,
     "attachments_count": 0,
     "rebounds_count": 0,
     "buckets_count": 0,
     "created_at": "2016-06-17T16:43:05Z",
-    "updated_at": "2016-06-17T16:47:28Z",
+    "updated_at": "2016-06-21T04:23:35Z",
     "html_url": "https://dribbble.com/shots/2784608-Icon-galleries-updates",
     "attachments_url": "https://api.dribbble.com/v1/shots/2784608/attachments",
     "buckets_url": "https://api.dribbble.com/v1/shots/2784608/buckets",
@@ -43,7 +111,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_teaser.png"
     },
-    "views_count": 214,
+    "views_count": 234,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -75,7 +143,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_teaser.png"
     },
-    "views_count": 258,
+    "views_count": 266,
     "likes_count": 11,
     "comments_count": 0,
     "attachments_count": 0,
@@ -107,7 +175,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract_teaser.png"
     },
-    "views_count": 67,
+    "views_count": 77,
     "likes_count": 3,
     "comments_count": 0,
     "attachments_count": 0,
@@ -139,7 +207,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_teaser.png"
     },
-    "views_count": 163,
+    "views_count": 175,
     "likes_count": 5,
     "comments_count": 0,
     "attachments_count": 0,
@@ -171,7 +239,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_teaser.png"
     },
-    "views_count": 155,
+    "views_count": 160,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -203,14 +271,14 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_teaser.png"
     },
-    "views_count": 180,
-    "likes_count": 10,
-    "comments_count": 1,
+    "views_count": 182,
+    "likes_count": 9,
+    "comments_count": 0,
     "attachments_count": 0,
     "rebounds_count": 0,
     "buckets_count": 0,
     "created_at": "2015-12-03T15:24:17Z",
-    "updated_at": "2015-12-03T15:26:04Z",
+    "updated_at": "2016-07-05T04:34:55Z",
     "html_url": "https://dribbble.com/shots/2386067-Application-logo",
     "attachments_url": "https://api.dribbble.com/v1/shots/2386067/attachments",
     "buckets_url": "https://api.dribbble.com/v1/shots/2386067/buckets",
@@ -236,7 +304,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2292911/404_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2292911/404_teaser.png"
     },
-    "views_count": 253,
+    "views_count": 257,
     "likes_count": 12,
     "comments_count": 1,
     "attachments_count": 0,
@@ -268,7 +336,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2266019/team-colors_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2266019/team-colors_teaser.png"
     },
-    "views_count": 156,
+    "views_count": 162,
     "likes_count": 3,
     "comments_count": 0,
     "attachments_count": 0,
@@ -301,7 +369,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2240175/kindling-home_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2240175/kindling-home_teaser.png"
     },
-    "views_count": 133,
+    "views_count": 139,
     "likes_count": 5,
     "comments_count": 0,
     "attachments_count": 0,
@@ -319,71 +387,6 @@
     "animated": false,
     "tags": [
       "website"
-    ],
-    "team": null
-  },
-  {
-    "id": 2210439,
-    "title": "API-Driven Web App Tutorial",
-    "description": "<p><a href=\"http://webdesign.tutsplus.com/tutorials/connecting-an-api-driven-web-app-with-javascript--cms-24576\" rel=\"nofollow\">Final installment</a> of my tutorial on designing and building a mini API-driven web app was published today.</p>",
-    "width": 400,
-    "height": 300,
-    "images": {
-      "hidpi": null,
-      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2210439/800.png",
-      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2210439/800_teaser.png"
-    },
-    "views_count": 154,
-    "likes_count": 6,
-    "comments_count": 0,
-    "attachments_count": 0,
-    "rebounds_count": 0,
-    "buckets_count": 0,
-    "created_at": "2015-08-24T15:58:32Z",
-    "updated_at": "2015-08-24T16:01:07Z",
-    "html_url": "https://dribbble.com/shots/2210439-API-Driven-Web-App-Tutorial",
-    "attachments_url": "https://api.dribbble.com/v1/shots/2210439/attachments",
-    "buckets_url": "https://api.dribbble.com/v1/shots/2210439/buckets",
-    "comments_url": "https://api.dribbble.com/v1/shots/2210439/comments",
-    "likes_url": "https://api.dribbble.com/v1/shots/2210439/likes",
-    "projects_url": "https://api.dribbble.com/v1/shots/2210439/projects",
-    "rebounds_url": "https://api.dribbble.com/v1/shots/2210439/rebounds",
-    "animated": false,
-    "tags": [
-      "api",
-      "tutorial"
-    ],
-    "team": null
-  },
-  {
-    "id": 2195933,
-    "title": "Burning through ideas for a new web app view",
-    "description": "<p>One in a set of many iterations towards a new Category view</p>",
-    "width": 400,
-    "height": 300,
-    "images": {
-      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2195933/category-view.jpg",
-      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2195933/category-view_1x.jpg",
-      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2195933/category-view_teaser.jpg"
-    },
-    "views_count": 109,
-    "likes_count": 1,
-    "comments_count": 0,
-    "attachments_count": 0,
-    "rebounds_count": 0,
-    "buckets_count": 0,
-    "created_at": "2015-08-14T15:51:49Z",
-    "updated_at": "2015-08-14T15:53:39Z",
-    "html_url": "https://dribbble.com/shots/2195933-Burning-through-ideas-for-a-new-web-app-view",
-    "attachments_url": "https://api.dribbble.com/v1/shots/2195933/attachments",
-    "buckets_url": "https://api.dribbble.com/v1/shots/2195933/buckets",
-    "comments_url": "https://api.dribbble.com/v1/shots/2195933/comments",
-    "likes_url": "https://api.dribbble.com/v1/shots/2195933/likes",
-    "projects_url": "https://api.dribbble.com/v1/shots/2195933/projects",
-    "rebounds_url": "https://api.dribbble.com/v1/shots/2195933/rebounds",
-    "animated": false,
-    "tags": [
-
     ],
     "team": null
   }
