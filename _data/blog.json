@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Reading Notes, July 2016",
+        "date":         "08 Aug, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-july-2016/",
+        "tags":         "#notes"
+    },
+    
+    {
         "title":        "Paul Rand on Logos",
         "date":         "11 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/paul-rand-on-logos/",
@@ -61,13 +68,6 @@
         "date":         "02 Nov, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-november/",
         "tags":         "#notes"
-    },
-    
-    {
-        "title":        "One Algorithm to Rule Them All",
-        "date":         "17 Oct, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/one-algorithm-to-rule-them-all/",
-        "tags":         "#insights"
     }
     
 ]
