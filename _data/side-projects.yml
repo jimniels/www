@@ -99,8 +99,8 @@
   -
     id: "sassme"
     title: "SassMe"
-    link: "http://sassme.arc90.com"
-    link-pretty: "sassme.arc90.com"
+    link: "https://jim-nielsen.com/sassme"
+    link-pretty: "jim-nielsen.com/sassme"
     description: "A resource for visualizing the result of Sass color functions in real-time."
     tweets:
       -
