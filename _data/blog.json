@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Reading Notes September",
+        "date":         "08 Sep, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-september/",
+        "tags":         "#readingNotes"
+    },
+    
+    {
         "title":        "Reading Notes, July 2016",
         "date":         "08 Aug, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-july-2016/",
@@ -60,13 +67,6 @@
         "title":        "Reading Notes, December 2015",
         "date":         "01 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/reading-notes-december/",
-        "tags":         "#notes"
-    },
-    
-    {
-        "title":        "Reading Notes, November 2015",
-        "date":         "02 Nov, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/reading-notes-november/",
         "tags":         "#notes"
     }
     
