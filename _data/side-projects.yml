@@ -1,5 +1,34 @@
 ---
   -
+    id: "sassme"
+    title: "SassMe"
+    link: "http://jim-nielsen.com/sassme"
+    link-pretty: "jim-nielsen.com/sassme"
+    description: "A resource for visualizing the result of Sass color functions in real-time."
+    cta: "http://jim-nielsen.com/blog/2016/sassme-v2/"
+    tweets:
+      -
+        id: 444486106365435900
+        content: "Check out SassMe, a tool for visualizing Sass color functions: http://cog.gd/5xy"
+        author:
+          handle: "happycog"
+          name: "Happy Cog"
+          followers: 222000
+      -
+        id: 361846594364112900
+        content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head! http://sassme.arc90.com/"
+        author:
+          handle: "vlh"
+          name: "Val Head"
+          followers: 4076
+      -
+        id: 436977632811712500
+        content: "Oh, look how helpful this is for Sass colors: http://sassme.arc90.com/"
+        author:
+          handle: "elefontpress"
+          name: "Matt Griffin"
+          followers: 1939
+  -
     id: "gimmie-dat-icon"
     title: "Gimmie Dat Icon"
     link: "http://jim-nielsen.com/gimmiedaticon/"
@@ -96,34 +125,6 @@
     link-pretty: "jim-nielsen.com/logo-integrity"
     description: "An experiment in analyzing the integrity of iconic logos. How well would you recognize a logo out of focus?"
     cta: "http://jim-nielsen.com/blog/posts/logo-integrity/"
-  -
-    id: "sassme"
-    title: "SassMe"
-    link: "http://jim-nielsen.com/sassme"
-    link-pretty: "jim-nielsen.com/sassme"
-    description: "A resource for visualizing the result of Sass color functions in real-time."
-    tweets:
-      -
-        id: 444486106365435900
-        content: "Check out SassMe, a tool for visualizing Sass color functions: http://cog.gd/5xy"
-        author:
-          handle: "happycog"
-          name: "Happy Cog"
-          followers: 222000
-      -
-        id: 361846594364112900
-        content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head! http://sassme.arc90.com/"
-        author:
-          handle: "vlh"
-          name: "Val Head"
-          followers: 4076
-      -
-        id: 436977632811712500
-        content: "Oh, look how helpful this is for Sass colors: http://sassme.arc90.com/"
-        author:
-          handle: "elefontpress"
-          name: "Matt Griffin"
-          followers: 1939
   -
     id: "css-off-2012"
     title: "CSS Off 2012"

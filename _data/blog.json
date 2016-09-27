@@ -1,73 +1,73 @@
 [
-
+    
     {
-        "title":        "Reading Notes, September 2016",
+        "title":        "SassMe v2.0",
+        "date":         "27 Sep, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/sassme-v2/",
+        "tags":         "#designProcess"
+    },
+    
+    {
+        "title":        "Reading Notes, September 2017",
         "date":         "08 Sep, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-september/",
         "tags":         "#readingNotes"
     },
-
+    
     {
         "title":        "Reading Notes, July 2016",
         "date":         "08 Aug, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-july-2016/",
         "tags":         "#notes"
     },
-
+    
     {
         "title":        "Paul Rand on Logos",
         "date":         "11 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/paul-rand-on-logos/",
         "tags":         "#notes"
     },
-
+    
     {
         "title":        "Arc90 “Work” Page Design Updates",
         "date":         "09 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/",
         "tags":         "#designProcess"
     },
-
+    
     {
         "title":        "Designing and Developing the DCP Application",
         "date":         "17 May, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/",
         "tags":         "#designProcess"
     },
-
+    
     {
         "title":        "Going the Extra Mile with Tasks and Feature Requests",
         "date":         "02 Mar, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/",
         "tags":         "#designProcess, #tips"
     },
-
+    
     {
         "title":        "Designing and Building the Assignment Desk Application",
         "date":         "28 Jan, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk/",
         "tags":         "#designProcess"
     },
-
+    
     {
         "title":        "Innovation Sales Sheet",
         "date":         "30 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/innovation-sales-sheet/",
         "tags":         "#designProcess"
     },
-
+    
     {
         "title":        "Assignment Desk Logo",
         "date":         "03 Dec, 2015",
         "url":          "http://jim-nielsen.com/blog/2015/assignment-desk-logo/",
         "tags":         "#designProcess"
-    },
-
-    {
-        "title":        "Reading Notes, December 2015",
-        "date":         "01 Dec, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/reading-notes-december/",
-        "tags":         "#notes"
     }
-
+    
 ]
