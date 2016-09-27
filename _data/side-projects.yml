@@ -8,26 +8,26 @@
     cta: "http://jim-nielsen.com/blog/2016/sassme-v2/"
     tweets:
       -
-        id: 444486106365435900
+        id: 444486106365435904
         content: "Check out SassMe, a tool for visualizing Sass color functions: http://cog.gd/5xy"
         author:
           handle: "happycog"
           name: "Happy Cog"
           followers: 222000
       -
-        id: 361846594364112900
+        id: 361846594364112896
         content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head! http://sassme.arc90.com/"
         author:
           handle: "vlh"
           name: "Val Head"
           followers: 4076
       -
-        id: 436977632811712500
-        content: "Oh, look how helpful this is for Sass colors: http://sassme.arc90.com/"
+        id: 535808595565481986
+        content: "A little helpful tool to visualize SASS color functions in real-time without compiling. http://sassme.arc90.com"
         author:
-          handle: "elefontpress"
-          name: "Matt Griffin"
-          followers: 1939
+          handle: "smashingmag"
+          name: "Smashing Magazine"
+          followers: 794000
   -
     id: "gimmie-dat-icon"
     title: "Gimmie Dat Icon"
@@ -42,21 +42,21 @@
     description: "A gallery showcasing great icon designs from the iOS ecosystem."
     tweets:
       -
-        id: 219856804987928580
+        id: 219856804987928576
         content: "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem - http://iosicongallery.com/"
         author:
           handle: "smashingmag"
           name: "Smashing Magazine"
           followers: 794000
       -
-        id: 219845371487191040
+        id: 219845371487191042
         content: "Good reference site for icon inspiration http://iosicongallery.com/"
         author:
           handle: "iamFinch"
           name: "Francisco Inchauste"
           followers: 8411
       -
-        id: 369583698229723140
+        id: 369583698229723138
         content: "Mac Icon Gallery http://macicongallery.com  and iOS Icon Gallery http://iosicongallery.com  are indeed nice showcases. Nice initiative by @jimniels."
         author:
           handle: "dresouzax"
@@ -76,7 +76,7 @@
     description: "A gallery showcasing great icon designs from the watchOS ecosystem."
     tweets:
       -
-        id: 618183624794501100
+        id: 618183624794501120
         content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
         author:
           handle: "flarup"
@@ -105,19 +105,19 @@
           name: "@jongold"
           followers: 6487
       -
-        id: 545374325831122940
-        content: "Find of the day: hex codes for all major-league teams http://bit.ly/16uf5kY  #infographics"
+        id: 753034281119801346
+        content: "HT to @jimniels, whose team colors site is a gift to the internet. (& to sports researchers wanting accurate charts http://teamcolors.arc90.com/"
         author:
-          handle: "tessavanderhart"
-          name: "Tessa Vanderhart"
-          followers: 2134
+          handle: "DrBDT"
+          name: "B. David Tyler"
+          followers: 411
       -
         id: 545374325831122940
-        content: "A bit too happy to find this, thanks @jimniels - Sports Team Hex Codes finder http://bit.ly/1rVqWli  #stillageekatheart"
+        content: "Thanks to @jimniels for this cool team logo colour finder, turned a 20 minute job into a 2 minute one! http://teamcolors.arc90.com/"
         author:
-          handle: "seancallanan"
-          name: "Sean Callanan"
-          followers: 15000
+          handle: "JoeyMFaulkner"
+          name: "Joey Faulkner"
+          followers: 173
   -
     id: "logo-integrity"
     title: "Experiment: Logo Integrity in Focus"

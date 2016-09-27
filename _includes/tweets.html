@@ -5,7 +5,7 @@ Must pass in the tweet object whic lists all displayable tweets
 <ul class="tweets">
   {% for tweet in include.tweets %}
   <li class="tweet">
-    <a href="https://twitter.com/{{tweet.author.handle}}/statuses/{{tweet.id}}" class="tweet-permalink">
+    <a href="https://twitter.com/{{tweet.author.handle}}/status/{{tweet.id}}" class="tweet-permalink">
       <span class="tweet-author-name">
         {{ tweet.author.name }}
       </span>
