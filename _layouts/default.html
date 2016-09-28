@@ -14,25 +14,29 @@
 </head>
 <body>
   <section class='wrapper'>
-  <main class='main'>
-    {{ content }}
-  </main>
-
-  <div class='skills'>
-    <strong>
-      [ ~ ] ls -skills
-    </strong>
-    <ul>
-      {% for skill in site.data.skills %}
-      <li class='{% if skill.divider %}divider{% endif %}'>
-        <span>-{{ skill.capability }}</span>
-        <span>jim-nielsen</span>
-        <span>{{ skill.name }}</span>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+    <div class='main'>
+      {{ content }}
+    </div>
   </section>
+
+  {% if page.type == 'home' %}
+  <aside class='wrapper'>
+    <div class='skills'>
+      <strong>
+        [ ~ ] ls -skills
+      </strong>
+      <ul>
+        {% for skill in site.data.skills %}
+        <li class='{% if skill.divider %}divider{% endif %}'>
+          <span>-{{ skill.capability }}</span>
+          <span>jim-nielsen</span>
+          <span>{{ skill.name }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </aside>
+  {% endif %}
 
   <footer class='wrapper footer'>
     <p>
