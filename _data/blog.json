@@ -1,6 +1,20 @@
 [
     
     {
+        "title":        "Reading Notes, November 2016",
+        "date":         "18 Nov, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-november/",
+        "tags":         "#readingNotes"
+    },
+    
+    {
+        "title":        "Reading Notes, October 2016",
+        "date":         "01 Oct, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-october/",
+        "tags":         "#readingNotes"
+    },
+    
+    {
         "title":        "SassMe v2.0",
         "date":         "27 Sep, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/sassme-v2/",
@@ -8,7 +22,7 @@
     },
     
     {
-        "title":        "Reading Notes, September 2017",
+        "title":        "Reading Notes, September 2016",
         "date":         "08 Sep, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-september/",
         "tags":         "#readingNotes"
@@ -53,20 +67,6 @@
         "title":        "Designing and Building the Assignment Desk Application",
         "date":         "28 Jan, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk/",
-        "tags":         "#designProcess"
-    },
-    
-    {
-        "title":        "Innovation Sales Sheet",
-        "date":         "30 Dec, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/innovation-sales-sheet/",
-        "tags":         "#designProcess"
-    },
-    
-    {
-        "title":        "Assignment Desk Logo",
-        "date":         "03 Dec, 2015",
-        "url":          "http://jim-nielsen.com/blog/2015/assignment-desk-logo/",
         "tags":         "#designProcess"
     }
     
