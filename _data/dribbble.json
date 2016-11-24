@@ -1,5 +1,37 @@
 [
   {
+    "id": 3117025,
+    "title": "Search auto suggest design",
+    "description": "<p>Redesigned the existing search autosuggest. Previously, results were merely concatenated into a big string of results. Now the results have a structured IA with helpful UI labels. Wrote a <a href=\"http://jim-nielsen.com/blog/2016/text-as-ui/\" rel=\"nofollow noreferrer\">post about the process on my blog</a>.</p>",
+    "width": 400,
+    "height": 300,
+    "images": {
+      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3117025/dribbble.png",
+      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3117025/dribbble_1x.png",
+      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3117025/dribbble_teaser.png"
+    },
+    "views_count": 1,
+    "likes_count": 0,
+    "comments_count": 0,
+    "attachments_count": 0,
+    "rebounds_count": 0,
+    "buckets_count": 0,
+    "created_at": "2016-11-24T15:20:54Z",
+    "updated_at": "2016-11-24T15:23:12Z",
+    "html_url": "https://dribbble.com/shots/3117025-Search-auto-suggest-design",
+    "attachments_url": "https://api.dribbble.com/v1/shots/3117025/attachments",
+    "buckets_url": "https://api.dribbble.com/v1/shots/3117025/buckets",
+    "comments_url": "https://api.dribbble.com/v1/shots/3117025/comments",
+    "likes_url": "https://api.dribbble.com/v1/shots/3117025/likes",
+    "projects_url": "https://api.dribbble.com/v1/shots/3117025/projects",
+    "rebounds_url": "https://api.dribbble.com/v1/shots/3117025/rebounds",
+    "animated": false,
+    "tags": [
+      "search"
+    ],
+    "team": null
+  },
+  {
     "id": 2989239,
     "title": "SassMe v2.0",
     "description": "<p>Designed, built, and launched <a href=\"http://jim-nielsen.com/sassme/\" rel=\"nofollow noreferrer\">version 2.0 of SassMe</a>: a tool to dynamically visualize the results of Sass color functions. Read more about it in my <a href=\"http://jim-nielsen.com/blog/2016/sassme-v2/\" rel=\"nofollow noreferrer\">blog post</a>.</p>",
@@ -10,14 +42,14 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2989239/sassme_1x.jpg",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2989239/sassme_teaser.jpg"
     },
-    "views_count": 5,
-    "likes_count": 1,
+    "views_count": 120,
+    "likes_count": 6,
     "comments_count": 0,
     "attachments_count": 0,
     "rebounds_count": 0,
     "buckets_count": 0,
     "created_at": "2016-09-27T18:52:30Z",
-    "updated_at": "2016-09-27T19:07:27Z",
+    "updated_at": "2016-10-31T13:06:47Z",
     "html_url": "https://dribbble.com/shots/2989239-SassMe-v2-0",
     "attachments_url": "https://api.dribbble.com/v1/shots/2989239/attachments",
     "buckets_url": "https://api.dribbble.com/v1/shots/2989239/buckets",
@@ -46,12 +78,12 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2852050/stepper_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2852050/stepper_teaser.png"
     },
-    "views_count": 280,
-    "likes_count": 10,
+    "views_count": 478,
+    "likes_count": 11,
     "comments_count": 0,
     "attachments_count": 0,
     "rebounds_count": 0,
-    "buckets_count": 0,
+    "buckets_count": 1,
     "created_at": "2016-07-21T21:22:47Z",
     "updated_at": "2016-07-25T19:36:08Z",
     "html_url": "https://dribbble.com/shots/2852050-Step-Wizard",
@@ -80,7 +112,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2843802/groundwork-login_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2843802/groundwork-login_teaser.png"
     },
-    "views_count": 304,
+    "views_count": 364,
     "likes_count": 15,
     "comments_count": 0,
     "attachments_count": 0,
@@ -114,14 +146,14 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2835194/event_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2835194/event_teaser.png"
     },
-    "views_count": 226,
-    "likes_count": 16,
+    "views_count": 250,
+    "likes_count": 15,
     "comments_count": 1,
     "attachments_count": 0,
     "rebounds_count": 0,
     "buckets_count": 2,
     "created_at": "2016-07-13T17:43:50Z",
-    "updated_at": "2016-07-14T00:25:27Z",
+    "updated_at": "2016-10-17T21:24:14Z",
     "html_url": "https://dribbble.com/shots/2835194-Individual-event-view",
     "attachments_url": "https://api.dribbble.com/v1/shots/2835194/attachments",
     "buckets_url": "https://api.dribbble.com/v1/shots/2835194/buckets",
@@ -148,7 +180,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2833368/groundwork-events_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2833368/groundwork-events_teaser.png"
     },
-    "views_count": 270,
+    "views_count": 326,
     "likes_count": 12,
     "comments_count": 5,
     "attachments_count": 0,
@@ -182,8 +214,8 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2784608/galleries_teaser.png"
     },
-    "views_count": 243,
-    "likes_count": 16,
+    "views_count": 257,
+    "likes_count": 17,
     "comments_count": 0,
     "attachments_count": 0,
     "rebounds_count": 0,
@@ -215,7 +247,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2594230/dribbble_teaser.png"
     },
-    "views_count": 260,
+    "views_count": 277,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -247,7 +279,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2576260/dcp_teaser.png"
     },
-    "views_count": 277,
+    "views_count": 285,
     "likes_count": 11,
     "comments_count": 0,
     "attachments_count": 0,
@@ -279,7 +311,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2567085/signed-contract_teaser.png"
     },
-    "views_count": 84,
+    "views_count": 89,
     "likes_count": 3,
     "comments_count": 0,
     "attachments_count": 0,
@@ -311,7 +343,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2453698/style-guide_teaser.png"
     },
-    "views_count": 189,
+    "views_count": 198,
     "likes_count": 5,
     "comments_count": 0,
     "attachments_count": 0,
@@ -343,7 +375,7 @@
       "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_1x.png",
       "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2401300/error-page-overlay_teaser.png"
     },
-    "views_count": 174,
+    "views_count": 176,
     "likes_count": 7,
     "comments_count": 0,
     "attachments_count": 0,
@@ -361,39 +393,6 @@
     "animated": false,
     "tags": [
 
-    ],
-    "team": null
-  },
-  {
-    "id": 2386067,
-    "title": "Application logo",
-    "description": "<p>Some stuff I did around a desktop web application's branding work. You can <a href=\"http://jim-nielsen.com/blog/2015/assignment-desk-logo/\" rel=\"nofollow noreferrer\">read more</a> about the process if you want.</p>",
-    "width": 400,
-    "height": 300,
-    "images": {
-      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk.png",
-      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_1x.png",
-      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/2386067/assignment-desk_teaser.png"
-    },
-    "views_count": 189,
-    "likes_count": 9,
-    "comments_count": 0,
-    "attachments_count": 0,
-    "rebounds_count": 0,
-    "buckets_count": 0,
-    "created_at": "2015-12-03T15:24:17Z",
-    "updated_at": "2016-07-05T04:34:55Z",
-    "html_url": "https://dribbble.com/shots/2386067-Application-logo",
-    "attachments_url": "https://api.dribbble.com/v1/shots/2386067/attachments",
-    "buckets_url": "https://api.dribbble.com/v1/shots/2386067/buckets",
-    "comments_url": "https://api.dribbble.com/v1/shots/2386067/comments",
-    "likes_url": "https://api.dribbble.com/v1/shots/2386067/likes",
-    "projects_url": "https://api.dribbble.com/v1/shots/2386067/projects",
-    "rebounds_url": "https://api.dribbble.com/v1/shots/2386067/rebounds",
-    "animated": false,
-    "tags": [
-      "logo",
-      "logo design"
     ],
     "team": null
   }
