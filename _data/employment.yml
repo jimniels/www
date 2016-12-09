@@ -4,13 +4,31 @@
   company: Insight Catastrophe Group
   companyUrl: http://www.icg360.com/
   byline: 2016 – Present · Jersey City, New Jersey
-  description: "Coming soon..."
+  description: "More info to come as the role evolves and develops..."
+  projects:
+    -
+      title: Agent Portal
+      tools: Sketch, Sass
+      description: Web application allowing agents to quote and bind insurance policies via Insight’s platform. Initial work has included redesigning exisiting problematic UI interfaces and simplifying front-end implementation approaches.
+      links:
+        -
+          title: Text as UI
+          url: http://jim-nielsen.com/blog/2016/text-as-ui/
 -
   title: UI Engineer
   company: Timshel
   companyUrl: https://timshel.com/
   byline: 2016 · Chicago / New York City
   description: "Worked on the front-end team doing engineering, design, and product management for a variety of web applicaitons and services. In other words, when stuff needed to be built, we built and shipped it."
+  projects:
+    -
+      title: Admin
+      tools: Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material UI, Git
+      description: Web interface for clients administering their account on The Groundwork platform. Handled creating, designing, and engineering various features for the application’s view layer.
+      links:
+        -
+          title: Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”
+          url: http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/
 -
   title: Designer & Front-end Developer
   company: Postlight
