@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”",
+        "date":         "09 Dec, 2016",
+        "url":          "http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/",
+        "tags":         "#designProcess"
+    },
+    
+    {
         "title":        "Text as UI",
         "date":         "24 Nov, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/text-as-ui/",
@@ -61,13 +68,6 @@
         "date":         "17 May, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/",
         "tags":         "#designProcess"
-    },
-    
-    {
-        "title":        "Going the Extra Mile with Tasks and Feature Requests",
-        "date":         "02 Mar, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/",
-        "tags":         "#designProcess, #tips"
     }
     
 ]
