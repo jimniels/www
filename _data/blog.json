@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Designing and Engineering Color Usage in Agent Portal",
+        "date":         "06 Jan, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/",
+        "tags":         "#designProcess, #insight"
+    },
+    
+    {
         "title":        "Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”",
         "date":         "09 Dec, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/",
@@ -11,7 +18,7 @@
         "title":        "Text as UI",
         "date":         "24 Nov, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/text-as-ui/",
-        "tags":         "#designProcess"
+        "tags":         "#designProcess, #insight"
     },
     
     {
@@ -60,13 +67,6 @@
         "title":        "Arc90 “Work” Page Design Updates",
         "date":         "09 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/",
-        "tags":         "#designProcess"
-    },
-    
-    {
-        "title":        "Designing and Developing the DCP Application",
-        "date":         "17 May, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/",
         "tags":         "#designProcess"
     }
     
