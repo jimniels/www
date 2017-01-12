@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Migrating Away from Compass and Susy to Sass Exclusively",
+        "date":         "11 Jan, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/migrating-away-from-compass-and-susy/",
+        "tags":         "#engineering, #insight"
+    },
+    
+    {
         "title":        "Designing and Engineering Color Usage in Agent Portal",
         "date":         "06 Jan, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/",
@@ -61,13 +68,6 @@
         "date":         "11 Jul, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/paul-rand-on-logos/",
         "tags":         "#notes"
-    },
-    
-    {
-        "title":        "Arc90 “Work” Page Design Updates",
-        "date":         "09 Jul, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/",
-        "tags":         "#designProcess"
     }
     
 ]
