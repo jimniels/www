@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "The Art of the Side Project",
+        "date":         "17 Jan, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/the-art-of-the-side-project/",
+        "tags":         "#insights"
+    },
+    
+    {
         "title":        "Migrating Away from Compass and Susy to Sass Exclusively",
         "date":         "11 Jan, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/migrating-away-from-compass-and-susy/",
@@ -11,14 +18,14 @@
         "title":        "Designing and Engineering Color Usage in Agent Portal",
         "date":         "06 Jan, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/",
-        "tags":         "#designProcess, #insight"
+        "tags":         "#designProcess, #insight, #engineering"
     },
     
     {
         "title":        "Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”",
         "date":         "09 Dec, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/",
-        "tags":         "#designProcess"
+        "tags":         "#designProcess, #engineering"
     },
     
     {
@@ -46,7 +53,7 @@
         "title":        "SassMe v2.0",
         "date":         "27 Sep, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/sassme-v2/",
-        "tags":         "#designProcess"
+        "tags":         "#designProcess, #engineering"
     },
     
     {
@@ -60,13 +67,6 @@
         "title":        "Reading Notes, July 2016",
         "date":         "08 Aug, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-july-2016/",
-        "tags":         "#notes"
-    },
-    
-    {
-        "title":        "Paul Rand on Logos",
-        "date":         "11 Jul, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/paul-rand-on-logos/",
         "tags":         "#notes"
     }
     
