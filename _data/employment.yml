@@ -17,6 +17,9 @@
         -
           title: Designing and Engineering Color Usage in Agent Portal
           url: http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/
+        -
+          title: Migrating Away from Compass and Susy to Sass Exclusively
+          url: http://jim-nielsen.com/blog/2017/migrating-away-from-compass-and-susy/
 -
   title: UI Engineer
   company: Timshel
