@@ -1,10 +1,17 @@
 [
     
     {
+        "title":        "Reading Notes, January 2017",
+        "date":         "31 Jan, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/reading-notes-january-2017/",
+        "tags":         "#readingNotes"
+    },
+    
+    {
         "title":        "The Art of the Side Project",
         "date":         "17 Jan, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/the-art-of-the-side-project/",
-        "tags":         "#insights"
+        "tags":         "#thoughts"
     },
     
     {
@@ -61,13 +68,6 @@
         "date":         "08 Sep, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-september/",
         "tags":         "#readingNotes"
-    },
-    
-    {
-        "title":        "Reading Notes, July 2016",
-        "date":         "08 Aug, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-july-2016/",
-        "tags":         "#notes"
     }
     
 ]
