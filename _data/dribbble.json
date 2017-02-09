@@ -32,38 +32,6 @@
     "team": null
   },
   {
-    "id": 3277925,
-    "title": "Stickers",
-    "description": "<p>Working on stickers in circle and die cut variations...</p>",
-    "width": 400,
-    "height": 300,
-    "images": {
-      "hidpi": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3277925/stickers.png",
-      "normal": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3277925/stickers_1x.png",
-      "teaser": "https://d13yacurqjgara.cloudfront.net/users/44352/screenshots/3277925/stickers_teaser.png"
-    },
-    "views_count": 2,
-    "likes_count": 0,
-    "comments_count": 0,
-    "attachments_count": 0,
-    "rebounds_count": 0,
-    "buckets_count": 0,
-    "created_at": "2017-02-09T04:52:05Z",
-    "updated_at": "2017-02-09T04:53:18Z",
-    "html_url": "https://dribbble.com/shots/3277925-Stickers",
-    "attachments_url": "https://api.dribbble.com/v1/shots/3277925/attachments",
-    "buckets_url": "https://api.dribbble.com/v1/shots/3277925/buckets",
-    "comments_url": "https://api.dribbble.com/v1/shots/3277925/comments",
-    "likes_url": "https://api.dribbble.com/v1/shots/3277925/likes",
-    "projects_url": "https://api.dribbble.com/v1/shots/3277925/projects",
-    "rebounds_url": "https://api.dribbble.com/v1/shots/3277925/rebounds",
-    "animated": false,
-    "tags": [
-
-    ],
-    "team": null
-  },
-  {
     "id": 3160153,
     "title": "Google Sheets -> JSON",
     "description": "<p>Playing around with visualizing data from a Google excel sheet pulled as JSON.</p>",
