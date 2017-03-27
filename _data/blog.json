@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "The Analog Web",
+        "date":         "27 Mar, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/the-analog-web/",
+        "tags":         "#thoughts"
+    },
+    
+    {
         "title":        "Designing Cross-Application Login Screens (and Business Relationships)",
         "date":         "08 Mar, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/designing-login-screens-and-business-relationships/",
@@ -61,13 +68,6 @@
         "date":         "01 Oct, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-october/",
         "tags":         "#readingNotes"
-    },
-    
-    {
-        "title":        "SassMe v2.0",
-        "date":         "27 Sep, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/sassme-v2/",
-        "tags":         "#designProcess, #engineering"
     }
     
 ]
