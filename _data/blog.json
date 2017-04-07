@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Reading Notes, April 2017",
+        "date":         "07 Apr, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/reading-notes-april/",
+        "tags":         "#notes"
+    },
+    
+    {
         "title":        "The Analog Web",
         "date":         "27 Mar, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/the-analog-web/",
@@ -60,13 +67,6 @@
         "title":        "Reading Notes, November 2016",
         "date":         "18 Nov, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/reading-notes-november/",
-        "tags":         "#readingNotes"
-    },
-    
-    {
-        "title":        "Reading Notes, October 2016",
-        "date":         "01 Oct, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-october/",
         "tags":         "#readingNotes"
     }
     
