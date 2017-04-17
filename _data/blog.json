@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Stop Using the Term “Pixel Perfect”, Start Focusing on Experiences",
+        "date":         "17 Apr, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/stop-using-the-term-pixel-perfect/",
+        "tags":         "#thoughts"
+    },
+    
+    {
         "title":        "Reading Notes, April 2017",
         "date":         "07 Apr, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/reading-notes-april/",
@@ -61,13 +68,6 @@
         "date":         "24 Nov, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/text-as-ui/",
         "tags":         "#designProcess, #insight"
-    },
-    
-    {
-        "title":        "Reading Notes, November 2016",
-        "date":         "18 Nov, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/reading-notes-november/",
-        "tags":         "#readingNotes"
     }
     
 ]
