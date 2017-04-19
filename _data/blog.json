@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Designing Integrations for the Admin application at Timshel",
+        "date":         "19 Apr, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/designing-integrations-at-timshel/",
+        "tags":         "#designProcess"
+    },
+    
+    {
         "title":        "Stop Using the Term “Pixel Perfect”, Start Focusing on Experiences",
         "date":         "17 Apr, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/stop-using-the-term-pixel-perfect/",
@@ -61,13 +68,6 @@
         "date":         "09 Dec, 2016",
         "url":          "http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/",
         "tags":         "#designProcess, #engineering"
-    },
-    
-    {
-        "title":        "Text as UI",
-        "date":         "24 Nov, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/text-as-ui/",
-        "tags":         "#designProcess, #insight"
     }
     
 ]
