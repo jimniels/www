@@ -1,6 +1,13 @@
 [
     
     {
+        "title":        "Reading Notes, May 2017",
+        "date":         "09 May, 2017",
+        "url":          "http://jim-nielsen.com/blog/2017/reading-notes-may/",
+        "tags":         "#readingNotes"
+    },
+    
+    {
         "title":        "Designing Integrations for the Admin Application at Timshel",
         "date":         "19 Apr, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/designing-integrations-at-timshel/",
@@ -18,7 +25,7 @@
         "title":        "Reading Notes, April 2017",
         "date":         "07 Apr, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/reading-notes-april/",
-        "tags":         "#notes"
+        "tags":         "#readingNotes"
     },
     
     {
@@ -61,13 +68,6 @@
         "date":         "06 Jan, 2017",
         "url":          "http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/",
         "tags":         "#designProcess, #insight, #engineering"
-    },
-    
-    {
-        "title":        "Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”",
-        "date":         "09 Dec, 2016",
-        "url":          "http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/",
-        "tags":         "#designProcess, #engineering"
     }
     
 ]
