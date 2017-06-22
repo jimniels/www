@@ -39,7 +39,12 @@ files.forEach(function(file){
 
       // If it's the blog, get the `items` key where the posts are stored
       if (file.name === 'blog') {
+        // Remove the `content_html` key
         newData = newData.items;
+        newData.forEach(item => {
+          delete item.content_html;
+        });
+        console.log(newData);
       }
 
       try {
@@ -51,7 +56,7 @@ files.forEach(function(file){
       if(typeof oldData !== 'undefined' && oldData[0].title === newData[0].title){
         console.log(file.name + ' data is already up to date');
       } else {
-        fs.writeFile('_data/' + file.name + '.json', body, function(err) {
+        fs.writeFile('_data/' + file.name + '.json', JSON.stringify(newData), function(err) {
            if (err) {
              return console.error(err);
            }
