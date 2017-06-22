@@ -37,6 +37,11 @@ files.forEach(function(file){
       // We will use this to check if it already exists
       var newData = JSON.parse(body);
 
+      // If it's the blog, get the `items` key where the posts are stored
+      if (file.name === 'blog') {
+        newData = newData.items;
+      }
+
       try {
         oldData = require('./' + file.name);
       } catch(e) {
