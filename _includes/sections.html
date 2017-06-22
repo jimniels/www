@@ -146,9 +146,7 @@
         {{ post.title }}
       </h2>
       <p class='byline'>
-        <time>{{ post.date | date: '%-d %b, %Y'}}</time>
-        ·
-        {{ post.tags }}
+        <time>{{ post.date_published | date: '%-d %b, %Y'}}</time>
       </p>
     </a>
   </li>
