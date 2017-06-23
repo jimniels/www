@@ -44,7 +44,6 @@ files.forEach(function(file){
         newData.forEach(item => {
           delete item.content_html;
         });
-        console.log(newData);
       }
 
       try {
