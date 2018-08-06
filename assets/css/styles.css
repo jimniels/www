@@ -154,6 +154,7 @@ h4 {
 
 .header {
   font-family: "PT Serif", "Times New Roman", Times, serif;
+  margin-bottom: 60px;
 }
 
 .header > * {
