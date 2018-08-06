@@ -1,0 +1,13 @@
+---
+-   id: "dribbble"
+    title: "Dribbble"
+    url: "http://dribbble.com/jimniels"
+-   id: "blog"
+    title: "Blog"
+    url: "http://jim-nielsen.com/blog"
+-   id: "publishings"
+    title: "Publishings"
+-   id: "personal-projects"
+    title: "Personal Projects"
+-   id: "employment"
+    title: "Employment"

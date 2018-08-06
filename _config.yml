@@ -1,7 +1,0 @@
-name: "Jim Nielsen, Designer"
-description: "Jim Nielsen, a web and graphic designer working for an enterprise software startup in NYC"
-markdown: redcarpet
-baseurl: ""
-imageurl: assets/img
-sass:
-  sass_dir: _sass
