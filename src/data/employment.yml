@@ -83,8 +83,6 @@
     - title: Kindling the Marketing Site
       description: "Designed and built two different versions of this site: the first powered by Wordpress, the second by a static site generator. Hands were full with conceptualization, UI/UX, code, and everything in-between."
       tools: Photoshop, PHP, Wordpress, Sass, Javascript, Metalsmith, Node, Git, Hubspot & Google Analytics, Asana, Mailchimp
-      url: http://kindlingapp.com/
-      urlDomain: kindlingapp.com
       links:
         - title: Kindling Marketing Site 2.0
           url: http://jim-nielsen.com/blog/2015/marketing2/
@@ -108,9 +106,10 @@
         url: http://jim-nielsen.com/blog/2014/kindling-rubber-stamp/
     - title: Kindling Loves Startups
       description: Designed and developed this responsive website as the central piece of a marketing campaign. It employed a few (at the time) cutting-edge tricks, including a progressively-enhanced pulse animation.
-      url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
-      urlDomain: kindlinglovesstartups.com
       tools: Photoshop, PHP, Sass, Javascript, jQuery
+      links:
+        - title: '[Archived]: kindlinglovesstartups.com'
+          url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
 - title: Web Designer
   company: Arc90
   companyUrl: http://arc90.com/
@@ -120,9 +119,7 @@
     - title: Knovel
       description: Worked on designing product landing pages and diving into application code – right before the client’s contract was cut short.
       tools: Photoshop, Javascript, jQuery, Backbone.js
-    - title: Arc90 Agency Site
-      url: http://arc90.com/
-      urlDomain: arc90.com
+    - title: arc90.com
       description: Created new artwork and assets for Arc’s exisiting website, then implemented them in code.
       tools: Photoshop, Wordpress, PHP, CSS
       links:

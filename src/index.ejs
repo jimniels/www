@@ -14,7 +14,7 @@
   <main class="wrapper main">
     <header class="header">
       <div class="header__graphic">
-        <img src="/assets/img/logo.png" width="210" height="103" />
+        <img src="/assets/img/logo.png" width="255" height="126" />
         <img src="/assets/img/profile.jpg" width="490" height="540" />
         <canvas id="canvas"></canvas>
       </div>
@@ -35,22 +35,21 @@
       <p><em>Who are you?</em> The answer you’re probably looking for is “I am a web designer who also codes.” But what I really do is solve problems and add value to projects I work on. And that’s probably one of the less intersting facts about me, but you know, this is a website where I talk about myself professionally, so I have to say these things.</p>
       <p><em>What are your skills?</em> My practical skills aren’t what’s interesting about me. Yes, I design visual interfaces and leverage principles of design, color theory, and typography. I write code and intimately understand HTML, CSS, and JavaScript. But my skills are tools to and end: to solve problems and provide value.</p>
       <p><em>What’s your expertise?</em> My expertise lies in synthensizing knowledge across perceivedly disparate boundaries. “Visual designer”, “Front-end Developer”, and “Product Manager”, I assume all those responsibilities in order to add value to a business, to enhance a company’s culture, to bring clarity to a project, or to just get along with humans (something often perceived as a difficult task for people who write instructions for machines).</p>
-      <p><em>How are you, you know, as a human?</em> This was best articulated by a former co-worker when I was departing the company: "Gonna be a real bummer here w/o you. You bring a lot of great design, and a lot of not-being-an-asshole-ness."</p>
-      <p><em>Do you have anything else to say?</em> Yes, in fact, glad you asked. Everything I am as a designer, developer, tech person, and just general human is a result of the wonderful people who I've crossed paths with in my life. I've worked with some of the most thoughtful, funny, esoteric, kind, and witty people you’ll ever meet. More than any project I've worked on, I'm proud of the people I've worked with and learned from. I'm sure you, dear reader, would be a wonderful person I could learn from as well.</p>
+      <p><em>How are you, you know, as a human?</em> Don’t take it from me, here are the words of a peer when I was departing a previous employer:</p>
+      <blockquote><p>Gonna be a real bummer here w/o you. You bring a lot of great design, and a lot of not-being-an-asshole-ness.</p></blockquote>
+      <p><em>Do you have anything else to say?</em> Yes, in fact, glad you asked. Everything I am as a designer, developer, tech person, and just general human is a result of the wonderful people who I've crossed paths with in my life. I've worked with some of the most <a href="">thoughtful</a>, <a href="">funny</a>, <a href="">esoteric</a>, <a href="">kind</a>, and <a href="">witty</a> people you’ll ever meet. More than any project I've worked on, I'm proud of the people I've worked with and learned from. I'm sure you, dear reader, would be a wonderful person I could learn from as well.</p>
       <p>— Jim Nielsen, August 2, 2018</p>
     </header>
 
     <% sections.forEach(({ id, url, title, data }) => { %>
         <section class="section clearfix" id="<%- id %>">
-          <h1 class="section__header">
-            <% if (url) { %>
-              <a href="<%- url %>">
-            <% } %>
+          <h2 class="section__header">
+            
+            
+            
               <%- title %>
-            <% if (url) { %>
-            </a>
-            <% } %>
-          </h1>
+            
+          </h2>
           <ul class="section__content">
               
             <!-- Dribbble -->
@@ -104,23 +103,8 @@
                     <% projects.forEach(project => { %>
                     <li>
                         <h4>
-                          Project:
-                          <% if (project.url) { %>
-                            <a href="<%- project.url %>" class="link">
-                              <%- project.title %>
-                            </a>
-                          <% } else { %>
-                            <%- project.title %>
-                          <% } %>
+                          Project: <%- project.title %>
                         </h4>
-            
-                        <% if (project.url) { %>
-                          <p class="byline">
-                            <a href="<%- project.url %>">
-                              <%- project.urlDomain %>
-                            </a>
-                          </p>
-                        <% } %>
             
                         <p class="description">
                           <%- project.description %>

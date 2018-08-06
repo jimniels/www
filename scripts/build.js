@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const fetch = require("node-fetch");
 const ejs = require("ejs");
+const striptags = require("striptags");
 const YAML = require("yamljs");
 
 const PATH_TO_DATA = path.resolve(__dirname, "../src/data/");
@@ -95,7 +96,16 @@ async function getDribbblePosts() {
     headers: {
       Authorization:
         "Bearer 8379fd23942fcf12e4dfdb3d09293a1c01c19e7a577b35e78d48bb659480a21d",
+      // This header is supposed to return a key name `description_text` where
+      // HTML is stripped, but it's not for some reason. So we'll do it ourself.
       Accept: "application/vnd.dribbble.v2.text+json"
     }
-  }).then(res => res.json());
+  })
+    .then(res => res.json())
+    .then(json =>
+      json.map(item => ({
+        ...item,
+        description: striptags(item.description)
+      }))
+    );
 }
