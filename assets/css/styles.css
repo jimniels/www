@@ -475,13 +475,16 @@ h4 {
 .tweet:first-child {
   padding-top: 0;
 }
+.tweet a {
+  color: inherit;
+}
 
 .tweet-screen-name {
   color: #999;
   font-size: 0.875em;
 }
 .tweet-author-name {
-  color: $color-twitter-blue;
+  font-weight: 600;
 }
 .tweet-permalink:hover {
   text-decoration: none;

@@ -4,6 +4,7 @@ const fetch = require("node-fetch");
 const ejs = require("ejs");
 const striptags = require("striptags");
 const YAML = require("yamljs");
+const moment = require("moment");
 
 const PATH_TO_DATA = path.resolve(__dirname, "../src/data/");
 
@@ -56,7 +57,12 @@ async function main() {
 async function getBlogPosts() {
   return await fetch("http://jim-nielsen.com/blog/feed.json")
     .then(res => res.json())
-    .then(res => res.items);
+    .then(res =>
+      res.items.map(item => ({
+        ...item,
+        date_published: moment(item.date_published).format("MMM D, YYYY")
+      }))
+    );
 }
 
 /*
@@ -83,6 +89,7 @@ async function getRemoteFile(fn, file) {
  *     description
  *     title
  *     html_url
+ *     published_at
  *     images: {
  *       hidpi,
  *       normal,
@@ -105,6 +112,7 @@ async function getDribbblePosts() {
     .then(json =>
       json.map(item => ({
         ...item,
+        published_at: moment(item.published_at).format("MMM D, YYYY"),
         description: striptags(item.description)
       }))
     );
