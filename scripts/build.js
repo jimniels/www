@@ -5,9 +5,10 @@ const ejs = require("ejs");
 const striptags = require("striptags");
 const YAML = require("yamljs");
 const moment = require("moment");
+const slugify = require("slugify");
 
+const DATE_FORMAT = "MMM D, YYYY";
 const PATH_TO_DATA = path.resolve(__dirname, "../src/data/");
-
 let sections = YAML.load(path.resolve(PATH_TO_DATA, "sections.yml"));
 
 main();
@@ -24,6 +25,19 @@ async function main() {
         sections[index].data = YAML.load(
           path.resolve(PATH_TO_DATA, `${id}.yml`)
         );
+
+        if (id === "publishings") {
+          sections[index].data = sections[index].data.map(item => {
+            return {
+              ...item,
+              date: moment(item.date).format(DATE_FORMAT),
+              thumbnail:
+                slugify(item.title, { remove: /['':;,]/g, lower: true }) +
+                "." +
+                (item.imageType ? item.imageType : "png")
+            };
+          });
+        }
       }
     }
 
@@ -31,10 +45,14 @@ async function main() {
       .readFileSync(path.resolve(__dirname, "../src/index.ejs"))
       .toString();
 
-    const out = ejs.render(template, {
-      sections,
-      skills: YAML.load(path.resolve(PATH_TO_DATA, "skills.yml"))
-    });
+    const out = ejs.render(
+      template,
+      {
+        sections,
+        skills: YAML.load(path.resolve(PATH_TO_DATA, "skills.yml"))
+      },
+      { filename: path.join(__dirname, "../src/index.ejs") }
+    );
     // const out =
     //   "<!DOCTYPE html>" +
     //   ReactDOMServer.renderToStaticMarkup(
@@ -60,7 +78,7 @@ async function getBlogPosts() {
     .then(res =>
       res.items.map(item => ({
         ...item,
-        date_published: moment(item.date_published).format("MMM D, YYYY")
+        date_published: moment(item.date_published).format(DATE_FORMAT)
       }))
     );
 }
@@ -112,7 +130,7 @@ async function getDribbblePosts() {
     .then(json =>
       json.map(item => ({
         ...item,
-        published_at: moment(item.published_at).format("MMM D, YYYY"),
+        published_at: moment(item.published_at).format(DATE_FORMAT),
         description: striptags(item.description)
       }))
     );

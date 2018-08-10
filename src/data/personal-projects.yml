@@ -4,7 +4,9 @@
     title: "SassMe"
     link: "http://jim-nielsen.com/sassme"
     description: "Visualize the result of Sass color functions in real-time."
-    cta: "http://jim-nielsen.com/blog/2016/sassme-v2/"
+    links:
+      - title: "SassMe v2.0"
+        url: "http://jim-nielsen.com/blog/2016/sassme-v2/"
     tweets:
       -
         id: "444486106365435904"
@@ -51,6 +53,15 @@
     title: "iOS Icon Gallery"
     link: "http://iosicongallery.com"
     description: "A gallery showcasing great icon designs from the iOS ecosystem."
+    links:
+      - title: "Detective Work for the App Icon Book"
+        url: "http://jim-nielsen.com/blog/2018/detecitve-work-for-app-icon-book/"
+      - title: "URL Design and Automated Redirects in Jekyll"
+        url: "http://jim-nielsen.com/blog/2018/url-design-and-automated-redirects-in-jekyll/"
+      - title: "Creating iOS Icon Masks in the Browser"
+        url: "http://jim-nielsen.com/blog/2017/creating-ios-icon-masks-in-the-browser/"
+      - title: "Calculate the Border Radius for iOS-Style Icons Using a Simple Ratio"
+        url: "http://jim-nielsen.com/blog/2012/calculate-the-ios-border-radius/"
     tweets:
       -
         id: "219856804987928576"
@@ -103,7 +114,11 @@
     title: "Team Colors"
     link: "http://jim-nielsen.com/teamcolors"
     description: "A color reference of your favorite major league sports teams."
-    cta: "http://jim-nielsen.com/blog/posts/team-colors-2-0"
+    links: 
+      - title: "Team Colors 2.0"
+        url: "http://jim-nielsen.com/blog/2015/team-colors-2-0/"
+      - title: "Team Color Codes"
+        url: "http://jim-nielsen.com/blog/2013/teamcolors/"
     tweets:
       -
         id: "560801635694551040"
@@ -131,7 +146,11 @@
     title: "Experiment: Logo Integrity in Focus"
     link: "http://jim-nielsen.com/logo-integrity"
     description: "An experiment in analyzing the integrity of iconic logos. How well would you recognize a logo out of focus?"
-    cta: "http://jim-nielsen.com/blog/posts/logo-integrity/"
+    links:
+      - title: "Logo Integrity Brought into Focus"
+        url: "http://jim-nielsen.com/blog/2014/logo-integrity/"
+      - title: "My Little Cabin in the Woods of Logo Integrity"
+        url: "http://jim-nielsen.com/blog/2018/cabin-of-logo-integrity/"
     tweets:
       -
         id: "940570504464928768"

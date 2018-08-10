@@ -32,7 +32,7 @@
         </ul>
       </nav>
       
-      <p><em>Who are you?</em> The answer you’re probably looking for is “I am a web designer who also codes.” But what I really do is solve problems and add value to projects I work on. And that’s probably one of the less intersting facts about me, but you know, this is a website where I talk about myself professionally, so I have to say these things.</p>
+      <p><em>Who are you?</em> The answer you’re probably looking for is “I am a designer who codes.” But what I really do is solve problems and add value to the projects I work on. And that’s probably one of the less intersting facts about me, but you know, this is a website where I talk about myself professionally, so I have to say these things.</p>
       <p><em>What are your skills?</em> My practical skills aren’t what’s interesting about me. Yes, I design visual interfaces and leverage principles of design, color theory, and typography. I write code and intimately understand HTML, CSS, and JavaScript. But my skills are tools to and end: to solve problems and provide value.</p>
       <p><em>What’s your expertise?</em> My expertise lies in synthensizing knowledge across perceivedly disparate boundaries. “Visual designer”, “Front-end Developer”, and “Product Manager”, I assume all those responsibilities in order to add value to a business, to enhance a company’s culture, to bring clarity to a project, or to just get along with humans (something often perceived as a difficult task for people who write instructions for machines).</p>
       <p><em>How are you, you know, as a human?</em> Don’t take it from me, here are the words of a peer when I was departing a previous employer:</p>
@@ -85,7 +85,7 @@
               <% data.forEach(({ byline, company, companyUrl, description, projects, title }) => { %>
               <li class="item">
                 <div class="item__img">
-                  <img src="/assets/img/employment/<%- company.toLowerCase().replace(/ /g, "-") %>.png" />
+                  <img src="/assets/img/employment/<%- company.toLowerCase().replace(/ /g, "-") %>.png" width="70" height="70" />
                 </div>
                 <div class="item__content">
                   <h3 class="title">
@@ -139,27 +139,19 @@
                     <a href="<%- project.link %>" class="link"><%- project.title %></a>
                   </h3>
                   <p class="description"><%- project.description %></p>
-                  <% if (project.cta) { %>
-                      <p><a href="<%- project.cta %>" class="link">Related blog post ›</a></p>
-                    <% } %>
+                  <% if (project.links) { %>
+                    <ul class="links">
+                      <% project.links.forEach(link => { %>
+                      <li>
+                        <a href="<%- link.url %>" class="link">
+                          <%- link.title %>
+                        </a>
+                      </li>
+                      <% }) %>
+                    </ul>
+                  <% } %>
                   <% if (project.tweets) { %>
-                  <ul class="tweets">
-                    <% project.tweets.forEach(tweet => { %>
-                    <li class="tweet">
-                      <a href="https://twitter.com/<%- tweet.author.handle %>/status/<%- tweet.id %>" class="tweet-permalink">
-                        <span class="tweet-author-name link">
-                          <%- tweet.author.name %>
-                        </span>
-                        <span class="tweet-screen-name">
-                          @<%- tweet.author.handle %>
-                        </span>
-                        <p class="tweet-html">
-                          <%- tweet.content %>
-                        </p>
-                      </a>
-                    </li>
-                    <% }) %>
-                  </ul>
+                    <%- include('./tweets.ejs', { tweets: project.tweets }) %>
                   <% } %>
                 </div>
               </li>
@@ -187,6 +179,29 @@
                   View more at <%- url %> ›
                 </a>
               </li>
+            <% } %>
+
+            <!-- Publishings -->
+            <% if (id === "publishings") { %>
+              <% data.forEach(article => { %>
+              <li class="item">
+                <a class="item__img" href="<%- article.link %>">
+                  <img src="assets/img/publishings/<%- article.thumbnail %>" width="70" height="70" />
+                </a>
+                <div class="item__content">
+                  <h3 class="title link"><a href="<%- article.link %>"><%- article.title %></a></h3>
+                  <p class="byline">
+                    <time><%- article.date %></time> via <%- article.publisher %>
+                    <% if (article.readerFav) { %>
+                      <em class="readers-fav"> readers’ fav</em>
+                    <% } %>
+                  </p>
+                  <% if (article.tweets) { %>
+                    <%- include('./tweets.ejs', { tweets: article.tweets }) %>
+                  <% } %>
+                </div>
+              </li>
+              <% }) %>
             <% } %>
           </ul>
         </section>
