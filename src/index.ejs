@@ -50,29 +50,9 @@
               
             <!-- Dribbble -->
             <% if (id === "dribbble") { %>
-              <% data.forEach(({ description, published_at, html_url, images: { normal }, title }) => { %>
-                <li class="item">
-                  <a class="item__img" href="<%- html_url %>">
-                    <img
-                      src="<%- normal %>"
-                      alt="<%- title %>"
-                      title="<%- title %> on Dribbble"
-                      width="400"
-                      height="300"
-                    />
-                  </a>
-                  <div class="item__content">
-                    <h3 class="title">
-                      <a href="<%- html_url %>" class="link">
-                        <%- title %>
-                      </a>
-                    </h3>
-                    <p class="byline"><%- published_at %></p>
-                    <div class="description"><%- description %></div>
-                  </div>
-                </li>
+              <% data.forEach(item => { %>
+                <%- include("./partials/dribbble.ejs", { item }) %>
               <% }) %>
-              
               <li class="view-more">
                 <a href="<%- url %>" class="link">
                   View more at <%- url %> ›
@@ -82,48 +62,8 @@
 
             <!-- Employment -->
             <% if (id === "employment") { %>
-              <% data.forEach(({ byline, company, companyUrl, description, projects, title }) => { %>
-              <li class="item">
-                <div class="item__img">
-                  <img src="/assets/img/employment/<%- company.toLowerCase().replace(/ /g, "-") %>.png" width="70" height="70" />
-                </div>
-                <div class="item__content">
-                  <h3 class="title">
-                    <%- title %> @ <a href="<%- companyUrl %>" class="link"><%- company %></a>
-                  </h3>
-                  <p class="byline"><%- byline %></p>
-                  <p class="description"><%- description %></p>
-            
-                  <% if (projects) { %>
-                  <ul class="projects clearfix">
-                    <% projects.forEach(project => { %>
-                    <li>
-                        <h4>
-                          Project: <%- project.title %>
-                        </h4>
-            
-                        <p class="description">
-                          <%- project.description %>
-                          Tools: <%- project.tools %>.
-                        </p>
-            
-                        <% if (project.links) { %>
-                          <ul class="links">
-                            <% project.links.forEach(link => { %>
-                            <li>
-                              <a href="<%- link.url %>" class="link">
-                                <%- link.title %>
-                              </a>
-                            </li>
-                            <% }) %>
-                          </ul>
-                        <% } %>
-                    </li>
-                    <% }) %>
-                  </ul>
-                  <% } %>
-                </div>
-              </li>
+              <% data.forEach(item => { %>
+                <%- include("./partials/employment.ejs", { item }) %>
               <% }) %>
             <% } %>
 
@@ -151,7 +91,7 @@
                     </ul>
                   <% } %>
                   <% if (project.tweets) { %>
-                    <%- include('./tweets.ejs', { tweets: project.tweets }) %>
+                    <%- include('./partials/tweets.ejs', { tweets: project.tweets }) %>
                   <% } %>
                 </div>
               </li>
@@ -183,24 +123,8 @@
 
             <!-- Publishings -->
             <% if (id === "publishings") { %>
-              <% data.forEach(article => { %>
-              <li class="item">
-                <a class="item__img" href="<%- article.link %>">
-                  <img src="assets/img/publishings/<%- article.thumbnail %>" width="70" height="70" />
-                </a>
-                <div class="item__content">
-                  <h3 class="title link"><a href="<%- article.link %>"><%- article.title %></a></h3>
-                  <p class="byline">
-                    <time><%- article.date %></time> via <%- article.publisher %>
-                    <% if (article.readerFav) { %>
-                      <em class="readers-fav"> readers’ fav</em>
-                    <% } %>
-                  </p>
-                  <% if (article.tweets) { %>
-                    <%- include('./tweets.ejs', { tweets: article.tweets }) %>
-                  <% } %>
-                </div>
-              </li>
+              <% data.forEach(item => { %>
+                <%- include("./partials/publishings.ejs", { item }) %>
               <% }) %>
             <% } %>
           </ul>
