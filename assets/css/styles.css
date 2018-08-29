@@ -196,7 +196,7 @@ h4 {
 .header__graphic img[src*="logo"] {
   position: absolute;
   right: 0;
-  top: 20px;
+  bottom: -30px;
 }
 
 @media screen and (min-width: 500px) {
