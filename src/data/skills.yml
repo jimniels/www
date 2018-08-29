@@ -1,75 +1,50 @@
----
--
-  name: "&lt;HTML /&gt;"
+- name: "&lt;HTML /&gt;"
   capability: "rwx"
--
-  name: ".CSS{}, @Sass"
+- name: ".CSS{}, @Sass"
   capability: "rwx"
--
-  name: "var javascript;"
+- name: "var javascript;"
   capability: "rwx"
--
-  name: "&lt;?php ?&gt;"
+- name: "&lt;?php ?&gt;"
   capability: "rwx"
--
-  name: "#!/bin/bash"
+- name: "#!/bin/bash"
   capability: "rw-"
--
-  name: "def python"
+- name: "def python"
   capability: "rw-"
--
-  name: "&lt;React includingJSX='true' /&gt;"
+- name: "&lt;React includingJSX='true' /&gt;"
   capability: "rwx"
--
-  name: "Babel.presets(['es2015'])"
+- name: "Babel.presets(['es2015'])"
   capability: "rwx"
--
-  name: "$(jQuery)"
+- name: "$(jQuery)"
   capability: "rwx"
--
-  name: "> node.js"
+- name: "> node.js"
   capability: "rw-"
--
-  name: "npm, Webpack, Grunt, Gulp, etc."
+- name: "npm, Webpack, Grunt, Gulp, etc."
   capability: "rwx"
--
-  name: "Git"
+- name: "Git"
   capability: "rw-"
--
-  name: "CLI"
+- name: "CLI"
   capability: "rw-"
--
-  name: "{{ handlebars/mustache }}, {% liquid %}, etc."
+- name: "{{ handlebars }}, <%- ejs %>, liquid, etc."
   capability: "rwx"
--
-  name: "Wordpress, Jekyll, Metalsmith, etc."
+- name: "Wordpress, Jekyll, Metalsmith, etc."
   capability: "rwx"
--
-  name: "Responsive Web Design"
+- name: "Responsive Web Design"
   capability: "rwx"
   divider: true
--
-  name: "UI/UX Design"
+- name: "UI/UX Design"
   capability: "rwx"
--
-  name: "Branding & Identity"
+- name: "Branding & Identity"
   capability: "rwx"
--
-  name: "Print Production"
+- name: "Print Production"
   capability: "rwx"
--
-  name: "Photoshop"
+- name: "Photoshop"
   capability: "rwx"
   divider: true
--
-  name: "Illustrator"
+- name: "Illustrator"
   capability: "rwx"
--
-  name: "InDesign"
+- name: "InDesign"
   capability: "rwx"
--
-  name: "Sketch App"
+- name: "Sketch App"
   capability: "rwx"
--
-  name: "Atom"
+- name: "Atom"
   capability: "rwx"
