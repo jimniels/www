@@ -1,9 +1,8 @@
 ---
--
-  title: Director of Design and UI Architecture
+- title: Director of Design and UI Architecture
   company: Insight Catastrophe Group
   companyUrl: http://www.icg360.com/
-  byline: 2016 – Present · Jersey City, New Jersey
+  byline: 2016 to Present · Jersey City, New Jersey
   description: "More info to come as the role evolves and develops..."
   projects:
     -
@@ -20,8 +19,7 @@
         -
           title: Migrating Away from Compass and Susy to Sass Exclusively
           url: http://jim-nielsen.com/blog/2017/migrating-away-from-compass-and-susy/
--
-  title: UI Engineer
+- title: UI Engineer
   company: Timshel
   companyUrl: https://timshel.com/
   byline: 2016 · Chicago / New York City
@@ -38,8 +36,7 @@
         -
           title: Designing Integrations for the Admin Application at Timshel
           url: http://jim-nielsen.com/blog/2017/designing-integrations-at-timshel/
--
-  title: Designer & Front-end Developer
+- title: Designer & Front-end Developer
   company: Postlight
   companyUrl: https://www.postlight.com/
   byline: 2016 · New York City
@@ -67,98 +64,73 @@
           -
             title: Designing and Developing the DCP Application for Time Inc.
             url: http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/
--
-  title: Lead Designer, Front-end Developer
+- title: Lead Designer, Front-end Developer
   company: Kindling
   companyUrl: http://kindlingapp.com/
-  byline: 2012 – 2016 · New York City
+  byline: 2012 to 2016 · New York City
   description: "Led this startup’s design vision (product, brand and identity, marketing). Wrote code. Wore lots of hats. Built software people enjoyed using."
   projects:
-    -
-      title: Kindling the Application
+    - title: Kindling the Application
       tools: Sketch, Photoshop, PHP, Sass, Git, Invision, Asana, Trac
       description: "A fully-responsive web application used to discover, discuss, evaluate, and decide on great ideas. Handled 100% of the app’s UI/UX: from ideation on paper to digital wireframes/mocks to browser code to cross-device testing and more."
       links:
-        -
-          title: Innovation Sales Sheet
+        - title: Innovation Sales Sheet
           url: http://jim-nielsen.com/blog/2015/innovation-sales-sheet/
-        -
-          title: Skinning the Idea Poster Anew
+        - title: Skinning the Idea Poster Anew
           url: http://jim-nielsen.com/blog/2015/skinning-the-idea-poster-anew/
-        -
-          title: Creating Apple Touch Icons
+        - title: Creating Apple Touch Icons
           url: http://jim-nielsen.com/blog/2014/creating-apple-touch-icons/
-    -
-      title: Kindling the Marketing Site
+    - title: Kindling the Marketing Site
       description: "Designed and built two different versions of this site: the first powered by Wordpress, the second by a static site generator. Hands were full with conceptualization, UI/UX, code, and everything in-between."
       tools: Photoshop, PHP, Wordpress, Sass, Javascript, Metalsmith, Node, Git, Hubspot & Google Analytics, Asana, Mailchimp
-      url: http://kindlingapp.com/
-      urlDomain: kindlingapp.com
       links:
-        -
-          title: Kindling Marketing Site 2.0
+        - title: Kindling Marketing Site 2.0
           url: http://jim-nielsen.com/blog/2015/marketing2/
-        -
-          title: Designing Kindling’s Pricing Page
+        - title: Designing Kindling’s Pricing Page
           url: http://jim-nielsen.com/blog/2015/designing-kindlings-pricing-page/
-        -
-          title: Conceiving Blog Post artwork
+        - title: Conceiving Blog Post artwork
           url: http://jim-nielsen.com/blog/2015/conceiving-blog-post-artwork/
-        -
-          title: Everything But Visual Design
+        - title: Everything But Visual Design
           url: http://jim-nielsen.com/blog/2015/everything-but-visual-design/
-        -
-          title: "Words Have Meaning: Creating the “Let’s Talk Innovation” Page"
+        - title: "Words Have Meaning: Creating the “Let’s Talk Innovation” Page"
           url: http://jim-nielsen.com/blog/2014/innovation-talk-page/
-        -
-          title: Designing a Successful Transaction Receipt
+        - title: Designing a Successful Transaction Receipt
           url: http://jim-nielsen.com/blog/2014/successful-transaction-receipt/
-        -
-          title: Home Page Redesign of kindlingapp.com
+        - title: Home Page Redesign of kindlingapp.com
           url: http://jim-nielsen.com/blog/2013/kindlingapp-home-page-redesign/
-    -
-      title: Kindling the Brand
+    - title: Kindling the Brand
       description: Owned the Kindling brand and identity, which encompassed everything from business cards to company-wide email signatures, as well as a guidebook which fostered internal standards and awareness around maintaing brand integrity.
       tools: Photoshop, Illustrator, InDesign
       links:
-      -
-        title: Kindling Rubber Stamp
+      - title: Kindling Rubber Stamp
         url: http://jim-nielsen.com/blog/2014/kindling-rubber-stamp/
-    -
-      title: Kindling Loves Startups
+    - title: Kindling Loves Startups
       description: Designed and developed this responsive website as the central piece of a marketing campaign. It employed a few (at the time) cutting-edge tricks, including a progressively-enhanced pulse animation.
-      url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
-      urlDomain: kindlinglovesstartups.com
       tools: Photoshop, PHP, Sass, Javascript, jQuery
--
-  title: Web Designer
+      links:
+        - title: '[Archived]: kindlinglovesstartups.com'
+          url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
+- title: Web Designer
   company: Arc90
   companyUrl: http://arc90.com/
   byline: 2012 · New York City
   description: Solved problems for clients with design and code. Updated and enhanced the agency’s website. Hacked cool (and useful) side projects.
   projects:
-    -
-      title: Knovel
+    - title: Knovel
       description: Worked on designing product landing pages and diving into application code – right before the client’s contract was cut short.
       tools: Photoshop, Javascript, jQuery, Backbone.js
-    -
-      title: Arc90 Agency Site
-      url: http://arc90.com/
-      urlDomain: arc90.com
+    - title: arc90.com
       description: Created new artwork and assets for Arc’s exisiting website, then implemented them in code.
       tools: Photoshop, Wordpress, PHP, CSS
       links:
-        -
-          title: Arc90 “Work” Page Design Updates
+        - title: Arc90 “Work” Page Design Updates
           url: http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/
--
-  title: Marketing & Multimedia Designer
+- title: Marketing & Multimedia Designer
   company: Dixie State University
   companyUrl: http://dixie.edu/
-  byline: 2010 – 2011 · St. George, Utah
+  byline: 2010 to 2011 · St. George, Utah
   description: "Raised design bar 110% on every public-facing widget I could get my cursor on: web design and development, graphic design, page layout, marketing campaigns, social media promotion, annual reports, brand identity, and more."
--
-  title: Multimedia Development Intern
+- title: Multimedia Development Intern
   company: SkyWest Airlines
   companyUrl: http://skywest.com/
   byline: 2010 · St. George, Utah

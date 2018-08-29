@@ -3,60 +3,82 @@
     id: "sassme"
     title: "SassMe"
     link: "http://jim-nielsen.com/sassme"
-    link-pretty: "jim-nielsen.com/sassme"
-    description: "A resource for visualizing the result of Sass color functions in real-time."
-    cta: "http://jim-nielsen.com/blog/2016/sassme-v2/"
+    description: "Visualize the result of Sass color functions in real-time."
+    links:
+      - title: "SassMe v2.0"
+        url: "http://jim-nielsen.com/blog/2016/sassme-v2/"
     tweets:
       -
-        id: 444486106365435904
+        id: "444486106365435904"
         content: "Check out SassMe, a tool for visualizing Sass color functions: http://cog.gd/5xy"
         author:
           handle: "happycog"
           name: "Happy Cog"
           followers: 222000
       -
-        id: 361846594364112896
+        id: "361846594364112896"
         content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head! http://sassme.arc90.com/"
         author:
           handle: "vlh"
           name: "Val Head"
           followers: 4076
       -
-        id: 535808595565481986
+        id: "535808595565481986"
         content: "A little helpful tool to visualize SASS color functions in real-time without compiling. http://sassme.arc90.com"
         author:
           handle: "smashingmag"
           name: "Smashing Magazine"
           followers: 794000
+      - 
+        id: "535462489107230720"
+        content: "We use a tool to help designers create variations of main set of colors http://sassme.arc90.com/ & then we name them http://name-of-color.com"
+        author:
+          handle: "elijahmanor"
+          name: "Elijah Manor"
+          followers: 45000
+      -
+        id: "488822972224765952"
+        content: "my new favorite toy. most of this is pretty easy to do in your head, but sometimes it's nice to have a visualization: http://sassme.arc90.com/"
+        author:
+          handle: "sarah_edo"
+          name: "Sarah Drasner"
+          followers: 80000
   -
     id: "gimmie-dat-icon"
     title: "Gimmie Dat Icon"
     link: "http://jim-nielsen.com/gimmiedaticon/"
-    link-pretty: "jim-nielsen.com/gimmiedaticon/"
     description: "Retrieve full-sized icon artwork for any app in Apple’s ecosystem, based on a tutorial published for Web Design Tuts+."
   -
     id: "ios-icon-gallery"
     title: "iOS Icon Gallery"
     link: "http://iosicongallery.com"
-    link-pretty: "iosicongallery.com"
     description: "A gallery showcasing great icon designs from the iOS ecosystem."
+    links:
+      - title: "Detective Work for the App Icon Book"
+        url: "http://jim-nielsen.com/blog/2018/detecitve-work-for-app-icon-book/"
+      - title: "URL Design and Automated Redirects in Jekyll"
+        url: "http://jim-nielsen.com/blog/2018/url-design-and-automated-redirects-in-jekyll/"
+      - title: "Creating iOS Icon Masks in the Browser"
+        url: "http://jim-nielsen.com/blog/2017/creating-ios-icon-masks-in-the-browser/"
+      - title: "Calculate the Border Radius for iOS-Style Icons Using a Simple Ratio"
+        url: "http://jim-nielsen.com/blog/2012/calculate-the-ios-border-radius/"
     tweets:
       -
-        id: 219856804987928576
+        id: "219856804987928576"
         content: "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem - http://iosicongallery.com/"
         author:
           handle: "smashingmag"
           name: "Smashing Magazine"
           followers: 794000
       -
-        id: 219845371487191042
+        id: "219845371487191042"
         content: "Good reference site for icon inspiration http://iosicongallery.com/"
         author:
           handle: "iamFinch"
           name: "Francisco Inchauste"
           followers: 8411
       -
-        id: 369583698229723138
+        id: "369583698229723138"
         content: "Mac Icon Gallery http://macicongallery.com  and iOS Icon Gallery http://iosicongallery.com  are indeed nice showcases. Nice initiative by @jimniels."
         author:
           handle: "dresouzax"
@@ -66,24 +88,22 @@
     id: "macos-icon-gallery"
     title: "macOS Icon Gallery"
     link: "http://macosicongallery.com"
-    link-pretty: "macosicongallery.com"
     description: "A gallery showcasing great icon designs from the macOS App Store."
   -
     id: "watchos-icon-gallery"
     title: "watchOS Icon Gallery"
     link: "http://watchosicongallery.com"
-    link-pretty: "watchosicongallery.com"
     description: "A gallery showcasing great icon designs from the watchOS ecosystem."
     tweets:
       -
-        id: 618183624794501120
+        id: "618183624794501120"
         content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch. http://applewatchicongallery.com"
         author:
           handle: "flarup"
           name: "Michael Flarup"
           followers: 19800
       -
-        id: 613378256754970600
+        id: "613378256754970600"
         content: "Right and round.  A gallery full of inspiration for Apple Watch icons: http://bit.ly/1N5PjCK"
         author:
           handle: "EdgeAnimate"
@@ -93,26 +113,29 @@
     id: "team-colors"
     title: "Team Colors"
     link: "http://jim-nielsen.com/teamcolors"
-    link-pretty: "jim-nielsen.com/teamcolors"
     description: "A color reference of your favorite major league sports teams."
-    cta: "http://jim-nielsen.com/blog/posts/team-colors-2-0"
+    links: 
+      - title: "Team Colors 2.0"
+        url: "http://jim-nielsen.com/blog/2015/team-colors-2-0/"
+      - title: "Team Color Codes"
+        url: "http://jim-nielsen.com/blog/2013/teamcolors/"
     tweets:
       -
-        id: 560801635694551040
+        id: "560801635694551040"
         content: "http://teamcolors.arc90.com/  — list of loads of sports team hex colours & SVG logos, by @jimniels. So so useful."
         author:
           handle: "jongold"
           name: "@jongold"
           followers: 6487
       -
-        id: 753034281119801346
+        id: "753034281119801346"
         content: "HT to @jimniels, whose team colors site is a gift to the internet. (& to sports researchers wanting accurate charts http://teamcolors.arc90.com/"
         author:
           handle: "DrBDT"
           name: "B. David Tyler"
           followers: 411
       -
-        id: 545374325831122940
+        id: "545374325831122940"
         content: "Thanks to @jimniels for this cool team logo colour finder, turned a 20 minute job into a 2 minute one! http://teamcolors.arc90.com/"
         author:
           handle: "JoeyMFaulkner"
@@ -120,14 +143,31 @@
           followers: 173
   -
     id: "logo-integrity"
-    title: "Experiment: Logo Integrity in Focus"
+    title: "Logo Integrity in Focus"
     link: "http://jim-nielsen.com/logo-integrity"
-    link-pretty: "jim-nielsen.com/logo-integrity"
     description: "An experiment in analyzing the integrity of iconic logos. How well would you recognize a logo out of focus?"
-    cta: "http://jim-nielsen.com/blog/posts/logo-integrity/"
+    links:
+      - title: "Logo Integrity Brought into Focus"
+        url: "http://jim-nielsen.com/blog/2014/logo-integrity/"
+      - title: "My Little Cabin in the Woods of Logo Integrity"
+        url: "http://jim-nielsen.com/blog/2018/cabin-of-logo-integrity/"
+    tweets:
+      -
+        id: "940570504464928768"
+        content: "Logo Integrity"
+        author:
+          handle: "designernewsbot"
+          name: "Designer News"
+          followers: 16000
+      -
+        id: "941601223014170624"
+        content: "Weekly Web Design, UX & Front-End links not to miss: Isometric illustration tutorial, iphoneX design & gestures, Web Designer starter tips, inclusive design, logo integrity game, Front-end development in 2017, debugging CSS Grid Layout, iOS Sketch template"
+        author:
+          handle: "WalterStephanie"
+          name: "Stéphanie Walter"
+          followers: 13400
   -
     id: "css-off-2012"
     title: "CSS Off 2012"
     link: "http://unmatchedstyle.com/news/cssoff-winners-2012.php"
-    link-pretty: "unmatchedstyle.com"
     description: "Finalist in the global web design competition where entries were judged by industry-renowned experts on code, UX, browser support, responsiveness, and more."
