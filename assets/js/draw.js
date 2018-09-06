@@ -6,7 +6,7 @@ var ctx,
   currY = 0,
   dot_flag = false;
 
-var lineColor = "#c02702",
+var lineColor = "#FF0000",
   lineWidth = 4;
 
 const canvas = document.getElementById("canvas");
