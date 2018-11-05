@@ -207,7 +207,7 @@ h4 {
 }
 @media screen and (max-width: 499px) {
   .header__graphic img[src*="logo"] {
-    width: 200px;
+    display: none;
   }
 }
 
