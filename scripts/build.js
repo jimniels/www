@@ -5,10 +5,21 @@ const ejs = require("ejs");
 const striptags = require("striptags");
 const YAML = require("yamljs");
 const moment = require("moment");
+const fse = require("fs-extra");
 const slugify = require("./slugify");
 
-const PATH_TO_DATA = path.resolve(__dirname, "../src/data/");
-let sections = YAML.load(path.resolve(PATH_TO_DATA, "sections.yml"));
+const SRC = path.resolve(__dirname, "../src");
+const PUBLIC = path.resolve(__dirname, "../public");
+const BUILD = path.resolve(__dirname, "../build");
+
+/**
+ * Overview
+ * Copy everthing in `./public` into `./build`
+ * Then do any file processing in `.src/` you need to and place it in `./build`
+ */
+fse.copySync(PUBLIC, BUILD);
+
+let sections = YAML.load(path.resolve(SRC, "data/sections.yml"));
 
 // Kick it off by getting our data then doing something with it
 try {
@@ -19,30 +30,18 @@ try {
       id: slugify(item.title)
     }));
 
-    const template = fs
-      .readFileSync(path.resolve(__dirname, "../src/index.ejs"))
-      .toString();
+    const template = fs.readFileSync(path.resolve(SRC, "index.ejs")).toString();
 
     const out = ejs.render(
       template,
       {
         sections,
-        skills: YAML.load(path.resolve(PATH_TO_DATA, "skills.yml"))
+        skills: YAML.load(path.resolve(SRC, "data/skills.yml"))
       },
-      { filename: path.join(__dirname, "../src/index.ejs") }
+      { filename: path.join(SRC, "index.ejs") }
     );
-    // const out =
-    //   "<!DOCTYPE html>" +
-    //   ReactDOMServer.renderToStaticMarkup(
-    //     React.createElement(Index, {
-    //       // @TODO add order to these
-    //       sections: Object.keys(sections).sort(),
-    //       sectionsById: sections
-    //     })
-    //   );
 
-    fs.writeFileSync(path.resolve(__dirname, "../index.html"), out);
-    // console.log(out);
+    fs.writeFileSync(path.resolve(BUILD, "index.html"), out);
     console.log("---> Done!");
   });
 } catch (e) {

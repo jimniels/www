@@ -1,69 +1,55 @@
----
 - title: Director of Design and UI Architecture
   company: Insight Catastrophe Group
   companyUrl: http://www.icg360.com/
   byline: 2016 to Present · Jersey City, New Jersey
   description: "More info to come as the role evolves and develops..."
   projects:
-    -
-      title: Agent Portal
+    - title: Agent Portal
       tools: Sketch, Sass
       description: Web application allowing agents to quote and bind insurance policies via Insight’s platform. Initial work has included redesigning exisiting problematic UI interfaces and simplifying front-end implementation approaches.
       links:
-        -
-          title: Text as UI
-          url: http://jim-nielsen.com/blog/2016/text-as-ui/
-        -
-          title: Designing and Engineering Color Usage in Agent Portal
-          url: http://jim-nielsen.com/blog/2017/designing-and-engineering-color-usage/
-        -
-          title: Migrating Away from Compass and Susy to Sass Exclusively
-          url: http://jim-nielsen.com/blog/2017/migrating-away-from-compass-and-susy/
+        - title: Text as UI
+          url: https://blog.jim-nielsen.com/2016/text-as-ui/
+        - title: Designing and Engineering Color Usage in Agent Portal
+          url: https://blog.jim-nielsen.com/2017/designing-and-engineering-color-usage/
+        - title: Migrating Away from Compass and Susy to Sass Exclusively
+          url: https://blog.jim-nielsen.com/2017/migrating-away-from-compass-and-susy/
 - title: UI Engineer
   company: Timshel
   companyUrl: https://timshel.com/
   byline: 2016 · Chicago / New York City
   description: "Worked on the front-end team doing engineering, design, and product management for a variety of web applicaitons and services. In other words, when stuff needed to be built, we built and shipped it."
   projects:
-    -
-      title: Admin
+    - title: Admin
       tools: Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material UI, Git
       description: Web interface for clients administering their account on The Groundwork platform. Handled creating, designing, and engineering various features for the application’s view layer.
       links:
-        -
-          title: Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”
-          url: http://jim-nielsen.com/blog/2016/redesigning-and-engineering-timshel-admin/
-        -
-          title: Designing Integrations for the Admin Application at Timshel
-          url: http://jim-nielsen.com/blog/2017/designing-integrations-at-timshel/
+        - title: Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”
+          url: https://blog.jim-nielsen.com/2016/redesigning-and-engineering-timshel-admin/
+        - title: Designing Integrations for the Admin Application at Timshel
+          url: https://blog.jim-nielsen.com/2017/designing-integrations-at-timshel/
 - title: Designer & Front-end Developer
   company: Postlight
   companyUrl: https://www.postlight.com/
   byline: 2016 · New York City
   description: "Succeeded in consulting, designing, and building internal web applications (on tight deadlines) for one of Postlight’s biggest clients: Time Inc."
   projects:
-    -
-      title: Assignment Desk
+    - title: Assignment Desk
       tools: Sketch, Sass, Javascript, React.js, Redux, Bootstrap, Git
       description: Part one in a series of internal web applications for Time Inc. Handled sketching, wireframeing, and mocking the UI/UX of the application while simultaneously engineering the view layer.
       links:
-        -
-          title: Designing and Building the Assignment Desk Application for Time Inc.
-          url: http://jim-nielsen.com/blog/2016/designing-and-building-assignment-desk
-        -
-          title: Going the Extra Mile with Tasks and Feature Requests
-          url: http://jim-nielsen.com/blog/2016/going-the-extra-mile-with-tasks-and-feature-requests/
-        -
-          title: Assignment Desk Logo
-          url: http://jim-nielsen.com/blog/2015/assignment-desk-logo/
-    -
-      title: Digital Content Production
+        - title: Designing and Building the Assignment Desk Application for Time Inc.
+          url: https://blog.jim-nielsen.com/2016/designing-and-building-assignment-desk
+        - title: Going the Extra Mile with Tasks and Feature Requests
+          url: https://blog.jim-nielsen.com/2016/going-the-extra-mile-with-tasks-and-feature-requests/
+        - title: Assignment Desk Logo
+          url: https://blog.jim-nielsen.com/2015/assignment-desk-logo/
+    - title: Digital Content Production
       tools: Sketch, Invision, Sass, Javascript, React.js, Redux, Bootstrap, Git
       description: "Designed and built based on the Assignment Desk application framework. Handled everything from UI/UX to product management to front-end development."
       links:
-          -
-            title: Designing and Developing the DCP Application for Time Inc.
-            url: http://jim-nielsen.com/blog/2016/designing-developing-dcp-application/
+        - title: Designing and Developing the DCP Application for Time Inc.
+          url: https://blog.jim-nielsen.com/2016/designing-developing-dcp-application/
 - title: Lead Designer, Front-end Developer
   company: Kindling
   companyUrl: http://kindlingapp.com/
@@ -75,40 +61,40 @@
       description: "A fully-responsive web application used to discover, discuss, evaluate, and decide on great ideas. Handled 100% of the app’s UI/UX: from ideation on paper to digital wireframes/mocks to browser code to cross-device testing and more."
       links:
         - title: Innovation Sales Sheet
-          url: http://jim-nielsen.com/blog/2015/innovation-sales-sheet/
+          url: https://blog.jim-nielsen.com/2015/innovation-sales-sheet/
         - title: Skinning the Idea Poster Anew
-          url: http://jim-nielsen.com/blog/2015/skinning-the-idea-poster-anew/
+          url: https://blog.jim-nielsen.com/2015/skinning-the-idea-poster-anew/
         - title: Creating Apple Touch Icons
-          url: http://jim-nielsen.com/blog/2014/creating-apple-touch-icons/
+          url: https://blog.jim-nielsen.com/2014/creating-apple-touch-icons/
     - title: Kindling the Marketing Site
       description: "Designed and built two different versions of this site: the first powered by Wordpress, the second by a static site generator. Hands were full with conceptualization, UI/UX, code, and everything in-between."
       tools: Photoshop, PHP, Wordpress, Sass, Javascript, Metalsmith, Node, Git, Hubspot & Google Analytics, Asana, Mailchimp
       links:
         - title: Kindling Marketing Site 2.0
-          url: http://jim-nielsen.com/blog/2015/marketing2/
+          url: https://blog.jim-nielsen.com/2015/marketing2/
         - title: Designing Kindling’s Pricing Page
-          url: http://jim-nielsen.com/blog/2015/designing-kindlings-pricing-page/
+          url: https://blog.jim-nielsen.com/2015/designing-kindlings-pricing-page/
         - title: Conceiving Blog Post artwork
-          url: http://jim-nielsen.com/blog/2015/conceiving-blog-post-artwork/
+          url: https://blog.jim-nielsen.com/2015/conceiving-blog-post-artwork/
         - title: Everything But Visual Design
-          url: http://jim-nielsen.com/blog/2015/everything-but-visual-design/
+          url: https://blog.jim-nielsen.com/2015/everything-but-visual-design/
         - title: "Words Have Meaning: Creating the “Let’s Talk Innovation” Page"
-          url: http://jim-nielsen.com/blog/2014/innovation-talk-page/
+          url: https://blog.jim-nielsen.com/2014/innovation-talk-page/
         - title: Designing a Successful Transaction Receipt
-          url: http://jim-nielsen.com/blog/2014/successful-transaction-receipt/
+          url: https://blog.jim-nielsen.com/2014/successful-transaction-receipt/
         - title: Home Page Redesign of kindlingapp.com
-          url: http://jim-nielsen.com/blog/2013/kindlingapp-home-page-redesign/
+          url: https://blog.jim-nielsen.com/2013/kindlingapp-home-page-redesign/
     - title: Kindling the Brand
       description: Owned the Kindling brand and identity, which encompassed everything from business cards to company-wide email signatures, as well as a guidebook which fostered internal standards and awareness around maintaing brand integrity.
       tools: Photoshop, Illustrator, InDesign
       links:
-      - title: Kindling Rubber Stamp
-        url: http://jim-nielsen.com/blog/2014/kindling-rubber-stamp/
+        - title: Kindling Rubber Stamp
+          url: https://blog.jim-nielsen.com/2014/kindling-rubber-stamp/
     - title: Kindling Loves Startups
       description: Designed and developed this responsive website as the central piece of a marketing campaign. It employed a few (at the time) cutting-edge tricks, including a progressively-enhanced pulse animation.
       tools: Photoshop, PHP, Sass, Javascript, jQuery
       links:
-        - title: '[Archived]: kindlinglovesstartups.com'
+        - title: "[Archived]: kindlinglovesstartups.com"
           url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
 - title: Web Designer
   company: Arc90
@@ -124,7 +110,7 @@
       tools: Photoshop, Wordpress, PHP, CSS
       links:
         - title: Arc90 “Work” Page Design Updates
-          url: http://jim-nielsen.com/blog/2016/acr90-work-page-design-updates/
+          url: https://blog.jim-nielsen.com/2016/acr90-work-page-design-updates/
 - title: Marketing & Multimedia Designer
   company: Dixie State University
   companyUrl: http://dixie.edu/

@@ -6,3 +6,6 @@
 /gimmiedaticon/* https://gimmie-dat-icon.jim-nielsen.com/:splat 301
 /teamcolors/* https://teamcolors.jim-nielsen.com/:splat 301
 /sassme/* https://sassme.jim-nielsen.com/:splat 301
+
+# Redirect from netlify domain
+https://jim-nielsen.netlify.com/* https://www.jim-nielsen.com/:splat 301!

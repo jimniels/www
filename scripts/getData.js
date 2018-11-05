@@ -28,7 +28,7 @@ async function getData(callback) {
      */
     {
       title: "Dribbble",
-      url: "http://dribbble.com/jimniels",
+      url: "https://dribbble.com/jimniels",
       data: await fetch("https://api.dribbble.com/v2/user/shots", {
         headers: {
           Authorization:
@@ -59,8 +59,8 @@ async function getData(callback) {
      */
     {
       title: "Blog",
-      url: "http://jim-nielsen.com/blog",
-      data: await fetch("http://jim-nielsen.com/blog/feed.json")
+      url: "https://blog.jim-nielsen.com/",
+      data: await fetch("https://blog.jim-nielsen.com/feed.json")
         .then(res => res.json())
         .then(res =>
           res.items.map(item => ({
