@@ -1,9 +1,8 @@
-# Redirects of other netlify projects to paths of jim-nielsen.com/
-# https://stackoverflow.com/questions/48604843/how-to-host-multiple-github-repos-using-the-same-custom-domain-on-netlify
-/blog/* https://jimniels-blog.netlify.com/:splat 200
-/logo-integrity/* https://logo-integrity.netlify.com/ 200
-/sandbox/old-interfaces/* https://old-movie-uis.netlify.com
-/sandbox/kindlinglovesstartups/* https://kindling-loves-startups.netlify.com/ 200
-/teamcolors/* https://teamcolors.netlify.com/ 200
-/sassme/* https://sassme.netlify.com/ 200
-/gimmiedaticon/* https://gimmiedaticon.netlify.com 200
+# Redirects of previous paths under jim-nielsen.com/
+/blog/* https://blog.jim-nielsen.com/:splat 301
+/logo-integrity/* https://logo-integrity.jim-nielsen.com/:splat 301
+/sandbox/old-interfaces/* https://old-movie-uis.jim-nielsen.com/:splat 301
+/sandbox/kindlinglovesstartups/* https://kindling-loves-startups.jim-nielsen.com/:splat 301
+/gimmiedaticon/* https://gimmie-dat-icon.jim-nielsen.com/:splat 301
+/teamcolors/* https://teamcolors.jim-nielsen.com/:splat 301
+/sassme/* https://sassme.jim-nielsen.com/:splat 301
