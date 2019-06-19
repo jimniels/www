@@ -6,3 +6,4 @@ _site
 _data/tokens.json
 .jekyll-metadata
 build
+.env

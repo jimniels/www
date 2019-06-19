@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const fetch = require("node-fetch");
 const moment = require("moment");
@@ -6,6 +7,7 @@ const YAML = require("yamljs");
 const slugify = require("./slugify");
 
 const DATE_FORMAT = "MMM D, YYYY";
+const { DRIBBBLE_BEARER_TOKEN, INSTAGRAM_ACCESS_TOKEN } = process.env;
 
 async function getData(callback) {
   callback([
@@ -31,8 +33,7 @@ async function getData(callback) {
       url: "https://dribbble.com/jimniels",
       data: await fetch("https://api.dribbble.com/v2/user/shots", {
         headers: {
-          Authorization:
-            "Bearer 8379fd23942fcf12e4dfdb3d09293a1c01c19e7a577b35e78d48bb659480a21d",
+          Authorization: `Bearer ${DRIBBBLE_BEARER_TOKEN}`,
           // This header is supposed to return a key name `description_text` where
           // HTML is stripped, but it's not for some reason. So we'll do it ourself.
           Accept: "application/vnd.dribbble.v2.text+json"
@@ -66,6 +67,40 @@ async function getData(callback) {
           res.items.map(item => ({
             ...item,
             date_published: moment(item.date_published).format(DATE_FORMAT)
+          }))
+        )
+    },
+    /**
+     * FlyingJPies
+     * {
+     *   data: [
+     *     {
+     *       caption: {
+     *         text,
+     *         created_time - unix epoch string
+     *       },
+     *       link,
+     *       images: {
+     *         low_resolution: {
+     *            url
+     *         }
+     *       }
+     *     }
+     *   ]
+     * }
+     */
+    {
+      title: "Pies",
+      url: "https://www.instagram.com/flyingjpies/",
+      data: await fetch(
+        `https://api.instagram.com/v1/users/self/media/recent/?access_token=${INSTAGRAM_ACCESS_TOKEN}`
+      )
+        .then(res => res.json())
+        .then(json =>
+          json.data.map(post => ({
+            description: post.caption.text,
+            date: post.caption.created_time,
+            imageUrl: post.images.low_resolution.url
           }))
         )
     },
