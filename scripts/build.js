@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const fetch = require("node-fetch");
-const ejs = require("ejs");
+const Mustache = require("mustache");
 const striptags = require("striptags");
 const YAML = require("yamljs");
 const moment = require("moment");
@@ -23,22 +23,10 @@ let sections = YAML.load(path.resolve(SRC, "data/sections.yml"));
 
 // Kick it off by getting our data then doing something with it
 try {
-  require("./getData")(async function(data) {
-    // Generate an id for every item
-    const sections = data.map(item => ({
-      ...item,
-      id: slugify(item.title)
-    }));
-
-    const template = fs.readFileSync(path.resolve(SRC, "index.ejs")).toString();
-
-    const out = ejs.render(
-      template,
-      {
-        sections,
-        skills: YAML.load(path.resolve(SRC, "data/skills.yml"))
-      },
-      { filename: path.join(SRC, "index.ejs") }
+  require("./getData")(async function (data) {
+    const out = Mustache.render(
+      fs.readFileSync(path.resolve(SRC, "index.html")).toString(),
+      data
     );
 
     fs.writeFileSync(path.resolve(BUILD, "index.html"), out);

@@ -8,3 +8,5 @@ _data/tokens.json
 build
 index.html
 .env
+cache
+*.token

@@ -1,36 +1,31 @@
 ---
 - title: Combining Netlify with Dropbox For a One-Click Publishing Process
-  publisher: Netlify
-  publisherLink: https://www.netlify.com/
+  publisherDomain: www.netlify.com
   date: 2018-10-16
   link: https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/
 - title: Connecting an API-Driven Web App with Javascript
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2015-08-24
   link: http://webdesign.tutsplus.com/tutorials/connecting-an-api-driven-web-app-with-javascript--cms-24576
   excerpt: Having planned, designed, and marked-up our app, it looks just the way
     we want, but it doesn’t actually do anything yet. So, let’s work on adding some
     JavaScript to make the app interactive.
 - title: Building an API-Driven Web App With HTML and CSS
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2015-08-20
   link: http://webdesign.tutsplus.com/tutorials/building-an-api-driven-web-app-with-html-and-css--cms-24575
   excerpt: Having planned our app and designed some visual mocks to help guide us
     in building our little app for the browser, let’s get to the exciting part and
     start building!
 - title: Designing an API-Driven Web App in Sketch
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2015-08-18
   link: http://webdesign.tutsplus.com/tutorials/designing-an-api-driven-web-app-in-sketch--cms-24574
   excerpt: After accounting for all the elements of our API-driven app, including
     its different states, we can confidently begin creating visual mockups for each
     element and its corresponding states.
 - title: Planning a Basic API-Driven Web App
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2015-08-13
   link: http://webdesign.tutsplus.com/tutorials/planning-a-basic-api-driven-web-app--cms-24129
   excerpt: Interfacing with an API is a big part of web development and design these
@@ -39,8 +34,7 @@
     and render it in the browser based on the experience you want to provide for the
     user. In this tutorial, we’ll look at how to build an API-driven app.
 - title: Undress to Impress; Check Your Websites Without CSS
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2014-11-24
   imageType: jpg
   link: http://webdesign.tutsplus.com/articles/undress-to-impress-check-your-websites-without-css--cms-22489
@@ -50,8 +44,7 @@
     But before you rush to fix the error you just introduced, take this as an opportunity
     to analyze and enhance the core of your site: the HTML.'
 - title: Getting the Hang of Hanging Punctuation
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2014-03-13
   imageType: jpg
   link: http://webdesign.tutsplus.com/articles/getting-the-hang-of-hanging-punctuation--cms-19890
@@ -82,8 +75,7 @@
       name: Webdesigner Depot
       followers: 687000
 - title: Keep Employees Engaged in Innovation with Responsive Design
-  publisher: Kindling Inc.
-  publisherLink: http://kindlingapp.com/
+  publisherDomain: kindlingapp.com
   date: 2013-11-25
   link: http://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/
   excerpt: 'We live in a multi-device world. Choosing which device to use depends
@@ -91,8 +83,7 @@
     Great ideas, however, don’t care about context. And they won’t wait until you’re
     sitting in front of your office computer to materialize.'
 - title: Implementing the Float Label Form Pattern
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2013-10-28
   link: http://webdesign.tutsplus.com/tutorials/ux-tutorials/implementing-the-float-label-form-pattern/
   excerpt: A multiplicity of form accessibility concerns and best practices can make
@@ -108,8 +99,7 @@
       name: Chris Coyier
       followers: 101000
 - title: 'Quick Tip: Name Your SASS Variables Modularly'
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2013-07-02
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-name-your-sass-variables-modularly/
   excerpt: You should think about organizing your variable names (and project for
@@ -144,8 +134,7 @@
       name: Josh Broton
       followers: 1274
 - title: 'Filler Content: Tools, Tips and a Dynamic Example'
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2013-05-09
   imageType: jpg
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/filler-content-tools-tips-and-a-dynamic-example/
@@ -154,8 +143,7 @@
     quite helpful revolves around filler content. Currently, a variety of resources
     exist to aid designers who need filler content, whether it be text or images.
 - title: Build a Responsive, Single Page Portfolio with Sass and Compass
-  publisher: tuts+ premium
-  publisherLink: https://tutsplus.com/
+  publisherDomain: tutsplus.com
   date: 2013-02-14
   link: https://tutsplus.com/tutorial/build-a-responsive-single-page-portfolio-with-sass-and-compass/
   excerpt: There’s a lot that goes into creating a web site these days. We’re now
@@ -164,8 +152,7 @@
     and multi-device interaction support. In this article, we’ll build a single page
     portfolio that covers aspects of all these techniques.
 - title: Bring Your Forms Up to Date with CSS3 and HTML5 Validation
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2013-01-02
   link: http://webdesign.tutsplus.com/tutorials/site-elements/bring-your-forms-up-to-date-with-css3-and-html5-validation/
   readerFav: true
@@ -194,8 +181,7 @@
       name: Matthieu Bué
       followers: 2141
 - title: 'Quick Tip: Don’t Forget the optgroup Element'
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-12-27
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-optgroup-element/
   excerpt: One popular navigation design pattern for the responsive web is collapsing
@@ -205,8 +191,7 @@
     to a somehwat obscure HTML tag called optgroup which will provide you with an
     easy (and semantic) way of grouping related content in select menus.
 - title: Everything You Need to Know About the CSS Cursor Rule
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-11-15
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/everything-you-need-to-know-about-the-css-cursor-rule/
   excerpt: While the world’s going bonkers for touch-controlled interfaces, this article
@@ -214,8 +199,7 @@
     approach of progressive enhancement for handling interaction design; more specifically,
     an overview of the CSS cursor rule.
 - title: 'Quick Tip: Creating Crisp, Pixel Perfect Circles in Photoshop'
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-11-12
   imageType: jpg
   date: 1352678400
@@ -234,8 +218,7 @@
       name: Chris Spooner
       followers: 77500
 - title: 'Quick Tip: Using Web Inspector to Debug Mobile Safari'
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-10-01
   link: http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip-using-web-inspector-to-debug-mobile-safari/
   excerpt: Building and debugging websites and web applications for mobile devices
@@ -258,8 +241,7 @@
       name: Chris Coyier
       followers: 102000
 - title: Harnessing the Power of Icon Standards
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-09-05
   imageType: jpg
   link: http://webdesign.tutsplus.com/articles/general/harnessing-the-power-of-icon-standards/
@@ -269,8 +251,7 @@
     suggestions to a few current icon standardization movements which you can explore
     and incorporate into your own projects.
 - title: Super Simple Lightbox with CSS and jQuery
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-08-09
   imageType: jpg
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/super-simple-lightbox-with-css-and-jquery/
@@ -279,8 +260,7 @@
     this tutorial shows you how to create a super simple lightbox for handling images.
     It’s perfect for image galleries, portfolios, and more!
 - title: Perfectly Rotate and Mask Thumbnails With CSS3
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-06-08
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/perfectly-rotate-and-mask-thumbnails-with-css3/
   readerFav: true
@@ -296,8 +276,7 @@
       name: Smashing Magazine
       followers: 769000
 - title: Put Users in Control With Confirmation Feedback Buttons
-  publisher: webdesign tuts+
-  publisherLink: http://webdesign.tutsplus.com/
+  publisherDomain: webdesign.tutsplus.com
   date: 2012-05-17
   imageType: jpg
   link: http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/
@@ -314,8 +293,7 @@
       name: Smashing Magazine
       followers: 769000
 - title: Building a Mobile-Friendly Form with Email Domain Suggestion
-  publisher: Tuts+ Premium
-  publisherLink: https://tutsplus.com/
+  publisherDomain: tutsplus.com
   date: 2012-04-11
   link: https://tutsplus.com/tutorial/building-a-mobile-friendly-form-with-email-domain-suggestion/
   excerpt: This tutorial will teach you how to create a responsive web form which
@@ -323,8 +301,7 @@
     address information. This form will assist users (primarily mobile) by automatically
     suggesting popular email domains.
 - title: Password Strength Verification with jQuery
-  publisher: Webdesigner Depot
-  publisherLink: http://www.webdesignerdepot.com/
+  publisherDomain: www.webdesignerdepot.com
   date: 2012-01-10
   imageType: jpg
   link: http://www.webdesignerdepot.com/2012/01/password-strength-verification-with-jquery/
@@ -332,16 +309,14 @@
     referred to as password complexity requirements. These requirements ensure that
     user passwords are sufficiently strong and cannot be easily broken.
 - title: 'Quick Tip: Create a Stitched Web Ribbon in Photoshop'
-  publisher: psd tuts+
-  publisherLink: http://psd.tutsplus.com/
+  publisherDomain: psd.tutsplus.com
   date: 2011-12-09
   link: http://psd.tutsplus.com/tutorials/interface-tutorials/stitched-web-ribbon/
   excerpt: You don’t have to search the web for very long to find a web ribbon in
     the corner of an image. In this quick tip tutorial we will show you how to create
     your own. Let’s get started!
 - title: Create a Realistic Telephone Keypad Using Layer Styles
-  publisher: psd tuts+
-  publisherLink: http://psd.tutsplus.com/
+  publisherDomain: psd.tutsplus.com
   date: 2011-10-21
   imageType: jpg
   link: http://psd.tutsplus.com/tutorials/interface-tutorials/telephone-keypad-photoshop/
