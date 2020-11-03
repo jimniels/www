@@ -6,7 +6,13 @@
     <meta name="description" content="Personal website of Jim Nielsen." />
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- @TODO meta tags for og:, twitter, etc. -->
+
+    <!-- Inline our CSS -->
+    <style>
+      {{{ css }}}
+    </style>
 
     <style>
       /* body:after {
@@ -174,8 +180,8 @@
 
       <section class="copy">
         <h1>
-          Recent Shots From
-          <a href="https://www.dribbble.com/jimniels">@jimniels on Dribbble</a>
+          Favorite Shots from
+          <a href="https://www.dribbble.com/jimniels">My Dribbble</a> Days
         </h1>
         <p>
           I used to post on dribbble, but seeing as I’m not much of a designer
@@ -186,9 +192,9 @@
         </p>
         <div class="copy-full-width" id="dribbble">
           {{#dribbble}}
-          <a href="{{ html_url }}">
+          <a href="{{ href }}">
             <img
-              src="{{ images.hidpi }}"
+              src="{{ src }}"
               alt="{{ title }}"
               title="{{ title }} on Dribbble"
               width="400"
@@ -212,6 +218,8 @@
             margin: 0 1rem 1rem 0;
             transition: 0.2s ease all;
             border-radius: 8px; /* dribbble does this */
+            box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075),
+              0 2px 1px 1px rgba(0, 0, 0, 0.05);
           }
           #dribbble img:hover {
             transform: scale(1.1);
