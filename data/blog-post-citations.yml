@@ -1,0 +1,28 @@
+- title: Web Technologies and Syntax
+  url: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
+  citations:
+    - source: CSS Tricks Newsletter
+      url: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+      quote: Over the weekend I read this post by Jim Nielsen about web technologies and syntax that I really enjoyed.
+    - source: Chris Coyier on CSS Tricks
+      url: https://css-tricks.com/web-technologies-and-syntax/
+      quote: Jim Nielsen makes the connection to optional chaining and !important in CSS...I like that take.
+- title: Indexing My Blog’s Links
+  url: https://blog.jim-nielsen.com/2020/indexing-my-blogs-links/
+  citations:
+    - source: Remy Sharp on remysharp.com
+      url: https://remysharp.com/links/2020-09-24-e9aa7591
+      quote: I’ll be adding this to my blog shortly - very clever.
+    - source: Adactio Links
+      url: https://adactio.com/links/17433
+- title: Building a Progressively-Enhanced Site
+  url: https://blog.jim-nielsen.com/2019/building-a-progressively-enhanced-site/
+  citations:
+    - source: Andy Bell on hankchizljaw.com
+      url: https://archive.hankchizljaw.com/feed/page/61/
+      quote: This was an absolute joy to read.
+    - source: CSS-Tricks (@css) on twitter
+      url: https://twitter.com/css/status/1087895696655728642
+    - source: Adactio Links
+      url: https://adactio.com/links/14705
+      quote: This is an excellent case study! The technical details are there if you want them, but far more important is consideration that went into every interaction. Every technical decision has a well thought out justification.

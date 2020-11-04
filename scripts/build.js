@@ -14,33 +14,10 @@ const slugify = (str) => slugifyFn(str, { remove: /['':;,]/g, lower: true });
 const DATE_FORMAT = "MMM D, YYYY";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-main();
+// main();
 
-async function main() {
-  try {
-    const data = await getData();
-
-    fs.copySync(join(__dirname, "../src/www"), join(__dirname, "../build"));
-
-    const out = Mustache.render(
-      fs
-        .readFileSync(join(__dirname, "../src/www/index.mustache.html"))
-        .toString(),
-      data
-    );
-
-    fs.writeFileSync(join(__dirname, "../build/index.html"), out);
-
-    console.log("---> Done!");
-  } catch (e) {
-    console.log(e);
-    console.log("---> Error");
-  }
-}
-
-async function getData() {
+export async function getData() {
   return {
-    css: fs.readFileSync(join(__dirname, "../src/www/index.css")),
     /**
      * Dribbble
      * http://developer.dribbble.com/v2/shots/
@@ -72,7 +49,7 @@ async function getData() {
       if (fs.existsSync(cacheFile)) {
         data = requireJSON(cacheFile);
       } else {
-        const ids = YAML.load(join(__dirname, "../src/data/dribbble.yml"));
+        const ids = YAML.load(join(__dirname, "../data/dribbble.yml"));
         data = await Promise.all(
           ids.map((id) =>
             fetch(`https://api.dribbble.com/v2/shots/${id}`, {
@@ -194,6 +171,9 @@ async function getData() {
         });
       return data;
     })(),
+    blogPostCitations: YAML.load(
+      join(__dirname, "../data/blog-post-citations.yml")
+    ),
     /**
      * Icons
      * [
@@ -233,7 +213,7 @@ async function getData() {
       );
       return data;
     })(),
-    publishings: YAML.load(join(__dirname, "../src/data/publishings.yml")).map(
+    publishings: YAML.load(join(__dirname, "../data/publishings.yml")).map(
       (item) => ({
         ...item,
         date: moment(item.date).format(DATE_FORMAT),

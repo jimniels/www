@@ -105,6 +105,26 @@
           rather than dribbble, I’d rather just play basketball.
         </p>
 
+        <h2>Impact of My Writing Around the Web</h2>
+        <ul>
+          {{#blogPostCitations}}
+          <li>
+            <a href="{{url}}">
+              <strong>{{title}}</strong>
+            </a>
+            <ul>
+              {{#citations}}
+              <li>
+                <a href="{{url}}">{{source}}</a>{{#quote}}:
+                “{{quote}}”{{/quote}}
+              </li>
+              {{/citations}}
+            </ul>
+          </li>
+          {{/blogPostCitations}}
+        </ul>
+
+        <h2>Recent Posts</h2>
         <ul class="copy-full-width pub-container">
           {{#blogPosts}}
           <li class="pub">
