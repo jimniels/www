@@ -34,7 +34,7 @@
     </nav>
     <main>
       <section class="copy">
-        <h1>Jim Nielsen: designer, developer, and dad.</h1>
+        <h1>Jim Nielsen: dad, designer, developer (in that order).</h1>
 
         <h2>Currently: Director of Design & UI Architecture @ SageSure.</h2>
 
@@ -42,7 +42,8 @@
           <em>Who are you?</em> “I am a designer who codes” is likely the answer
           you’re looking for, but what I do is solve problems and add value.
           That said, I’m so much more than my job but this is a website where I
-          talk about myself professionally so I have to say these things.
+          talk about myself professionally so I have to say these kinds of
+          things.
         </p>
         <p>
           <em>What are your skills?</em> I design visual interfaces and leverage
@@ -94,7 +95,7 @@
 
       <section class="copy">
         <h1>
-          Latest Letters From
+          Writings from
           <a href="https://blog.jim-nielsen.com">My Weblog</a>
         </h1>
         <p>
@@ -105,14 +106,39 @@
           rather than dribbble, I’d rather just play basketball.
         </p>
 
-        <h2>Impact of My Writing Around the Web</h2>
-        <ul>
+        <h2>Kind Praise For My Writing From Smart People Around the Web</h2>
+        <ul id="citations" style="list-style-type: none; padding: 0">
+          {{#blogPostCitations}}
+          <li style="margin-bottom: 1.618rem">
+            <a href="{{url}}">{{source}}</a>:
+            <blockquote>{{{quote}}}</blockquote>
+          </li>
+          {{/blogPostCitations}}
+        </ul>
+
+        <style>
+          #citations {
+            list-style-type: none;
+            padding: 0;
+          }
+          #citations blockquote {
+            margin-left: 0;
+            padding-left: calc(1.618rem / 1.618);
+            border-left: 2px solid var(--color-border-light);
+            font-size: 0.875em; /* 21 */
+          }
+          #citations blockquote a {
+            color: inherit;
+          }
+        </style>
+
+        <!--
+          <h2>Ripples of My Writing Around the Web</h2>
+        <ul style="list-style-type: none; padding: 0">
           {{#blogPostCitations}}
           <li>
-            <a href="{{url}}">
-              <strong>{{title}}</strong>
-            </a>
-            <ul>
+            <a href="{{url}}"> {{title}} </a>
+            <ul style="font-size: 80%;">
               {{#citations}}
               <li>
                 <a href="{{url}}">{{source}}</a>{{#quote}}:
@@ -123,8 +149,9 @@
           </li>
           {{/blogPostCitations}}
         </ul>
+        -->
 
-        <h2>Recent Posts</h2>
+        <h2>My Most Recent Writing</h2>
         <ul class="copy-full-width pub-container">
           {{#blogPosts}}
           <li class="pub">
@@ -200,15 +227,14 @@
 
       <section class="copy">
         <h1>
-          Favorite Shots from
-          <a href="https://www.dribbble.com/jimniels">My Dribbble</a> Days
+          Some Shots From My Baller Days on
+          <a href="https://www.dribbble.com/jimniels">Dribbble</a>
         </h1>
         <p>
-          I used to post on dribbble, but seeing as I’m not much of a designer
-          anymore—let alone I don’t have anything that fancy, I dono’t do it
-          much anymore. That’s not to say I don’t filnd the stuff from the past
-          stilll interesting! So i keep it here for nostalgia. Honestly, rather
-          than dribbble, I’d rather just play basketball.
+          I used to Dribbble, but I don’t do as much “production” design work
+          anymore. But I still find my stuff from the past interesting, so I
+          keep it here for nostalgia. Rather than Dribbble, I’d honestly rather
+          go shoot hoops IRL. @TODO my design now-a-days is more about ...
         </p>
         <div class="copy-full-width" id="dribbble">
           {{#dribbble}}
@@ -457,79 +483,6 @@
           {{/blogPostsByTag.postlight}}
         </ul>
       </section>
-
-      <section class="section clearfix" id="<%- id %>">
-        <h1 class="section__header"><%- title %></h1>
-        <ul class="section__content">
-          <!-- Dribbble -->
-          <% if (id === "dribbble") { %> <% data.forEach(item => { %> <%-
-          include("./partials/dribbble.ejs", { item }) %> <% }) %>
-          <li class="view-more">
-            <a href="<%- url %>" class="link"> View more at <%- url %> › </a>
-          </li>
-          <% } %>
-
-          <!-- Employment -->
-          <% if (id === "employment") { %> <% data.forEach(item => { %> <%-
-          include("./partials/employment.ejs", { item }) %> <% }) %> <% } %>
-
-          <!-- Personal Projects -->
-          <% if (id === "personal-projects") { %> <% data.forEach(project => {
-          %>
-          <li class="item">
-            <a class="item__img" href="<%- project.link %>" class="link">
-              <img
-                src="assets/img/personal-projects/<%- project.id %>.png"
-                width="70"
-                height="70"
-              />
-            </a>
-            <div class="item__content">
-              <h3 class="title link">
-                <a href="<%- project.link %>" class="link"
-                  ><%- project.title %></a
-                >
-              </h3>
-              <p class="description"><%- project.description %></p>
-              <% if (project.links) { %>
-              <ul class="links">
-                <% project.links.forEach(link => { %>
-                <li>
-                  <a href="<%- link.url %>" class="link"> <%- link.title %> </a>
-                </li>
-                <% }) %>
-              </ul>
-              <% } %> <% if (project.tweets) { %> <%-
-              include('./partials/tweets.ejs', { tweets: project.tweets }) %> <%
-              } %>
-            </div>
-          </li>
-          <% }) %> <% } %>
-
-          <!-- Blog -->
-          <% if (id === "blog") { %> <% data.forEach(post => { %>
-          <li class="item">
-            <div class="item__content">
-              <h3 class="title">
-                <a href="<%- post.url %>"> <%- post.title %> </a>
-              </h3>
-              <p class="byline">
-                <time><%- post.date_published %></time>
-              </p>
-            </div>
-          </li>
-          <% }) %>
-          <li class="view-more">
-            <a href="<%- url %>" class="link"> View more at <%- url %> › </a>
-          </li>
-          <% } %>
-
-          <!-- Publishings -->
-          <% if (id === "publishings") { %> <% data.forEach(item => { %> <%-
-          include("./partials/publishings.ejs", { item }) %> <% }) %> <% } %>
-        </ul>
-      </section>
-      <% }) %>
     </main>
 
     <footer class="wrapper footer">

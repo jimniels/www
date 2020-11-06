@@ -141,10 +141,12 @@ export async function getData() {
       const data = await fetch("https://blog.jim-nielsen.com/feed.json")
         .then((res) => res.json())
         .then((res) =>
-          res.items.map((item) => ({
-            ...item,
-            date_published: moment(item.date_published).format(DATE_FORMAT),
-          }))
+          res.items
+            .filter((item, i) => i <= 5)
+            .map((item) => ({
+              ...item,
+              date_published: moment(item.date_published).format(DATE_FORMAT),
+            }))
         );
       return data;
     })(),

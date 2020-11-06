@@ -37,6 +37,14 @@ body {
   margin: 0;
 }
 
+/* a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} */
+
 img {
   max-width: 100%;
   height: auto;
@@ -56,12 +64,12 @@ h1 {
 
 h2 {
   font-size: 2rem; /* 48px */
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.5rem; /* 36px */
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h4 {
