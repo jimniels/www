@@ -20,6 +20,7 @@
   },
   "scripts": {
     "clear-cache": "rm -rf ./cache",
+    "build:data": "node scripts/cache-data.js",
     "build": "rm -rf build && node metalsmith.js",
     "start": "npm run build && chokidar 'src/**/*' 'data/' -c 'npm run build' & http-server build -o -s"
   },

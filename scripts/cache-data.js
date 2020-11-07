@@ -94,7 +94,7 @@ async function cacheInstagram() {
       );
     })
     .then((posts) => {
-      return posts.filter((post) => post.media_type !== "VIDEO");
+      return posts.filter((post) => post.media_type !== "VIDEO").slice(0, 16);
     });
   fs.outputFileSync(
     getDataFilePath("instagram-posts.json"),
