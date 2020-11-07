@@ -37,13 +37,13 @@ export async function getData() {
      *   { href, src, title }
      * ]
      */
-    dribbble: requireJSON(
-      join(__dirname, "../data/dribbble-shot-data.json")
-    ).map(({ html_url, images, title }) => ({
-      href: html_url,
-      src: images.hidpi ? images.hidpi : images.normal,
-      title,
-    })),
+    dribbble: requireJSON(join(__dirname, "../data/dribbble-shots.json")).map(
+      ({ html_url, images, title }) => ({
+        href: html_url,
+        src: images.hidpi ? images.hidpi : images.normal,
+        title,
+      })
+    ),
 
     /**
      * Instagram
