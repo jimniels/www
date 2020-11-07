@@ -14,15 +14,10 @@ const slugify = (str) => slugifyFn(str, { remove: /['':;,]/g, lower: true });
 const DATE_FORMAT = "MMM D, YYYY";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// main();
-
 export async function getData() {
   return {
     /**
-     * Dribbble
-     * http://developer.dribbble.com/v2/shots/
-     *
-     * In:
+     * In (from cached API response):
      * [
      *   {
      *     description
@@ -39,48 +34,20 @@ export async function getData() {
      *
      * Out:
      * [
-     *   { shotUrl, imgUrl }
+     *   { href, src, title }
      * ]
      */
-    dribbble: await (async () => {
-      const cacheFile = join(__dirname, "../cache/dribbble.json");
-      let data;
-
-      if (fs.existsSync(cacheFile)) {
-        data = requireJSON(cacheFile);
-      } else {
-        const ids = YAML.load(join(__dirname, "../data/dribbble.yml"));
-        data = await Promise.all(
-          ids.map((id) =>
-            fetch(`https://api.dribbble.com/v2/shots/${id}`, {
-              headers: {
-                Authorization:
-                  "Bearer 8379fd23942fcf12e4dfdb3d09293a1c01c19e7a577b35e78d48bb659480a21d",
-                // This header is supposed to return a key name `description_text` where
-                // HTML is stripped, but it's not for some reason. So we'll do it ourself.
-                Accept: "application/vnd.dribbble.v2.text+json",
-              },
-            }).then((res) => res.json())
-          )
-        );
-        fs.outputFileSync(cacheFile, JSON.stringify(data));
-      }
-
-      return data.map(({ html_url, images, title }) => ({
-        href: html_url,
-        src: images.hidpi ? images.hidpi : images.normal,
-        title,
-      }));
-    })(),
+    dribbble: requireJSON(
+      join(__dirname, "../data/dribbble-shot-data.json")
+    ).map(({ html_url, images, title }) => ({
+      href: html_url,
+      src: images.hidpi ? images.hidpi : images.normal,
+      title,
+    })),
 
     /**
      * Instagram
-     * https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
-     * Unfortunately these tokens only appear to last for 60 days. You can refresh them
-     * but that seems like a hassle for our scenario here.
-     * @TODO figure out a better way to refresh tokens
-     * https://developers.facebook.com/docs/instagram-basic-display-api/overview#instagram-user-access-tokens
-     * https://developers.facebook.com/docs/instagram-basic-display-api/guides/long-lived-access-tokens#refresh-a-long-lived-token
+     * In:
      * [
      *   {
      *     media_type,
@@ -88,44 +55,15 @@ export async function getData() {
      *     permalink
      *   }
      * ]
+     *
+     * Out:
+     * [
+     *   { href, src }
+     * ]
      */
-    instagram: await (async () => {
-      const file = join(__dirname, "../cache/instagram.json");
-      if (fs.existsSync(file)) {
-        return requireJSON(file);
-      }
-
-      const TOKEN = fs.readFileSync(
-        join(__dirname, "../instagram-flyingjpies.token")
-      );
-      const URL = "https://graph.instagram.com";
-      const USER_ID = "17841406109183572";
-
-      const data = await fetch(
-        `${URL}/${USER_ID}?fields=media&access_token=${TOKEN}`
-      )
-        .then((res) => res.json())
-        .then((json) => {
-          const {
-            media: { data },
-          } = json;
-          // media.paging.next is the URL for the next set of posts
-          return Promise.all(
-            data.map(({ id }) =>
-              fetch(
-                `${URL}/${id}?fields=media_type,media_url,permalink&access_token=${TOKEN}`
-              ).then((res) => res.json())
-            )
-          );
-        })
-        .then((posts) => {
-          return posts
-            .filter((post) => post.media_type !== "VIDEO")
-            .slice(0, 12);
-        });
-      fs.outputFileSync(file, JSON.stringify(data));
-      return data;
-    })(),
+    instagram: requireJSON(
+      join(__dirname, "../data/instagram.json")
+    ).map(({ media_url, permalink }) => ({ href: permalink, src: media_url })),
 
     /**
      * Blog

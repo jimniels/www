@@ -132,25 +132,6 @@
           }
         </style>
 
-        <!--
-          <h2>Ripples of My Writing Around the Web</h2>
-        <ul style="list-style-type: none; padding: 0">
-          {{#blogPostCitations}}
-          <li>
-            <a href="{{url}}"> {{title}} </a>
-            <ul style="font-size: 80%;">
-              {{#citations}}
-              <li>
-                <a href="{{url}}">{{source}}</a>{{#quote}}:
-                “{{quote}}”{{/quote}}
-              </li>
-              {{/citations}}
-            </ul>
-          </li>
-          {{/blogPostCitations}}
-        </ul>
-        -->
-
         <h2>My Most Recent Writing</h2>
         <ul class="copy-full-width pub-container">
           {{#blogPosts}}
@@ -300,9 +281,9 @@
 
         <div class="copy-full-width" id="dribbble">
           {{#instagram}}
-          <a href="{{ permalink }}">
+          <a href="{{ href }}">
             <img
-              src="{{ media_url }}"
+              src="{{ src }}"
               alt="Photo from @flyingjpies on Instagram"
               width="300"
               height="300"
