@@ -62,7 +62,7 @@ export async function getData() {
      * ]
      */
     instagram: requireJSON(
-      join(__dirname, "../data/instagram.json")
+      join(__dirname, "../data/instagram-posts.json")
     ).map(({ media_url, permalink }) => ({ href: permalink, src: media_url })),
 
     /**
