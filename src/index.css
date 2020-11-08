@@ -10,11 +10,56 @@
   @color-highlight: #FF0000;
   @color-border-light: #EEE;
 
+  
+
   @color-link: $color-twitter-blue;
   =========================================================================== */
 
 :root {
   --color-border-light: #ddd;
+
+  /* 
+    Try accessible and non-accessible colors
+    https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
+    @TODO consider vars for these, i.e.
+
+    --system-blue;
+    --system-blue-a11y;
+  */
+
+  /* default 
+  --color-link: rgb(0, 122, 255);
+  --color-link-visited: rgb(175, 82, 222);
+  --color-link-active: rgb(255, 59, 48); */
+
+  /* accessible */
+  --color-link: rgb(0, 64, 221);
+  --color-link-visited: rgb(137, 68, 171);
+  --color-link-active: rgb(215, 0, 21);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* default */
+    --color-link: rgb(10, 132, 255);
+    --color-link-visited: rgb(191, 90, 242);
+    --color-link-active: rgb(255, 69, 58);
+
+    /* accessible 
+    --color-link: rgb(64, 156, 255);
+    --color-link-visited: rgb(218, 143, 255);
+    --color-link-active: rgb(255, 105, 97); */
+  }
+}
+
+a {
+  color: var(--color-link);
+}
+a:visited {
+  color: var(--color-link-visited);
+}
+a:active {
+  color: var(--color-link-active);
 }
 
 *,
