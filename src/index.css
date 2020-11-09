@@ -72,10 +72,16 @@ a:active {
 
 html {
   color-scheme: light dark;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1.618;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media screen and (min-width: 700px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 body {
@@ -140,8 +146,8 @@ main > section {
   margin-bottom: 200px;
 }
 .wrapper {
-  margin-left: 100px;
-  margin-top: 100px;
+  width: 85%;
+  margin: 8% auto;
 }
 nav {
   display: flex;
