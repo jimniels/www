@@ -96,6 +96,20 @@ html {
   }
 }
 
+/* Firefox doesn't support this natively */
+@supports not (color-scheme: light dark) {
+  html {
+    background: #fff;
+    color: #000;
+  }
+  @media screen and (prefers-color-scheme: dark) {
+    html {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+
 body {
   margin: 0;
 }
@@ -127,7 +141,7 @@ h1 {
 
 h2 {
   font-size: 2rem; /* 48px */
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
@@ -149,6 +163,11 @@ h4 {
 }
 .copy-full-width {
   max-width: none;
+}
+
+.list-reset {
+  padding-left: 0;
+  list-style-type: none;
 }
 
 /* =============================================================================

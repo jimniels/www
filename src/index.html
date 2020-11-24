@@ -42,10 +42,13 @@
           <a href="">Icon Galleries</a>
           <a href="">Dribbble</a>
           <a href="">Pies</a>
-          <a href="">Side Projects</a>
+          <a href="#side-projects">Side Projects</a>
           <a href="">Employment</a>
         </p>
         <style>
+          #nav-list {
+            font-size: 0.75rem;
+          }
           #nav-list a {
             margin-left: calc(1.618rem / 4);
             padding-right: calc(1.618rem / 4);
@@ -116,11 +119,8 @@
         <p>— Jim Nielsen on Oct 11, 2020</p>
       </section>
 
-      <section class="copy">
-        <h1>
-          Writings from
-          <a href="https://blog.jim-nielsen.com">My Weblog</a>
-        </h1>
+      <section class="copy" id="writing">
+        <h1>Writing</h1>
         <p>
           @TODO I used to post on dribbble, but seeing as I’m not much of a
           designer anymore—let alone I don’t have anything that fancy, I dono’t
@@ -129,7 +129,7 @@
           rather than dribbble, I’d rather just play basketball.
         </p>
 
-        <h2>Kind Praise For My Writing From Smart People Around the Web</h2>
+        <h2>Kind Praise From Smart Folks on the Web</h2>
         <ul id="citations" style="list-style-type: none; padding: 0">
           {{#blogPostCitations}}
           <li style="margin-bottom: 1.618rem">
@@ -155,19 +155,84 @@
           }
         </style>
 
-        <h2>My Most Recent Writing</h2>
+        <h2>
+          Most Recent Posts From
+          <a href="https://blog.jim-nielsen.com">My Weblog</a>
+        </h2>
         <ul class="copy-full-width pub-container">
           {{#blogPosts}}
           <li class="pub">
             <div class="pub__meta">
               <a href="{{ url }}">{{ title }}</a>
-              <ul>
-                <li>{{ date_published }}</li>
-              </ul>
+              <p>{{ date_published }}</p>
             </div>
           </li>
           {{/blogPosts}}
         </ul>
+
+        <h2>Archive of Published Writings</h2>
+        <p>
+          @TODO I used to post on dribbble, but seeing as I’m not much of a
+          designer anymore—let alone I don’t have anything that fancy, I dono’t
+          do it much anymore. That’s not to say I don’t filnd the stuff from the
+          past stilll interesting! So i keep it here for nostalgia. Honestly,
+          rather than dribbble, I’d rather just play basketball.
+        </p>
+
+        <ul class="copy-full-width pub-container list-reset">
+          {{#publishings}}
+          <li class="pub">
+            <div class="pub__img">
+              <img
+                src="/assets/img/publishings/{{ thumbnail }}"
+                alt=""
+                width="60"
+                height="60"
+              />
+            </div>
+            <div class="pub__meta">
+              <a href="{{ link }}">{{ title }}</a>
+              <p>{{ date }} · {{ publisherDomain }}</p>
+            </div>
+          </li>
+          {{/publishings}}
+        </ul>
+        <style>
+          #publishings img {
+            border-radius: 8px;
+          }
+          .pub-container {
+            list-style-type: none;
+            padding: 0;
+          }
+          .pub {
+            display: flex;
+            margin-bottom: calc(1.618rem / 2);
+          }
+          .pub__img {
+            display: flex;
+            align-items: center;
+            margin-right: calc(1.618rem / 2);
+          }
+          .pub__meta a {
+            display: block;
+          }
+
+          .pub__meta p {
+            margin: 0;
+            opacity: 0.5;
+            font-size: 0.666rem;
+            display: flex;
+          }
+          .pub__meta li:after {
+            content: "·";
+            padding-left: calc(1.618rem / 4);
+            margin-right: calc(1.618rem / 4);
+          }
+          .pub__meta li:last-child:after {
+            display: none;
+          }
+        </style>
       </section>
 
       <section class="copy">
@@ -317,11 +382,13 @@
         </div>
       </section>
 
-      <section class="copy" id="sassme">
-        <h1>
-          Side Project: <a href="https://sassme.jim-nielsen.com">SassMe</a>
-          <a href="#sassme" class="anchor">🔗</a>
-        </h1>
+      <section class="copy" id="side-projects">
+        <h1>Side Projects</h1>
+
+        <h2>
+          <a href="https://sassme.jim-nielsen.com">SassMe</a>: visualize Sass
+          color functions in real-time.
+        </h2>
         <p>
           Circa 2012. I used to post on dribbble, but seeing as I’m not much of
           a designer anymore—let alone I don’t have anything that fancy, I
@@ -353,7 +420,7 @@
           .tweet {
             padding: 0;
             margin: 0 calc(1.618rem / 2) calc(1.618rem / 2) 0;
-            background-color: var(--color-gray-6); /* @TODO */
+            /* background-color: var(--color-gray-6);  */
             border-radius: 7px;
             padding: 0.5rem 0.5rem 0.5rem 1rem;
             width: 100%;
@@ -397,84 +464,11 @@
             justify-content: center;
           }
         </style>
-      </section>
 
-      <section class="copy" id="publishings">
-        <h1>Published Writings—Mostly From Days of Yore</h1>
-        <p>
-          @TODO I used to post on dribbble, but seeing as I’m not much of a
-          designer anymore—let alone I don’t have anything that fancy, I dono’t
-          do it much anymore. That’s not to say I don’t filnd the stuff from the
-          past stilll interesting! So i keep it here for nostalgia. Honestly,
-          rather than dribbble, I’d rather just play basketball.
-        </p>
-
-        <ul class="copy-full-width pub-container">
-          {{#publishings}}
-          <li class="pub">
-            <div class="pub__img">
-              <img
-                src="/assets/img/publishings/{{ thumbnail }}"
-                alt=""
-                width="60"
-                height="60"
-              />
-            </div>
-            <div class="pub__meta">
-              <a href="{{ link }}">{{ title }}</a>
-              <ul>
-                <li>{{ date }}</li>
-                <li>{{ publisherDomain }}</li>
-              </ul>
-            </div>
-          </li>
-          {{/publishings}}
-        </ul>
-        <style>
-          #publishings img {
-            border-radius: 8px;
-          }
-          .pub-container {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-          }
-          .pub {
-            display: flex;
-            margin-bottom: calc(1.618rem / 2);
-          }
-          .pub__img {
-            display: flex;
-            align-items: center;
-            margin-right: calc(1.618rem / 2);
-          }
-          .pub__meta a {
-            display: block;
-          }
-          .pub__meta ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            opacity: 0.5;
-            font-size: 0.666rem;
-            display: flex;
-          }
-          .pub__meta li:after {
-            content: "·";
-            padding-left: calc(1.618rem / 4);
-            margin-right: calc(1.618rem / 4);
-          }
-          .pub__meta li:last-child:after {
-            display: none;
-          }
-        </style>
-      </section>
-
-      <section class="copy">
-        <h1>
-          Side Project:
-          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
-        </h1>
+        <h2>
+          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>:
+          how far out of focus can an image be and still be recognized?
+        </h2>
         <p>
           @TODO I used to post on dribbble, but seeing as I’m not much of a
           designer anymore—let alone I don’t have anything that fancy, I dono’t
@@ -502,20 +496,21 @@
       </section>
 
       <section class="copy">
-        <h1>History of Employment</h1>
+        <h1>Employment</h1>
 
         <h2>
-          2016 – Present: Director of Design & UI Architecture @
+          Director of Design & UI Architecture @
           <a href="https://www.sagesure.com">SageSure</a> (Remote)
         </h2>
 
         <p>
-          More info to come... Project: Agent Portal Web application allowing
-          agents to quote and bind insurance policies via Insight’s platform.
-          Initial work has included redesigning exisiting problematic UI
-          interfaces and simplifying front-end implementation approaches. Tools:
-          Sketch, Sass. Text as UI Designing and Engineering Color Usage in
-          Agent Portal Migrating Away from Compass and Susy to Sass Exclusively
+          2016 – Present. More info to come... Project: Agent Portal Web
+          application allowing agents to quote and bind insurance policies via
+          Insight’s platform. Initial work has included redesigning exisiting
+          problematic UI interfaces and simplifying front-end implementation
+          approaches. Tools: Sketch, Sass. Text as UI Designing and Engineering
+          Color Usage in Agent Portal Migrating Away from Compass and Susy to
+          Sass Exclusively
         </p>
         <p>Related posts from my weblog:</p>
         <ul>

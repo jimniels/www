@@ -71,7 +71,7 @@ export async function getData() {
      *   {
      *     title,
      *     url,
-     *     date_published: "2018-09-12"
+     *     date_published: "2020-10-19T19:00:00.000Z"
      *   }
      * ]
      */
@@ -83,7 +83,7 @@ export async function getData() {
             .filter((item, i) => i <= 5)
             .map((item) => ({
               ...item,
-              date_published: moment(item.date_published).format(DATE_FORMAT),
+              date_published: item.date_published.slice(0, 10),
             }))
         );
       return data;
@@ -156,7 +156,7 @@ export async function getData() {
     publishings: YAML.load(join(__dirname, "../data/publishings.yml")).map(
       (item) => ({
         ...item,
-        date: moment(item.date).format(DATE_FORMAT),
+        date: item.date.toISOString().slice(0, 10),
         thumbnail:
           slugify(item.title, { remove: /['':;,]/g, lower: true }) +
           "." +
