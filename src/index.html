@@ -36,7 +36,30 @@
       <section class="copy">
         <h1>Jim Nielsen: dad, designer, developer (in that order).</h1>
 
-        <h2>Currently: Director of Design & UI Architecture @ SageSure.</h2>
+        <p id="nav-list">
+          ↓
+          <a href="#writing">Writing</a>
+          <a href="">Icon Galleries</a>
+          <a href="">Dribbble</a>
+          <a href="">Pies</a>
+          <a href="">Side Projects</a>
+          <a href="">Employment</a>
+        </p>
+        <style>
+          #nav-list a {
+            margin-left: calc(1.618rem / 4);
+            padding-right: calc(1.618rem / 4);
+          }
+          #nav-list li:last-child:after {
+            display: none;
+          }
+          #nav-list li:after {
+            content: "/";
+            color: var(--color-gray-5);
+            margin-left: calc(1.618rem / 3);
+            padding-right: calc(1.618rem / 3);
+          }
+        </style>
 
         <p>
           <em>Who are you?</em> “I am a designer who codes” is likely the answer
