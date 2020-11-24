@@ -164,6 +164,8 @@ export async function getData() {
       })
     ),
 
+    tweets: YAML.load(join(__dirname, "../data/tweets.yml")),
+
     /**
      * Personal Projects
      */

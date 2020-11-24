@@ -124,7 +124,7 @@
           #citations blockquote {
             margin-left: 0;
             padding-left: calc(1.618rem / 1.618);
-            border-left: 2px solid var(--color-border-light);
+            border-left: 2px solid var(--color-gray-5);
             font-size: 0.875em; /* 21 */
           }
           #citations blockquote a {
@@ -208,7 +208,7 @@
 
       <section class="copy">
         <h1>
-          Some Shots From My Baller Days on
+          Shots From My Baller Days on
           <a href="https://www.dribbble.com/jimniels">Dribbble</a>
         </h1>
         <p>
@@ -292,6 +292,88 @@
           </a>
           {{/instagram}}
         </div>
+      </section>
+
+      <section class="copy" id="sassme">
+        <h1>
+          Side Project: <a href="https://sassme.jim-nielsen.com">SassMe</a>
+          <a href="#sassme" class="anchor">🔗</a>
+        </h1>
+        <p>
+          Circa 2012. I used to post on dribbble, but seeing as I’m not much of
+          a designer anymore—let alone I don’t have anything that fancy, I
+          dono’t do it much anymore. That’s not to say I don’t filnd the stuff
+          from the past stilll interesting! So i keep it here for nostalgia.
+          Honestly, rather than dribbble, I’d rather just play basketball.
+        </p>
+        <ul class="tweets copy-full-width">
+          {{#tweets.sassme}}
+
+          <li class="tweet">
+            <a href="https://twitter.com/user/status/{{ id }}">
+              <h3>{{author.name}} <small>@{{author.handle}}</small></h3>
+              <p>{{content}}</p>
+            </a>
+          </li>
+
+          {{/tweets.sassme}}
+        </ul>
+
+        <style>
+          .tweets {
+            font-size: 0.66666rem;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .tweet {
+            padding: 0;
+            margin: 0 calc(1.618rem / 2) calc(1.618rem / 2) 0;
+            background-color: var(--color-gray-6); /* @TODO */
+            border-radius: 7px;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            width: 100%;
+            max-width: 21rem;
+            position: relative;
+          }
+          .tweet a {
+            text-decoration: none;
+            color: inherit;
+          }
+          .tweet h3,
+          .tweet p {
+            color: inherit;
+            text-decoration: none;
+            margin: 0;
+          }
+          .tweet h3 {
+            font-size: inherit;
+            font-weight: 700;
+            margin-bottom: 0.0833rem;
+          }
+          .tweet h3 small {
+            font-weight: 400;
+            opacity: 0.5;
+          }
+          .tweet:before {
+            content: "“";
+            position: absolute;
+            top: 0.625rem;
+            left: calc(1.25rem / -2);
+            width: 1.25rem;
+            height: 1.25rem;
+            background: var(--color-gray-6);
+            border-radius: 50%;
+            color: var(--color-gray);
+            font-size: 1.618rem;
+            font-family: serif;
+            display: flex;
+            text-align: center;
+            line-height: 1.25;
+            justify-content: center;
+          }
+        </style>
       </section>
 
       <section class="copy" id="publishings">

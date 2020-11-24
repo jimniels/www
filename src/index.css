@@ -8,7 +8,7 @@
   @color-yellow: #fffddf
   @padding-left: 10%
   @color-highlight: #FF0000;
-  @color-border-light: #EEE;
+  
 
   
 
@@ -16,8 +16,6 @@
   =========================================================================== */
 
 :root {
-  --color-border-light: #ddd;
-
   /* 
     Try accessible and non-accessible colors
     https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
@@ -36,19 +34,33 @@
   --color-link: rgb(0, 64, 221);
   --color-link-visited: rgb(137, 68, 171);
   --color-link-active: rgb(215, 0, 21);
+
+  --color-gray: rgb(108, 108, 112);
+  --color-gray-2: rgb(142, 142, 147);
+  --color-gray-3: rgb(174, 174, 178);
+  --color-gray-4: rgb(188, 188, 192);
+  --color-gray-5: rgb(216, 216, 220);
+  --color-gray-6: rgb(236, 235, 240);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* default */
+    /* default 
     --color-link: rgb(10, 132, 255);
     --color-link-visited: rgb(191, 90, 242);
-    --color-link-active: rgb(255, 69, 58);
+    --color-link-active: rgb(255, 69, 58); */
 
-    /* accessible 
+    /* accessible */
     --color-link: rgb(64, 156, 255);
     --color-link-visited: rgb(218, 143, 255);
-    --color-link-active: rgb(255, 105, 97); */
+    --color-link-active: rgb(255, 105, 97);
+
+    --color-gray: rgb(174, 174, 178);
+    --color-gray-2: rgb(124, 124, 128);
+    --color-gray-3: rgb(84, 84, 86);
+    --color-gray-4: rgb(68, 68, 70);
+    --color-gray-5: rgb(54, 54, 56);
+    --color-gray-6: rgb(36, 36, 38);
   }
 }
 
@@ -88,13 +100,13 @@ body {
   margin: 0;
 }
 
-/* a {
+a {
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-} */
+}
 
 img {
   max-width: 100%;
@@ -146,7 +158,7 @@ main > section {
   margin-bottom: 200px;
 }
 .wrapper {
-  width: 85%;
+  width: 86%;
   margin: 8% auto;
 }
 nav {
@@ -155,11 +167,25 @@ nav {
   margin-bottom: 1.618rem;
 }
 nav img {
-  margin-right: calc(1.618rem / 4);
+  margin-right: calc(1.618rem / 2);
 }
 nav a {
   text-decoration: none;
-  color: inherit;
+  color: #ff2603 !important;
   font-size: 0.75rem; /* 18 */
-  font-weight: 500;
+  font-weight: 400;
+}
+h1 {
+  position: relative;
+}
+.anchor {
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  left: -1.5em;
+  font-size: 0.5em;
+  top: 0.625em;
+}
+h1:hover .anchor {
+  display: inline;
 }

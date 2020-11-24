@@ -1,0 +1,31 @@
+sassme:
+  - id: "444486106365435904"
+    content: "Check out SassMe, a tool for visualizing Sass color functions"
+    author:
+      handle: "happycog"
+      name: "Happy Cog"
+      followers: 222000
+  - id: "361846594364112896"
+    content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head!"
+    author:
+      handle: "vlh"
+      name: "Val Head"
+      followers: 4076
+  - id: "535808595565481986"
+    content: "A little helpful tool to visualize SASS color functions in real-time without compiling."
+    author:
+      handle: "smashingmag"
+      name: "Smashing Magazine"
+      followers: 794000
+  - id: "535462489107230720"
+    content: "We use a tool to help designers create variations of main set of colors & then we name them"
+    author:
+      handle: "elijahmanor"
+      name: "Elijah Manor"
+      followers: 45000
+  - id: "488822972224765952"
+    content: "my new favorite toy. most of this is pretty easy to do in your head, but sometimes it's nice to have a visualization"
+    author:
+      handle: "sarah_edo"
+      name: "Sarah Drasner"
+      followers: 80000
