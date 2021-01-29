@@ -64,3 +64,57 @@ h1 {
 h1:hover .anchor {
   display: inline;
 }
+
+/* 
+  Posts Lists - @TODO consider changing to something representing that it's 
+  a flat key/val list
+  =========================================================================== */
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.posts-list li {
+  margin-bottom: calc(1.618rem / 2);
+}
+
+.posts-list time {
+  display: block;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.7rem;
+  opacity: 0.5; /* @TODO change to gray */
+  margin-right: calc(1.618rem / 2);
+  white-space: nowrap;
+}
+
+.posts-list a[data-domain]:before {
+  content: attr(data-domain);
+  display: block;
+  font-size: 0.6em;
+  text-decoration: none;
+  position: relative;
+  font-weight: 300;
+}
+
+.posts-list a {
+  text-decoration: none;
+}
+.posts-list a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 520px) {
+  .posts-list li {
+    margin-bottom: calc(1.618rem / 4);
+    display: flex;
+    align-items: baseline;
+  }
+  .posts-list li a {
+    order: 2;
+  }
+  .posts-list time {
+    order: 1;
+  }
+}
