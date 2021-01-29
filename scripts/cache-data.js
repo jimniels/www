@@ -3,6 +3,9 @@ import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import fetch from "node-fetch";
 import YAML from "yamljs";
+import util from "util";
+import stream from "stream";
+const streamPipeline = util.promisify(stream.pipeline);
 
 const { API_TOKEN_INSTAGRAM, API_TOKEN_DRIBBBLE } = process.env;
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -95,9 +98,28 @@ async function cacheInstagram() {
     })
     .then((posts) => {
       return posts.filter((post) => post.media_type !== "VIDEO").slice(0, 16);
+    })
+    .then(async (posts) => {
+      // @TODO delete stuff in instagram folder and rewrite this stuff
+      await Promise.all(
+        posts.map((post, i) =>
+          download(
+            post.media_url,
+            join(__dirname, `../src/assets/img/instagram/${i}.jpg`)
+          )
+        )
+      );
+      return posts;
     });
   fs.outputFileSync(
     getDataFilePath("instagram-posts.json"),
     JSON.stringify(data)
   );
+}
+
+async function download(remotePath, localPath) {
+  const response = await fetch(remotePath);
+  if (!response.ok)
+    throw new Error(`unexpected response ${response.statusText}`);
+  await streamPipeline(response.body, fs.createWriteStream(localPath));
 }

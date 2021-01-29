@@ -1,6 +1,6 @@
 ---
 - title: Combining Netlify with Dropbox For a One-Click Publishing Process
-  publisherDomain: www.netlify.com
+  publisherDomain: netlify.com
   date: 2018-10-16
   link: https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/
 - title: Connecting an API-Driven Web App with Javascript
@@ -301,7 +301,7 @@
     address information. This form will assist users (primarily mobile) by automatically
     suggesting popular email domains.
 - title: Password Strength Verification with jQuery
-  publisherDomain: www.webdesignerdepot.com
+  publisherDomain: webdesignerdepot.com
   date: 2012-01-10
   imageType: jpg
   link: http://www.webdesignerdepot.com/2012/01/password-strength-verification-with-jquery/

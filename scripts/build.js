@@ -14,6 +14,9 @@ const slugify = (str) => slugifyFn(str, { remove: /['':;,]/g, lower: true });
 const DATE_FORMAT = "MMM D, YYYY";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// @TODO fetchIf() will look for a local cache file first and if it doesn't exist,
+// it'll be fetched from the network. npm start will clear this cache each time you run
+
 export async function getData() {
   return {
     /**
@@ -93,12 +96,17 @@ export async function getData() {
         "https://blog.jim-nielsen.com/archive/index.json"
       )
         .then((res) => res.json())
+        .then((posts) =>
+          posts.map((post) => ({ ...post, date: post.date.slice(0, 10) }))
+        )
         .then((posts) => {
           const postsByTag = posts.reduce((acc, post) => {
             if (post.tags && post.tags.length) {
               post.tags.forEach((tag) => {
                 if (acc[tag]) {
-                  acc[tag].push(post);
+                  if (acc[tag].length < 3) {
+                    acc[tag].push(post);
+                  }
                 } else {
                   acc[tag] = [post];
                 }
@@ -125,7 +133,7 @@ export async function getData() {
      *   }
      * ]
      */
-    icons: await (async () => {
+    iconGalleries: await (async () => {
       const handleResponse = (res, type) => {
         return res.json().then((json) => {
           return json.items.map((icon) => ({
@@ -146,10 +154,27 @@ export async function getData() {
         fetch("https://www.watchosicongallery.com/feed.json").then((res) =>
           handleResponse(res, "watchos")
         ),
-      ]).then((responses) =>
-        responses.flat().sort((a, b) => {
-          return 0.5 - Math.random();
-        })
+      ]).then(
+        (responses) => [
+          {
+            name: "iOS Icon Gallery",
+            url: "https://www.iosicongallery.com",
+            icons: responses[0],
+          },
+          {
+            name: "macOS Icon Gallery",
+            url: "https://www.macosicongallery.com",
+            icons: responses[1],
+          },
+          {
+            name: "watchOS Icon Gallery",
+            url: "https://www.watchosicongallery.com",
+            icons: responses[2],
+          },
+        ]
+        // responses.flat().sort((a, b) => {
+        //   return 0.5 - Math.random();
+        // })
       );
       return data;
     })(),
