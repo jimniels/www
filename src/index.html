@@ -158,17 +158,29 @@
         understanding and knowledge and aesthetics have changed and evolved over
         the years. That’s how I feel about my writing.</p> -->
       <p>
-        I enjoy writing as a method of seeking clarity and
+        I enjoy writing as a practice of seeking clarity and
         <a
           href="https://blog.jim-nielsen.com/2018/writing-as-iterative-problem-solving/"
           >iteratively improving my thinking</a
-        >. It’s a form of QA for my thoughts. Until I can accurately, concisely,
+        >. It’s like QA, but for my thoughts. Until I can accurately, concisely,
         and comprehensibly articulate my thoughts to another person, I don’t
         know what I think I know.
       </p>
 
-      <h2>Resonance With Folks on the Web</h2>
+      <h2>
+        Most Recent Posts From
+        <a href="https://blog.jim-nielsen.com">My Blog</a>
+      </h2>
+      <ul class="copy-full-width">
+        {{#blogPosts}}
+        <li>
+          <a href="{{ url }}">{{ title }}</a>
+          <time class="small">{{ date_published }}</time>
+        </li>
+        {{/blogPosts}}
+      </ul>
 
+      <h2>Resonance With Folks on the Web</h2>
       {{#blogPostCitations}}
       <h3>{{name}}:</h3>
       {{#quotes}}
@@ -176,7 +188,6 @@
         <p>{{{quote}}} (<a href="{{url}}">{{domain}}</a>)</p>
       </blockquote>
       {{/quotes}} {{/blogPostCitations}}
-
       <!-- @TODO 
       <h3>Others</h3>
       <details>
@@ -189,35 +200,30 @@
       </details>
       -->
 
-      <h2>
-        Most Recent Posts From
-        <a href="https://blog.jim-nielsen.com">My Blog</a>
-      </h2>
-      <ul class="copy-full-width posts-list">
-        {{#blogPosts}}
-        <li>
-          <time>{{ date_published }}</time>
-          <a href="{{ url }}">{{ title }}</a>
-        </li>
-        {{/blogPosts}}
-      </ul>
-
       <h2>Archive of Published Writings</h2>
       <p>
-        @TODO I used to post on dribbble, but seeing as I’m not much of a
-        designer anymore—let alone I don’t have anything that fancy, I dono’t do
-        it much anymore. That’s not to say I don’t filnd the stuff from the past
-        stilll interesting! So i keep it here for nostalgia. Honestly, rather
-        than dribbble, I’d rather just play basketball.
+        While I haven’t done it as much recently, I used to publish a lot more
+        articles to industry blogs.
       </p>
 
-      <ul class="copy-full-width posts-list pub-container list-reset">
+      <ul class="copy-full-width posts-lis">
         {{#publishings}}
-        <li class="pub">
-          <a href="{{ link }}" data-domain="{{ publisherDomain }}"
-            >{{ title }}</a
+        <li>
+          <a href="{{ link }}">{{ title }}</a>
+          <span class="small"
+            >{{publisherDomain}}, <time>{{ date }}</time></span
           >
-          <time>{{ date }}</time>
+
+          <!--
+          {{#tweet}}
+          <blockquote style="font-size: 0.75em">
+            {{ content }} –
+            <a href="https://twitter.com/user/status/{{id}}"
+              >{{author.name}} (@{{author.handle}})</a
+            >
+          </blockquote>
+          {{/tweet}}
+          -->
         </li>
         {{/publishings}}
       </ul>
@@ -277,18 +283,15 @@
         occasionally write about the how behind all of that on my blog. My most
         recent posts on the subject are the following:
       </p>
-      <ul class="posts-list">
+      <ul class="">
         {{#blogPostsByTag.iconGalleries}}
         <li>
           <a href="{{ permalink }}">{{ title }}</a>
-          <time>{{ date }}</time>
+          <time class="small">{{ date }}</time>
         </li>
         {{/blogPostsByTag.iconGalleries}}
         <li>
-          More posts on
-          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
-            >blog.jim-nielsen.com/tags/#iconGalleries</a
-          >
+          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries">More...</a>
         </li>
       </ul>
       <!-- @TODO  tags posts as #iconGalleries on blog and pull some in here

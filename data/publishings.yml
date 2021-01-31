@@ -53,14 +53,12 @@
     … until now. We’ll take a look at the value of hanging punctuation and how you
     can partially implement it using a little javascript and a CSS rule which has
     been around for years.
-  tweets:
-  - id: 445840837369671700
-    content: 'What a delightful article on hanging punctuation: http://webdesign.tutsplus.com/articles/getting-the-hang….
-      Full of interesting bites to start the day.'
+  tweet:
+  - id: 445840837369671680
+    content: 'What a delightful article on hanging punctuation…Full of interesting bites to start the day.'
     author:
       handle: HugoGiraudel
-      name: Hugo Giraudel
-      followers: 3503
+      name: Kitty Giraudel
   - id: 445839398018752500
     content: 'Getting the hang of hanging punctuation with the help of a little JS
       and CSS: http://webdesign.tutsplus.com/articles/getting-the-hang… by @jimniels'
@@ -91,7 +89,7 @@
     form interaction design as a guide, we will create a stunning form interaction
     for the web that’s beautiful, accessible, and progressively enhanced using HTML,
     CSS and JavaScript.
-  tweets:
+  tweet:
   - id: 437962351133089800
     content: "✽ Float Labels with CSS :: http://css-tricks.com/float-labels-css/…"
     author:
@@ -105,7 +103,7 @@
   excerpt: You should think about organizing your variable names (and project for
     that matter) modularly. This will bring structure and unity to your project as
     a whole, making it easier to understand and navigate the whole thing.
-  tweets:
+  tweet:
   - id: 354547144172126209
     content: "@robinrendle This is a pretty decent article http://t.co/0V5aYLkMDO
       :)"
@@ -159,7 +157,7 @@
   excerpt: Let’s look at how to create a functional form which validates users’ data,
     client-side. With that done, we’ll cover prettying it up using CSS, including
     some CSS3!
-  tweets:
+  tweet:
   - id: 137205950602952700
     content: 'Bring Your Forms Up to Date With CSS3 and #HTML5 Validation - http://ow.ly/7wgur'
     author:
@@ -209,7 +207,7 @@
     for the ellipse tool – creating crisp, pixel-perfect circles can therefore require
     additional attention to detail. I’m going to let you in on a little secret which
     will make “snap to pixels” available when creating circles.
-  tweets:
+  tweet:
   - id: 278869750824697860
     content: 'I’ll probably never remember it, but it’s good to know: Creating Crisp,
       Pixel Perfect Circles in Photoshop - http://ow.ly/fXKYO'
@@ -225,7 +223,7 @@
     can be a hassle. On the desktop we have powerful debugging tools; most browsers
     have a web inspector of some kind. But we don’t have those tools for devices like
     the iPhone and iPad … that is, until now!
-  tweets:
+  tweet:
   - id: 425070337861353500
     content: 'It’s high time I discovered you can inspect sites even inside the XCode
       simulator: http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-tip…'
@@ -268,7 +266,7 @@
     It’s a simple effect that adds a layer of visual personality. Saying that, if
     you’re not achieving the rotation effect with CSS, you’re working too hard! Learn
     how to do it right!
-  tweets:
+  tweet:
   - id: 212554894215876600
     content: 'A useful tutorial: Rotate and Mask Thumbnails With CSS3 - http://bit.ly/raJxxF'
     author:
@@ -284,7 +282,7 @@
     which take on different states depending on the user’s interaction. This type
     of interaction is especially useful on links such as “purchase” or “delete” where
     it’s wise to confirm that the user indeed wants to take a specific action.
-  tweets:
+  tweet:
   - id: 205269378382577660
     content: 'A CSS/JS technique for buttons: Put Users in Control With Confirmation
       Feedback Buttons - http://bit.ly/Jya5gt'

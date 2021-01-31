@@ -181,7 +181,7 @@ export async function getData() {
     publishings: YAML.load(join(__dirname, "../data/publishings.yml")).map(
       (item) => ({
         ...item,
-        date: item.date.toISOString().slice(0, 10),
+        date: item.date.toISOString().slice(0, 4),
         thumbnail:
           slugify(item.title, { remove: /['':;,]/g, lower: true }) +
           "." +

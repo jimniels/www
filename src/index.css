@@ -89,6 +89,12 @@ h1:hover .anchor {
   white-space: nowrap;
 }
 
+.small {
+  font-size: 0.7rem;
+  opacity: 0.5; /* @TODO change to gray */
+  white-space: nowrap;
+}
+
 .posts-list a[data-domain]:before {
   content: attr(data-domain);
   display: block;
