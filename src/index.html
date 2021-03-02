@@ -143,6 +143,7 @@
     </section>
 
     <section class="copy" id="writing">
+      <img src="/assets/img/writing.png" />
       <h1 id="writing">Writing <a href="#writing">🔗</a></h1>
       <!-- <p>
         I enjoy the practice writing because it is a form of seeking clarity to
@@ -167,27 +168,41 @@
         know what I think I know.
       </p>
 
-      <h2>
-        Most Recent Posts From
-        <a href="https://blog.jim-nielsen.com">My Blog</a>
-      </h2>
-      <ul class="copy-full-width">
+      <h2>My Blog</h2>
+
+      <style>
+        .posts {
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+
+      <p>My most recent posts:</p>
+      <ul>
         {{#blogPosts}}
         <li>
           <a href="{{ url }}">{{ title }}</a>
           <time class="small">{{ date_published }}</time>
         </li>
         {{/blogPosts}}
+        <li>
+          More on
+          <a href="https://blog.jim-nielsen.com">blog.jim-nielsen.com ➝</a>
+        </li>
       </ul>
 
-      <h2>Resonance With Folks on the Web</h2>
-      {{#blogPostCitations}}
-      <h3>{{name}}:</h3>
-      {{#quotes}}
-      <blockquote>
-        <p>{{{quote}}} (<a href="{{url}}">{{domain}}</a>)</p>
-      </blockquote>
-      {{/quotes}} {{/blogPostCitations}}
+      <p>Previously written posts that’ve found resonance with folks online:</p>
+
+      <ul>
+        {{#blogPostCitations}} {{#quotes}}
+
+        <li>
+          <p><a href="{{url}}">{{name}} on {{domain}}</a>: “{{{quote}}}”</p>
+        </li>
+
+        {{/quotes}} {{/blogPostCitations}}
+      </ul>
+
       <!-- @TODO 
       <h3>Others</h3>
       <details>
@@ -291,7 +306,10 @@
         </li>
         {{/blogPostsByTag.iconGalleries}}
         <li>
-          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries">More...</a>
+          More on
+          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
+            >blog.jim-nielsen.com →</a
+          >
         </li>
       </ul>
       <!-- @TODO  tags posts as #iconGalleries on blog and pull some in here
@@ -385,22 +403,23 @@
         #dribbble-shots {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-
-          grid-gap: 1rem;
+          max-width: 1200px;
           /*display: flex;
           flex-wrap: wrap;
           max-width: 1800px;*/
         }
+        #dribbble-shots a:hover {
+          filter: none;
+        }
         #dribbble-shots img {
-          margin: 0 1rem 1rem 0;
+          display: block;
           transition: 0.2s ease all;
-          border-radius: 8px; /* dribbble does this */
-          box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075),
-            0 2px 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075);
         }
         #dribbble-shots img:hover {
-          transform: scale(1.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          /* transform: scale(1.025); */
+          /* transform: translateY(-2px); */
+          /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
         }
       </style>
     </section>
@@ -430,7 +449,7 @@
         now half the fun!
       </p>
 
-      <div class="copy-full-width" id="dribbble">
+      <div class="copy-full-width" id="instagram">
         {{#instagram}}
         <a href="{{ href }}">
           <img
@@ -443,6 +462,22 @@
         </a>
         {{/instagram}}
       </div>
+      <style>
+        #instagram {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          max-width: 1200px;
+          /*display: flex;
+          flex-wrap: wrap;
+          max-width: 1800px;*/
+        }
+        #instagram a:hover {
+          filter: none;
+        }
+        #instagram img {
+          display: block;
+        }
+      </style>
     </section>
 
     <section class="copy" id="side-projects">
@@ -459,12 +494,17 @@
         stilll interesting! So i keep it here for nostalgia. Honestly, rather
         than dribbble, I’d rather just play basketball.
       </p>
-      <p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"
-          width="32"
-        />
-      </p>
+
+      <ul>
+        {{#tweets.sassme}}
+        <li>
+          <a href="https://twitter.com/user/status/{{id}}"
+            >{{author.name}} (@{{author.handle}})</a
+          >: “{{content}}”
+        </li>
+        {{/tweets.sassme}}
+      </ul>
+      <!-- 
       {{#tweets.sassme}}
       <blockquote>
         <p>
@@ -475,6 +515,7 @@
         </p>
       </blockquote>
       {{/tweets.sassme}}
+      -->
 
       <!-- @TODO consider enhanced design here
       <ul class="tweets copy-full-width">

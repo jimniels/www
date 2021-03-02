@@ -64,9 +64,12 @@ export async function getData() {
      *   { href, src }
      * ]
      */
-    instagram: requireJSON(
-      join(__dirname, "../data/instagram-posts.json")
-    ).map(({ media_url, permalink }) => ({ href: permalink, src: media_url })),
+    instagram: requireJSON(join(__dirname, "../data/instagram-posts.json")).map(
+      ({ media_url, permalink }, i) => ({
+        href: permalink,
+        src: `/assets/img/instagram/${i}.jpg`,
+      })
+    ),
 
     /**
      * Blog
@@ -83,7 +86,7 @@ export async function getData() {
         .then((res) => res.json())
         .then((res) =>
           res.items
-            .filter((item, i) => i <= 5)
+            .filter((item, i) => i < 3)
             .map((item) => ({
               ...item,
               date_published: item.date_published.slice(0, 10),
@@ -119,6 +122,9 @@ export async function getData() {
         });
       return data;
     })(),
+    blogPostCitations2: YAML.load(
+      join(__dirname, "../data/blog-post-citations-2.yml")
+    ),
     blogPostCitations: YAML.load(
       join(__dirname, "../data/blog-post-citations.yml")
     ),

@@ -7,7 +7,7 @@
 }
 
 .copy > * {
-  max-width: 37rem; /* 900px */
+  max-width: 33rem; /* 900px */
   /* margin-bottom: 1.618rem; */
 }
 .copy-full-width {
@@ -22,6 +22,17 @@
 /* =============================================================================
    site-specific
    ===========================================================================*/
+
+html {
+  background: #f5f5f5;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  html {
+    background: #111;
+  }
+}
+
 section {
   margin-bottom: 200px;
 }
@@ -93,6 +104,7 @@ h1:hover .anchor {
   font-size: 0.7rem;
   opacity: 0.5; /* @TODO change to gray */
   white-space: nowrap;
+  margin-left: 0.7em;
 }
 
 .posts-list a[data-domain]:before {
