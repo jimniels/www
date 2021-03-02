@@ -177,7 +177,10 @@
         }
       </style>
 
-      <p>My most recent posts:</p>
+      <p>
+        My blog is a collection of posts since 2012. I was [nonsensically
+        blogging] even before that. But here are my most recent posts:
+      </p>
       <ul>
         {{#blogPosts}}
         <li>
@@ -194,13 +197,13 @@
       <p>Previously written posts that’ve found resonance with folks online:</p>
 
       <ul>
-        {{#blogPostCitations}} {{#quotes}}
+        {{#blogPostCitations}}
 
         <li>
           <p><a href="{{url}}">{{name}} on {{domain}}</a>: “{{{quote}}}”</p>
         </li>
 
-        {{/quotes}} {{/blogPostCitations}}
+        {{/blogPostCitations}}
       </ul>
 
       <!-- @TODO 

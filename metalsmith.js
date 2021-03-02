@@ -13,14 +13,18 @@ Metalsmith(__dirname)
   .frontmatter(false)
   .clean(true)
   .use(async (files, metalsmith, done) => {
-    const data = await getData();
+    let data = await getData();
+    data.css = fs.readFileSync(join(metalsmith.source(), "index.css"));
 
+    // REnder template literal string
+    // files["index.html"].contents = eval(
+    //   "`" + files["index.html"].contents.toString() + "`"
+    // );
+
+    // REnder mustache template
     files["index.html"].contents = Mustache.render(
       files["index.html"].contents.toString(),
-      {
-        ...data,
-        css: fs.readFileSync(join(metalsmith.source(), "index.css")),
-      }
+      data
     );
     done();
   })
