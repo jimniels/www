@@ -1,57 +1,13 @@
-- title: Web Technologies and Syntax
-  url: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
-  citations:
-    - source: Robin Rendle on CSS Tricks Newsletter
-      url: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
-      quote: Over the weekend I read this post by Jim Nielsen about web technologies and syntax that I really enjoyed.
-    - source: Chris Coyier on CSS Tricks
-      url: https://css-tricks.com/web-technologies-and-syntax/
-      quote: Jim Nielsen makes the connection to optional chaining and !important in CSS...I like that take.
 - title: Indexing My Blog’s Links
   url: https://blog.jim-nielsen.com/2020/indexing-my-blogs-links/
   citations:
-    - source: Remy Sharp on remysharp.com
-      url: https://remysharp.com/links/2020-09-24-e9aa7591
-      quote: I’ll be adding this to my blog shortly - very clever.
     - source: Adactio Links
       url: https://adactio.com/links/17433
 - title: Building a Progressively-Enhanced Site
   url: https://blog.jim-nielsen.com/2019/building-a-progressively-enhanced-site/
   citations:
-    - source: Andy Bell on hankchizljaw.com
-      url: https://archive.hankchizljaw.com/feed/page/61/
-      quote: This was an absolute joy to read.
     # - source: CSS-Tricks (@css) on twitter
     #  url: https://twitter.com/css/status/1087895696655728642
-    - source: Jeremey Keith on adactio.com
-      url: https://adactio.com/links/14705
-      quote: This is an excellent case study! The technical details are there if you want them, but far more important is consideration that went into every interaction. Every technical decision has a well thought out justification.
-- title: Webster’s Dictionary Defines “View Source” As...
-  url: https://blog.jim-nielsen.com/2020/the-meaning-of-view-source/
-  citations:
-    - source: Chris Coyier on CSS Tricks
-      url: https://css-tricks.com/defining-view-source/
-      quote: Last time there was a little flurry of activity around the concept of ‘View Source,’ I did get the sense that not everyone was on the same page about what that even means...Jim’s post explains the difference between all three types of ‘viewing source’ in great detail.
-    - source: Sidebar.io Newsletter
-      url: https://sidebar.io/date/2020-09-11
-- title: Comparing Data in Google and Netlify Analytics
-  url: https://blog.jim-nielsen.com/2020/google-vs-netlify-analytics/
-  citations:
-    - source: Chris Coyier on CSS Tricks
-      url: https://css-tricks.com/comparing-data-in-google-and-netlify-analytics/
-- title: Cheating Entropy with Native Web Technologies
-  url: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
-  citations:
-    - source: CSS Tricks Newsletter
-      url: https://css-tricks.com/newsletter/220-the-principle-of-least-power/
-      quote: "[All of what I’m saying] ties neatly into what Jim Nielsen mentioned just the other day when it comes to cheating entropy with old projects."
-    - source: Brad Frost on brafrost.com
-      url: https://bradfrost.com/blog/link/cheating-entropy-with-native-web-technologies/
-    - source: Sidebar.io
-      url: https://sidebar.io/date/2020-10-13
-    - source: Jeremy Keith
-      url: https://adactio.com/links/17508
-      quote: This post really highlights one of the biggest issues with the convoluted build tools used for “modern” web development.
 - title: The Power of Prototypes in the Creative Process
   url: https://blog.jim-nielsen.com/2019/the-power-of-prototypes-in-the-creative-process/
   citations:

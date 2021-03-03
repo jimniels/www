@@ -9,3 +9,4 @@ build
 .env
 cache
 *.token
+src/index.html
