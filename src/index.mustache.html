@@ -36,6 +36,7 @@
     </style>
   </head>
   <body class="wrapper">
+    <!-- @TODO
     <section
       style="
         overflow: hidden;
@@ -53,6 +54,8 @@
         style="max-height: 100%; align-self: flex-end"
       />
     </section>
+    -->
+
     <section class="copy">
       <h1>Jim Nielsen: dad, designer, developer (in that order).</h1>
       <h2>
@@ -118,11 +121,10 @@
       </p>
 
       <p>
-        <em>Do you have anything else to say?</em> Yes, in fact, I’m glad you
-        asked. Everything I am as a designer, developer, and just human in
-        general is a result of the wonderful people who I’ve crossed paths with
-        in my life. In technology in particular, I’ve worked with some of the
-        most
+        <em>Do you have anything else to say?</em> I do. Glad you asked.
+        Everything I am—as a designer, developer, really just a human—is a
+        result of the wonderful people who I’ve crossed paths with in my life.
+        In technology in particular, I’ve worked with some of the most
         <a href="https://twitter.com/jenniferdary" title="Jen">inpsiring</a>,
         <a href="https://about.me/timmeaney" title="Tim">charismatic</a>,
         <a href="https://ashby.io" title="Ashby">curious</a>,
@@ -132,12 +134,14 @@
         <a href="https://jws.io/" title="justinn">unassuming</a>,
         <a href="https://imnikkilee.com" title="Nikki">artistic</a>,
         <a href="https://github.com/bowmanb" title="B-bow">amiable</a>,
-        <a href="https://github.com/damassi" title="chrispy">selfless</a>, and
-        <a href="https://tylergaw.com" title="the gaw">sincere</a> people you’ll
-        ever meet—and I didn’t use the word “talented” because they all are!
-        More than any project I’ve worked on, I’m proud of the people I’ve
-        worked with and learned from. I’m sure you, dear reader, would be a
-        wonderful person I could learn from as well.
+        <a href="https://github.com/damassi" title="chrispy">selfless</a>,
+        <a href="https://www.benbailes.net" title="Ben">humane</a>,
+        <a href="https://mayamashkovich.com/design" title="Maya">delightful</a>,
+        and <a href="https://tylergaw.com" title="the gaw">sincere</a> people
+        you’ll ever meet—and I didn’t use the word “talented” because they all
+        are! More than any project, I’m proud of the people I’ve worked with and
+        learned from. I look forward to crossing paths with you someday too,
+        dear reader.
       </p>
       <p>— Jim Nielsen on Oct 11, 2020</p>
     </section>
@@ -171,10 +175,10 @@
       <h2>My Blog</h2>
 
       <p>
-        My blog, in it’s current form, has been running since 2012. Even before 
-        that, I was blogging (albeit nonsensically). But here are my most recent
-        posts:
+        I started blogging circa 2008—those first few years being nonsensical
+        and ephemeral—and guess what? I’m still trying to find my voice.
       </p>
+      <p>Here’s a few of my most recent posts:</p>
       <ul>
         {{#blogPosts}}
         <li>
@@ -188,12 +192,18 @@
         </li>
       </ul>
 
-      <p>Previously written posts that’ve found resonance with folks online:</p>
+      <p>
+        My blogging has resonated with folks online. Here are a few cited
+        reverberations:
+      </p>
 
       <ul>
         {{#blogPostCitations}}
         <li>
-          <p><a href="{{url}}">{{name}} on {{domain}}</a>{{#quote}}: “{{{quote}}}”{{/quote}}</p>
+          <p>
+            <a href="{{url}}">{{name}} on {{domain}}</a>{{#quote}}:
+            “{{{quote}}}”{{/quote}}
+          </p>
         </li>
         {{/blogPostCitations}}
       </ul>
@@ -210,7 +220,7 @@
       </details>
       -->
 
-      <h2>Archive of Published Writings</h2>
+      <h2>Published Writings: An Archive</h2>
       <p>
         While I haven’t done it as much recently, I used to publish a lot more
         articles to industry blogs.
@@ -279,7 +289,7 @@
 
     <section class="copy">
       <h1 id="icon-galleries">
-        Passion Project: Icon Galleries <a href="#icon-galleries">🔗</a>
+        Passion Project: My Icon Galleries <a href="#icon-galleries">🔗</a>
       </h1>
       <p>
         These galleries are intended to showcase the art of app icon designed
@@ -288,31 +298,12 @@
         the awesome @michaelfarup to create a printed book showcasing many of
         these designs.
       </p>
-      <p>
-        Each of these sites are designed, engineered, and curated by me. I
-        occasionally write about the how behind all of that on my blog. My most
-        recent posts on the subject are the following:
-      </p>
-      <ul class="">
-        {{#blogPostsByTag.iconGalleries}}
-        <li>
-          <a href="{{ permalink }}">{{ title }}</a>
-          <time class="small">{{ date }}</time>
-        </li>
-        {{/blogPostsByTag.iconGalleries}}
-        <li>
-          More on
-          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
-            >blog.jim-nielsen.com →</a
-          >
-        </li>
-      </ul>
       <!-- @TODO  tags posts as #iconGalleries on blog and pull some in here
       <p>
         Links to blog articles where I talk about the design of these sites.
       </p> -->
       {{#iconGalleries}}
-      <h2><a href="{{ url }}">{{ name }}</a></h2>
+      <p><a href="{{ url }}">{{ name }} ➝</a></p>
       <ul class="copy-full-width" id="icons">
         {{#icons}}
         <li data-icon-type="{{ type }}">
@@ -366,6 +357,26 @@
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
         }
       </style>
+
+      <p>
+        Each of these sites are designed, engineered, and curated by me. I
+        occasionally write about the how behind all of that on my blog. My most
+        recent posts on the subject are the following:
+      </p>
+      <ul class="">
+        {{#blogPostsByTag.iconGalleries}}
+        <li>
+          <a href="{{ permalink }}">{{ title }}</a>
+          <time class="small">{{ date }}</time>
+        </li>
+        {{/blogPostsByTag.iconGalleries}}
+        <li>
+          More on
+          <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
+            >blog.jim-nielsen.com →</a
+          >
+        </li>
+      </ul>
     </section>
 
     <section class="copy">
