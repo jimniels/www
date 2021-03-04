@@ -8,13 +8,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 console.time("Build");
 
 getData()
-  .then((data) => ({
-    ...data,
-    css: fs.readFileSync(join(__dirname, "../src/index.css")).toString(),
-  }))
   .then((data) => {
     const mustache = fs
-      .readFileSync(join(__dirname, "../src/index.html.mustache"))
+      .readFileSync(join(__dirname, "../src/index.mustache"))
       .toString();
     // REnder template literal string
     // files["index.html"].contents = eval(

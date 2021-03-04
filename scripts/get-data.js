@@ -18,6 +18,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export async function getData() {
   return {
+    css: fs.readFileSync(join(__dirname, "../src/index.css")).toString(),
     /**
      * In (from cached API response):
      * [
@@ -121,9 +122,6 @@ export async function getData() {
         });
       return data;
     })(),
-    blogPostCitations2: YAML.load(
-      join(__dirname, "../data/blog-post-citations-2.yml")
-    ),
     blogPostCitations: YAML.load(
       join(__dirname, "../data/blog-post-citations.yml")
     ),
