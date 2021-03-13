@@ -1,5 +1,4 @@
 import fs from "fs-extra";
-import Mustache from "mustache";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import fetch from "node-fetch";
