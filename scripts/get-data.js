@@ -84,12 +84,10 @@ export async function getData() {
       const data = await fetch("https://blog.jim-nielsen.com/feed.json")
         .then((res) => res.json())
         .then((res) =>
-          res.items
-            .filter((item, i) => i < 3)
-            .map((item) => ({
-              ...item,
-              date_published: item.date_published.slice(0, 10),
-            }))
+          res.items.map((item) => ({
+            ...item,
+            date_published: item.date_published.slice(0, 10),
+          }))
         );
       return data;
     })(),
@@ -106,9 +104,9 @@ export async function getData() {
             if (post.tags && post.tags.length) {
               post.tags.forEach((tag) => {
                 if (acc[tag]) {
-                  if (acc[tag].length < 3) {
-                    acc[tag].push(post);
-                  }
+                  // if (acc[tag].length < 3) {
+                  acc[tag].push(post);
+                  // }
                 } else {
                   acc[tag] = [post];
                 }

@@ -2,9 +2,9 @@
  Consider elevating to shared space
  ===========================================================================*/
 
-:target {
+/* :target {
   color: var(--c-red);
-}
+} */
 
 .copy > * {
   max-width: 33rem; /* 900px */
@@ -24,13 +24,7 @@
    ===========================================================================*/
 
 html {
-  background: #f5f5f5;
-}
-
-@media screen and (prefers-color-scheme: dark) {
-  html {
-    background: #111;
-  }
+  scroll-behavior: smooth;
 }
 
 section {
@@ -49,31 +43,57 @@ section {
 
 nav {
   display: flex;
-  align-items: center;
   margin-bottom: 1.618rem;
+  padding: calc(1.618rem / 4) 0;
+  /* position: sticky;
+  top: 0;
+  background: #f5f5f5; */
 }
-nav img {
-  margin-right: calc(1.618rem / 2);
+nav:before {
+  content: "↓";
+  margin-right: 0.5rem;
 }
 nav a {
   text-decoration: none;
-  color: #ff2603 !important;
+  /* color: #ff2603 !important; */
   font-size: 0.75rem; /* 18 */
   font-weight: 500;
+  margin-right: calc(1.618rem / 2);
 }
 h1 {
-  position: relative;
+  max-width: 45rem !important;
 }
-.anchor {
+h2 {
+  max-width: 41rem !important;
+}
+
+img[src*="drawing-"] {
+  float: right;
   display: none;
-  text-decoration: none;
-  position: absolute;
-  left: -1.5em;
+}
+
+/*
+  Anchor links
+  =========================================================================== */
+h1 {
+  position: relative;
+  margin-left: -1em;
+  padding-left: 1em;
+}
+
+h1 a[href^="#"] {
+  visibility: hidden;
+  opacity: 0;
   font-size: 0.5em;
+  text-decoration: none !important;
+  position: absolute;
+  left: 0;
   top: 0.625em;
 }
-h1:hover .anchor {
-  display: inline;
+
+h1:hover a[href^="#"] {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 

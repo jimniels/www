@@ -20,7 +20,7 @@
     "clear-cache": "rm -rf ./cache",
     "build:data": "node scripts/cache-data.js",
     "build": "rm -f index.html && node src/index.js",
-    "start": "npm run build && chokidar 'src/**/*' 'data/' -i 'src/index.html' -c 'npm run build-new' & http-server src -o -s"
+    "start": "npm run build && chokidar 'src/**/*' 'data/' -i 'src/index.html' -c 'npm run build' & http-server src -o -s"
   },
   "repository": {
     "type": "git",

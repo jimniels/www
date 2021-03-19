@@ -65,25 +65,25 @@ const template = (_) => html`<!DOCTYPE html>
     </section>
     -->
 
+      <nav>
+        <a href="#writing">Writing</a>
+        <a href="#icon-galleries">Icon Galleries</a>
+        <a href="#dribbble">Dribbble</a>
+        <a href="#pies">Pies</a>
+        <a href="#side-projects">Side Projects</a>
+        <a href="#employment">Employment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <img src="/assets/img/drawing-self.svg" />
 
       <section class="copy">
         <h1>Jim Nielsen: dad, designer, developer (in that order).</h1>
         <h2>
-          Currently: Director of Design at
+          Currently: Director of Design & UI Architecture at
           <a href="https://www.sagesure.com/">SageSure</a>
         </h2>
 
-        <p id="nav-list">
-          ↓
-          <a href="#writing">Writing</a>
-          <a href="#icon-galleries">Icon Galleries</a>
-          <a href="#dribbble">Dribbble</a>
-          <a href="#pies">Pies</a>
-          <a href="#side-projects">Side Projects</a>
-          <a href="#employment">Employment</a>
-          <a href="#contact">Contact</a>
-        </p>
         <style>
           #nav-list {
             font-size: 0.75rem;
@@ -104,39 +104,31 @@ const template = (_) => html`<!DOCTYPE html>
         </style>
 
         <p>
-          <em>Who are you?</em> “I am a designer who codes” is likely the answer
-          you’re looking for, but what I do is solve problems and add value.
-          That said, I’m so much more than my job but this is a website where I
-          talk about myself professionally so I have to say these kinds of
-          things.
+          <em>Who are you?</em> To be reductive, I’m a designer who codes and
+          does product thinking. I’m trying not to define myself by my
+          profession or website—and yet here we are, a website where I talk
+          about myself professionally.
         </p>
         <p>
-          <em>What are your skills?</em> I design visual interfaces and leverage
-          principles of design, color theory, and typography. I write code and
-          intimately understand HTML, CSS, and JavaScript. But my skills are
-          tools to an end: to solve problems and add value.
+          <em>What’s your expertise?</em> Synthesizing knowledge to work across
+          perceivedly disparate boundaries—design, engineering, product,
+          leadership.
         </p>
         <p>
-          <em>What’s your expertise?</em> My expertise lies in synthesizing
-          knowledge across traditionally disparate boundaries. “Visual
-          designer”, “Front-end Developer”, and “Product Manager” are all
-          responsibilities I assume in order to add value to a business, to
-          enhance a company’s culture, to bring clarity to a project, or to just
-          get along with humans (a task often perceived as a difficult for
-          people who write instructions for machines).
-        </p>
-        <p>
-          <em>How are you, you know, as a human?</em> Don’t take it from me,
-          here are the words of a peer when I was departing a previous employer:
-          “Gonna be a real bummer here w/o you. You bring a lot of great design,
-          and a lot of not-being-an-asshole-ness.”
+          <em>What are your hard skills?</em> Visual design (i.e. Figma, Sketch,
+          Photoshop), front-end code (i.e. HTML, CSS, JS—in all its flavors),
+          product thinking (i.e. shaping, scoping, vision), and writing (i.e.
+          articulating, reasoning, influencing).
         </p>
 
         <p>
-          <em>Do you have anything else to say?</em> I do. Glad you asked.
-          Everything I am—as a designer, developer, really just a human—is a
-          result of the wonderful people who I’ve crossed paths with in my life.
-          In technology in particular, I’ve worked with some of the most
+          <em>And soft skills?</em> In the words of a peer as I departed a
+          previous employer: “Gonna be a real bummer here w/o you. You bring a
+          lot of great design, and a lot of not-being-an-asshole-ness.”
+        </p>
+
+        <p>
+          <em>Anything else to say?</em> I’ve worked with some
           <a href="https://twitter.com/jenniferdary" title="Jen">inpsiring</a>,
           <a href="https://about.me/timmeaney" title="Tim">charismatic</a>,
           <a href="https://ashby.io" title="Ashby">curious</a>,
@@ -151,31 +143,19 @@ const template = (_) => html`<!DOCTYPE html>
           <a href="https://www.benbailes.net" title="Ben">humane</a>,
           <a href="https://mayamashkovich.com/design" title="Maya">delightful</a
           >, and
-          <a href="https://tylergaw.com" title="the gaw">sincere</a> people
-          you’ll ever meet—and I didn’t use the word “talented” because they all
-          are! More than any project, I’m proud of the people I’ve worked with
-          and learned from. I look forward to crossing paths with you someday
-          too, dear reader.
+          <a href="https://tylergaw.com" title="the gaw">sincere</a> people. And
+          I didn’t use the word “talented” because they all are! More than any
+          project, I’m proud of the people I’ve worked with and learned from. I
+          look forward to doing the same with you someday, dear reader.
         </p>
-        <p>— Jim Nielsen on Oct 11, 2020</p>
+        <p>— Jim Nielsen, 2021-03-19</p>
       </section>
 
       <section class="copy">
         <img src="/assets/img/drawing-writing-icon.svg" />
+
         <h1 id="writing">Writing <a href="#writing">🔗</a></h1>
-        <!-- <p>
-        I enjoy the practice writing because it is a form of seeking clarity to
-        me. That said, I don’t believe a lot of the things I’ve written about in
-        the past. Why? Because I’ve learned a lot through both writing and
-        direct experience and the more you learn, the more your beliefs evolve.
-        It is inevitable. If you believe the same things you believed ten years
-        ago, I would suggest that you haven’t really learned anything. New
-        knowledge causes me to reassess my beliefs. The more knowledge you have,
-        the broader your perspective is, and the more clearly you see contexts
-        and relationships between truth and error. It’s like your designs from
-        years ago. You squirm when you look at them. Why? Because your
-        understanding and knowledge and aesthetics have changed and evolved over
-        the years. That’s how I feel about my writing.</p> -->
+
         <p>
           I enjoy writing as a practice of seeking clarity and
           <a
@@ -190,67 +170,51 @@ const template = (_) => html`<!DOCTYPE html>
 
         <p>
           I started blogging circa 2008—those first few years being nonsensical
-          and ephemeral—and guess what? I’m still trying to find my voice.
+          and ephemeral—and I’m still finding my voice.
         </p>
-        <p>Here’s a few of my most recent posts:</p>
-        <ul>
+
+        <p>My most recent posts:</p>
+
+        <ul class="copy-full-width">
           ${_.blogPosts.map(
-            ({ url, title, date_published }) => html`
-              <li>
+            ({ url, title, date_published }, i) => html`
+              ${i === 3 && ShowMore()}
+
+              <li ${i >= 3 && "hidden"}>
                 <a href="${url}">${title}</a>
                 <time class="small">${date_published}</time>
               </li>
+
+              ${i === _.blogPosts.length - 1 &&
+              html`<li hidden>
+                More on
+                <a href="https://blog.jim-nielsen.com"
+                  >blog.jim-nielsen.com →</a
+                >
+              </li>`}
             `
           )}
-          <li>
-            View more on
-            <a href="https://blog.jim-nielsen.com">blog.jim-nielsen.com ➝</a>
-          </li>
         </ul>
 
-        <p>
-          My blogging has resonated with folks online. Here are a few cited
-          reverberations:
-        </p>
+        <p>My writing’s resonance with folks online:</p>
 
         <ul>
           ${_.blogPostCitations.map(
-            ({ domain, name, quote, url }, i) => html`
-              ${i === 8 &&
-              html`<li><a href="" class="js-show-more">Show more...</a></li>`}
+            ({ name, quote, url }, i) => html`
+              ${i === 8 && ShowMore()}
 
               <li ${i < 8 ? "" : "hidden"}>
-                <p>
-                  <a href="${url}">${name} on ${domain}</a>${quote &&
-                  `:“${quote}”`}
-                </p>
+                <a href="${url}">${name}</a>${quote && `: “${quote}”`}
               </li>
             `
           )}
         </ul>
-
-        <script>
-          Array.from(document.querySelectorAll(".js-show-more")).forEach(
-            (el) => {
-              el.addEventListener("click", (e) => {
-                e.preventDefault();
-                console.log(el, el.parentNode);
-                el.parentNode.parentNode
-                  .querySelectorAll("[hidden]")
-                  .forEach((li) => {
-                    li.removeAttribute("hidden");
-                  });
-                el.parentNode.remove();
-              });
-            }
-          );
-        </script>
 
         <!-- @TODO 
       <h3>Others</h3>
       <details>
         <summary>
-          View links I’ve tracked to my writing from across the web...
+          View links I’ve tracked to my writing from across the web…
         </summary>
         <ul>
           <li>Sidebar.io</li>
@@ -258,32 +222,21 @@ const template = (_) => html`<!DOCTYPE html>
       </details>
       -->
 
-        <h2>Published Writings: An Archive</h2>
+        <h2>Published Articles</h2>
         <p>
-          While I haven’t done it as much recently, I used to publish a lot more
-          articles to industry blogs.
+          I used to publish articles to industry sites, but tackle other things
+          of interest now (see “Pies” below). I keep an archive for posterity:
         </p>
 
         <ul class="copy-full-width posts-lis">
-          {{#publishings}}
-          <li>
-            <a href="{{ link }}">{{ title }}</a>
-            <span class="small"
-              >{{publisherDomain}}, <time>{{ date }}</time></span
-            >
-
-            <!--
-          {{#tweet}}
-          <blockquote style="font-size: 0.75em">
-            {{ content }} –
-            <a href="https://twitter.com/user/status/{{id}}"
-              >{{author.name}} (@{{author.handle}})</a
-            >
-          </blockquote>
-          {{/tweet}}
-          -->
-          </li>
-          {{/publishings}}
+          ${_.publishings.map(
+            ({ date, link, publisherDomain, title }) => html`<li>
+              <a href="${link}">${title}</a>
+              <span class="small"
+                >${publisherDomain}, <time>${date}</time></span
+              >
+            </li>`
+          )}
         </ul>
         <!--
       <style>
@@ -327,48 +280,46 @@ const template = (_) => html`<!DOCTYPE html>
 
       <section class="copy">
         <img src="/assets/img/drawing-icon-galleries.svg" />
+
         <h1 id="icon-galleries">
           Passion Project: My Icon Galleries <a href="#icon-galleries">🔗</a>
         </h1>
+
         <p>
-          These galleries are intended to showcase the art of app icon designed
-          for apps in Apple’s ecosystem. I’ve been curating these galleries
-          since ~2010 and continue to iteratively improve them. I’m even working
-          with the awesome @michaelfarup to create a printed book showcasing
-          many of these designs.
+          I’ve been curating these galleries as a hobby since ~2010. They
+          showcase the art of icon design for apps in Apple’s ecosystem.
         </p>
-        <!-- @TODO  tags posts as #iconGalleries on blog and pull some in here
-      <p>
-        Links to blog articles where I talk about the design of these sites.
-      </p> -->
-        {{#iconGalleries}}
-        <p><a href="{{ url }}">{{ name }} ➝</a></p>
-        <ul class="copy-full-width" id="icons">
-          {{#icons}}
-          <li data-icon-type="{{ type }}">
-            <img
-              src="{{ artworkUrl }}"
-              alt="{{ title }} icon"
-              width="128"
-              height="128"
-              loading="lazy"
-            />
-          </li>
-          {{/icons}}
-        </ul>
-        {{/iconGalleries}}
+
+        <p>
+          Additionally, I’m working with the incredibly talented icon designer
+          Michael Flarup to create
+          <a href="https://www.appiconbook.com/">a printed book</a> showcasing
+          the icons I’ve collected over the years, along with more. the art of
+          app icon design.
+        </p>
+
+        ${_.iconGalleries.map(
+          ({ name, url, icons }) => html`
+            <p><a href="${url}">${name} →</a></p>
+            <ul class="copy-full-width" id="icons">
+              ${icons.map(
+                ({ artworkUrl, title, type }) => html`
+                  <li data-icon-type="${type}">
+                    <img
+                      src="${artworkUrl}"
+                      alt="${title} icon"
+                      width="128"
+                      height="128"
+                      loading="lazy"
+                    />
+                  </li>
+                `
+              )}
+            </ul>
+          `
+        )}
 
         <style>
-          h1 a[href^="#"] {
-            visibility: hidden;
-            opacity: 0;
-            font-size: 0.5em;
-            text-decoration: none !important;
-          }
-          h1:hover a[href^="#"] {
-            visibility: visible;
-            opacity: 1;
-          }
           #icons {
             margin: 0;
             padding: 0;
@@ -398,23 +349,29 @@ const template = (_) => html`<!DOCTYPE html>
         </style>
 
         <p>
-          Each of these sites are designed, engineered, and curated by me. I
-          occasionally write about the how behind all of that on my blog. My
-          most recent posts on the subject are the following:
+          These sites are designed, engineered, and curated by me. I
+          occasionally write about the “how” behind all of that on my blog. Here
+          are some recent posts::
         </p>
-        <ul class="">
-          {{#blogPostsByTag.iconGalleries}}
-          <li>
-            <a href="{{ permalink }}">{{ title }}</a>
-            <time class="small">{{ date }}</time>
-          </li>
-          {{/blogPostsByTag.iconGalleries}}
-          <li>
-            More on
-            <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
-              >blog.jim-nielsen.com →</a
-            >
-          </li>
+        <ul class="copy-full-width">
+          ${_.blogPostsByTag.iconGalleries.map(
+            ({ date, permalink, title }, i) => html`
+              ${i === 3 && ShowMore()}
+
+              <li ${i >= 3 && "hidden"}>
+                <a href="${permalink}">${title}</a>
+                <time class="small">${date}</time>
+              </li>
+
+              ${i === _.blogPostsByTag.iconGalleries.length - 1 &&
+              html` <li hidden>
+                View on
+                <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
+                  >blog.jim-nielsen.com →</a
+                >
+              </li>`}
+            `
+          )}
         </ul>
       </section>
 
@@ -428,21 +385,23 @@ const template = (_) => html`<!DOCTYPE html>
           I used to Dribbble, but I don’t do as much “production” design work
           anymore. But I still find my stuff from the past interesting, so I
           keep it here for nostalgia. Rather than Dribbble, I’d honestly rather
-          go shoot hoops IRL. @TODO my design now-a-days is more about ...
+          go shoot hoops IRL. @TODO my design now-a-days is more about …
         </p>
         <div class="copy-full-width" id="dribbble-shots">
-          {{#dribbble}}
-          <a href="{{ href }}">
-            <img
-              src="{{ src }}"
-              alt="{{ title }}"
-              title="{{ title }} on Dribbble"
-              width="400"
-              height="300"
-              loading="lazy"
-            />
-          </a>
-          {{/dribbble}}
+          ${_.dribbble.map(
+            ({ href, src, title }) => html`
+              <a href="${href}">
+                <img
+                  src="${src}"
+                  alt="${title}"
+                  title="${title} on Dribbble"
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+              </a>
+            `
+          )}
         </div>
         <style>
           #dribbble-shots {
@@ -674,7 +633,7 @@ const template = (_) => html`<!DOCTYPE html>
         </h2>
 
         <p>
-          2016 – Present. More info to come... Project: Agent Portal Web
+          2016 – Present. More info to come… Project: Agent Portal Web
           application allowing agents to quote and bind insurance policies via
           Insight’s platform. Initial work has included redesigning exisiting
           problematic UI interfaces and simplifying front-end implementation
@@ -749,8 +708,28 @@ const template = (_) => html`<!DOCTYPE html>
           <li>Github: <a href="https://github.com/jimniels">@jimniels</a></li>
         </ul>
       </section>
+
+      <script>
+        // "Show more..." functionality
+        Array.from(document.querySelectorAll(".js-show-more")).forEach((el) => {
+          el.addEventListener("click", (e) => {
+            e.preventDefault();
+            console.log(el, el.parentNode);
+            el.parentNode.parentNode
+              .querySelectorAll("[hidden]")
+              .forEach((li) => {
+                li.removeAttribute("hidden");
+              });
+            el.parentNode.remove();
+          });
+        });
+      </script>
     </body>
   </html>`;
+
+function ShowMore() {
+  return html`<li><a href="#" class="js-show-more">Show more…</a></li>`;
+}
 
 console.time("Build time");
 getData()
