@@ -41,25 +41,32 @@ section {
   }
 }
 
+/* Navigation
+   ===========================================================================*/
 nav {
   display: flex;
   margin-bottom: 1.618rem;
   padding: calc(1.618rem / 4) 0;
+  font-size: 0.7rem; /* 18 */
+  font-weight: 500;
   /* position: sticky;
   top: 0;
   background: #f5f5f5; */
 }
+/*
 nav:before {
   content: "↓";
   margin-right: 0.5rem;
-}
+}*/
 nav a {
   text-decoration: none;
   /* color: #ff2603 !important; */
-  font-size: 0.75rem; /* 18 */
-  font-weight: 500;
+
   margin-right: calc(1.618rem / 2);
 }
+
+/* Headings
+   ===========================================================================*/
 h1 {
   max-width: 45rem !important;
 }

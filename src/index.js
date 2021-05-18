@@ -64,50 +64,30 @@ const template = (_) => html`<!DOCTYPE html>
       />
     </section>
     -->
-
+      
+      
       <nav>
         <a href="#writing">Writing</a>
-        <a href="#icon-galleries">Icon Galleries</a>
-        <a href="#dribbble">Dribbble</a>
-        <a href="#pies">Pies</a>
+        <!-- <a href="#icon-galleries">Icon Galleries</a> -->
+        <!-- <a href="#dribbble">Dribbble</a> -->
+        <!-- <a href="#pies">Pies</a> -->
         <a href="#side-projects">Side Projects</a>
         <a href="#employment">Employment</a>
         <a href="#contact">Contact</a>
       </nav>
 
-      <img src="/assets/img/drawing-self.svg" />
-
-      <section class="copy">
-        <h1>Jim Nielsen: dad, designer, developer (in that order).</h1>
-        <h2>
+      <section id="about" class="copy">
+        <h1>Jim Nielsen<!--: dad, designer, developer (in that order).--></h1>
+        <h2>Dad, designer, developer — in that order.</h2>
+        <!-- <h3>
           Currently: Director of Design & UI Architecture at
           <a href="https://www.sagesure.com/">SageSure</a>
-        </h2>
-
-        <style>
-          #nav-list {
-            font-size: 0.75rem;
-          }
-          #nav-list a {
-            margin-left: calc(1.618rem / 4);
-            padding-right: calc(1.618rem / 4);
-          }
-          #nav-list li:last-child:after {
-            display: none;
-          }
-          #nav-list li:after {
-            content: "/";
-            color: var(--color-gray-5);
-            margin-left: calc(1.618rem / 3);
-            padding-right: calc(1.618rem / 3);
-          }
-        </style>
+        </h3> -->
 
         <p>
-          <em>Who are you?</em> To be reductive, I’m a designer who codes and
-          does product thinking. I’m trying not to define myself by my
-          profession or website—and yet here we are, a website where I talk
-          about myself professionally.
+          <em>Who are you?</em> To be reductive: I’m a designer
+          who codes and does product thinking. I’m trying not to define myself
+          by my profession or website—and yet here we are.
         </p>
         <p>
           <em>What’s your expertise?</em> Synthesizing knowledge to work across
@@ -122,7 +102,7 @@ const template = (_) => html`<!DOCTYPE html>
         </p>
 
         <p>
-          <em>And soft skills?</em> In the words of a peer as I departed a
+          <em>What are your soft skills?</em> To quote a peer as I departed a
           previous employer: “Gonna be a real bummer here w/o you. You bring a
           lot of great design, and a lot of not-being-an-asshole-ness.”
         </p>
@@ -145,10 +125,11 @@ const template = (_) => html`<!DOCTYPE html>
           >, and
           <a href="https://tylergaw.com" title="the gaw">sincere</a> people. And
           I didn’t use the word “talented” because they all are! More than any
-          project, I’m proud of the people I’ve worked with and learned from. I
-          look forward to doing the same with you someday, dear reader.
+          project, I’m proud of the people I’ve worked with and learned from.
+          Maybe I’ll get that chance with you someday, dear reader.
         </p>
         <p>— Jim Nielsen, 2021-03-19</p>
+        <img src="https://cdn.jim-nielsen.com/shared/jim-nielsen-portrait.jpg" width=200 height=200>
       </section>
 
       <section class="copy">
@@ -294,8 +275,7 @@ const template = (_) => html`<!DOCTYPE html>
           Additionally, I’m working with the incredibly talented icon designer
           Michael Flarup to create
           <a href="https://www.appiconbook.com/">a printed book</a> showcasing
-          the icons I’ve collected over the years, along with more. the art of
-          app icon design.
+          many of the icons I’ve collected over the years, along with more.
         </p>
 
         ${_.iconGalleries.map(
@@ -350,8 +330,8 @@ const template = (_) => html`<!DOCTYPE html>
 
         <p>
           These sites are designed, engineered, and curated by me. I
-          occasionally write about the “how” behind all of that on my blog. Here
-          are some recent posts::
+          occasionally write about the process on my blog. Here are some recent
+          posts:
         </p>
         <ul class="copy-full-width">
           ${_.blogPostsByTag.iconGalleries.map(
@@ -375,17 +355,81 @@ const template = (_) => html`<!DOCTYPE html>
         </ul>
       </section>
 
-      <section class="copy">
-        <h1 id="dribbble">
-          Shots From My Baller Days on
-          <a href="https://www.dribbble.com/jimniels">Dribbble</a>
-          <a href="#dribbble">🔗</a>
+      <section class="copy" id="side-projects">
+        <h1 id="side-projects">
+          Side Projects <a href="#side-projects">🔗</a>
         </h1>
+
+        <h2 id="pies">
+          <a href="https://instagram.com/flyingjpies">@flyingjpies</a>: taking a photo of every bake.
+        </h2>
+        <p>
+          Growing up, my Mom made pies. At the time, I didn’t know they were
+          <em>the best</em> pies. As I grew into my teenage years, I noticed I
+          didn’t enjoy pies from a restaurant or store like the other kids.
+          Those weren’t real pies.
+        </p>
+        <p>
+          In my mid-twenties, I moved to New York City and figured if I could
+          buy a good pie anywhere in the world, surely it would be in NYC. Alas,
+          I found myself in want for a good pie like Mom used to make.
+        </p>
+        <p>
+          So I figured, if you want something done right, you gotta do it
+          yourself.
+        </p>
+        <p>
+          I asked my Mom for her recipe and began making my own pies. While my
+          pie obsession was born out of a drive to <em>eat</em> good pie, now
+          it’s just as much driven by a desire to <em>make</em> good pie. Making
+          is now half the fun!
+        </p>
+
+        <div class="copy-full-width" id="instagram">
+          ${_.instagram.map(
+            ({ src, href }) => html`
+              <a href="${href}">
+                <img
+                  src="${src}"
+                  alt="Photo from @flyingjpies on Instagram"
+                  width="300"
+                  height="300"
+                  loading="lazy"
+                />
+              </a>
+            `
+          )}
+        </div>
+        <style>
+          #instagram {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            grid-gap: 8px;
+            /*display: flex;
+          flex-wrap: wrap;
+          max-width: 1800px;*/
+          }
+          #instagram a:hover {
+            filter: none;
+          }
+          #instagram img {
+            display: block;
+            border-radius: 8px;
+          }
+          #instagram img:hover {
+            box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
+          }
+        </style>
+
+        <h2>
+          <a href="https://www.dribbble.com/jimniels">Dribbble</a>: shots from my baller days.
+        </h2>
+        
         <p>
           I used to Dribbble, but I don’t do as much “production” design work
-          anymore. But I still find my stuff from the past interesting, so I
-          keep it here for nostalgia. Rather than Dribbble, I’d honestly rather
-          go shoot hoops IRL. @TODO my design now-a-days is more about …
+          anymore. However I still find my stuff from the past interesting, so I
+          keep it here for nostalgia.
         </p>
         <div class="copy-full-width" id="dribbble-shots">
           ${_.dribbble.map(
@@ -406,8 +450,9 @@ const template = (_) => html`<!DOCTYPE html>
         <style>
           #dribbble-shots {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             max-width: 1200px;
+            grid-gap: 8px;
             /*display: flex;
           flex-wrap: wrap;
           max-width: 1800px;*/
@@ -419,97 +464,45 @@ const template = (_) => html`<!DOCTYPE html>
             display: block;
             transition: 0.2s ease all;
             box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075);
+            border-radius: 8px;
           }
           #dribbble-shots img:hover {
             /* transform: scale(1.025); */
             /* transform: translateY(-2px); */
-            /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+            
+            box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075), 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
           }
         </style>
-      </section>
-
-      <section class="copy">
-        <h1 id="pies">
-          Hobby: I ❤️ Pies and Make Them Under the Handle
-          <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
-          <a href="#pies">🔗</a>
-        </h1>
-        <p>
-          @TODO Growing up, my Mom always pies. At the time, I didn’t know they
-          were <em>the best</em> pies. As I grew into my teenage years, I began
-          to notice that I didn’t enjoy eating pies from a restaurant or store
-          like all the other kids. Those weren’t real pies.
-        </p>
-        <p>
-          In my mid-twenties, I moved to New York City and figured if I could
-          buy a good pie anywhere in the world, surely I could in NYC. Alas, I
-          still found myself wanting for a good pie like Mama used to make. So,
-          I figured, if you want something done right you gotta do it yourself.
-        </p>
-        <p>
-          I asked my Mom for her recipe and began making my own pies. So while
-          my pie obsession was born out of a drive to <em>eat</em> good pie, now
-          it’s just as much composed of a desire to <em>make</em> a good pie.
-          Making is now half the fun!
-        </p>
-
-        <div class="copy-full-width" id="instagram">
-          {{#instagram}}
-          <a href="{{ href }}">
-            <img
-              src="{{ src }}"
-              alt="Photo from @flyingjpies on Instagram"
-              width="300"
-              height="300"
-              loading="lazy"
-            />
-          </a>
-          {{/instagram}}
-        </div>
-        <style>
-          #instagram {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            max-width: 1200px;
-            /*display: flex;
-          flex-wrap: wrap;
-          max-width: 1800px;*/
-          }
-          #instagram a:hover {
-            filter: none;
-          }
-          #instagram img {
-            display: block;
-          }
-        </style>
-      </section>
-
-      <section class="copy" id="side-projects">
-        <h1 id="side-projects">
-          Side Projects <a href="#side-projects">🔗</a>
-        </h1>
 
         <h2>
-          <a href="https://sassme.jim-nielsen.com">SassMe</a>: visualize Sass
-          color functions in real-time.
+          <a href="https://sassme.jim-nielsen.com">SassMe</a>: visualize Sass color functions in real-time, no compilation necessary.
         </h2>
+
         <p>
-          Circa 2012. I used to post on dribbble, but seeing as I’m not much of
-          a designer anymore—let alone I don’t have anything that fancy, I
-          dono’t do it much anymore. That’s not to say I don’t filnd the stuff
-          from the past stilll interesting! So i keep it here for nostalgia.
-          Honestly, rather than dribbble, I’d rather just play basketball.
+          I first conceived of this idea when I worked at Arc90 (circa 2012),
+          where it later became a company lab project which others helped me
+          design and build. It sprung out of the question: when I write
+          <code>darken(#123456, 5%)</code> what does that look like?
         </p>
+        <p>It resonated with a lot of folks online, including these praises:</p>
 
         <ul>
-          {{#tweets.sassme}}
-          <li>
-            <a href="https://twitter.com/user/status/{{id}}"
-              >{{author.name}} (@{{author.handle}})</a
-            >: “{{content}}”
-          </li>
-          {{/tweets.sassme}}
+          ${_.tweets.sassme.map(
+            ({ id, author, content }) => html`
+              <li>
+                <a href="https://twitter.com/user/status/${id}"
+                  >${author.name} (@${author.handle})</a
+                >: “${content}”
+              </li>
+            `
+          )}
         </ul>
+
+        <video width="920" autoplay loop style="max-width: 100%">
+          <source src="/assets/video/sassme.mp4" type="video/mp4">
+
+          Sorry, your browser doesn't support embedded videos.
+        </video>
         <!-- 
       {{#tweets.sassme}}
       <blockquote>
@@ -593,16 +586,16 @@ const template = (_) => html`<!DOCTYPE html>
       </style> -->
 
         <h2>
-          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>: a
-          visual experiment turned game based on ubiquitos logos.
-        </h2>
+          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>: a visual experiment on ubiquitos logos.</h3>
         <p>
           In <em>A Designer’s Art</em>, Paul Rand asks: “How far out of focus
           can an image be and still be recognized?” He proposes that a
           well-designed logo retains its form and recognizability under the
-          duress of real-world use and abuse. For fun, I decided to subject some
-          contemporary logos to a form of visual stress and see how well people
-          still recognized them. You can
+          duress of real-world use and abuse.
+        </p>
+        <p>
+          For fun, I decided to subject some contemporary logos to a form of
+          visual stress and see how well people still recognized them. You can
 
           <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
             >read my introductory blog post to the project</a
@@ -631,22 +624,30 @@ const template = (_) => html`<!DOCTYPE html>
           Director of Design & UI Architecture @
           <a href="https://www.sagesure.com">SageSure</a> (Remote)
         </h2>
-
-        <p>
-          2016 – Present. More info to come… Project: Agent Portal Web
-          application allowing agents to quote and bind insurance policies via
-          Insight’s platform. Initial work has included redesigning exisiting
-          problematic UI interfaces and simplifying front-end implementation
-          approaches. Tools: Sketch, Sass. Text as UI Designing and Engineering
-          Color Usage in Agent Portal Migrating Away from Compass and Susy to
-          Sass Exclusively
-        </p>
+        <p>Summary:</p>
+        <dl class="employment-list">
+          <dt>Dates employed:</dt>
+          <dd>2016 - present (remote).</dd>
+          <dt>Hats worn:</dt>
+          <dd>Design, front-end, product, leadership.</dd>
+          <dt>Tools used:</dt>
+          <dd>You name it—Sketch, Invision, Figma, HTML, CSS, JS, React, Keynote,
+            Outlook, and more.
+          </dt>
+          <dt>
+            Other notes:</dt><dd>I really should write more, but honestly too busy.
+            <a href="#contact">Hit me up</a> if you want to know more.
+          </dd>
+        </dl>
+        <style>
+          .employment-list dt {
+            float: left;
+            margin-right: .25em;
+            font-weight: 500;
+          }
+        </style>
         <p>Related posts from my weblog:</p>
-        <ul>
-          {{#blogPostsByTag.insight}}
-          <li><a href="{{ permalink }}">{{ title }}</a></li>
-          {{/blogPostsByTag.insight}}
-        </ul>
+        ${PostsList(_.blogPostsByTag.insight)}
 
         <h2>2016: UI Engineer @ Timshel (Remote)</h2>
 
@@ -662,11 +663,7 @@ const template = (_) => html`<!DOCTYPE html>
         </p>
 
         <p>Related posts from my weblog:</p>
-        <ul>
-          {{#blogPostsByTag.timshel}}
-          <li><a href="{{ permalink }}">{{ title }}</a></li>
-          {{/blogPostsByTag.timshel}}
-        </ul>
+        ${PostsList(_.blogPostsByTag.timshel)}
 
         <h2>
           2016: Designer & Front-end Developer @
@@ -687,11 +684,7 @@ const template = (_) => html`<!DOCTYPE html>
         </p>
 
         <p>Related posts from my weblog:</p>
-        <ul>
-          {{#blogPostsByTag.postlight}}
-          <li><a href="{{ permalink }}">{{ title }}</a></li>
-          {{/blogPostsByTag.postlight}}
-        </ul>
+        ${PostsList(_.blogPostsByTag.postlight)}
       </section>
 
       <section class="copy">
@@ -729,6 +722,18 @@ const template = (_) => html`<!DOCTYPE html>
 
 function ShowMore() {
   return html`<li><a href="#" class="js-show-more">Show more…</a></li>`;
+}
+
+function PostsList(list) {
+  return html`<ul>
+    ${list.map(
+      (item) =>
+        html`<li>
+          <a href="${item.permalink}">${item.title}</a>
+          <time class="small">${item.date}</time>
+        </li>`
+    )}
+  </ul>`;
 }
 
 console.time("Build time");
