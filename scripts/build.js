@@ -10,7 +10,7 @@ console.time("Build");
 getData()
   .then((data) => {
     const mustache = fs
-      .readFileSync(join(__dirname, "../src/index.mustache.html"))
+      .readFileSync(join(__dirname, "../src/index.mustache"))
       .toString();
     // REnder template literal string
     // files["index.html"].contents = eval(

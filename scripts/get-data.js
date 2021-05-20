@@ -17,6 +17,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export async function getData() {
   return {
+    svgs: {
+      self: fs
+        .readFileSync(join(__dirname, "../src/assets/img/drawing-self.svg"))
+        .toString(),
+    },
     css: fs.readFileSync(join(__dirname, "../src/index.css")).toString(),
     /**
      * In (from cached API response):
@@ -133,7 +138,7 @@ export async function getData() {
      *   }
      * ]
      */
-    iconGalleries: await (async () => {
+    icons: await (async () => {
       const handleResponse = (res, type) => {
         return res.json().then((json) => {
           return json.items.map((icon) => ({
@@ -154,27 +159,27 @@ export async function getData() {
         fetch("https://www.watchosicongallery.com/feed.json").then((res) =>
           handleResponse(res, "watchos")
         ),
-      ]).then(
-        (responses) => [
-          {
-            name: "iOS Icon Gallery",
-            url: "https://www.iosicongallery.com",
-            icons: responses[0],
-          },
-          {
-            name: "macOS Icon Gallery",
-            url: "https://www.macosicongallery.com",
-            icons: responses[1],
-          },
-          {
-            name: "watchOS Icon Gallery",
-            url: "https://www.watchosicongallery.com",
-            icons: responses[2],
-          },
-        ]
-        // responses.flat().sort((a, b) => {
-        //   return 0.5 - Math.random();
-        // })
+      ]).then((responses) =>
+        // [
+        //   {
+        //     name: "iOS Icon Gallery",
+        //     url: "https://www.iosicongallery.com",
+        //     icons: responses[0],
+        //   },
+        //   {
+        //     name: "macOS Icon Gallery",
+        //     url: "https://www.macosicongallery.com",
+        //     icons: responses[1],
+        //   },
+        //   {
+        //     name: "watchOS Icon Gallery",
+        //     url: "https://www.watchosicongallery.com",
+        //     icons: responses[2],
+        //   },
+        // ]
+        responses.flat().sort((a, b) => {
+          return 0.5 - Math.random();
+        })
       );
       return data;
     })(),

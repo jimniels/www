@@ -19,7 +19,8 @@
   "scripts": {
     "clear-cache": "rm -rf ./cache",
     "build:data": "node scripts/cache-data.js",
-    "build": "rm -f index.html && node src/index.js",
+    "build": "rm -f index.html && node scripts/build.js",
+    "build-node": "rm -f index.html && node src/index.js",
     "start": "npm run build && chokidar 'src/**/*' 'data/' -i 'src/index.html' -c 'npm run build' & http-server src -o -s"
   },
   "repository": {
@@ -31,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/jimniels/jimniels.github.io/issues"
   },
-  "homepage": "https://github.com/jimniels/jimniels.github.io#readme"
+  "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
+  "dependencies": {
+    "mustache": "^4.2.0"
+  }
 }

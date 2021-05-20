@@ -65,7 +65,6 @@ const template = (_) => html`<!DOCTYPE html>
     </section>
     -->
       
-      
       <nav>
         <a href="#writing">Writing</a>
         <!-- <a href="#icon-galleries">Icon Galleries</a> -->
@@ -76,8 +75,8 @@ const template = (_) => html`<!DOCTYPE html>
         <a href="#contact">Contact</a>
       </nav>
 
-      <section id="about" class="copy">
-        <h1>Jim Nielsen<!--: dad, designer, developer (in that order).--></h1>
+      <section class="copy">
+        <h1>Jim Nielsen</h1>
         <h2>Dad, designer, developer — in that order.</h2>
         <!-- <h3>
           Currently: Director of Design & UI Architecture at
@@ -156,37 +155,29 @@ const template = (_) => html`<!DOCTYPE html>
 
         <p>My most recent posts:</p>
 
-        <ul class="copy-full-width">
+        <ul class="copy-full-width" data-js-truncate="3">
           ${_.blogPosts.map(
             ({ url, title, date_published }, i) => html`
-              ${i === 3 && ShowMore()}
-
-              <li ${i >= 3 && "hidden"}>
+              <li>
                 <a href="${url}">${title}</a>
                 <time class="small">${date_published}</time>
               </li>
-
-              ${i === _.blogPosts.length - 1 &&
-              html`<li hidden>
-                More on
-                <a href="https://blog.jim-nielsen.com"
-                  >blog.jim-nielsen.com →</a
-                >
-              </li>`}
             `
           )}
+          <li>
+            View all posts on
+            <a href="https://blog.jim-nielsen.com"
+              >blog.jim-nielsen.com →</a
+            >
+          </li>
         </ul>
 
         <p>My writing’s resonance with folks online:</p>
 
-        <ul>
+        <ul data-js-truncate="8">
           ${_.blogPostCitations.map(
             ({ name, quote, url }, i) => html`
-              ${i === 8 && ShowMore()}
-
-              <li ${i < 8 ? "" : "hidden"}>
-                <a href="${url}">${name}</a>${quote && `: “${quote}”`}
-              </li>
+              <li><a href="${url}">${name}</a>${quote && `: “${quote}”`}</li>
             `
           )}
         </ul>
@@ -333,19 +324,17 @@ const template = (_) => html`<!DOCTYPE html>
           occasionally write about the process on my blog. Here are some recent
           posts:
         </p>
-        <ul class="copy-full-width">
+        <ul class="copy-full-width" data-js-truncate="3">
           ${_.blogPostsByTag.iconGalleries.map(
             ({ date, permalink, title }, i) => html`
-              ${i === 3 && ShowMore()}
-
-              <li ${i >= 3 && "hidden"}>
+              <li>
                 <a href="${permalink}">${title}</a>
                 <time class="small">${date}</time>
               </li>
 
               ${i === _.blogPostsByTag.iconGalleries.length - 1 &&
-              html` <li hidden>
-                View on
+              html` <li>
+                View all on
                 <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
                   >blog.jim-nielsen.com →</a
                 >
@@ -687,8 +676,7 @@ const template = (_) => html`<!DOCTYPE html>
         ${PostsList(_.blogPostsByTag.postlight)}
       </section>
 
-      <section class="copy">
-        <h1 id="contact">Contact <a href="#contact">🔗</a></h1>
+      <section class="copy"><h1 id="contact">Contact <a href="#contact">🔗</a></h1>
         <p>
           Want to get in touch? I’d love to hear from you! You can reach out to
           me on:
@@ -701,6 +689,36 @@ const template = (_) => html`<!DOCTYPE html>
           <li>Github: <a href="https://github.com/jimniels">@jimniels</a></li>
         </ul>
       </section>
+
+      <script>
+      Array.from(document.querySelectorAll("[data-js-truncate]")).forEach(($el) => {
+        const limit = Number($el.getAttribute("data-js-truncate")) + 1;
+        const surplusElements = Array.from($el.querySelectorAll("li:nth-child(n+" + limit + ")"))
+        /* @TODO maybe be smart like if limit is 3, but we have 4, just show 4 */
+        if (surplusElements.length) {
+          surplusElements.forEach($el => {
+            $el.setAttribute("hidden", true);
+          });
+          
+          let $li = document.createElement("li");
+          $li.innerHTML = "<button class='link js-truncate-show-more'>Show more...</button>";
+          $el.appendChild($li);
+        }
+      });
+
+      document.addEventListener("click", e => {
+        if (e.target.classList.contains("js-truncate-show-more")) {
+          const $li = e.target.parentNode;
+          const $ul = e.target.parentNode.parentNode;
+
+          $li.remove();
+          
+          Array.from($ul.querySelectorAll("li[hidden]")).forEach($li => {
+            $li.removeAttribute("hidden");
+          })
+        }
+      });
+      </script>
 
       <script>
         // "Show more..." functionality
@@ -725,7 +743,8 @@ function ShowMore() {
 }
 
 function PostsList(list) {
-  return html`<ul>
+  // @TODO view all on blog.jim-nielsen.com
+  return html`<ul data-js-truncate="3">
     ${list.map(
       (item) =>
         html`<li>

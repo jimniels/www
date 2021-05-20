@@ -41,6 +41,16 @@ section {
   }
 }
 
+button.link {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  color: var(--c-blue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* Navigation
    ===========================================================================*/
 nav {
@@ -74,9 +84,11 @@ h2 {
   max-width: 41rem !important;
 }
 
+svg,
 img[src*="drawing-"] {
-  float: right;
-  display: none;
+  margin: calc(1.618rem * 2) 0;
+  /* float: right;
+  margin-left: 2rem; */
 }
 
 /*
@@ -88,7 +100,8 @@ h1 {
   padding-left: 1em;
 }
 
-h1 a[href^="#"] {
+h1 a[href^="#"],
+h2 a[href^="#"] {
   visibility: hidden;
   opacity: 0;
   font-size: 0.5em;
@@ -98,7 +111,8 @@ h1 a[href^="#"] {
   top: 0.625em;
 }
 
-h1:hover a[href^="#"] {
+h1:hover a[href^="#"],
+h2:hover a[href^="#"] {
   visibility: visible;
   opacity: 1;
 }
@@ -162,4 +176,83 @@ h1:hover a[href^="#"] {
   .posts-list time {
     order: 1;
   }
+}
+
+/*
+  Icons
+  =========================================================================== */
+
+#icons {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+}
+#icons li {
+  margin-right: 1.618rem;
+  margin-bottom: 1.618rem;
+}
+[data-icon-type="ios"] img {
+  border-radius: 22.5%;
+}
+[data-icon-type="watchos"] img {
+  border-radius: 50%;
+}
+[data-icon-type="ios"] img,
+[data-icon-type="watchos"] img {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/*
+  Instagram
+  =========================================================================== */
+#instagram {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  grid-gap: 8px;
+  /*display: flex;
+flex-wrap: wrap;
+max-width: 1800px;*/
+}
+#instagram a:hover {
+  filter: none;
+}
+#instagram img {
+  display: block;
+  border-radius: 8px;
+}
+#instagram img:hover {
+  box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
+}
+
+/*
+  Dribbble
+  =========================================================================== */
+#dribbble-shots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  grid-gap: 8px;
+  /*display: flex;
+flex-wrap: wrap;
+max-width: 1800px;*/
+}
+#dribbble-shots a:hover {
+  filter: none;
+}
+#dribbble-shots img {
+  display: block;
+  transition: 0.2s ease all;
+  box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075);
+  border-radius: 8px;
+}
+#dribbble-shots img:hover {
+  /* transform: scale(1.025); */
+  /* transform: translateY(-2px); */
+
+  box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075), 0 0 0 2px var(--c-bg),
+    0 0 0 5px rgba(var(--c-blue-rgb), 1);
 }
