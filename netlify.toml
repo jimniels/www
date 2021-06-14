@@ -2,4 +2,4 @@
   base = ""
   publish = "src"
   command = "npm run build"
-  environment = { NODE_VERSION = "latest" }
+  environment = { NODE_VERSION = "16" }
