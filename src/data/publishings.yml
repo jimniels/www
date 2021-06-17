@@ -72,14 +72,14 @@
       handle: designerdepot
       name: Webdesigner Depot
       followers: 687000
-- title: Keep Employees Engaged in Innovation with Responsive Design
-  publisherDomain: kindlingapp.com
-  date: 2013-11-25
-  link: http://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/
-  excerpt: 'We live in a multi-device world. Choosing which device to use depends
-    on context: where you are, how much time you have, and what you want to accomplish.
-    Great ideas, however, don’t care about context. And they won’t wait until you’re
-    sitting in front of your office computer to materialize.'
+# - title: Keep Employees Engaged in Innovation with Responsive Design
+#   publisherDomain: kindlingapp.com
+#   date: 2013-11-25
+#   link: http://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/
+#   excerpt: 'We live in a multi-device world. Choosing which device to use depends
+#     on context: where you are, how much time you have, and what you want to accomplish.
+#     Great ideas, however, don’t care about context. And they won’t wait until you’re
+#     sitting in front of your office computer to materialize.'
 - title: Implementing the Float Label Form Pattern
   publisherDomain: webdesign.tutsplus.com
   date: 2013-10-28

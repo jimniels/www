@@ -2,12 +2,14 @@
  Consider elevating to shared space
  ===========================================================================*/
 
-/* :target {
+:target {
   color: var(--c-red);
-} */
+}
 
 .copy > * {
-  max-width: 33rem; /* 900px */
+  max-width: 30rem; /* 900px */
+  margin-left: auto;
+  margin-right: auto;
   /* margin-bottom: 1.618rem; */
 }
 .copy-full-width {
@@ -19,26 +21,79 @@
   list-style-type: none;
 }
 
+.placeholder {
+  height: 400px;
+  background: #ddd;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
 /* =============================================================================
    site-specific
    ===========================================================================*/
 
+:root {
+  --c-bg: #121212;
+  --c-fg: #fff;
+  --c-text: #222;
+  --c-button: #eee;
+  --c-interactive: #007aff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --c-fg: #222;
+    --c-text: #eee;
+    --c-button: #333;
+    --c-interactive: #0a84ff;
+  }
+}
+
 html {
   scroll-behavior: smooth;
+  background: var(--c-bg);
+  color: var(--c-text);
 }
 
 section {
   margin-bottom: 200px;
 }
-.wrapper {
+
+body {
   margin: 0 auto;
-  width: 92%;
+  width: 100%;
+  max-width: 800px;
+  background: var(--c-fg);
 }
-@media screen and (min-width: 600px) {
-  .wrapper {
-    margin: 1.618rem auto calc(1.618rem * 2);
-    width: 85%;
+
+@media screen and (max-width: 600px) {
+  body > section {
+    padding: 0 calc(1.618rem / 2);
   }
+  body > section .placeholder {
+    margin-left: -1.618rem;
+    width: calc(100% + calc(1.618rem * 2));
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    margin: 80px auto calc(1.618rem * 2);
+    width: 85%;
+    box-shadow: 0 0 0 12px var(--c-fg);
+  }
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  height: calc(500px + 80px); /* image + top body padding */
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 button.link {
@@ -49,6 +104,12 @@ button.link {
   color: var(--c-blue);
   text-decoration: underline;
   cursor: pointer;
+
+  font-size: 0.9rem;
+  padding: calc(1.618rem / 9) calc(1.618rem / 4);
+  text-decoration: none;
+  border-radius: 7px;
+  background: var(--c-button);
 }
 
 /* Navigation
@@ -77,12 +138,6 @@ nav > * {
 
 /* Headings
    ===========================================================================*/
-h1 {
-  max-width: 45rem !important;
-}
-h2 {
-  max-width: 41rem !important;
-}
 
 svg,
 img[src*="drawing-"] {
@@ -94,25 +149,27 @@ img[src*="drawing-"] {
 /*
   Anchor links
   =========================================================================== */
-h1 {
+/* h1 {
   position: relative;
   margin-left: -1em;
   padding-left: 1em;
+}*/
+h1 {
+  position: relative;
+  /* display: flex;
+  align-items: center; */
 }
-
-h1 a[href^="#"],
-h2 a[href^="#"] {
+h1 a[href^="#"] {
   visibility: hidden;
   opacity: 0;
   font-size: 0.5em;
   text-decoration: none !important;
-  position: absolute;
+  margin-left: calc(1.618rem / 2);
+  /* position: absolute;
   left: 0;
-  top: 0.625em;
+  top: 0.625em; */
 }
-
-h1:hover a[href^="#"],
-h2:hover a[href^="#"] {
+h1:hover a[href^="#"] {
   visibility: visible;
   opacity: 1;
 }
@@ -186,13 +243,15 @@ h2:hover a[href^="#"] {
   margin: 2rem 0 0 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1280px;
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 24px;
 }
 #icons li {
-  margin-right: 1.618rem;
-  margin-bottom: 1.618rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 [data-icon-type="ios"] img {
   border-radius: 22.5%;
@@ -255,4 +314,27 @@ max-width: 1800px;*/
 
   box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075), 0 0 0 2px var(--c-bg),
     0 0 0 5px rgba(var(--c-blue-rgb), 1);
+}
+
+section > p:last-child > a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.618rem;
+  text-decoration: none;
+  background: hsla(var(--c-primary-hsl), 7%);
+  padding: calc(1.618rem / 4) calc(1.618rem / 2) calc(1.618rem / 3);
+  border-radius: var(--border-radius);
+}
+section > p:last-child a:after {
+  content: " →";
+}
+
+em {
+  background-color: lightyellow;
+  font-style: normal;
+}
+
+#intro em {
+  background-color: transparent;
+  font-style: italic;
 }

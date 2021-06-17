@@ -14,15 +14,21 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // @TODO fetchIf() will look for a local cache file first and if it doesn't exist,
 // it'll be fetched from the network. npm start will clear this cache each time you run
-
+getData()
+  .then((data) => {
+    console.log(JSON.stringify(data));
+  })
+  .catch((e) => {
+    console.log({ error: "failed to get data" + e });
+  });
 export async function getData() {
   return {
     svgs: {
       self: fs
-        .readFileSync(join(__dirname, "../src/assets/img/drawing-self.svg"))
+        .readFileSync(join(__dirname, "../static/assets/img/drawing-self.svg"))
         .toString(),
     },
-    css: fs.readFileSync(join(__dirname, "../src/index.css")).toString(),
+    css: fs.readFileSync(join(__dirname, "../static/index.css")).toString(),
     /**
      * In (from cached API response):
      * [
@@ -44,13 +50,13 @@ export async function getData() {
      *   { href, src, title }
      * ]
      */
-    dribbble: requireJSON(join(__dirname, "../data/dribbble-shots.json")).map(
-      ({ html_url, images, title }) => ({
-        href: html_url,
-        src: images.hidpi ? images.hidpi : images.normal,
-        title,
-      })
-    ),
+    dribbble: requireJSON(
+      join(__dirname, "../src/data/dribbble-shots.json")
+    ).map(({ html_url, images, title }) => ({
+      href: html_url,
+      src: images.hidpi ? images.hidpi : images.normal,
+      title,
+    })),
 
     /**
      * Instagram
@@ -68,12 +74,12 @@ export async function getData() {
      *   { href, src }
      * ]
      */
-    instagram: requireJSON(join(__dirname, "../data/instagram-posts.json")).map(
-      ({ media_url, permalink }, i) => ({
+    instagram: requireJSON(join(__dirname, "../src/data/instagram-posts.json"))
+      .map(({ media_url, permalink }, i) => ({
         href: permalink,
         src: `/assets/img/instagram/${i}.jpg`,
-      })
-    ),
+      }))
+      .filter((post, i) => i < 12),
 
     /**
      * Blog
@@ -125,7 +131,7 @@ export async function getData() {
       return data;
     })(),
     blogPostCitations: YAML.load(
-      join(__dirname, "../data/blog-post-citations.yml")
+      join(__dirname, "../src/data/blog-post-citations.yml")
     ),
     /**
      * Icons
@@ -183,7 +189,7 @@ export async function getData() {
       );
       return data;
     })(),
-    publishings: YAML.load(join(__dirname, "../data/publishings.yml")).map(
+    publishings: YAML.load(join(__dirname, "../src/data/publishings.yml")).map(
       (item) => ({
         ...item,
         date: item.date.toISOString().slice(0, 4),
@@ -194,7 +200,7 @@ export async function getData() {
       })
     ),
 
-    tweets: YAML.load(join(__dirname, "../data/tweets.yml")),
+    tweets: YAML.load(join(__dirname, "../src/data/tweets.yml")),
 
     /**
      * Personal Projects

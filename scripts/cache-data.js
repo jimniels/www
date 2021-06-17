@@ -97,7 +97,7 @@ async function cacheInstagram() {
       );
     })
     .then((posts) => {
-      return posts.filter((post) => post.media_type !== "VIDEO").slice(0, 16);
+      return posts.filter((post) => post.media_type !== "VIDEO");
     })
     .then(async (posts) => {
       // @TODO delete stuff in instagram folder and rewrite this stuff
