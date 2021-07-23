@@ -12,50 +12,144 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-normalize@1.0.0/modern-normalize.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://blog.jim-nielsen.com/assets/css/base.css"
-    />
+    /> -->
 
-    <!-- Inline our CSS -->
+    <!-- Inline our CSS 
     <style>
       {{{css}}}
+    </style> -->
+    <style>
+      html {
+        --font-size-base: 21;
+        background: #f7f7f7;
+        font-size: calc(var(--font-size-base) * 1px);
+        line-height: 1.618;
+      }
+      section > * {
+        max-width: 32rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      a {
+        color: inherit;
+      }
+      h1 {
+        font-size: calc(55rem / var(--font-size-base));
+        line-height: 1.2;
+      }
+      body > section {
+        margin-bottom: calc(1.618rem * 4);
+      }
+      body > section:before {
+        content: "";
+        width: 100%;
+        height: 500px;
+        max-width: 35rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        display: block;
+        margin: 1.618rem auto;
+      }
+      #intro:before {
+        background-image: url(/assets/img/drawing-self.svg);
+      }
+      #writing:before {
+        background-image: url(/assets/img/drawing-writing.svg);
+      }
+      #icon-galleries:before {
+        background-image: url(/assets/img/drawing-icon-galleries.svg);
+      }
+      button {
+        background: transparent;
+        border: 1px solid;
+        font-size: 0.9rem;
+      }
+
+      #dribbble-shots {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 800px;
+        grid-gap: 8px;
+      }
+      #dribbble-shots a:hover {
+        filter: none;
+      }
+      #dribbble-shots img {
+        display: block;
+        width: 200px;
+        height: 150px;
+      }
+      #dribbble-shots img:hover {
+        /* transform: scale(1.025); */
+        /* transform: translateY(-2px); */
+
+        box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075), 0 0 0 2px var(--c-bg),
+          0 0 0 5px rgba(var(--c-blue-rgb), 1);
+      }
+      #instagram {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 800px;
+        grid-gap: 8px;
+        /*display: flex;
+flex-wrap: wrap;
+max-width: 1800px;*/
+      }
+      #instagram a:hover {
+        filter: none;
+      }
+      #instagram img {
+        display: block;
+        width: 200px;
+        height: 200px;
+      }
+      #instagram img:hover {
+        box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
+      }
+      #icons {
+        max-width: 900px;
+        padding: 0;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: 24px;
+      }
+      #icons li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [data-icon-type="ios"] img {
+        border-radius: 22.5%;
+      }
+      [data-icon-type="watchos"] img {
+        border-radius: 50%;
+      }
+      [data-icon-type="ios"] img,
+      [data-icon-type="watchos"] img {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+      }
     </style>
   </head>
   <body class="wrapper">
-    {{! @TODO
-    <section
-      style="
-        overflow: hidden;
-        background: #0a0607;
-        border-radius: 50px;
-        margin-bottom: 60px;
-        height: 650px;
-
-        padding-top: 20px;
-        display: flex;
-      "
-    >
-      <img
-        src="/assets/img/jim.jpg"
-        style="max-height: 100%; align-self: flex-end"
-      />
-    </section>
-    }}
-
     <!-- <nav>
-    <span>Jump to: </span>
-    <a href="#writing">Writing</a>
-    {{! <a href="#icon-galleries">Icon Galleries</a> }}
-    {{! <a href="#dribbble">Dribbble</a> }}
-    {{! <a href="#pies">Pies</a> }}
-    <a href="#side-projects">Side Projects</a>
-    <a href="#employment">Employment</a>
-    <a href="#contact">Contact</a>
-  </nav> -->
+      <span>Jump to: </span>
+      <a href="#writing">Writing</a>
+      {{! <a href="#icon-galleries">Icon Galleries</a> }}
+      {{! <a href="#dribbble">Dribbble</a> }}
+      {{! <a href="#pies">Pies</a> }}
+      <a href="#side-projects">Side Projects</a>
+      <a href="#employment">Employment</a>
+      <a href="#contact">Contact</a>
+    </nav> -->
 
     <section class="copy" id="intro">
-      <div
+      <!-- @HIFI <div
         class="placeholder"
         style="
           height: 500px;
@@ -65,7 +159,7 @@
           background-size: 300px, auto 95%;
           background-repeat: no-repeat;
         "
-      ></div>
+      ></div> -->
       <h1>The professional, and somewhat personal, website of Jim Nielsen</h1>
 
       <p>
@@ -114,24 +208,24 @@
     </section>
 
     <section class="copy" id="writing">
-      <div
+      <!-- @HIFI <div
         class="placeholder"
         style="
           background: #f5f5f5 url(/assets/img/cursor-5.gif) 50% no-repeat;
           background-size: 223px;
           height: 500px;
         "
-      ></div>
+      ></div> -->
 
-      <h1>Writing</h1>
+      <h1 data-status="active">Writing</h1>
 
       <p>
-        I write to find clarity and iteratively improve my thinking. It’s like
-        the QA for my thoughts before they go to production at my mouth.
+        I write to find clarity and iteratively improve my thinking. It’s QA for
+        my thoughts—before they go to production at my mouth.
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
-      <p><em>Praise for my blog</em> from folks online:</p>
+      <p><strong>Praise for my blog</strong> from folks online:</p>
 
       <ul data-js-truncate="5">
         {{#blogPostCitations}}
@@ -139,7 +233,7 @@
         {{/blogPostCitations}}
       </ul>
 
-      <p><em>Latest posts</em> from my blog:</p>
+      <p><strong>Latest posts</strong> from my blog:</p>
 
       <ul data-js-truncate="3">
         {{#blogPosts}}
@@ -155,9 +249,9 @@
       </ul>
 
       <p>
-        <em>Published articles</em> from days gone by. I used to write for
-        others’ blogs more frequently, but now I like to be my own publisher. I
-        keep these for archival purposes.
+        <strong>Published articles</strong> from days gone by. I used to write
+        for others’ blogs more frequently, but now I like to be my own
+        publisher. I keep these for archival purposes.
       </p>
 
       <ul data-js-truncate="5">
@@ -168,23 +262,11 @@
         </li>
         {{/publishings}}
       </ul>
-
-      {{! @TODO
-      <p>Online resonance from folks who read my published writings:</p>
-      <ul data-js-truncate="5">
-        <li>@TODO</li>
-        <li>@TODO</li>
-        <li>@TODO</li>
-        <li>@TODO</li>
-        <li>@TODO</li>
-        <li>@TODO</li>
-      </ul>
-      }}
     </section>
 
     {{! Icon Galleries ====================================================== }}
 
-    <section class="copy" id="side-projects">
+    <section class="copy" id="icon-galleries">
       <ul id="icons">
         {{#icons}}
         <li data-icon-type="{{type}}">
@@ -198,7 +280,7 @@
         </li>
         {{/icons}}
       </ul>
-      <h1 id="icon-galleries">
+      <h1 data-status="active">
         Passion project: over a decade collecting icons from
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
@@ -243,18 +325,6 @@
         </li>
         {{/tweets.iconGalleries}}
       </ul>
-
-      <p>See the galleries:</p>
-
-      <ul>
-        <li><a href="https://www.iosicongallery.com">iosicongallery.com</a></li>
-        <li>
-          <a href="https://www.iosicongallery.com">macosicongallery.com</a>
-        </li>
-        <li>
-          <a href="https://www.iosicongallery.com">watchosicongallery.com</a>
-        </li>
-      </ul>
     </section>
 
     {{! Pies ================================================================ }}
@@ -273,7 +343,10 @@
         </a>
         {{/instagram}}
       </div>
-      <h1>Side project: I love to make, and then eat, pies</h1>
+      <h1 data-status="active">
+        Side project: making & eating pies as
+        <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
+      </h1>
       <p>
         Growing up, my Mom made pies. At the time, I didn’t know they were
         <em>the best</em> pies. As I grew into my teenage years, I noticed I
@@ -295,12 +368,6 @@
         just as much driven by a desire to <em>make</em> good pie. Making is now
         half the fun!
       </p>
-
-      <p>
-        <a href="https://instagram.com/flyingjpies">
-          instagram.com/flyingjpies
-        </a>
-      </p>
     </section>
 
     {{! Dribbble ============================================================ }}
@@ -320,7 +387,7 @@
         </a>
         {{/dribbble}}
       </div>
-      <h1>Dribbble shots from my baller days</h1>
+      <h1 data-status="archived">Dribbble shots from my baller days</h1>
       <p>
         I used to Dribbble, but I don’t do as much “production” design work
         anymore. However I still find my stuff from the past interesting, so I
@@ -338,15 +405,14 @@
         <source src="/assets/video/sassme.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video>
-      <h1>
-        Side project: visualize Sass color functions in real-time, no
-        compilation necessary
+      <h1 data-status="archived">
+        <span>Side project:</span>
+        <a href="https://sassme.jim-nielsen.com">SassMe</a> visualize Sass color
+        functions in real-time, no compilation necessary
       </h1>
 
       <p>
-        I first conceived of this idea when I worked at Arc90 (circa 2012),
-        where it later became a company lab project which others helped me
-        initially design and build. It sprung out of the question: when I write
+        First built in 2012, this sprung out of the question: when I write
         <code>darken(#123456, 5%)</code> what does that look like?
       </p>
       <p>It resonated with a lot of folks online. Here’s some praise:</p>
@@ -360,8 +426,6 @@
         </li>
         {{/tweets.sassme}}
       </ul>
-
-      <p><a href="https://sassme.jim-nielsen.com">sassme.jim-nielsen.com</a></p>
     </section>
 
     <!-- 

@@ -338,3 +338,24 @@ em {
   background-color: transparent;
   font-style: italic;
 }
+
+[data-status]:before {
+  content: attr(data-status);
+  font-size: 0.725rem;
+  font-weight: normal;
+  /* position: absolute;
+  left: -5.5rem;
+  top: 1rem; */
+
+  padding: 4px 12px;
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+[data-status="active"]:before {
+  background: green;
+}
+[data-status="archived"]:before {
+  background: #999;
+}
