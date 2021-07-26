@@ -24,7 +24,7 @@
     <style>
       html {
         --font-size-base: 21;
-        background: #f7f7f7;
+        background: #f2f2f2;
         font-size: calc(var(--font-size-base) * 1px);
         line-height: 1.618;
       }
@@ -34,6 +34,7 @@
         margin-right: auto;
         display: block;
       }
+
       a {
         color: inherit;
       }
@@ -41,14 +42,19 @@
         font-size: calc(55rem / var(--font-size-base));
         line-height: 1.2;
       }
+      h2 {
+        font-size: calc(32rem / var(--font-size-base));
+        line-height: 1.2;
+        margin-top: calc(1.618rem * 2);
+      }
       body > section {
-        margin-bottom: calc(1.618rem * 4);
+        margin-bottom: calc(1.618rem * 6);
       }
       body > section:before {
         content: "";
         width: 100%;
         height: 500px;
-        max-width: 35rem;
+        max-width: 900px;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: 50%;
@@ -56,18 +62,45 @@
         margin: 1.618rem auto;
       }
       #intro:before {
-        background-image: url(/assets/img/drawing-self.svg);
+        background-image: url(/assets/img/simple-jim.jpg);
       }
       #writing:before {
-        background-image: url(/assets/img/drawing-writing.svg);
+        background-image: url(/assets/img/cursor-3.gif);
+        background-size: 400px;
+        background-color: #f5f5f5;
       }
-      #icon-galleries:before {
-        background-image: url(/assets/img/drawing-icon-galleries.svg);
+      #icon-galleries:before,
+      #pies:before {
+        display: none;
+        /* background-image: url(/assets/img/drawing-icon-galleries.svg); */
+      }
+
+      /* @media screen and (min-width: 1400px) {
+        section > * {
+          margin-left: 100px;
+        }
+        body > section:before {
+          position: absolute;
+          right: 100px;
+         
+        }
+      } */
+
+      .quote-list {
+        list-style-type: none;
+        padding-left: 1.1rem;
+      }
+      .quote-list li {
+        border-left: 1px solid;
+        margin-left: 0;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
       }
       button {
         background: transparent;
         border: 1px solid;
         font-size: 0.9rem;
+        padding: 0.125rem 0.25rem;
       }
 
       #dribbble-shots {
@@ -94,7 +127,7 @@
       #instagram {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        max-width: 800px;
+        max-width: 900px;
         grid-gap: 8px;
         /*display: flex;
 flex-wrap: wrap;
@@ -105,8 +138,8 @@ max-width: 1800px;*/
       }
       #instagram img {
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 225px;
+        height: 225px;
       }
       #instagram img:hover {
         box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
@@ -134,6 +167,93 @@ max-width: 1800px;*/
       [data-icon-type="watchos"] img {
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
       }
+
+      .highlight {
+        position: relative;
+        font-weight: normal;
+      }
+
+      .highlight:before {
+        content: "";
+        z-index: -1;
+        left: 0em;
+        top: 0em;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.75);
+        position: absolute;
+        border-right-color: transparent;
+        width: 100%;
+        height: 1em;
+        transform: rotate(2deg);
+        opacity: 0.5;
+        border-radius: 0.25em;
+      }
+
+      .highlight:after {
+        content: "";
+        z-index: -1;
+        left: 0em;
+        top: 0em;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.75);
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 1em;
+        transform: rotate(-1deg);
+        opacity: 0.5;
+        border-radius: 0.25em;
+      }
+
+      .circle-sketch-highlight {
+        position: relative;
+      }
+
+      .circle-sketch-highlight:before {
+        content: "";
+        z-index: -1;
+        left: -0.5em;
+        top: -0.1em;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        border-right-color: transparent;
+        width: 100%;
+        height: 1.5em;
+        transform: rotate(2deg);
+
+        border-radius: 50%;
+        padding: 0.1em 0.25em;
+      }
+
+      .circle-sketch-highlight:after {
+        content: "";
+        z-index: -1;
+        left: -0.5em;
+        top: 0.1em;
+        padding: 0.1em 0.25em;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.5);
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 1.5em;
+        transform: rotate(-1deg);
+        border-radius: 50%;
+      }
+
+      p:nth-of-type(n + 1) .circle-sketch-highlight :before {
+        transform: rotate(-2deg);
+      }
+      p:nth-of-type(n + 1) .circle-sketch-highlight:after {
+        transform: rotate(1deg);
+      }
     </style>
   </head>
   <body class="wrapper">
@@ -160,7 +280,7 @@ max-width: 1800px;*/
           background-repeat: no-repeat;
         "
       ></div> -->
-      <h1>The professional, and somewhat personal, website of Jim Nielsen</h1>
+      <h1>The personal, and I guess professional, website of Jim Nielsen</h1>
 
       <p>
         <em>Who are you?</em> Reductively, I’m a designer who codes and does
@@ -225,15 +345,18 @@ max-width: 1800px;*/
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
-      <p><strong>Praise for my blog</strong> from folks online:</p>
+      <p>
+        <span class="circle-sketch-highlight">Praise for my blog</span> from
+        folks online:
+      </p>
 
-      <ul data-js-truncate="5">
+      <ul class="quote-list" data-js-truncate="5">
         {{#blogPostCitations}}
-        <li><a href="{{url}}">{{name}}</a>{{#quote}}: “{{{.}}}”{{/quote}}</li>
+        <li><a href="{{url}}">{{name}}</a>: {{#quote}}“{{{.}}}”{{/quote}}</li>
         {{/blogPostCitations}}
       </ul>
 
-      <p><strong>Latest posts</strong> from my blog:</p>
+      <p>Latest posts from my blog:</p>
 
       <ul data-js-truncate="3">
         {{#blogPosts}}
@@ -246,21 +369,6 @@ max-width: 1800px;*/
           View all posts on
           <a href="https://blog.jim-nielsen.com">blog.jim-nielsen.com →</a>
         </li>
-      </ul>
-
-      <p>
-        <strong>Published articles</strong> from days gone by. I used to write
-        for others’ blogs more frequently, but now I like to be my own
-        publisher. I keep these for archival purposes.
-      </p>
-
-      <ul data-js-truncate="5">
-        {{#publishings}}
-        <li>
-          <a href="{{link}}">{{publisherDomain}}</a>: {{title}}
-          <span class="small"><time>{{date}}</time></span>
-        </li>
-        {{/publishings}}
       </ul>
     </section>
 
@@ -281,21 +389,31 @@ max-width: 1800px;*/
         {{/icons}}
       </ul>
       <h1 data-status="active">
-        Passion project: over a decade collecting icons from
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
-        <a href="https://www.watchosicongallery.com">watchOS</a>
+        <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries
       </h1>
 
       <p>
-        For over a decade, I’ve been collecting icons from Apple’s ecosystem
-        which I find visually interesting or inspiring and putting them on these
-        sites (soon to be
-        <a href="https://www.appiconbook.com/">a book of icons</a> made with the
-        talented <a href="https:/twitter.com/flarup">@flarup</a>)
+        For over a decade, I’ve been designing, developing, and curating a
+        collection of icons from Apple’s ecosystem which I find visually
+        interesting or inspiring.
       </p>
+
+      <p>Praise for my galleries:</p>
+
+      <ul class="quote-list" data-js-truncate="3">
+        {{#tweets.iconGalleries}}
+        <li>
+          <a href="https://twitter.com/user/status/{{id}}"
+            >{{author.name}} (@{{author.handle}})</a
+          >: “{{content}}”
+        </li>
+        {{/tweets.iconGalleries}}
+      </ul>
+
       <p>
-        <em>Recent posts</em> detailing how I design, engineer, and curate these
+        Recent posts detailing how I design, engineer, and curate these
         galleries myself:
       </p>
 
@@ -314,17 +432,12 @@ max-width: 1800px;*/
         </li>
       </ul>
 
-      <p>Praise for the galleries:</p>
-
-      <ul data-js-truncate="3">
-        {{#tweets.iconGalleries}}
-        <li>
-          <a href="https://twitter.com/user/status/{{id}}"
-            >{{author.name}} (@{{author.handle}})</a
-          >: “{{content}}”
-        </li>
-        {{/tweets.iconGalleries}}
-      </ul>
+      <p>
+        And I’m working on
+        <a href="https://www.appiconbook.com/"
+          >a book of icons with the talented Michael Flarup</a
+        >.
+      </p>
     </section>
 
     {{! Pies ================================================================ }}
@@ -344,7 +457,7 @@ max-width: 1800px;*/
         {{/instagram}}
       </div>
       <h1 data-status="active">
-        Side project: making & eating pies as
+        Away from the screen: making (& eating) pies as
         <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
       </h1>
       <p>
@@ -373,7 +486,8 @@ max-width: 1800px;*/
     {{! Dribbble ============================================================ }}
 
     <section class="copy" id="dribbble">
-      <div class="copy-full-width" id="dribbble-shots">
+      <h1>Side projects in maintenance mode</h1>
+      <!-- @HIFI <div class="copy-full-width" id="dribbble-shots">
         {{#dribbble}}
         <a href="{{href}}">
           <img
@@ -386,38 +500,36 @@ max-width: 1800px;*/
           />
         </a>
         {{/dribbble}}
-      </div>
-      <h1 data-status="archived">Dribbble shots from my baller days</h1>
+      </div> -->
+
+      <h2>
+        <a href="https://www.dribbble.com/jimniels">@jimniels</a> on Dribbble
+      </h2>
       <p>
         I used to Dribbble, but I don’t do as much “production” design work
         anymore. However I still find my stuff from the past interesting, so I
         keep it here for nostalgia.
       </p>
 
-      <p>
-        <a href="https://www.dribbble.com/jimniels">dribbble.com/jimniels</a>
-      </p>
-    </section>
+      {{! SassMe ==============================================================
+      }}
 
-    {{! SassMe ============================================================== }}
-    <section class="copy">
-      <video width="920" autoplay loop muted style="max-width: 100%">
+      <!-- @HIFI <video width="920" autoplay loop muted style="max-width: 100%">
         <source src="/assets/video/sassme.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
-      </video>
-      <h1 data-status="archived">
-        <span>Side project:</span>
-        <a href="https://sassme.jim-nielsen.com">SassMe</a> visualize Sass color
-        functions in real-time, no compilation necessary
-      </h1>
+      </video> -->
+      <h2 data-status="archived">
+        <a href="https://sassme.jim-nielsen.com">SassMe</a>: visualize Sass
+        color functions in real-time with, no compilation necessary
+      </h2>
 
       <p>
         First built in 2012, this sprung out of the question: when I write
         <code>darken(#123456, 5%)</code> what does that look like?
       </p>
-      <p>It resonated with a lot of folks online. Here’s some praise:</p>
+      <p><span class="circle-sketch-highlight">Praise</span> for SassMe:</p>
 
-      <ul data-js-truncate="3">
+      <ul class="quote-list" data-js-truncate="3">
         {{#tweets.sassme}}
         <li>
           <a href="https://twitter.com/user/status/{{id}}"
@@ -426,9 +538,8 @@ max-width: 1800px;*/
         </li>
         {{/tweets.sassme}}
       </ul>
-    </section>
 
-    <!-- 
+      <!-- 
   tweets.sassme
   <blockquote>
     <p>
@@ -511,8 +622,8 @@ max-width: 1800px;*/
     }
   </style>
   -->
-    <section class="copy">
-      <p class="copy-full-width">
+
+      <!-- @HIFI <p class="copy-full-width">
         <img
           src="/assets/img/personal-projects/logo-integrity.png"
           alt="An collection of popular logos, each of which is displayed multiple times and each one gets progressively blurrier."
@@ -520,33 +631,28 @@ max-width: 1800px;*/
           width="1000"
           height="666"
         />
-      </p>
-      <h1>
+      </p> -->
+      <h2>
         <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>: a
         visual experiment on ubiquitos logos
-      </h1>
+      </h2>
       <p>
         In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an
-        image be and still be recognized?” He proposes that a well-designed logo
-        retains its form and recognizability under the duress of real-world use
-        and abuse.
+        image be and still be recognized?” For fun, I decided to subject some contemporary logos to a form of
+        visual stress and see how well people still recognized them. 
       </p>
       <p>
-        For fun, I decided to subject some contemporary logos to a form of
-        visual stress and see how well people still recognized them. You can
-
-        <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
-          >read my introductory blog post to the project</a
-        >
-        as well as
-        <a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
-          >my round up of opinions when it hit designer news</a
-        >.
+        Read more about this project:
       </p>
-    </section>
 
-    <section class="copy" id="teamcolors">
-      <div
+      <ul>
+        <li><a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
+          >Introductory blog post</a></li>
+        <li><a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
+          >When it hit 20,000+ views from designer news</li>
+      </ul>
+
+      <!-- @HIFI <div
         class="placeholder"
         style="
           background: url(/assets/img/team-colors-example.png);
@@ -555,12 +661,27 @@ max-width: 1800px;*/
           background-position: 50%;
           background-color: #e9edf1;
         "
-      ></div>
-      <h1>
+      ></div> -->
+      <h2>
         <a href="https://teamcolors.jim-nielsen.com">Team Colors</a>: color
         codes for professional sports teams
-      </h1>
+      </h2>
       <p>More info to come...</p>
+
+      <h2>Published Articles</h2>
+      <p>
+        I used to write for others’ blogs more frequently, but now I like to be
+        my own publisher. I keep these for archival purposes.
+      </p>
+
+      <ul data-js-truncate="5">
+        {{#publishings}}
+        <li>
+          <a href="{{link}}">{{publisherDomain}}</a>: {{title}}
+          <span class="small"><time>{{date}}</time></span>
+        </li>
+        {{/publishings}}
+      </ul>
     </section>
 
     <section class="copy">
