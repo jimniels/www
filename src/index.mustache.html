@@ -23,10 +23,23 @@
     </style> -->
     <style>
       html {
+        --color-black: #222222;
+        --color-black-hsl: 0,0%,13%;
+        --color-white: #f2f2f2;
+        --color-white-hsl: 0,0%,95%; 
         --font-size-base: 21;
-        background: #f2f2f2;
+        background: var(--color-white);
         font-size: calc(var(--font-size-base) * 1px);
         line-height: 1.618;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        html {
+          --color-white: #222222;
+          --color-white-hsl: 0,0%,13%;
+          --color-black: #f2f2f2;
+          --color-black-hsl: 0,0%,95%; 
+        }
       }
       section > * {
         max-width: 32rem;
@@ -50,6 +63,7 @@
       body > section {
         margin-bottom: calc(1.618rem * 6);
       }
+      /*
       body > section:before {
         content: "";
         width: 100%;
@@ -72,8 +86,8 @@
       #icon-galleries:before,
       #pies:before {
         display: none;
-        /* background-image: url(/assets/img/drawing-icon-galleries.svg); */
-      }
+        
+      }*/
 
       /* @media screen and (min-width: 1400px) {
         section > * {
@@ -86,6 +100,12 @@
         }
       } */
 
+      .employment-list dt {
+          float: left;
+          margin-right: 0.25em;
+          font-weight: 700;
+        }
+
       .quote-list {
         list-style-type: none;
         padding-left: 1.1rem;
@@ -96,9 +116,18 @@
         padding-left: 1rem;
         margin-bottom: 1rem;
       }
+      .quote-list li a {
+        display: block;
+      }
+      .quote-list li.show-more {
+        border-left-color: transparent;
+      }
+      li.show-more {
+        list-style-type: none;
+      }
       button {
         background: transparent;
-        border: 1px solid;
+        border: 1px solid var(--color-black);
         font-size: 0.9rem;
         padding: 0.125rem 0.25rem;
       }
@@ -117,13 +146,6 @@
         width: 200px;
         height: 150px;
       }
-      #dribbble-shots img:hover {
-        /* transform: scale(1.025); */
-        /* transform: translateY(-2px); */
-
-        box-shadow: 0 0px 0 1px rgba(0, 0, 0, 0.075), 0 0 0 2px var(--c-bg),
-          0 0 0 5px rgba(var(--c-blue-rgb), 1);
-      }
       #instagram {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -141,9 +163,7 @@ max-width: 1800px;*/
         width: 225px;
         height: 225px;
       }
-      #instagram img:hover {
-        box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 5px rgba(var(--c-blue-rgb), 1);
-      }
+      
       #icons {
         max-width: 900px;
         padding: 0;
@@ -180,7 +200,7 @@ max-width: 1800px;*/
         top: 0em;
         border-width: 2px;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0.75);
+        border-color: hsla(var(--color-black-hsl), .75);
         position: absolute;
         border-right-color: transparent;
         width: 100%;
@@ -197,7 +217,7 @@ max-width: 1800px;*/
         top: 0em;
         border-width: 2px;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0.75);
+        border-color: hsla(var(--color-black-hsl), .75);
         border-left-color: transparent;
         border-top-color: transparent;
         position: absolute;
@@ -219,7 +239,7 @@ max-width: 1800px;*/
         top: -0.1em;
         border-width: 2px;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0.5);
+        border-color: hsla(var(--color-black-hsl), .75);
         position: absolute;
         border-right-color: transparent;
         width: 100%;
@@ -238,7 +258,7 @@ max-width: 1800px;*/
         padding: 0.1em 0.25em;
         border-width: 2px;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0.5);
+        border-color: hsla(var(--color-black-hsl), .75);
         border-left-color: transparent;
         border-top-color: transparent;
         position: absolute;
@@ -253,6 +273,9 @@ max-width: 1800px;*/
       }
       p:nth-of-type(n + 1) .circle-sketch-highlight:after {
         transform: rotate(1deg);
+      }
+      section > img {
+        max-width: none;
       }
     </style>
   </head>
@@ -280,17 +303,21 @@ max-width: 1800px;*/
           background-repeat: no-repeat;
         "
       ></div> -->
+      <!-- <img src="/assets/img/simple-jim.jpg" width="900" /> -->
+      <img src="/assets/img/drawing-signature.svg" width="550" />
+
       <h1>The personal, and I guess professional, website of Jim Nielsen</h1>
 
       <p>
-        <em>Who are you?</em> Reductively, I’m a designer who codes and does
-        product thinking. That said, I’m trying to not define myself by my
-        profession or website—and yet here we are.
+        <em>Who are you?</em> Well, I try to not define myself by my
+        profession or website (and yet here we are). Reductively? I’m a designer who codes and does
+        product thinking—in that order.
+        
+        <!-- I’m trying not to define who am I by my profession—and yet here we are. ~~I am a designer…~~ I do design. I do development, and product thinking. -->
       </p>
       <p>
         <em>What’s your expertise?</em> Synthesizing knowledge to work across
-        perceivedly disparate boundaries—design, engineering, product,
-        leadership.
+        traditionally disparate boundaries—design, engineering, product.
       </p>
       <p>
         <em>What are your hard skills?</em> Visual design (i.e. Figma, Sketch,
@@ -324,7 +351,7 @@ max-width: 1800px;*/
         project, I’m proud of the people I’ve worked with and learned from.
       </p>
       <br />
-      <p>— Jim Nielsen, 2021-03-19T12:00:00-06:00</p>
+      <p>— Jim Nielsen (2021-03-19)</p>
     </section>
 
     <section class="copy" id="writing">
@@ -336,12 +363,13 @@ max-width: 1800px;*/
           height: 500px;
         "
       ></div> -->
-
-      <h1 data-status="active">Writing</h1>
+      <!-- <img src="/assets/img/cursor-2.gif" width="900" /> -->
+      <img src="/assets/img/drawing-writing.svg" width="700" />
+      <h1>Writing</h1>
 
       <p>
-        I write to find clarity and iteratively improve my thinking. It’s QA for
-        my thoughts—before they go to production at my mouth.
+        I write to find clarity and iteratively improve my thinking. It’s like QA for
+        my thoughts, before they “go to production” as words out my mouth.
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
@@ -352,7 +380,7 @@ max-width: 1800px;*/
 
       <ul class="quote-list" data-js-truncate="5">
         {{#blogPostCitations}}
-        <li><a href="{{url}}">{{name}}</a>: {{#quote}}“{{{.}}}”{{/quote}}</li>
+        <li><a href="{{url}}">{{name}}:</a> {{#quote}}“{{{.}}}”{{/quote}}</li>
         {{/blogPostCitations}}
       </ul>
 
@@ -362,7 +390,7 @@ max-width: 1800px;*/
         {{#blogPosts}}
         <li>
           <a href="{{url}}">{{title}}</a>
-          <time class="small">{{date_published}}</time>
+          ({{date_published}})
         </li>
         {{/blogPosts}}
         <li>
@@ -375,7 +403,7 @@ max-width: 1800px;*/
     {{! Icon Galleries ====================================================== }}
 
     <section class="copy" id="icon-galleries">
-      <ul id="icons">
+      <!-- <ul id="icons">
         {{#icons}}
         <li data-icon-type="{{type}}">
           <img
@@ -387,8 +415,9 @@ max-width: 1800px;*/
           />
         </li>
         {{/icons}}
-      </ul>
-      <h1 data-status="active">
+      </ul> -->
+      <img src="/assets/img/drawing-icons.svg" width="800" />
+      <h1>
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
         <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries
@@ -396,18 +425,17 @@ max-width: 1800px;*/
 
       <p>
         For over a decade, I’ve been designing, developing, and curating a
-        collection of icons from Apple’s ecosystem which I find visually
-        interesting or inspiring.
+        collection of icons from Apple’s ecosystem.
       </p>
 
-      <p>Praise for my galleries:</p>
+      <p><span class="circle-sketch-highlight">Praise</span> for my galleries:</p>
 
       <ul class="quote-list" data-js-truncate="3">
         {{#tweets.iconGalleries}}
         <li>
           <a href="https://twitter.com/user/status/{{id}}"
-            >{{author.name}} (@{{author.handle}})</a
-          >: “{{content}}”
+            >{{author.name}} (@{{author.handle}}):</a
+          > “{{content}}”
         </li>
         {{/tweets.iconGalleries}}
       </ul>
@@ -421,7 +449,7 @@ max-width: 1800px;*/
         {{#blogPostsByTag.iconGalleries}}
         <li>
           <a href="{{permalink}}">{{title}}</a>
-          <time class="small">{{date}}</time>
+          ({{date_published}})
         </li>
         {{/blogPostsByTag.iconGalleries}}
         <li>
@@ -443,7 +471,8 @@ max-width: 1800px;*/
     {{! Pies ================================================================ }}
 
     <section class="copy" id="pies">
-      <div class="copy-full-width" id="instagram">
+      <img src="/assets/img/drawing-pie.svg" width="400">
+      <!-- <div class="copy-full-width" id="instagram">
         {{#instagram}}
         <a href="{{href}}">
           <img
@@ -455,8 +484,8 @@ max-width: 1800px;*/
           />
         </a>
         {{/instagram}}
-      </div>
-      <h1 data-status="active">
+      </div> -->
+      <h1>
         Away from the screen: making (& eating) pies as
         <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
       </h1>
@@ -483,24 +512,11 @@ max-width: 1800px;*/
       </p>
     </section>
 
-    {{! Dribbble ============================================================ }}
+    {{! Misc. ============================================================ }}
 
     <section class="copy" id="dribbble">
-      <h1>Side projects in maintenance mode</h1>
-      <!-- @HIFI <div class="copy-full-width" id="dribbble-shots">
-        {{#dribbble}}
-        <a href="{{href}}">
-          <img
-            src="{{src}}"
-            alt="{{title}}"
-            title="{{title}} on Dribbble"
-            width="400"
-            height="300"
-            loading="lazy"
-          />
-        </a>
-        {{/dribbble}}
-      </div> -->
+      <img src="/assets/img/drawing-misc.svg" width="500">
+      <h1>Miscellaneous work from the archives</h1>
 
       <h2>
         <a href="https://www.dribbble.com/jimniels">@jimniels</a> on Dribbble
@@ -511,14 +527,13 @@ max-width: 1800px;*/
         keep it here for nostalgia.
       </p>
 
-      {{! SassMe ==============================================================
-      }}
+      {{! SassMe ============================================================ }}
 
       <!-- @HIFI <video width="920" autoplay loop muted style="max-width: 100%">
         <source src="/assets/video/sassme.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
       </video> -->
-      <h2 data-status="archived">
+      <h2>
         <a href="https://sassme.jim-nielsen.com">SassMe</a>: visualize Sass
         color functions in real-time with, no compilation necessary
       </h2>
@@ -533,8 +548,8 @@ max-width: 1800px;*/
         {{#tweets.sassme}}
         <li>
           <a href="https://twitter.com/user/status/{{id}}"
-            >{{author.name}} (@{{author.handle}})</a
-          >: “{{content}}”
+            >{{author.name}} (@{{author.handle}}):</a
+          > “{{content}}”
         </li>
         {{/tweets.sassme}}
       </ul>
@@ -666,7 +681,7 @@ max-width: 1800px;*/
         <a href="https://teamcolors.jim-nielsen.com">Team Colors</a>: color
         codes for professional sports teams
       </h2>
-      <p>More info to come...</p>
+      <p>I really should write some more about this…</p>
 
       <h2>Published Articles</h2>
       <p>
@@ -674,70 +689,96 @@ max-width: 1800px;*/
         my own publisher. I keep these for archival purposes.
       </p>
 
-      <ul data-js-truncate="5">
+      <ul data-js-truncate="3">
         {{#publishings}}
         <li>
-          <a href="{{link}}">{{publisherDomain}}</a>: {{title}}
-          <span class="small"><time>{{date}}</time></span>
+          <a href="{{link}}">{{title}}</a><br>({{publisherDomain}}, {{date}})
+          
         </li>
         {{/publishings}}
       </ul>
     </section>
 
-    <section class="copy">
-      <h1 id="employment">Employment <a href="#employment">🔗</a></h1>
+    <section class="copy" id="employment">
+      <!-- photos of people from these places 
+      <div id="instagram">
+        {{#employment}}
+          <img
+            src="/assets/img/employment/employment-{{.}}.jpg"
+            alt="Photo of work"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        {{/employment}}
+      </div>-->
+      <h1>Employment <a href="#employment">🔗</a></h1>
 
       <h2>
         Director of Design & UI Architecture @
-        <a href="https://www.sagesure.com">SageSure</a> (Remote)
+        <a href="https://www.sagesure.com">SageSure</a>
       </h2>
-      <p>Summary:</p>
       <dl class="employment-list">
-        <dt>Dates employed:</dt>
-        <dd>2016 - present (remote).</dd>
-        <dt>Hats worn:</dt>
-        <dd>Design, front-end, product, leadership.</dd>
-        <dt>Tools used:</dt>
-        <dd>
-          You name it—Sketch, Invision, Figma, HTML, CSS, JS, React, Keynote,
-          Outlook, and more.
-        </dd>
-        <dt>Other notes:</dt>
-        <dd>
-          I really should write more, but honestly too busy.
-          <a href="#contact">Hit me up</a> if you want to know more.
-        </dd>
+        <dt>Employed:</dt>
+          <dd>2016 - present (remote).</dd>
+        <dt>Hats:</dt>
+          <dd>Design, front-end, product, leadership.</dd>
+        <dt>Tools:</dt>
+          <dd>
+            You name it—Sketch, Invision, Figma, HTML, CSS, JS, React, Keynote,
+            Outlook, and more.
+          </dd>
+        <dt>Fun fact:</dt>
+          <dd>Voted best PR writer by teammates.</dd>
+        <dt>Key writeup:</dt>
+          <dd><a href=“https://blog.jim-nielsen.com/2020/perception-and-balancing-idealism-with-pragmatism/”>Perception and Balancing Idealism with Pragmatism</a></dd>
+        <dt>Other writeups:</dt>
+          <dd>Posts tagged <a href="https://blog.jim-nielsen.com/tags/#insight">#insight</a>.</dd>
       </dl>
-      <style>
-        .employment-list dt {
-          float: left;
-          margin-right: 0.25em;
-          font-weight: 500;
-        }
-      </style>
-      <p>Related posts from my weblog:</p>
-      ${PostsList(_.blogPostsByTag.insight)}
 
-      <h2>2016: UI Engineer @ Timshel (Remote)</h2>
+      <p>I really should write more, but honestly I’m too busy.
+            <a href="#contact">Hit me up</a> if you want to know more.</p>
+      
 
-      <p>
-        Worked on the front-end team doing engineering, design, and product
-        management for a variety of web applicaitons and services. In other
-        words, when stuff needed to be built, we built and shipped it. Project:
-        Admin Web interface for clients administering their account on The
-        Groundwork platform. Handled creating, designing, and engineering
-        various features for the application’s view layer. Tools: Sketch, Sass,
-        CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material
-        UI, Git.
-      </p>
+      {{! Timshel =========================================================== }}
+      <h2>2016: UI Engineer @ Timshel</h2>
+      <dl class="employment-list">
+        <dt>Summary:</dt>
+          <dd>Worked on the front-end team doing product design & engineering for a number of web applicaitons and services.</dd>
+        <dt>Employed:</dt>
+          <dd>2016 (remote).</dd>
+        <dt>Hats:</dt>
+          <dd>Design, front-end, product.</dd>
+        <dt>Tools:</dt>
+          <dd>Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material UI, Git.</dd>
+        <dt>Fun fact:</dt>
+          <dd>Upon leaving, a co-worker complimented me with: “Gonna be a real bummer here w/o you. You bring a lot of great design, and a lot of not-being-an-asshole-ness.”</dd>
+        <dt>Key writeup:</dt>
+          <dd><a href="https://blog.jim-nielsen.com/2017/designing-and-engineering-event-management-at-timshel/">Designing and Engineering Event Management for Timshel’s “Admin” Web Application</a> </dd>
+        <dt>Other writeups:</dt>
+          <dd>{{blogPostsByTag.postlight.length}} posts tagged<a href="https://blog.jim-nielsen.com/tags/#timshel">#timshel</a>.</dd>
+      </dl>
 
-      <p>Related posts from my weblog:</p>
-      ${PostsList(_.blogPostsByTag.timshel)}
+      
+
 
       <h2>
         2016: Designer & Front-end Developer @
         <a href="https://postlight.com">Postlight</a> (Remote, Freelance)
       </h2>
+      <dl class="employment-list">
+        <dt>Employed:</dt>
+          <dd>2016</dd>
+        <dt>Hats worn:</dt>
+          <dd></dd>
+        <dt>Tools used:</dt>
+          <dd></dd>
+        <dt>Other notes:</dt>
+          <dd></dd>
+        <dt>1 writeup to read:</dt>
+          <dd><a href=""></a></dd>
+        <dt>Other writeups:</dt>
+      </dl>
       <p>
         Succeeded in consulting, designing, and building internal web
         applications (on tight deadlines) for one of Postlight’s biggest
@@ -752,8 +793,19 @@ max-width: 1800px;*/
         Git.
       </p>
 
-      <p>Related posts from my weblog:</p>
-      ${PostsList(_.blogPostsByTag.postlight)}
+      <p>Writeups from my time:</p>
+      <ul data-js-truncate="3">
+        {{#blogPostsByTag.postlight}}
+          <li>
+            <a href="{{url}}">
+              {{title}}
+            </a>
+            <time class="small">
+              {{date_published}}
+            </time>
+          </li>
+        {{/blogPostsByTag.postlight}}
+      </ul>
     </section>
 
     <section class="copy">
@@ -789,6 +841,7 @@ max-width: 1800px;*/
             });
 
             let $li = document.createElement("li");
+            $li.classList.add("show-more");
             $li.innerHTML =
               "<button class='link js-truncate-show-more'>Show more...</button>";
             $el.appendChild($li);

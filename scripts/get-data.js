@@ -108,7 +108,10 @@ export async function getData() {
       )
         .then((res) => res.json())
         .then((posts) =>
-          posts.map((post) => ({ ...post, date: post.date.slice(0, 10) }))
+          posts.map((post) => ({
+            ...post,
+            date_published: post.date.slice(0, 10),
+          }))
         )
         .then((posts) => {
           const postsByTag = posts.reduce((acc, post) => {
@@ -202,6 +205,7 @@ export async function getData() {
 
     tweets: YAML.load(join(__dirname, "../src/data/tweets.yml")),
 
+    employment: [...Array(10).keys()].map((key) => key + 1),
     /**
      * Personal Projects
      */
