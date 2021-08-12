@@ -24,9 +24,9 @@
     <style>
       html {
         --color-black: #222222;
-        --color-black-hsl: 0,0%,13%;
+        --color-black-hsl: 0, 0%, 13%;
         --color-white: #f2f2f2;
-        --color-white-hsl: 0,0%,95%; 
+        --color-white-hsl: 0, 0%, 95%;
         --font-size-base: 21;
         background: var(--color-white);
         font-size: calc(var(--font-size-base) * 1px);
@@ -36,36 +36,62 @@
       @media (prefers-color-scheme: dark) {
         html {
           --color-white: #222222;
-          --color-white-hsl: 0,0%,13%;
+          --color-white-hsl: 0, 0%, 13%;
           --color-black: #f2f2f2;
-          --color-black-hsl: 0,0%,95%; 
+          --color-black-hsl: 0, 0%, 95%;
         }
       }
-      
+      body > section {
+        margin-top: calc(1.618rem * 4);
+        margin-bottom: calc(1.618rem * 4);
+      }
       section {
         position: relative;
         border-bottom: 1px solid;
         padding-bottom: calc(1.618rem * 4);
       }
       section > * {
-        max-width: 30rem;
+        max-width: 28rem;
         margin-left: auto;
-        margin-right: 10rem;
+        margin-right: auto;
         display: block;
       }
       section > img {
-        position: absolute;
-        left: 5rem;
-        top: 0;
+        max-width: 100%;
       }
-      section:nth-child(odd) > * {
-        margin-left: 10rem;
-        margin-right: auto;
+      @media screen and (max-width: 28rem) {
+        section > * {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
       }
-      section:nth-child(odd) > img {
-        left: auto;
-        right: 5rem;
-        width: 500px;
+      @media screen and (min-width: 1200px) {
+        section {
+          max-width: 1400px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        section > * {
+          max-width: 28rem;
+          margin-right: 2rem;
+        }
+        section > img {
+          max-width: 26rem;
+        }
+        section:nth-child(even) > * {
+          margin-left: 2rem;
+          margin-right: auto;
+        }
+        section:nth-child(even) > img {
+          left: auto;
+          right: 2rem;
+          width: 500px;
+        }
+        section > img {
+          position: absolute;
+          left: 2rem;
+          top: 0;
+        }
       }
 
       a {
@@ -80,9 +106,7 @@
         line-height: 1.2;
         margin-top: calc(1.618rem * 2);
       }
-      body > section {
-        margin-bottom: calc(1.618rem * 6);
-      }
+
       /*
       body > section:before {
         content: "";
@@ -121,10 +145,10 @@
       } */
 
       .employment-list dt {
-          float: left;
-          margin-right: 0.25em;
-          font-weight: 700;
-        }
+        float: left;
+        margin-right: 0.25em;
+        font-weight: 700;
+      }
 
       .quote-list {
         list-style-type: none;
@@ -136,9 +160,7 @@
         padding-left: 1rem;
         margin-bottom: 1rem;
       }
-      .quote-list li a {
-        /* display: block; */
-      }
+
       .quote-list li.show-more {
         border-left-color: transparent;
       }
@@ -183,7 +205,7 @@ max-width: 1800px;*/
         width: 225px;
         height: 225px;
       }
-      
+
       #icons {
         max-width: 900px;
         padding: 0;
@@ -220,7 +242,7 @@ max-width: 1800px;*/
         top: 0em;
         border-width: 2px;
         border-style: solid;
-        border-color: hsla(var(--color-black-hsl), .75);
+        border-color: hsla(var(--color-black-hsl), 0.75);
         position: absolute;
         border-right-color: transparent;
         width: 100%;
@@ -237,7 +259,7 @@ max-width: 1800px;*/
         top: 0em;
         border-width: 2px;
         border-style: solid;
-        border-color: hsla(var(--color-black-hsl), .75);
+        border-color: hsla(var(--color-black-hsl), 0.75);
         border-left-color: transparent;
         border-top-color: transparent;
         position: absolute;
@@ -259,7 +281,7 @@ max-width: 1800px;*/
         top: -0.1em;
         border-width: 2px;
         border-style: solid;
-        border-color: hsla(var(--color-black-hsl), .75);
+        border-color: hsla(var(--color-black-hsl), 0.75);
         position: absolute;
         border-right-color: transparent;
         width: 100%;
@@ -278,7 +300,7 @@ max-width: 1800px;*/
         padding: 0.1em 0.25em;
         border-width: 2px;
         border-style: solid;
-        border-color: hsla(var(--color-black-hsl), .75);
+        border-color: hsla(var(--color-black-hsl), 0.75);
         border-left-color: transparent;
         border-top-color: transparent;
         position: absolute;
@@ -293,9 +315,6 @@ max-width: 1800px;*/
       }
       p:nth-of-type(n + 1) .circle-sketch-highlight:after {
         transform: rotate(1deg);
-      }
-      section > img {
-        max-width: none;
       }
     </style>
   </head>
@@ -325,14 +344,13 @@ max-width: 1800px;*/
       ></div> -->
       <!-- <img src="/assets/img/simple-jim.jpg" width="900" /> -->
       <img src="/assets/img/drawing-signature.svg" width="550" />
-
       <h1>The personal, and I guess professional, website of Jim Nielsen</h1>
 
       <p>
-        <em>Who are you?</em> Well, I try to not define myself by my
-        profession or website (and yet here we are). Reductively? I’m a designer who codes and does
-        product thinking—in that order.
-        
+        <em>Who are you?</em> Well, I try to not define myself by my profession
+        or website (and yet here we are). Reductively? I’m a designer who codes
+        and does product thinking—in that order.
+
         <!-- I’m trying not to define who am I by my profession—and yet here we are. ~~I am a designer…~~ I do design. I do development, and product thinking. -->
       </p>
       <p>
@@ -388,14 +406,13 @@ max-width: 1800px;*/
       <h1>I’m Writing on <a href="https://blog.jim-nielsen.com">My Blog</a></h1>
 
       <p>
-        I write to seek clarity and improve my thinking – its QA for
-        my thoughts before going to prod as words out my mouth.
+        I write to seek clarity and improve my thinking – its QA for my thoughts
+        before going to prod as words out my mouth.
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
       <p>
-        <span class="circle-sketch-highlight">Praise</span> from
-        folks online:
+        <span class="circle-sketch-highlight">Praise</span> from folks online:
       </p>
 
       <ul class="quote-list" data-js-truncate="5">
@@ -436,7 +453,7 @@ max-width: 1800px;*/
         </li>
         {{/icons}}
       </ul> -->
-      <img src="/assets/img/drawing-icons.svg" width="800" />
+      <img src="/assets/img/drawing-icon-galleries-big.svg" width="600" />
       <h1>
         I’m designing, developing, and curating for
         <a href="https://www.iosicongallery.com">iOS</a>,
@@ -449,14 +466,17 @@ max-width: 1800px;*/
         collection of icons from Apple’s ecosystem.
       </p>
 
-      <p><span class="circle-sketch-highlight">Praise</span> for my galleries:</p>
+      <p>
+        <span class="circle-sketch-highlight">Praise</span> for my galleries:
+      </p>
 
       <ul class="quote-list" data-js-truncate="3">
         {{#tweets.iconGalleries}}
         <li>
           <a href="https://twitter.com/user/status/{{id}}"
             >{{author.name}} (@{{author.handle}}):</a
-          > “{{content}}”
+          >
+          “{{content}}”
         </li>
         {{/tweets.iconGalleries}}
       </ul>
@@ -492,7 +512,7 @@ max-width: 1800px;*/
     {{! Pies ================================================================ }}
 
     <section class="copy" id="pies">
-      <img src="/assets/img/drawing-pie.svg" width="400">
+      <img src="/assets/img/drawing-pie.svg" width="400" />
       <!-- <div class="copy-full-width" id="instagram">
         {{#instagram}}
         <a href="{{href}}">
@@ -536,12 +556,10 @@ max-width: 1800px;*/
     {{! Misc. ============================================================ }}
 
     <section class="copy" id="dribbble">
-      <img src="/assets/img/drawing-misc.svg" width="500">
+      <img src="/assets/img/drawing-misc.svg" width="500" />
       <h1>I Previously Worked on…</h1>
 
-      <h2>
-        Shots on <a href="https://www.dribbble.com/jimniels">Dribbble</a>
-      </h2>
+      <h2>Shots on <a href="https://www.dribbble.com/jimniels">Dribbble</a></h2>
       <p>
         I used to Dribbble, but I don’t do as much “production” design work
         anymore. However I still find my stuff from the past interesting, so I
@@ -570,7 +588,8 @@ max-width: 1800px;*/
         <li>
           <a href="https://twitter.com/user/status/{{id}}"
             >{{author.name}} (@{{author.handle}}):</a
-          > “{{content}}”
+          >
+          “{{content}}”
         </li>
         {{/tweets.sassme}}
       </ul>
@@ -674,18 +693,23 @@ max-width: 1800px;*/
       </h2>
       <p>
         In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an
-        image be and still be recognized?” For fun, I decided to subject some contemporary logos to a form of
-        visual stress and see how well people still recognized them. 
+        image be and still be recognized?” For fun, I decided to subject some
+        contemporary logos to a form of visual stress and see how well people
+        still recognized them.
       </p>
-      <p>
-        Read more about this project:
-      </p>
+      <p>Read more about this project:</p>
 
       <ul>
-        <li><a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
-          >Introductory blog post</a></li>
-        <li><a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
-          >When it hit 20,000+ views from designer news</a></li>
+        <li>
+          <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
+            >Introductory blog post</a
+          >
+        </li>
+        <li>
+          <a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
+            >When it hit 20,000+ views from designer news</a
+          >
+        </li>
       </ul>
 
       <!-- @HIFI <div
@@ -713,8 +737,7 @@ max-width: 1800px;*/
       <ul data-js-truncate="3">
         {{#publishings}}
         <li>
-          <a href="{{link}}">{{title}}</a><br>({{publisherDomain}}, {{date}})
-          
+          <a href="{{link}}">{{title}}</a><br />({{publisherDomain}}, {{date}})
         </li>
         {{/publishings}}
       </ul>
@@ -741,47 +764,74 @@ max-width: 1800px;*/
       </h2>
       <dl class="employment-list">
         <dt>Employed:</dt>
-          <dd>2016 - present (remote).</dd>
+        <dd>2016 - present (remote).</dd>
         <dt>Hats:</dt>
-          <dd>Design, front-end, product, leadership.</dd>
+        <dd>Design, front-end, product, leadership.</dd>
         <dt>Tools:</dt>
-          <dd>
-            You name it—Sketch, Invision, Figma, HTML, CSS, JS, React, Keynote,
-            Outlook, and more.
-          </dd>
+        <dd>
+          You name it—Sketch, Invision, Figma, HTML, CSS, JS, React, Keynote,
+          Outlook, and more.
+        </dd>
         <dt>Fun fact:</dt>
-          <dd>Voted best PR writer by teammates.</dd>
+        <dd>Voted best PR writer by teammates.</dd>
         <dt>Key writeup:</dt>
-          <dd><a href=“https://blog.jim-nielsen.com/2020/perception-and-balancing-idealism-with-pragmatism/”>Perception and Balancing Idealism with Pragmatism</a></dd>
+        <dd>
+          <a
+            href="https://blog.jim-nielsen.com/2020/perception-and-balancing-idealism-with-pragmatism/"
+            >Perception and Balancing Idealism with Pragmatism</a
+          >
+        </dd>
         <dt>Other writeups:</dt>
-          <dd>Posts tagged <a href="https://blog.jim-nielsen.com/tags/#insight">#insight</a>.</dd>
+        <dd>
+          Posts tagged
+          <a href="https://blog.jim-nielsen.com/tags/#insight">#insight</a>.
+        </dd>
       </dl>
 
-      <p>I really should write more, but honestly I’m too busy.
-            <a href="#contact">Hit me up</a> if you want to know more.</p>
-      
+      <p>
+        I really should write more, but honestly I’m too busy.
+        <a href="#contact">Hit me up</a> if you want to know more.
+      </p>
 
       {{! Timshel =========================================================== }}
       <h2>2016: UI Engineer @ Timshel</h2>
       <dl class="employment-list">
         <dt>Summary:</dt>
-          <dd>Worked on the front-end team doing product design & engineering for a number of web applicaitons and services.</dd>
+        <dd>
+          Worked on the front-end team doing product design & engineering for a
+          number of web applicaitons and services.
+        </dd>
         <dt>Employed:</dt>
-          <dd>2016 (remote).</dd>
+        <dd>2016 (remote).</dd>
         <dt>Hats:</dt>
-          <dd>Design, front-end, product.</dd>
+        <dd>Design, front-end, product.</dd>
         <dt>Tools:</dt>
-          <dd>Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material UI, Git.</dd>
+        <dd>
+          Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux,
+          Bootstrap, Material UI, Git.
+        </dd>
         <dt>Fun fact:</dt>
-          <dd>Upon leaving, a co-worker complimented me with: “Gonna be a real bummer here w/o you. You bring a lot of great design, and a lot of not-being-an-asshole-ness.”</dd>
+        <dd>
+          Upon leaving, a co-worker complimented me with: “Gonna be a real
+          bummer here w/o you. You bring a lot of great design, and a lot of
+          not-being-an-asshole-ness.”
+        </dd>
         <dt>Key writeup:</dt>
-          <dd><a href="https://blog.jim-nielsen.com/2017/designing-and-engineering-event-management-at-timshel/">Designing and Engineering Event Management for Timshel’s “Admin” Web Application</a> </dd>
+        <dd>
+          <a
+            href="https://blog.jim-nielsen.com/2017/designing-and-engineering-event-management-at-timshel/"
+            >Designing and Engineering Event Management for Timshel’s “Admin”
+            Web Application</a
+          >
+        </dd>
         <dt>Other writeups:</dt>
-          <dd>{{blogPostsByTag.postlight.length}} posts tagged<a href="https://blog.jim-nielsen.com/tags/#timshel">#timshel</a>.</dd>
+        <dd>
+          {{blogPostsByTag.postlight.length}} posts tagged<a
+            href="https://blog.jim-nielsen.com/tags/#timshel"
+            >#timshel</a
+          >.
+        </dd>
       </dl>
-
-      
-
 
       <h2>
         2016: Designer & Front-end Developer @
@@ -789,15 +839,15 @@ max-width: 1800px;*/
       </h2>
       <dl class="employment-list">
         <dt>Employed:</dt>
-          <dd>2016</dd>
+        <dd>2016</dd>
         <dt>Hats worn:</dt>
-          <dd></dd>
+        <dd></dd>
         <dt>Tools used:</dt>
-          <dd></dd>
+        <dd></dd>
         <dt>Other notes:</dt>
-          <dd></dd>
+        <dd></dd>
         <dt>1 writeup to read:</dt>
-          <dd><a href=""></a></dd>
+        <dd><a href=""></a></dd>
         <dt>Other writeups:</dt>
       </dl>
       <p>
@@ -817,14 +867,10 @@ max-width: 1800px;*/
       <p>Writeups from my time:</p>
       <ul data-js-truncate="3">
         {{#blogPostsByTag.postlight}}
-          <li>
-            <a href="{{url}}">
-              {{title}}
-            </a>
-            <time class="small">
-              {{date_published}}
-            </time>
-          </li>
+        <li>
+          <a href="{{url}}"> {{title}} </a>
+          <time class="small"> {{date_published}} </time>
+        </li>
         {{/blogPostsByTag.postlight}}
       </ul>
     </section>
