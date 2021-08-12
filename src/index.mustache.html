@@ -41,11 +41,31 @@
           --color-black-hsl: 0,0%,95%; 
         }
       }
+      
+      section {
+        position: relative;
+        border-bottom: 1px solid;
+        padding-bottom: calc(1.618rem * 4);
+      }
       section > * {
-        max-width: 32rem;
+        max-width: 30rem;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 10rem;
         display: block;
+      }
+      section > img {
+        position: absolute;
+        left: 5rem;
+        top: 0;
+      }
+      section:nth-child(odd) > * {
+        margin-left: 10rem;
+        margin-right: auto;
+      }
+      section:nth-child(odd) > img {
+        left: auto;
+        right: 5rem;
+        width: 500px;
       }
 
       a {
@@ -117,7 +137,7 @@
         margin-bottom: 1rem;
       }
       .quote-list li a {
-        display: block;
+        /* display: block; */
       }
       .quote-list li.show-more {
         border-left-color: transparent;
@@ -365,16 +385,16 @@ max-width: 1800px;*/
       ></div> -->
       <!-- <img src="/assets/img/cursor-2.gif" width="900" /> -->
       <img src="/assets/img/drawing-writing.svg" width="700" />
-      <h1>Writing</h1>
+      <h1>I’m Writing on <a href="https://blog.jim-nielsen.com">My Blog</a></h1>
 
       <p>
-        I write to find clarity and iteratively improve my thinking. It’s like QA for
-        my thoughts, before they “go to production” as words out my mouth.
+        I write to seek clarity and improve my thinking – its QA for
+        my thoughts before going to prod as words out my mouth.
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
       <p>
-        <span class="circle-sketch-highlight">Praise for my blog</span> from
+        <span class="circle-sketch-highlight">Praise</span> from
         folks online:
       </p>
 
@@ -418,9 +438,10 @@ max-width: 1800px;*/
       </ul> -->
       <img src="/assets/img/drawing-icons.svg" width="800" />
       <h1>
+        I’m designing, developing, and curating for
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
-        <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries
+        <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries.
       </h1>
 
       <p>
@@ -486,7 +507,7 @@ max-width: 1800px;*/
         {{/instagram}}
       </div> -->
       <h1>
-        Away from the screen: making (& eating) pies as
+        I’m Making (& Eating) Pies as
         <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
       </h1>
       <p>
@@ -516,10 +537,10 @@ max-width: 1800px;*/
 
     <section class="copy" id="dribbble">
       <img src="/assets/img/drawing-misc.svg" width="500">
-      <h1>Miscellaneous work from the archives</h1>
+      <h1>I Previously Worked on…</h1>
 
       <h2>
-        <a href="https://www.dribbble.com/jimniels">@jimniels</a> on Dribbble
+        Shots on <a href="https://www.dribbble.com/jimniels">Dribbble</a>
       </h2>
       <p>
         I used to Dribbble, but I don’t do as much “production” design work
@@ -664,7 +685,7 @@ max-width: 1800px;*/
         <li><a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
           >Introductory blog post</a></li>
         <li><a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
-          >When it hit 20,000+ views from designer news</li>
+          >When it hit 20,000+ views from designer news</a></li>
       </ul>
 
       <!-- @HIFI <div
@@ -712,7 +733,7 @@ max-width: 1800px;*/
           />
         {{/employment}}
       </div>-->
-      <h1>Employment <a href="#employment">🔗</a></h1>
+      <h1>I’ve been…</h1>
 
       <h2>
         Director of Design & UI Architecture @
@@ -809,7 +830,7 @@ max-width: 1800px;*/
     </section>
 
     <section class="copy">
-      <h1 id="contact">Contact <a href="#contact">🔗</a></h1>
+      <h1 id="contact">I’m Reachable Online <a href="#contact">🔗</a></h1>
       <p>
         Want to get in touch? I’d love to hear from you! You can reach out to me
         on:
