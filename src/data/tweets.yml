@@ -10,7 +10,7 @@ sassme:
       handle: vlh
       name: Val Head
   - id: "488822972224765952"
-    content: "my new favorite toy. most of this is pretty easy to do in your head, but sometimes it's nice to have a visualization"
+    content: "my new favorite toy…it's nice to have a visualization"
     author:
       handle: sarah_edo
       name: Sarah Drasner
@@ -50,26 +50,26 @@ iconGalleries:
     author:
       handle: brian_lovin
       name: Brian Lovin
-  - id: "974951481500733440"
-    content: "iOS icon gallery is a great place to find inspiration for app icons."
-    author:
-      handle: imgemmabusquets
-      name: Gemma Busquets
   - id: "369583698229723138"
     content: "Mac Icon Gallery…and iOS Icon Gallery…are indeed nice showcases. Nice initiative by @jimniels."
     author:
       handle: "dresouzax"
       name: "Andre Souza"
   - id: "219856804987928576"
-    content: "Not a fan of showcases, but iOS icon gallery looks great: a gallery showcasing icon designs within the iOS ecosystem"
+    content: "Not a fan of showcases, but iOS icon gallery looks great"
     author:
       handle: "smashingmag"
       name: "Smashing Magazine"
   - id: "618183624794501120"
-    content: "Apple Watch Icon Gallery. Neat little curated collection of great icons for the watch."
+    content: "Neat little curated collection of great icons"
     author:
       handle: "flarup"
       name: "Michael Flarup"
+  - id: "974951481500733440"
+    content: "iOS icon gallery is a great place to find inspiration for app icons."
+    author:
+      handle: imgemmabusquets
+      name: Gemma Busquets
   - id: "157778983990210560"
     content: "iOS Icon Gallery - neat little site for inspiration"
     author:

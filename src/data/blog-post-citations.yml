@@ -1,19 +1,21 @@
-- name: Chris Coyier on css-tricks.com
-  url: https://css-tricks.com/web-technologies-and-syntax/
-  quote: Jim Nielsen makes the connection to optional chaining and <code>!important</code> in CSS...I like that take.
-  ref: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
-- name: Jeremy Keith on adactio.com
+- name: Jeremy Keith
   url: https://adactio.com/journal/18008
   quote: damn, do I enjoy reading [Jim’s] blog. Last year alone, I ended up linking to [his] posts ten different times.
-- name: Dave Rupert on daverupert.com
+- name: Sara Soueidan
+  url: https://twitter.com/sarasoueidan/status/1428686530332303361?s=21
+  quote: I, for one, love seeing [Jim’s] posts in my RSS reader.
+- name: Dave Rupert
   url: https://daverupert.com/2019/09/weeknotes-9/
   quote: "I love the frequency and depth of Jim’s thoughts, he uses his blog really well."
   ref: https://blog.jim-nielsen.com/2019/thoughts-on-rich-harris-talk/
-- name: Rich Harris on Twitter
+- name: Chris Coyier
+  url: https://css-tricks.com/system-things/
+  quote: Jim Nielsen was blowin’ minds the other day when he blogged…
+- name: Rich Harris
   url: https://twitter.com/Rich_Harris/status/1286330991229927426
   quote: ...a really good blog post by @jimniels
   ref: https://blog.jim-nielsen.com/2019/thoughts-on-rich-harris-talk/
-- name: Paul Ford on Twitter
+- name: Paul Ford
   url: https://twitter.com/ftrain/status/1353733405293359105?s=20
   quote: "JIM WOW this is a nice thing to read. Thank you for making this!"
   ref: https://blog.jim-nielsen.com/2021/fav-excerpts-from-the-postlight-podcast/
@@ -64,6 +66,10 @@
 - name: Brad Frost submitted in the Sidebar.io Newsletter
   url: https://sidebar.io/date/2020-10-13
   ref: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- name: Chris Coyier
+  url: https://css-tricks.com/web-technologies-and-syntax/
+  quote: Jim Nielsen makes the connection to optional chaining and <code>!important</code> in CSS...I like that take.
+  ref: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
 #     - source: Jeremy Keith
 #       url: https://adactio.com/links/17508
 #       quote: This post really highlights one of the biggest issues with the convoluted build tools used for ‘modern’ web development.

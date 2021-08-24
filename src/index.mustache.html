@@ -25,7 +25,7 @@
       html {
         --color-black: #222222;
         --color-black-hsl: 0, 0%, 13%;
-        --color-white: #f2f2f2;
+        --color-white: #f0f0f0;
         --color-white-hsl: 0, 0%, 95%;
         --font-size-base: 21;
         background: var(--color-white);
@@ -42,12 +42,11 @@
         }
       }
       body > section {
-        margin-top: calc(1.618rem * 4);
         margin-bottom: calc(1.618rem * 4);
       }
       section {
         position: relative;
-        border-bottom: 1px solid;
+
         padding-bottom: calc(1.618rem * 4);
       }
       section > * {
@@ -65,6 +64,7 @@
           margin-right: 1rem;
         }
       }
+      /*
       @media screen and (min-width: 1200px) {
         section {
           max-width: 1400px;
@@ -92,7 +92,7 @@
           left: 2rem;
           top: 0;
         }
-      }
+      }*/
 
       a {
         color: inherit;
@@ -193,6 +193,8 @@
         grid-template-columns: repeat(4, 1fr);
         max-width: 900px;
         grid-gap: 8px;
+        justify-content: center;
+        overflow: scroll;
         /*display: flex;
 flex-wrap: wrap;
 max-width: 1800px;*/
@@ -213,6 +215,8 @@ max-width: 1800px;*/
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-gap: 24px;
+        justify-content: center;
+        overflow: scroll;
       }
       #icons li {
         display: flex;
@@ -316,22 +320,26 @@ max-width: 1800px;*/
       p:nth-of-type(n + 1) .circle-sketch-highlight:after {
         transform: rotate(1deg);
       }
+
+      ul li time {
+        font-size: 0.8rem;
+        white-space: nowrap;
+      }
     </style>
   </head>
   <body class="wrapper">
-    <!-- <nav>
-      <span>Jump to: </span>
+    <nav style="margin: 1rem auto; text-align: center; font-size: 0.8rem">
+      <span style="display: block">Jump to: </span>
       <a href="#writing">Writing</a>
-      {{! <a href="#icon-galleries">Icon Galleries</a> }}
-      {{! <a href="#dribbble">Dribbble</a> }}
-      {{! <a href="#pies">Pies</a> }}
-      <a href="#side-projects">Side Projects</a>
+      <a href="#icon-galleries">Icon Galleries</a>
+      <a href="#pies">Pies</a>
+      <a href="#side-projects">The Archives</a>
       <a href="#employment">Employment</a>
       <a href="#contact">Contact</a>
-    </nav> -->
+    </nav>
 
     <section class="copy" id="intro">
-      <!-- @HIFI <div
+      <!-- <div
         class="placeholder"
         style="
           height: 500px;
@@ -342,8 +350,8 @@ max-width: 1800px;*/
           background-repeat: no-repeat;
         "
       ></div> -->
-      <!-- <img src="/assets/img/simple-jim.jpg" width="900" /> -->
-      <img src="/assets/img/drawing-signature.svg" width="550" />
+      <img src="/assets/img/simple-jim.jpg" width="900" />
+
       <h1>The personal, and I guess professional, website of Jim Nielsen</h1>
 
       <p>
@@ -389,21 +397,22 @@ max-width: 1800px;*/
         project, I’m proud of the people I’ve worked with and learned from.
       </p>
       <br />
-      <p>— Jim Nielsen (2021-03-19)</p>
+      <p><img src="/assets/img/drawing-signature.svg" width="200" /></p>
     </section>
 
     <section class="copy" id="writing">
-      <!-- @HIFI <div
+      <div
         class="placeholder"
         style="
-          background: #f5f5f5 url(/assets/img/cursor-5.gif) 50% no-repeat;
-          background-size: 223px;
+          background: #f5f5f5 url(/assets/img/cursor-6.gif) 52% no-repeat;
+          background-size: 360px;
           height: 500px;
+          max-width: 800px;
         "
-      ></div> -->
+      ></div>
       <!-- <img src="/assets/img/cursor-2.gif" width="900" /> -->
-      <img src="/assets/img/drawing-writing.svg" width="700" />
-      <h1>I’m Writing on <a href="https://blog.jim-nielsen.com">My Blog</a></h1>
+
+      <h1>I’m writing on <a href="https://blog.jim-nielsen.com">my blog</a></h1>
 
       <p>
         I write to seek clarity and improve my thinking – its QA for my thoughts
@@ -411,23 +420,21 @@ max-width: 1800px;*/
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
-      <p>
-        <span class="circle-sketch-highlight">Praise</span> from folks online:
-      </p>
+      <p>Folks say nice things about my writing:</p>
 
-      <ul class="quote-list" data-js-truncate="5">
+      <ul class="quote-list" data-js-truncate="4">
         {{#blogPostCitations}}
         <li><a href="{{url}}">{{name}}:</a> {{#quote}}“{{{.}}}”{{/quote}}</li>
         {{/blogPostCitations}}
       </ul>
 
-      <p>Latest posts from my blog:</p>
+      <p>Latest posts:</p>
 
       <ul data-js-truncate="3">
         {{#blogPosts}}
         <li>
           <a href="{{url}}">{{title}}</a>
-          ({{date_published}})
+          <time>({{date_published}})</time>
         </li>
         {{/blogPosts}}
         <li>
@@ -440,7 +447,7 @@ max-width: 1800px;*/
     {{! Icon Galleries ====================================================== }}
 
     <section class="copy" id="icon-galleries">
-      <!-- <ul id="icons">
+      <ul id="icons">
         {{#icons}}
         <li data-icon-type="{{type}}">
           <img
@@ -452,10 +459,10 @@ max-width: 1800px;*/
           />
         </li>
         {{/icons}}
-      </ul> -->
-      <img src="/assets/img/drawing-icon-galleries-big.svg" width="600" />
+      </ul>
+
       <h1>
-        I’m designing, developing, and curating for
+        I’m running
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
         <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries.
@@ -463,19 +470,18 @@ max-width: 1800px;*/
 
       <p>
         For over a decade, I’ve been designing, developing, and curating a
-        collection of icons from Apple’s ecosystem.
+        collection of icons from Apple’s ecosystem. And now I’m also working on
+        <a href="https://www.appiconbook.com/"
+          >a book with the talented Michael Flarup</a
+        >.
       </p>
 
-      <p>
-        <span class="circle-sketch-highlight">Praise</span> for my galleries:
-      </p>
+      <p>Folks say nice things about my galleries:</p>
 
-      <ul class="quote-list" data-js-truncate="3">
+      <ul class="quote-list" data-js-truncate="4">
         {{#tweets.iconGalleries}}
         <li>
-          <a href="https://twitter.com/user/status/{{id}}"
-            >{{author.name}} (@{{author.handle}}):</a
-          >
+          <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
           “{{content}}”
         </li>
         {{/tweets.iconGalleries}}
@@ -490,7 +496,7 @@ max-width: 1800px;*/
         {{#blogPostsByTag.iconGalleries}}
         <li>
           <a href="{{permalink}}">{{title}}</a>
-          ({{date_published}})
+          <time>({{date_published}})</time>
         </li>
         {{/blogPostsByTag.iconGalleries}}
         <li>
@@ -500,20 +506,12 @@ max-width: 1800px;*/
           >
         </li>
       </ul>
-
-      <p>
-        And I’m working on
-        <a href="https://www.appiconbook.com/"
-          >a book of icons with the talented Michael Flarup</a
-        >.
-      </p>
     </section>
 
     {{! Pies ================================================================ }}
 
     <section class="copy" id="pies">
-      <img src="/assets/img/drawing-pie.svg" width="400" />
-      <!-- <div class="copy-full-width" id="instagram">
+      <div class="copy-full-width" id="instagram">
         {{#instagram}}
         <a href="{{href}}">
           <img
@@ -525,9 +523,10 @@ max-width: 1800px;*/
           />
         </a>
         {{/instagram}}
-      </div> -->
+      </div>
+
       <h1>
-        I’m Making (& Eating) Pies as
+        I’m making (& eating) pies as
         <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
       </h1>
       <p>
@@ -557,9 +556,11 @@ max-width: 1800px;*/
 
     <section class="copy" id="dribbble">
       <img src="/assets/img/drawing-misc.svg" width="500" />
-      <h1>I Previously Worked on…</h1>
+      <h1>From the archives…</h1>
 
-      <h2>Shots on <a href="https://www.dribbble.com/jimniels">Dribbble</a></h2>
+      <h2>
+        <a href="https://www.dribbble.com/jimniels">Dribbble</a>
+      </h2>
       <p>
         I used to Dribbble, but I don’t do as much “production” design work
         anymore. However I still find my stuff from the past interesting, so I
@@ -581,14 +582,12 @@ max-width: 1800px;*/
         First built in 2012, this sprung out of the question: when I write
         <code>darken(#123456, 5%)</code> what does that look like?
       </p>
-      <p><span class="circle-sketch-highlight">Praise</span> for SassMe:</p>
+      <p>Praise for SassMe:</p>
 
       <ul class="quote-list" data-js-truncate="3">
         {{#tweets.sassme}}
         <li>
-          <a href="https://twitter.com/user/status/{{id}}"
-            >{{author.name}} (@{{author.handle}}):</a
-          >
+          <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
           “{{content}}”
         </li>
         {{/tweets.sassme}}
@@ -737,7 +736,8 @@ max-width: 1800px;*/
       <ul data-js-truncate="3">
         {{#publishings}}
         <li>
-          <a href="{{link}}">{{title}}</a><br />({{publisherDomain}}, {{date}})
+          <a href="{{link}}">{{title}}</a>
+          <time>({{publisherDomain}}, {{date}})</time>
         </li>
         {{/publishings}}
       </ul>
@@ -756,7 +756,7 @@ max-width: 1800px;*/
           />
         {{/employment}}
       </div>-->
-      <h1>I’ve been…</h1>
+      <h1>Employment</h1>
 
       <h2>
         Director of Design & UI Architecture @
@@ -876,11 +876,8 @@ max-width: 1800px;*/
     </section>
 
     <section class="copy">
-      <h1 id="contact">I’m Reachable Online <a href="#contact">🔗</a></h1>
-      <p>
-        Want to get in touch? I’d love to hear from you! You can reach out to me
-        on:
-      </p>
+      <h1 id="contact">Contact Me</h1>
+      <p>Seriously, I love hearing from folks! You can reach out to me on:</p>
       <ul>
         <li>
           Email: <a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a>
@@ -907,11 +904,11 @@ max-width: 1800px;*/
               $el.setAttribute("hidden", true);
             });
 
-            let $li = document.createElement("li");
-            $li.classList.add("show-more");
-            $li.innerHTML =
-              "<button class='link js-truncate-show-more'>Show more...</button>";
-            $el.appendChild($li);
+            // let $li = document.createElement("li");
+            // $li.classList.add("show-more");
+            // $li.innerHTML =
+            //   "<button class='link js-truncate-show-more'>Show more...</button>";
+            // $el.appendChild($li);
           }
         }
       );
