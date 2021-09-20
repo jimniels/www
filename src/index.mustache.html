@@ -41,6 +41,9 @@
           --color-black-hsl: 0, 0%, 95%;
         }
       }
+      body {
+        font-family: ui-serif;
+      }
       body > section {
         margin-bottom: calc(1.618rem * 4);
       }
@@ -50,7 +53,7 @@
         padding-bottom: calc(1.618rem * 4);
       }
       section > * {
-        max-width: 28rem;
+        max-width: 21rem;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -65,84 +68,84 @@
         }
       }
       /*
-      @media screen and (min-width: 1200px) {
-        section {
-          max-width: 1400px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        section > * {
-          max-width: 28rem;
-          margin-right: 2rem;
-        }
-        section > img {
-          max-width: 26rem;
-        }
-        section:nth-child(even) > * {
-          margin-left: 2rem;
-          margin-right: auto;
-        }
-        section:nth-child(even) > img {
-          left: auto;
-          right: 2rem;
-          width: 500px;
-        }
-        section > img {
-          position: absolute;
-          left: 2rem;
-          top: 0;
-        }
-      }*/
+            @media screen and (min-width: 1200px) {
+              section {
+                max-width: 1400px;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              section > * {
+                max-width: 28rem;
+                margin-right: 2rem;
+              }
+              section > img {
+                max-width: 26rem;
+              }
+              section:nth-child(even) > * {
+                margin-left: 2rem;
+                margin-right: auto;
+              }
+              section:nth-child(even) > img {
+                left: auto;
+                right: 2rem;
+                width: 500px;
+              }
+              section > img {
+                position: absolute;
+                left: 2rem;
+                top: 0;
+              }
+            }*/
 
       a {
         color: inherit;
       }
       h1 {
-        font-size: calc(55rem / var(--font-size-base));
+        /* font-size: calc(55rem / var(--font-size-base)); */
         line-height: 1.2;
       }
       h2 {
-        font-size: calc(32rem / var(--font-size-base));
+        /* font-size: calc(32rem / var(--font-size-base)); */
         line-height: 1.2;
         margin-top: calc(1.618rem * 2);
       }
 
       /*
-      body > section:before {
-        content: "";
-        width: 100%;
-        height: 500px;
-        max-width: 900px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50%;
-        display: block;
-        margin: 1.618rem auto;
-      }
-      #intro:before {
-        background-image: url(/assets/img/simple-jim.jpg);
-      }
-      #writing:before {
-        background-image: url(/assets/img/cursor-3.gif);
-        background-size: 400px;
-        background-color: #f5f5f5;
-      }
-      #icon-galleries:before,
-      #pies:before {
-        display: none;
-        
-      }*/
+            body > section:before {
+              content: "";
+              width: 100%;
+              height: 500px;
+              max-width: 900px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: 50%;
+              display: block;
+              margin: 1.618rem auto;
+            }
+            #intro:before {
+              background-image: url(/assets/img/simple-jim.jpg);
+            }
+            #writing:before {
+              background-image: url(/assets/img/cursor-3.gif);
+              background-size: 400px;
+              background-color: #f5f5f5;
+            }
+            #icon-galleries:before,
+            #pies:before {
+              display: none;
+
+            }*/
 
       /* @media screen and (min-width: 1400px) {
-        section > * {
-          margin-left: 100px;
-        }
-        body > section:before {
-          position: absolute;
-          right: 100px;
-         
-        }
-      } */
+              section > * {
+                margin-left: 100px;
+              }
+              body > section:before {
+                position: absolute;
+                right: 100px;
+
+              }
+            } */
 
       .employment-list dt {
         float: left;
@@ -196,8 +199,8 @@
         justify-content: center;
         overflow: scroll;
         /*display: flex;
-flex-wrap: wrap;
-max-width: 1800px;*/
+      flex-wrap: wrap;
+      max-width: 1800px;*/
       }
       #instagram a:hover {
         filter: none;
@@ -325,10 +328,59 @@ max-width: 1800px;*/
         font-size: 0.8rem;
         white-space: nowrap;
       }
+      h1 {
+        /* font-size: 1.6rem; */
+      }
+
+      time {
+        font-weight: 400;
+        opacity: 0.4;
+      }
+
+      #intro:before {
+        content: "";
+        width: 380px;
+        height: 293px;
+        background: url(/assets/img/drawing-signature.svg);
+        display: block;
+        background-size: cover;
+        margin: 1.618rem auto;
+      }
+      /*
+      #writing:before {
+        content: "";
+        width: 220px;
+        height: 207px;
+        background: url(/assets/img/drawing-writing-icon.svg);
+        display: block;
+        background-size: cover;
+        margin: 3.618rem auto;
+      }
+      
+
+      #icon-galleries:before {
+        content: "";
+        width: 380px;
+        height: 387px;
+        background: url(/assets/img/drawing-icon-galleries-big.svg);
+        display: block;
+        background-size: cover;
+        margin: 1.618rem auto;
+      }
+
+      #pies:before {
+        content: "";
+        width: 332px;
+        height: 367px;
+        background: url(/assets/img/drawing-pie.svg);
+        display: block;
+        background-size: contain;
+        margin: 1.618rem auto;
+      }*/
     </style>
   </head>
   <body class="wrapper">
-    <nav style="margin: 1rem auto; text-align: center; font-size: 0.8rem">
+    <!-- <nav style="margin: 1rem auto; text-align: center; font-size: 0.8rem">
       <span style="display: block">Jump to: </span>
       <a href="#writing">Writing</a>
       <a href="#icon-galleries">Icon Galleries</a>
@@ -336,7 +388,7 @@ max-width: 1800px;*/
       <a href="#side-projects">The Archives</a>
       <a href="#employment">Employment</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </nav> -->
 
     <section class="copy" id="intro">
       <!-- <div
@@ -350,7 +402,6 @@ max-width: 1800px;*/
           background-repeat: no-repeat;
         "
       ></div> -->
-      <img src="/assets/img/simple-jim.jpg" width="900" />
 
       <h1>The personal, and I guess professional, website of Jim Nielsen</h1>
 
@@ -397,22 +448,21 @@ max-width: 1800px;*/
         project, I’m proud of the people I’ve worked with and learned from.
       </p>
       <br />
-      <p><img src="/assets/img/drawing-signature.svg" width="200" /></p>
+      <p>— Jim Nielsen, 2021-09-19</p>
     </section>
 
     <section class="copy" id="writing">
-      <div
+      <!-- <div
         class="placeholder"
         style="
           background: #f5f5f5 url(/assets/img/cursor-6.gif) 52% no-repeat;
           background-size: 360px;
-          height: 500px;
-          max-width: 800px;
+          height: 350px;
         "
-      ></div>
+      ></div> -->
       <!-- <img src="/assets/img/cursor-2.gif" width="900" /> -->
 
-      <h1>I’m writing on <a href="https://blog.jim-nielsen.com">my blog</a></h1>
+      <h1><a href="https://blog.jim-nielsen.com/">Blogging</a></h1>
 
       <p>
         I write to seek clarity and improve my thinking – its QA for my thoughts
@@ -420,7 +470,7 @@ max-width: 1800px;*/
         <!-- I don’t know what I think I know until I can concisely articulate my thoughts to another person. -->
       </p>
 
-      <p>Folks say nice things about my writing:</p>
+      <p>Praise for my blog:</p>
 
       <ul class="quote-list" data-js-truncate="4">
         {{#blogPostCitations}}
@@ -447,7 +497,7 @@ max-width: 1800px;*/
     {{! Icon Galleries ====================================================== }}
 
     <section class="copy" id="icon-galleries">
-      <ul id="icons">
+      <!-- <ul id="icons">
         {{#icons}}
         <li data-icon-type="{{type}}">
           <img
@@ -459,26 +509,23 @@ max-width: 1800px;*/
           />
         </li>
         {{/icons}}
-      </ul>
+      </ul> -->
 
       <h1>
-        I’m running
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
-        <a href="https://www.watchosicongallery.com">watchOS</a> icon galleries.
+        <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
       </h1>
 
       <p>
         For over a decade, I’ve been designing, developing, and curating a
-        collection of icons from Apple’s ecosystem. And now I’m also working on
-        <a href="https://www.appiconbook.com/"
-          >a book with the talented Michael Flarup</a
-        >.
+        collection of icons from Apple’s ecosystems. I’m also collaborating on
+        <a href="https://www.appiconbook.com/">a book</a>.
       </p>
 
-      <p>Folks say nice things about my galleries:</p>
+      <p>Praise for my galleries:</p>
 
-      <ul class="quote-list" data-js-truncate="4">
+      <ul class="quote-list" data-js-truncate="3">
         {{#tweets.iconGalleries}}
         <li>
           <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
@@ -487,10 +534,7 @@ max-width: 1800px;*/
         {{/tweets.iconGalleries}}
       </ul>
 
-      <p>
-        Recent posts detailing how I design, engineer, and curate these
-        galleries myself:
-      </p>
+      <p>Recent behind-the-scenes blog posts:</p>
 
       <ul data-js-truncate="3">
         {{#blogPostsByTag.iconGalleries}}
@@ -511,7 +555,7 @@ max-width: 1800px;*/
     {{! Pies ================================================================ }}
 
     <section class="copy" id="pies">
-      <div class="copy-full-width" id="instagram">
+      <!-- <div class="copy-full-width" id="instagram">
         {{#instagram}}
         <a href="{{href}}">
           <img
@@ -523,10 +567,9 @@ max-width: 1800px;*/
           />
         </a>
         {{/instagram}}
-      </div>
+      </div> -->
 
       <h1>
-        I’m making (& eating) pies as
         <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
       </h1>
       <p>
@@ -550,13 +593,197 @@ max-width: 1800px;*/
         just as much driven by a desire to <em>make</em> good pie. Making is now
         half the fun!
       </p>
+      <p></p>
+    </section>
+
+    <section class="copy">
+      <!-- <video width="900" autoplay loop muted style="max-width: 100%">
+        <source src="/assets/video/sassme.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video> -->
+      <!-- <iframe
+        src="https://sassme.jim-nielsen.com"
+        width="900"
+        height="600"
+        style="max-width: 100%"
+      ></iframe> -->
+
+      <h1>
+        <a href="https://sassme.jim-nielsen.com">SassMe</a>
+        <small><time>(2021)</time></small>
+      </h1>
+
+      <p>
+        Visualize Sass color functions in real-time with, no compilation
+        necessary. First built in 2012, this sprung out of the question: when I
+        write
+        <code>darken(#123456, 5%)</code> what does that look like?
+      </p>
+      <p>Praise for SassMe:</p>
+
+      <ul class="quote-list" data-js-truncate="3">
+        {{#tweets.sassme}}
+        <li>
+          <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
+          “{{content}}”
+        </li>
+        {{/tweets.sassme}}
+      </ul>
+
+      <p>Blog posts:</p>
+      <ul>
+        <li>
+          <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">SassMe v2.0</a>
+          <time>(2016-09-27)</time>
+        </li>
+      </ul>
+    </section>
+
+    <section class="copy" id="pies">
+      <!-- <div
+        class="copy-full-width"
+        style="
+          background-color: rgb(63, 56, 43);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 900px;
+          height: 500px;
+          max-width: 100%;
+        "
+      >
+        <img src="/assets/img/can-i-still-use.png" width="417" height="447" />
+      </div> -->
+
+      <h1>
+        <a href="https://www.canistilluse.com">canistilluse.com</a>
+        <small><time>(2021)</time></small>
+      </h1>
+      <p>
+        Growing up, my Mom made pies. At the time, I didn’t know they were
+        <em>the best</em> pies. As I grew into my teenage years, I noticed I
+        didn’t enjoy pies from a restaurant or store like the other kids. Those
+        weren’t real pies.
+      </p>
+      <p>Praise:</p>
+      <ul>
+        <li>
+          <a href="#">Jeremy Keith</a>: “It’s weirdly gratifying to see a
+          hastily-written sarcastic quip tuned into something real.”
+        </li>
+      </ul>
+      <p>Blog posts:</p>
+      <ul>
+        <li>
+          <a href="https://blog.jim-nielsen.com/2021/canistilluse.com/"
+            >canistilluse.com</a
+          >
+          <time>(2021-08-16)</time>
+        </li>
+      </ul>
+    </section>
+
+    <section class="copy" id="pies">
+      <h1>
+        <a href="https://teamcolors.jim-nielsen.com">Team Colors</a>
+        <small><time>(2015)</time></small>
+      </h1>
+      <p>
+        Growing up, my Mom made pies. At the time, I didn’t know they were
+        <em>the best</em> pies. As I grew into my teenage years, I noticed I
+        didn’t enjoy pies from a restaurant or store like the other kids. Those
+        weren’t real pies.
+      </p>
+      <ul>
+        <li>
+          <a href="#">Jeremy Keith</a>: “It’s weirdly gratifying to see a
+          hastily-written sarcastic quip tuned into something real.”
+        </li>
+      </ul>
+    </section>
+
+    <section class="copy" id="pies">
+      <h1>
+        Published Articles <small><time>(2012–2018)</time></small>
+      </h1>
+
+      <p>
+        I used to write for others’ blogs more frequently, but now I like to be
+        my own publisher. I keep these for archival purposes.
+      </p>
+
+      <ul data-js-truncate="7">
+        {{#publishings}}
+        <li>
+          <a href="{{link}}">{{title}}</a>
+          <time>({{publisherDomain}}, {{date}})</time>
+        </li>
+        {{/publishings}}
+        <li>See more...</li>
+      </ul>
     </section>
 
     {{! Misc. ============================================================ }}
 
     <section class="copy" id="dribbble">
       <img src="/assets/img/drawing-misc.svg" width="500" />
-      <h1>From the archives…</h1>
+      <h1>The Archives</h1>
+
+      <ul>
+        <li>
+          <strong><a href="#">canistilluse.com</a></strong> please never have to
+          use this site ever in our lives.
+        </li>
+        <li>
+          <strong
+            ><a href="https://www.dribbble.com/jimniels">Dribbble</a></strong
+          >: I used to Dribbble, but I don’t do as much “production” design work
+          anymore.
+        </li>
+        <li>
+          <strong><a href="https://sassme.jim-nielsen.com">SassMe</a></strong
+          >: visualize Sass color functions in real-time with, no compilation
+          necessary.
+
+          <ul data-js-truncate="3">
+            {{#tweets.sassme}}
+            <li>
+              <a href="https://twitter.com/user/status/{{id}}"
+                >{{author.name}}:</a
+              >
+              “{{content}}”
+            </li>
+            {{/tweets.sassme}}
+          </ul>
+        </li>
+        <li>
+          <strong>
+            <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>:
+          </strong>
+          How far out of focus can an logo become and still be recognized?
+        </li>
+        <li>
+          <strong>
+            <a href="https://teamcolors.jim-nielsen.com">Team Colors</a>
+          </strong>
+          color codes for professional sports teams
+        </li>
+        <li>
+          <strong>Published Articles</strong>
+
+          I used to write for others’ blogs more frequently, but now I like to
+          be my own publisher. I keep these for archival purposes.
+
+          <ul data-js-truncate="3">
+            {{#publishings}}
+            <li>
+              <a href="{{link}}">{{title}}</a>
+              <time>({{publisherDomain}}, {{date}})</time>
+            </li>
+            {{/publishings}}
+          </ul>
+        </li>
+      </ul>
 
       <h2>
         <a href="https://www.dribbble.com/jimniels">Dribbble</a>
@@ -884,6 +1111,7 @@ max-width: 1800px;*/
         </li>
         <li>Twitter: <a href="https://twitter.com/jimniels">@jimniels</a></li>
         <li>Github: <a href="https://github.com/jimniels">@jimniels</a></li>
+        <li>Dribbble: <a href="https://dribbble.com/jimniels">@jimniels</a></li>
         <li>
           LinkedIn:
           <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here</a>

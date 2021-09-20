@@ -50,11 +50,6 @@ iconGalleries:
     author:
       handle: brian_lovin
       name: Brian Lovin
-  - id: "369583698229723138"
-    content: "Mac Icon Gallery…and iOS Icon Gallery…are indeed nice showcases. Nice initiative by @jimniels."
-    author:
-      handle: "dresouzax"
-      name: "Andre Souza"
   - id: "219856804987928576"
     content: "Not a fan of showcases, but iOS icon gallery looks great"
     author:
@@ -65,6 +60,11 @@ iconGalleries:
     author:
       handle: "flarup"
       name: "Michael Flarup"
+  - id: "369583698229723138"
+    content: "Mac Icon Gallery…and iOS Icon Gallery…are indeed nice showcases. Nice initiative by @jimniels."
+    author:
+      handle: "dresouzax"
+      name: "Andre Souza"
   - id: "974951481500733440"
     content: "iOS icon gallery is a great place to find inspiration for app icons."
     author:
