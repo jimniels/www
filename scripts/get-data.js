@@ -28,7 +28,7 @@ export async function getData() {
         .readFileSync(join(__dirname, "../static/assets/img/drawing-self.svg"))
         .toString(),
     },
-    css: fs.readFileSync(join(__dirname, "../static/index.css")).toString(),
+    css: fs.readFileSync(join(__dirname, "../src/simple.css")).toString(),
     /**
      * In (from cached API response):
      * [
