@@ -8,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     {{! @TODO meta tags for og:, twitter, etc. }}
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/modern-normalize@1.0.0/modern-normalize.css"
-    />
 
     <!-- Inline our CSS -->
     <style>
@@ -19,7 +15,7 @@
     </style>
   </head>
   <body class="wrapper">
-    <p
+    <!-- <p
       style="
         font-size: 0.8rem;
         opacity: 0.45;
@@ -30,16 +26,16 @@
     >
       The following has been optimized for you, dear reader with little time on
       your hands.
-    </p>
+    </p> -->
     <section id="intro">
-      <h1>Nobody Ever Got Fired for Hiring Jim Nielsen</h1>
-      <h2>In fact, the opposite: they got promoted</h2>
-      <h2>So stop where you are—no need to look further</h2>
+      <h1>
+        Stop where you are, no need to look further.<br /><br />
+        Nobody ever got fired hiring Jim Nielsen.<br /><br />They got promoted.
+      </h1>
 
       <p>
-        <em>Who are you?</em> Well, I try to not define myself by my profession
-        or website (and yet here we are). Reductively? I’m a designer who codes
-        and does product thinking—in that order.
+        <em>Who are you?</em> I’m trying not to define myself by my profession
+        or website — and yet here we are. Reductively: I’m a designer who codes.
 
         <!-- I’m trying not to define who am I by my profession—and yet here we are. ~~I am a designer…~~ I do design. I do development, and product thinking. -->
       </p>
@@ -201,13 +197,6 @@
         <li>
           <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">SassMe v2.0</a>
           <time>(2016-09-27)</time>
-        </li>
-        <li>
-          <a
-            href="https://web.archive.org/web/20121023142714/http://lab.arc90.com/2012/09/18/sassme/"
-            >Original Introductory Blog Post on arc90.com</a
-          >
-          <time>(2012-09-18)</time>
         </li>
       </ul>
     </section>
@@ -485,11 +474,11 @@
               $el.setAttribute("hidden", true);
             });
 
-            // let $li = document.createElement("li");
-            // $li.classList.add("show-more");
-            // $li.innerHTML =
-            //   "<button class='link js-truncate-show-more'>Show more...</button>";
-            // $el.appendChild($li);
+            let $li = document.createElement("li");
+            $li.classList.add("show-more");
+            $li.innerHTML =
+              "<button class='link js-truncate-show-more'>More…</button>";
+            $el.appendChild($li);
           }
         }
       );
