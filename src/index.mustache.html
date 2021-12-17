@@ -27,7 +27,9 @@
       The following has been optimized for you, dear reader with little time on
       your hands.
     </p> -->
+
     <section id="intro">
+      {{{svgs.intro}}}
       <h1>Nobody ever got fired for hiring Jim Nielsen—they got promoted.</h1>
 
       <p>
@@ -50,7 +52,7 @@
         I’ll respond:
       </p>
 
-      <ul style="column-count: 2">
+      <ul class="list-condensed">
         <li>
           <a href="mailto:jimniels@gmail.com">Email</a>
         </li>
@@ -58,17 +60,22 @@
         <li><a href="https://github.com/jimniels">GitHub</a></li>
         <li><a href="https://dribbble.com/jimniels">Dribbble</a></li>
         <li>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">LinkedIn</a>
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            title="I once heard someone say<%  %> , “people who are good at what they do don’t have a LinkedIn”."
+            >LinkedIn</a
+          >
         </li>
       </ul>
-
-      <p>— Jim Nielsen <time>(2021-12-16)</time></p>
     </section>
 
+    <hr />
+
     <section id="blog">
-      <time>2012-Now</time>
+      {{{svgs.blog}}}
       <h1>
-        I’m writing on <a href="https://blog.jim-nielsen.com/">my blog</a>
+        <a href="https://blog.jim-nielsen.com/">My blog</a>
+        <time>(2012–Now)</time>
       </h1>
 
       <p>
@@ -76,7 +83,7 @@
         before going to prod as words out of my mouth.
       </p>
 
-      <p>Praise:</p>
+      <p>People are saying:</p>
 
       <ul class="citations">
         {{#blogPostCitations}}
@@ -86,7 +93,7 @@
 
       <p>Latest posts:</p>
 
-      <ul class="list">
+      <ul>
         {{#blogPosts}}
         <li>
           <a href="{{url}}">{{title}}</a>
@@ -96,24 +103,22 @@
       </ul>
     </section>
 
-    {{! Icon Galleries ====================================================== }}
-
     <section id="icon-galleries">
-      <time>2010–Now</time>
+      {{{svgs.icon-galleries}}}
       <h1>
-        I’m running
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
         <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
+        <time>(2010–Now)</time>
       </h1>
 
       <p>
         For over a decade, I’ve been designing, developing, and curating a
-        gallery of beautiful app icon designs. I’ve done it so long, I’m helping
-        write <a href="https://www.appiconbook.com/">the book</a> on it.
+        gallery of beautiful app icon designs from Apple’s ecosystem. I’ve done
+        it so long, I’m helping write <a href="#appiconbook">the book</a> on it.
       </p>
 
-      <p>Praise:</p>
+      <p>People are saying:</p>
 
       <ul class="citations">
         {{#tweets.iconGalleries}}
@@ -136,35 +141,108 @@
       </ul>
     </section>
 
-    {{! Pies ================================================================ }}
+    <section id="appiconbook">
+      {{{svgs.appiconbook}}}
+      <h1>
+        <a href="https://www.appiconbook.com/">The App Icon Book</a>
+        <time>(2018–Now)</time>
+      </h1>
+
+      <p>
+        Drawing from my years of experience
+        <a href="#icon-galleries">curating app icons</a>, I helped make this
+        beautiful hardcover book celebrating the history and art of iOS app icon
+        design.
+      </p>
+      <p>
+        Made with the iconist
+        <a href="https://twitter.com/flarup">Michael Flarup</a> and initially
+        <a
+          href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
+          >funded 1,364% on Kickstarter</a
+        >.
+      </p>
+
+      <p>People are saying:</p>
+
+      <ul class="citations">
+        <li>
+          <a
+            href="https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book"
+            >John Gruber via Daring Fireball</a
+          >: “Take my money — I can’t wait to devour this book. It looks so
+          good.”
+        </li>
+        <li>
+          <a href="https://twitter.com/khoi/status/1458457639067734020?s=20"
+            >Khoi Vinh</a
+          >: “[The App Icon Book] looks amazing.”
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/themikestern/status/1458085983203872776?s=21"
+            >Mike Stern</a
+          >: “I’m looking forward to getting a copy”
+        </li>
+        <li>
+          <a href="https://sixcolors.com/link/2021/11/the-ios-app-icon-book/"
+            >Jason Snell via sixcolors</a
+          >: “It looks to be a gorgeous art book/coffee table book that
+          preserves the history of iOS app icon art.”
+        </li>
+        <li>
+          <a
+            href="https://www.macstories.net/linked/michael-flarup-announces-the-ios-app-icon-book/"
+            >John Voorhees via macstories</a
+          >: “I’ve been following…progress on The iOS App Icon Book since its
+          earliest stages, and I’m excited”
+        </li>
+      </ul>
+
+      <p>Latest writeups:</p>
+
+      <ul class="list">
+        {{#blogPostsByTag.iconGalleriesBook}}
+        <li>
+          <a href="{{permalink}}">{{title}}</a>
+          <time>({{date_published}})</time>
+        </li>
+        {{/blogPostsByTag.iconGalleriesBook}}
+      </ul>
+    </section>
 
     <section id="pies">
-      <time>2017–Now</time>
+      {{{svgs.pies}}}
       <h1>
-        I’m baking pies as
-        <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
+        <a href="https://instagram.com/flyingjpies">Pies</a>
+        <time>(2017–Now)</time>
       </h1>
       <p>I love a good pie.</p>
       <p>
         And like anything you care about deeply, to a level others might deem
         absurd, “if you want it done right, you’ve got to it yourself.”
       </p>
-      <p>This is my pie documentation.</p>
+      <p>
+        I make them under the pseudonym
+        <a href="https://instagram.com/flyingjpies">@flyingjpies</a>, which is
+        its own story. Ask me sometime.
+      </p>
     </section>
 
     <hr data-title="The archives" />
 
     <section id="canistilluse">
-      <time>2021</time>
+      {{{svgs.canistilluse}}}
       <h1>
         <a href="https://www.canistilluse.com">canistilluse.com</a>
+        <time>(2021)</time>
       </h1>
       <p>
         A satirical website made to illustrate the problems of a world where
         habitul breakage on the web platform becomes accepted as the price of
         progress.
       </p>
-      <p>Praise:</p>
+      <p>People are saying:</p>
       <ul>
         <li>
           <a href="https://adactio.com/links/18383">Jeremy Keith</a>: “It’s
@@ -187,15 +265,15 @@
     </section>
 
     <section id="sassme">
-      <time>2012</time>
+      {{{svgs.sassme}}}
       <h1>
-        <a href="https://sassme.jim-nielsen.com">SassMe</a>
+        <a href="https://sassme.jim-nielsen.com">SassMe</a> <time>(2012)</time>
       </h1>
       <p>
         A tool to visualize Sass color functions in real-time, no compilation
         required.
       </p>
-      <p>Praise:</p>
+      <p>People are saying:</p>
       <ul class="citations">
         {{#tweets.sassme}}
         <li>
@@ -213,16 +291,40 @@
       </ul>
     </section>
 
+    <section id="readlist">
+      {{{svgs.readlists}}}
+      <h1>
+        <a href="https://readlists.jim-nielsen.com">Readlists</a>
+        <time>(2021)</time>
+      </h1>
+      <p>
+        My own personal itch to scratch: stealing the idea behind the now
+        defunct but once incredibly useful service Readlists. All design and
+        development, bugs and features, credit and blame can go directly to me.
+      </p>
+
+      <p>Writeup:</p>
+      <ul>
+        <li>
+          <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
+            >(Re)Introducing Readlists</a
+          >
+          <time>(2021-05-10)</time>
+        </li>
+      </ul>
+    </section>
+
     <section id="teamcolors">
-      <time>2015</time>
+      {{{svgs.teamcolors}}}
       <h1>
         <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
+        <time>(2015)</time>
       </h1>
       <p>
         Imagining and building a color reference for favorite major league
         sports teams.
       </p>
-      <p>Praise:</p>
+      <p>People are saying:</p>
       <ul class="citations">
         {{#tweets.teamcolors}}
         <li>
@@ -249,13 +351,13 @@
     </section>
 
     <section id="published-articles">
-      <time>2018–2012</time>
-      <h1>Published Articles</h1>
+      {{{svgs.published-articles}}}
+      <h1>Published Articles <time>(2012–2018)</time></h1>
       <p>
         I used to write for others’ blogs more frequently, but now I like to be
         my own publisher. I keep these for archival purposes.
       </p>
-      <ul data-js-truncate="5">
+      <ul data-js-truncate="8">
         {{#publishings}}
         <li>
           <a href="{{link}}">{{title}}</a>
@@ -265,9 +367,12 @@
       </ul>
     </section>
 
-    <section>
+    <section id="logo-integrity">
+      {{{svgs.logo-integrity}}}
+
       <h1>
         <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
+        <time>(2014)</time>
       </h1>
       <p>
         In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an
@@ -275,39 +380,56 @@
         contemporary logos to a form of visual stress and see how well people
         still recognized them.
       </p>
-      <p>Read more about this project:</p>
+      <p>Writeups:</p>
 
       <ul>
         <li>
           <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
             >Introductory blog post</a
           >
+          <time>(2014-09-02)</time>
         </li>
         <li>
           <a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
-            >When it hit 20,000+ views from designer news</a
+            >My Little Cabin in the Woods of Logo Integrity</a
           >
+          <time>(2018-08-09)</time>
         </li>
       </ul>
     </section>
 
+    <section id="gimmiedaticon">
+      {{{svgs.gimmiedaticon}}}
+      <h1>
+        <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
+        <time>(2015)</time>
+      </h1>
+      <p>
+        Retrieve full-sized icon artwork for any app in the App Store, based on
+        a tutorial published for Web Design Tuts+.
+      </p>
+      <p>Writeup:</p>
+      <ul>
+        <li>
+          <a
+            href="https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866"
+            >Building a Mini, API-Driven Web App</a
+          >
+          <time>(webdesign.tutsplus.com, 2015-08)</time>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
     <section id="employment">
-      <!-- photos of people from these places 
-      <div id="instagram">
-        {{#employment}}
-          <img
-            src="/assets/img/employment/employment-{{.}}.jpg"
-            alt="Photo of work"
-            width="300"
-            height="300"
-            loading="lazy"
-          />
-        {{/employment}}
-      </div>-->
+      {{{svgs.employment}}}
       <h1>Employment</h1>
 
       <p>
-        <em>Anything else to say?</em> I’ve worked with some
+        More than any job title, project, or company, I’m proud of the
+        <em>people</em>
+        with whom I’ve worked—
         <a href="https://twitter.com/jenniferdary" title="Jen">inpsiring</a>,
         <a href="https://about.me/timmeaney" title="Tim">charismatic</a>,
         <a href="https://ashby.io" title="Ashby">curious</a>,
@@ -319,130 +441,70 @@
         <a href="https://github.com/bowmanb" title="B-bow">amiable</a>,
         <a href="https://github.com/damassi" title="chrispy">selfless</a>,
         <a href="https://www.benbailes.net" title="Ben">humane</a>,
+        <a href="https://twitter.com/darrenhoyt" title="Darren">honest</a>,
         <a href="https://mayamashkovich.com" title="Maya">delightful</a>, and
-        <a href="https://tylergaw.com" title="the gaw">sincere</a> people. And I
-        didn’t use the word “talented” because they all are! More than any
-        project, I’m proud of the people I’ve worked with and learned from.
+        <a href="https://tylergaw.com" title="the gaw">sincere</a> people.
       </p>
-
-      <h2>
-        Director of Design,
-        <a href="https://www.sagesure.com">SageSure</a>
-        <time>2016-Present</time>
-      </h2>
-      <dl class="employment-list">
-        <dt>Hats:</dt>
-        <dd>Design, front-end, product, leadership.</dd>
-        <dt>Fun fact:</dt>
-        <dd>Voted best PR writer by teammates.</dd>
-        <dt>Key writeup:</dt>
-        <dd>
-          <a
-            href="https://blog.jim-nielsen.com/2020/perception-and-balancing-idealism-with-pragmatism/"
-            >Perception and Balancing Idealism with Pragmatism</a
-          >
-        </dd>
-        <dt>Other writeups:</dt>
-        <dd>
-          Posts tagged
-          <a href="https://blog.jim-nielsen.com/tags/#insight">#insight</a>.
-        </dd>
-      </dl>
 
       <p>
-        I really should write more, but honestly I’m too busy.
-        <a href="#contact">Hit me up</a> if you want to know more.
+        As for <em>places</em> I’ve worked, here are a few (with links to their
+        respective writeups):
       </p>
 
-      {{! Timshel =========================================================== }}
-      <h2>UI Engineer, Timshel <time>2016</time></h2>
-      <dl class="employment-list">
-        <dt>Summary:</dt>
-        <dd>
-          Worked on the front-end team doing product design & engineering for a
-          number of web applicaitons and services.
-        </dd>
-        <dt>Employed:</dt>
-        <dd>2016 (remote).</dd>
-        <dt>Hats:</dt>
-        <dd>Design, front-end, product.</dd>
-        <dt>Tools:</dt>
-        <dd>
-          Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux,
-          Bootstrap, Material UI, Git.
-        </dd>
-        <dt>Fun fact:</dt>
-        <dd>
-          Upon leaving, a co-worker complimented me with: “Gonna be a real
-          bummer here w/o you. You bring a lot of great design, and a lot of
-          not-being-an-asshole-ness.”
-        </dd>
-        <dt>Key writeup:</dt>
-        <dd>
-          <a
-            href="https://blog.jim-nielsen.com/2017/designing-and-engineering-event-management-at-timshel/"
-            >Designing and Engineering Event Management for Timshel’s “Admin”
-            Web Application</a
-          >
-        </dd>
-        <dt>Other writeups:</dt>
-        <dd>
-          {{blogPostsByTag.postlight.length}} posts tagged<a
-            href="https://blog.jim-nielsen.com/tags/#timshel"
-            >#timshel</a
-          >.
-        </dd>
-      </dl>
-
-      <h2>
-        Designer & Front-end Developer,
-        <a href="https://postlight.com">Postlight</a> <time>2016</time>
-      </h2>
-
-      <dl class="employment-list">
-        <dt>Employed:</dt>
-        <dd>Remote, Freelance</dd>
-        <dt>Hats worn:</dt>
-        <dd></dd>
-        <dt>Tools used:</dt>
-        <dd></dd>
-        <dt>Other notes:</dt>
-        <dd></dd>
-        <dt>1 writeup to read:</dt>
-        <dd><a href=""></a></dd>
-        <dt>Other writeups:</dt>
-      </dl>
-      <p>
-        Succeeded in consulting, designing, and building internal web
-        applications (on tight deadlines) for one of Postlight’s biggest
-        clients: Time Inc. Project: Assignment Desk Part one in a series of
-        internal web applications for Time Inc. Handled sketching, wireframeing,
-        and mocking the UI/UX of the application while simultaneously
-        engineering the view layer. Digital Content Production Designed and
-        built based on the Assignment Desk application framework. Handled
-        everything from UI/UX to product management to front-end development.
-        Git.
-      </p>
-
-      <p>Writeups from my time:</p>
-      <ul data-js-truncate="3">
-        {{#blogPostsByTag.postlight}}
+      <ul>
         <li>
-          <a href="{{url}}"> {{title}} </a>
-          <time class="small"> {{date_published}} </time>
+          Director of Design,
+          <a href="https://blog.jim-nielsen.com/tags#sagesure">SageSure</a>
+          <time>(2016–Now, Remote)</time>
         </li>
-        {{/blogPostsByTag.postlight}}
+        <li>
+          UI Engineer,
+          <a href="https://blog.jim-nielsen.com/tags#timshel">Timshel</a>
+          <time>(2016, Remote)</time>
+        </li>
+        <li>
+          Designer & Front-end Engineer,
+          <a href="https://blog.jim-nielsen.com/tags#postlight">Postlight</a>
+          <time>(2016, Remote)</time>
+        </li>
+        <li>
+          Lead Designer,
+          <a href="https://blog.jim-nielsen.com/tags#kindling">Kindling</a>
+          <time>(2012–2016, Remote)</time>
+        </li>
+        <li>
+          Web Designer,
+          <a href="https://blog.jim-nielsen.com/tags#arc90">Arc90</a>
+          <time>(2012, Remote)</time>
+        </li>
       </ul>
+      <p>
+        You know you want it, a keyword dump of tools and technologies. These
+        are the ones I love to work with:
+      </p>
 
-      <h2>Tools & Technologies keywords:</h2>
-      <p>
-        Because sometimes you just want to know what tools and technologies
-        people have experience with.
-      </p>
-      <p>
-        Figma, Sketch, Invision, Photoshop, Illustrator, InDesign, HTML, CSS,
-        Sass, JS, React, Bootstrap, Keynote, Outlook, and more.
-      </p>
+      <ul class="list-condensed list-condensed--cols">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Figma</li>
+        <li>Sketch</li>
+        <li>Photoshop</li>
+        <li>InDesign</li>
+        <li>Sass</li>
+        <li>CSS Modules</li>
+        <li>jQuery</li>
+        <li>Mustache</li>
+        <li>Node.js</li>
+        <li>Deno</li>
+        <li>React</li>
+        <li>Preact</li>
+        <li>Redux</li>
+        <li>Astro</li>
+        <li>Metalsmith</li>
+        <li>Git</li>
+        <li>Prettier</li>
+      </ul>
     </section>
 
     <script>

@@ -1,9 +1,11 @@
-html {
-  --color-black: #222222;
-  --color-black-hsl: 0, 0%, 13%;
-  --color-white: #f0f0f0;
-  --color-white-hsl: 0, 0%, 95%;
-  --font-size-base: 20;
+/* =============================================================================
+   General
+   ========================================================================== */
+
+:root {
+  --color-text: #222222;
+  --color-bg: #f0f0f0;
+
   --spacer-8: 0.5rem;
   --spacer-12: 0.75rem;
   --spacer-16: 1rem;
@@ -11,69 +13,45 @@ html {
   --spacer-32: 2rem;
   --spacer-48: 3rem;
   --spacer-64: 4rem;
-  -webkit-font-smoothing: antialiased;
-  background: var(--color-white);
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color-scheme: light dark;
 }
+
 @media (prefers-color-scheme: dark) {
-  html {
-    --color-white: #222222;
-    --color-white-hsl: 0, 0%, 13%;
-    --color-black: #f2f2f2;
-    --color-black-hsl: 0, 0%, 95%;
+  :root {
+    --color-text: #f2f2f2;
+    --color-bg: #222222;
   }
 }
 
-body {
-  font-family: ui-serif, Georgia, sans-serif;
+html {
+  background: var(--color-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: var(--color-text);
+  scroll-behavior: smooth;
 }
 
-section {
-  position: relative;
-  padding-bottom: calc(1.618rem * 4);
+body {
+  font-family: ui-serif, Palatino, Georgia, serif;
+  margin: 0 var(--spacer-16);
 }
-section {
-  max-width: 20rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+
+@supports (font-family: ui-serif) {
+  body {
+    /* -webkit-font-smoothing: antialiased; */
+  }
 }
 
 a {
   color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
-h1,
-h2 {
-  line-height: 1.2;
-  font-weight: 600;
-}
-h1 {
-  font-size: 1.65rem;
-  line-height: 1.2;
-  margin: var(--spacer-8) 0;
-}
-h2 {
-  font-size: 1rem;
-  line-height: 1.2;
+a:hover {
+  border-bottom-width: 2px;
 }
 
-.quote-list {
-  list-style-type: none;
-  padding-left: 1.1rem;
-}
-.quote-list li {
-  border-left: 1px solid;
-  margin-left: 0;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-.quote-list li.show-more {
-  border-left-color: transparent;
-}
 button {
   background: transparent;
   border: none;
@@ -83,58 +61,11 @@ button {
   padding: 0.125rem 0.325rem 0;
 }
 
-section {
-  padding-top: 150px;
-  margin-top: 100px;
-  position: relative;
-}
-section:before {
-  content: "";
-  width: 200px;
-  height: 200px;
-  display: block;
-  position: absolute;
-  top: -50px;
-  left: -100px;
-}
-#intro > :last-child {
-  margin-top: var(--spacer-32);
-}
-#intro:before {
-  background: url(/assets/img/sq-intro.svg);
-}
-#blog:before {
-  background: url(/assets/img/sq-blog.svg);
-}
-#icon-galleries:before {
-  background: url(/assets/img/sq-icon-galleries.svg);
-}
-#pies:before {
-  background: url(/assets/img/sq-pies.svg);
-}
-#sassme:before {
-  background: url(/assets/img/sq-sassme.svg);
-}
-#canistilluse:before {
-  background: url(/assets/img/sq-canistilluse.svg);
-}
-#teamcolors:before {
-  background: url(/assets/img/sq-teamcolors.svg);
-}
-#published-articles:before {
-  background: url(/assets/img/sq-published-articles.svg);
-}
-
-.citations {
-  list-style-type: none;
-  padding-left: var(--spacer-8);
-}
-.citations li {
-  border-left: 1px solid;
-  padding-left: var(--spacer-16);
-}
-.citations li:not(:last-child) {
-  margin-bottom: var(--spacer-8);
+time {
+  font-size: 0.8rem; /* 16 */
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0.5;
 }
 
 ul {
@@ -146,8 +77,94 @@ ul li:not(:last-child) {
   margin-bottom: var(--spacer-8);
 }
 
-time {
-  font-size: 0.8rem; /* 16 */
-  white-space: nowrap;
-  opacity: 0.5;
+h1,
+h2 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  margin: var(--spacer-8) 0;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid;
+  opacity: 0.1;
+  margin-bottom: var(--spacer-64);
+}
+/* hr:before {
+  content: attr(data-title);
+} */
+
+/* =============================================================================
+   Sections
+   ========================================================================== */
+
+section {
+  position: relative;
+  padding-bottom: calc(1.618rem * 4);
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+section svg {
+  margin-left: -50px;
+}
+
+@media screen and (min-width: 550px) {
+  section svg {
+    margin-left: -100px;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  section svg [fill="black"] {
+    fill: var(--color-text);
+    opacity: 0.75;
+  }
+  section svg [fill="#E9E9E9"] {
+    fill: #333;
+    opacity: 0.5;
+  }
+}
+
+section > time {
+  display: block;
+}
+
+/* =============================================================================
+   Components
+   ========================================================================== */
+
+.citations {
+  list-style-type: none;
+  padding-left: var(--spacer-8);
+}
+
+.citations li {
+  border-left: 1px solid;
+  padding-left: var(--spacer-16);
+}
+
+.citations li:not(:last-child) {
+  margin-bottom: var(--spacer-8);
+}
+
+ul.list-condensed.list-condensed--cols {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+ul.list-condensed li {
+  margin-bottom: 0;
 }

@@ -23,11 +23,14 @@ getData()
   });
 export async function getData() {
   return {
-    svgs: {
-      self: fs
-        .readFileSync(join(__dirname, "../static/assets/img/drawing-self.svg"))
-        .toString(),
-    },
+    svgs: fs
+      .readdirSync(join(__dirname, "../src/images"))
+      .reduce((acc, file) => {
+        acc[file.replace(".svg", "")] = fs
+          .readFileSync(join(__dirname, "../src/images", file))
+          .toString();
+        return acc;
+      }, {}),
     css: fs.readFileSync(join(__dirname, "../src/simple.css")).toString(),
     /**
      * In (from cached API response):
