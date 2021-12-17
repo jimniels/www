@@ -100,7 +100,7 @@ export async function getData() {
             date_published: item.date_published.slice(0, 10),
           }))
         );
-      return data;
+      return data.slice(0, 3);
     })(),
     blogPostsByTag: await (async () => {
       const data = await fetch(
@@ -118,9 +118,9 @@ export async function getData() {
             if (post.tags && post.tags.length) {
               post.tags.forEach((tag) => {
                 if (acc[tag]) {
-                  // if (acc[tag].length < 3) {
-                  acc[tag].push(post);
-                  // }
+                  if (acc[tag].length < 3) {
+                    acc[tag].push(post);
+                  }
                 } else {
                   acc[tag] = [post];
                 }
@@ -135,7 +135,7 @@ export async function getData() {
     })(),
     blogPostCitations: YAML.load(
       join(__dirname, "../src/data/blog-post-citations.yml")
-    ),
+    ).slice(0, 4),
     /**
      * Icons
      * [

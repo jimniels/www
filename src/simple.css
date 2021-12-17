@@ -4,9 +4,17 @@ html {
   --color-white: #f0f0f0;
   --color-white-hsl: 0, 0%, 95%;
   --font-size-base: 20;
+  --spacer-8: 0.5rem;
+  --spacer-12: 0.75rem;
+  --spacer-16: 1rem;
+  --spacer-24: 1.5rem;
+  --spacer-32: 2rem;
+  --spacer-48: 3rem;
+  --spacer-64: 4rem;
+  -webkit-font-smoothing: antialiased;
   background: var(--color-white);
-  font-size: calc(var(--font-size-base) * 1px);
-  line-height: 1.618;
+  font-size: 1.25rem;
+  line-height: 1.5;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -17,53 +25,39 @@ html {
     --color-black-hsl: 0, 0%, 95%;
   }
 }
+
 body {
   font-family: ui-serif, Georgia, sans-serif;
 }
-body > section {
-  margin-bottom: calc(1.618rem * 4);
-}
+
 section {
   position: relative;
   padding-bottom: calc(1.618rem * 4);
 }
 section {
-  max-width: 21rem;
+  max-width: 20rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-section > img {
-  max-width: 100%;
-}
-@media screen and (max-width: 28rem) {
-  section > * {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }
 
 a {
   color: inherit;
 }
+
 h1,
 h2 {
   line-height: 1.2;
   font-weight: 600;
 }
 h1 {
-  /* font-size: 1.618rem; */
+  font-size: 1.65rem;
   line-height: 1.2;
+  margin: var(--spacer-8) 0;
 }
 h2 {
-  /* font-size: 1rem; */
+  font-size: 1rem;
   line-height: 1.2;
-}
-
-.employment-list dt {
-  float: left;
-  margin-right: 0.25em;
-  font-weight: 700;
 }
 
 .quote-list {
@@ -89,110 +83,71 @@ button {
   padding: 0.125rem 0.325rem 0;
 }
 
-#dribbble-shots {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 800px;
-  grid-gap: 8px;
+section {
+  padding-top: 150px;
+  margin-top: 100px;
+  position: relative;
 }
-#dribbble-shots a:hover {
-  filter: none;
-}
-#dribbble-shots img {
-  display: block;
+section:before {
+  content: "";
   width: 200px;
-  height: 150px;
-}
-#instagram {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 900px;
-  grid-gap: 8px;
-  justify-content: center;
-  overflow: scroll;
-  /*display: flex;
-      flex-wrap: wrap;
-      max-width: 1800px;*/
-}
-#instagram a:hover {
-  filter: none;
-}
-#instagram img {
+  height: 200px;
   display: block;
-  width: 225px;
-  height: 225px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+}
+#intro > :last-child {
+  margin-top: var(--spacer-32);
+}
+#intro:before {
+  background: url(/assets/img/sq-intro.svg);
+}
+#blog:before {
+  background: url(/assets/img/sq-blog.svg);
+}
+#icon-galleries:before {
+  background: url(/assets/img/sq-icon-galleries.svg);
+}
+#pies:before {
+  background: url(/assets/img/sq-pies.svg);
+}
+#sassme:before {
+  background: url(/assets/img/sq-sassme.svg);
+}
+#canistilluse:before {
+  background: url(/assets/img/sq-canistilluse.svg);
+}
+#teamcolors:before {
+  background: url(/assets/img/sq-teamcolors.svg);
+}
+#published-articles:before {
+  background: url(/assets/img/sq-published-articles.svg);
 }
 
-#icons {
-  max-width: 900px;
-  padding: 0;
+.citations {
   list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 24px;
-  justify-content: center;
-  overflow: scroll;
+  padding-left: var(--spacer-8);
 }
-#icons li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.citations li {
+  border-left: 1px solid;
+  padding-left: var(--spacer-16);
 }
-[data-icon-type="ios"] img {
-  border-radius: 22.5%;
+.citations li:not(:last-child) {
+  margin-bottom: var(--spacer-8);
 }
-[data-icon-type="watchos"] img {
-  border-radius: 50%;
+
+ul {
+  list-style-type: circle;
+  padding-left: var(--spacer-24);
 }
-[data-icon-type="ios"] img,
-[data-icon-type="watchos"] img {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+ul li:not(:last-child) {
+  margin-bottom: var(--spacer-8);
 }
 
 time {
-  font-size: 0.8rem;
+  font-size: 0.8rem; /* 16 */
   white-space: nowrap;
-  font-weight: 400;
-  opacity: 0.4;
+  opacity: 0.5;
 }
-
-#intro:before {
-  content: "";
-  width: 380px;
-  height: 293px;
-  background: url(/assets/img/drawing-signature.svg);
-  display: block;
-  background-size: cover;
-  margin: 1.618rem auto;
-}
-/*
-      #writing:before {
-        content: "";
-        width: 220px;
-        height: 207px;
-        background: url(/assets/img/drawing-writing-icon.svg);
-        display: block;
-        background-size: cover;
-        margin: 3.618rem auto;
-      }
-      
-
-      #icon-galleries:before {
-        content: "";
-        width: 380px;
-        height: 387px;
-        background: url(/assets/img/drawing-icon-galleries-big.svg);
-        display: block;
-        background-size: cover;
-        margin: 1.618rem auto;
-      }
-
-      #pies:before {
-        content: "";
-        width: 332px;
-        height: 367px;
-        background: url(/assets/img/drawing-pie.svg);
-        display: block;
-        background-size: contain;
-        margin: 1.618rem auto;
-      }*/
