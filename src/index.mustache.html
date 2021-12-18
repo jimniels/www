@@ -3,34 +3,40 @@
   <head>
     <meta charset="utf-8" />
     <title>Jim Nielsen</title>
-    <meta name="description" content="Personal website of Jim Nielsen." />
+    <meta name="description" content="The personal website of Jim Nielsen." />
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {{! @TODO meta tags for og:, twitter, etc. }}
+    <meta property="og:title" content="Jim Nielsen" />
+    <meta
+      property="og:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jim-nielsen.com" />
+    <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@jimniels" />
+    <meta name="twitter:title" content="Jim Nielsen" />
+    <meta
+      name="twitter:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta name="twitter:image" content="https://www.jim-nielsen.com/og.png" />
 
     <!-- Inline our CSS -->
     <style>
       {{{css}}}
     </style>
   </head>
-  <body class="wrapper">
-    <!-- <p
-      style="
-        font-size: 0.8rem;
-        opacity: 0.45;
-        max-width: 400px;
-        margin: 0 auto 40px;
-        text-align: center;
-      "
-    >
-      The following has been optimized for you, dear reader with little time on
-      your hands.
-    </p> -->
-
+  <body>
     <section id="intro">
       {{{svgs.intro}}}
-      <h1>Nobody ever got fired for hiring Jim Nielsen—they got promoted.</h1>
+      <h1>
+        Nobody ever got fired for hiring Jim Nielsen. In fact, they got
+        promoted.
+      </h1>
 
       <p>
         <em>Who am I?</em> Reductively: I’m a designer who codes. I’m trying to
@@ -47,10 +53,7 @@
         influencing).
       </p>
 
-      <p>
-        <em>How to contact me?</em> Descending order of how likely and prompt
-        I’ll respond:
-      </p>
+      <p><em>How to contact me?</em> In descending order of preference:</p>
 
       <ul class="list-condensed">
         <li>
@@ -83,7 +86,7 @@
         before going to prod as words out of my mouth.
       </p>
 
-      <p>People are saying:</p>
+      <p>Praise:</p>
 
       <ul class="citations">
         {{#blogPostCitations}}
@@ -114,11 +117,11 @@
 
       <p>
         For over a decade, I’ve been designing, developing, and curating a
-        gallery of beautiful app icon designs from Apple’s ecosystem. I’ve done
-        it so long, I’m helping write <a href="#appiconbook">the book</a> on it.
+        gallery of beautiful icons from Apple’s ecosystem. I’ve done it so long,
+        I’m helping write <a href="#appiconbook">the book</a> on it.
       </p>
 
-      <p>People are saying:</p>
+      <p>Praise:</p>
 
       <ul class="citations">
         {{#tweets.iconGalleries}}
@@ -147,23 +150,14 @@
         <a href="https://www.appiconbook.com/">The App Icon Book</a>
         <time>(2018–Now)</time>
       </h1>
-
-      <p>
-        Drawing from my years of experience
-        <a href="#icon-galleries">curating app icons</a>, I helped make this
-        beautiful hardcover book celebrating the history and art of iOS app icon
-        design.
-      </p>
       <p>
         Made with the iconist
         <a href="https://twitter.com/flarup">Michael Flarup</a> and initially
-        <a
-          href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
-          >funded 1,364% on Kickstarter</a
-        >.
+        funded 1,364% on Kickstarter, this book celebrates the history and art
+        of iOS app icon design.
       </p>
 
-      <p>People are saying:</p>
+      <p>Praise:</p>
 
       <ul class="citations">
         <li>
@@ -190,13 +184,13 @@
           >: “It looks to be a gorgeous art book/coffee table book that
           preserves the history of iOS app icon art.”
         </li>
-        <li>
+        <!-- <li>
           <a
             href="https://www.macstories.net/linked/michael-flarup-announces-the-ios-app-icon-book/"
             >John Voorhees via macstories</a
           >: “I’ve been following…progress on The iOS App Icon Book since its
           earliest stages, and I’m excited”
-        </li>
+        </li> -->
       </ul>
 
       <p>Latest writeups:</p>
@@ -219,13 +213,13 @@
       </h1>
       <p>I love a good pie.</p>
       <p>
-        And like anything you care about deeply, to a level others might deem
-        absurd, “if you want it done right, you’ve got to it yourself.”
+        Like anything you care about deeply to a level others might deem absurd:
+        “if you want it done right, you’ve got to it yourself.”
       </p>
       <p>
-        I make them under the pseudonym
-        <a href="https://instagram.com/flyingjpies">@flyingjpies</a>, which is
-        its own story. Ask me sometime.
+        I document my pie making under the pseudonym
+        <a href="https://instagram.com/flyingjpies">@flyingjpies</a>. Go
+        salivate.
       </p>
     </section>
 
@@ -242,7 +236,7 @@
         habitul breakage on the web platform becomes accepted as the price of
         progress.
       </p>
-      <p>People are saying:</p>
+      <p>Praise:</p>
       <ul>
         <li>
           <a href="https://adactio.com/links/18383">Jeremy Keith</a>: “It’s
@@ -273,7 +267,7 @@
         A tool to visualize Sass color functions in real-time, no compilation
         required.
       </p>
-      <p>People are saying:</p>
+      <p>Praise:</p>
       <ul class="citations">
         {{#tweets.sassme}}
         <li>
@@ -324,7 +318,7 @@
         Imagining and building a color reference for favorite major league
         sports teams.
       </p>
-      <p>People are saying:</p>
+      <p>Praise:</p>
       <ul class="citations">
         {{#tweets.teamcolors}}
         <li>
@@ -357,14 +351,25 @@
         I used to write for others’ blogs more frequently, but now I like to be
         my own publisher. I keep these for archival purposes.
       </p>
-      <ul data-js-truncate="8">
-        {{#publishings}}
+      <ul>
+        {{#publishings.visible}}
         <li>
           <a href="{{link}}">{{title}}</a>
           <time>({{publisherDomain}}, {{date}})</time>
         </li>
-        {{/publishings}}
+        {{/publishings.visible}}
       </ul>
+      <details>
+        <summary>View all</summary>
+        <ul>
+          {{#publishings.hidden}}
+          <li>
+            <a href="{{link}}">{{title}}</a>
+            <time>({{publisherDomain}}, {{date}})</time>
+          </li>
+          {{/publishings.hidden}}
+        </ul>
+      </details>
     </section>
 
     <section id="logo-integrity">
@@ -385,7 +390,7 @@
       <ul>
         <li>
           <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
-            >Introductory blog post</a
+            >Logo Integrity Brought into Focus</a
           >
           <time>(2014-09-02)</time>
         </li>

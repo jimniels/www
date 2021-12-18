@@ -195,16 +195,23 @@ export async function getData() {
       );
       return data;
     })(),
-    publishings: YAML.load(join(__dirname, "../src/data/publishings.yml")).map(
-      (item) => ({
+    publishings: YAML.load(join(__dirname, "../src/data/publishings.yml"))
+      .map((item) => ({
         ...item,
         date: item.date.toISOString().slice(0, 4),
-        thumbnail:
-          slugify(item.title, { remove: /['':;,]/g, lower: true }) +
-          "." +
-          (item.imageType ? item.imageType : "png"),
-      })
-    ),
+      }))
+      .reduce(
+        (acc, item, i) => {
+          if (i < 8) {
+            acc.visible.push(item);
+            return acc;
+          } else {
+            acc.hidden.push(item);
+          }
+          return acc;
+        },
+        { visible: [], hidden: [] }
+      ),
 
     tweets: YAML.load(join(__dirname, "../src/data/tweets.yml")),
 
