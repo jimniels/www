@@ -54,6 +54,11 @@ button:hover {
   border-bottom-width: 2px;
 }
 
+a[href^="#"] {
+  border: none;
+  cursor: default;
+}
+
 button {
   background: transparent;
   border-top: none;
@@ -143,6 +148,17 @@ section svg {
 
 section > time {
   display: block;
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  text-align: center;
+  opacity: 0.75;
+  font-size: 0.8rem;
+  padding: var(--spacer-16) 0;
 }
 
 /* =============================================================================
