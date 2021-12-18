@@ -12,6 +12,7 @@
     "fs-extra": "^7.0.0",
     "html": "github:jimniels/html",
     "http-server": "^0.11.1",
+    "mustache": "^4.2.0",
     "node-fetch": "^2.2.0",
     "slugify": "^1.3.1",
     "yamljs": "^0.3.0"
@@ -33,8 +34,5 @@
   "bugs": {
     "url": "https://github.com/jimniels/jimniels.github.io/issues"
   },
-  "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
-  "dependencies": {
-    "mustache": "^4.2.0"
-  }
+  "homepage": "https://github.com/jimniels/jimniels.github.io#readme"
 }
