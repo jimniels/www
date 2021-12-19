@@ -1,0 +1,87 @@
+- name: Jeremy Keith
+  url: https://adactio.com/journal/18008
+  quote: damn, do I enjoy reading [Jim’s] blog. Last year alone, I ended up linking to [his] posts ten different times.
+- name: Sara Soueidan
+  url: https://twitter.com/sarasoueidan/status/1428686530332303361?s=21
+  quote: I, for one, love seeing [Jim’s] posts in my RSS reader.
+- name: Dave Rupert
+  url: https://daverupert.com/2019/09/weeknotes-9/
+  quote: "I love the frequency and depth of Jim’s thoughts, he uses his blog really well."
+  ref: https://blog.jim-nielsen.com/2019/thoughts-on-rich-harris-talk/
+- name: Chris Coyier
+  url: https://css-tricks.com/system-things/
+  quote: Jim Nielsen was blowin’ minds the other day when he blogged…
+- name: Rich Harris
+  url: https://twitter.com/Rich_Harris/status/1286330991229927426
+  quote: ...a really good blog post by @jimniels
+  ref: https://blog.jim-nielsen.com/2019/thoughts-on-rich-harris-talk/
+- name: Paul Ford
+  url: https://twitter.com/ftrain/status/1353733405293359105?s=20
+  quote: "JIM WOW this is a nice thing to read. Thank you for making this!"
+  ref: https://blog.jim-nielsen.com/2021/fav-excerpts-from-the-postlight-podcast/
+- name: Remy Sharp on remysharp.com
+  url: https://remysharp.com/links/2020-09-24-e9aa7591
+  quote: "I really like [Jim’s idea]…I’ll be adding this to my blog shortly - very clever."
+  ref: https://blog.jim-nielsen.com/2020/indexing-my-blogs-links/
+- name: Andy Bell on hankchizljaw.com
+  url: https://archive.hankchizljaw.com/feed/page/61/
+  quote: "[Jim’s post] was an absolute joy to read."
+  ref: https://blog.jim-nielsen.com/2019/building-a-progressively-enhanced-site/
+- name: Robin Rendle on css-tricks.com
+  url: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+  quote: Over the weekend I read this post by Jim Nielsen…that I really enjoyed.
+  ref: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
+- name: Chris Coyier on css-tricks.com
+  url: https://css-tricks.com/defining-view-source/
+  quote: Jim’s post explains the difference between all three types of ‘viewing source’ in great detail.
+  ref: https://blog.jim-nielsen.com/2020/the-meaning-of-view-source/
+- name: Brian Kardell on Twitter
+  url: https://twitter.com/briankardell/status/1372279388331474944?s=21
+  domain: twitter.com
+  quote: "@jimniels I just read a piece of yours...just wanted to say it was an enjoyable/relatable post."
+  ref: https://blog.jim-nielsen.com/2021/codbase-collaboration-between-humans-and-robots/
+- name: Jeremy Keith on adactio.com
+  url: https://adactio.com/links/12085
+  quote: "[Jim’s post] is wonderful meditation on the history of older technologies that degrade in varied conditions versus newer formats that fall of a ‘digital cliff’, all tied in to working on the web."
+  ref: https://blog.jim-nielsen.com/2017/the-analog-web/
+- name: Dave Rupert on daverupert.com
+  url: https://daverupert.com/2019/04/weeknotes-4/
+  quote: "[Jim’s post] eloquently outlines some of my own feelings on the subject of prototypes and how they inform the product through repeated use and refinement."
+  ref: https://blog.jim-nielsen.com/2019/the-power-of-prototypes-in-the-creative-process/
+- name: Jeremy Keith on adactio.com
+  url: https://adactio.com/links/17508
+  quote: "[Jim’s post] really highlights one of the biggest issues with the convoluted build tools used for ‘modern’ web development."
+  ref: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- name: Jeremy Keith on adactio.com
+  url: https://adactio.com/links/14705
+  quote: "[Jim’s post] is an excellent case study!…Every technical decision has a well thought out justification."
+  ref: https://blog.jim-nielsen.com/2019/building-a-progressively-enhanced-site/
+- name: "CSS Tricks Newsletter #220"
+  url: https://css-tricks.com/newsletter/220-the-principle-of-least-power/
+  quote: "[All of what I’m saying] ties neatly into what Jim Nielsen mentioned just the other day when it comes to cheating entropy with old projects."
+  ref: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- name: Brad Frost linked on bradfrost.com
+  url: https://bradfrost.com/blog/link/cheating-entropy-with-native-web-technologies/
+  ref: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- name: Brad Frost submitted in the Sidebar.io Newsletter
+  url: https://sidebar.io/date/2020-10-13
+  ref: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- name: Chris Coyier
+  url: https://css-tricks.com/web-technologies-and-syntax/
+  quote: Jim Nielsen makes the connection to optional chaining and <code>!important</code> in CSS...I like that take.
+  ref: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
+#     - source: Jeremy Keith
+#       url: https://adactio.com/links/17508
+#       quote: This post really highlights one of the biggest issues with the convoluted build tools used for ‘modern’ web development.
+# - title: The Power of Prototypes in the Creative Process
+#   url: https://blog.jim-nielsen.com/2019/the-power-of-prototypes-in-the-creative-process/
+#   citations:
+#
+#     - source: Matthias Ott in Prototyping.news
+#       url: https://prototyping.news/archive/issue-24
+- name: Chris Coyier submitted in the Sidebar.io Newsletter
+  url: https://sidebar.io/date/2020-09-11
+  ref: https://blog.jim-nielsen.com/2020/the-meaning-of-view-source/
+- name: Chris Coyier linked on css-tricks.com
+  url: https://css-tricks.com/comparing-data-in-google-and-netlify-analytics/
+  ref: https://blog.jim-nielsen.com/2020/google-vs-netlify-analytics/

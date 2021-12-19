@@ -1,0 +1,89 @@
+teamcolors:
+  - id: "560801635694551040"
+    # https://web.archive.org/web/20151120001751/https://twitter.com/jongold/statuses/560801635694551040
+    content: "list of loads of sports team hex colours & SVG logos, by @jimniels. So so useful."
+    author:
+      handle: jongold
+      name: Jon Gold
+  - id: "753034281119801346"
+    content: "[hat tip] to @jimniels, whose team colors site is a gift to the internet…"
+    author:
+      handle: DrBDT
+      name: B. David Tyler
+sassme:
+  - id: "426446878071214081"
+    content: "I just love on this over and over."
+    author:
+      handle: Una
+      name: Una Kravets
+  - id: "361846594364112896"
+    content: "Super helpful tool for visualizing Sass colour functions. Much easier than trying to do them in your head!"
+    author:
+      handle: vlh
+      name: Val Head
+  - id: "488822972224765952"
+    content: "my new favorite toy…it's nice to have a visualization"
+    author:
+      handle: sarah_edo
+      name: Sarah Drasner
+  # - id: "535808595565481986"
+  #   content: "A little helpful tool to visualize SASS color functions in real-time without compiling."
+  #   author:
+  #     handle: smashingmag
+  #     name: Smashing Magazine
+  # - id: "444486106365435904"
+  #   content: "Check out SassMe, a tool for visualizing Sass color functions"
+  #   author:
+  #     handle: happycog
+  #     name: Happy Cog
+  # - id: "375674859184848897"
+  #   content: "Thank you twitters - I now have this…helpful."
+  #   author:
+  #     handle: susanjrobertson
+  #     name: Susan Robertson
+  # - id: "535462489107230720"
+  #   content: "We use [SassMe] to help designers create variations of main set of colors…"
+  #   author:
+  #     handle: elijahmanor
+  #     name: Elijah Manor
+  - id: "720318595058651136"
+    content: "Helpful tool for testing SASS color transformations (darken, lighten…) in the browser."
+    author:
+      handle: nathanacurtis
+      name: Nathan Curtis
+  - id: "375673943731888128"
+    content: "Well this is incredibly useful. SassMe: visualize SASS color functions in real-time"
+    author:
+      handle: lynnandtonic
+      name: Lynn Fisher
+iconGalleries:
+  - id: "1365042604132368385"
+    content: "Love [these icon galleries]. Nicely done @jimniels"
+    author:
+      handle: brian_lovin
+      name: Brian Lovin
+  - id: "219856804987928576"
+    content: "Not a fan of showcases, but iOS icon gallery looks great"
+    author:
+      handle: "smashingmag"
+      name: "Smashing Magazine"
+  - id: "618183624794501120"
+    content: "Neat little curated collection of great icons"
+    author:
+      handle: "flarup"
+      name: "Michael Flarup"
+  # - id: "369583698229723138"
+  #   content: "Mac Icon Gallery…and iOS Icon Gallery…are indeed nice showcases. Nice initiative by @jimniels."
+  #   author:
+  #     handle: "dresouzax"
+  #     name: "Andre Souza"
+  # - id: "974951481500733440"
+  #   content: "iOS icon gallery is a great place to find inspiration for app icons."
+  #   author:
+  #     handle: imgemmabusquets
+  #     name: Gemma Busquets
+  # - id: "157778983990210560"
+  #   content: "iOS Icon Gallery - neat little site for inspiration"
+  #   author:
+  #     handle: iconfinder
+  #     name: Iconfinder

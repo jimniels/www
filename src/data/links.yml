@@ -1,0 +1,35 @@
+- text: Brad links to my piece on cheating entropy
+  url: https://bradfrost.com/blog/link/cheating-entropy-with-native-web-technologies/
+  me: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- text: Sidebar.io Newsletter, Sep. 2020
+  url: https://sidebar.io/date/2020-09-11
+  me: https://blog.jim-nielsen.com/2020/the-meaning-of-view-source/?ref=sidebar
+- text: Sidebar.io Newsletter, Oct. 2020
+  url: https://sidebar.io/date/2020-10-13
+  me: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
+- text: Chris nods to my post implementing the float label pattern
+  url: https://css-tricks.com/float-labels-css/
+  me: http://webdesign.tutsplus.com/articles/implementing-the-float-label-form-pattern--webdesign-16407
+- text: Adhuham gives my article on the color-scheme property a nod
+  url: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/
+  me: https://blog.jim-nielsen.com/2020/color-scheme-property/
+- text: Chris links to my post about web technologies and syntax
+  url: https://css-tricks.com/web-technologies-and-syntax/
+  me: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
+- text: Chris links to my post clarifying View Source
+  url: https://css-tricks.com/defining-view-source/
+- text: Chris links to my post on Google & Netlify Analytics
+  url: https://css-tricks.com/comparing-data-in-google-and-netlify-analytics/
+  me: https://blog.jim-nielsen.com/2020/google-vs-netlify-analytics/
+- text: "CSS Tricks Newsletter #202"
+  url: https://css-tricks.com/newsletter/202-how-to-improve-site-performance-tricks-for-using-css-variables/
+  me: https://blog.jim-nielsen.com/2020/sass-color-functions-in-css/
+- text: "CSS Tricks Newsletter #213"
+  url: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+  me: https://blog.jim-nielsen.com/2020/web-technologies-and-syntax/
+- text: "CSS Tricks Newsletter #218"
+  url: https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+  me: https://blog.jim-nielsen.com/2020/economics-of-the-front-end/
+- text: "CSS Tricks Newsletter #220"
+  url: https://css-tricks.com/newsletter/220-the-principle-of-least-power/
+  me: https://blog.jim-nielsen.com/2020/cheating-entropy-with-native-web-tech/
