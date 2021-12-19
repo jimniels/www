@@ -54,7 +54,7 @@ button:hover {
   border-bottom-width: 2px;
 }
 
-a[href^="#"] {
+section > a[href^="#"] {
   border: none;
   cursor: default;
 }
@@ -107,10 +107,8 @@ hr {
   border-bottom: 1px solid;
   opacity: 0.1;
   margin-bottom: var(--spacer-64);
+  transform: rotate(-0.5deg);
 }
-/* hr:before {
-  content: attr(data-title);
-} */
 
 /* =============================================================================
    Sections
