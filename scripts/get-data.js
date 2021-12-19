@@ -53,13 +53,13 @@ export async function getData() {
      *   { href, src, title }
      * ]
      */
-    dribbble: requireJSON(
-      join(__dirname, "../src/data/dribbble-shots.json")
-    ).map(({ html_url, images, title }) => ({
-      href: html_url,
-      src: images.hidpi ? images.hidpi : images.normal,
-      title,
-    })),
+    // dribbble: requireJSON(
+    //   join(__dirname, "../src/data/dribbble-shots.json")
+    // ).map(({ html_url, images, title }) => ({
+    //   href: html_url,
+    //   src: images.hidpi ? images.hidpi : images.normal,
+    //   title,
+    // })),
 
     /**
      * Instagram
@@ -77,12 +77,12 @@ export async function getData() {
      *   { href, src }
      * ]
      */
-    instagram: requireJSON(join(__dirname, "../src/data/instagram-posts.json"))
-      .map(({ media_url, permalink }, i) => ({
-        href: permalink,
-        src: `/assets/img/instagram/${i}.jpg`,
-      }))
-      .filter((post, i) => i < 12),
+    // instagram: requireJSON(join(__dirname, "../src/data/instagram-posts.json"))
+    //   .map(({ media_url, permalink }, i) => ({
+    //     href: permalink,
+    //     src: `/assets/img/instagram/${i}.jpg`,
+    //   }))
+    //   .filter((post, i) => i < 12),
 
     /**
      * Blog
