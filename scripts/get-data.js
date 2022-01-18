@@ -31,7 +31,7 @@ export async function getData() {
           .toString();
         return acc;
       }, {}),
-    css: fs.readFileSync(join(__dirname, "../src/simple.css")).toString(),
+    css: fs.readFileSync(join(__dirname, "../src/visual.css")).toString(),
     /**
      * In (from cached API response):
      * [
