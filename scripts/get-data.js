@@ -138,7 +138,7 @@ export async function getData() {
     })(),
     blogPostCitations: YAML.load(
       join(__dirname, "../src/data/blog-post-citations.yml")
-    ).slice(0, 4),
+    ).slice(0, 5),
     /**
      * Icons
      * [
