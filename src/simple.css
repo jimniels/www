@@ -1,10 +1,30 @@
+/* https://www.joshwcomeau.com/shadow-palette/ */
+:root {
+  --shadow-color: 0deg 0% 63%;
+  --shadow-elevation-low: 0px 0.6px 0.7px hsl(var(--shadow-color) / 0.34),
+    0px 1.1px 1.2px -1.2px hsl(var(--shadow-color) / 0.34),
+    0px 2.6px 2.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0px 0.6px 0.7px hsl(var(--shadow-color) / 0.36),
+    0px 2.1px 2.4px -0.8px hsl(var(--shadow-color) / 0.36),
+    0px 5.3px 6px -1.7px hsl(var(--shadow-color) / 0.36),
+    0.1px 12.8px 14.4px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0px 0.6px 0.7px hsl(var(--shadow-color) / 0.34),
+    0px 3.7px 4.2px -0.4px hsl(var(--shadow-color) / 0.34),
+    0px 7px 7.9px -0.7px hsl(var(--shadow-color) / 0.34),
+    0.1px 11.5px 12.9px -1.1px hsl(var(--shadow-color) / 0.34),
+    0.1px 18.3px 20.6px -1.4px hsl(var(--shadow-color) / 0.34),
+    0.2px 28.7px 32.3px -1.8px hsl(var(--shadow-color) / 0.34),
+    0.2px 43.6px 49.1px -2.1px hsl(var(--shadow-color) / 0.34),
+    0.4px 64.2px 72.2px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
 /* =============================================================================
    General
    ========================================================================== */
 
 :root {
-  --color-text: #222222;
-  --color-bg: #f0f0f0;
+  --color-text: #140c0a;
+  --color-bg: #f4f2f1;
 
   --spacer-8: 0.5rem;
   --spacer-12: 0.75rem;
@@ -13,18 +33,23 @@
   --spacer-32: 2rem;
   --spacer-48: 3rem;
   --spacer-64: 4rem;
+
+  --serif: ui-serif, Palatino, Georgia, serif;
+  --sans-serif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #f2f2f2;
-    --color-bg: #222222;
+    --color-text: #f4f2f1;
+    --color-bg: #140c0a;
   }
 }
 
 html {
   background: var(--color-bg);
-  font-size: 1.25rem;
+  font-size: 1.125rem; /* 18px */
   line-height: 1.5;
   color-scheme: light dark;
   color: var(--color-text);
@@ -32,8 +57,17 @@ html {
 }
 
 body {
-  font-family: ui-serif, Palatino, Georgia, serif;
-  margin: 0 var(--spacer-16);
+  font-family: var(--sans-serif);
+  margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 1.5rem; /* 24px */
+  }
+  body {
+    margin: 0 var(--spacer-16);
+  }
 }
 
 @supports (font-family: ui-serif) {
@@ -52,6 +86,10 @@ button {
 a:hover,
 button:hover {
   border-bottom-width: 2px;
+}
+
+a:has(img):hover {
+  border: none;
 }
 
 section > a[href^="#"] {
@@ -92,7 +130,9 @@ h2 {
 }
 
 h1 {
-  font-size: 1.65rem;
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 2.29rem;
   line-height: 1.2;
   margin: var(--spacer-8) 0;
 }
@@ -117,7 +157,7 @@ hr {
 section {
   position: relative;
   padding-bottom: calc(1.618rem * 4);
-  max-width: 20rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -184,4 +224,133 @@ ul.list-condensed.list-condensed--cols {
 
 ul.list-condensed li {
   margin-bottom: 0;
+}
+
+.hero {
+  display: block;
+  border: none;
+  position: relative;
+  padding-top: 62%;
+  margin: 2rem 0;
+  transform: rotate(-1deg);
+}
+
+.hero--website {
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+.hero--website img {
+  max-width: 94%;
+  left: 3% !important;
+  height: auto;
+  padding-top: 24px;
+  transform: rotate(1deg);
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.hero--website img:hover {
+  transform: rotate(1deg) scale(1.025) translateY(-24px);
+}
+
+@media screen and (min-width: 600px) {
+  .hero:before {
+    border-radius: 18px;
+  }
+}
+
+#intro .hero:before {
+  background-color: #1f1715;
+}
+#canistilluse .hero:before {
+  background-color: #f1e8d7;
+}
+#sassme .hero:before {
+  background-color: #854c6a;
+}
+@media screen and (prefers-color-scheme: dark) {
+  #sassme .hero:before {
+    background-color: #b3648b;
+  }
+}
+#readlists .hero:before {
+  background-color: #2f6bf6;
+}
+#teamcolors .hero:before {
+  background-color: #295b77;
+}
+#gimmiedaticon .hero:before {
+  background-color: #c8f2f9;
+}
+
+.hero:after {
+  content: "";
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: 106px;
+  background: rgba(0, 0, 0, 0.025);
+  position: absolute;
+  border-radius: 14px;
+}
+
+#blog .hero > div {
+  position: absolute;
+  left: -24px;
+  right: -24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transform: rotate(1deg);
+}
+
+#blog .hero > div:nth-child(1) {
+  top: 128px;
+}
+#blog .hero > div:nth-child(2) {
+  top: 50%;
+}
+#blog .hero > div:nth-child(3) {
+  bottom: 16px;
+}
+#blog .hero > div:nth-child(3) img {
+  border-radius: 50%;
+}
+
+.hero--singles img {
+  transition: 0.3s ease all;
+}
+.hero--singles a:hover img {
+  transform: scale(1.025) translateY(-12px);
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.hero a {
+  border: none;
+}
+
+section > *:not(.hero) {
+  max-width: 24rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero > * {
+  z-index: 1;
+}
+
+.type--watchos {
+  border-radius: 100px;
+}
+.type--ios {
+  border-radius: 18px;
 }

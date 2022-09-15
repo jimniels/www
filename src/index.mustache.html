@@ -31,46 +31,69 @@
     </style>
   </head>
   <body>
+    <!------------------------------------------------------------------------->
     <section id="intro">
-      {{{svgs.intro}}}
-      <h1>Jim Nielsen loves food &amp; websites.</h1>
+      <div class="hero">
+        <img
+          src="/1-portrait.png"
+          width="396"
+          height="497"
+          alt=""
+          style="
+            position: absolute;
+            right: -24px;
+            bottom: -24px;
+            border-radius: 18px;
+            transform: rotate(1deg);
+          "
+        />
+        <img
+          src="/1-signature.svg"
+          width="681"
+          height="438"
+          alt=""
+          style="position: absolute; top: 22%; left: -24px"
+        />
+      </div>
 
-      <p>I’m a web generalist — a designer who codes.</p>
+      <h1>Jim Nielsen: lover of food &amp; websites.</h1>
 
-      <p>I’m skilled in:</p>
+      <p style="font-family: var(--serif); font-size: 1.25rem">
+        I am designer, front-end developer, & writer with decades of experience
+        building on the web.
+      </p>
 
-      <ul class="list-condensed">
-        <li>Design (Figma, Sketch, Photoshop)</li>
-        <li>Code (HTML, CSS, JS)</li>
-        <li>Writing (blogging, education)</li>
-      </ul>
-
-      <p>I’m on:</p>
-
-      <ul class="list-condensed">
-        <li>
-          <a href="mailto:jimniels@gmail.com">Email</a>
-        </li>
-        <li><a href="https://twitter.com/jimniels">Twitter</a></li>
-        <li><a href="https://github.com/jimniels">GitHub</a></li>
-        <li><a href="https://dribbble.com/jimniels">Dribbble</a></li>
-        <li>
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            title="I once heard someone say, “people who are good at what they do don’t have a LinkedIn”."
-            >LinkedIn</a
-          >
-        </li>
-      </ul>
+      <p>
+        Find me on: <a href="mailto:jimniels@gmail.com">Email</a>,
+        <a href="https://twitter.com/jimniels">Twitter</a>,
+        <a href="https://github.com/jimniels">GitHub</a>,
+        <a href="https://dribbble.com/jimniels">Dribbble</a>, or
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          title="I once heard someone say, “people who are good at what they do don’t have a LinkedIn”."
+          >LinkedIn</a
+        >.
+      </p>
 
       <p>
         Below are some personal projects, or jump to
-        <a href="#employment">employment</a>.
+        <a href="#employment">profressional employment history</a>.
       </p>
     </section>
 
+    <!-------------------------------------------------------------------------->
     <section id="blog">
-      <a href="#blog">{{{svgs.blog}}}</a>
+      <div class="hero hero--singles">
+        {{#logos}}
+        <div>
+          {{#.}}
+          <a href="{{href}}">
+            <img src="{{src}}" width="{{width}}" height="{{height}}" />
+          </a>
+          {{/.}}
+        </div>
+        {{/logos}}
+      </div>
       <h1>
         <a href="https://blog.jim-nielsen.com/">My blog</a>
         <time>(2012–Now)</time>
@@ -106,8 +129,49 @@
       </ul>
     </section>
 
+    <!------------------------------------------------------------------------->
+    <style>
+      #icon-galleries .hero > div:nth-child(1) {
+        top: 124px;
+      }
+      #icon-galleries .hero > div:nth-child(2) {
+        top: 50%;
+      }
+      #icon-galleries .hero > div:nth-child(3) {
+        bottom: 16px;
+      }
+      #icon-galleries .hero > div {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -64px;
+        position: absolute;
+        left: -24px;
+        right: -24px;
+        padding: 0;
+      }
+      #icon-galleries .hero > div a {
+      }
+    </style>
     <section id="icon-galleries">
-      <a href="#icon-galleries">{{{svgs.icon-galleries}}}</a>
+      <div class="hero hero--singles">
+        {{#icons}}
+        <div>
+          {{#.}}
+          <a href="{{permalink}}" style="border: none">
+            <img
+              src="{{artworkUrl}}"
+              alt="{{title}} app icon"
+              width="128"
+              height="128"
+              class="type--{{type}}"
+            />
+          </a>
+          {{/.}}
+        </div>
+        {{/icons}}
+      </div>
       <h1>
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
@@ -143,8 +207,18 @@
       </ul>
     </section>
 
+    <!------------------------------------------------------------------------->
     <section id="appiconbook">
-      <a href="#appiconbook">{{{svgs.appiconbook}}}</a>
+      <a href="https://www.appiconbook.com/" class="hero">
+        <img
+          src="/4-app-icon-book.png"
+          width="896"
+          height="639"
+          alt=""
+          style="position: absolute; top: -36px; max-width: 100%; height: auto"
+        />
+      </a>
+
       <h1>
         <a href="https://www.appiconbook.com/">The App Icon Book</a>
         <time>(2018–Now)</time>
@@ -214,6 +288,7 @@
       </ul>
     </section>
 
+    <!------------------------------------------------------------------------->
     <section id="pies">
       <a href="#pies">{{{svgs.pies}}}</a>
       <h1>
@@ -229,10 +304,19 @@
       <p>Go salivate.</p>
     </section>
 
+    <!------------------------------------------------------------------------->
     <section id="canistilluse">
-      <a href="#canistilluse">{{{svgs.canistilluse}}}</a>
+      <a href="https://www.canistilluse.com" class="hero hero--website">
+        <img
+          src="/6-canistilluse.png"
+          width="994"
+          height="914"
+          alt=""
+          style="position: absolute; left: 0px; top: 0px"
+        />
+      </a>
       <h1>
-        <a href="https://www.canistilluse.com">canistilluse.com</a>
+        canistilluse.com
         <time>(2021)</time>
       </h1>
       <p>
@@ -263,7 +347,15 @@
     </section>
 
     <section id="sassme">
-      <a href="#sassme">{{{svgs.sassme}}}</a>
+      <a href="https://sassme.jim-nielsen.com" class="hero hero--website">
+        <img
+          src="/7-sassme.png"
+          width="1148"
+          height="933"
+          alt=""
+          style="position: absolute; left: 0; top: 0px"
+        />
+      </a>
       <h1>
         <a href="https://sassme.jim-nielsen.com">SassMe</a> <time>(2012)</time>
       </h1>
@@ -289,8 +381,16 @@
       </ul>
     </section>
 
-    <section id="readlist">
-      <a href="#readlist">{{{svgs.readlists}}}</a>
+    <section id="readlists">
+      <a href="https://readlists.jim-nielsen.com" class="hero hero--website">
+        <img
+          src="/8-readlists.png"
+          width="1104"
+          height="913"
+          alt=""
+          style="position: absolute; left: 0; top: 0px"
+        />
+      </a>
       <h1>
         <a href="https://readlists.jim-nielsen.com">Readlists</a>
         <time>(2021)</time>
@@ -313,7 +413,15 @@
     </section>
 
     <section id="teamcolors">
-      <a href="#teamcolors">{{{svgs.teamcolors}}}</a>
+      <a href="https://teamcolors.jim-nielsen.com" class="hero hero--website">
+        <img
+          src="/9-teamcolors.png"
+          width="1262"
+          height="1055"
+          alt=""
+          style="position: absolute; left: 0; top: 0px"
+        />
+      </a>
       <h1>
         <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
         <time>(2015)</time>
@@ -377,7 +485,18 @@
     </section>
 
     <section id="logo-integrity">
-      <a href="#logo-integrity">{{{svgs.logo-integrity}}}</a>
+      <a
+        href="https://logo-integrity.jim-nielsen.com"
+        class="hero hero--website"
+      >
+        <img
+          src="/10-logo-integrity.png"
+          width="1104"
+          height="913"
+          alt=""
+          style="position: absolute; left: 0; top: 0px"
+        />
+      </a>
 
       <h1>
         <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
@@ -407,7 +526,18 @@
     </section>
 
     <section id="gimmiedaticon">
-      <a href="#gimmiedaticon">{{{svgs.gimmiedaticon}}}</a>
+      <a
+        href="https://gimmiedaticon.jim-nielsen.com"
+        class="hero hero--website"
+      >
+        <img
+          src="/11-gimmiedaticon.png"
+          width="1104"
+          height="1012"
+          alt=""
+          style="position: absolute; left: 0; top: 0px"
+        />
+      </a>
       <h1>
         <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
         <time>(2015)</time>

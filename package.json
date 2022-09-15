@@ -20,7 +20,7 @@
   "scripts": {
     "clear-cache": "rm -rf ./cache",
     "build:data": "node scripts/cache-data.js",
-    "build": "rm -f static/index.html && node scripts/get-data.js | mustache - src/index.mustache.html > static/index.html",
+    "build": "rm -f static/index.html && node src/index.js > static/index.html",
     "build-old": "rm -f index.html && node scripts/build.js",
     "build-node": "rm -f index.html && node src/index.js",
     "start": "npm run build && chokidar 'static/' 'src/**/*' 'data/' -i 'static/index.html' -c 'npm run build' & http-server static -o -s"
@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/jimniels/jimniels.github.io/issues"
   },
-  "homepage": "https://github.com/jimniels/jimniels.github.io#readme"
+  "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
+  "dependencies": {
+    "image-size": "^1.0.2"
+  }
 }

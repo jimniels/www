@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import fetch from "node-fetch";
 import YAML from "yamljs";
 import slugifyFn from "slugify";
+import sizeOf from "image-size";
 
 const requireJSON = (filepath) =>
   JSON.parse(fs.readFileSync(filepath).toString());
@@ -14,13 +15,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // @TODO fetchIf() will look for a local cache file first and if it doesn't exist,
 // it'll be fetched from the network. npm start will clear this cache each time you run
-getData()
-  .then((data) => {
-    console.log(JSON.stringify(data));
-  })
-  .catch((e) => {
-    console.log({ error: "failed to get data" + e });
-  });
+// getData()
+//   .then((data) => {
+//     fs.outputFile("./data.json", JSON.stringify(data, null, 2));
+//     console.log(JSON.stringify(data));
+//   })
+//   .catch((e) => {
+//     console.log({ error: "failed to get data" + e });
+//   });
 export async function getData() {
   return {
     svgs: fs
@@ -171,28 +173,8 @@ export async function getData() {
         fetch("https://www.watchosicongallery.com/feed.json").then((res) =>
           handleResponse(res, "watchos")
         ),
-      ]).then((responses) =>
-        // [
-        //   {
-        //     name: "iOS Icon Gallery",
-        //     url: "https://www.iosicongallery.com",
-        //     icons: responses[0],
-        //   },
-        //   {
-        //     name: "macOS Icon Gallery",
-        //     url: "https://www.macosicongallery.com",
-        //     icons: responses[1],
-        //   },
-        //   {
-        //     name: "watchOS Icon Gallery",
-        //     url: "https://www.watchosicongallery.com",
-        //     icons: responses[2],
-        //   },
-        // ]
-        responses.flat().sort((a, b) => {
-          return 0.5 - Math.random();
-        })
-      );
+      ]).then((responses) => responses.map((arr, i) => arr.slice(0, 7)));
+
       return data;
     })(),
     publishings: YAML.load(join(__dirname, "../src/data/publishings.yml"))
@@ -216,6 +198,65 @@ export async function getData() {
     tweets: YAML.load(join(__dirname, "../src/data/tweets.yml")),
 
     employment: [...Array(10).keys()].map((key) => key + 1),
+
+    logos: [
+      [
+        {
+          id: "hackernews",
+          url: "https://hn.algolia.com/?q=blog.jim-nielsen.com",
+        },
+        { id: "css-tricks", url: "" },
+        {
+          id: "sidebar",
+          url: "https://sidebar.io/domain/blog.jim-nielsen.com",
+        },
+        {
+          id: "changelog",
+          url: "https://changelog.com/news/the-optional-chaining-operator-modern-browsers-and-my-mom-Lpyn",
+        },
+        { id: "shoptalk", url: "https://shoptalkshow.com/504/" },
+        {
+          id: "heydesigner",
+          url: "https://heydesigner.com/newsletter/daily-issues/2021-82/",
+        },
+      ],
+      [
+        { id: "frontend-focus", url: "https://frontendfoc.us/issues/525" },
+        {
+          id: "event-apart",
+          url: "https://twitter.com/aneventapart/status/1496973472416755716",
+        },
+        {
+          id: "smashing-magazine",
+          url: "https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/",
+        },
+        {
+          id: "javascript-weekly",
+          url: "https://javascriptweekly.com/issues/573",
+        },
+      ],
+      [
+        { id: "dave", url: "" },
+        { id: "sara", url: "" },
+        { id: "chris", url: "" },
+        { id: "rich", url: "" },
+        { id: "stephanie", url: "" },
+        { id: "guillermo", url: "" },
+        { id: "chris-l", url: "" },
+      ],
+    ].map((arr) =>
+      arr.map(({ id, url }, i) => {
+        const { width, height } = sizeOf(
+          join(__dirname, `../static/logo-${id}.png`)
+        );
+        return {
+          src: `/logo-${id}.png`,
+          href: url,
+          width: width / 2,
+          height: height / 2,
+        };
+      })
+    ),
     /**
      * Personal Projects
      */
