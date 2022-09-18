@@ -33,55 +33,85 @@
   <body>
     <section id="intro">
       {{{svgs.intro}}}
-      <h1>Jim Nielsen loves food &amp; websites.</h1>
+      <h1>Jim Nielsen</h1>
+      <p>Designer, Front-end Engineer, Writer</p>
 
-      <p>I’m a web generalist — a designer who codes.</p>
+      <h2>About</h2>
+      <p>I love the web.</p>
 
-      <p>I’m skilled in:</p>
+      <p>
+        I think the web browser is the most influential piece of software ever
+        written (sorry Excel, you’re a close 2nd).
+      </p>
 
-      <ul class="list-condensed">
-        <li>Design (Figma, Sketch, Photoshop)</li>
-        <li>Code (HTML, CSS, JS)</li>
-        <li>Writing (blogging, education)</li>
-      </ul>
+      <p>
+        My passion lies at the intersection of art and engineering on the web.
+        My history of employment, personal projects, and writing constitute
+        decades of experience following that passion.
+      </p>
 
-      <p>I’m on:</p>
-
-      <ul class="list-condensed">
-        <li>
-          <a href="mailto:jimniels@gmail.com">Email</a>
-        </li>
-        <li><a href="https://twitter.com/jimniels">Twitter</a></li>
-        <li><a href="https://github.com/jimniels">GitHub</a></li>
-        <li><a href="https://dribbble.com/jimniels">Dribbble</a></li>
-        <li>
+      <h2>Contact</h2>
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a></dd>
+        <dt>Twitter</dt>
+        <dd><a href="https://twitter.com/jimniels">@jimniels</a></dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/jimniels">jimniels</a></dd>
+        <!-- <dt>Dribbble</dt>
+        <dd><a href="https://dribbble.com/jimniels">jimniels</a></dd> -->
+        <dt>LinkedIn</dt>
+        <dd>
           <a
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             title="I once heard someone say, “people who are good at what they do don’t have a LinkedIn”."
-            >LinkedIn</a
+            >Click here</a
           >
-        </li>
-      </ul>
-
-      <p>
-        Below are some personal projects, or jump to
-        <a href="#employment">employment</a>.
-      </p>
+        </dd>
+      </dl>
     </section>
 
-    <section id="blog">
-      <a href="#blog">{{{svgs.blog}}}</a>
-      <h1>
-        <a href="https://blog.jim-nielsen.com/">My blog</a>
-        <time>(2012–Now)</time>
-      </h1>
+    <section id="writing">
+      <a href="#writing">{{{svgs.blog}}}</a>
+      <h1>My Writing</h1>
+      <p>Seeking clarity through writing</p>
 
+      <h2><a href="https://blog.jim-nielsen.com/">My Blog</a></h2>
       <p>
-        I write to seek clarity and improve my thinking–a form of QA before my
-        thoughts go to prod as words out of my mouth.
+        I’ve been blogging for a long time — long enough to be on a podcast
+        about it (<a href="https://shoptalkshow.com/504/"
+          >ShopTalkShow Ep. 504</a
+        >) — and my writing remains well-respected in the web industry.
       </p>
 
-      <p>Praise:</p>
+      <p>
+        My blog is linked by social sites, publications, and newsletters such as
+        <a
+          href="https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/"
+          >Smashing Magazine</a
+        >,
+        <a
+          href="https://changelog.com/news/the-optional-chaining-operator-modern-browsers-and-my-mom-Lpyn"
+          >Changelog</a
+        >,
+        <a href="https://javascriptweekly.com/issues/573">JavaScript Weekly</a>,
+        <a href="https://frontendfoc.us/issues/525">Frontend Focus</a>,
+        <a href="https://sidebar.io/domain/blog.jim-nielsen.com">Sidebar.io</a>,
+        <a href="https://twitter.com/aneventapart/status/1496973472416755716"
+          >An Event Apart</a
+        >,
+        <a href="https://heydesigner.com/newsletter/daily-issues/2021-82/"
+          >HeyDesigner</a
+        >, <a href="https://css-tricks.com/?s=Jim%20Nielsen">CSS Tricks</a>,
+        <a href="https://hn.algolia.com/?q=blog.jim-nielsen.com">Hacker News</a
+        >,
+        <a
+          href="https://lobste.rs/search?q=domain%3Ablog.jim-nielsen.com&what=stories&order=points"
+          >Lobste.rs</a
+        >, and more.
+      </p>
+
+      <h2>Praise For My Blog</h2>
 
       <ul class="citations">
         {{#blogPostCitations}}
@@ -89,21 +119,31 @@
         {{/blogPostCitations}}
       </ul>
 
-      <p>Latest posts:</p>
-
+      <h2>Other Published Articles</h2>
+      <p>
+        While I prefer to own my content, occasionally I write for others. I
+        keep a list for posterity’s sake, but please excuse any link rot (hence
+        my preference for owning my content).
+      </p>
       <ul>
-        {{#blogPosts}}
+        {{#publishings.visible}}
         <li>
-          <a href="{{url}}">{{title}}</a>
-          <time>({{date_published}})</time>
+          <a href="{{link}}">{{publisherDomain}}</a>: {{title}}
+          <time>({{date}})</time>
         </li>
-        {{/blogPosts}}
+        {{/publishings.visible}}
       </ul>
-
-      <p>Podcast:</p>
-      <ul>
-        <li><a href="https://shoptalkshow.com/504/">ShopTalkShow #504</a></li>
-      </ul>
+      <details>
+        <summary>View all</summary>
+        <ul>
+          {{#publishings.hidden}}
+          <li>
+            <a href="{{link}}">{{publisherDomain}}</a>: {{title}}
+            <time>({{date}})</time>
+          </li>
+          {{/publishings.hidden}}
+        </ul>
+      </details>
     </section>
 
     <section id="icon-galleries">
@@ -112,16 +152,20 @@
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
         <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
-        <time>(2010–Now)</time>
       </h1>
+      <p>Passion Project, 2010–Present</p>
 
+      <h2>About</h2>
       <p>
         For over a decade I’ve been designing, developing, and curating a
-        gallery of beautiful icons from Apple’s ecosystem.
+        gallery of beautiful icons from Apple’s ecosystem (and
+        <a href="https://blog.jim-nielsen.com/tags#iconGalleries"
+          >blogging about it</a
+        >
+        along the way).
       </p>
 
-      <p>Praise:</p>
-
+      <h2>Praise For The Galleries</h2>
       <ul class="citations">
         {{#tweets.iconGalleries}}
         <li>
@@ -131,116 +175,88 @@
         {{/tweets.iconGalleries}}
       </ul>
 
-      <p>Latest writeups:</p>
-
-      <ul class="list">
-        {{#blogPostsByTag.iconGalleries}}
-        <li>
-          <a href="{{permalink}}">{{title}}</a>
-          <time>({{date_published}})</time>
-        </li>
-        {{/blogPostsByTag.iconGalleries}}
-      </ul>
-    </section>
-
-    <section id="appiconbook">
-      <a href="#appiconbook">{{{svgs.appiconbook}}}</a>
-      <h1>
-        <a href="https://www.appiconbook.com/">The App Icon Book</a>
-        <time>(2018–Now)</time>
-      </h1>
+      <h2>The Book</h2>
       <p>
-        With the world-class iconist
+        Recruited by world-class iconist
         <a href="https://twitter.com/flarup">Michael Flarup</a>, I helped create
-        this book to celebrate the history and art of iOS app icon design.
+        and ship (literally — physical books were mailed on oceangoing vessels)
+        <a href="https://www.appiconbook.com"><em>The iOS App Icon Book</em></a
+        >: a celebration and preservation of the art and history of iOS app icon
+        design.
       </p>
 
-      <p>Praise:</p>
+      <p>
+        The book’s initial run was funded on
+        <a
+          href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
+          >KickStarter</a
+        >
+        at roughly $130,000 by 1,450 backers and received overwhelmingly
+        positive reviews by fans.
+      </p>
+      <p>
+        Through the process, I
+        <a href="https://blog.jim-nielsen.com/tags/#iconGalleriesBook"
+          >blogged about my involvement</a
+        >
+        as well as appeared on
+        <a
+          href="https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup"
+          >The Postlight Podcast (#314)</a
+        >
+        to discuss my enduring love for app icon design.
+      </p>
 
+      <h2>Praise For The Book</h2>
       <ul class="citations">
         <li>
           <a
             href="https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book"
-            >John Gruber via Daring Fireball</a
+            >John Gruber at <em>Daring Fireball</em></a
           >: “Take my money — I can’t wait to devour this book. It looks so
           good.”
         </li>
         <li>
-          <a href="https://twitter.com/khoi/status/1458457639067734020?s=20"
-            >Khoi Vinh</a
-          >: “[The App Icon Book] looks amazing.”
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/themikestern/status/1458085983203872776?s=21"
-            >Mike Stern</a
-          >: “I’m looking forward to getting a copy”
-        </li>
-        <li>
           <a href="https://sixcolors.com/link/2021/11/the-ios-app-icon-book/"
-            >Jason Snell via sixcolors</a
-          >: “It looks to be a gorgeous art book/coffee table book that
-          preserves the history of iOS app icon art.”
+            >Jason Snell at <em>sixcolors</em></a
+          >: “A gorgeous art book/coffee table book that preserves the history
+          of iOS app icon art.”
         </li>
-        <!-- <li>
-          <a
-            href="https://www.macstories.net/linked/michael-flarup-announces-the-ios-app-icon-book/"
-            >John Voorhees via macstories</a
-          >: “I’ve been following…progress on The iOS App Icon Book since its
-          earliest stages, and I’m excited”
-        </li> -->
-      </ul>
-
-      <p>Writeups:</p>
-
-      <ul class="list">
-        {{#blogPostsByTag.iconGalleriesBook}}
-        <li>
-          <a href="{{permalink}}">{{title}}</a>
-          <time>({{date_published}})</time>
-        </li>
-        {{/blogPostsByTag.iconGalleriesBook}}
-      </ul>
-
-      <p>Podcast:</p>
-      <ul class="list">
         <li>
           <a
-            href="https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup"
-            >Postlight Podcast #314: (Icon)ic Design</a
-          >
-          <time>(2022-01-11)</time>
+            href="https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/"
+            >John Voorhees at <em>MacStories</em></a
+          >: “My expectations were high, and I’m happy to report that it doesn’t
+          disappoint.”
         </li>
       </ul>
     </section>
 
     <section id="pies">
       <a href="#pies">{{{svgs.pies}}}</a>
-      <h1>
+      <h1>The Archives</h1>
+      <p>Other side projects through the years</p>
+
+      <h2>
         <a href="https://instagram.com/flyingjpies">Flying J Pies</a>
         <time>(2017–Now)</time>
-      </h1>
-      <p>I love a good pie.</p>
+      </h2>
       <p>
-        Like anything you care about to a level others might deem absurd: if you
-        want it done right, you’ve got to do it yourself. So I make my own pies
-        and document each one.
+        I love a good pie. Like anything you care about to a level others might
+        deem absurd: if you want it done right, you’ve got to do it yourself. So
+        I make my own pies and document each one.
       </p>
-      <p>Go salivate.</p>
-    </section>
 
-    <section id="canistilluse">
-      <a href="#canistilluse">{{{svgs.canistilluse}}}</a>
-      <h1>
+      <h2>
         <a href="https://www.canistilluse.com">canistilluse.com</a>
         <time>(2021)</time>
-      </h1>
+      </h2>
       <p>
-        A satirical website made to illustrate the problems of a world where
-        habitul breakage on the web platform becomes accepted as the price of
-        progress.
+        A satirical website
+        <a href="https://blog.jim-nielsen.com/2021/canistilluse.com/">made</a>
+        to illustrate the problems of a world where habitul breakage on the web
+        platform becomes accepted as the price of progress.
       </p>
-      <p>Praise:</p>
       <ul>
         <li>
           <a href="https://adactio.com/links/18383">Jeremy Keith</a>: “It’s
@@ -248,30 +264,75 @@
           something real.”
         </li>
       </ul>
-      <p>Writeup:</p>
-      <ul>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2021/canistilluse.com/"
-            >canistilluse.com</a
-          >
-          <time>(2021-08-16)</time>
-        </li>
-        <!-- <li>
-          <a href="https://news.ycombinator.com/item?id=28309885">HackerNews</a>
-        </li> -->
-      </ul>
-    </section>
 
-    <section id="sassme">
-      <a href="#sassme">{{{svgs.sassme}}}</a>
-      <h1>
-        <a href="https://sassme.jim-nielsen.com">SassMe</a> <time>(2012)</time>
-      </h1>
+      <h2>
+        <a href="https://readlists.jim-nielsen.com">Readlists</a>
+        <time>(2021)</time>
+      </h2>
       <p>
-        A tool to visualize Sass color functions in real-time, no compilation
-        required.
+        Recreating the idea behind the incredibly useful, but now defunct,
+        service Readlists. All design and development
+        <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
+          >done</a
+        >
+        by me — bugs aren’t mine though ;)
       </p>
-      <p>Praise:</p>
+
+      <h2>
+        <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
+        <time>(2015)</time>
+      </h2>
+      <p>
+        A color reference for favorite sporting teams across various
+        profressional leagues (made in a
+        <a href="https://blog.jim-nielsen.com/2013/teamcolors/">hackathon</a>
+        and later
+        <a href="https://blog.jim-nielsen.com/2015/team-colors-2-0/">updated</a
+        >).
+      </p>
+      <ul>
+        {{#tweets.teamcolors}}
+        <li>
+          <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
+          “{{content}}”
+        </li>
+        {{/tweets.teamcolors}}
+      </ul>
+
+      <h2>
+        <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
+        <time>(2015)</time>
+      </h2>
+      <p>
+        A tool to retrieve full-sized icon artwork for any app in the App Store
+        (based on a
+        <a
+          href="https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866"
+          >tutorial</a
+        >
+        published for Web Design Tuts+).
+      </p>
+
+      <h2>
+        <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
+        <time>(2014)</time>
+      </h2>
+      <p>
+        In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an
+        image be and still be recognized?” For fun, I
+        <a href="https://blog.jim-nielsen.com/2014/logo-integrity/">built</a>
+        an experiment to find out.
+      </p>
+
+      <h2>
+        <a href="https://sassme.jim-nielsen.com">SassMe</a> <time>(2012)</time>
+      </h2>
+      <p>
+        A tool
+        <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">made</a> to
+        visualize Sass color functions in real-time, no compilation required.
+        Loved by folks all over the industry:
+      </p>
       <ul class="citations">
         {{#tweets.sassme}}
         <li>
@@ -280,160 +341,17 @@
         </li>
         {{/tweets.sassme}}
       </ul>
-      <p>Writeup:</p>
-      <ul>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">SassMe v2.0</a>
-          <time>(2016-09-27)</time>
-        </li>
-      </ul>
     </section>
-
-    <section id="readlist">
-      <a href="#readlist">{{{svgs.readlists}}}</a>
-      <h1>
-        <a href="https://readlists.jim-nielsen.com">Readlists</a>
-        <time>(2021)</time>
-      </h1>
-      <p>
-        Recreating the idea behind a now defunct (but once incredibly useful)
-        service: Readlists. All design and development, bugs and features,
-        credit and blame goes directly to me.
-      </p>
-
-      <p>Writeup:</p>
-      <ul>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
-            >(Re)Introducing Readlists</a
-          >
-          <time>(2021-05-10)</time>
-        </li>
-      </ul>
-    </section>
-
-    <section id="teamcolors">
-      <a href="#teamcolors">{{{svgs.teamcolors}}}</a>
-      <h1>
-        <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
-        <time>(2015)</time>
-      </h1>
-      <p>
-        A color reference for favorite sporting teams across various
-        profressional leagues.
-      </p>
-      <p>Praise:</p>
-      <ul class="citations">
-        {{#tweets.teamcolors}}
-        <li>
-          <a href="https://twitter.com/user/status/{{id}}">{{author.name}}:</a>
-          “{{content}}”
-        </li>
-        {{/tweets.teamcolors}}
-      </ul>
-      <p>Writeups:</p>
-      <ul>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2015/team-colors-2-0/"
-            >Team Colors 2.0</a
-          >
-          <time>(2015-01-16)</time>
-        </li>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2013/teamcolors/"
-            >Team Color Codes</a
-          >
-          <time>(2013-02-19)</time>
-        </li>
-      </ul>
-    </section>
-
-    <section id="published-articles">
-      <a href="#published-articles">{{{svgs.published-articles}}}</a>
-      <h1>Published Articles <time>(2012–2018)</time></h1>
-      <p>
-        I wrote for others’ blogs more frequently, but now I prefer to be my own
-        publisher. I keep these for archival purposes.
-      </p>
-      <ul>
-        {{#publishings.visible}}
-        <li>
-          <a href="{{link}}">{{title}}</a>
-          <time>({{publisherDomain}}, {{date}})</time>
-        </li>
-        {{/publishings.visible}}
-      </ul>
-      <details>
-        <summary>View all</summary>
-        <ul>
-          {{#publishings.hidden}}
-          <li>
-            <a href="{{link}}">{{title}}</a>
-            <time>({{publisherDomain}}, {{date}})</time>
-          </li>
-          {{/publishings.hidden}}
-        </ul>
-      </details>
-    </section>
-
-    <section id="logo-integrity">
-      <a href="#logo-integrity">{{{svgs.logo-integrity}}}</a>
-
-      <h1>
-        <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
-        <time>(2014)</time>
-      </h1>
-      <p>
-        In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an
-        image be and still be recognized?” For fun, I built an experiment to
-        find out.
-      </p>
-      <p>Writeups:</p>
-
-      <ul>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2014/logo-integrity/"
-            >Logo Integrity Brought into Focus</a
-          >
-          <time>(2014-09-02)</time>
-        </li>
-        <li>
-          <a href="https://blog.jim-nielsen.com/2018/cabin-of-logo-integrity/"
-            >My Little Cabin in the Woods of Logo Integrity</a
-          >
-          <time>(2018-08-09)</time>
-        </li>
-      </ul>
-    </section>
-
-    <section id="gimmiedaticon">
-      <a href="#gimmiedaticon">{{{svgs.gimmiedaticon}}}</a>
-      <h1>
-        <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
-        <time>(2015)</time>
-      </h1>
-      <p>
-        A tool to retrieve full-sized icon artwork for any app in the App Store
-        (based on a tutorial published for Web Design Tuts+).
-      </p>
-      <p>Writeup:</p>
-      <ul>
-        <li>
-          <a
-            href="https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866"
-            >Building a Mini, API-Driven Web App</a
-          >
-          <time>(webdesign.tutsplus.com, 2015-08)</time>
-        </li>
-      </ul>
-    </section>
-
-    <hr />
 
     <section id="employment">
       <a href="#employment">{{{svgs.employment}}}</a>
       <h1>Employment</h1>
+      <p>
+        Fun fact: my first (W2) job was grunt work with a plumbing, heating, and
+        A/C company
+      </p>
 
+      <h2>Preface</h2>
       <p>
         More than any job title, project, or company, I’m proud of the
         <em>people</em>
@@ -454,10 +372,12 @@
         <a href="https://tylergaw.com" title="the gaw">sincere</a> people.
       </p>
 
+      <h2>A Short List</h2>
       <p>
-        Now, here are a few <em>places</em> I’ve worked. Click the company name
-        to read writeups on my blog from my time there.
+        I should make these longer and more descriptive of the transformative
+        work I did, but I’m too busy making new stuff.
       </p>
+      <p>Company names link to contemporary writeups from my blog.</p>
 
       <ul>
         <li>
@@ -483,47 +403,16 @@
         <li>
           Lead Designer,
           <a href="https://blog.jim-nielsen.com/tags#kindling">Kindling</a>
-          <time>(2012–2016, Remote)</time>
+          <time>(2012–2016, NYC)</time>
         </li>
         <li>
           Web Designer,
           <a href="https://blog.jim-nielsen.com/tags#arc90">Arc90</a>
-          <time>(2012, Remote)</time>
+          <time>(2012, NYC)</time>
         </li>
-      </ul>
-      <p>
-        Sometimes you just want a keyword dump of tools and technologies. These
-        are the ones I love—and if I’m honest, some are a love/hate:
-      </p>
-
-      <ul class="list-condensed list-condensed--cols">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>RSS</li>
-        <li>Markdown</li>
-        <li>URLs</li>
-        <li>Jekyll</li>
-        <li>Figma</li>
-        <li>Sketch</li>
-        <li>Photoshop</li>
-        <li>InDesign</li>
-        <li>Sass</li>
-        <li>CSS Modules</li>
-        <li>jQuery</li>
-        <li>Mustache</li>
-        <li>Node.js</li>
-        <li>Deno</li>
-        <li>React</li>
-        <li>Preact</li>
-        <li>Redux</li>
-        <li>Astro</li>
-        <li>Metalsmith</li>
-        <li>Git</li>
-        <li>Prettier</li>
       </ul>
     </section>
 
-    <footer>Thank you for visiting a personal website 🙏</footer>
+    <footer>Thank you for visiting a personal website.</footer>
   </body>
 </html>

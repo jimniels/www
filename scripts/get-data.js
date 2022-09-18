@@ -202,9 +202,8 @@ export async function getData() {
       }))
       .reduce(
         (acc, item, i) => {
-          if (i < 8) {
+          if (item.featured) {
             acc.visible.push(item);
-            return acc;
           } else {
             acc.hidden.push(item);
           }

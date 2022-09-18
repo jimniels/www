@@ -1,10 +1,18 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"); */
 /* =============================================================================
    General
    ========================================================================== */
 
 :root {
-  --color-text: #222222;
+  --color-text: rgb(0 0 0);
+  --color-text-muted: rgb(0 0 0 / 60%);
+  --color-text-mutedest: rgb(0 0 0 / 40%);
   --color-bg: #f0f0f0;
+  --color-bg-overlay: #e9e9e9;
+
+  --font-serif: -apple-system-ui-serif, ui-serif, "Lora", "Georgia", serif;
+  --font-sans-serif: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
   --spacer-8: 0.5rem;
   --spacer-12: 0.75rem;
@@ -13,12 +21,17 @@
   --spacer-32: 2rem;
   --spacer-48: 3rem;
   --spacer-64: 4rem;
+
+  --spacer-72: calc(72rem / 20);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: #f2f2f2;
+    --color-text: rgb(255 255 255);
+    --color-text-muted: rgb(255 255 255 / 60%);
+    --color-text-mutedest: rgb(255 255 255 / 40%);
     --color-bg: #222222;
+    --color-bg-overlay: #191919;
   }
 }
 
@@ -27,24 +40,24 @@ html {
   font-size: 1.25rem;
   line-height: 1.5;
   color-scheme: light dark;
-  color: var(--color-text);
+  color: var(--color-text-muted);
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: ui-serif, Palatino, Georgia, serif;
   margin: 0 var(--spacer-16);
+  font-family: var(--font-sans-serif);
 }
 
 @supports (font-family: ui-serif) {
   body {
-    /* -webkit-font-smoothing: antialiased; */
+    -webkit-font-smoothing: antialiased;
   }
 }
 
 a,
 button {
-  color: inherit;
+  color: var(--color-text);
   text-decoration: none;
   border-bottom: 1px solid;
 }
@@ -70,15 +83,15 @@ button {
 }
 
 time {
-  font-size: 0.8rem; /* 16 */
+  font-size: 0.8em;
   font-weight: 400;
   white-space: nowrap;
-  opacity: 0.5;
+  color: var(--color-text-mutedest);
 }
 
 ul {
   list-style-type: circle;
-  padding-left: var(--spacer-24);
+  padding-left: 0;
 }
 
 ul li:not(:last-child) {
@@ -87,19 +100,27 @@ ul li:not(:last-child) {
 
 h1,
 h2 {
+  font-family: var(--font-serif);
   line-height: 1.2;
-  font-weight: 600;
+  color: var(--color-text);
 }
 
 h1 {
-  font-size: 1.65rem;
-  line-height: 1.2;
-  margin: var(--spacer-8) 0;
+  font-size: 1.6rem;
+  margin: var(--spacer-72) 0 0 0;
+  font-weight: 900;
+}
+
+h1 + p {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: var(--color-text-mutedest);
 }
 
 h2 {
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 3.6rem; /* 72 */
 }
 
 hr {
@@ -117,7 +138,7 @@ hr {
 section {
   position: relative;
   padding-bottom: calc(1.618rem * 4);
-  max-width: 20rem;
+  max-width: 24rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -128,8 +149,13 @@ section svg {
 }
 
 @media screen and (min-width: 550px) {
+  section {
+    margin-left: 12.8rem;
+  }
   section svg {
-    margin-left: -100px;
+    position: absolute;
+    left: -12.8rem;
+    top: calc(var(--spacer-72) * -1);
   }
 }
 
@@ -144,6 +170,19 @@ section svg {
   }
 }
 
+@media screen and (min-width: 70rem) {
+  /* body::before {
+    content: "";
+    position: fixed;
+    right: 0;
+    left: 60rem;
+    top: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 2%);
+    background: var(--color-bg-overlay);
+  } */
+}
+
 section > time {
   display: block;
 }
@@ -153,27 +192,29 @@ section > time {
    ========================================================================== */
 
 footer {
-  text-align: center;
-  opacity: 0.75;
-  font-size: 0.8rem;
+  text-align: right;
+  color: var(--color-text-mutedest);
   padding: var(--spacer-16) 0;
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* =============================================================================
    Components
    ========================================================================== */
 
-.citations {
+.citationz {
   list-style-type: none;
-  padding-left: var(--spacer-8);
+  padding: 0;
+  margin: 0;
 }
 
-.citations li {
-  border-left: 1px solid;
-  padding-left: var(--spacer-16);
+.citationz li {
+  padding: 0;
 }
 
-.citations li:not(:last-child) {
+.citationz li:not(:last-child) {
   margin-bottom: var(--spacer-8);
 }
 
@@ -184,4 +225,24 @@ ul.list-condensed.list-condensed--cols {
 
 ul.list-condensed li {
   margin-bottom: 0;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+dt,
+dd {
+  float: left;
+  padding: 0;
+  margin: 0 0 0.4rem 0;
+}
+dt {
+  width: 30%;
+  color: var(--color-text-mutedest);
+}
+dd {
+  width: 70%;
 }
