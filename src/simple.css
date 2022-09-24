@@ -154,7 +154,7 @@ section svg {
   }
   section svg {
     position: absolute;
-    left: -12.8rem;
+    left: -11.8rem;
     top: calc(var(--spacer-72) * -1);
   }
 }
