@@ -72,16 +72,6 @@ section > a[href^="#"] {
   cursor: default;
 }
 
-button {
-  background: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background: transparent;
-  font-size: 1rem;
-  padding: 0;
-}
-
 time {
   font-size: 0.8em;
   font-weight: 400;
@@ -148,7 +138,7 @@ section svg {
   margin-left: -50px;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 64rem) {
   section {
     margin-left: 12.8rem;
   }
@@ -183,50 +173,6 @@ section svg {
   } */
 }
 
-section > time {
-  display: block;
-}
-
-/* =============================================================================
-   Footer
-   ========================================================================== */
-
-footer {
-  text-align: right;
-  color: var(--color-text-mutedest);
-  padding: var(--spacer-16) 0;
-  font-size: 0.8rem;
-  position: relative;
-  z-index: 1;
-}
-
-/* =============================================================================
-   Components
-   ========================================================================== */
-
-.citationz {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.citationz li {
-  padding: 0;
-}
-
-.citationz li:not(:last-child) {
-  margin-bottom: var(--spacer-8);
-}
-
-ul.list-condensed.list-condensed--cols {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-ul.list-condensed li {
-  margin-bottom: 0;
-}
-
 dl {
   width: 100%;
   overflow: hidden;
@@ -237,12 +183,23 @@ dt,
 dd {
   float: left;
   padding: 0;
-  margin: 0 0 0.4rem 0;
+  margin: 0 0 var(--spacer-8) 0;
 }
+
 dt {
   width: 30%;
   color: var(--color-text-mutedest);
 }
+
 dd {
   width: 70%;
+}
+
+footer {
+  text-align: right;
+  color: var(--color-text-mutedest);
+  padding: var(--spacer-16) 0;
+  font-size: 0.8rem;
+  position: relative;
+  z-index: 1;
 }
