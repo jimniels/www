@@ -1,9 +1,25 @@
 ---
+- title: "Data Flow in Remix"
+  publisherDomain: remix.run
+  date: 2022-06-22
+  link: https://remix.run/blog/remix-data-flow
+  featured: true
+- title: "Remix and “The Edge”"
+  publisherDomain: remix.run
+  date: 2022-05-13
+  link: https://remix.run/blog/remix-and-the-edge
+  featured: true
 - title: Combining Netlify with Dropbox For a One-Click Publishing Process
   publisherDomain: netlify.com
   date: 2018-10-16
   link: https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/
+  featured: true
+- title: Design systems and trade-offs
+  publisherDomain: tech.sagesure.com
+  date: 2021-11-30
+  link: https://tech.sagesure.com/blog/2021-11-30-design-systems-and-trade-offs/
 - title: Connecting an API-Driven Web App with Javascript
+  featured: true
   publisherDomain: webdesign.tutsplus.com
   date: 2015-08-24
   link: http://webdesign.tutsplus.com/tutorials/connecting-an-api-driven-web-app-with-javascript--cms-24576
@@ -72,14 +88,14 @@
       handle: designerdepot
       name: Webdesigner Depot
       followers: 687000
-# - title: Keep Employees Engaged in Innovation with Responsive Design
-#   publisherDomain: kindlingapp.com
-#   date: 2013-11-25
-#   link: http://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/
-#   excerpt: 'We live in a multi-device world. Choosing which device to use depends
-#     on context: where you are, how much time you have, and what you want to accomplish.
-#     Great ideas, however, don’t care about context. And they won’t wait until you’re
-#     sitting in front of your office computer to materialize.'
+- title: Keep Employees Engaged in Innovation with Responsive Design
+  publisherDomain: kindlingapp.com
+  date: 2013-11-25
+  link: https://web.archive.org/web/20150729223504/https://www.kindlingapp.com/blog/keep-employees-engaged-in-innovation-with-responsive-design/
+  excerpt: 'We live in a multi-device world. Choosing which device to use depends
+    on context: where you are, how much time you have, and what you want to accomplish.
+    Great ideas, however, don’t care about context. And they won’t wait until you’re
+    sitting in front of your office computer to materialize.'
 - title: Implementing the Float Label Form Pattern
   publisherDomain: webdesign.tutsplus.com
   date: 2013-10-28
