@@ -10,4 +10,4 @@
 # Redirect from netlify domain
 https://jim-nielsen.netlify.com/* https://www.jim-nielsen.com/:splat 301!
 
-/linkedin https://youtu.be/dQw4w9WgXcQ 302
+# /linkedin https://youtu.be/dQw4w9WgXcQ 302
