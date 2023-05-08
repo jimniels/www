@@ -11,3 +11,4 @@
 https://jim-nielsen.netlify.com/* https://www.jim-nielsen.com/:splat 301!
 
 # /linkedin https://youtu.be/dQw4w9WgXcQ 302
+/.well-known/avatar /.well-known/avatar.jpg 200
