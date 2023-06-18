@@ -110,20 +110,21 @@
         -moz-osx-font-smoothing: grayscale;
       }
 
-      /* body::before {
+      body::before {
         content: "";
         display: block;
-        background: url(/logo-black.svg) no-repeat 0 0;
-        width: 219px;
-        height: 107px;
-        margin: 2rlh 0 3rlh 4rem;
+        background: url(/logo-black.png) no-repeat 0 0;
+        background-size: contain;
+        width: 315px;
+        height: 153px;
+        margin: 4rlh 0 5rlh 4rem;
       }
 
       @media (prefers-color-scheme: dark) {
         body::before {
-          background-image: url(/logo-white.svg);
+          background-image: url(/logo-white.png);
         }
-      } */
+      }
 
       h1,
       h2,
@@ -174,14 +175,10 @@
       }
 
       /* Section =============================================================*/
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-      }
+
       @media (min-width: 1000px) {
         section {
-          margin: var(--spacer-48) var(--spacer-48) 0 18rem;
+          margin: 0 0 4rlh 18rem;
         }
 
         h1 {
@@ -196,13 +193,6 @@
         position: relative;
         max-width: 40rem;
         clear: both;
-      }
-
-      section#photo {
-        background: #160e0b;
-        max-width: none;
-        margin-right: 0;
-        margin-top: var(--spacer-16);
       }
 
       section#employment p a[href*="blog.jim-nielsen.com"] {
@@ -252,20 +242,6 @@
     </style>
   </head>
   <body>
-    <section id="photo">
-      <img
-        src="/photo.jpg"
-        width="368"
-        height="418"
-        alt="Photo of Jim Nielsen with his name signed."
-      />
-      <img
-        src="/name.png"
-        width="297"
-        height="145"
-        style="position: absolute; bottom: -58px; left: 310px"
-      />
-    </section>
     <section id="intro">
       <h1>About</h1>
       <h2>Jim Nielsen, Web Generalist</h2>
