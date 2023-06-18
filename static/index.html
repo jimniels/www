@@ -115,9 +115,10 @@
         display: block;
         background: url(/logo-black.png) no-repeat 0 0;
         background-size: contain;
-        width: 315px;
+        width: 100%;
+        max-width: 315px;
         height: 153px;
-        margin: 4rlh 0 5rlh 4rem;
+        margin: 4rlh 0 5rlh 0;
       }
 
       @media (prefers-color-scheme: dark) {
@@ -177,6 +178,9 @@
       /* Section =============================================================*/
 
       @media (min-width: 1000px) {
+        body::before {
+          margin-left: 4rem;
+        }
         section {
           margin: 0 0 4rlh 18rem;
         }
@@ -232,12 +236,12 @@
       }
 
       footer {
-        text-align: right;
         color: var(--color-text-mutedest);
-        padding: var(--spacer-16) 0;
         font-size: 0.8rem;
         position: relative;
         z-index: 1;
+        margin-top: 8rlh;
+        margin-bottom: 0.5rlh;
       }
     </style>
   </head>
@@ -302,8 +306,8 @@
       <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
       <p>2022 · Remote</p>
       <p>
-        Design, code, and education at an innovative technology startup acquired
-        by Shopify.
+        Design, code, and education at an innovative technology startup.
+        Acquired by Shopify.
         <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
       </p>
 
