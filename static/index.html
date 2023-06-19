@@ -184,9 +184,12 @@
       }
 
       summary {
-        margin-left: var(--spacer-32);
         margin-bottom: var(--spacer-24);
         color: var(--color-text-mutedest);
+      }
+
+      section#passion-projects summary {
+        margin-left: var(--spacer-24);
       }
 
       /* Section =============================================================*/
@@ -264,16 +267,16 @@
       }
 
       /* ul:has(q) {
-        margin: var(--spacer-24) 0;
-        
-      }
-      ul:has(q) li {
-        list-style-type: none;
-        border-left: 1px solid var(--color-text-mutedest);
-        padding-left: var(--spacer-16);
-        margin-bottom: var(--spacer-12);
-        font-style: italic;
-      } */
+  margin: var(--spacer-24) 0;
+  
+}
+ul:has(q) li {
+  list-style-type: none;
+  border-left: 1px solid var(--color-text-mutedest);
+  padding-left: var(--spacer-16);
+  margin-bottom: var(--spacer-12);
+  font-style: italic;
+} */
 
       cite {
         font-style: normal;
@@ -295,17 +298,19 @@
   <body>
     <section id="intro">
       <h1>About</h1>
-      <h2>Jim Nielsen, Web Generalist</h2>
-      <p>Designer, Front-end Engineer, Writer</p>
+      <h2>
+        Jim Nielsen — Generalist:
+        <span style="color: var(--color-text-muted)"
+          >Designer, Front-end Engineer, Writer</span
+        >
+      </h2>
+      <p>Making Webpages Since 2001</p>
       <p>
         I love the web. I believe the web browser is the most influential piece
         of software ever written, and I’ve spent 20+ years designing and
-        building experiences around it.
-      </p>
-      <p>
-        I love being at the intersection or art and engineering — where people
-        don’t ask, “I thought you were a designer, why are you writing code?” Or
-        vice versa.
+        building experiences around it. I love being at the intersection or art
+        and engineering — where people don’t ask, “I thought you were a
+        designer, why are you writing code?” Or vice versa.
       </p>
     </section>
     <section id="contact">
@@ -343,7 +348,7 @@
         Product Design Engineer @
         <a href="https://quadratichq.com">Quadratic</a>
       </h2>
-      <p>2023–Now · Remote</p>
+      <p>Since 2023 · Remote</p>
       <p>
         Design, code, and education for a startup building an infinite
         spreadsheet powered by code and aimed at developers and data scientists.
@@ -353,7 +358,7 @@
       <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
       <p>2022 · Remote</p>
       <p>
-        Design, code, and education at an innovative technology startup.
+        Design, front-end, and writing for a web application framework startup.
         Acquired by Shopify.
         <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
       </p>
@@ -361,46 +366,67 @@
       <h2>Director of Design @ <a href="https://sagesure.com">SageSure</a></h2>
       <p>2016–2022 · Remote</p>
       <p>
-        Design and front-end leadership at an insurance company that grew from
+        Design and front-end leadership at an insurance company which grew from
         $200M to $1B+ in premium during my tenure.
         <a href="https://blog.jim-nielsen.com/tags#sagesure">Writeups…</a>
       </p>
 
-      <!-- TODO
+      <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
+        There’s more: freelance design & code for Time Inc., Lead Designer for a
+        startup in NYC, all the way back to Lifeguard at 16y/o.
+        <a href="#contact">Contact me</a> for my life story.
+      </p>
+
+      <!--
       <details>
         <summary>More…</summary>
 
-        <h2>UI Engineer @ <a href="https://timshel.com">Timshel</a></h2>
+        <h2>
+          UI Engineer @
+          <a href="https://web.archive.org/web/2016/https://timshel.com/"
+            >Timshel</a
+          >
+        </h2>
         <p>2016 · Remote</p>
         <p>
           tk. <a href="https://blog.jim-nielsen.com/tags#timshel">Writeups →</a>
         </p>
 
-        
-        <li>
-          Designer & Front-end Engineer,
-          <a href="https://blog.jim-nielsen.com/tags#postlight">Postlight</a>
-          <time>(2016, Remote)</time>
-        </li>
-        <li>
+        <h2>
+          Designer & Front-end Engineer
+          <a href="https://postlight.com/">Postlight</a>
+        </h2>
+        <p>2016 · Remote</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#postlight">Writeups…</a>
+        </p>
+        <h2>
           Lead Designer,
-          <a href="https://blog.jim-nielsen.com/tags#kindling">Kindling</a>
-          <time>(2012–2016, NYC)</time>
-        </li>
-        <li>
+          <a
+            href="https://web.archive.org/web/2015/https://www.kindlingapp.com/"
+            >Kindling</a
+          >
+        </h2>
+        <p>2012–2016 · NYC</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#kindling">Writeups…</a>
+        </p>
+        <h2>
           Web Designer,
-          <a href="https://blog.jim-nielsen.com/tags#arc90">Arc90</a>
-          <time>(2012, NYC)</time>
-        </li>
-        
-      </details> -->
+          <a href="https://web.archive.org/web/2012/http://arc90.com/">Arc90</a>
+        </h2>
+
+        <p>2012 · NYC</p>
+        <p><a href="https://blog.jim-nielsen.com/tags#arc90">Writeups</a></p>
+      </details>
+      -->
     </section>
 
-    <section>
+    <section id="passion-projects">
       <h1>Passion Projects</h1>
 
       <h2><a href="https://blog.jim-nielsen.com">Personal Blog</a></h2>
-      <p>2012–Now</p>
+      <p>Since 2012</p>
       <p>
         <!-- https://shoptalkshow.com/504/ -->
         Esteemed writing linked to by industry-renowned social sites,
@@ -452,6 +478,7 @@
         <q>Jim Nielsen was blowin’ minds the other day when he blogged…</q>
       </p>
 
+      <!--
       <details>
         <summary>More…</summary>
         <dl>
@@ -609,6 +636,7 @@
           </dd>
         </dl>
       </details>
+      -->
 
       <br /><br />
       <h2>
@@ -617,9 +645,9 @@
         <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
         & <a href="https://www.appiconbook.com">Book</a>
       </h2>
-      <p>2012–Now</p>
+      <p>Since 2011</p>
       <p>
-        Years of designing, developing, curating,
+        Years designing, developing, curating,
         <a href="https://blog.jim-nielsen.com/tags#iconGalleries"
           >blogging about</a
         >, and
@@ -631,11 +659,11 @@
       </p>
 
       <p>
-        <cite>
-          <a href="https://twitter.com/user/status/1365042604132368385"
+        <cite
+          ><a href="https://twitter.com/user/status/1365042604132368385"
             >Brian Lovin</a
-          >
-        </cite>
+          ></cite
+        >
         <q>Love these [icon sites] Nicely done @jimniels</q>
       </p>
       <!-- <li>
@@ -648,8 +676,12 @@
         </li> -->
 
       <p>
-        With world-class iconist Michael Flarup, I helped write, curate, and
-        design <em>The iOS App Icon Book</em>, which funded on
+        Recruited by reknowned iconist Michael Flarup, I helped
+        <a
+          href="https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/"
+          >write</a
+        >, curate, and design <em>The iOS App Icon Book</em>, which initially
+        funded on
         <a
           href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
           >KickStarter</a
@@ -659,12 +691,12 @@
       </p>
 
       <p>
-        <cite>
-          <a
+        <cite
+          ><a
             href="https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book"
             >John Gruber</a
-          >
-        </cite>
+          ></cite
+        >
         <q
           >Take my money — I can’t wait to devour this book. It looks so
           good.</q

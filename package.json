@@ -18,11 +18,7 @@
     "yamljs": "^0.3.0"
   },
   "scripts": {
-    "clear-cache": "rm -rf ./cache",
-    "build:data": "node scripts/cache-data.js",
-    "build": "echo 'No build'",
-    "build-old": "rm -f index.html && node scripts/build.js",
-    "build-node": "rm -f index.html && node src/index.js",
+    "build": "echo 'No build required. Hooray!'",
     "start": "netlify dev static"
   },
   "repository": {
