@@ -121,7 +121,7 @@
         opacity: 0.5;
         position: absolute;
         top: var(--spacer-24);
-        right: calc(var(--spacer-24) * -1);
+        right: 0;
       }
 
       @media (min-width: 1000px) {
@@ -196,7 +196,7 @@
 
       @media (min-width: 1000px) {
         section {
-          margin: 0 0 4rlh 18rem;
+          margin: 0 0 var(--spacer-96) 18rem;
         }
 
         h1 {
@@ -242,13 +242,14 @@
 
       p:has(q) {
         margin-bottom: var(--spacer-24);
+        margin-left: var(--spacer-16);
       }
 
       p:has(q) cite {
         text-indent: var(--spacer-16);
       }
 
-      @media (min-width: 540px) {
+      @media (min-width: 600px) {
         dt,
         dd,
         p:has(q) q,
@@ -263,6 +264,9 @@
         p:has(q) cite {
           width: 30%;
           /* margin: 0 0 var(--spacer-16) 0; */
+        }
+        p:has(q) {
+          margin-left: 0;
         }
       }
 
@@ -298,19 +302,13 @@ ul:has(q) li {
   <body>
     <section id="intro">
       <h1>About</h1>
-      <h2>
-        Jim Nielsen — Generalist:
-        <span style="color: var(--color-text-muted)"
-          >Designer, Front-end Engineer, Writer</span
-        >
-      </h2>
-      <p>Making Webpages Since 2001</p>
+      <h2>Jim Nielsen, Unicorn</h2>
+      <p>Designer, Front-end Engineer, Writer</p>
       <p>
-        I love the web. I believe the web browser is the most influential piece
-        of software ever written, and I’ve spent 20+ years designing and
-        building experiences around it. I love being at the intersection or art
-        and engineering — where people don’t ask, “I thought you were a
-        designer, why are you writing code?” Or vice versa.
+        The web browser is the most influential piece of software ever written,
+        and I’ve spent 20+ years creating experiences around it. I love the
+        intersection of art and engineering. “You are a designer, why are you
+        writing code?” Is a silly question. Design and code are one.
       </p>
     </section>
     <section id="contact">
@@ -372,9 +370,9 @@ ul:has(q) li {
       </p>
 
       <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
-        There’s more: freelance design & code for Time Inc., Lead Designer for a
-        startup in NYC, all the way back to Lifeguard at 16y/o.
-        <a href="#contact">Contact me</a> for my life story.
+        There’s more: contractor doing design & code for Time Inc., Lead
+        Designer for a startup in NYC, even city pool lifeguard.
+        <a href="#contact">Contact me</a> for all those deets.
       </p>
 
       <!--
@@ -429,7 +427,7 @@ ul:has(q) li {
       <p>Since 2012</p>
       <p>
         <!-- https://shoptalkshow.com/504/ -->
-        Esteemed writing linked to by industry-renowned social sites,
+        Reknowned writing linked to by leading industry social sites,
         publications, and newsletters such as
         <a
           href="https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/"
@@ -456,8 +454,8 @@ ul:has(q) li {
           ><a href="https://adactio.com/journal/18008">Jeremy Keith</a></cite
         >
         <q
-          >damn, do I enjoy reading [Jim’s] blog. Last year alone, I ended up
-          linking to [his] posts ten different times.</q
+          >damn, do I enjoy reading [Jim’s] blog.<!-- Last year alone, I ended up
+          linking to [his] posts ten different times.--></q
         >
       </p>
       <p>
@@ -475,7 +473,7 @@ ul:has(q) li {
             >Chris Coyier</a
           ></cite
         >
-        <q>Jim Nielsen was blowin’ minds the other day when he blogged…</q>
+        <q>Jim was blowin’ minds the other day when he blogged…</q>
       </p>
 
       <!--
@@ -643,7 +641,6 @@ ul:has(q) li {
         <a href="https://www.iosicongallery.com">iOS</a>,
         <a href="https://www.macosicongallery.com">macOS</a>, and
         <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
-        & <a href="https://www.appiconbook.com">Book</a>
       </h2>
       <p>Since 2011</p>
       <p>
@@ -666,28 +663,39 @@ ul:has(q) li {
         >
         <q>Love these [icon sites] Nicely done @jimniels</q>
       </p>
-      <!-- <li>
-          <cite
-            ><a href="https://twitter.com/user/status/219856804987928576"
-              >Smashing Magazine</a
-            ></cite
-          >
-          <q>Not a fan of showcases, but iOS icon gallery looks great</q>
-        </li> -->
+      <!-- <p>
+        <cite
+          ><a
+            href="https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b"
+            >Michael Flarup</a
+          ></cite
+        ><q>[Jim’s] got great curation abilities.</q>
+      </p> -->
+      <!-- <p>
+        <cite
+          ><a href="https://twitter.com/user/status/219856804987928576"
+            >Smashing Magazine</a
+          ></cite
+        >
+        <q>Not a fan of showcases, but iOS icon gallery looks great</q>
+      </p> -->
 
+      <br /><br />
+      <h2>
+        <i><a href="https://www.appiconbook.com">The App Icon Book</a></i>
+      </h2>
+      <p>2018–2022</p>
       <p>
-        Recruited by reknowned iconist Michael Flarup, I helped
+        Recruited by world-class iconist Michael Flarup to help
         <a
           href="https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/"
           >write</a
-        >, curate, and design <em>The iOS App Icon Book</em>, which initially
-        funded on
+        >, curate, and design the book, whose first run funded on
         <a
           href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
           >KickStarter</a
         >
-        at ~$130,000 by 1,450 backers and received overwhelming positive
-        reviews.
+        at ~$130,000 by 1,450 backers.
       </p>
 
       <p>
