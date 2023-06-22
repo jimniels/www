@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic -->
     <meta charset="utf-8" />
     <title>Jim Nielsen</title>
     <meta name="description" content="The personal website of Jim Nielsen." />
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,11 +16,13 @@
       rel="stylesheet"
     />
 
+    <!-- rel=me links -->
     <link rel="me" href="https://github.com/jimniels" />
     <link rel="me" href="https://twitter.com/jimniels" />
     <link rel="me" href="https://mastodon.social/@jimniels" />
     <link rel="me" href="https://dribbble.com@jimniels" />
 
+    <!-- Social previews -->
     <meta property="og:title" content="Jim Nielsen" />
     <meta
       property="og:description"
@@ -37,6 +41,7 @@
     />
     <meta name="twitter:image" content="https://www.jim-nielsen.com/og.png" />
 
+    <!-- RSS for subdomains -->
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -63,7 +68,7 @@
       title="Jim Nielsen’s Notes: JSON Feed"
     />
 
-    <!-- Inline our CSS -->
+    <!-- Inline the CSS -->
     <style>
       /* General =============================================================*/
       :root {
@@ -270,21 +275,10 @@
         }
       }
 
-      /* ul:has(q) {
-  margin: var(--spacer-24) 0;
-  
-}
-ul:has(q) li {
-  list-style-type: none;
-  border-left: 1px solid var(--color-text-mutedest);
-  padding-left: var(--spacer-16);
-  margin-bottom: var(--spacer-12);
-  font-style: italic;
-} */
-
       cite {
         font-style: normal;
       }
+
       cite:after {
         content: ":";
       }
@@ -300,6 +294,7 @@ ul:has(q) li {
     </style>
   </head>
   <body>
+    <!-- Intro \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
     <section id="intro">
       <h1>About</h1>
       <h2>
@@ -314,6 +309,8 @@ ul:has(q) li {
         it. I thrive at intersection of art and engineering on the web.
       </p>
     </section>
+
+    <!-- Contact \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
     <section id="contact">
       <h1>Contact</h1>
       <dl>
@@ -342,86 +339,7 @@ ul:has(q) li {
       </dl>
     </section>
 
-    <section id="employment">
-      <h1>Employment</h1>
-
-      <h2>
-        Product Design Engineer @
-        <a href="https://quadratichq.com">Quadratic</a>
-      </h2>
-      <p>Since 2023 · Remote</p>
-      <p>
-        Design, code, and education for a startup building an infinite
-        spreadsheet powered by code and aimed at developers and data scientists.
-        <a href="https://blog.jim-nielsen.com/tags#quadratic">Writeups…</a>
-      </p>
-
-      <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
-      <p>2022 · Remote</p>
-      <p>
-        Design, front-end, and writing for a web application framework startup.
-        Acquired by Shopify.
-        <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
-      </p>
-
-      <h2>Director of Design @ <a href="https://sagesure.com">SageSure</a></h2>
-      <p>2016–2022 · Remote</p>
-      <p>
-        Design and front-end leadership at an insurance company which grew from
-        $200M to $1B+ in premium during my tenure.
-        <a href="https://blog.jim-nielsen.com/tags#sagesure">Writeups…</a>
-      </p>
-
-      <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
-        There’s more: a few tech startups in NYC, a lifeguard when I was 16 —
-        <a href="#contact">contact me</a> for those deets.
-      </p>
-
-      <!--
-      <details>
-        <summary>More…</summary>
-
-        <h2>
-          UI Engineer @
-          <a href="https://web.archive.org/web/2016/https://timshel.com/"
-            >Timshel</a
-          >
-        </h2>
-        <p>2016 · Remote</p>
-        <p>
-          tk. <a href="https://blog.jim-nielsen.com/tags#timshel">Writeups →</a>
-        </p>
-
-        <h2>
-          Designer & Front-end Engineer
-          <a href="https://postlight.com/">Postlight</a>
-        </h2>
-        <p>2016 · Remote</p>
-        <p>
-          <a href="https://blog.jim-nielsen.com/tags#postlight">Writeups…</a>
-        </p>
-        <h2>
-          Lead Designer,
-          <a
-            href="https://web.archive.org/web/2015/https://www.kindlingapp.com/"
-            >Kindling</a
-          >
-        </h2>
-        <p>2012–2016 · NYC</p>
-        <p>
-          <a href="https://blog.jim-nielsen.com/tags#kindling">Writeups…</a>
-        </p>
-        <h2>
-          Web Designer,
-          <a href="https://web.archive.org/web/2012/http://arc90.com/">Arc90</a>
-        </h2>
-
-        <p>2012 · NYC</p>
-        <p><a href="https://blog.jim-nielsen.com/tags#arc90">Writeups</a></p>
-      </details>
-      -->
-    </section>
-
+    <!-- Passion Projects \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
     <section id="passion-projects">
       <h1>Passion Projects</h1>
 
@@ -741,6 +659,87 @@ ul:has(q) li {
       </p>
     </section>
 
+    <!-- Employment \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
+    <section id="employment">
+      <h1>Employment</h1>
+
+      <h2>
+        Product Design Engineer @
+        <a href="https://quadratichq.com">Quadratic</a>
+      </h2>
+      <p>Since 2023 · Remote</p>
+      <p>
+        Design, code, and education for a startup building an infinite
+        spreadsheet powered by code and aimed at developers and data scientists.
+        <a href="https://blog.jim-nielsen.com/tags#quadratic">Writeups…</a>
+      </p>
+
+      <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
+      <p>2022 · Remote</p>
+      <p>
+        Design, front-end, and writing for a web application framework startup.
+        Acquired by Shopify.
+        <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
+      </p>
+
+      <h2>Director of Design @ <a href="https://sagesure.com">SageSure</a></h2>
+      <p>2016–2022 · Remote</p>
+      <p>
+        Design and front-end leadership at an insurance company which grew from
+        $200M to $1B+ in premium during my tenure.
+        <a href="https://blog.jim-nielsen.com/tags#sagesure">Writeups…</a>
+      </p>
+
+      <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
+        There’s more: a few tech startups in NYC, a lifeguard when I was 16 —
+        <a href="#contact">contact me</a> for those deets.
+      </p>
+
+      <!--
+      <details>
+        <summary>More…</summary>
+
+        <h2>
+          UI Engineer @
+          <a href="https://web.archive.org/web/2016/https://timshel.com/"
+            >Timshel</a
+          >
+        </h2>
+        <p>2016 · Remote</p>
+        <p>
+          tk. <a href="https://blog.jim-nielsen.com/tags#timshel">Writeups →</a>
+        </p>
+
+        <h2>
+          Designer & Front-end Engineer
+          <a href="https://postlight.com/">Postlight</a>
+        </h2>
+        <p>2016 · Remote</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#postlight">Writeups…</a>
+        </p>
+        <h2>
+          Lead Designer,
+          <a
+            href="https://web.archive.org/web/2015/https://www.kindlingapp.com/"
+            >Kindling</a
+          >
+        </h2>
+        <p>2012–2016 · NYC</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#kindling">Writeups…</a>
+        </p>
+        <h2>
+          Web Designer,
+          <a href="https://web.archive.org/web/2012/http://arc90.com/">Arc90</a>
+        </h2>
+
+        <p>2012 · NYC</p>
+        <p><a href="https://blog.jim-nielsen.com/tags#arc90">Writeups</a></p>
+      </details>
+      -->
+    </section>
+
     <!-- <section>
       <h1>Side Projects</h1>
 
@@ -773,21 +772,21 @@ ul:has(q) li {
         </dd>
       </dl>
 
+      <h2>
+        <a href="https://readlists.jim-nielsen.com">Readlists</a>
+      </h2>
+      <p>2021</p>
+      <p>
+        Recreating the idea behind the incredibly useful, but now defunct,
+        service Readlists. All design and development
+        <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
+          >done</a
+        >
+        by me — bugs aren’t mine though.
+      </p>
+
       <details>
         <summary>More…</summary>
-
-        <h2>
-          <a href="https://readlists.jim-nielsen.com">Readlists</a>
-        </h2>
-        <p>2021</p>
-        <p>
-          Recreating the idea behind the incredibly useful, but now defunct,
-          service Readlists. All design and development
-          <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
-            >done</a
-          >
-          by me — bugs aren’t mine though.
-        </p>
 
         <h2>
           <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
