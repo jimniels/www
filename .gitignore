@@ -9,4 +9,6 @@ build
 .env
 cache
 *.token
-static/index.html
+
+# Local Netlify folder
+.netlify

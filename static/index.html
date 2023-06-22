@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jim Nielsen</title>
+    <meta name="description" content="The personal website of Jim Nielsen." />
+    <meta name="author" content="Jim Nielsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="me" href="https://github.com/jimniels" />
+    <link rel="me" href="https://twitter.com/jimniels" />
+    <link rel="me" href="https://mastodon.social/@jimniels" />
+    <link rel="me" href="https://dribbble.com@jimniels" />
+
+    <meta property="og:title" content="Jim Nielsen" />
+    <meta
+      property="og:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jim-nielsen.com" />
+    <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@jimniels" />
+    <meta name="twitter:title" content="Jim Nielsen" />
+    <meta
+      name="twitter:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta name="twitter:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Blog: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://blog.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Blog: JSON Feed"
+    />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://notes.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Notes: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://notes.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Notes: JSON Feed"
+    />
+
+    <!-- Inline our CSS -->
+    <style>
+      /* General =============================================================*/
+      :root {
+        --color-text: rgb(0 0 0);
+        --color-text-muted: rgb(0 0 0 / 50%);
+        --color-text-mutedest: rgb(0 0 0 / 35%);
+        --color-bg: #fafafa;
+
+        --spacer-8: 0.5rem;
+        --spacer-12: 0.75rem;
+        --spacer-16: 1rem;
+        --spacer-24: 1.5rem;
+        --spacer-32: 2rem;
+        --spacer-48: 3rem;
+        --spacer-64: 4rem;
+        --spacer-72: 4.5rem;
+        --spacer-96: 6rem;
+        --spacer-128: 8rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-text: rgb(255 255 255);
+          --color-text-muted: rgb(255 255 255 / 66%);
+          --color-text-mutedest: rgb(255 255 255 / 33%);
+          --color-bg: #0b0e16;
+        }
+      }
+
+      html {
+        background: var(--color-bg);
+        font-size: 120%;
+        line-height: 1.5;
+        color-scheme: light dark;
+        color: var(--color-text-muted);
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0 var(--spacer-16);
+        font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui,
+          -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body::before {
+        content: "";
+        background: url(/logo-black.png) no-repeat 0 0;
+        background-size: contain;
+        width: 100%;
+        max-width: 315px;
+        height: 153px;
+        opacity: 0.5;
+        position: absolute;
+        top: var(--spacer-24);
+        right: 0;
+      }
+
+      @media (min-width: 1000px) {
+        body::before {
+          position: static;
+          display: block;
+          margin: var(--spacer-48) 0 calc(var(--spacer-48) * -1) 15rem;
+          /* margin-left: 15rem; */
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body::before {
+          background-image: url(/logo-white.png);
+        }
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      p {
+        margin: 0 0 var(--spacer-24) 0;
+      }
+
+      h2 + p {
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        line-height: 1.625;
+        color: var(--color-text-mutedest);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid var(--color-text-mutedest);
+      }
+
+      a:hover {
+        color: var(--color-text) !important;
+        border-bottom-color: var(--color-text);
+      }
+
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        color: var(--color-text-mutedest);
+        font-size: 0.9375rem;
+        margin: var(--spacer-72) 0 var(--spacer-24);
+      }
+
+      h2 {
+        color: var(--color-text);
+      }
+
+      summary {
+        margin-bottom: var(--spacer-24);
+        color: var(--color-text-mutedest);
+      }
+
+      section#passion-projects summary {
+        margin-left: var(--spacer-24);
+      }
+
+      /* Section =============================================================*/
+
+      @media (min-width: 1000px) {
+        section {
+          margin: 0 0 var(--spacer-96) 18rem;
+        }
+
+        h1 {
+          position: absolute;
+          top: 0;
+          left: -16rem;
+          margin: 0;
+        }
+      }
+
+      section {
+        position: relative;
+        max-width: 40rem;
+        clear: both;
+      }
+
+      section#employment p a[href*="blog.jim-nielsen.com"] {
+        color: var(--color-text-mutedest);
+      }
+
+      ul,
+      li {
+        list-style-type: none;
+      }
+      dl,
+      p:has(q) {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+      }
+      dt,
+      dd {
+        padding: 0;
+      }
+      dd {
+        margin: 0 0 var(--spacer-16) 0;
+      }
+
+      #contact dt {
+        color: var(--color-text);
+      }
+
+      p:has(q) {
+        margin-bottom: var(--spacer-24);
+        margin-left: var(--spacer-16);
+      }
+
+      p:has(q) cite {
+        text-indent: var(--spacer-16);
+      }
+
+      @media (min-width: 600px) {
+        dt,
+        dd,
+        p:has(q) q,
+        p:has(q) cite {
+          float: left;
+        }
+        dd,
+        p:has(q) q {
+          width: 70%;
+        }
+        dt,
+        p:has(q) cite {
+          width: 30%;
+          /* margin: 0 0 var(--spacer-16) 0; */
+        }
+        p:has(q) {
+          margin-left: 0;
+        }
+      }
+
+      /* ul:has(q) {
+  margin: var(--spacer-24) 0;
+  
+}
+ul:has(q) li {
+  list-style-type: none;
+  border-left: 1px solid var(--color-text-mutedest);
+  padding-left: var(--spacer-16);
+  margin-bottom: var(--spacer-12);
+  font-style: italic;
+} */
+
+      cite {
+        font-style: normal;
+      }
+      cite:after {
+        content: ":";
+      }
+
+      footer {
+        color: var(--color-text-mutedest);
+        font-size: 0.8rem;
+        position: relative;
+        z-index: 1;
+        margin-top: var(--spacer-128);
+        margin-bottom: var(--spacer-16);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="intro">
+      <h1>About</h1>
+      <h2>
+        Jim Nielsen, Generalist<span style="color: var(--color-text-muted)">
+          / Designer, Front-end Engineer, Writer</span
+        >
+      </h2>
+      <p>Making Websites Since 2001</p>
+      <p>
+        I think the web browser is the most influential piece of software ever
+        written, and I’ve 20+ years designing and building experiences around
+        it. I thrive at intersection of art and engineering on the web.
+      </p>
+    </section>
+    <section id="contact">
+      <h1>Contact</h1>
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a></dd>
+        <dt>Twitter</dt>
+        <dd><a href="https://twitter.com/jimniels">@jimniels</a></dd>
+        <dt>Mastodon</dt>
+        <dd>
+          <a href="https://mastodon.social/@jimniels"
+            >@jimniels@mastodon.social</a
+          >
+        </dd>
+        <!-- <dt>GitHub</dt>
+        <dd><a href="https://github.com/jimniels">jimniels</a></dd> -->
+        <!-- <dt>Dribbble</dt>
+        <dd><a href="https://dribbble.com/jimniels">jimniels</a></dd> -->
+        <dt>LinkedIn</dt>
+        <dd>
+          <a
+            href="/linkedin"
+            title="I once heard someone say, “people who are good at what they do don’t have a LinkedIn”."
+            >Click here</a
+          >
+        </dd>
+      </dl>
+    </section>
+
+    <section id="employment">
+      <h1>Employment</h1>
+
+      <h2>
+        Product Design Engineer @
+        <a href="https://quadratichq.com">Quadratic</a>
+      </h2>
+      <p>Since 2023 · Remote</p>
+      <p>
+        Design, code, and education for a startup building an infinite
+        spreadsheet powered by code and aimed at developers and data scientists.
+        <a href="https://blog.jim-nielsen.com/tags#quadratic">Writeups…</a>
+      </p>
+
+      <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
+      <p>2022 · Remote</p>
+      <p>
+        Design, front-end, and writing for a web application framework startup.
+        Acquired by Shopify.
+        <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
+      </p>
+
+      <h2>Director of Design @ <a href="https://sagesure.com">SageSure</a></h2>
+      <p>2016–2022 · Remote</p>
+      <p>
+        Design and front-end leadership at an insurance company which grew from
+        $200M to $1B+ in premium during my tenure.
+        <a href="https://blog.jim-nielsen.com/tags#sagesure">Writeups…</a>
+      </p>
+
+      <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
+        There’s more: a few tech startups in NYC, a lifeguard when I was 16 —
+        <a href="#contact">contact me</a> for those deets.
+      </p>
+
+      <!--
+      <details>
+        <summary>More…</summary>
+
+        <h2>
+          UI Engineer @
+          <a href="https://web.archive.org/web/2016/https://timshel.com/"
+            >Timshel</a
+          >
+        </h2>
+        <p>2016 · Remote</p>
+        <p>
+          tk. <a href="https://blog.jim-nielsen.com/tags#timshel">Writeups →</a>
+        </p>
+
+        <h2>
+          Designer & Front-end Engineer
+          <a href="https://postlight.com/">Postlight</a>
+        </h2>
+        <p>2016 · Remote</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#postlight">Writeups…</a>
+        </p>
+        <h2>
+          Lead Designer,
+          <a
+            href="https://web.archive.org/web/2015/https://www.kindlingapp.com/"
+            >Kindling</a
+          >
+        </h2>
+        <p>2012–2016 · NYC</p>
+        <p>
+          <a href="https://blog.jim-nielsen.com/tags#kindling">Writeups…</a>
+        </p>
+        <h2>
+          Web Designer,
+          <a href="https://web.archive.org/web/2012/http://arc90.com/">Arc90</a>
+        </h2>
+
+        <p>2012 · NYC</p>
+        <p><a href="https://blog.jim-nielsen.com/tags#arc90">Writeups</a></p>
+      </details>
+      -->
+    </section>
+
+    <section id="passion-projects">
+      <h1>Passion Projects</h1>
+
+      <h2><a href="https://blog.jim-nielsen.com">Personal Blog</a></h2>
+      <p>Since 2012</p>
+      <p>
+        <!-- https://shoptalkshow.com/504/ -->
+        Renowned writing linked to by leading industry social sites,
+        publications, and newsletters such as
+        <a
+          href="https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/"
+          >Smashing Magazine</a
+        >,
+        <a
+          href="https://changelog.com/news/the-optional-chaining-operator-modern-browsers-and-my-mom-Lpyn"
+          >Changelog</a
+        >,
+        <a href="https://javascriptweekly.com/issues/573">JavaScript Weekly</a>,
+        <a href="https://sidebar.io/domain/blog.jim-nielsen.com">Sidebar.io</a>,
+        <a href="https://twitter.com/aneventapart/status/1496973472416755716"
+          >An Event Apart</a
+        >,
+        <a href="https://heydesigner.com/newsletter/daily-issues/2021-82/"
+          >HeyDesigner</a
+        >, <a href="https://css-tricks.com/?s=Jim%20Nielsen">CSS Tricks</a>,
+        <a href="https://hn.algolia.com/?q=blog.jim-nielsen.com">Hacker News</a
+        >, and more.
+      </p>
+
+      <p>
+        <cite
+          ><a href="https://adactio.com/journal/18008">Jeremy Keith</a></cite
+        >
+        <q
+          >damn, do I enjoy reading [Jim’s] blog.<!-- Last year alone, I ended up
+          linking to [his] posts ten different times.--></q
+        >
+      </p>
+      <p>
+        <cite
+          ><a
+            href="https://twitter.com/sarasoueidan/status/1428686530332303361?s=21"
+            >Sara Soueidan</a
+          ></cite
+        >
+        <q>I, for one, love seeing [Jim’s] posts in my RSS reader.</q>
+      </p>
+      <p>
+        <cite
+          ><a href="https://css-tricks.com/system-things/"
+            >Chris Coyier</a
+          ></cite
+        >
+        <q>Jim was blowin’ minds the other day when he blogged…</q>
+      </p>
+
+      <!--
+      <details>
+        <summary>More…</summary>
+        <dl>
+          <dt>
+            <a href="https://daverupert.com/2019/09/weeknotes-9/"
+              >Dave Rupert</a
+            >
+          </dt>
+          <dd>
+            “I love the frequency and depth of Jim’s thoughts, he uses his blog
+            really well.”
+          </dd>
+          <dt>
+            <a href="https://om.co/2022/02/01/the-daily-om-02-01-2022/"
+              >Om Malik</a
+            >
+          </dt>
+          <dd>
+            “A fantastic read from one of my favorite
+            bloggers/web-technologists, Jim Nielsen.”
+          </dd>
+          <dt>
+            <a
+              href="https://www.linkedin.com/posts/getify_website-fidelity-activity-6987815816150880256-ffhG/"
+              >Kyle Simpson</a
+            >
+          </dt>
+          <dd>“I just read this really great blog post by Jim Nielsen…”</dd>
+          <dt>
+            <a href="https://twitter.com/Rich_Harris/status/1286330991229927426"
+              >Rich Harris</a
+            >
+          </dt>
+          <dd>“…a really good blog post by @jimniels”</dd>
+          <dt>
+            <a href="https://twitter.com/ftrain/status/1353733405293359105?s=20"
+              >Paul Ford</a
+            >
+          </dt>
+          <dd>
+            “JIM WOW this is a nice thing to read. Thank you for making this!”
+          </dd>
+          <dt>
+            <a href="https://twitter.com/stefanjudis/status/1527648201989292033"
+              >Stefan Judis</a
+            >
+          </dt>
+          <dd>
+            “If you’re not following Jim or are subscribed to his blog, you’re
+            missing out!”
+          </dd>
+          <dt>
+            <a
+              href="https://twitter.com/timothymeaney/status/1599859017597059072?s=20"
+              >Tim Meaney</a
+            >
+          </dt>
+          <dd>
+            I’ve had the pleasure of working w @jimniels for a decade, he’s one
+            of the best. (And hope to again some day!)
+          </dd>
+          <dt>
+            <a href="https://remysharp.com/links/2020-09-24-e9aa7591"
+              >Remy Sharp</a
+            >
+          </dt>
+          <dd>
+            “I really like [Jim’s idea]…I’ll be adding this to my blog shortly -
+            very clever.”
+          </dd>
+          <dt>
+            <a href="https://archive.hankchizljaw.com/feed/page/61/"
+              >Andy Bell</a
+            >
+          </dt>
+          <dd>“[Jim’s post] was an absolute joy to read.”</dd>
+
+          <dt>
+            <a
+              href="https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/"
+              >Robin Rendle</a
+            >
+          </dt>
+          <dd>
+            “Over the weekend I read this post by Jim Nielsen…that I really
+            enjoyed.”
+          </dd>
+          <dt>
+            <a
+              href="https://twitter.com/briankardell/status/1372279388331474944?s=21"
+              >Brian Kardell</a
+            >
+          </dt>
+          <dd>
+            “@jimniels I just read a piece of yours...just wanted to say it was
+            an enjoyable/relatable post.”
+          </dd>
+          <dt>
+            <a
+              href="https://twitter.com/ericwbailey/status/1571572550873792513?s=20"
+              >Eric Bailey</a
+            >
+          </dt>
+          <dd>“Anything by Jim is an insta-read, as far as I’m concerned.”</dd>
+          <dt>
+            <a
+              href="https://twitter.com/brophdawg11/status/1599818035023396864?s=20"
+              >Matt Brophy</a
+            >
+          </dt>
+          <dd>
+            “[Jim] crosses the boundary between designer/developer better than
+            anyone I've worked with. And he's an amazing communicator who has an
+            incredible ability to distill the complex into the simple.”
+          </dd>
+          <dt>
+            <a
+              href="https://twitter.com/ebey_jacob/status/1599823317799952385?s=20"
+              >Jacob Ebey</a
+            >
+          </dt>
+          <dd>“Jim is a joy to work with”</dd>
+          <dt>
+            <a
+              href="https://twitter.com/mjackson/status/1521526982898450433?s=20"
+              >Michael Jackson</a
+            >
+          </dt>
+          <dd>
+            “Jim is someone I've followed for a while, and someone who has a
+            deep understanding of and appreciation for the web.”
+          </dd>
+          <dt>
+            <a
+              href="https://twitter.com/vitalyf/status/1610150390896508928?s=20"
+              >Vitaly Friedman</a
+            >
+          </dt>
+          <dd>“An interesting design pattern by @jimniels...”</dd>
+          <dt>
+            <a href="https://twitter.com/user/status/1365042604132368385"
+              >Brian Lovin</a
+            >
+          </dt>
+          <dd>“Love these [icon sites] Nicely done @jimniels”</dd>
+          <dt>
+            <a
+              href="https://gomakethings.com/entropy-developer-experience-and-vanilla-js/"
+              >Chris Ferdinandi</a
+            >
+          </dt>
+          <dd>
+            “[Jim] published a post...that hit on so many things I’ve
+            experienced and feel strongly about.”
+          </dd>
+        </dl>
+      </details>
+      -->
+
+      <br /><br />
+      <h2>
+        <a href="https://www.iosicongallery.com">iOS</a>,
+        <a href="https://www.macosicongallery.com">macOS</a>, and
+        <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
+      </h2>
+      <p>Since 2011</p>
+      <p>
+        Years designing, developing, curating,
+        <a href="https://blog.jim-nielsen.com/tags#iconGalleries"
+          >blogging about</a
+        >, and
+        <a
+          href="https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup"
+          >talking about</a
+        >
+        my collection of app icons.
+      </p>
+
+      <p>
+        <cite
+          ><a href="https://twitter.com/user/status/1365042604132368385"
+            >Brian Lovin</a
+          ></cite
+        >
+        <q>Love these [icon sites] Nicely done @jimniels</q>
+      </p>
+      <!-- <p>
+        <cite
+          ><a
+            href="https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b"
+            >Michael Flarup</a
+          ></cite
+        ><q>[Jim’s] got great curation abilities.</q>
+      </p> -->
+      <!-- <p>
+        <cite
+          ><a href="https://twitter.com/user/status/219856804987928576"
+            >Smashing Magazine</a
+          ></cite
+        >
+        <q>Not a fan of showcases, but iOS icon gallery looks great</q>
+      </p> -->
+
+      <br /><br />
+      <h2>
+        <i><a href="https://www.appiconbook.com">The App Icon Book</a></i>
+      </h2>
+      <p>2018–2022</p>
+      <p>
+        Recruited by world-class iconist Michael Flarup to help
+        <a
+          href="https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/"
+          >write</a
+        >, curate, and design the book, whose first run funded on
+        <a
+          href="https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
+          >KickStarter</a
+        >
+        at ~$130,000 by 1,450 backers.
+      </p>
+
+      <p>
+        <cite
+          ><a
+            href="https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book"
+            >John Gruber</a
+          ></cite
+        >
+        <q
+          >Take my money — I can’t wait to devour this book. It looks so
+          good.</q
+        >
+      </p>
+
+      <p>
+        <cite
+          ><a href="https://sixcolors.com/link/2021/11/the-ios-app-icon-book/"
+            >Jason Snell</a
+          ></cite
+        >
+
+        <q
+          >A gorgeous art book/coffee table book that preserves the history of
+          iOS app icon art.</q
+        >
+      </p>
+
+      <p>
+        <cite
+          ><a
+            href="https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/"
+            >John Voorhees</a
+          ></cite
+        >
+
+        <q
+          >My expectations were high, and I’m happy to report that it doesn’t
+          disappoint.</q
+        >
+      </p>
+    </section>
+
+    <!-- <section>
+      <h1>Side Projects</h1>
+
+      <h2>
+        <a href="https://instagram.com/flyingjpies">Flying J Pies</a>
+      </h2>
+      <p>2017–Now</p>
+      <p>
+        Making pies and
+        <a href="https://blog.jim-nielsen.com/2022/flying-j-pies/"
+          >documenting the process</a
+        >: pic of it didn’t happen.
+      </p>
+
+      <h2>
+        <a href="https://www.canistilluse.com">canistilluse.com</a>
+      </h2>
+      <p>2021</p>
+      <p>
+        A satirical website
+        <a href="https://blog.jim-nielsen.com/2021/canistilluse.com/">I made</a>
+        illustrating the problems of a world where habitul breakage on the web
+        becomes accepted as the price of progress.
+      </p>
+      <dl>
+        <dt><a href="https://adactio.com/links/18383">Jeremy Keith</a></dt>
+        <dd>
+          “It’s weirdly gratifying to see a hastily-written sarcastic quip tuned
+          into something real.”
+        </dd>
+      </dl>
+
+      <details>
+        <summary>More…</summary>
+
+        <h2>
+          <a href="https://readlists.jim-nielsen.com">Readlists</a>
+        </h2>
+        <p>2021</p>
+        <p>
+          Recreating the idea behind the incredibly useful, but now defunct,
+          service Readlists. All design and development
+          <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
+            >done</a
+          >
+          by me — bugs aren’t mine though.
+        </p>
+
+        <h2>
+          <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
+        </h2>
+        <p>2015</p>
+        <p>
+          A color reference for favorite sporting teams across various
+          profressional leagues (made in a
+          <a href="https://blog.jim-nielsen.com/2013/teamcolors/">hackathon</a>
+          and later
+          <a href="https://blog.jim-nielsen.com/2015/team-colors-2-0/"
+            >updated</a
+          >).
+        </p>
+
+        <h2>
+          <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
+        </h2>
+        <p>2015</p>
+        <p>
+          A tool to retrieve full-sized icon artwork for any app in the App
+          Store (based on a
+          <a
+            href="https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866"
+            >tutorial</a
+          >
+          published for Web Design Tuts+).
+        </p>
+
+        <h2>
+          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
+        </h2>
+        <p>2014</p>
+        <p>
+          In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can
+          an image be and still be recognized?” For fun, I
+          <a href="https://blog.jim-nielsen.com/2014/logo-integrity/">built</a>
+          an experiment to find out.
+        </p>
+
+        <h2>
+          <a href="https://sassme.jim-nielsen.com">SassMe</a>
+        </h2>
+        <p>2012</p>
+        <p>
+          A tool
+          <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">made</a> to
+          visualize Sass color functions in real-time, no compilation required.
+          Loved by folks all over the industry:
+        </p>
+      </details>
+    </section> -->
+
+    <!-- <section>
+      <h1>Social Validation</h1>
+
+      <h2>People Are Saying…</h2>
+      <br />
+      
+    </section> -->
+
+    <footer>Thank you for visiting this personal website.</footer>
+  </body>
+</html>
