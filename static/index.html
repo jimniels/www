@@ -173,11 +173,17 @@
 
       section h1 {
         font-size: 1.125rem;
-
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         color: var(--color-text-mutedest);
         margin: 0 0 var(--spacer-64);
+        position: relative;
+
+        background: var(--color-text-mutedest);
+        color: var(--color-bg);
+        display: inline-block;
+        padding: 0 var(--spacer-8);
+        margin-left: calc(-1 * var(--spacer-8));
       }
 
       h2 {
@@ -261,11 +267,6 @@
         z-index: 1;
         margin-top: var(--spacer-128);
         margin-bottom: var(--spacer-16);
-      }
-
-      #contact {
-        display: flex;
-        flex-direction: column;
       }
 
       section#contact h1 {
