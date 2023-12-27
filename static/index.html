@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -54,7 +54,6 @@
       href="https://blog.jim-nielsen.com/feed.json"
       title="Jim Nielsen’s Blog: JSON Feed"
     />
-
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -100,7 +99,7 @@
 
       html {
         background: var(--color-bg);
-        font-size: 120%;
+        font-size: 1rem;
         line-height: 1.5;
         color-scheme: light dark;
         color: var(--color-text-muted);
@@ -125,15 +124,15 @@
         height: 153px;
         opacity: 0.5;
         position: absolute;
-        top: var(--spacer-24);
-        right: 0;
+        top: var(--spacer-48);
+        right: -60px;
       }
 
       @media (min-width: 1000px) {
         body::before {
-          position: static;
-          display: block;
-          margin: var(--spacer-48) 0 calc(var(--spacer-48) * -1) 15rem;
+          /* position: static; */
+          /* display: block; */
+          /* margin: var(--spacer-48) 0 calc(var(--spacer-48) * -1) 15rem; */
           /* margin-left: 15rem; */
         }
       }
@@ -176,16 +175,22 @@
         border-bottom-color: var(--color-text);
       }
 
-      h1 {
+      .unmuted {
+        color: var(--color-text);
+      }
+
+      section h1 {
+        font-size: 1.125rem;
+
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         color: var(--color-text-mutedest);
-        font-size: 0.9375rem;
-        margin: var(--spacer-72) 0 var(--spacer-24);
+        margin: 0 0 var(--spacer-24);
       }
 
       h2 {
         color: var(--color-text);
+        font-weight: 700;
       }
 
       summary {
@@ -200,18 +205,21 @@
       /* Section =============================================================*/
 
       @media (min-width: 1000px) {
-        section {
-          margin: 0 0 var(--spacer-96) 18rem;
+        html {
+          border-left: 8px solid var(--color-text-mutedest);
         }
-
-        h1 {
-          position: absolute;
-          top: 0;
-          left: -16rem;
-          margin: 0;
+        header,
+        section {
+          margin: var(--spacer-96) 0 var(--spacer-96) 4rem;
         }
       }
 
+      header,
+      header h1 {
+        font-size: 1.125rem;
+      }
+
+      header,
       section {
         position: relative;
         max-width: 40rem;
@@ -232,13 +240,6 @@
         overflow: hidden;
         padding: 0;
         margin: 0;
-      }
-      dt,
-      dd {
-        padding: 0;
-      }
-      dd {
-        margin: 0 0 var(--spacer-16) 0;
       }
 
       #contact dt {
@@ -279,10 +280,6 @@
         font-style: normal;
       }
 
-      cite:after {
-        content: ":";
-      }
-
       footer {
         color: var(--color-text-mutedest);
         font-size: 0.8rem;
@@ -291,52 +288,450 @@
         margin-top: var(--spacer-128);
         margin-bottom: var(--spacer-16);
       }
+
+      #contact {
+        display: flex;
+        flex-direction: column;
+      }
+
+      section#contact h1 {
+        font-size: 1.125rem;
+      }
+
+      .contact {
+        overflow: visible;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .contact li {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        position: relative;
+      }
+      .contact .i-email:before {
+        mask-image: url("/icon-email.svg");
+      }
+      .contact .i-twitter:before {
+        mask-image: url("/icon-twitter.svg");
+      }
+      .contact .i-mastodon:before {
+        mask-image: url("/icon-mastodon.svg");
+      }
+      .contact .i-bluesky:before {
+        mask-image: url("/icon-bluesky.svg");
+      }
+      .contact .i-github:before {
+        mask-image: url("/icon-github.svg");
+      }
+      .contact .i-linkedin:before {
+        mask-image: url("/icon-linkedin.svg");
+      }
+      .contact li:before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: var(--color-text);
+      }
+      .contact li:after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -4px;
+        left: 4px;
+        /* border: 1px solid var(--color-text-mutedest); */
+      }
+      .contact li span {
+        color: var(--color-text);
+        min-width: 7em;
+      }
+      .contact li span:after {
+        /* content: " / "; */
+        margin-left: 0.5rem;
+        color: var(--color-text-mutedest);
+      }
     </style>
   </head>
   <body>
-    <!-- Intro \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
-    <section id="intro">
-      <h1>About</h1>
-      <h2>
-        Jim Nielsen, Generalist<span style="color: var(--color-text-muted)">
-          / Designer, Front-end Engineer, Writer</span
-        >
-      </h2>
-      <p>Making Websites Since 2001</p>
+    <header>
+      <h1 style="font-weight: 700; color: var(--color-text)">Jim Nielsen</h1>
       <p>
-        I think the web browser is the most influential piece of software ever
-        written, and I’ve 20+ years designing and building experiences around
-        it. I thrive at intersection of art and engineering on the web.
+        <i>Designer. Engineer. Writer.</i> <br />
+        20+ years building for the web.
       </p>
-    </section>
+    </header>
 
-    <!-- Contact \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
+    <!-- Intro \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
     <section id="contact">
       <h1>Contact</h1>
-      <dl>
-        <dt>Email</dt>
-        <dd><a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a></dd>
-        <dt>Twitter</dt>
-        <dd><a href="https://twitter.com/jimniels">@jimniels</a></dd>
-        <dt>Mastodon</dt>
-        <dd>
-          <a href="https://mastodon.social/@jimniels"
-            >@jimniels@mastodon.social</a
+
+      <p>In order of how I quickly I’ll respond:</p>
+
+      <ul class="contact" data-json="social">
+        {{#.}}
+        <li class="i-{{id}}">
+          <span>{{label}}</span>
+          <a href="{{href}}">{{link}}</a>
+        </li>
+        {{/.}}
+      </ul>
+      <script type="application/json" id="social">
+        [
+          {
+            "id": "email",
+            "label": "Email",
+            "link": "jimniels@gmail.com",
+            "href": "mailto:jimniels@gmail.com"
+          },
+          {
+            "id": "mastodon",
+            "label": "Mastodon",
+            "link": "@jimniels@mastodon.social",
+            "href": "https://mastodon.social/@jimniels"
+          },
+          {
+            "id": "github",
+            "label": "GitHub",
+            "link": "@jimniels",
+            "href": "https://github.com/jimniels"
+          },
+          {
+            "id": "twitter",
+            "label": "Twitter",
+            "link": "@jimniels",
+            "href": "https://twitter.com/jimniels"
+          },
+          {
+            "id": "bluesky",
+            "label": "BlueSky",
+            "link": "@jim-nielsen.com",
+            "href": "https://bsky.app/profile/jim-nielsen.com"
+          },
+          {
+            "id": "linkedin",
+            "label": "LinkedIn",
+            "link": "Click here",
+            "href": "/linkedin"
+          }
+        ]
+      </script>
+    </section>
+
+    <section>
+      <h1>Social Validation</h1>
+      <p>People I’ve worked with:</p>
+      <ul class="people" data-json="people">
+        {{#peopleWork}}
+        <li>
+          <cite style="min-width: 10rem"
+            ><a href="{{href}}" class="unmuted">{{name}}</a></cite
           >
-        </dd>
-        <!-- <dt>GitHub</dt>
-        <dd><a href="https://github.com/jimniels">jimniels</a></dd> -->
-        <!-- <dt>Dribbble</dt>
-        <dd><a href="https://dribbble.com/jimniels">jimniels</a></dd> -->
-        <dt>LinkedIn</dt>
-        <dd>
-          <a
-            href="/linkedin"
-            title="I once heard someone say, “people who are good at what they do don’t have a LinkedIn”."
-            >Click here</a
+          <q>{{{quote}}}</q>
+        </li>
+        {{/peopleWork}}
+      </ul>
+
+      <script type="application/json" id="people">
+        {
+          "peopleWork": [
+            {
+              "name": "Tim Meaney",
+              "href": "https://twitter.com/timothymeaney/status/1599859017597059072?s=20",
+              "quote": "I’ve had the pleasure of working with [Jim] for a decade, he’s one of the best."
+            },
+            {
+              "name": "Matt Brophy",
+              "href": "https://twitter.com/brophdawg11/status/1599818035023396864?s=20",
+              "quote": "[Jim] crosses the boundary between designer/developer better than anyone I've worked with."
+            },
+            {
+              "name": "Michael Jackson",
+              "href": "https://twitter.com/mjackson/status/1521526982898450433?s=20",
+              "quote": "Jim is someone I've followed for a while, and someone who has a deep understanding of and appreciation for the web."
+            }
+          ],
+          "peopleBlog": [
+            {
+              "name": "Eric Bailey",
+              "href": "https://twitter.com/ericwbailey/status/1571572550873792513?s=20",
+              "quote": "Anything by Jim is an insta-read, as far as I’m concerned."
+            },
+            {
+              "name": "Sara Soueidan",
+              "href": "https://twitter.com/sarasoueidan/status/1428686530332303361?s=21",
+              "quote": "I, for one, love seeing [Jim’s] posts in my RSS reader."
+            },
+            {
+              "name": "Chris Coyier",
+              "href": "https://css-tricks.com/system-things/",
+              "quote": "Jim was blowin’ minds the other day when he blogged…"
+            },
+            {
+              "name": "Dave Rupert",
+              "href": "https://daverupert.com/2019/09/weeknotes-9/",
+              "quote": "I love the frequency and depth of Jim’s thoughts, he uses his blog really well."
+            },
+            {
+              "name": "Om Malik",
+              "href": "https://om.co/2022/02/01/the-daily-om-02-01-2022/",
+              "quote": "A fantastic read from one of my favorite bloggers/web-technologists, Jim Nielsen."
+            },
+            {
+              "name": "Rich Harris",
+              "href": "https://twitter.com/Rich_Harris/status/1286330991229927426",
+              "quote": "…a really good blog post by [Jim]"
+            },
+            {
+              "name": "Stefan Judis",
+              "href": "https://twitter.com/stefanjudis/status/1527648201989292033",
+              "quote": "If you’re not following Jim or are subscribed to his blog, you’re missing out!"
+            },
+            {
+              "name": "Chris Ferdinandi",
+              "href": "https://gomakethings.com/entropy-developer-experience-and-vanilla-js/",
+              "quote": "[Jim] published a post...that hit on so many things I’ve experienced and feel strongly about."
+            }
+          ],
+          "peopleAlt": [
+            {
+              "name": "Brian Kardell",
+              "href": "https://twitter.com/briankardell/status/1372279388331474944?s=21",
+              "quote": "@jimniels I just read a piece of yours...just wanted to say it was an enjoyable/relatable post."
+            },
+            {
+              "name": "Remy Sharp",
+              "href": "https://remysharp.com/links/2020-09-24-e9aa7591",
+              "quote": "I really like [Jim’s idea]…I’ll be adding this to my blog shortly - very clever."
+            },
+            {
+              "name": "Andy Bell",
+              "href": "https://archive.hankchizljaw.com/feed/page/61/",
+              "quote": "[Jim’s post] was an absolute joy to read."
+            },
+            {
+              "name": "Robin Rendle",
+              "href": "https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/",
+              "quote": "Over the weekend I read this post by Jim Nielsen…that I really enjoyed."
+            },
+            {
+              "name": "Jacob Ebey",
+              "href": "https://twitter.com/ebey_jacob/status/1599823317799952385?s=20",
+              "quote": "Jim is a joy to work with"
+            },
+            {
+              "name": "Vitaly Friedman",
+              "href": "https://twitter.com/vitalyf/status/1610150390896508928?s=20",
+              "quote": "An interesting design pattern by @jimniels"
+            },
+            {
+              "name": "Paul Ford",
+              "href": "https://twitter.com/ftrain/status/1353733405293359105?s=20",
+              "quote": "JIM WOW this is a nice thing to read. Thank you for making this!"
+            },
+            {
+              "name": "Kyle Simpson",
+              "href": "https://www.linkedin.com/posts/getify_website-fidelity-activity-6987815816150880256-ffhG/",
+              "quote": "I just read this really great blog post by Jim Nielsen…"
+            }
+          ]
+        }
+      </script>
+
+      <p>People who read my writing:</p>
+      <ul class="people" data-json="people">
+        {{#peopleBlog}}
+        <li>
+          <cite style="min-width: 10rem"
+            ><a href="{{href}}" class="unmuted">{{name}}</a></cite
           >
-        </dd>
-      </dl>
+          <q>{{{quote}}}</q>
+        </li>
+        {{/peopleBlog}}
+      </ul>
+      <style>
+        .people {
+          padding: 0;
+          margin: 0 0 var(--spacer-24) 0;
+        }
+        .people li {
+          display: flex;
+          padding: 0.5rem 0;
+        }
+        .people cite {
+          min-width: 10rem;
+        }
+      </style>
+
+      <p>Sites and publications that link to me:</p>
+      <ul class="pubs" data-json="pubs">
+        {{#pubs}}
+        <li>
+          <div>{{name}}</div>
+          <div>
+            {{#refs}}{{#1}}<a href="{{1}}">{{/1}}{{0}}{{#1}}</a>{{/1}}{{/refs}}
+          </div>
+        </li>
+        {{/pubs}}
+      </ul>
+      <style>
+        .pubs {
+          padding: 0;
+          margin: 0 0 var(--spacer-24) 0;
+        }
+        .pubs li {
+          display: flex;
+          padding: 0.5rem 0;
+        }
+        .pubs li > div:first-child {
+          min-width: 10rem;
+          color: var(--color-text);
+        }
+      </style>
+      <script type="application/json" id="pubs">
+        {
+          "pubs": [
+            {
+              "name": "Smashing Magazine",
+              "refs": [
+                ["Newsletter "],
+                [
+                  "#443",
+                  "https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/"
+                ],
+                [", "],
+                [
+                  "#362",
+                  "https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/"
+                ],
+                [", and "],
+                [
+                  "more",
+                  "https://google.com/search?q=jim+nielsen&as_sitesearch=smashingmagazine.com"
+                ],
+                ["."]
+              ]
+            },
+            {
+              "name": "Cooperpress",
+              "refs": [
+                ["JavaScript Weekly issue "],
+                ["#573", "https://javascriptweekly.com/issues/573"],
+                [" and Frontend Focus issues "],
+                ["#598", "https://frontendfoc.us/issues/598"],
+                [", "],
+                ["#595", "https://frontendfoc.us/issues/595"],
+                [", "],
+                ["#541", "https://frontendfoc.us/issues/541"],
+                [", and "],
+                ["#444", "https://frontendfoc.us/issues/444"],
+                ["."]
+              ]
+            },
+            {
+              "name": "Bytes",
+              "refs": [
+                ["Issues "],
+                ["#107", "https://bytes.dev/archives/107"],
+                [", "],
+                ["#174", "https://bytes.dev/archives/174"],
+                [", "],
+                ["and "],
+                ["#246", "https://bytes.dev/archives/246"],
+                ["."]
+              ]
+            },
+            {
+              "name": "Sidebar.io",
+              "refs": [
+                ["Linked to in "],
+                [
+                  "over 20 daily newsletters",
+                  "https://sidebar.io/domain/blog.jim-nielsen.com"
+                ],
+                ["."]
+              ]
+            },
+            {
+              "name": "Changelog",
+              "refs": [
+                ["News from "],
+                [
+                  "Feb. 2023",
+                  "https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62"
+                ],
+                [", "],
+                [
+                  "Mar. 2022",
+                  "https://changelog.com/news/inspecting-web-views-in-macos-8OeO"
+                ],
+                [", and "],
+                ["more", "https://changelog.com/search?q=jim+nielsen"],
+                ["."]
+              ]
+            },
+            {
+              "name": "Hacker News",
+              "content": "",
+              "refs": [
+                ["Triggered posts with over "],
+                ["500", "https://news.ycombinator.com/item?id=37205731"],
+                [", "],
+                ["300", "https://news.ycombinator.com/item?id=28309885"],
+                [", "],
+                ["200", "https://news.ycombinator.com/item?id=35626015"],
+                [" comments and "],
+                [
+                  "more",
+                  "https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story"
+                ],
+                ["."]
+              ]
+            },
+            {
+              "name": "HeyDesigner",
+              "refs": [
+                ["Issues "],
+                [
+                  "#82",
+                  "https://heydesigner.com/newsletter/daily-issues/2021-82/"
+                ],
+                [", "],
+                [
+                  "#162",
+                  "https://heydesigner.com/newsletter/daily-issues/2021-162/"
+                ],
+                [", "],
+                [
+                  "#182",
+                  "https://heydesigner.com/newsletter/daily-issues/2021-182/"
+                ],
+                [", "],
+                [
+                  "#190",
+                  "https://heydesigner.com/newsletter/daily-issues/2021-190/"
+                ],
+                [", and "],
+                [
+                  "#196",
+                  "https://heydesigner.com/newsletter/daily-issues/2021-196/"
+                ],
+                [" in 2021 alone. "],
+                [
+                  "More in other years",
+                  "https://www.bing.com/search?q=%22jim+nielsen%22+site%3aheydesigner.com"
+                ],
+                ["."]
+              ]
+            }
+          ]
+        }
+      </script>
     </section>
 
     <!-- Passion Projects \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
@@ -378,183 +773,6 @@
           linking to [his] posts ten different times.--></q
         >
       </p>
-      <p>
-        <cite
-          ><a
-            href="https://twitter.com/sarasoueidan/status/1428686530332303361?s=21"
-            >Sara Soueidan</a
-          ></cite
-        >
-        <q>I, for one, love seeing [Jim’s] posts in my RSS reader.</q>
-      </p>
-      <p>
-        <cite
-          ><a href="https://css-tricks.com/system-things/"
-            >Chris Coyier</a
-          ></cite
-        >
-        <q>Jim was blowin’ minds the other day when he blogged…</q>
-      </p>
-
-      <!--
-      <details>
-        <summary>More…</summary>
-        <dl>
-          <dt>
-            <a href="https://daverupert.com/2019/09/weeknotes-9/"
-              >Dave Rupert</a
-            >
-          </dt>
-          <dd>
-            “I love the frequency and depth of Jim’s thoughts, he uses his blog
-            really well.”
-          </dd>
-          <dt>
-            <a href="https://om.co/2022/02/01/the-daily-om-02-01-2022/"
-              >Om Malik</a
-            >
-          </dt>
-          <dd>
-            “A fantastic read from one of my favorite
-            bloggers/web-technologists, Jim Nielsen.”
-          </dd>
-          <dt>
-            <a
-              href="https://www.linkedin.com/posts/getify_website-fidelity-activity-6987815816150880256-ffhG/"
-              >Kyle Simpson</a
-            >
-          </dt>
-          <dd>“I just read this really great blog post by Jim Nielsen…”</dd>
-          <dt>
-            <a href="https://twitter.com/Rich_Harris/status/1286330991229927426"
-              >Rich Harris</a
-            >
-          </dt>
-          <dd>“…a really good blog post by @jimniels”</dd>
-          <dt>
-            <a href="https://twitter.com/ftrain/status/1353733405293359105?s=20"
-              >Paul Ford</a
-            >
-          </dt>
-          <dd>
-            “JIM WOW this is a nice thing to read. Thank you for making this!”
-          </dd>
-          <dt>
-            <a href="https://twitter.com/stefanjudis/status/1527648201989292033"
-              >Stefan Judis</a
-            >
-          </dt>
-          <dd>
-            “If you’re not following Jim or are subscribed to his blog, you’re
-            missing out!”
-          </dd>
-          <dt>
-            <a
-              href="https://twitter.com/timothymeaney/status/1599859017597059072?s=20"
-              >Tim Meaney</a
-            >
-          </dt>
-          <dd>
-            I’ve had the pleasure of working w @jimniels for a decade, he’s one
-            of the best. (And hope to again some day!)
-          </dd>
-          <dt>
-            <a href="https://remysharp.com/links/2020-09-24-e9aa7591"
-              >Remy Sharp</a
-            >
-          </dt>
-          <dd>
-            “I really like [Jim’s idea]…I’ll be adding this to my blog shortly -
-            very clever.”
-          </dd>
-          <dt>
-            <a href="https://archive.hankchizljaw.com/feed/page/61/"
-              >Andy Bell</a
-            >
-          </dt>
-          <dd>“[Jim’s post] was an absolute joy to read.”</dd>
-
-          <dt>
-            <a
-              href="https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/"
-              >Robin Rendle</a
-            >
-          </dt>
-          <dd>
-            “Over the weekend I read this post by Jim Nielsen…that I really
-            enjoyed.”
-          </dd>
-          <dt>
-            <a
-              href="https://twitter.com/briankardell/status/1372279388331474944?s=21"
-              >Brian Kardell</a
-            >
-          </dt>
-          <dd>
-            “@jimniels I just read a piece of yours...just wanted to say it was
-            an enjoyable/relatable post.”
-          </dd>
-          <dt>
-            <a
-              href="https://twitter.com/ericwbailey/status/1571572550873792513?s=20"
-              >Eric Bailey</a
-            >
-          </dt>
-          <dd>“Anything by Jim is an insta-read, as far as I’m concerned.”</dd>
-          <dt>
-            <a
-              href="https://twitter.com/brophdawg11/status/1599818035023396864?s=20"
-              >Matt Brophy</a
-            >
-          </dt>
-          <dd>
-            “[Jim] crosses the boundary between designer/developer better than
-            anyone I've worked with. And he's an amazing communicator who has an
-            incredible ability to distill the complex into the simple.”
-          </dd>
-          <dt>
-            <a
-              href="https://twitter.com/ebey_jacob/status/1599823317799952385?s=20"
-              >Jacob Ebey</a
-            >
-          </dt>
-          <dd>“Jim is a joy to work with”</dd>
-          <dt>
-            <a
-              href="https://twitter.com/mjackson/status/1521526982898450433?s=20"
-              >Michael Jackson</a
-            >
-          </dt>
-          <dd>
-            “Jim is someone I've followed for a while, and someone who has a
-            deep understanding of and appreciation for the web.”
-          </dd>
-          <dt>
-            <a
-              href="https://twitter.com/vitalyf/status/1610150390896508928?s=20"
-              >Vitaly Friedman</a
-            >
-          </dt>
-          <dd>“An interesting design pattern by @jimniels...”</dd>
-          <dt>
-            <a href="https://twitter.com/user/status/1365042604132368385"
-              >Brian Lovin</a
-            >
-          </dt>
-          <dd>“Love these [icon sites] Nicely done @jimniels”</dd>
-          <dt>
-            <a
-              href="https://gomakethings.com/entropy-developer-experience-and-vanilla-js/"
-              >Chris Ferdinandi</a
-            >
-          </dt>
-          <dd>
-            “[Jim] published a post...that hit on so many things I’ve
-            experienced and feel strongly about.”
-          </dd>
-        </dl>
-      </details>
-      -->
 
       <br /><br />
       <h2>
@@ -849,5 +1067,44 @@
     </section> -->
 
     <footer>Thank you for visiting this personal website.</footer>
+
+    <div id="development">
+      <script type="application/jsonz">
+        {
+
+          "quotes": [
+            {
+              "name": "John Gruber",
+              "href": "https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book",
+              "quote": "Take my money — I can’t wait to devour this book. It looks so good."
+            },
+            {
+              "name": "Jason Snell",
+              "href": "https://sixcolors.com/link/2021/11/the-ios-app-icon-book/",
+              "quote": "A gorgeous art book/coffee table book that preserves the history of iOS app icon art."
+            },
+            {
+              "name": "John Voorhees",
+              "href": "https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/",
+              "quote": "My expectations were high, and I’m happy to report that it doesn’t disappoint."
+            }
+          ]
+        }
+      </script>
+
+      <script src="https://unpkg.com/mustache@latest"></script>
+      <script>
+        const templates = Array.from(document.querySelectorAll("[data-json]"));
+        templates.forEach(($template) => {
+          const id = $template.getAttribute("data-json");
+          const script = document.querySelector(
+            `script[type='application/json']#${id}`
+          );
+          const data = JSON.parse(script.innerHTML);
+          const rendered = Mustache.render($template.innerHTML, data);
+          $template.innerHTML = rendered;
+        });
+      </script>
+    </div>
   </body>
 </html>

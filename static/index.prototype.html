@@ -879,5 +879,63 @@
       const rendered = Mustache.render(template, data);
       document.body.outerHTML = rendered;
     </script>
+
+    <!--
+
+
+    You could also do something like this, which allows you to write it just
+    like the browser renders it, but you'd need pupeteer or something to
+    render it server side
+
+    Advantage: you can use fetch, and other browser APIs right inline
+   
+    -->
+    <ul class="contact">
+      <script>
+        document.write(
+          [
+            {
+              label: "Email",
+              link: "jimniels@gmail.com",
+              href: "mailto:jimniels@gmail.com",
+            },
+            {
+              label: "Mastodon",
+              link: "@jimniels@mastodon.social",
+              href: "https://mastodon.social/@jimniels",
+            },
+            {
+              label: "GitHub",
+              link: "jimniels",
+              href: "https://github.com/jimniels",
+            },
+            {
+              label: "Twitter",
+              link: "@jimniels",
+              href: "https://twitter.com/jimniels",
+            },
+            {
+              label: "BlueSky",
+              link: "@jim-nielsen.com",
+              href: "https://bsky.app/profile/jim-nielsen.com",
+            },
+            {
+              label: "LinkedIn",
+              link: "Click here",
+              href: "/linkedin",
+            },
+          ]
+            .map(
+              ({ label, href, link }) => /*html*/ `
+            <li class="i-${label.toLowerCase()}">
+              <span>${label}</span>
+              <a href="${href}">${link}</a>
+            </li>
+      `
+            )
+            .join("")
+        );
+      </script>
+    </ul>
   </body>
 </html>
