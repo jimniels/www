@@ -149,12 +149,12 @@
         margin: 0 0 var(--spacer-24) 0;
       }
 
-      h2 + p {
+      /* h2 + p {
         margin-bottom: 0;
         font-size: 0.875rem;
         line-height: 1.625;
         color: var(--color-text-mutedest);
-      }
+      } */
 
       a {
         color: inherit;
@@ -179,16 +179,16 @@
         margin: 0 0 var(--spacer-64);
         position: relative;
 
-        background: var(--color-text-mutedest);
+        /* background: var(--color-text-mutedest);
         color: var(--color-bg);
         display: inline-block;
         padding: 0 var(--spacer-8);
-        margin-left: calc(-1 * var(--spacer-8));
+        margin-left: calc(-1 * var(--spacer-8));*/
       }
 
       h2 {
         color: var(--color-text);
-        font-weight: 700;
+        /* font-weight: 700; */
       }
 
       summary {
@@ -324,7 +324,7 @@
       }
       .contact li span {
         color: var(--color-text);
-        min-width: 7em;
+        /* min-width: 7em; */
       }
       .contact li span:after {
         /* content: " / "; */
@@ -344,9 +344,9 @@
 
     <!-- Intro \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
     <section id="contact">
-      <h1>Contact</h1>
+      <!-- <h1>Contact</h1>
 
-      <p>In order of how I quickly I’ll respond:</p>
+      <p>In order of how I quickly I’ll respond:</p> -->
 
       <ul class="contact" data-json="social">
         {{#.}}
@@ -405,11 +405,11 @@
     </style>
     <section class="social">
       <h1>Social Validation</h1>
-      <p>People I’ve worked with:</p>
+      <p>People I’ve worked with (who have social media):</p>
       <ul class="people" data-json="people">
         {{#peopleWork}}
         <li>
-          <cite style="min-width: 10rem"
+          <cite style="min-width: 12rem"
             ><a href="{{href}}" class="unmuted">{{name}}</a></cite
           >
           <q>{{{quote}}}</q>
@@ -527,7 +527,7 @@
       <ul class="people" data-json="people">
         {{#peopleBlog}}
         <li>
-          <cite style="min-width: 10rem"
+          <cite style="min-width: 12rem"
             ><a href="{{href}}" class="unmuted">{{name}}</a></cite
           >
           <q>{{{quote}}}</q>
@@ -549,7 +549,7 @@
           }
         }
         .people li cite {
-          min-width: 10rem;
+          min-width: 12rem;
         }
         .people li q {
           display: block;
@@ -557,7 +557,7 @@
         }
 
         .people cite {
-          min-width: 10rem;
+          min-width: 12rem;
         }
       </style>
 
@@ -586,7 +586,7 @@
           }
         }
         .pubs li > div:first-child {
-          min-width: 10rem;
+          min-width: 12rem;
           color: var(--color-text);
         }
       </style>
@@ -803,7 +803,7 @@
         }
       </script>
 
-      <p>Interviews:</p>
+      <p>Podcast and written interviews:</p>
 
       <ul class="pubs" data-json="interviews">
         {{#.}}
@@ -834,6 +834,130 @@
             "name": "People and Blogs",
             "label": "Jim Nielsen",
             "href": "https://manuelmoreale.com/pb-jim-nielsen"
+          }
+        ]
+      </script>
+    </section>
+
+    <section class="social">
+      <h1>Side Projects</h1>
+
+      <style>
+        .illustration {
+          width: 210px;
+          height: 119px;
+          border: 1px solid var(--color-text);
+          background: var(--color-bg);
+          margin-bottom: var(--spacer-16);
+        }
+        .projects {
+          display: grid;
+          gap: var(--spacer-24);
+        }
+        .projects img {
+          margin-left: -10px;
+          margin-bottom: var(--spacer-8);
+        }
+      </style>
+      <p>Stuff I’m still actively working on:</p>
+      <ul class="pubs">
+        <li>
+          <div><a href="" class="unmuted">Personal Blog</a></div>
+          <div>Since 2012, something here about my blog.</div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">iOS Icon Gallery</a>
+          </div>
+          <div>
+            Since 2010 I’ve been designing, developing, curating, and
+            <a href="">blogging about</a> my collection of app icons.
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">macOS Icon Gallery</a>
+          </div>
+          <div>Same as iOS above, but for macOS.</div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">watchOS Icon Gallery</a>
+          </div>
+          <div>Same as macOS, but for...well you get the idea.</div>
+        </li>
+      </ul>
+
+      <p>Stuff I’m done working on:</p>
+
+      <ul class="pubs">
+        <li>
+          <div><a href="" class="unmuted">The iOS App Icon Book</a></div>
+          <div>Since 2012, something here about my blog.</div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">iOS Icon Gallery</a>
+          </div>
+          <div>
+            Since 2010 I’ve been designing, developing, curating, and
+            <a href="">blogging about</a> my collection of app icons.
+          </div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">macOS Icon Gallery</a>
+          </div>
+          <div>Same as iOS above, but for macOS.</div>
+        </li>
+        <li>
+          <div>
+            <a href="" class="unmuted">watchOS Icon Gallery</a>
+          </div>
+          <div>Same as macOS, but for...well you get the idea.</div>
+        </li>
+      </ul>
+
+      <p>Stuff I started but never finished:</p>
+
+      <div data-json="projects" class="projects">
+        {{#.}}
+        <!-- <div>
+          <img src="{{src}}" alt="" />
+          <h2>{{{title}}}</h2>
+          <p>{{{description}}}</p>
+          <p>
+            ★
+            <cite>
+              <a href="{{quote.href}}">{{quote.name}}</a>
+              <q>{{quote.content}}</q>
+            </cite>
+          </p>
+        </div> -->
+        {{/.}}
+      </div>
+
+      <script type="application/json" id="projects">
+        [
+          {
+            "title": "<a href=https://blog.jim-nielsen.com>My Personal Blog</a>",
+            "description": "Renowned writing linked to by Smashing Magazine, Changelog, JavaScript Weekly, Sidebar.io, An Event Apart, CSS Tricks, Hacker News, and more.",
+            "src": "/project-blog.svg",
+            "quote": {
+              "name": "Jeremy Keith",
+              "href": "https://adactio.com/journal/18008",
+              "content": "damn, do I enjoy reading [Jim’s] blog."
+            }
+          },
+          {
+            "title": "<a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> Icon Galleries",
+            "description": "Years designing, developing, curating, <a href=https://blog.jim-nielsen.com/tags#iconGalleries>blogging about</a>, and <a href=https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup>talking about</a> my collection of app icons.",
+            "src": "/project-icon-galleries.svg",
+            "quote": {
+              "name": "Brian Lovin",
+              "href": "https://twitter.com/user/status/1365042604132368385",
+              "content": "Love these [icon sites] Nicely done [Jim]"
+            }
           }
         ]
       </script>
