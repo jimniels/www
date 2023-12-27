@@ -113,6 +113,7 @@
           "Apple Color Emoji", "Segoe UI Emoji";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
       }
 
       body::before {
@@ -126,15 +127,6 @@
         position: absolute;
         top: var(--spacer-48);
         right: -60px;
-      }
-
-      @media (min-width: 1000px) {
-        body::before {
-          /* position: static; */
-          /* display: block; */
-          /* margin: var(--spacer-48) 0 calc(var(--spacer-48) * -1) 15rem; */
-          /* margin-left: 15rem; */
-        }
       }
 
       @media (prefers-color-scheme: dark) {
@@ -185,7 +177,7 @@
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         color: var(--color-text-mutedest);
-        margin: 0 0 var(--spacer-24);
+        margin: 0 0 var(--spacer-64);
       }
 
       h2 {
@@ -204,13 +196,16 @@
 
       /* Section =============================================================*/
 
+      header,
+      section {
+        margin: var(--spacer-128) 0 var(--spacer-128);
+      }
       @media (min-width: 1000px) {
         html {
           border-left: 8px solid var(--color-text-mutedest);
         }
-        header,
-        section {
-          margin: var(--spacer-96) 0 var(--spacer-96) 4rem;
+        body {
+          padding-left: 4rem;
         }
       }
 
@@ -253,27 +248,6 @@
 
       p:has(q) cite {
         text-indent: var(--spacer-16);
-      }
-
-      @media (min-width: 600px) {
-        dt,
-        dd,
-        p:has(q) q,
-        p:has(q) cite {
-          float: left;
-        }
-        dd,
-        p:has(q) q {
-          width: 70%;
-        }
-        dt,
-        p:has(q) cite {
-          width: 30%;
-          /* margin: 0 0 var(--spacer-16) 0; */
-        }
-        p:has(q) {
-          margin-left: 0;
-        }
       }
 
       cite {
@@ -423,7 +397,12 @@
       </script>
     </section>
 
-    <section>
+    <style>
+      .social ul {
+        margin-bottom: var(--spacer-48);
+      }
+    </style>
+    <section class="social">
       <h1>Social Validation</h1>
       <p>People I’ve worked with:</p>
       <ul class="people" data-json="people">
@@ -559,16 +538,29 @@
           padding: 0;
           margin: 0 0 var(--spacer-24) 0;
         }
+
         .people li {
-          display: flex;
           padding: 0.5rem 0;
         }
+        @media (min-width: 600px) {
+          .people li {
+            display: flex;
+          }
+        }
+        .people li cite {
+          min-width: 10rem;
+        }
+        .people li q {
+          display: block;
+          text-indent: -0.45rem;
+        }
+
         .people cite {
           min-width: 10rem;
         }
       </style>
 
-      <p>Sites and publications that link to me:</p>
+      <p>Sites and publications that link to my writing:</p>
       <ul class="pubs" data-json="pubs">
         {{#pubs}}
         <li>
@@ -585,8 +577,12 @@
           margin: 0 0 var(--spacer-24) 0;
         }
         .pubs li {
-          display: flex;
           padding: 0.5rem 0;
+        }
+        @media (min-width: 600px) {
+          .pubs li {
+            display: flex;
+          }
         }
         .pubs li > div:first-child {
           min-width: 10rem;
@@ -596,6 +592,72 @@
       <script type="application/json" id="pubs">
         {
           "pubs": [
+            {
+              "name": "CSS Tricks",
+              "refs": [
+                ["Newsletter "],
+                [
+                  "#202",
+                  "https://css-tricks.com/newsletter/202-how-to-improve-site-performance-tricks-for-using-css-variables/"
+                ],
+                [", "],
+                [
+                  "#213",
+                  "https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/"
+                ],
+                [", "],
+                [
+                  "#218",
+                  "https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/"
+                ],
+                [", "],
+                [
+                  "#220",
+                  "https://css-tricks.com/newsletter/220-the-principle-of-least-power/"
+                ],
+                [", "],
+                [
+                  "#246",
+                  "https://css-tricks.com/newsletter/246-communication-is-key/"
+                ],
+                [", "],
+                [
+                  "#249",
+                  "https://css-tricks.com/newsletter/249-decoding-async-tree-rings-and-flexbox-gap/"
+                ],
+                [", "],
+                [
+                  "#256",
+                  "https://css-tricks.com/newsletter/256-when-to-use-container-queries/"
+                ],
+                [", "],
+                [
+                  "#284",
+                  "https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/"
+                ],
+                [", "],
+                [
+                  "#289",
+                  "https://css-tricks.com/newsletter/289-the-problem-with-evergreen-browsers/"
+                ],
+                [", "],
+                [
+                  "#297",
+                  "https://css-tricks.com/newsletter/297-desks-dashes-document-outline-drama/"
+                ],
+                [", "],
+                [
+                  "#300",
+                  "https://css-tricks.com/newsletter/300-waxing-nostalgic-on-the-virtual-townsquare/"
+                ],
+                [" and "],
+                [
+                  "more",
+                  "https://www.google.com/search?q=jim+nielsen&as_sitesearch=css-tricks.com"
+                ],
+                ["."]
+              ]
+            },
             {
               "name": "Smashing Magazine",
               "refs": [
@@ -618,11 +680,17 @@
               ]
             },
             {
-              "name": "Cooperpress",
+              "name": "JavaScript Weekly",
               "refs": [
-                ["JavaScript Weekly issue "],
+                ["Issue "],
                 ["#573", "https://javascriptweekly.com/issues/573"],
-                [" and Frontend Focus issues "],
+                ["."]
+              ]
+            },
+            {
+              "name": "Frontend Focus",
+              "refs": [
+                ["Issues "],
                 ["#598", "https://frontendfoc.us/issues/598"],
                 [", "],
                 ["#595", "https://frontendfoc.us/issues/595"],
@@ -679,7 +747,8 @@
               "name": "Hacker News",
               "content": "",
               "refs": [
-                ["Triggered posts with over "],
+                ["Triggered "],
+
                 ["500", "https://news.ycombinator.com/item?id=37205731"],
                 [", "],
                 ["300", "https://news.ycombinator.com/item?id=28309885"],
@@ -731,6 +800,41 @@
             }
           ]
         }
+      </script>
+
+      <p>Interviews:</p>
+
+      <ul class="pubs" data-json="interviews">
+        {{#.}}
+        <li>
+          <div>{{name}}</div>
+          <div><a href="{{href}}">{{label}}</a></div>
+        </li>
+        {{/.}}
+      </ul>
+      <script type="application/json" id="interviews">
+        [
+          {
+            "name": "JS Party",
+            "label": "#288: Refined Thinking",
+            "href": "https://jsparty.fm/288"
+          },
+          {
+            "name": "ShopTalkShow",
+            "label": "#504: Blogging, App Icons, Color, and Images",
+            "href": "https://shoptalkshow.com/504/"
+          },
+          {
+            "name": "Postlight Podcast",
+            "label": "#314: (Icon)ic Design",
+            "href": "https://web.archive.org/web/20220308045842/https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup"
+          },
+          {
+            "name": "People and Blogs",
+            "label": "Jim Nielsen",
+            "href": "https://manuelmoreale.com/pb-jim-nielsen"
+          }
+        ]
       </script>
     </section>
 
