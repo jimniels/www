@@ -249,10 +249,6 @@
         margin-left: var(--spacer-16);
       }
 
-      p:has(q) cite {
-        text-indent: var(--spacer-16);
-      }
-
       cite {
         font-style: normal;
       }
@@ -302,6 +298,9 @@
       .contact .i-linkedin:before {
         mask-image: url("/icon-linkedin.svg");
       }
+      .contact .i-discord:before {
+        mask-image: url("/icon-discord.svg");
+      }
       .contact li:before {
         content: "";
         display: block;
@@ -348,7 +347,12 @@
       }
       .people q {
         display: block;
-        text-indent: -0.45rem;
+
+        position: relative;
+      }
+      .people q:before {
+        position: absolute;
+        right: 100%;
       }
     </style>
   </head>
@@ -385,7 +389,7 @@
         {{#peopleWork}}
         <li>
           <div><a href="{{href}}" class="unmuted">{{name}}</a></div>
-          <div><q>{{{quote}}}</q></div>
+          <div><q cite="{{href}}">{{{quote}}}</q></div>
         </li>
         {{/peopleWork}}
       </ul>
@@ -395,7 +399,7 @@
         {{#peopleBlog}}
         <li>
           <div><a href="{{href}}" class="unmuted">{{name}}</a></div>
-          <div><q>{{{quote}}}</q></div>
+          <div><q cite="{{href}}">{{{quote}}}</q></div>
         </li>
         {{/peopleBlog}}
       </ul>
@@ -418,7 +422,7 @@
         <li>
           <div><a href="{{href}}">{{name}}</a></div>
           <div>
-            <q style="display: inline">{{quote}}</q>
+            <q cite="{{href}}">{{quote}}</q>
             <span
               style="
                 font-size: 0.875rem;
@@ -468,7 +472,7 @@
       <ul class="people">
         {{#activeSideProjects}}
         <li>
-          <div><a href="{{href}}">{{name}}</a></div>
+          <div>{{{name}}}</div>
           <div>
             {{{content}}}
             <span
@@ -502,14 +506,12 @@
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
               "
-              >{{date}}</span
+              >{{date}} · <a href="{{writeups}}">Writeup</a></span
             >
           </div>
         </li>
         {{/archivedSideProjects}}
       </ul>
-
-      <p>Stuff I started but never finished:</p>
 
       <div data-json="projects" class="projects">
         {{#.}}
@@ -552,138 +554,6 @@
           }
         ]
       </script>
-    </section>
-
-    <!-- Passion Projects \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
-    <section id="passion-projects">
-      <h1>Passion Projects</h1>
-
-      <h2><a href="https://blog.jim-nielsen.com">Personal Blog</a></h2>
-      <p>Since 2012</p>
-      <p>
-        <!-- https://shoptalkshow.com/504/ -->
-        Renowned writing linked to by leading industry social sites,
-        publications, and newsletters such as
-        <a
-          href="https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/"
-          >Smashing Magazine</a
-        >,
-        <a
-          href="https://changelog.com/news/the-optional-chaining-operator-modern-browsers-and-my-mom-Lpyn"
-          >Changelog</a
-        >,
-        <a href="https://javascriptweekly.com/issues/573">JavaScript Weekly</a>,
-        <a href="https://sidebar.io/domain/blog.jim-nielsen.com">Sidebar.io</a>,
-        <a href="https://twitter.com/aneventapart/status/1496973472416755716"
-          >An Event Apart</a
-        >,
-        <a href="https://heydesigner.com/newsletter/daily-issues/2021-82/"
-          >HeyDesigner</a
-        >, <a href="https://css-tricks.com/?s=Jim%20Nielsen">CSS Tricks</a>,
-        <a href="https://hn.algolia.com/?q=blog.jim-nielsen.com">Hacker News</a
-        >, and more.
-      </p>
-
-      <p>
-        <cite
-          ><a href="https://adactio.com/journal/18008">Jeremy Keith</a></cite
-        >
-        <q
-          >damn, do I enjoy reading [Jim’s] blog.<!-- Last year alone, I ended up
-          linking to [his] posts ten different times.--></q
-        >
-      </p>
-
-      <br /><br />
-      <h2>
-        <a href="https://www.iosicongallery.com">iOS</a>,
-        <a href="https://www.macosicongallery.com">macOS</a>, and
-        <a href="https://www.watchosicongallery.com">watchOS</a> Icon Galleries
-      </h2>
-      <p>Since 2011</p>
-      <p>
-        Years designing, developing, curating,
-        <a href="https://blog.jim-nielsen.com/tags#iconGalleries"
-          >blogging about</a
-        >, and
-        <a
-          href="https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup"
-          >talking about</a
-        >
-        my collection of app icons.
-      </p>
-
-      <p>
-        <cite
-          ><a href="https://twitter.com/user/status/1365042604132368385"
-            >Brian Lovin</a
-          ></cite
-        >
-        <q>Love these [icon sites] Nicely done @jimniels</q>
-      </p>
-      <!-- <p>
-        <cite
-          ><a
-            href="https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b"
-            >Michael Flarup</a
-          ></cite
-        ><q>[Jim’s] got great curation abilities.</q>
-      </p> -->
-      <!-- <p>
-        <cite
-          ><a href="https://twitter.com/user/status/219856804987928576"
-            >Smashing Magazine</a
-          ></cite
-        >
-        <q>Not a fan of showcases, but iOS icon gallery looks great</q>
-      </p> -->
-
-      <br /><br />
-      <h2>
-        <i><a href="https://www.appiconbook.com">The App Icon Book</a></i>
-      </h2>
-      <p>2018–2022</p>
-      <p></p>
-
-      <p>
-        <cite
-          ><a
-            href="https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book"
-            >John Gruber</a
-          ></cite
-        >
-        <q
-          >Take my money — I can’t wait to devour this book. It looks so
-          good.</q
-        >
-      </p>
-
-      <p>
-        <cite
-          ><a href="https://sixcolors.com/link/2021/11/the-ios-app-icon-book/"
-            >Jason Snell</a
-          ></cite
-        >
-
-        <q
-          >A gorgeous art book/coffee table book that preserves the history of
-          iOS app icon art.</q
-        >
-      </p>
-
-      <p>
-        <cite
-          ><a
-            href="https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/"
-            >John Voorhees</a
-          ></cite
-        >
-
-        <q
-          >My expectations were high, and I’m happy to report that it doesn’t
-          disappoint.</q
-        >
-      </p>
     </section>
 
     <!-- Employment \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
@@ -1052,6 +922,15 @@
               ]
             },
             {
+              "name": "Lobsters",
+              "refs": [
+                [
+                  "19+ stories across 9+ submitters",
+                  "https://lobste.rs/domains/blog.jim-nielsen.com"
+                ]
+              ]
+            },
+            {
               "name": "HeyDesigner",
               "refs": [
                 ["Issues "],
@@ -1120,6 +999,11 @@
               "name": "Michael Jackson",
               "href": "https://twitter.com/mjackson/status/1521526982898450433?s=20",
               "quote": "Jim is someone I've followed for a while, and someone who has a deep understanding of and appreciation for the web."
+            },
+            {
+              "name": "Michael Flarup",
+              "href": "https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b",
+              "quote": "[Jim’s] as much an icon nut as me [and] he’s got great curation abilities."
             }
           ],
           "peopleBlog": [
@@ -1225,16 +1109,23 @@
               "href": "https://mastodon.social/@jimniels"
             },
             {
+              "id": "twitter",
+              "label": "Twitter",
+              "link": "@jimniels",
+              "href": "https://twitter.com/jimniels"
+            },
+            {
               "id": "github",
               "label": "GitHub",
               "link": "@jimniels",
               "href": "https://github.com/jimniels"
             },
+
             {
-              "id": "twitter",
-              "label": "Twitter",
+              "id": "discord",
+              "label": "Discord",
               "link": "@jimniels",
-              "href": "https://twitter.com/jimniels"
+              "href": "https://discord.com/users/jimniels"
             },
             {
               "id": "bluesky",
@@ -1273,54 +1164,74 @@
           ],
           "activeSideProjects": [
             {
-              "name": "Personal Blog",
-              "href": "https://blog.jim-nielsen.com",
+              "name": "<a href=https://blog.jim-nielsen.com>Personal Blog</a>",
               "content": "Industry reknowed blog linked to by many.",
               "date": "Since 2012"
             },
             {
-              "name": "Personal Notes",
-              "href": "https://notes.jim-nielsen.com",
+              "name": "<a href=https://notes.jim-nielsen.com>Personal Notes</a>",
               "content": "A collection of notes I’ve taken over the years.",
               "date": "Since 2019"
             },
             {
               "name": "Icon Galleries",
-              "href": "https://www.iosicongallery.com",
-              "content": "iOS, macOS, watchOS Icons I design, develop, curate, and blog about my collection of app icons.",
+              "content": "<a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> icons I design, develop, curate, and blog about my collection of app icons.",
               "date": "Since 2010"
             }
           ],
           "archivedSideProjects": [
             {
-              "name": "<a href=https://www.appiconbook.com><em>The iOS App Icon Book</em></a>",
+              "name": "<a href=https://www.appiconbook.com>The App Icon Books</a>",
               "content": "Recruited by world-class iconist Michael Flarup to help <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>, curate, and design this book whose first run <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>on KickStarter</a> funded at ~$130,000 with 1,450 backers. I also advised on <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>the sequel</a> <em>The macOS App Icon Book</em></a>.",
+              "writeups": "https://blog.jim-nielsen.com/tags/#iconGalleriesBook",
               "date": "2018-2022"
             },
             {
-              "name": "<a href=https://www.canistilluse.com>canistilluse.com</a>",
-              "content": "<a href=https://blog.jim-nielsen.com/2021/canistilluse.com/>A satirical website</a> illustrating the problems of a world where habitul breakage on the web becomes accepted as the price of progress.",
+              "name": "<a href=https://github.com/jimniels/html>html</a>",
+              "content": "Small, reusable library for doing JSX-like syntax with tagged template literals.",
+              "writeups": "https://blog.jim-nielsen.com/2019/jsx-like-syntax-for-tagged-template-literals/",
+              "date": "2022"
+            },
+            {
+              "name": "<a href=https://www.canistilluse.com>Can I Still Use?</a>",
+              "content": "A satirical website illustrating the problems of a world where habitul breakage on the web becomes accepted as the price of progress.",
+              "writeups": "https://blog.jim-nielsen.com/2021/canistilluse.com",
               "date": "2021"
             },
             {
-              "name": "<a href=https://readlists.jim-nielsen.com>Readlists</a>"
+              "name": "<a href=https://readlists.jim-nielsen.com>Readlists</a>",
+              "content": "Recreating the idea behind the incredibly useful, but now defunct, service Readlists. All design and development done by me — bugs aren’t mine though.",
+              "writeups": "https://blog.jim-nielsen.com/2021/reintroducing-readlists/",
+              "date": "2021"
             },
             {
-              "name": "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>"
+              "name": "<a href=https://netlibox.netlify.app>Netlibox</a>",
+              "content": "An experiment I built for a blog post on Netlify’s blog.",
+              "writeups": "https://www.netlify.com/blog/2021/03/08/using-netlify-functions-to-build-a-serverless-contacts-form",
+              "date": "2018"
             },
             {
-              "name": "<a href=https://gimmiedaticon.jim-nielsen.com>Gimmie Dat iCon</a>"
+              "name": "<a href=https://gimmiedaticon.jim-nielsen.com>Gimmie Dat iCon</a>",
+              "content": "A tool to retrieve full-sized icon artwork for any app in the App Store (based on a tutorial published for Web Design Tuts+).",
+              "writeups": "https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866",
+              "date": "2015"
             },
             {
-              "name": "<a href=https://logo-integrity.jim-nielsen.com>Logo Integrity</a>"
+              "name": "<a href=https://logo-integrity.jim-nielsen.com>Logo Integrity</a>",
+              "content": "In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an image be and still be recognized?” For fun, I built an experiment to find out.",
+              "writeups": "https://blog.jim-nielsen.com/2014/logo-integrity/",
+              "date": "2014"
             },
             {
-              "name": "<a href=https://logo-integrity.jim-nielsen.com>Netlibox</a>"
+              "name": "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>",
+              "content": "A color reference for favorite sporting teams across various profressional leagues (made during a hackathon).",
+              "writeups": "https://blog.jim-nielsen.com/2015/team-colors-2-0/",
+              "date": "2013"
             },
             {
               "name": "<a href=https://sassme.jim-nielsen.com>SassMe</a>",
               "content": "A tool <a href=https://blog.jim-nielsen.com/2016/sassme-v2/>made</a> to visualize Sass color functions in real-time, no compilation required.",
-              "date": "2012–2016"
+              "date": "2012"
             }
           ],
           "peopleSideProjects": [
@@ -1347,6 +1258,33 @@
               "href": "https://adactio.com/links/18383",
               "project": "canistilluse.com",
               "quote": "It’s weirdly gratifying to see a hastily-written sarcastic quip tuned into something real."
+            },
+            {
+              "name": "John Gruber",
+              "href": "https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book",
+              "project": "The iOS App Icon Book",
+              "quote": "Take my money — I can’t wait to devour this book. It looks so good."
+            },
+
+            {
+              "name": "John Gruber",
+              "href": "https://daringfireball.net/linked/2023/09/05/macos-app-icon-book",
+              "project": "The macOS App Icon Book",
+              "quote": "A sibling volume dedicated to Mac app icons? Hell yes."
+            }
+          ],
+          "peopleSideProjects2": [
+            {
+              "name": "Jason Snell",
+              "href": "https://sixcolors.com/link/2021/11/the-ios-app-icon-book/",
+              "project": "The App Icon Books",
+              "quote": "A gorgeous art book/coffee table book that preserves the history of iOS app icon art."
+            },
+            {
+              "name": "John Voorhees",
+              "href": "https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/",
+              "project": "The App Icon Books",
+              "quote": "My expectations were high, and I’m happy to report that it doesn’t disappoint."
             }
           ]
         }
