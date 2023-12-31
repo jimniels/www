@@ -107,7 +107,7 @@
       }
 
       body {
-        margin: 0 var(--spacer-16);
+        margin: 0 var(--spacer-16) 0 var(--spacer-32);
         font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui,
           -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
           "Apple Color Emoji", "Segoe UI Emoji";
@@ -116,6 +116,7 @@
         overflow-x: hidden;
       }
 
+      /*
       body::before {
         content: "";
         background: url(/logo-black.png) no-repeat 0 0;
@@ -134,6 +135,7 @@
           background-image: url(/logo-white.png);
         }
       }
+      */
 
       h1,
       h2,
@@ -330,7 +332,7 @@
 
       .people {
         padding: 0;
-        margin: 0 0 var(--spacer-48) 0;
+        margin: 0 0 var(--spacer-64) 0;
       }
 
       .people li {
@@ -506,7 +508,7 @@
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
               "
-              >{{date}} · <a href="{{writeups}}">Writeup</a></span
+              >{{date}}</span
             >
           </div>
         </li>
@@ -560,16 +562,25 @@
     <section id="employment">
       <h1>Employment</h1>
 
-      <h2>
-        Founding Software Engineer @
-        <a href="https://quadratichq.com">Quadratic</a>
-      </h2>
-      <p>Since 2023 · Remote</p>
-      <p>
-        Design, code, and education for a startup building an infinite
-        spreadsheet powered by code and aimed at developers and data scientists.
-        <a href="https://blog.jim-nielsen.com/tags#quadratic">Writeups…</a>
-      </p>
+      <ul class="people">
+        {{#employment}}
+        <li>
+          <div>{{title}}</div>
+          <div>
+            @
+            <a href="{{href}}">{{company}}</a>: {{content}}
+            <span
+              style="
+                display: block;
+                font-size: 0.875rem;
+                color: var(--color-text-mutedest);
+              "
+              >{{meta}}</span
+            >
+          </div>
+        </li>
+        {{/employment}}
+      </ul>
 
       <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
       <p>2022 · Remote</p>
@@ -1166,71 +1177,67 @@
             {
               "name": "<a href=https://blog.jim-nielsen.com>Personal Blog</a>",
               "content": "Industry reknowed blog linked to by many.",
-              "date": "Since 2012"
+              "date": "2012–Now"
             },
             {
               "name": "<a href=https://notes.jim-nielsen.com>Personal Notes</a>",
               "content": "A collection of notes I’ve taken over the years.",
-              "date": "Since 2019"
+              "date": "2019–Now"
             },
             {
               "name": "Icon Galleries",
               "content": "<a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> icons I design, develop, curate, and blog about my collection of app icons.",
-              "date": "Since 2010"
+              "date": "2010–Now"
             }
           ],
           "archivedSideProjects": [
             {
-              "name": "<a href=https://www.appiconbook.com>The App Icon Books</a>",
-              "content": "Recruited by world-class iconist Michael Flarup to help <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>, curate, and design this book whose first run <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>on KickStarter</a> funded at ~$130,000 with 1,450 backers. I also advised on <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>the sequel</a> <em>The macOS App Icon Book</em></a>.",
+              "name": "<a href=https://www.appiconbook.com>App Icon Books</a>",
+              "content": "Crowdfunded books celebrating the history and art of app icon design for <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>iOS</a> & <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>macOS</a> (I helped <a href=https://blog.jim-nielsen.com/tags/#iconGalleriesBook>design</a> and <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a> them).",
               "writeups": "https://blog.jim-nielsen.com/tags/#iconGalleriesBook",
               "date": "2018-2022"
             },
             {
               "name": "<a href=https://github.com/jimniels/html>html</a>",
-              "content": "Small, reusable library for doing JSX-like syntax with tagged template literals.",
+              "content": "Small, zero-dep JS library for doing JSX-like syntax with tagged template literals.",
               "writeups": "https://blog.jim-nielsen.com/2019/jsx-like-syntax-for-tagged-template-literals/",
               "date": "2022"
             },
             {
               "name": "<a href=https://www.canistilluse.com>Can I Still Use?</a>",
-              "content": "A satirical website illustrating the problems of a world where habitul breakage on the web becomes accepted as the price of progress.",
+              "content": "A satirical website illustrating the problems of normalizing habitul breakage on the web.",
               "writeups": "https://blog.jim-nielsen.com/2021/canistilluse.com",
               "date": "2021"
             },
             {
               "name": "<a href=https://readlists.jim-nielsen.com>Readlists</a>",
-              "content": "Recreating the idea behind the incredibly useful, but now defunct, service Readlists. All design and development done by me — bugs aren’t mine though.",
+              "content": "Mixtapes for reading. Collect info across the web into an ebook or feed for reading on your favorite device.",
               "writeups": "https://blog.jim-nielsen.com/2021/reintroducing-readlists/",
               "date": "2021"
             },
             {
               "name": "<a href=https://netlibox.netlify.app>Netlibox</a>",
-              "content": "An experiment I built for a blog post on Netlify’s blog.",
-              "writeups": "https://www.netlify.com/blog/2021/03/08/using-netlify-functions-to-build-a-serverless-contacts-form",
+              "content": "An experiment in publishing from Dropbox to Netlify. Published on <a href=https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/>Netlify’s blog</a>.",
               "date": "2018"
             },
             {
               "name": "<a href=https://gimmiedaticon.jim-nielsen.com>Gimmie Dat iCon</a>",
-              "content": "A tool to retrieve full-sized icon artwork for any app in the App Store (based on a tutorial published for Web Design Tuts+).",
-              "writeups": "https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866",
+              "content": "A tool to fetch full-sized icon artwork from the App Store. Published as <a href=https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866>a tutorial for Web Design Tuts+</a>.",
               "date": "2015"
             },
             {
               "name": "<a href=https://logo-integrity.jim-nielsen.com>Logo Integrity</a>",
-              "content": "In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can an image be and still be recognized?” For fun, I built an experiment to find out.",
-              "writeups": "https://blog.jim-nielsen.com/2014/logo-integrity/",
+              "content": "How far out of focus can an logo be yet remain recognizeable? <a href=https://blog.jim-nielsen.com/2014/logo-integrity/>My experiment</a> to find out.",
               "date": "2014"
             },
             {
               "name": "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>",
-              "content": "A color reference for favorite sporting teams across various profressional leagues (made during a hackathon).",
-              "writeups": "https://blog.jim-nielsen.com/2015/team-colors-2-0/",
+              "content": "A color reference for your favorite sporting teams (<a href=https://blog.jim-nielsen.com/2015/team-colors-2-0/>made during a hackathon</a>).",
               "date": "2013"
             },
             {
               "name": "<a href=https://sassme.jim-nielsen.com>SassMe</a>",
-              "content": "A tool <a href=https://blog.jim-nielsen.com/2016/sassme-v2/>made</a> to visualize Sass color functions in real-time, no compilation required.",
+              "content": "A tool to visualize Sass color functions without compiling (initially <a href=https://blog.jim-nielsen.com/2016/sassme-v2/>made during a hackathon</a>)",
               "date": "2012"
             }
           ],
@@ -1277,14 +1284,65 @@
             {
               "name": "Jason Snell",
               "href": "https://sixcolors.com/link/2021/11/the-ios-app-icon-book/",
-              "project": "The App Icon Books",
+              "project": "App Icon Books",
               "quote": "A gorgeous art book/coffee table book that preserves the history of iOS app icon art."
             },
             {
               "name": "John Voorhees",
               "href": "https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/",
-              "project": "The App Icon Books",
+              "project": "App Icon Books",
               "quote": "My expectations were high, and I’m happy to report that it doesn’t disappoint."
+            }
+          ],
+          "employment": [
+            {
+              "title": "Founding Software Engineer",
+              "company": "Quadratic",
+              "href": "https://blog.jim-nielsen.com/tags#quadratic",
+              "content": "a startup building an infinite spreadsheet powered by code and aimed at developers and data scientists.",
+              "meta": "2023–Now · Remote"
+            },
+            {
+              "title": "Director of Design",
+              "company": "Remix",
+              "href": "https://blog.jim-nielsen.com/tags#remix",
+              "content": "Design, front-end, and writing for a web application framework startup. Acquired by Shopify.",
+              "meta": "2022 · Remote"
+            },
+            {
+              "title": "Director of Design",
+              "company": "SageSure",
+              "href": "https://blog.jim-nielsen.com/tags#sagesure",
+              "content": "Design and front-end leadership at an insurance company which grew from $200M to $1B+ in premium during my tenure.",
+              "meta": "2016–2022 · Remote"
+            },
+            {
+              "title": "UI Engineer",
+              "company": "Timshel",
+              "href": "https://blog.jim-nielsen.com/tags#timshel",
+              "content": "tk.",
+              "meta": "2016 · Remote"
+            },
+            {
+              "title": "Designer & Front-end Engineer",
+              "company": "Postlight",
+              "href": "https://blog.jim-nielsen.com/tags#postlight",
+              "content": "tk.",
+              "meta": "2016 · Remote"
+            },
+            {
+              "title": "Lead Designer",
+              "company": "Kindling",
+              "href": "https://blog.jim-nielsen.com/tags#kindling",
+              "content": "tk.",
+              "meta": "2012–2016 · NYC"
+            },
+            {
+              "title": "Web Designer",
+              "company": "Arc90",
+              "href": "https://blog.jim-nielsen.com/tags#arc90",
+              "content": "tk.",
+              "meta": "2012 · NYC"
             }
           ]
         }
