@@ -344,7 +344,8 @@
         }
       }
       .people li > div:first-child {
-        min-width: 12rem;
+        min-width: 11rem;
+        margin-right: 1rem;
         color: var(--color-text);
       }
       .people q {
@@ -470,7 +471,7 @@
           margin-bottom: var(--spacer-8);
         }
       </style>
-      <p>Stuff I’m still actively working on:</p>
+      <p>Stuff I still work on:</p>
       <ul class="people">
         {{#activeSideProjects}}
         <li>
@@ -531,31 +532,6 @@
         </div> -->
         {{/.}}
       </div>
-
-      <script type="application/json" id="projects">
-        [
-          {
-            "title": "<a href=https://blog.jim-nielsen.com>My Personal Blog</a>",
-            "description": "Renowned writing linked to by Smashing Magazine, Changelog, JavaScript Weekly, Sidebar.io, An Event Apart, CSS Tricks, Hacker News, and more.",
-            "src": "/project-blog.svg",
-            "quote": {
-              "name": "Jeremy Keith",
-              "href": "https://adactio.com/journal/18008",
-              "content": "damn, do I enjoy reading [Jim’s] blog."
-            }
-          },
-          {
-            "title": "<a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> Icon Galleries",
-            "description": "Years designing, developing, curating, <a href=https://blog.jim-nielsen.com/tags#iconGalleries>blogging about</a>, and <a href=https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup>talking about</a> my collection of app icons.",
-            "src": "/project-icon-galleries.svg",
-            "quote": {
-              "name": "Brian Lovin",
-              "href": "https://twitter.com/user/status/1365042604132368385",
-              "content": "Love these [icon sites] Nicely done [Jim]"
-            }
-          }
-        ]
-      </script>
     </section>
 
     <!-- Employment \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
@@ -567,8 +543,8 @@
         <li>
           <div>{{title}}</div>
           <div>
-            @
-            <a href="{{href}}">{{company}}</a>: {{content}}
+            {{#company}}@ <a href="{{href}}">{{company}}</a>:
+            {{/company}}{{{content}}}
             <span
               style="
                 display: block;
@@ -581,180 +557,7 @@
         </li>
         {{/employment}}
       </ul>
-
-      <h2>Director of Design @ <a href="https://remix.run">Remix</a></h2>
-      <p>2022 · Remote</p>
-      <p>
-        Design, front-end, and writing for a web application framework startup.
-        Acquired by Shopify.
-        <a href="https://blog.jim-nielsen.com/tags#remix">Writeups…</a>
-      </p>
-
-      <h2>Director of Design @ <a href="https://sagesure.com">SageSure</a></h2>
-      <p>2016–2022 · Remote</p>
-      <p>
-        Design and front-end leadership at an insurance company which grew from
-        $200M to $1B+ in premium during my tenure.
-        <a href="https://blog.jim-nielsen.com/tags#sagesure">Writeups…</a>
-      </p>
-
-      <p style="color: var(--color-text-mutedest); font-size: 0.875rem">
-        There’s more: a few tech startups in NYC, a lifeguard when I was 16 —
-        <a href="#contact">contact me</a> for those deets.
-      </p>
-
-      <!--
-      <details>
-        <summary>More…</summary>
-
-        <h2>
-          UI Engineer @
-          <a href="https://web.archive.org/web/2016/https://timshel.com/"
-            >Timshel</a
-          >
-        </h2>
-        <p>2016 · Remote</p>
-        <p>
-          tk. <a href="https://blog.jim-nielsen.com/tags#timshel">Writeups →</a>
-        </p>
-
-        <h2>
-          Designer & Front-end Engineer
-          <a href="https://postlight.com/">Postlight</a>
-        </h2>
-        <p>2016 · Remote</p>
-        <p>
-          <a href="https://blog.jim-nielsen.com/tags#postlight">Writeups…</a>
-        </p>
-        <h2>
-          Lead Designer,
-          <a
-            href="https://web.archive.org/web/2015/https://www.kindlingapp.com/"
-            >Kindling</a
-          >
-        </h2>
-        <p>2012–2016 · NYC</p>
-        <p>
-          <a href="https://blog.jim-nielsen.com/tags#kindling">Writeups…</a>
-        </p>
-        <h2>
-          Web Designer,
-          <a href="https://web.archive.org/web/2012/http://arc90.com/">Arc90</a>
-        </h2>
-
-        <p>2012 · NYC</p>
-        <p><a href="https://blog.jim-nielsen.com/tags#arc90">Writeups</a></p>
-      </details>
-      -->
     </section>
-
-    <!-- <section>
-      <h1>Side Projects</h1>
-
-      <h2>
-        <a href="https://instagram.com/flyingjpies">Flying J Pies</a>
-      </h2>
-      <p>2017–Now</p>
-      <p>
-        Making pies and
-        <a href="https://blog.jim-nielsen.com/2022/flying-j-pies/"
-          >documenting the process</a
-        >: pic of it didn’t happen.
-      </p>
-
-      <h2>
-        <a href="https://www.canistilluse.com">canistilluse.com</a>
-      </h2>
-      <p>2021</p>
-      <p>
-        A satirical website
-        <a href="https://blog.jim-nielsen.com/2021/canistilluse.com/">I made</a>
-        illustrating the problems of a world where habitul breakage on the web
-        becomes accepted as the price of progress.
-      </p>
-      <dl>
-        <dt><a href="https://adactio.com/links/18383">Jeremy Keith</a></dt>
-        <dd>
-          “It’s weirdly gratifying to see a hastily-written sarcastic quip tuned
-          into something real.”
-        </dd>
-      </dl>
-
-      <h2>
-        <a href="https://readlists.jim-nielsen.com">Readlists</a>
-      </h2>
-      <p>2021</p>
-      <p>
-        Recreating the idea behind the incredibly useful, but now defunct,
-        service Readlists. All design and development
-        <a href="https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
-          >done</a
-        >
-        by me — bugs aren’t mine though.
-      </p>
-
-      <details>
-        <summary>More…</summary>
-
-        <h2>
-          <a href="https://teamcolors.jim-nielsen.com">TeamColors</a>
-        </h2>
-        <p>2015</p>
-        <p>
-          A color reference for favorite sporting teams across various
-          profressional leagues (made in a
-          <a href="https://blog.jim-nielsen.com/2013/teamcolors/">hackathon</a>
-          and later
-          <a href="https://blog.jim-nielsen.com/2015/team-colors-2-0/"
-            >updated</a
-          >).
-        </p>
-
-        <h2>
-          <a href="https://gimmiedaticon.jim-nielsen.com">Gimmie Dat iCon</a>
-        </h2>
-        <p>2015</p>
-        <p>
-          A tool to retrieve full-sized icon artwork for any app in the App
-          Store (based on a
-          <a
-            href="https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866"
-            >tutorial</a
-          >
-          published for Web Design Tuts+).
-        </p>
-
-        <h2>
-          <a href="https://logo-integrity.jim-nielsen.com">Logo Integrity</a>
-        </h2>
-        <p>2014</p>
-        <p>
-          In <i>A Designer’s Art</i>, Paul Rand asks: “How far out of focus can
-          an image be and still be recognized?” For fun, I
-          <a href="https://blog.jim-nielsen.com/2014/logo-integrity/">built</a>
-          an experiment to find out.
-        </p>
-
-        <h2>
-          <a href="https://sassme.jim-nielsen.com">SassMe</a>
-        </h2>
-        <p>2012</p>
-        <p>
-          A tool
-          <a href="https://blog.jim-nielsen.com/2016/sassme-v2/">made</a> to
-          visualize Sass color functions in real-time, no compilation required.
-          Loved by folks all over the industry:
-        </p>
-      </details>
-    </section> -->
-
-    <!-- <section>
-      <h1>Social Validation</h1>
-
-      <h2>People Are Saying…</h2>
-      <br />
-      
-    </section> -->
 
     <footer>Thank you for visiting this personal website.</footer>
 
@@ -1175,19 +978,24 @@
           ],
           "activeSideProjects": [
             {
-              "name": "<a href=https://blog.jim-nielsen.com>Personal Blog</a>",
-              "content": "Industry reknowed blog linked to by many.",
+              "name": "<a href=https://blog.jim-nielsen.com>My Blog</a>",
+              "content": "Personal opinions on all things web related.",
               "date": "2012–Now"
             },
             {
-              "name": "<a href=https://notes.jim-nielsen.com>Personal Notes</a>",
-              "content": "A collection of notes I’ve taken over the years.",
+              "name": "<a href=https://notes.jim-nielsen.com>My Notes</a>",
+              "content": "Personal notes on other people’s writing plus <a href=https://blog.jim-nielsen.com/2023/notes-dot-jim-nielsen-dot-com/>my 2¢</a>.",
               "date": "2019–Now"
             },
             {
-              "name": "Icon Galleries",
-              "content": "<a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> icons I design, develop, curate, and blog about my collection of app icons.",
+              "name": "<a href=https://iosicongallery.com>Icon Galleries</a>",
+              "content": "Personal collection of beautiful icons for <a href=https://www.iosicongallery.com>iOS</a>, <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a> — designed, developed, and curated by me.",
               "date": "2010–Now"
+            },
+            {
+              "name": "<a href=https://instagram.com/flyingjpies>Flying J Pies</a>",
+              "content": "Making pies and <a href=https://blog.jim-nielsen.com/2022/flying-j-pies/>documenting the process</a>: pic or it didn’t happen.",
+              "date": "2017–Now"
             }
           ],
           "archivedSideProjects": [
@@ -1296,53 +1104,65 @@
           ],
           "employment": [
             {
-              "title": "Founding Software Engineer",
+              "title": "Founding Engineer",
               "company": "Quadratic",
               "href": "https://blog.jim-nielsen.com/tags#quadratic",
-              "content": "a startup building an infinite spreadsheet powered by code and aimed at developers and data scientists.",
+              "content": "Design, code, and <a href=https://www.quadratichq.com/blog/2023-05-15-coordinate-system-for-infinite-spreadsheet>writing</a> for a startup building a next generation spreadsheet powered by code.",
               "meta": "2023–Now · Remote"
             },
             {
               "title": "Director of Design",
               "company": "Remix",
               "href": "https://blog.jim-nielsen.com/tags#remix",
-              "content": "Design, front-end, and writing for a web application framework startup. Acquired by Shopify.",
+              "content": "Design, code, and <a href=https://remix.run/blog/remix-data-flow>writing</a> for a web application framework startup. Acquired by Shopify.",
               "meta": "2022 · Remote"
             },
             {
               "title": "Director of Design",
               "company": "SageSure",
               "href": "https://blog.jim-nielsen.com/tags#sagesure",
-              "content": "Design and front-end leadership at an insurance company which grew from $200M to $1B+ in premium during my tenure.",
+              "content": "Design, code, <a href=https://tech.sagesure.com/blog/2021-11-30-design-systems-and-trade-offs/>writing</a>, and team leadership at an insurance company with 10x growth during my tenure.",
               "meta": "2016–2022 · Remote"
             },
             {
               "title": "UI Engineer",
               "company": "Timshel",
               "href": "https://blog.jim-nielsen.com/tags#timshel",
-              "content": "tk.",
+              "content": "Design and code for a startup building a platform to empower nonprofits, brands, and other social impact orgs.",
               "meta": "2016 · Remote"
             },
             {
-              "title": "Designer & Front-end Engineer",
+              "title": "Design Engineer",
               "company": "Postlight",
               "href": "https://blog.jim-nielsen.com/tags#postlight",
-              "content": "tk.",
+              "content": "Design and code as a contractor building software tools for Time Inc. and other clients.",
               "meta": "2016 · Remote"
             },
             {
               "title": "Lead Designer",
               "company": "Kindling",
               "href": "https://blog.jim-nielsen.com/tags#kindling",
-              "content": "tk.",
+              "content": "Design and code for a startup building social innovation software. Acquired 2016.",
               "meta": "2012–2016 · NYC"
             },
             {
               "title": "Web Designer",
               "company": "Arc90",
               "href": "https://blog.jim-nielsen.com/tags#arc90",
-              "content": "tk.",
+              "content": "Design and code for an agency and its clients — my first “real” tech job in the big city.",
               "meta": "2012 · NYC"
+            },
+            {
+              "title": "Multimedia Designer",
+              "company": "Utah Tech University",
+              "href": "https://utahtech.edu",
+              "content": "Web design and code, print, and video for the Department of Student Affairs.",
+              "meta": "2011 · UT"
+            },
+            {
+              "title": "[Other]",
+              "content": "Web design for people off Cragislist, retails sales at a sporting goods store, lifeguard for the municipal pool, newspaper delivery for the local paper, and other pre-college jobs.",
+              "meta": "2002—2012"
             }
           ]
         }
