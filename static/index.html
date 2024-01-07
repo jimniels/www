@@ -264,10 +264,6 @@
         margin-bottom: var(--spacer-16);
       }
 
-      section#contact h1 {
-        font-size: 1.125rem;
-      }
-
       .contact {
         overflow: visible;
         margin: 0;
@@ -275,12 +271,16 @@
         display: flex;
         flex-direction: column;
         gap: 8px;
+        margin-top: var(--spacer-96);
       }
       .contact li {
         display: flex;
         gap: 16px;
         align-items: center;
         position: relative;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .contact .i-email:before {
         mask-image: url("/icon-email.svg");
@@ -306,6 +306,7 @@
       .contact li:before {
         content: "";
         display: block;
+        min-width: 24px;
         width: 24px;
         height: 24px;
         background-color: var(--color-text);
@@ -330,30 +331,30 @@
         color: var(--color-text-mutedest);
       }
 
-      .people {
+      .list {
         padding: 0;
         margin: 0 0 var(--spacer-64) 0;
       }
 
-      .people li {
+      .list li {
         padding: 0.5rem 0;
       }
       @media (min-width: 600px) {
-        .people li {
+        .list li {
           display: flex;
         }
       }
-      .people li > div:first-child {
+      .list li > div:first-child {
         min-width: 11rem;
         margin-right: 1rem;
         color: var(--color-text);
       }
-      .people q {
+      .list q {
         display: block;
 
         position: relative;
       }
-      .people q:before {
+      .list q:before {
         position: absolute;
         right: 100%;
       }
@@ -365,17 +366,9 @@
       <p>
         <i>Designer. Engineer. Writer.</i>
         <br />
-        20+ years building for the web.
+        20+ years at the intersection of design & code on the web.
       </p>
-    </header>
-
-    <!-- Intro \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
-    <section id="contact">
-      <!-- <h1>Contact</h1>
-
-      <p>In order of how I quickly I’ll respond:</p> -->
-
-      <ul class="contact" data-json="social">
+      <ul class="contact">
         {{#contact}}
         <li class="i-{{id}}">
           <span>{{label}}</span>
@@ -383,12 +376,12 @@
         </li>
         {{/contact}}
       </ul>
-    </section>
+    </header>
 
     <section id="social-validation">
       <h1>Social Validation</h1>
-      <p>People I’ve worked with (who have social media):</p>
-      <ul class="people">
+      <p>People I’ve worked with are saying:</p>
+      <ul class="list">
         {{#peopleWork}}
         <li>
           <div><a href="{{href}}" class="unmuted">{{name}}</a></div>
@@ -397,8 +390,8 @@
         {{/peopleWork}}
       </ul>
 
-      <p>People who like my writing:</p>
-      <ul class="people">
+      <p>People who enjoy my writing are saying:</p>
+      <ul class="list">
         {{#peopleBlog}}
         <li>
           <div><a href="{{href}}" class="unmuted">{{name}}</a></div>
@@ -407,8 +400,8 @@
         {{/peopleBlog}}
       </ul>
 
-      <p>Sites and publications that link to my writing:</p>
-      <ul class="people">
+      <p>Sites and newsletters are linking to my writing:</p>
+      <ul class="list">
         {{#pubs}}
         <li>
           <div>{{name}}</div>
@@ -419,8 +412,8 @@
         {{/pubs}}
       </ul>
 
-      <p>People who like my side projects:</p>
-      <ul class="people">
+      <p>People who enjoy my side projects are saying:</p>
+      <ul class="list">
         {{#peopleSideProjects}}
         <li>
           <div><a href="{{href}}">{{name}}</a></div>
@@ -439,13 +432,13 @@
         {{/peopleSideProjects}}
       </ul>
 
-      <p>Podcast and written interviews:</p>
+      <p>Podcasts and publications are interviewing me:</p>
 
-      <ul class="people">
+      <ul class="list">
         {{#interviews}}
         <li>
-          <div>{{name}}</div>
-          <div><a href="{{href}}">{{label}}</a></div>
+          <div><a href="{{href}}">{{name}}</a></div>
+          <div>{{label}}</div>
         </li>
         {{/interviews}}
       </ul>
@@ -471,8 +464,8 @@
           margin-bottom: var(--spacer-8);
         }
       </style>
-      <p>Stuff I still work on:</p>
-      <ul class="people">
+      <p>Stuff I’m still actively working on:</p>
+      <ul class="list">
         {{#activeSideProjects}}
         <li>
           <div>{{{name}}}</div>
@@ -497,7 +490,7 @@
 
       <p>Stuff I’m done working on:</p>
 
-      <ul class="people">
+      <ul class="list">
         {{#archivedSideProjects}}
         <li>
           <div>{{{name}}}</div>
@@ -538,7 +531,7 @@
     <section id="employment">
       <h1>Employment</h1>
 
-      <ul class="people">
+      <ul class="list">
         {{#employment}}
         <li>
           <div>{{title}}</div>
@@ -931,14 +924,14 @@
             {
               "id": "github",
               "label": "GitHub",
-              "link": "@jimniels",
+              "link": "jimniels",
               "href": "https://github.com/jimniels"
             },
 
             {
               "id": "discord",
               "label": "Discord",
-              "link": "@jimniels",
+              "link": "jimniels",
               "href": "https://discord.com/users/jimniels"
             },
             {
@@ -1040,7 +1033,7 @@
             },
             {
               "name": "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>",
-              "content": "A color reference for your favorite sporting teams (<a href=https://blog.jim-nielsen.com/2015/team-colors-2-0/>made during a hackathon</a>).",
+              "content": "A color reference for your favorite sports teams (<a href=https://blog.jim-nielsen.com/2015/team-colors-2-0/>made during a hackathon</a>).",
               "date": "2013"
             },
             {
@@ -1135,7 +1128,7 @@
               "title": "Design Engineer",
               "company": "Postlight",
               "href": "https://blog.jim-nielsen.com/tags#postlight",
-              "content": "Design and code as a contractor building software tools for Time Inc. and other clients.",
+              "content": "Design and code as a contractor building software tools for clients like Time Inc.",
               "meta": "2016 · Remote"
             },
             {
@@ -1149,9 +1142,11 @@
               "title": "Web Designer",
               "company": "Arc90",
               "href": "https://blog.jim-nielsen.com/tags#arc90",
-              "content": "Design and code for an agency and its clients — my first “real” tech job in the big city.",
+              "content": "Design and code for a digital agency and its clients.",
               "meta": "2012 · NYC"
-            },
+            }
+          ],
+          "_employement": [
             {
               "title": "Multimedia Designer",
               "company": "Utah Tech University",
@@ -1170,18 +1165,9 @@
 
       <script src="https://unpkg.com/mustache@latest"></script>
       <script>
-        // const templates = Array.from(document.querySelectorAll("[data-json]"));
-        // templates.forEach(($template) => {
-        //   const id = $template.getAttribute("data-json");
-        //   const script = document.querySelector(
-        //     `script[type='application/json']#${id}`
-        //   );
-        //   const data = JSON.parse(script.innerHTML);
-        //   const rendered = Mustache.render($template.innerHTML, data);
-        //   $template.innerHTML = rendered;
-        // });
-
-        const script = document.querySelector(`#json-data`);
+        const script = document.querySelector(
+          `#development script[type='application/json']`
+        );
         const data = JSON.parse(script.innerHTML);
         const rendered = Mustache.render(document.body.innerHTML, data);
         document.body.innerHTML = rendered;
