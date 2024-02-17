@@ -269,18 +269,19 @@
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: column;
-        gap: 8px;
-        margin-top: var(--spacer-96);
+        flex-direction: row;
+        flex-wrap: wrap;
       }
       .contact li {
         display: flex;
-        gap: 16px;
+        gap: 8px;
         align-items: center;
         position: relative;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-right: var(--spacer-24);
+        margin-bottom: var(--spacer-12);
       }
       .contact .i-email:before {
         mask-image: url("/icon-email.svg");
@@ -303,27 +304,26 @@
       .contact .i-discord:before {
         mask-image: url("/icon-discord.svg");
       }
+      .contact .i-dribbble:before {
+        mask-image: url("/icon-dribbble.svg");
+      }
+      .contact .i-threads:before {
+        mask-image: url("/icon-threads.svg");
+      }
+      .contact .i-instagram:before {
+        mask-image: url("/icon-instagram.svg");
+      }
       .contact li:before {
         content: "";
         display: block;
-        min-width: 24px;
-        width: 24px;
-        height: 24px;
+        min-width: 20px;
+        width: 20px;
+        height: 20px;
         background-color: var(--color-text);
+        mask-size: 20px;
       }
-      .contact li:after {
-        content: "";
-        display: block;
-        width: 24px;
-        height: 24px;
-        position: absolute;
-        top: -4px;
-        left: 4px;
-        /* border: 1px solid var(--color-text-mutedest); */
-      }
-      .contact li span {
-        color: var(--color-text);
-        /* min-width: 7em; */
+      .contact li:has(a:hover):before {
+        background-color: var(--color-text);
       }
       .contact li span:after {
         /* content: " / "; */
@@ -368,14 +368,44 @@
         <br />
         20+ years at the intersection of design & code on the web.
       </p>
-      <ul class="contact">
+      <ul class="contact" style="margin: var(--spacer-96) 0">
         {{#contact}}
         <li class="i-{{id}}">
-          <span>{{label}}</span>
-          <a href="{{href}}">{{link}}</a>
+          <a href="{{href}}">{{label}}</a>
         </li>
         {{/contact}}
       </ul>
+
+      <!--
+      <p style="margin-top: var(--spacer-96)">Where I’m posting these days:</p>
+      <ul class="contact">
+        <li class="i-{{id}}">
+          <a href="{{href}}" style="color: var(--color-text)">My blog</a>
+        </li>
+        <li class="i-{{id}}">
+          <a href="{{href}}" style="color: var(--color-text)">My notes</a>
+        </li>
+        <li class="i-{{id}}">
+          <a href="{{href}}" style="color: var(--color-text)"
+            >My icon galleries</a
+          >
+        </li>
+      </ul> -->
+
+      <!--
+      <p style="margin-top: var(--spacer-48)">Reach out anytime:</p>
+
+      <details style="margin-top: var(--spacer-16)">
+        <summary style="max-width: 100px">Other…</summary>
+        <p>Too many socials—in descending order of how often I look at them:</p>
+        <ul class="contact">
+          {{#otherContact}}
+          <li class="i-{{id}}">
+            <a href="{{href}}">{{label}}</a>
+          </li>
+          {{/otherContact}}
+        </ul>
+      </details>-->
     </header>
 
     <section id="social-validation">
@@ -710,6 +740,22 @@
               ]
             },
             {
+              "name": "Frontend Masters",
+              "refs": [
+                ["Linked from their blog in"],
+                [
+                  " Dec 2023",
+                  "https://frontendmasters.com/blog/the-case-for-design-engineers/"
+                ],
+                [
+                  " Feb 2024",
+                  "https://frontendmasters.com/blog/light-dom-only/"
+                ],
+                [" and more", "https://frontendmasters.com/blog?s=jim-nielsen"],
+                ["."]
+              ]
+            },
+            {
               "name": "Hacker News",
               "content": "",
               "refs": [
@@ -922,6 +968,14 @@
               "href": "https://twitter.com/jimniels"
             },
             {
+              "id": "linkedin",
+              "label": "LinkedIn",
+              "link": "Click here",
+              "href": "/linkedin"
+            }
+          ],
+          "otherContact": [
+            {
               "id": "github",
               "label": "GitHub",
               "link": "jimniels",
@@ -941,10 +995,22 @@
               "href": "https://bsky.app/profile/jim-nielsen.com"
             },
             {
-              "id": "linkedin",
-              "label": "LinkedIn",
-              "link": "Click here",
-              "href": "/linkedin"
+              "id": "instagram",
+              "label": "Instagram",
+              "link": "@jimniels",
+              "href": "https://instagram.com/jimniels"
+            },
+            {
+              "id": "dribbble",
+              "label": "Dribbble",
+              "link": "jimniels",
+              "href": "https://dribbble.com/jimniels"
+            },
+            {
+              "id": "threads",
+              "label": "Threads",
+              "link": "@jimniels",
+              "href": "https://threads.net/@jimniels"
             }
           ],
           "interviews": [
