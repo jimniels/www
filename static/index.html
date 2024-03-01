@@ -269,12 +269,11 @@
         margin: 0;
         padding: 0;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
       }
       .contact li {
         display: flex;
-        gap: 8px;
+        gap: 12px;
         align-items: center;
         position: relative;
         white-space: nowrap;
@@ -358,6 +357,10 @@
         position: absolute;
         right: 100%;
       }
+
+      .highlight {
+        background-color: hsl(60deg 100% 50% / 20%);
+      }
     </style>
   </head>
   <body>
@@ -368,29 +371,13 @@
         <br />
         20+ years at the intersection of design & code on the web.
       </p>
-      <ul class="contact" style="margin: var(--spacer-96) 0">
+      <ul class="contact">
         {{#contact}}
         <li class="i-{{id}}">
-          <a href="{{href}}">{{label}}</a>
+          <a href="{{href}}">{{link}}</a>
         </li>
         {{/contact}}
       </ul>
-
-      <!--
-      <p style="margin-top: var(--spacer-96)">Where I’m posting these days:</p>
-      <ul class="contact">
-        <li class="i-{{id}}">
-          <a href="{{href}}" style="color: var(--color-text)">My blog</a>
-        </li>
-        <li class="i-{{id}}">
-          <a href="{{href}}" style="color: var(--color-text)">My notes</a>
-        </li>
-        <li class="i-{{id}}">
-          <a href="{{href}}" style="color: var(--color-text)"
-            >My icon galleries</a
-          >
-        </li>
-      </ul> -->
 
       <!--
       <p style="margin-top: var(--spacer-48)">Reach out anytime:</p>
@@ -407,6 +394,43 @@
         </ul>
       </details>-->
     </header>
+
+    <section>
+      <h1>
+        <span class="highlight" style="text-transform: uppercas"
+          >>> &nbsp; Active Personal Projects &nbsp; <<</span
+        >
+      </h1>
+      <p>
+        <span class="highlighz"
+          >If you only look at one thing of mine, make sure it’s these
+          four:</span
+        >:
+      </p>
+
+      <ul class="list">
+        {{#activeSideProjects}}
+        <li>
+          <div>{{{name}}}</div>
+          <div>
+            {{{content}}}
+            <span
+              style="
+                display: block;
+                font-size: 0.875rem;
+                color: var(--color-text-mutedest);
+              "
+              >{{date}}</span
+            >
+            <!-- <div style="font-size: 0.875rem; margin: 8px 0">
+              ★ <a href="">Brian Lovin</a>: “Love these [icon sites] Nicely done
+              [Jim]”
+            </div> -->
+          </div>
+        </li>
+        {{/activeSideProjects}}
+      </ul>
+    </section>
 
     <section id="social-validation">
       <h1>Social Validation</h1>
@@ -475,7 +499,7 @@
     </section>
 
     <section id="side-projects">
-      <h1>Side Projects</h1>
+      <h1>Archived Personal Projects</h1>
 
       <style>
         .illustration {
@@ -494,31 +518,6 @@
           margin-bottom: var(--spacer-8);
         }
       </style>
-      <p>Stuff I’m still actively working on:</p>
-      <ul class="list">
-        {{#activeSideProjects}}
-        <li>
-          <div>{{{name}}}</div>
-          <div>
-            {{{content}}}
-            <span
-              style="
-                display: block;
-                font-size: 0.875rem;
-                color: var(--color-text-mutedest);
-              "
-              >{{date}}</span
-            >
-            <!-- <div style="font-size: 0.875rem; margin: 8px 0">
-              ★ <a href="">Brian Lovin</a>: “Love these [icon sites] Nicely done
-              [Jim]”
-            </div> -->
-          </div>
-        </li>
-        {{/activeSideProjects}}
-      </ul>
-
-      <p>Stuff I’m done working on:</p>
 
       <ul class="list">
         {{#archivedSideProjects}}
@@ -952,16 +951,16 @@
           ],
           "contact": [
             {
-              "id": "email",
-              "label": "Email",
-              "link": "jimniels@gmail.com",
-              "href": "mailto:jimniels@gmail.com"
-            },
-            {
               "id": "mastodon",
               "label": "Mastodon",
               "link": "@jimniels@mastodon.social",
               "href": "https://mastodon.social/@jimniels"
+            },
+            {
+              "id": "email",
+              "label": "Email",
+              "link": "jimniels@gmail.com",
+              "href": "mailto:jimniels@gmail.com"
             },
             {
               "id": "twitter",
@@ -972,7 +971,7 @@
             {
               "id": "linkedin",
               "label": "LinkedIn",
-              "link": "Click here",
+              "link": "jim-nielsen",
               "href": "/linkedin"
             }
           ],
@@ -983,7 +982,6 @@
               "link": "jimniels",
               "href": "https://github.com/jimniels"
             },
-
             {
               "id": "discord",
               "label": "Discord",
