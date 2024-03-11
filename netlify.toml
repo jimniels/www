@@ -6,3 +6,8 @@
 
 [dev]
   publish = "static"
+
+[[headers]]
+  for = "/jim-navbar.js"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
