@@ -9,7 +9,7 @@ const sites = [
   },
   {
     title: "notes.",
-    description: "My short-form writing: notes from others’ writing + my 2¢.",
+    description: "My short-form writing: notes from others + my 2¢.",
   },
 ];
 
