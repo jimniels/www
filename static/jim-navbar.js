@@ -21,9 +21,10 @@ class jimNavbar extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.innerHTML = /*html*/ `
+      <div id="root" class="collapsed">
         <button
           id="button"
-          aria-label="Toggle navigation dropdown"
+          aria-label="Jim Nielsen’s websites (toggle dropdown)"
           title="Jim Nielsen’s Websites">
           <img
             src="https://www.jim-nielsen.com/.well-known/avatar"
@@ -57,6 +58,7 @@ class jimNavbar extends HTMLElement {
               .join("")}
           </ul>
         </div>
+      </div>
         <style>
           :host {
             display: flex;
@@ -77,8 +79,8 @@ class jimNavbar extends HTMLElement {
 
           svg {
             opacity: 0;
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             color: white;
             transition: 1.2s ease opacity;
             position: absolute;
@@ -87,9 +89,7 @@ class jimNavbar extends HTMLElement {
           }
 
           #dropdown {
-            transform: scale(0);
             padding-bottom: 56px;
-            transition: .3s ease transform;
             transform-origin: calc(100% - 20px) calc(100% - 20px);
             position: absolute;
             width: 280px;
@@ -103,8 +103,55 @@ class jimNavbar extends HTMLElement {
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            border: 1px solid #222
+            border: 1px solid #222;
+            transform: scale(1);
+            visibility: hidden;
+            transition: .3s ease transform;
           }
+
+          
+
+
+          .collapsed {
+            #dropdown {
+              transform: scale(0);
+              visibility: hidden;
+            }
+            img {
+              opacity: 1;
+              transform: rotate(0deg);
+            }
+            svg {
+              opacity: 0;
+              visibility: hidden;
+            }
+            &.collapsing {
+              #dropdown {
+                visibility: visible;
+              }
+              svg {
+                opacity: 0;
+                visibility: hidden;
+              }              
+            }
+          }
+          
+          .expanded {
+            #dropdown {
+              transform: scale(1);
+              visibility: visible;
+            }
+            img {
+              opacity: 0;
+            }
+            button {
+              transform: rotate(-360deg);
+            }
+            svg {
+              opacity: 1;
+            }
+          }
+
           
           ul {
             margin: 0;
@@ -171,6 +218,8 @@ class jimNavbar extends HTMLElement {
             cursor: pointer;
             width: 44px;
             height: 44px;
+            position: relative;
+            z-index: 10;
 
             &:focus { outline: none }
             &:focus-visible { box-shadow: 0 0 0 3px blue; }
@@ -199,17 +248,25 @@ class jimNavbar extends HTMLElement {
   }
 
   connectedCallback() {
+    const $root = this.shadowRoot.querySelector("#root");
     const $dropdown = this.shadowRoot.querySelector("#dropdown");
     const $btn = this.shadowRoot.querySelector("button");
     const $img = $btn.querySelector("img");
     const $svg = $btn.querySelector("svg");
 
     const toggleDropdown = () => {
-      $dropdown.style.transform = this.open ? "scale(0)" : "scale(1)";
-      $btn.style.transform = this.open ? "rotate(0deg)" : "rotate(-360deg)";
-      $img.style.opacity = this.open ? "1" : "0";
-      $svg.style.opacity = this.open ? "0" : ".6";
+      if (this.open) {
+        $root.classList.remove("expanded");
+        $root.classList.add("collapsed", "collapsing");
+      } else {
+        $root.classList.remove("collapsed");
+        $root.classList.add("expanded", "expanding");
+      }
+
       this.open = !this.open;
+      setTimeout(() => {
+        $root.classList.remove(this.open ? "expanding" : "collapsing");
+      }, 300);
     };
     $btn.addEventListener("click", (e) => {
       e.stopPropagation();
