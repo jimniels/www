@@ -109,9 +109,6 @@ class jimNavbar extends HTMLElement {
             transition: .3s ease transform;
           }
 
-          
-
-
           .collapsed {
             #dropdown {
               transform: scale(0);
@@ -275,6 +272,9 @@ class jimNavbar extends HTMLElement {
 
     document.addEventListener("click", (e) => {
       if (this.open) toggleDropdown();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && this.open) toggleDropdown();
     });
   }
 }
