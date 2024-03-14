@@ -148,13 +148,12 @@ class jimNavbar extends HTMLElement {
               opacity: 1;
             }
           }
-
           
           ul {
             margin: 0;
             padding: 0;
 
-            li {
+            :is(li) {
               list-style: none;
               margin: 0;
               padding: 0;
@@ -177,7 +176,7 @@ class jimNavbar extends HTMLElement {
                 left: 12px;
               }
 
-              a {
+              :is(a) {
                 padding: 16px 40px 16px 32px;
                 color: white;
                 text-decoration: none;
@@ -187,20 +186,6 @@ class jimNavbar extends HTMLElement {
             }
           }
 
-          h2 {
-            padding: 0 16px 0 32px;
-            margin: 0;
-            font-size: 14px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            order: 2;
-
-            &:before {
-              content: '_____.';
-              opacity: .3;
-            }
-          }
  
           button {
             background: none;
