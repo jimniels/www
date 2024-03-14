@@ -114,11 +114,11 @@ class jimNavbar extends HTMLElement {
               transform: scale(0);
               visibility: hidden;
             }
-            img {
+            :is(img) {
               opacity: 1;
               transform: rotate(0deg);
             }
-            svg {
+            :is(svg) {
               opacity: 0;
               visibility: hidden;
             }
@@ -126,7 +126,7 @@ class jimNavbar extends HTMLElement {
               #dropdown {
                 visibility: visible;
               }
-              svg {
+              :is(svg) {
                 opacity: 0;
                 visibility: hidden;
               }              
@@ -138,13 +138,13 @@ class jimNavbar extends HTMLElement {
               transform: scale(1);
               visibility: visible;
             }
-            img {
+            :is(img) {
               opacity: 0;
             }
-            button {
+            :is(button) {
               transform: rotate(-360deg);
             }
-            svg {
+            :is(svg) {
               opacity: 1;
             }
           }
