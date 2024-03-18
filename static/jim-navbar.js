@@ -33,6 +33,7 @@ class jimNavbar extends HTMLElement {
           />
           <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
         </button>
+        
         <div id="dropdown" aria-labelledby="button">
           <ul>
             ${sites
@@ -71,10 +72,13 @@ class jimNavbar extends HTMLElement {
             line-height: 1.4;
             z-index: 1000;
           }
+          :host * {
+            box-sizing: border-box;
+          }
 
           img {
             border-radius: 50%;
-            transition: 0.3s ease opacity
+            transition: 0.15s ease opacity
           }
 
           svg {
@@ -89,30 +93,51 @@ class jimNavbar extends HTMLElement {
           }
 
           #dropdown {
-            padding-bottom: 56px;
-            transform-origin: calc(100% - 20px) calc(100% - 20px);
-            position: absolute;
-            width: 280px;
-            background: #000;
-            color: white;
-            bottom: -6px;
-            right: -6px;
-            font-size: 14px;
-            border-radius: 14px;
             z-index: 1;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            border: 1px solid #222;
-            transform: scale(1);
-            visibility: hidden;
-            transition: .3s ease transform;
+            transition: .3s ease opacity;
+          }
+
+          #root {
+            width: 280px;
+            color: white;
+            font-size: 14px;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            &:before {
+              content: "";
+              position: absolute;
+              
+              background: #000;
+              transition: .3s ease all;
+            }
+
+            &.collapsed:before {
+              bottom: -2px;
+              right: -2px;
+              width: 44px;
+              height: 44px;
+              border-radius: 50%;
+            }
+
+            &.expanded:before {
+              width: calc(100% + 16px);
+              height: calc(100% + 16px);
+              bottom: -8px;
+              right: -8px;
+              border-radius: 13px;
+            }
           }
 
           .collapsed {
             #dropdown {
-              transform: scale(0);
               visibility: hidden;
+              opacity: 0;
             }
             :is(img) {
               opacity: 1;
@@ -124,18 +149,17 @@ class jimNavbar extends HTMLElement {
             }
             &.collapsing {
               #dropdown {
-                visibility: visible;
-              }
-              :is(svg) {
                 opacity: 0;
-                visibility: hidden;
-              }              
+              }
+              :is(img) {
+                opacity: 0;
+              }
             }
           }
           
           .expanded {
             #dropdown {
-              transform: scale(1);
+              opacity: 1;
               visibility: visible;
             }
             :is(img) {
@@ -146,6 +170,11 @@ class jimNavbar extends HTMLElement {
             }
             :is(svg) {
               opacity: 1;
+            }
+            &.expanding {
+              #dropdown {
+                opacity: 0;
+              }
             }
           }
           
@@ -158,14 +187,10 @@ class jimNavbar extends HTMLElement {
               margin: 0;
               padding: 0;
               position: relative;
+              border-radius: 5px;
 
               &:hover {
                 background: #222;
-              }
-
-              &:nth-child(2) {
-                border-bottom: 1px solid #222;
-                border-top: 1px solid #222;
               }
 
               &.active:after {
@@ -186,22 +211,22 @@ class jimNavbar extends HTMLElement {
             }
           }
 
- 
           button {
             background: none;
             padding: 0;
             margin: 0;
             outline: none;
-            border-radius: 50%;
-            border: 2px solid #222;
+            border: none;
             z-index: 10;
             transition: .6s ease transform;
             transform-origin: 50%;
             cursor: pointer;
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
             position: relative;
             z-index: 10;
+            margin-left: auto;
+            order: 1;
 
             &:focus { outline: none }
             &:focus-visible { box-shadow: 0 0 0 3px blue; }
@@ -213,15 +238,30 @@ class jimNavbar extends HTMLElement {
               top: 1rem;
             }
 
+            #root {
+              &.collapsed:before {
+                top: -2px;
+                bottom: initial;
+              }
+
+              &.expanded:before {
+                bottom: initial;
+                top: -8px;
+              }
+            }
+
             #dropdown {
               transform-origin: calc(100% - 20px) 20px;
-              top: -6px;
+              top: 0px;
               bottom: initial;
               padding-bottom: 0;
-              padding-top: 56px;
             }
 
             h2 {
+              order: initial;
+            }
+
+            button {
               order: initial;
             }
           }
@@ -231,10 +271,7 @@ class jimNavbar extends HTMLElement {
 
   connectedCallback() {
     const $root = this.shadowRoot.querySelector("#root");
-    const $dropdown = this.shadowRoot.querySelector("#dropdown");
     const $btn = this.shadowRoot.querySelector("button");
-    const $img = $btn.querySelector("img");
-    const $svg = $btn.querySelector("svg");
 
     const toggleDropdown = () => {
       if (this.open) {
