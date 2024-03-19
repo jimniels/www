@@ -131,6 +131,9 @@ class jimNavbar extends HTMLElement {
               bottom: -8px;
               right: -8px;
               border-radius: 13px;
+
+              border: 2px solid #fff;
+              box-shadow: 0 0 0 2px #000;
             }
           }
 
