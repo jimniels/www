@@ -252,12 +252,14 @@ class jimNavbar extends HTMLElement {
             }
 
             #root {
-              &.collapsed:before {
+              &.collapsed:before,
+              &.collapsing:before {
                 top: -2px;
                 bottom: initial;
               }
 
-              &.expanded:before {
+              &.expanded:before,
+              &.expanding:before {
                 bottom: initial;
                 top: -8px;
               }
