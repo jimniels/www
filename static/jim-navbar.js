@@ -117,7 +117,8 @@ class jimNavbar extends HTMLElement {
               transition: .3s ease all;
             }
 
-            &.collapsed:before {
+            &.collapsed:before,
+            &.collapsing:before {
               bottom: -2px;
               right: -2px;
               width: 44px;
@@ -125,11 +126,19 @@ class jimNavbar extends HTMLElement {
               border-radius: 50%;
             }
 
-            &.expanded:before {
+            &.collapsed #dropdown {
+              display: none;
+            }
+            &.expanded #dropdown {
+              display: inherit;
+            }
+
+            &.expanded:before,
+            &.expanding:before {
               width: calc(100% + 16px);
               height: calc(100% + 16px);
               bottom: -8px;
-              right: -8px;
+              right: -10px;
               border-radius: 13px;
 
               border: 2px solid #fff;
@@ -149,21 +158,12 @@ class jimNavbar extends HTMLElement {
             :is(svg) {
               opacity: 0;
               visibility: hidden;
-            }
-            &.collapsing {
-              #dropdown {
-                opacity: 0;
-              }
-              :is(img) {
-                opacity: 0;
-              }
-            }
+            }            
           }
-          
+          .expanding,
           .expanded {
             #dropdown {
-              opacity: 1;
-              visibility: visible;
+              opacity: 0;
             }
             :is(img) {
               opacity: 0;
@@ -174,10 +174,20 @@ class jimNavbar extends HTMLElement {
             :is(svg) {
               opacity: 1;
             }
-            &.expanding {
-              #dropdown {
-                opacity: 0;
-              }
+          }
+          
+          .expanded {
+            #dropdown {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .collapsing {
+            #dropdown {
+              opacity: 0;
+            }
+            :is(img) {
+              opacity: 0;
             }
           }
           
@@ -279,15 +289,22 @@ class jimNavbar extends HTMLElement {
     const toggleDropdown = () => {
       if (this.open) {
         $root.classList.remove("expanded");
-        $root.classList.add("collapsed", "collapsing");
+        $root.classList.add("collapsing");
       } else {
         $root.classList.remove("collapsed");
-        $root.classList.add("expanded", "expanding");
+        $root.classList.add("expanding");
       }
 
       this.open = !this.open;
+
       setTimeout(() => {
-        $root.classList.remove(this.open ? "expanding" : "collapsing");
+        if (this.open) {
+          $root.classList.remove("expanding");
+          $root.classList.add("expanded");
+        } else {
+          $root.classList.remove("collapsing");
+          $root.classList.add("collapsed");
+        }
       }, 300);
     };
     $btn.addEventListener("click", (e) => {
