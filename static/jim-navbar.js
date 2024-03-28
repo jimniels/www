@@ -28,6 +28,7 @@ class jimNavbar extends HTMLElement {
           title="Jim Nielsen’s Websites">
           <img
             src="https://www.jim-nielsen.com/.well-known/avatar"
+            alt="Portrait photograph of Jim Nielsen"
             width="40"
             height="40"
           />
