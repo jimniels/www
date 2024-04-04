@@ -73,6 +73,7 @@ class jimNavbar extends HTMLElement {
             line-height: 1.4;
             z-index: 1000;
           }
+
           :host * {
             box-sizing: border-box;
           }
@@ -109,121 +110,118 @@ class jimNavbar extends HTMLElement {
             display: flex;
             flex-direction: column;
             gap: 8px;
-
-            &:before {
-              content: "";
-              position: absolute;
-              
-              background: #000;
-              transition: .3s ease all;
-            }
-
-            &.collapsed:before,
-            &.collapsing:before {
-              bottom: -2px;
-              right: -2px;
-              width: 44px;
-              height: 44px;
-              border-radius: 50%;
-            }
-
-            &.collapsed #dropdown {
-              display: none;
-            }
-            &.expanded #dropdown {
-              display: inherit;
-            }
-
-            &.expanded:before,
-            &.expanding:before {
-              width: calc(100% + 16px);
-              height: calc(100% + 16px);
-              bottom: -8px;
-              right: -10px;
-              border-radius: 13px;
-
-              border: 2px solid #fff;
-              box-shadow: 0 0 0 2px #000;
-            }
           }
 
-          .collapsed {
-            #dropdown {
-              visibility: hidden;
-              opacity: 0;
-            }
-            :is(img) {
-              opacity: 1;
-              transform: rotate(0deg);
-            }
-            :is(svg) {
-              opacity: 0;
-              visibility: hidden;
-            }            
+          #root:before {
+            content: "";
+            position: absolute;
+            
+            background: #000;
+            transition: .3s ease all;
           }
-          .expanding,
-          .expanded {
-            #dropdown {
-              opacity: 0;
-            }
-            :is(img) {
-              opacity: 0;
-            }
-            :is(button) {
-              transform: rotate(-360deg);
-            }
-            :is(svg) {
-              opacity: 1;
-            }
+
+          #root.collapsed:before,
+          #root.collapsing:before {
+            bottom: -2px;
+            right: -2px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+          }
+
+          #root.collapsed #dropdown {
+            display: none;
+          }
+          #root.expanded #dropdown {
+            display: inherit;
+          }
+
+          #root.expanded:before,
+          #root.expanding:before {
+            width: calc(100% + 16px);
+            height: calc(100% + 16px);
+            bottom: -8px;
+            right: -10px;
+            border-radius: 13px;
+
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #000;
           }
           
-          .expanded {
-            #dropdown {
-              opacity: 1;
-              visibility: visible;
-            }
+          .collapsed #dropdown {
+            visibility: hidden;
+            opacity: 0;
           }
-          .collapsing {
-            #dropdown {
-              opacity: 0;
-            }
-            :is(img) {
-              opacity: 0;
-            }
+          .collapsed img {
+            opacity: 1;
+            transform: rotate(0deg);
           }
+          .collapsed svg {
+            opacity: 0;
+            visibility: hidden;
+          }            
+        
+          .expanding #dropdown,
+          .expanded #dropdown {
+            opacity: 0;
+          }
+          .expanding img,
+          .expanded img {
+            opacity: 0;
+          }
+          .expanding button,
+          .expanded button {
+            transform: rotate(-360deg);
+          }
+          .expanding svg,
+          .expanded svg{
+            opacity: 1;
+          }
+          
+          .expanded #dropdown {
+            opacity: 1;
+            visibility: visible;
+          }
+          
+          .collapsing #dropdown {
+            opacity: 0;
+          }
+          .collapsing  img {
+            opacity: 0;
+          }
+          
           
           ul {
             margin: 0;
             padding: 0;
-
-            :is(li) {
-              list-style: none;
-              margin: 0;
-              padding: 0;
-              position: relative;
-              border-radius: 5px;
-
-              &:hover {
-                background: #222;
-              }
-
-              &.active:after {
-                content: "\\2713";
-                color: #fff;
-                position: absolute;
-                top: 16px;
-                left: 12px;
-              }
-
-              :is(a) {
-                padding: 16px 40px 16px 32px;
-                color: white;
-                text-decoration: none;
-                display: flex;
-                flex-direction: column;
-              }
-            }
           }
+          ul li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            border-radius: 5px;
+          }
+          ul li:hover {
+            background: #222;
+          }
+
+          ul li.active:after {
+            content: "\\2713";
+            color: #fff;
+            position: absolute;
+            top: 16px;
+            left: 12px;
+          }
+
+          ul li a {
+            padding: 16px 40px 16px 32px;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+          }
+           
 
           button {
             background: none;
@@ -241,10 +239,11 @@ class jimNavbar extends HTMLElement {
             z-index: 10;
             margin-left: auto;
             order: 1;
-
-            &:focus { outline: none }
-            &:focus-visible { box-shadow: 0 0 0 3px blue; }
           }
+
+          button:focus { outline: none }
+          button:focus-visible { box-shadow: 0 0 0 3px blue; }
+        
 
           @media screen and (min-width: 768px) {
             :host {
@@ -252,19 +251,18 @@ class jimNavbar extends HTMLElement {
               top: 1rem;
             }
 
-            #root {
-              &.collapsed:before,
-              &.collapsing:before {
-                top: -2px;
-                bottom: initial;
-              }
-
-              &.expanded:before,
-              &.expanding:before {
-                bottom: initial;
-                top: -8px;
-              }
+            #root.collapsed:before,
+            #root.collapsing:before {
+              top: -2px;
+              bottom: initial;
             }
+
+            #root.expanded:before,
+            #root.expanding:before {
+              bottom: initial;
+              top: -8px;
+            }
+            
 
             #dropdown {
               transform-origin: calc(100% - 20px) 20px;
