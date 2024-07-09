@@ -3,7 +3,7 @@ import fs from "fs";
 import Mustache from "mustache";
 
 // Read in source HTML
-const htmlIn = fs.readFileSync("./static/index.html").toString();
+const htmlIn = fs.readFileSync("./static/resume.html").toString();
 const $ = cheerio.load(htmlIn);
 
 // Get the JSON data
@@ -15,7 +15,7 @@ $("#development").remove();
 // Template
 const htmlOut = Mustache.render($.html(), data);
 
-// Copy source dir and overwrite index.html
+// Copy source dir and overwrite resume.html
 fs.rmSync("./build", { recursive: true, force: true });
 fs.cpSync("./static", "./build", { recursive: true });
-fs.writeFileSync("./build/index.html", htmlOut);
+fs.writeFileSync("./build/resume.html", htmlOut);
