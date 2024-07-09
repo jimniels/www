@@ -98,12 +98,18 @@
 
       html {
         background: var(--color-bg);
-        font-size: 1rem;
+        font-size: 0.875rem;
         line-height: 1.35;
         color-scheme: light dark;
         color: var(--color-text);
         scroll-behavior: smooth;
         overflow-x: hidden;
+      }
+
+      @media (min-width: 900px) {
+        html {
+          font-size: 1rem;
+        }
       }
 
       body {
@@ -167,40 +173,10 @@
       .feats {
         list-style-type: none;
         padding: 0;
-
+        gap: var(--spacer-48);
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        gap: var(--spacer-48);
         padding-top: var(--spacer-96);
-      }
-
-      @media (max-width: 899px) {
-        .feats {
-          overflow: hidden;
-        }
-        .feat-container:nth-child(odd) {
-          grid-column: 1 / 5;
-        }
-        .feat-container:nth-child(even) {
-          grid-column: 3 / 7;
-        }
-        .feat-container--lg:nth-child(1) {
-          grid-column: 1 / 6;
-        }
-        .feat-container--lg:nth-child(2) {
-          grid-column: 2 / 7;
-        }
-        .feat-container--4 {
-          text-align: right;
-        }
-      }
-      @media screen and (min-width: 900px) {
-        .feat-container {
-          grid-column: span 2;
-        }
-        .feat-container--lg {
-          grid-column: span 3;
-        }
       }
 
       .feat-container {
@@ -211,7 +187,7 @@
         border-image-slice: 27 100; */
         padding: var(--spacer-32);
         min-width: 33.3333%;
-        font-size: 24px;
+        font-size: 1.5rem; /* 24 */
       }
       .feat-container--lg {
         padding: var(--spacer-48);
@@ -222,6 +198,7 @@
         flex-direction: column;
         gap: var(--spacer-4);
       }
+
       .feat-container:before,
       .feat-container:after {
         content: "";
@@ -231,6 +208,10 @@
         background-image: url('data:image/svg+xml,<svg width="13" height="438" viewBox="0 0 13 438" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.7402 1C10.7402 34.0252 10.7402 67.0504 10.7402 100.076C10.7402 121.991 11.3402 144.056 10.1103 165.93C9.21003 181.942 6.96092 198.449 6.96092 214.458C6.96092 237.11 5.78962 259.377 2.90166 281.742C0.922988 297.066 0.273786 316.216 1.99182 331.701C4.19272 351.537 9.48046 370.574 9.48046 390.742C9.48046 405.896 12 422.448 12 437" stroke="currentColor" stroke-opacity="1" stroke-width="2" stroke-linecap="round"/></svg>');
         background-size: cover;
         opacity: 0.1;
+      }
+      .feat-container:nth-child(odd):before,
+      .feat-container:nth-child(even):after {
+        transform: rotate(180deg);
       }
 
       .feat:before,
@@ -243,6 +224,10 @@
         background-size: cover;
         opacity: 0.1;
       }
+      .feat-container:nth-child(odd) .feat:before,
+      .feat-container:nth-child(even) .feat:after {
+        transform: rotate(180deg);
+      }
 
       @media (prefers-color-scheme: dark) {
         .feat-container:before,
@@ -252,6 +237,46 @@
         .feat:before,
         .feat:after {
           background-image: url('data:image/svg+xml,<svg width="322" height="8" viewBox="0 0 322 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M321 1C267.1 1 213.2 1 159.3 1C135.596 1 111.97 1.94936 88.2811 1.94936C76.5457 1.94936 64.9156 4.49375 53.2768 4.79745C43.5347 5.05166 34.063 6.69618 24.3362 6.69618C19.9286 6.69618 14.9615 7.41368 10.6009 6.64344C7.31407 6.06286 4.29265 4.79745 1 4.79745" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>');
+        }
+      }
+
+      .feats {
+        overflow: hidden;
+      }
+      @media (min-width: 500px) {
+        .feats {
+          overflow: visible;
+        }
+      }
+
+      @media (max-width: 899px) {
+        .feats {
+          max-width: 500px;
+          gap: var(--spacer-64);
+        }
+
+        .feat-container--1 {
+          grid-column: 1 / 7;
+        }
+        .feat-container--2 {
+          grid-column: 1 / 7;
+        }
+        .feat-container--3,
+        .feat-container--5 {
+          grid-column: 1 / 5;
+        }
+        .feat-container--4 {
+          grid-column: 3 / 7;
+          text-align: right;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .feat-container {
+          grid-column: span 2;
+        }
+        .feat-container--lg {
+          grid-column: span 3;
         }
       }
 
@@ -276,49 +301,55 @@
         left: 0;
       }
 
-      .feat--blog {
-        text-align: right;
+      @media (max-width: 899px) {
+        .feat-container--2 {
+          text-align: right;
+        }
       }
-      .feat--blog svg {
+      @media (min-width: 900px) {
+        .feat-container--1 .feat {
+          text-align: right;
+        }
+      }
+      .feat-container--1 .feat svg {
         position: absolute;
         left: var(--spacer-48);
       }
-      .feat--notes svg {
+      .feat-container--2 svg {
         position: absolute;
         right: calc(var(--spacer-48) * -1);
       }
-      :is(.feat--blog, .feat--notes) .feat__title {
-        font-size: 36px;
+      :is(.feat-container--1, .feat-container--2) .feat__title {
+        font-size: 2.25rem; /* 36 */
       }
-      :is(.feat--blog, .feat--notes) {
+      :is(.feat-container--1, .feat-container--2) {
         display: flex;
         flex-direction: column;
         gap: var(--spacer-4);
       }
 
       .feat__title {
-        font-size: 24px;
+        font-size: 1.5rem; /* 1.5rem */
         font-weight: 700;
       }
       .feat__desc {
         color: var(--color-text-muted);
-        font-size: 16px;
+        font-size: 1rem;
       }
       .feat__link {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
       }
       .feat__link span {
         border-bottom: 1px solid;
-        color: yellow;
       }
+
       .feat-container:hover {
         background-color: var(--color-bg-layer);
-        border-radius: 50px;
-        transition: 0.3s ease background-color;
+        border-radius: 50px 75px 40px 30px;
       }
       .feat-container:hover .feat__link span {
-        border-bottom-width: 3px;
+        border-bottom-width: 2px;
       }
       .feat-container .feat__img svg {
         transition: 0.3s ease transform;
@@ -329,20 +360,13 @@
       .feat-container .feat__img path {
         transition: 0.3s ease fill;
       }
-      .feat-container:hover .feat__img path {
-        fill: yellow;
-      }
-      .feat-container:hover .feat__link span {
-        border-bottom-color: yellow;
-        color: yellow;
-        transition: 0.3s ease all;
-      }
+
       .feat-container--lg .feat__title {
-        font-size: 36px;
+        font-size: 2.25rem; /* 36 */
       }
       .feat-container--lg .feat__desc,
       .feat-container--lg .feat__link {
-        font-size: 24px;
+        font-size: 1.5rem; /* 24 */
       }
 
       .feat-container .feat__img {
@@ -366,8 +390,7 @@
     <style>
       h1 {
         position: relative;
-        font-size: 30vw;
-        text-indent: -0.05em;
+        font-size: 45vw;
         overflow: hidden;
 
         /* font-size: clamp(128px, 10vw, 192px); */
@@ -381,6 +404,12 @@
         /* transition: 0.5s ease-in-out all;
         color: var(--color-text-mutedest);
         letter-spacing: -0.15em; */
+      }
+
+      @media screen and (min-width: 900px) {
+        h1 {
+          font-size: 30vw;
+        }
       }
 
       h1:hover {
@@ -403,6 +432,8 @@
 
       h1 span:last-child {
         opacity: 0.1;
+        position: relative;
+        left: -0.05em;
       }
 
       h1 ~ * {
@@ -421,33 +452,33 @@
         .feat-container--3 {
           text-align: left;
         }
+      }
 
-        .feat-container--3 .feat__img {
-          justify-content: flex-start;
-          transform: rotate(2deg);
-        }
-        .feat-container--3 .feat__img svg {
-          position: relative;
-          left: -64px;
-        }
+      .feat-container--3 .feat__img {
+        justify-content: flex-start;
+        transform: rotate(2deg);
+      }
+      .feat-container--3 .feat__img svg {
+        position: relative;
+        left: -64px;
+      }
 
-        .feat-container--4 {
-          text-align: center;
-        }
-        .feat-container--4 .feat__img {
-          width: 135%;
-          margin-left: -15%;
-        }
-        .feat-container--5 {
-          text-align: right;
-        }
-        .feat-container--5 .feat__img {
-          justify-content: flex-end;
-        }
-        .feat-container--5 .feat__img svg {
-          position: relative;
-          right: -48px;
-        }
+      .feat-container--4 {
+        text-align: center;
+      }
+      .feat-container--4 .feat__img {
+        width: 135%;
+        margin-left: -15%;
+      }
+      .feat-container--5 {
+        text-align: right;
+      }
+      .feat-container--5 .feat__img {
+        justify-content: flex-end;
+      }
+      .feat-container--5 .feat__img svg {
+        position: relative;
+        right: -48px;
       }
     </style>
     <h1><span>Jim</span> <span class="text-outline">Nielsen</span></h1>
@@ -457,10 +488,10 @@
       20+ years at the intersection of design & code on the web.
     </p> -->
 
-    <h2 class="text-outline">Stuff I’m doing now</h2>
+    <!-- <h2 class="text-outline">I am currently…</h2> -->
     <ul class="feats">
       <li class="feat-container feat-container--1 feat-container--lg">
-        <a href="https://blog.jim-nielsen.com" class="feat feat--blog">
+        <a href="https://blog.jim-nielsen.com" class="feat">
           <div class="feat__img">
             <svg
               width="273"
@@ -476,15 +507,15 @@
             </svg>
           </div>
 
-          <h3 class="feat__title">Blogging</h3>
+          <h3 class="feat__title">I’m blogging</h3>
           <p class="feat__desc">
-            A decade+ thinking & writing about making websites.
+            Been at it for over a decade. Folk say I’m pretty good at it.
           </p>
           <p class="feat__link"><span>blog.jim-nielsen.com</span></p>
         </a>
       </li>
       <li class="feat-container feat-container--2 feat-container--lg">
-        <a href="https://notes.jim-nielsen.com" class="feat feat--notes">
+        <a href="https://notes.jim-nielsen.com" class="feat feat-container--2">
           <div class="feat__img">
             <svg
               width="356"
@@ -500,9 +531,9 @@
             </svg>
           </div>
 
-          <h3 class="feat__title">Taking notes</h3>
+          <h3 class="feat__title">I’m taking notes</h3>
           <p class="feat__desc">
-            Short-form: the thoughts of others + my two cents.
+            Jotting down what I read and adding my two cents.
           </p>
           <p class="feat__link">
             <span>notes.jim-nielsen.com</span>
@@ -525,9 +556,9 @@
               />
             </svg>
           </div>
-          <h3 class="feat__title">Making pies</h3>
+          <h3 class="feat__title">I’m making pies</h3>
           <p class="feat__desc">
-            Pic or it didn’t bake. Pie like mama used to make.
+            If you want it done right, you gotta bake it yourself.
           </p>
           <p class="feat__link">
             <span>instagram.com/flyingjpies</span>
@@ -551,9 +582,9 @@
             </svg>
           </div>
 
-          <h3 class="feat__title">Hoarding icons</h3>
+          <h3 class="feat__title">I’m hoarding icons</h3>
           <p class="feat__desc">
-            10+ years curating the best app icons from Apple’s ecosystem.
+            And making them available online — and in a book.
           </p>
           <p class="feat__link">
             <span>www.iosicongallery.com</span>
@@ -577,7 +608,7 @@
             </svg>
           </div>
 
-          <h3 class="feat__title">Working</h3>
+          <h3 class="feat__title">I’m working</h3>
           <p class="feat__desc">
             Employed building Quadratic: a programmable spreadsheet.
           </p>
@@ -591,7 +622,7 @@
     <!-- <h2 class="text-outline">Points of contact</h2> -->
 
     <h2 class="text-outline">
-      Oh, you want more? <a href="./resume.html">View my resume</a>
+      More? <br /><a href="./resume.html">My resume</a>
     </h2>
   </body>
 </html>
