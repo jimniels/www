@@ -1,0 +1,7 @@
+{
+  index.html = index.ori.html({ foo: 'bar' })
+  // do /assets 
+  // jim-navbar
+  // 404
+  // favicon.ico
+}

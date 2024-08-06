@@ -7,14 +7,9 @@
   "engine": {
     "node": ">=10.10.0"
   },
-  "devDependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "parse5": "^7.1.2",
-    "mustache": "^4.2.0"
-  },
   "scripts": {
-    "build": "node scripts/build.js",
-    "start": "netlify dev static"
+    "build": "ori @copy static/site.ori, @clean @files/build",
+    "start": "ori @serve static/site.ori"
   },
   "repository": {
     "type": "git",
@@ -26,5 +21,8 @@
     "url": "https://github.com/jimniels/jimniels.github.io/issues"
   },
   "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
-  "dependencies": {}
+  "dependencies": {
+    "@weborigami/origami": "^0.0.63"
+  },
+  "devDependencies": {}
 }
