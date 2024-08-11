@@ -3,12 +3,16 @@
 /**
  * Instagram
  *
- * Media API: https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
+ * How to authenticate:
+ * https://chatgpt.com/share/7a4c9866-a001-4c8b-85f4-13b11b5f313a
  *
- * Auth: https://chatgpt.com/share/7a4c9866-a001-4c8b-85f4-13b11b5f313a
+ * Media API docs:
+ * https://developers.facebook.com/docs/instagram-basic-display-api/reference/media/
+ *
  * Unfortunately long-lived access tokens for testers (that you create for yourself)
  * only last for 60 days. Then you have to swap them out for a new one.
  * So if you don't run this at least once every 60 days, it'll stop working.
+ *
  * https://developers.facebook.com/docs/instagram-basic-display-api/overview#instagram-user-access-tokens
  * https://developers.facebook.com/docs/instagram-basic-display-api/guides/long-lived-access-tokens#refresh-a-long-lived-token
  */
