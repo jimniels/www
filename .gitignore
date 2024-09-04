@@ -9,6 +9,7 @@ build
 .env
 cache
 *.token
+token
 
 # Local Netlify folder
 .netlify

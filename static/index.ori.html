@@ -297,6 +297,12 @@
       .highlight {
         background-color: hsl(60deg 100% 50% / 20%);
       }
+
+      .muted-text {
+        display: block;
+        font-size: 0.875rem;
+        color: var(--color-text-mutedest);       
+      }
     </style>
   </head>
   <body>
@@ -304,14 +310,12 @@
     <header style="margin-bottom: 16rem">
       <h1 style="font-weight: 700; color: var(--color-text)">
         Jim Nielsen
-        <span style="font-weight: normal">
-          / web designer, engineer & writer</span
-        >
+        
       </h1>
       <p>
         <!-- <i>Designer. Engineer. Writer.</i>
         <br /> -->
-        20+ years at the intersection of design & code on the web.
+        20+ years as a Designer, Developer, and Writer on the web.
       </p>
 
       <!-- prettier-ignore -->
@@ -348,7 +352,7 @@
     </header>
 
     <section>
-      <h1>Stuff I’m Doing Right Now</h1>
+      <h1>Active Personal Projects</h1>
       <p>
         Blogging about web design and development (you should
         <a href="https://blog.jim-nielsen.com/feed">subscribe</a>):
@@ -356,76 +360,104 @@
 
       <!-- prettier-ignore -->
       <ul class="list">
-        ${@map(@take(@jsonParse(https://blog.jim-nielsen.com/feed.json)/items, 3), (item) => `
-          <li>
-            <div>${new:@js/String(item/date_published)/slice(0, 10)}</div>
-            <div><a href="${item/url}">${item/title}</a></div>
-          </li>
-        `)}
-      </ul>
+        <li>
+          <div><a href="https://blog.jim-nielsen.com">My blog</a></div>
+          <div>
+            <p style="margin-bottom: .5rem;">Personal opinions on all things web related. Latest posts:</p>
+            <!-- Blogging about web design and development. Linked to by many industry sites and newsletters, such as CSS Tricks, Smashing Magazine, and JavaScript Weekly, Frontend Focus, Sidebar.io, Changelog, Frontend Masters, Hacker News. -->
+            ${@map(@take(@jsonParse(https://blog.jim-nielsen.com/feed.json)/items, 2), (item) => `
+              <p style="margin-bottom: .5rem;">
+                <a href="${item/url}">${item/title}</a>
+                <span style="font-size: 0.875rem; color: var(--color-text-mutedest); display: block;">
+                  ${new:@js/String(item/date_published)/slice(0, 10)}
+                </span>
+              </p>
+            `)}
+          </div>
+        </li>
 
-      <p>
+      
+        <li>
+          <div>
+            My microblog
+          </div>
+          <div>
+            <p style="margin-bottom: .5rem;">Personal notes on other people’s writing plus my 2¢. Latest notes:</p>
+            ${@map(@take(@jsonParse(https://notes.jim-nielsen.com/feed.json)/items, 2), (item) => `
+              <p style="margin-bottom: .5rem;">
+                <a href="${item/url}">${item/title}</a>
+                <span style="font-size: 0.875rem; color: var(--color-text-mutedest); display: block;">
+                  ${new:@js/String(item/date_published)/slice(0, 10)}
+                </span>
+            </p>
+            `)}
+          </div>
+        </li>
+          
+        
+      
+
+      <!-- <p>
         Microblogging my notes from tech-related stuff I read (you should also
         <a href="https://notes.jim-nielsen.com/feed.xml">subscribe</a>):
-      </p>
+      </p> -->
 
       <!-- prettier-ignore -->
-      <ul class="list">
+      <!-- <ul class="list">
         ${@map(@take(@jsonParse(https://notes.jim-nielsen.com/feed.json)/items, 3), (item) => `
           <li>
             <div>
               ${item/_external_url_domain}
-              <!-- ${new:@js/String(item/date_published)/slice(0, 10)} -->
             </div>
             <div><a href="${item/url}">${item/title}</a></div>
           </li>
         `)}
-      </ul>
+      </ul> -->
 
-      <p>
+      <!-- <p>
         Collecting beautiful icons from Apple’s ecosystem (which I also helped
         turn into
         <a href="https://www.appiconbook.com/">books</a>):
-      </p>
+      </p> -->
 
-      <ul class="list">
+      
         <li>
-          <div><a href="https://www.iosicongallery.com">iOS</a></div>
+          <div><a href="https://www.iosicongallery.com">iOS icons</a></div>
           <!-- prettier-ignore -->
           <div>
-            ${@map(@take(@jsonParse(https://iosicongallery.com/feed.json)/items, 6), (item) => `
-              <a href="${item/url}" style="border: none"><img style="border-radius: 21%; margin: 0 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.1)" src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="40" height="40"></a>
+            ${@map(@take(@jsonParse(https://iosicongallery.com/feed.json)/items, 3), (item) => `
+              <a href="${item/url}" style="border: none"><img style="border-radius: 21%; margin: 0 8px; box-shadow: 0 0 0 1px rgba(0,0,0,.1)" src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="80" height="80"></a>
             `)}
           </div>
         </li>
         <li>
-          <div><a href="https://www.macosicongallery.com">macOS</a></div>
+          <div><a href="https://www.macosicongallery.com">macOS icons</a></div>
           <!-- prettier-ignore -->
           <div>
-            ${@map(@take(@jsonParse(https://macosicongallery.com/feed.json)/items, 6), (item) => `
-              <a href="${item/url}" style="border: none"><img src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="48" height="48"></a>
+            ${@map(@take(@jsonParse(https://macosicongallery.com/feed.json)/items, 3), (item) => `
+              <a href="${item/url}" style="border: none"><img src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="96" height="96"></a>
             `)}
           </div>
         </li>
         <li>
-          <div><a href="https://www.watchosicongallery.com">watchOS</a></div>
+          <div><a href="https://www.watchosicongallery.com">watchOS icons</a></div>
           <!-- prettier-ignore -->
           <div>
-            ${@map(@take(@jsonParse(https://watchosicongallery.com/feed.json)/items, 6), (item) => `
+            ${@map(@take(@jsonParse(https://watchosicongallery.com/feed.json)/items, 3), (item) => `
               <a href="${item/url}" style="border: none">
-                <img style="border-radius: 50%; margin: 0 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.1)" src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="40" height="40">
+                <img style="border-radius: 50%; margin: 0 4px; box-shadow: 0 0 0 1px rgba(0,0,0,.1)" src="${new:@js/String(item/attachments/0/url)/replace(512, 128)}" width="88" height="88">
               </a>
             `)}
           </div>
         </li>
-      </ul>
+      <!-- </ul>
 
       <p>
         Baking pies, because if you want one done right you gotta do it
         yourself.
       </p>
 
-      <ul class="list">
+      <ul class="list"> -->
         <li>
           <div>
             <a href="https://instagram.com/flyingjpies">@flyingjpies</a>
@@ -440,18 +472,11 @@
                 flex-wrap: wrap;
               "
             >
+              ${@map(["2024-06-09T04.37.51Z", "2024-03-10T22.55.46Z", "2024-01-29T17.57.03Z", "2023-09-10T21.38.26Z"], (id) => `
               <li>
-                <img src="https://picsum.photos/seed/a/96" />
+                <img src="https://cdn.jim-nielsen.com/flyingjpies/${id}.jpg?optimize=true&w=192" width="96" height="96" alt="Photo of a pie" />
               </li>
-              <li>
-                <img src="https://picsum.photos/seed/b/96" />
-              </li>
-              <li>
-                <img src="https://picsum.photos/seed/c/96" />
-              </li>
-              <li>
-                <img src="https://picsum.photos/seed/d/96" />
-              </li>
+              `)}
             </ul>
           </div>
         </li>
@@ -648,6 +673,7 @@
             "content": "Design and code for a startup building a platform to empower nonprofits, brands, and other social impact orgs.",
             "meta": "2016 · Remote"
           },
+          /*
           {
             "title": "Design Engineer",
             "company": "Postlight",
@@ -655,6 +681,7 @@
             "content": "Design and code as a contractor building software tools for clients like Time Inc.",
             "meta": "2016 · Remote"
           },
+          */
           {
             "title": "Lead Designer",
             "company": "Kindling",
@@ -668,7 +695,7 @@
             "href": "https://blog.jim-nielsen.com/tags#arc90",
             "content": "Design and code for a digital agency and its clients.",
             "meta": "2012 · NYC"
-          }
+          },
 
           /*
           {
@@ -678,25 +705,19 @@
             "content": "Web design and code, print, and video for the Department of Student Affairs.",
             "meta": "2011 · UT"
           },
+          */
           {
             "title": "[Other]",
-            "content": "Web design for people off Cragislist, retails sales at a sporting goods store, lifeguard for the municipal pool, newspaper delivery for the local paper, and other pre-college jobs.",
+            "content": "Lifeguard @ a municipal pool, Grunt @ a plumbing company, Paperboy @ the local paper  — each with their own great stories, ask me sometime in person.",
             "meta": "2002—2012"
           }
-          */
+          
         ], (item) => `
           <li>
             <div>${item/title}</div>
             <div>
-              @ <a href="${item/href}">${item/company}</a>: ${item/content}
-              <span
-                style="
-                  display: block;
-                  font-size: 0.875rem;
-                  color: var(--color-text-mutedest);
-                "
-                >${item/meta}</span
-              >
+              ${@if(item/company, `@ <a href="${item/href}">${item/company}</a>: `)}${item/content}
+              <span class="muted-text">${item/meta}</span>
             </div>
           </li>
         `)}

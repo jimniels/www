@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
   "dependencies": {
-    "@weborigami/origami": "0.0.63",
+    "@weborigami/origami": "^0.0.63",
     "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@weborigami/instagram": "^0.0.4"
   }
 }

@@ -1,7 +1,6 @@
 import fs from "fs-extra";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
-import fetch from "node-fetch";
 import YAML from "yamljs";
 import util from "util";
 import stream from "stream";
@@ -105,7 +104,7 @@ async function cacheInstagram() {
         posts.map((post, i) =>
           download(
             post.media_url,
-            join(__dirname, `../src/assets/img/instagram/${i}.jpg`)
+            join(__dirname, `../src/assets/instagram/${i}.jpg`)
           )
         )
       );
