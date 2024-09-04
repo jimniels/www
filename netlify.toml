@@ -2,7 +2,6 @@
   base = ""
   publish = "build"
   command = "npm run build"
-  environment = { NODE_VERSION = "16" }
 
 [dev]
   publish = "build"
