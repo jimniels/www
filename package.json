@@ -8,8 +8,8 @@
     "node": ">=10.10.0"
   },
   "scripts": {
-    "build": "ori @copy static/site.ori, @clean @files/build",
-    "start": "ori @serve static/site.ori"
+    "build": "ori @copy src/site.ori, @clean @files/build",
+    "start": "ori @serve src/site.ori"
   },
   "repository": {
     "type": "git",

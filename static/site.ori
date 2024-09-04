@@ -1,8 +1,0 @@
-{
-  index.html = index.ori.html({ foo: 'bar' })
-  ios.html = ios.ori.html()
-  // do /assets 
-  // jim-navbar
-  // 404
-  // favicon.ico
-}
