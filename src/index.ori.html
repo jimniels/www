@@ -73,10 +73,12 @@
     <style>
       /* General =============================================================*/
       :root {
+        --color-accent: rgb(0 122 255);
         --color-text: rgb(0 0 0);
         --color-text-muted: rgb(0 0 0 / 50%);
         --color-text-mutedest: rgb(0 0 0 / 35%);
-        --color-bg: #fafafa;
+        --color-bg: #f0f1f2;
+        --color-bg-1: #ececec;
 
         --color-border: rgb(0 0 0 / 10%);
 
@@ -94,10 +96,12 @@
 
       @media (prefers-color-scheme: dark) {
         :root {
+          --color-accent: rgb(10 132 255);
           --color-text: rgb(255 255 255);
           --color-text-muted: rgb(255 255 255 / 66%);
           --color-text-mutedest: rgb(255 255 255 / 33%);
           --color-bg: #0b0e16;
+          --color-bg-1: #1b1d22;
           --color-border: rgb(255 255 255 / 10%);
         }
       }
@@ -105,7 +109,7 @@
       html {
         background: var(--color-bg);
         font-size: 1rem;
-        line-height: 1.5;
+        line-height: 1.3333;
         color-scheme: light dark;
         color: var(--color-text-muted);
         scroll-behavior: smooth;
@@ -147,73 +151,11 @@
       a {
         color: inherit;
         text-decoration: none;
-        border-bottom: 1px solid var(--color-text-mutedest);
-      }
-
-      a:hover {
-        color: var(--color-text) !important;
-        border-bottom-color: var(--color-text);
-      }
-
-      /* Section =============================================================*/
-
-      header,
-      section {
-        margin: var(--spacer-128) 0 var(--spacer-128);
-      }
-      @media (min-width: 1000px) {
-        body {
-          padding-left: var(--spacer-64);
-        }
-      }
-
-      header h1 {
-        font-size: 1.125rem;
-      }
-
-      header,
-      section {
-        position: relative;
-        max-width: 40rem;
-        clear: both;
-      }
-
-      section#employment p a[href*="blog.jim-nielsen.com"] {
-        color: var(--color-text-mutedest);
       }
 
       ul,
       li {
         list-style-type: none;
-      }
-      dl,
-      p:has(q) {
-        width: 100%;
-        overflow: hidden;
-        padding: 0;
-        margin: 0;
-      }
-
-      #contact dt {
-        color: var(--color-text);
-      }
-
-      p:has(q) {
-        margin-bottom: var(--spacer-24);
-        margin-left: var(--spacer-16);
-      }
-
-      cite {
-        font-style: normal;
-      }
-
-      footer {
-        color: var(--color-text-mutedest);
-        font-size: 0.8rem;
-        position: relative;
-        z-index: 1;
-        margin-top: var(--spacer-128);
-        margin-bottom: var(--spacer-16);
       }
 
       body {
@@ -229,6 +171,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        transition: 0.3s ease transform;
       }
       .pane--primary {
         background: var(--color-bg);
@@ -241,17 +184,23 @@
         border-left: 1px solid var(--color-border);
         border-right: 1px solid var(--color-border);
         /* display: none; */
-        transition: 0.3s ease transform;
         transform: translateX(110%);
       }
       :target {
         transform: translateX(0);
+      }
+      /* slide the underlying one back a tiny bit */
+      :has(:target) .pane--primary {
+        transform: translateX(-100px);
       }
 
       @media (min-width: 650px) {
         .pane {
           width: 50vw;
           max-width: 400px;
+        }
+        .pane--primary {
+          transform: translateX(0) !important;
         }
         .pane--secondary {
           transform: translateX(50vw);
@@ -262,26 +211,37 @@
           z-index: 3;
         }
       }
+
       /* would need one of these for each ID */
-      :has(#about:target) a[href="#about"] {
-        color: red;
+      :has(#about:target) a[href="#about"],
+      :has(#test:target) a[href="#test"],
+      :has(#last:target) a[href="#last"] {
+        background: var(--color-accent);
+        color: white;
       }
 
-      .t {
-        height: 50px;
-        background: #111;
-        padding: 8px;
-        margin-bottom: 56px;
+      .btn {
+        padding-left: 16px;
+        background: var(--color-bg-1);
+        display: flex;
+        border-radius: 8px;
+      }
+
+      .btn__text {
+        font-size: 18px;
+        padding: 12px 16px 12px 0;
       }
     </style>
   </head>
   <body>
     <jim-navbar></jim-navbar>
-    <div class="pane pane--primary">
-      <a href="#about" class="t">About</a>
-      <a href="#test" class="t">Test</a>
-      <a href="#another" class="t">Another</a>
-      <a href="#last" class="t">Last</a>
+    <div class="pane pane--primary" style="gap: 56px">
+      <a href="#about" class="btn">
+        <span class="btn__text">About</span>
+      </a>
+      <a href="#test" class="btn"> <span class="btn__text">Test</span></a>
+      <a href="#another" class="btn"> <span class="btn__text">Another</span></a>
+      <a href="#last" class="btn"><span class="btn__text">Last</span></a>
     </div>
     <div class="pane pane--secondary" id="about">
       <a href="#">Back</a>
@@ -295,5 +255,13 @@
       <a href="#">Back</a>
       <h1>Last content</h1>
     </div>
+
+    <script>
+      document.addEventListener("click", (e) => {
+        if (e.target.tagName.toLowerCase() !== "a") {
+          window.location.hash = "#";
+        }
+      });
+    </script>
   </body>
 </html>
