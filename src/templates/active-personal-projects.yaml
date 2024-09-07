@@ -1,8 +1,11 @@
 - id: blog
   template: blog.ori.html
   label: Personal Blog
+  icon: <img src="https://blog.jim-nielsen.com/favicon.ico" alt="Blog" />
 - id: notes
+  template: microblog.ori.html
   label: Notes Microblog
+  icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" />
 - id: ios-icon-gallery
   label: iOS Icon Gallery
 - id: macos-icon-gallery

@@ -1,9 +1,16 @@
 <!--
 @param {Object} _
-@param {string} _/id
 @param {string} _/title
+@param {string} _/subtitle
 @param {string} _/href
+@param {string} _/icon
 -->
-<a href="#${_/id}" class="btn">
-  <span class="btn__text">${_/title}</span>
+
+<!-- prettier-ignore -->
+<a href="${_/href}" class="btn">
+  ${@if(_/icon, `<span class="btn__icon">${_/icon}</span>`)}
+  <span class="btn__text">
+    <span class="btn__text__title">${_/title}</span>
+    ${@if(_/subtitle, `<span class="btn__text__subtitle">${_/subtitle}</span>`)}
+  </span>
 </a>

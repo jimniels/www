@@ -2,7 +2,7 @@
 <!-- prettier-ignore -->
 <ul class="list">
   ${@map(
-    (https://blog.jim-nielsen.com/feed.json)/items,
+    @take((https://notes.jim-nielsen.com/feed.json)/items, 10),
     (item) => `
     <li>
       ${./btn.ori.html({ href: item/url, title: item/title, subtitle: item/date_published/slice(0,10) })}
