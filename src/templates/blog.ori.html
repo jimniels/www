@@ -1,0 +1,11 @@
+<h3 class="list-header">Latest posts</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    (https://blog.jim-nielsen.com/feed.json)/items,
+    (item) => `
+    <li>
+      ${./btn.ori.html({ id: item/id, title: item/title })}
+    </li>
+  `)}
+</ul>

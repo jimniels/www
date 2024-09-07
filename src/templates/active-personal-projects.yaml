@@ -1,0 +1,11 @@
+- id: blog
+  template: blog.ori.html
+  label: Personal Blog
+- id: notes
+  label: Notes Microblog
+- id: ios-icon-gallery
+  label: iOS Icon Gallery
+- id: macos-icon-gallery
+  label: macOS Icon Gallery
+- id: flyingj-pies
+  label: FlyingJ Pies

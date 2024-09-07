@@ -134,6 +134,12 @@
         box-sizing: inherit;
       }
 
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+      }
+
       h1,
       h2,
       h3,
@@ -165,8 +171,6 @@
         width: 100%;
         padding: 24px;
         height: 100%;
-        display: flex;
-        flex-direction: column;
         overflow: auto;
         position: fixed;
         top: 0;
@@ -198,16 +202,25 @@
         .pane {
           width: 50vw;
           max-width: 400px;
+
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
         }
         .pane--primary {
           transform: translateX(0) !important;
+          left: -400px;
+          border-right: 1px solid var(--color-border);
         }
         .pane--secondary {
-          transform: translateX(50vw);
+          right: -400px;
+          border-left: none;
+          transform: translateX(0);
           display: none;
         }
         :target {
-          display: flex;
+          display: block;
           z-index: 3;
         }
       }
@@ -220,32 +233,76 @@
         color: white;
       }
 
+      .list {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: var(--spacer-48);
+      }
+
+      .list-header {
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        margin-bottom: var(--spacer-8);
+      }
+
       .btn {
         padding-left: 16px;
         background: var(--color-bg-1);
         display: flex;
-        border-radius: 8px;
       }
 
       .btn__text {
         font-size: 18px;
         padding: 12px 16px 12px 0;
       }
+
+      .content-header {
+        display: grid;
+        grid-template-columns: var(--spacer-48) 1fr var(--spacer-48);
+        gap: 16px;
+        align-items: center;
+        margin-bottom: var(--spacer-24);
+      }
+      .content-header a {
+        color: var(--color-accent);
+      }
+      .content-header h1 {
+        font-size: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <jim-navbar></jim-navbar>
-    <div class="pane pane--primary" style="gap: 56px">
-      <a href="#about" class="btn">
-        <span class="btn__text">About</span>
-      </a>
+    <nav class="pane pane--primary" style="gap: 56px">
+      <ul class="list">
+        <li>
+          <a href="#about" class="btn">
+            <span class="btn__text">Aboutz</span>
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="list-header">Personal Projects</h3>
+      <!-- prettier-ignore -->
+      <ul class="list">
+      ${@map(
+        (./templates/active-personal-projects.yaml),
+        (item) => `<li>${./templates/btn.ori.html({ title: item/label, id: item/id })}</li>`
+        )}
+      </ul>
+
       <a href="#test" class="btn"> <span class="btn__text">Test</span></a>
       <a href="#another" class="btn"> <span class="btn__text">Another</span></a>
       <a href="#last" class="btn"><span class="btn__text">Last</span></a>
-    </div>
+    </nav>
     <div class="pane pane--secondary" id="about">
-      <a href="#">Back</a>
-      <h1>About content</h1>
+      <header class="content-header">
+        <a href="#">Back</a>
+        <h1>About</h1>
+      </header>
+      <div class="content-main">TODO</div>
     </div>
     <div class="pane pane--secondary" id="test">
       <a href="#">Back</a>
@@ -255,6 +312,31 @@
       <a href="#">Back</a>
       <h1>Last content</h1>
     </div>
+
+    <!-- prettier-ignore -->
+    ${@map(
+      (./templates/active-personal-projects.yaml),
+      (item) => `
+    <div class="pane pane--secondary" id="${item/id}">
+      <header class="content-header">
+        <a href="#" aria-label="Back">${./templates/chevron-left.svg}</a>
+        <h1>${item/label}</h1>
+      </header>
+      <div class="content-main">${./templates(item/template)}</div>
+    </div>
+    ` )}
+
+    <!-- prettier-ignore -->
+    ${@map(
+      (./templates/active-personal-projects.yaml),
+      (item) => `
+    <style>
+      :has(#${item/id}:target) a[href="#${item/id}"] {
+        background: var(--color-accent);
+        color: white;
+      }
+    </style>
+    ` )}
 
     <script>
       document.addEventListener("click", (e) => {
