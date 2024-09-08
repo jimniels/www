@@ -2,6 +2,7 @@
 @param {Object} _
 @param {string} _/title
 @param {string} _/subtitle
+@param {string} _/value
 @param {string} _/href
 @param {string} _/icon
 -->
@@ -10,7 +11,10 @@
 <a href="${_/href}" class="btn">
   ${@if(_/icon, `<span class="btn__icon">${_/icon}</span>`)}
   <span class="btn__text">
-    <span class="btn__text__title">${_/title}</span>
+    <span class="btn__text__title">
+      ${_/title}
+      ${@if(_/value, `<span class="btn__text__title__value">${_/value}</span>`)}
+    </span>
     ${@if(_/subtitle, `<span class="btn__text__subtitle">${_/subtitle}</span>`)}
   </span>
 </a>

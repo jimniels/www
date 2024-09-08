@@ -75,73 +75,53 @@
   <body>
     <jim-navbar></jim-navbar>
     <nav class="pane pane--primary" style="gap: 56px">
-      <ul class="list">
-        <li>
-          <a href="#about" class="btn">
-            <span class="btn__text">Aboutz</span>
-          </a>
-        </li>
-      </ul>
-
-      <h3 class="list-header">Personal Projects</h3>
-      <!-- prettier-ignore -->
-      <ul class="list">
       ${@map(
         (./templates/active-personal-projects.yaml),
-        (item) => `<li>${./templates/btn.ori.html({ title: item/label, href: `#${item/id}`, icon: item/icon })}</li>`
+        (section) => `
+          ${@if(section/header, `<h3 class="list-header">${section/header}</h3>`)}
+          <ul class="list">
+            ${@map(section/btns, (btn) => `
+              <li>${./templates/btn.ori.html({ title: btn/label, href: `#${btn/id}`, icon: btn/icon })}</li>
+            `)}
+          </ul>
+        `
         )}
       </ul>
-
-      <a href="#test" class="btn"> <span class="btn__text">Test</span></a>
-      <a href="#another" class="btn"> <span class="btn__text">Another</span></a>
-      <a href="#last" class="btn"><span class="btn__text">Last</span></a>
     </nav>
-    <div class="pane pane--secondary" id="about">
-      <header class="content-header">
-        <a href="#">Back</a>
-        <h1>About</h1>
-      </header>
-      <div class="content-main">TODO</div>
-    </div>
-    <div class="pane pane--secondary" id="test">
-      <a href="#">Back</a>
-      <h1>Test content</h1>
-    </div>
-    <div class="pane pane--secondary" id="last">
-      <a href="#">Back</a>
-      <h1>Last content</h1>
-    </div>
-
     <!-- prettier-ignore -->
     ${@map(
       (./templates/active-personal-projects.yaml),
-      (item) => `
-    <div class="pane pane--secondary" id="${item/id}">
-      <header class="content-header">
-        <a href="#" aria-label="Back">${./templates/chevron-left.svg}</a>
-        <h1>${item/label}</h1>
-      </header>
-      <div class="content-main">
-        ${@if(item/template, () => ./templates(item/template)/)}
-      </div>
-    </div>
+      (section) => `
+      ${@map(section/btns, (item) => `
+        <div class="pane pane--secondary" id="${item/id}">
+          <header class="content-header">
+            <a href="#" aria-label="Back">${./templates/chevron-left.svg}</a>
+            <h1>${item/label}</h1>
+          </header>
+          <div class="content-main">
+            ${@if(item/template, () => ./templates(item/template)/)}
+          </div>
+        </div>
+      `)}
     ` )}
 
     <!-- prettier-ignore -->
     ${@map(
       (./templates/active-personal-projects.yaml),
-      (item) => `
-    <style>
-      :has(#${item/id}:target) a[href="#${item/id}"] {
-        background: var(--color-accent);
-        color: white;
-      }
-    </style>
+      (section) => `
+      ${@map(section/btns, (item) => `
+        <style>
+          :has(#${item/id}:target) a[href="#${item/id}"] {
+            background: var(--color-accent);
+            color: white;
+          }
+        </style>
+      `)}
     ` )}
 
     <script>
       document.addEventListener("click", (e) => {
-        if (e.target.tagName.toLowerCase() !== "a") {
+        if (e.currentTarget.tagName.toLowerCase() !== "a") {
           window.location.hash = "#";
         }
       });

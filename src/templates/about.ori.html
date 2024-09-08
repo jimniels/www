@@ -1,0 +1,54 @@
+<div class="card mb-48">
+  <p>
+    I am a Designer, Engineer, and Writer — or
+    <a href="https://blog.jim-nielsen.com/2024/interdisciplinary-website-maker/"
+      >Interdisciplinary Website Maker</a
+    >
+    if you will.
+  </p>
+  <p>
+    I’ve been building stuff on the web (and writing about it) for 20+ years.
+  </p>
+  <p>I love to live at the intersection of design & code on the web.</p>
+</div>
+
+<h3 class="list-header">Contact</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    ../data/contact.yaml/contact,
+    (item) => `
+    <li>
+      ${./btn.ori.html({ icon: ../svgs(item/icon)/, href: item/href, title: item/title, value: item/username })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Active Social Accounts</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    ../data/contact.yaml/active,
+    (item) => `
+    <li>
+      ${./btn.ori.html({ icon: ../svgs(item/icon)/, href: item/href, title: item/title, value: item/username })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Other Social Accounts</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    ../data/contact.yaml/other,
+    (item) => `
+    <li>
+      ${./btn.ori.html({ icon: ../svgs(item/icon)/, href: item/href, title: item/title, value: item/username })}
+    </li>
+  `)}
+</ul>
+<p class="list-caption">
+  Fair warning: these are listed in order by how often I use them, and therefore
+  represent the priority in which I am likely to see and respond to any
+  messages.
+</p>

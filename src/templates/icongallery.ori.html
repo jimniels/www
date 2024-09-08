@@ -1,0 +1,11 @@
+<h3 class="list-header">Latest posts</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    (https://macosicongallery.com/feed.json)/items,
+    (item) => `
+    <li>
+      ${./btn.ori.html({ href: item/url, title: item/title, subtitle: item/date_published/slice(0,10) })}
+    </li>
+  `)}
+</ul>

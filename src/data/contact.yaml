@@ -1,0 +1,43 @@
+contact:
+  - title: Email
+    username: "jimniels@gmail.com"
+    href: "mailto:jimniels@gmail.com"
+    icon: "icon-email.svg"
+active:
+  - title: Mastodon
+    username: "@jimniels@mastodon.social"
+    href: "https://mastodon.social/@jimniels"
+    icon: "icon-mastodon.svg"
+  - title: Twitter/X
+    username: "@jimniels"
+    href: "https://twitter.com/jimniels"
+    icon: "icon-twitter.svg"
+  - title: LinkedIn
+    username: "jim.nielsen"
+    href: "/linkedin"
+    icon: "icon-linkedin.svg"
+other:
+  - title: GitHub
+    username: jimniels
+    href: "https://github.com/jimniels"
+    icon: "icon-github.svg"
+  - title: Discord
+    link: jimniels
+    href: "https://discord.com/users/jimniels"
+    icon: "icon-discord.svg"
+  - title: BlueSky
+    username: "@jim-nielsen.com"
+    href: "https://bsky.app/profile/jim-nielsen.com"
+    icon: "icon-bluesky.svg"
+  - title: Instagram
+    link: "@jimniels"
+    href: "https://instagram.com/jimniels"
+    icon: "icon-instagram.svg"
+  - title: Dribbble
+    username: jimniels
+    href: "https://dribbble.com/jimniels"
+    icon: "icon-dribbble.svg"
+  - title: Threads
+    username: "@jimniels"
+    href: "https://threads.net/@jimniels"
+    icon: "icon-threads.svg"

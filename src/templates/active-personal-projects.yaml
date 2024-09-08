@@ -1,14 +1,22 @@
-- id: blog
-  template: blog.ori.html
-  label: Personal Blog
-  icon: <img src="https://blog.jim-nielsen.com/favicon.ico" alt="Blog" />
-- id: notes
-  template: microblog.ori.html
-  label: Notes Microblog
-  icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" />
-- id: ios-icon-gallery
-  label: iOS Icon Gallery
-- id: macos-icon-gallery
-  label: macOS Icon Gallery
-- id: flyingj-pies
-  label: FlyingJ Pies
+- btns:
+    - id: about
+      label: About
+      template: about.ori.html
+- header: Active Personal Projects
+  btns:
+    - id: blog
+      template: blog.ori.html
+      label: Personal Blog
+      icon: <img src="https://blog.jim-nielsen.com/favicon.ico" alt="Blog" />
+    - id: notes
+      template: microblog.ori.html
+      label: Notes Microblog
+      icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" />
+    - id: ios-icon-gallery
+      label: iOS Icon Gallery
+    - id: macos-icon-gallery
+      label: macOS Icon Gallery
+      template: icongallery.ori.html
+      icon: <img src="https://macosicongallery.com/favicon.ico" alt="Blog" />
+    - id: flyingj-pies
+      label: FlyingJ Pies

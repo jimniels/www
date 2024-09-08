@@ -16,6 +16,7 @@
   --spacer-16: 1rem;
   --spacer-24: 1.5rem;
   --spacer-32: 2rem;
+  --spacer-40: 2.5rem;
   --spacer-48: 3rem;
   --spacer-64: 4rem;
   --spacer-72: 4.5rem;
@@ -23,16 +24,18 @@
   --spacer-128: 8rem;
 
   --width-pane: 440px;
+  --border-radius: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-accent: rgb(10 132 255);
     --color-text: rgb(255 255 255);
-    --color-text-muted: rgb(255 255 255 / 66%);
+    --color-text-muted: rgb(255 255 255 / 50%);
     --color-text-mutedest: rgb(255 255 255 / 33%);
     --color-bg: #0b0e16;
-    --color-bg-1: #1b1d22;
+    --color-bg-1: #181b20;
+    --color-btn: #131419;
     --color-border: rgb(255 255 255 / 10%);
   }
 }
@@ -170,7 +173,7 @@ body {
 /* List ===================================================================== */
 
 .list {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   margin-bottom: var(--spacer-48);
 }
@@ -184,6 +187,14 @@ body {
   padding-left: var(--spacer-16);
 }
 
+.list-caption {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  padding-left: var(--spacer-16);
+  margin-top: calc(var(--spacer-32) * -1);
+  margin-bottom: var(--spacer-48);
+}
+
 /* Button =================================================================== */
 
 .btn {
@@ -191,6 +202,10 @@ body {
   background: var(--color-btn);
   display: flex;
   align-items: center;
+}
+
+.btn:not([href^="/"]):not([href^="."]):not([href^="#"]) {
+  color: var(--color-accent);
 }
 
 .btn:hover {
@@ -203,6 +218,7 @@ body {
   padding: 12px 16px 12px 0;
   flex-grow: 1;
   border-bottom: 1px solid var(--color-border-light);
+  min-width: 0; /* for truncation */
 }
 
 .list li:last-child .btn__text {
@@ -211,7 +227,18 @@ body {
 
 .btn__text__title {
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacer-8);
 }
+.btn__text__title__value {
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .btn__text__subtitle {
   font-size: 12px;
   color: var(--color-text-muted);
@@ -245,6 +272,50 @@ body {
 }
 
 .content-header h1 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
+  font-weight: 700;
+}
+
+/* Card ===================================================================== */
+
+.card {
+  font-size: 18px;
+  border-radius: var(--border-radius);
+  background: var(--color-btn);
+  padding: var(--spacer-16);
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.card a {
+  color: var(--color-accent);
+}
+
+/* Margins ================================================================== */
+
+.mb-8 {
+  margin-bottom: var(--spacer-8);
+}
+
+.mb-16 {
+  margin-bottom: var(--spacer-16);
+}
+
+.mb-24 {
+  margin-bottom: var(--spacer-24);
+}
+
+.mb-32 {
+  margin-bottom: var(--spacer-32);
+}
+
+.mb-48 {
+  margin-bottom: var(--spacer-48);
+}
+
+.mb-64 {
+  margin-bottom: var(--spacer-64);
 }
