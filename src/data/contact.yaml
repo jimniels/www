@@ -8,6 +8,7 @@ active:
     username: "@jimniels@mastodon.social"
     href: "https://mastodon.social/@jimniels"
     icon: "icon-mastodon.svg"
+    color: var(--color-indigo)
   - title: Twitter/X
     username: "@jimniels"
     href: "https://twitter.com/jimniels"

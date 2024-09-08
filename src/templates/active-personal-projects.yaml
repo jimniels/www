@@ -7,16 +7,16 @@
     - id: blog
       template: blog.ori.html
       label: Personal Blog
-      icon: <img src="https://blog.jim-nielsen.com/favicon.ico" alt="Blog" />
+      icon: <img src="https://blog.jim-nielsen.com/favicon.ico" alt="Blog" width="24" height="24" />
     - id: notes
       template: microblog.ori.html
       label: Notes Microblog
-      icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" />
+      icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" width="24" height="24" />
     - id: ios-icon-gallery
       label: iOS Icon Gallery
     - id: macos-icon-gallery
       label: macOS Icon Gallery
       template: icongallery.ori.html
-      icon: <img src="https://macosicongallery.com/favicon.ico" alt="Blog" />
+      icon: <img src="https://macosicongallery.com/favicon.ico" alt="Blog" width="24" height="24" />
     - id: flyingj-pies
       label: FlyingJ Pies
