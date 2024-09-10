@@ -187,7 +187,7 @@ body {
   overflow: hidden;
   margin-bottom: var(--spacer-48);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   gap: var(--spacer-8);
   background: var(--color-btn);
   padding: var(--spacer-16);
