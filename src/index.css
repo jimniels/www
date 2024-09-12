@@ -180,22 +180,27 @@ body {
   border-radius: var(--border-radius);
   overflow: hidden;
   margin-bottom: var(--spacer-48);
+  background: var(--color-btn);
 }
 
 .list-grid {
+  padding: var(--spacer-16);
   border-radius: var(--border-radius);
   overflow: hidden;
   margin-bottom: var(--spacer-48);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   gap: var(--spacer-8);
-  background: var(--color-btn);
-  padding: var(--spacer-16);
   justify-items: center;
 }
 
-.list-grid--2 {
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+.list--photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1px;
+}
+.list--photo-grid li {
+  display: flex;
 }
 
 .list-header {

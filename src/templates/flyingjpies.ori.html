@@ -20,13 +20,13 @@
 
 <h3 class="list-header">Latest pies</h3>
 <!-- prettier-ignore -->
-<ul class="list-grid list-grid--2">
+<ul class="list list--photo-grid">
   ${@map(
     @take(../data/flyingjpies.yaml, 20),
     (item) => `
     <li>
       <!-- <a href=""> -->
-        <img src="https://cdn.jim-nielsen.com/flyingjpies/${item}?optimize=true&w=160" alt="Photo of a pie" width="160" height="160" style="border-radius: 8px" />
+        <img src="https://cdn.jim-nielsen.com/flyingjpies/${item}?optimize=true&w=160" alt="Photo of a pie" width="160" height="160" />
       <!-- </a> -->
     </li>
   `)}
