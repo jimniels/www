@@ -194,6 +194,10 @@ body {
   justify-items: center;
 }
 
+.list-grid--2 {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
 .list-header {
   font-size: 13px;
   letter-spacing: 0.1rem;
