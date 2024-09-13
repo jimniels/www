@@ -115,7 +115,7 @@ body {
 
 .pane {
   width: 100%;
-  padding: 24px;
+  padding: var(--spacer-16);
   height: 100%;
   overflow: auto;
   position: fixed;
@@ -149,6 +149,7 @@ body {
 
 @media (min-width: 650px) {
   .pane {
+    padding: var(--spacer-24);
     width: 50vw;
     max-width: var(--width-pane);
 
@@ -246,6 +247,9 @@ body {
   min-width: 0; /* for truncation */
 }
 
+.list li {
+  position: relative;
+}
 .list li:last-child .btn__text {
   border-bottom: none;
 }
@@ -278,6 +282,23 @@ body {
   justify-content: center;
   overflow: hidden;
   margin-right: var(--spacer-16);
+}
+
+.btn-secondary-link {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: var(--color-accent);
+  border-radius: 100px;
+}
+.btn-secondary-link:hover {
+  background: var(--color-bg);
 }
 
 /* Content ================================================================== */

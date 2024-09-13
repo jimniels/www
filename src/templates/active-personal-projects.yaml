@@ -2,7 +2,7 @@
     - id: about
       label: About
       template: about.ori.html
-- header: Active Personal Projects
+- header: Stuff I’m Doing
   btns:
     - id: blog
       template: blog.ori.html
@@ -12,12 +12,12 @@
       template: microblog.ori.html
       label: Notes Microblog
       icon: <img src="https://notes.jim-nielsen.com/favicon.ico" alt="Blog" width="24" height="24" />
-    - id: ios-icon-gallery
-      label: iOS Icon Gallery
+    # - id: ios-icon-gallery
+    #   label: iOS Icon Gallery
     - id: macos-icon-gallery
-      label: macOS Icon Gallery
+      label: Icon Galleries
       template: icongallery.ori.html
-      icon: <img src="https://macosicongallery.com/favicon.ico" alt="Blog" width="24" height="24" />
+      icon: <img src="https://iosicongallery.com/favicon.ico" alt="Blog" width="24" height="24" />
     - id: flyingj-pies
       label: FlyingJ Pies
       template: flyingjpies.ori.html

@@ -70,12 +70,7 @@
     [
       { domain: "css-tricks.com", title: "CSS Tricks" },
       { domain: "smashingmagazine.com", title: "Smashing Magazine" },
-      { domain: "frontendfoc.us", title: "Frontend Focus" },
-      { domain: "javascriptweekly.com", title: "JavaScript Weekly" },
-      { domain: "bytes.dev", title: "Bytes" },
-      { domain: "sidebar.io", title: "Sidebar" },
-      { domain: "frontendmasters.com", title: "Frontend Masters" },
-      { domain: "hackernews.com", title: "Hacker News" },
+      { domain: "frontendmasters.com", title: "Frontend Masters" }
     ],
     (item) => `
     <li>
@@ -84,6 +79,48 @@
         href: `https://${item/domain}`,
         title: item/title
        })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Newsletters mention it</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { domain: "frontendfoc.us", title: "Frontend Focus" },
+      { domain: "javascriptweekly.com", title: "JavaScript Weekly" },
+      { domain: "bytes.dev", title: "Bytes" },
+      { domain: "sidebar.io", title: "Sidebar" }
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://${item/domain}/favicon.ico" width="24" height="24" />`,
+        href: `https://${item/domain}`,
+        title: item/title,
+       })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Communities talk about it</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { domain: "news.ycombinator.com", title: "Hacker News", href: "https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story" },
+      { domain: "reddit.com", title: "Reddit", href: "https://www.reddit.com/search/?q=url:https://blog.jim-nielsen.com&type=link" },
+      { domain: "github.com", title: "GitHub", href: "https://github.com/search?q=blog.jim-nielsen.com&type=code" },      
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://${item/domain}/favicon.ico" width="24" height="24" />`,
+        href: item/href,
+        title: item/title,
+       })}
+       <a href="#" class="btn-secondary-link">${../svgs/radix-search.svg}</a>
     </li>
   `)}
 </ul>

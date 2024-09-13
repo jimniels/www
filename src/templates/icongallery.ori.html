@@ -1,21 +1,26 @@
 <div class="card card--featured mb-48">
   <p>
     <img
-      src="https://macosicongallery.com/favicon.ico"
+      src="https://iosicongallery.com/favicon.ico"
       alt="macOS Icon Gallery"
       width="64"
       height="64"
     />
   </p>
-  <p>A curated collection of beautiful icons for macOS.</p>
+  <p>
+    Personal collection of beautiful icons for iOS, macOS, and watchOS —
+    designed, developed, and curated by me.
+  </p>
+  <p><a href="https://macosicongallery.com">iosicongallery.com</a></p>
   <p><a href="https://macosicongallery.com">macosicongallery.com</a></p>
+  <p style="color: var(--color-text-muted)">2010—Present</p>
 </div>
 
-<h3 class="list-header">Latest icons</h3>
+<h3 class="list-header">Latest macOS icons</h3>
 <!-- prettier-ignore -->
-<ul class="list-grid">
+<ul class="list list-grid">
   ${@map(
-    (https://macosicongallery.com/feed.json)/items,
+    @take((https://macosicongallery.com/feed.json)/items, 12),
     (item) => `
     <li>
       <a href="${item/url}" >
@@ -24,3 +29,33 @@
     </li>
   `)}
 </ul>
+
+<h3 class="list-header">Latest iOS icons</h3>
+<!-- prettier-ignore -->
+<ul class="list list-grid">
+  ${@map(
+    @take((https://iosicongallery.com/feed.json)/items, 12),
+    (item) => `
+    <li>
+      <a href="${item/url}" >
+        <img src="${item/attachments/0/url}" alt="${item/title}" width="64" height="64" style="border-radius: 22%;" />
+    </a>
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Latest watchOS icons</h3>
+<!-- prettier-ignore -->
+<ul class="list list-grid">
+  ${@map(
+    @take((https://watchosicongallery.com/feed.json)/items, 12),
+    (item) => `
+    <li>
+      <a href="${item/url}" >
+        <img src="${item/attachments/0/url}" alt="${item/title}" width="64" height="64" style="border-radius: 100px" />
+    </a>
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">People like it</h3>
