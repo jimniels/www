@@ -18,16 +18,28 @@
   </p>
 </div>
 
-<h3 class="list-header">Latest pies</h3>
-<!-- prettier-ignore -->
-<ul class="list list--photo-grid">
+<h3 class="list-header">Sampling of Bakes</h3>
+<a href="https://instagram.com/flyingjpies">
+  <!-- prettier-ignore -->
+  <ul class="list list--photo-grid">
   ${@map(
-    @take(../data/flyingjpies.yaml, 20),
+    @take(@shuffle(../data/flyingjpies.yaml), 12),
     (item) => `
     <li>
-      <!-- <a href=""> -->
-        <img src="https://cdn.jim-nielsen.com/flyingjpies/${item}?optimize=true&w=160" alt="Photo of a pie" width="160" height="160" />
-      <!-- </a> -->
+      <img src="https://cdn.jim-nielsen.com/flyingjpies/${item}?optimize=true&w=160" alt="Photo of a pie" width="160" height="160" />
     </li>
   `)}
+</ul>
+</a>
+
+<h3 class="list-header">Meta Blog Posts</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  <li>
+    ${./btn.ori.html({ 
+      href: "https://blog.jim-nielsen.com/2022/flying-j-pies/",
+      title: "FlyingJ Pies"
+      subtitle: "2022-09-18"
+    })}
+  </li>
 </ul>

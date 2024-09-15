@@ -17,45 +17,45 @@
 </div>
 
 <h3 class="list-header">Latest macOS icons</h3>
-<!-- prettier-ignore -->
-<ul class="list list-grid">
-  ${@map(
-    @take((https://macosicongallery.com/feed.json)/items, 12),
-    (item) => `
-    <li>
-      <a href="${item/url}" >
+<a href="https://macosicongallery.com">
+  <!-- prettier-ignore -->
+  <ul class="card card--grid mb-48">
+    ${@map(
+      @take((https://macosicongallery.com/feed.json)/items, 8),
+      (item) => `
+      <li>
         <img src="${item/attachments/0/url}" alt="${item/title}" width="80" height="80" />
-    </a>
-    </li>
-  `)}
-</ul>
+      </li>
+    `)}
+  </ul>
+</a>
 
 <h3 class="list-header">Latest iOS icons</h3>
-<!-- prettier-ignore -->
-<ul class="list list-grid">
-  ${@map(
-    @take((https://iosicongallery.com/feed.json)/items, 12),
-    (item) => `
-    <li>
-      <a href="${item/url}" >
-        <img src="${item/attachments/0/url}" alt="${item/title}" width="64" height="64" style="border-radius: 22%;" />
-    </a>
-    </li>
-  `)}
-</ul>
+<a href="https://iosicongallery.com">
+  <!-- prettier-ignore -->
+  <ul class="card card--grid mb-48">
+    ${@map(
+      @take((https://iosicongallery.com/feed.json)/items, 8),
+      (item) => `
+      <li>
+        <img src="${item/attachments/0/url}" alt="${item/title}" width="64" height="64" style="border-radius: 22%; border: 1px solid var(--color-border);" />
+      </li>
+    `)}
+  </ul>
+</a>
 
 <h3 class="list-header">Latest watchOS icons</h3>
-<!-- prettier-ignore -->
-<ul class="list list-grid">
-  ${@map(
-    @take((https://watchosicongallery.com/feed.json)/items, 12),
-    (item) => `
-    <li>
-      <a href="${item/url}" >
+<a href="https://watchosicongallery.com">
+  <!-- prettier-ignore -->
+  <ul class="card card--grid mb-48">
+    ${@map(
+      @take((https://watchosicongallery.com/feed.json)/items, 8),
+      (item) => `
+      <li>
         <img src="${item/attachments/0/url}" alt="${item/title}" width="64" height="64" style="border-radius: 100px" />
-    </a>
-    </li>
-  `)}
-</ul>
+      </li>
+    `)}
+  </ul>
+</a>
 
 <h3 class="list-header">People like it</h3>

@@ -19,7 +19,12 @@
     ../data/contact.yaml/contact,
     (item) => `
     <li>
-      ${./btn.ori.html({ icon: ../svgs(item/icon)/, href: item/href, title: item/title, value: item/username })}
+      ${./btn.ori.html({
+        icon: `<img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Favicon for gmail" width=24 height=24 />`,
+        href: item/href,
+        title: item/title,
+        value: item/username
+      })}
     </li>
   `)}
 </ul>
@@ -31,7 +36,12 @@
     ../data/contact.yaml/active,
     (item) => `
     <li>
-      ${./btn.ori.html({ icon: ../svgs(item/icon)/, href: item/href, title: item/title, value: item/username })}
+      ${./btn.ori.html({
+        icon: `<img src="${./_favicon.js({ domain: item/domain })}" alt="Favicon for gmail" width=24 height=24 />`,
+        href: item/href,
+        title: item/title,
+        value: item/username
+      })}
     </li>
   `)}
 </ul>

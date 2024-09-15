@@ -8,15 +8,18 @@ active:
     username: "@jimniels@mastodon.social"
     href: "https://mastodon.social/@jimniels"
     icon: "icon-mastodon.svg"
+    domain: "mastodon.social"
     color: var(--color-indigo)
   - title: Twitter/X
     username: "@jimniels"
     href: "https://twitter.com/jimniels"
     icon: "icon-twitter.svg"
+    domain: "twitter.com"
   - title: LinkedIn
     username: "jim.nielsen"
     href: "/linkedin"
     icon: "icon-linkedin.svg"
+    domain: "linkedin.com"
 other:
   - title: GitHub
     username: jimniels
