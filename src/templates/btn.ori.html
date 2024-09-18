@@ -5,6 +5,7 @@
 @param {string} _/subtitle?
 @param {string} _/value?
 @param {string} _/icon?
+@param {string} _/body?
 @param {string} _/extraLink?
 -->
 
@@ -17,5 +18,6 @@
       ${@if(_/value, `<span class="btn__text__title__value">${_/value}</span>`)}
     </span>
     ${@if(_/subtitle, `<span class="btn__text__subtitle">${_/subtitle}</span>`)}
+    ${@if(_/body, `<span class="btn__text__body">${_/body}</span>`)}
   </span>
 </a>

@@ -63,6 +63,28 @@
   }
 </style>
 
+<h3 class="list-header">Readers Say</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { title: "Eric Bailey", subtitle: "ericwbailey", quote: "Anything by Jim is an insta-read, as far as I’m concerned."  },
+      { title: "Sara Soueidan", subtitle: "sarasoueidan", quote: "I, for one, love seeing [Jim’s] posts in my RSS reader." },
+      { title: "Rich Harris", subtitle: "rich_harris", quote: "…a really good blog post by [Jim]" },
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://unavatar.io/x/${item/subtitle}" width="24" height="24" />`,
+        href: `https://twitter.com`,
+        title: item/title,
+        /*subtitle: item/subtitle,*/
+        body: `“${item/quote}”`
+       })}
+    </li>
+  `)}
+</ul>
+
 <h3 class="list-header">Sites linking to me</h3>
 <!-- prettier-ignore -->
 <ul class="list">
