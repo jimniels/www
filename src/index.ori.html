@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <title>Jim Nielsen</title>
+    <meta name="description" content="The personal website of Jim Nielsen." />
+    <meta name="author" content="Jim Nielsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script type="module" src="./jim-navbar.js"></script>
+
+    <!-- Custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- rel=me links -->
+    <link rel="me" href="https://github.com/jimniels" />
+    <link rel="me" href="https://twitter.com/jimniels" />
+    <link rel="me" href="https://mastodon.social/@jimniels" />
+    <link rel="me" href="https://dribbble.com@jimniels" />
+
+    <!-- Social previews -->
+    <meta property="og:title" content="Jim Nielsen" />
+    <meta
+      property="og:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jim-nielsen.com" />
+    <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@jimniels" />
+    <meta name="twitter:title" content="Jim Nielsen" />
+    <meta
+      name="twitter:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta name="twitter:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <!-- RSS for subdomains -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Blog: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://blog.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Blog: JSON Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://notes.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Notes: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://notes.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Notes: JSON Feed"
+    />
+
+    <!-- prettier-ignore -->
+    <style>${./index.css}</style>
+  </head>
+  <body>
+    <jim-navbar></jim-navbar>
+    <nav class="pane pane--primary" style="gap: 56px">
+      ${@map(
+        (./templates/active-personal-projects.yaml),
+        (section) => `
+          ${@if(section/header, `<h3 class="list-header">${section/header}</h3>`)}
+          <ul class="list">
+            ${@map(section/btns, (btn) => `
+              <li>${./templates/btn.ori.html({ title: btn/label, href: `#${btn/id}`, icon: btn/icon })}</li>
+            `)}
+          </ul>
+        `
+        )}
+      </ul>
+    </nav>
+    <!-- prettier-ignore -->
+    ${@map(
+      (./templates/active-personal-projects.yaml),
+      (section) => `
+      ${@map(section/btns, (item) => `
+        <div class="pane pane--secondary" id="${item/id}">
+          <header class="content-header">
+            <a href="#" aria-label="Back">${./templates/chevron-left.svg}</a>
+            <h1>${item/label}</h1>
+          </header>
+          <div class="content-main">
+            ${@if(item/template, () => ./templates(item/template)/)}
+          </div>
+        </div>
+      `)}
+    ` )}
+
+    <!-- prettier-ignore -->
+    ${@map(
+      (./templates/active-personal-projects.yaml),
+      (section) => `
+      ${@map(section/btns, (item) => `
+        <style>
+          :has(#${item/id}:target) a[href="#${item/id}"] {
+            background: var(--color-accent);
+            color: white;
+          }
+        </style>
+      `)}
+    ` )}
+
+    <script>
+      document.addEventListener("click", (e) => {
+        if (e.currentTarget.tagName.toLowerCase() !== "a") {
+          window.location.hash = "#";
+        }
+      });
+    </script>
+  </body>
+</html>
