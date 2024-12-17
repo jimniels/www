@@ -1,0 +1,148 @@
+<div class="card card--featured mb-48">
+  <p>
+    <img
+      src="https://blog.jim-nielsen.com/favicon.ico"
+      alt="Blog Logo"
+      width="64"
+      height="64"
+    />
+  </p>
+  <p>
+    Personal opinions on all things web related. Written for the last 20 years.
+  </p>
+  <p><a href="https://blog.jim-nielsen.com">blog.jim-nielsen.com</a></p>
+</div>
+
+<h3 class="list-header">Latest posts</h3>
+<div class="more mb-48">
+  <!-- prettier-ignore -->
+  <ul class="list" style="margin-bottom: 8px">
+  ${@map(
+    @take((https://blog.jim-nielsen.com/feed.json)/items, 10),
+    (item) => `
+      <li>
+        ${./btn.ori.html({ href: item/url, title: item/title, subtitle: item/date_published/slice(0,10) })}
+      </li>
+    `)}
+  </ul>
+  <input type="checkbox" id="show-more" />
+  <label for="show-more">
+    <span class="more__label more__label--more"
+      >${../svgs/radix-circle-plus.svg} Show more</span
+    >
+    <span class="more__label more__label--less"
+      >${../svgs/radix-circle-minus.svg} Show less</span
+    >
+  </label>
+</div>
+
+<style>
+  .more__label {
+    padding-left: 16px;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .more .list li:nth-child(n + 4) {
+    display: none;
+  }
+  .more:has(input[type="checkbox"]:checked) .list li:nth-child(n + 4) {
+    display: block;
+  }
+  .more__label--less,
+  .more:has(input[type="checkbox"]:checked) .more__label--more {
+    display: none;
+  }
+
+  .more:has(input[type="checkbox"]:checked) .more__label--less {
+    display: flex;
+  }
+</style>
+
+<h3 class="list-header">Readers Say</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { title: "Eric Bailey", subtitle: "ericwbailey", quote: "Anything by Jim is an insta-read, as far as I’m concerned."  },
+      { title: "Sara Soueidan", subtitle: "sarasoueidan", quote: "I, for one, love seeing [Jim’s] posts in my RSS reader." },
+      { title: "Rich Harris", subtitle: "rich_harris", quote: "…a really good blog post by [Jim]" },
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://unavatar.io/x/${item/subtitle}" width="24" height="24" />`,
+        href: `https://twitter.com`,
+        title: item/title,
+        /*subtitle: item/subtitle,*/
+        body: `“${item/quote}”`
+       })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Sites linking to me</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { domain: "css-tricks.com", title: "CSS Tricks" },
+      { domain: "smashingmagazine.com", title: "Smashing Magazine" },
+      { domain: "frontendmasters.com", title: "Frontend Masters" }
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://${item/domain}/favicon.ico" width="24" height="24" />`,
+        href: `https://${item/domain}`,
+        title: item/title
+       })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Newsletters mention it</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { domain: "frontendfoc.us", title: "Frontend Focus" },
+      { domain: "javascriptweekly.com", title: "JavaScript Weekly" },
+      { domain: "bytes.dev", title: "Bytes" },
+      { domain: "sidebar.io", title: "Sidebar" }
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://${item/domain}/favicon.ico" width="24" height="24" />`,
+        href: `https://${item/domain}`,
+        title: item/title,
+       })}
+    </li>
+  `)}
+</ul>
+
+<h3 class="list-header">Communities talk about it</h3>
+<!-- prettier-ignore -->
+<ul class="list">
+  ${@map(
+    [
+      { domain: "news.ycombinator.com", title: "Hacker News", href: "https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story" },
+      { domain: "reddit.com", title: "Reddit", href: "https://www.reddit.com/search/?q=url:https://blog.jim-nielsen.com&type=link" },
+      { domain: "github.com", title: "GitHub", href: "https://github.com/search?q=blog.jim-nielsen.com&type=code" },      
+    ],
+    (item) => `
+    <li>
+      ${./btn.ori.html({
+        icon: `<img src="https://${item/domain}/favicon.ico" width="24" height="24" />`,
+        href: item/href,
+        title: item/title,
+       })}
+       <a href="#" class="btn-secondary-link">${../svgs/radix-search.svg}</a>
+    </li>
+  `)}
+</ul>
