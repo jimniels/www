@@ -100,10 +100,10 @@ class jimNavbar extends HTMLElement {
             display: flex;
             flex-direction: column;
             transition: .3s ease opacity;
+            width: 280px;
           }
 
           #root {
-            width: 280px;
             color: white;
             font-size: 14px;
             border-radius: 24px;
