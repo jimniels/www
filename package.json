@@ -4,9 +4,6 @@
   "description": "Personal web site",
   "main": "",
   "type": "module",
-  "engine": {
-    "node": ">=22"
-  },
   "devDependencies": {
     "@weborigami/origami": "^0.3.2"
   },
