@@ -5,11 +5,11 @@
   "main": "",
   "type": "module",
   "devDependencies": {
-    "@weborigami/origami": "^0.3.2"
+    "@weborigami/origami": "0.3.3-jse.3"
   },
   "scripts": {
-    "build": "NODE_ENV=production ori copy src/site.ori, clear files:build",
-    "start": "ori serve watch src, =debug src/site.ori"
+    "build": "NODE_ENV=production ori copy src/site.jse, clear files:build",
+    "start": "ori serve watch src, =debug src/site.jse"
   },
   "repository": {
     "type": "git",

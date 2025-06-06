@@ -71,7 +71,7 @@
 
     <!-- Inline the CSS -->
     <!-- prettier-ignore -->
-    <style>${./styles.css}</style>
+    <style>${<styles.css>}</style>
   </head>
   <body>
     <jim-navbar></jim-navbar>
@@ -83,9 +83,9 @@
         20+ years at the intersection of design & code on the web.
       </p>
       <ul class="contact">
-        ${map(_/contact, (c) => `
-        <li class="i-${c/id}">
-          <a href="${c/href}">${c/link}</a>
+        ${Tree.map(_.contact, (c) => `
+        <li class="i-${c.id}">
+          <a href="${c.href}">${c.label}</a>
         </li>
         `)}
       </ul>
@@ -115,18 +115,18 @@
       </p>
 
       <ul class="list">
-        ${map(_/activeSideProjects, (p) => `
+        ${Tree.map(_.activeSideProjects, (p) => `
         <li>
-          <div>${p/name}</div>
+          <div>${p.name}</div>
           <div>
-            ${p/content}
+            ${p.content}
             <span
               style="
                 display: block;
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
               "
-              >${p/date}</span
+              >${p.date}</span
             >
             <!-- <div style="font-size: 0.875rem; margin: 8px 0">
               ★ <a href="">Brian Lovin</a>: “Love these [icon sites] Nicely done
@@ -142,31 +142,33 @@
       <h1>Social Validation</h1>
       <p>People I’ve worked with are saying:</p>
       <ul class="list">
-        ${map(_/peopleWork, (p) => `
+        ${Tree.map(_.peopleWork, (p) => `
         <li>
-          <div><a href="${p/href}" class="unmuted">${p/name}</a></div>
-          <div><q cite="${p/href}">${p/quote}</q></div>
+          <div><a href="${p.href}" class="unmuted">${p.name}</a></div>
+          <div><q cite="${p.href}">${p.quote}</q></div>
         </li>
         `)}
       </ul>
 
       <p>People who enjoy my writing are saying:</p>
       <ul class="list">
-        ${map(_/peopleBlog, (p) => `
+        ${Tree.map(_.peopleBlog, (p) => `
         <li>
-          <div><a href="${p/href}" class="unmuted">${p/name}</a></div>
-          <div><q cite="${p/href}">${p/quote}</q></div>
+          <div><a href="${p.href}" class="unmuted">${p.name}</a></div>
+          <div><q cite="${p.href}">${p.quote}</q></div>
         </li>
         `)}
       </ul>
 
       <p>Sites and newsletters are linking to my writing:</p>
       <ul class="list">
-        ${map(_/pubs, (p) => `
+        ${Tree.map(_.pubs, (p) => `
         <li>
-          <div>${p/name}</div>
+          <div>${p.name}</div>
           <div>
-            ${map(p/refs, (r) => r/1 ? `<a href="${r/1}">${r/0}</a>` : r/0)}
+            ${Tree.text`${Tree.map(p.refs, (r) => r[1] ? `<a href="${r[1]}"
+              >${r[0]}</a
+            >` : r[0])}`}
           </div>
         </li>
         `)}
@@ -174,18 +176,18 @@
 
       <p>People who enjoy my side projects are saying:</p>
       <ul class="list">
-        ${map(_/peopleSideProjects, (p) => `
+        ${Tree.map(_.peopleSideProjects, (p) => `
         <li>
-          <div><a href="${p/href}">${p/name}</a></div>
+          <div><a href="${p.href}">${p.name}</a></div>
           <div>
-            <q cite="${p/href}">${p/quote}</q>
+            <q cite="${p.href}">${p.quote}</q>
             <span
               style="
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
                 display: block;
               "
-              >Project: ${p/project}</span
+              >Project: ${p.project}</span
             >
           </div>
         </li>
@@ -195,10 +197,10 @@
       <p>Podcasts and publications are interviewing me:</p>
 
       <ul class="list">
-        ${map(_/interviews, (p) => `
+        ${Tree.map(_.interviews, (p) => `
         <li>
-          <div><a href="${p/href}">${p/name}</a></div>
-          <div>${p/label}</div>
+          <div><a href="${p.href}">${p.name}</a></div>
+          <div>${p.label}</div>
         </li>
         `)}
       </ul>
@@ -226,18 +228,18 @@
       </style>
 
       <ul class="list">
-        ${map(_/archivedSideProjects, (p) => `
+        ${Tree.map(_.archivedSideProjects, (p) => `
         <li>
-          <div>${p/name}</div>
+          <div>${p.name}</div>
           <div>
-            ${p/content}
+            ${p.content}
             <span
               style="
                 display: block;
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
               "
-              >${p/date}</span
+              >${p.date}</span
             >
           </div>
         </li>
@@ -250,19 +252,19 @@
       <h1>Employment</h1>
 
       <ul class="list">
-        ${map(_/employment, (p) => `
+        ${Tree.map(_.employment, (p) => `
         <li>
-          <div>${p/title}</div>
+          <div>${p.title}</div>
           <div>
-            ${p/company ? `@ <a href="${p/href}">${p/company}</a>:` : ''}
-            ${p/content}
+            ${p.company ? `@ <a href="${p.href}">${p.company}</a>:` : ''}
+            ${p.content}
             <span
               style="
                 display: block;
                 font-size: 0.875rem;
                 color: var(--color-text-mutedest);
               "
-              >${p/meta}</span
+              >${p.meta}</span
             >
           </div>
         </li>

@@ -1,4 +1,0 @@
-{
-  ...(../static)
-  index.html = index.ori.html(./index.yaml) 
-}
