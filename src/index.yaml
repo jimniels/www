@@ -1,0 +1,486 @@
+---
+pubs:
+  - name: CSS Tricks
+    refs:
+      - - "Newsletter "
+      - - "#202"
+        - https://css-tricks.com/newsletter/202-how-to-improve-site-performance-tricks-for-using-css-variables/
+      - - ", "
+      - - "#213"
+        - https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+      - - ", "
+      - - "#218"
+        - https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+      - - ", "
+      - - "#220"
+        - https://css-tricks.com/newsletter/220-the-principle-of-least-power/
+      - - ", "
+      - - "#246"
+        - https://css-tricks.com/newsletter/246-communication-is-key/
+      - - ", "
+      - - "#249"
+        - https://css-tricks.com/newsletter/249-decoding-async-tree-rings-and-flexbox-gap/
+      - - ", "
+      - - "#256"
+        - https://css-tricks.com/newsletter/256-when-to-use-container-queries/
+      - - ", "
+      - - "#284"
+        - https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/
+      - - ", "
+      - - "#289"
+        - https://css-tricks.com/newsletter/289-the-problem-with-evergreen-browsers/
+      - - ", "
+      - - "#297"
+        - https://css-tricks.com/newsletter/297-desks-dashes-document-outline-drama/
+      - - ", "
+      - - "#300"
+        - https://css-tricks.com/newsletter/300-waxing-nostalgic-on-the-virtual-townsquare/
+      - - " and "
+      - - more
+        - https://www.google.com/search?q=jim+nielsen&as_sitesearch=css-tricks.com
+      - - "."
+  - name: Smashing Magazine
+    refs:
+      - - "Newsletter "
+      - - "#443"
+        - https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+      - - ", "
+      - - "#362"
+        - https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/
+      - - ", and "
+      - - more
+        - https://google.com/search?q=jim+nielsen&as_sitesearch=smashingmagazine.com
+      - - "."
+  - name: JavaScript Weekly
+    refs:
+      - - "Issue "
+      - - "#573"
+        - https://javascriptweekly.com/issues/573
+      - - "."
+  - name: Frontend Focus
+    refs:
+      - - "Issues "
+      - - "#598"
+        - https://frontendfoc.us/issues/598
+      - - ", "
+      - - "#595"
+        - https://frontendfoc.us/issues/595
+      - - ", "
+      - - "#541"
+        - https://frontendfoc.us/issues/541
+      - - ", and "
+      - - "#444"
+        - https://frontendfoc.us/issues/444
+      - - "."
+  - name: Bytes
+    refs:
+      - - "Issues "
+      - - "#107"
+        - https://bytes.dev/archives/107
+      - - ", "
+      - - "#174"
+        - https://bytes.dev/archives/174
+      - - ", "
+      - - "and "
+      - - "#246"
+        - https://bytes.dev/archives/246
+      - - "."
+  - name: Sidebar.io
+    refs:
+      - - "Linked in "
+      - - over 20 daily newsletters
+        - https://sidebar.io/domain/blog.jim-nielsen.com
+      - - "."
+  - name: Changelog
+    refs:
+      - - "News from "
+      - - Feb. 2023
+        - https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+      - - ", "
+      - - Mar. 2022
+        - https://changelog.com/news/inspecting-web-views-in-macos-8OeO
+      - - ", and "
+      - - more
+        - https://changelog.com/search?q=jim+nielsen
+      - - "."
+  - name: Frontend Masters
+    refs:
+      - - Linked in
+      - - " Dec. 2023"
+        - https://frontendmasters.com/blog/the-case-for-design-engineers/
+      - - ", "
+      - - Feb. 2024
+        - https://frontendmasters.com/blog/light-dom-only/
+      - - ", and "
+      - - more
+        - https://frontendmasters.com/blog?s=jim-nielsen
+      - - "."
+  - name: Hacker News
+    content: ""
+    refs:
+      - - "Triggered "
+      - - "500"
+        - https://news.ycombinator.com/item?id=37205731
+      - - ", "
+      - - "300"
+        - https://news.ycombinator.com/item?id=28309885
+      - - ", "
+      - - "200"
+        - https://news.ycombinator.com/item?id=35626015
+      - - " comments and "
+      - - more
+        - https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story
+      - - "."
+  - name: Lobsters
+    refs:
+      - - 19+ stories across 9+ submitters
+        - https://lobste.rs/domains/blog.jim-nielsen.com
+  - name: HeyDesigner
+    refs:
+      - - "Issues "
+      - - "#82"
+        - https://heydesigner.com/newsletter/daily-issues/2021-82/
+      - - ", "
+      - - "#162"
+        - https://heydesigner.com/newsletter/daily-issues/2021-162/
+      - - ", "
+      - - "#182"
+        - https://heydesigner.com/newsletter/daily-issues/2021-182/
+      - - ", "
+      - - "#190"
+        - https://heydesigner.com/newsletter/daily-issues/2021-190/
+      - - ", and "
+      - - "#196"
+        - https://heydesigner.com/newsletter/daily-issues/2021-196/
+      - - " in 2021 alone. "
+      - - More in other years
+        - https://www.bing.com/search?q=%22jim+nielsen%22+site%3aheydesigner.com
+      - - "."
+quotes:
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
+    quote: Take my money — I can’t wait to devour this book. It looks so good.
+  - name: Jason Snell
+    href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/
+    quote:
+      A gorgeous art book/coffee table book that preserves the history of iOS app
+      icon art.
+  - name: John Voorhees
+    href: https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/
+    quote: My expectations were high, and I’m happy to report that it doesn’t disappoint.
+peopleWork:
+  - name: Tim Meaney
+    href: https://twitter.com/timothymeaney/status/1599859017597059072?s=20
+    quote:
+      I’ve had the pleasure of working with [Jim] for a decade, he’s one of the
+      best.
+  - name: Matt Brophy
+    href: https://twitter.com/brophdawg11/status/1599818035023396864?s=20
+    quote:
+      "[Jim] crosses the boundary between designer/developer better than anyone
+      I've worked with."
+  - name: Michael Jackson
+    href: https://twitter.com/mjackson/status/1521526982898450433?s=20
+    quote:
+      Jim is someone I've followed for a while, and someone who has a deep understanding
+      of and appreciation for the web.
+  - name: Michael Flarup
+    href: https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b
+    quote: "[Jim’s] as much an icon nut as me [and] he’s got great curation abilities."
+peopleBlog:
+  - name: Eric Bailey
+    href: https://twitter.com/ericwbailey/status/1571572550873792513?s=20
+    quote: Anything by Jim is an insta-read, as far as I’m concerned.
+  - name: Sara Soueidan
+    href: https://twitter.com/sarasoueidan/status/1428686530332303361?s=21
+    quote: I, for one, love seeing [Jim’s] posts in my RSS reader.
+  - name: Jeremy Keith
+    href: https://adactio.com/journal/18008
+    quote: damn, do I enjoy reading [Jim’s] blog.
+  - name: Chris Coyier
+    href: https://css-tricks.com/system-things/
+    quote: Jim was blowin’ minds the other day when he blogged…
+  - name: Dave Rupert
+    href: https://daverupert.com/2019/09/weeknotes-9/
+    quote:
+      I love the frequency and depth of Jim’s thoughts, he uses his blog really
+      well.
+  - name: Om Malik
+    href: https://om.co/2022/02/01/the-daily-om-02-01-2022/
+    quote:
+      A fantastic read from one of my favorite bloggers/web-technologists, Jim
+      Nielsen.
+  - name: Rich Harris
+    href: https://twitter.com/Rich_Harris/status/1286330991229927426
+    quote: "…a really good blog post by [Jim]"
+  - name: Stefan Judis
+    href: https://twitter.com/stefanjudis/status/1527648201989292033
+    quote:
+      If you’re not following Jim or are subscribed to his blog, you’re missing
+      out!
+  - name: Chris Ferdinandi
+    href: https://gomakethings.com/entropy-developer-experience-and-vanilla-js/
+    quote:
+      "[Jim] published a post...that hit on so many things I’ve experienced and
+      feel strongly about."
+peopleAlt:
+  - name: Brian Kardell
+    href: https://twitter.com/briankardell/status/1372279388331474944?s=21
+    quote:
+      "@jimniels I just read a piece of yours...just wanted to say it was an enjoyable/relatable
+      post."
+  - name: Remy Sharp
+    href: https://remysharp.com/links/2020-09-24-e9aa7591
+    quote:
+      I really like [Jim’s idea]…I’ll be adding this to my blog shortly - very
+      clever.
+  - name: Andy Bell
+    href: https://archive.hankchizljaw.com/feed/page/61/
+    quote: "[Jim’s post] was an absolute joy to read."
+  - name: Robin Rendle
+    href: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+    quote: Over the weekend I read this post by Jim Nielsen…that I really enjoyed.
+  - name: Jacob Ebey
+    href: https://twitter.com/ebey_jacob/status/1599823317799952385?s=20
+    quote: Jim is a joy to work with
+  - name: Vitaly Friedman
+    href: https://twitter.com/vitalyf/status/1610150390896508928?s=20
+    quote: An interesting design pattern by @jimniels
+  - name: Paul Ford
+    href: https://twitter.com/ftrain/status/1353733405293359105?s=20
+    quote: JIM WOW this is a nice thing to read. Thank you for making this!
+  - name: Kyle Simpson
+    href: https://www.linkedin.com/posts/getify_website-fidelity-activity-6987815816150880256-ffhG/
+    quote: I just read this really great blog post by Jim Nielsen…
+contact:
+  - id: mastodon
+    label: Mastodon
+    link: "@jimniels@mastodon.social"
+    href: https://mastodon.social/@jimniels
+  - id: email
+    label: Email
+    link: jimniels@gmail.com
+    href: mailto:jimniels@gmail.com
+  - id: bluesky
+    label: Bluesky
+    link: "@jim-nielsen.com"
+    href: https://bsky.app/profile/jim-nielsen.com
+  - id: linkedin
+    label: LinkedIn
+    link: jim-nielsen
+    href: "/linkedin"
+otherContact:
+  - id: github
+    label: GitHub
+    link: jimniels
+    href: https://github.com/jimniels
+  - id: discord
+    label: Discord
+    link: jimniels
+    href: https://discord.com/users/jimniels
+  - id: instagram
+    label: Instagram
+    link: "@jimniels"
+    href: https://instagram.com/jimniels
+  - id: dribbble
+    label: Dribbble
+    link: jimniels
+    href: https://dribbble.com/jimniels
+  - id: threads
+    label: Threads
+    link: "@jimniels"
+    href: https://threads.net/@jimniels
+interviews:
+  - name: JS Party
+    label: "#288: Refined Thinking"
+    href: https://jsparty.fm/288
+  - name: ShopTalk Show
+    label: "#504: Blogging, App Icons, Color, and Images"
+    href: https://shoptalkshow.com/504/
+  - name: Postlight Podcast
+    label: "#314: (Icon)ic Design"
+    href: https://web.archive.org/web/20220308045842/https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup
+  - name: People and Blogs
+    label: P&B Jim Nielsen
+    href: https://manuelmoreale.com/pb-jim-nielsen
+  - name: ShopTalk Show
+    label: "#605: Subversive URLs, Blogging + AI, and Design Engineers"
+    href: https://shoptalkshow.com/605/
+activeSideProjects:
+  - name: "<a href=https://blog.jim-nielsen.com>My Blog</a>"
+    content: Personal opinions on all things web related.
+    date: 2012–Now
+  - name: "<a href=https://notes.jim-nielsen.com>My Notes</a>"
+    content:
+      Personal notes on other people’s writing plus <a href=https://blog.jim-nielsen.com/2023/notes-dot-jim-nielsen-dot-com/>my
+      2¢</a>.
+    date: 2019–Now
+  - name: "<a href=https://iosicongallery.com>Icon Galleries</a>"
+    content:
+      Personal collection of beautiful icons for <a href=https://www.iosicongallery.com>iOS</a>,
+      <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a>
+      — designed, developed, and curated by me.
+    date: 2010–Now
+  - name: "<a href=https://omgimg.jim-nielsen.com>o(m)g:image</a>"
+    content:
+      A fun side project where you try to guess an article’s title from its social
+      share image.
+    date: "2024"
+  - name: "<a href=https://instagram.com/flyingjpies>Flying J Pies</a>"
+    content:
+      "Making pies and <a href=https://blog.jim-nielsen.com/2022/flying-j-pies/>documenting
+      the process</a>: pic or it didn’t happen."
+    date: 2017–Now
+archivedSideProjects:
+  - name: "<a href=https://www.appiconbook.com>App Icon Books</a>"
+    content:
+      Crowdfunded books celebrating the history and art of app icon design for
+      <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>iOS</a>
+      & <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>macOS</a>
+      (I helped <a href=https://blog.jim-nielsen.com/tags/#iconGalleriesBook>design</a>
+      and <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>
+      them).
+    writeups: https://blog.jim-nielsen.com/tags/#iconGalleriesBook
+    date: 2018-2022
+  - name: "<a href=https://github.com/jimniels/html>html</a>"
+    content:
+      Small, zero-dep JS library for doing JSX-like syntax with tagged template
+      literals.
+    writeups: https://blog.jim-nielsen.com/2019/jsx-like-syntax-for-tagged-template-literals/
+    date: "2022"
+  - name: "<a href=https://www.canistilluse.com>Can I Still Use?</a>"
+    content:
+      A satirical website illustrating the problems of normalizing habitul breakage
+      on the web.
+    writeups: https://blog.jim-nielsen.com/2021/canistilluse.com
+    date: "2021"
+  - name: "<a href=https://readlists.jim-nielsen.com>Readlists</a>"
+    content:
+      Mixtapes for reading. Collect info across the web into an ebook or feed
+      for reading on your favorite device.
+    writeups: https://blog.jim-nielsen.com/2021/reintroducing-readlists/
+    date: "2021"
+  - name: "<a href=https://netlibox.netlify.app>Netlibox</a>"
+    content:
+      An experiment in publishing from Dropbox to Netlify. Published on <a href=https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/>Netlify’s
+      blog</a>.
+    date: "2018"
+  - name: "<a href=https://gimmiedaticon.jim-nielsen.com>Gimmie Dat iCon</a>"
+    content:
+      A tool to fetch full-sized icon artwork from the App Store. Published as
+      <a href=https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866>a
+      tutorial for Web Design Tuts+</a>.
+    date: "2015"
+  - name: "<a href=https://logo-integrity.jim-nielsen.com>Logo Integrity</a>"
+    content:
+      How far out of focus can an logo be yet remain recognizeable? <a href=https://blog.jim-nielsen.com/2014/logo-integrity/>My
+      experiment</a> to find out.
+    date: "2014"
+  - name: "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>"
+    content:
+      A color reference for your favorite sports teams (<a href=https://blog.jim-nielsen.com/2015/team-colors-2-0/>made
+      during a hackathon</a>).
+    date: "2013"
+  - name: "<a href=https://sassme.jim-nielsen.com>SassMe</a>"
+    content:
+      A tool to visualize Sass color functions without compiling (initially <a
+      href=https://blog.jim-nielsen.com/2016/sassme-v2/>made during a hackathon</a>)
+    date: "2012"
+peopleSideProjects:
+  - name: Brian Lovin
+    href: https://twitter.com/user/status/1365042604132368385
+    project: Icon Galleries
+    quote: Love these [sites] Nicely done [Jim]
+  - name: Val Head
+    href: https://twitter.com/vlh/status/361846594364112896
+    project: SassMe
+    quote: Super helpful tool for visualizing Sass colour functions.
+  - name: Sarah Drasner
+    href: https://twitter.com/sarah_edo/status/488822972224765952
+    project: SassMe
+    quote: my new favorite toy.
+  - name: Jeremy Keith
+    href: https://adactio.com/links/18383
+    project: canistilluse.com
+    quote:
+      It’s weirdly gratifying to see a hastily-written sarcastic quip tuned into
+      something real.
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
+    project: The iOS App Icon Book
+    quote: Take my money — I can’t wait to devour this book. It looks so good.
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
+    project: The macOS App Icon Book
+    quote: A sibling volume dedicated to Mac app icons? Hell yes.
+peopleSideProjects2:
+  - name: Jason Snell
+    href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/
+    project: App Icon Books
+    quote:
+      A gorgeous art book/coffee table book that preserves the history of iOS app
+      icon art.
+  - name: John Voorhees
+    href: https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/
+    project: App Icon Books
+    quote: My expectations were high, and I’m happy to report that it doesn’t disappoint.
+employment:
+  - title: Founding Engineer
+    company: Quadratic
+    href: https://blog.jim-nielsen.com/tags#quadratic
+    content:
+      Design, code, and <a href=https://www.quadratichq.com/blog/2023-05-15-coordinate-system-for-infinite-spreadsheet>writing</a>
+      for a startup building a next generation spreadsheet powered by code.
+    meta: 2023–Now · Remote
+  - title: Director of Design
+    company: Remix
+    href: https://blog.jim-nielsen.com/tags#remix
+    content:
+      Design, code, and <a href=https://remix.run/blog/remix-data-flow>writing</a>
+      for a web application framework startup. Acquired by Shopify.
+    meta: 2022 · Remote
+  - title: Director of Design
+    company: SageSure
+    href: https://blog.jim-nielsen.com/tags#sagesure
+    content:
+      Design, code, <a href=https://tech.sagesure.com/blog/2021-11-30-design-systems-and-trade-offs/>writing</a>,
+      and team leadership at an insurance company with 10x growth during my tenure.
+    meta: 2016–2022 · Remote
+  - title: UI Engineer
+    company: Timshel
+    href: https://blog.jim-nielsen.com/tags#timshel
+    content:
+      Design and code for a startup building a platform to empower nonprofits,
+      brands, and other social impact orgs.
+    meta: 2016 · Remote
+  - title: Design Engineer
+    company: Postlight
+    href: https://blog.jim-nielsen.com/tags#postlight
+    content:
+      Design and code as a contractor building software tools for clients like
+      Time Inc.
+    meta: 2016 · Remote
+  - title: Lead Designer
+    company: Kindling
+    href: https://blog.jim-nielsen.com/tags#kindling
+    content:
+      Design and code for a startup building social innovation software. Acquired
+      2016.
+    meta: 2012–2016 · NYC
+  - title: Web Designer
+    company: Arc90
+    href: https://blog.jim-nielsen.com/tags#arc90
+    content: Design and code for a digital agency and its clients.
+    meta: 2012 · NYC
+_employement:
+  - title: Multimedia Designer
+    company: Utah Tech University
+    href: https://utahtech.edu
+    content: Web design and code, print, and video for the Department of Student Affairs.
+    meta: 2011 · UT
+  - title: "[Other]"
+    content:
+      Web design for people off Cragislist, retails sales at a sporting goods
+      store, lifeguard for the municipal pool, newspaper delivery for the local paper,
+      and other pre-college jobs.
+    meta: 2002—2012
