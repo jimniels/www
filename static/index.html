@@ -8,7 +8,10 @@
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script type="module" src="./jim-navbar.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jim-nielsen.com/shared/jim-site-switcher.js"
+    ></script>
 
     <!-- Custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -109,13 +112,14 @@
       }
 
       body {
-        margin: 0 var(--spacer-16) 0 var(--spacer-32);
+        margin: 0 var(--spacer-16);
         font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui,
           -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
           "Apple Color Emoji", "Segoe UI Emoji";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-x: hidden;
+        padding-bottom: 20vh;
       }
 
       /*
@@ -209,12 +213,17 @@
 
       header,
       section {
-        margin: var(--spacer-128) 0 var(--spacer-128);
+        margin: var(--spacer-128) auto var(--spacer-128);
       }
-      @media (min-width: 1000px) {
-        body {
-          padding-left: var(--spacer-64);
-        }
+
+      header {
+        margin-top: var(--spacer-24);
+      }
+
+      header img {
+        margin-bottom: var(--spacer-16);
+        max-width: 100%;
+        height: auto;
       }
 
       header h1 {
@@ -264,6 +273,7 @@
         z-index: 1;
         margin-top: var(--spacer-128);
         margin-bottom: var(--spacer-16);
+        text-align: center;
       }
 
       .contact {
@@ -366,8 +376,14 @@
     </style>
   </head>
   <body>
-    <jim-navbar></jim-navbar>
+    <jim-site-switcher subdomain="www"></jim-site-switcher>
     <header>
+      <img
+        src="/jimniels.jpg"
+        alt="Photograph of Jim Nielsen"
+        width="640"
+        height="380"
+      />
       <h1 style="font-weight: 700; color: var(--color-text)">Jim Nielsen</h1>
       <p>
         <i>Designer. Engineer. Writer.</i>
