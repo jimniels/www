@@ -95,6 +95,7 @@
       <ul class="contact">
         ${Tree.map(_.contact, (c) => `
         <li class="i-${c.id}">
+          ${Tree.text(svgs/icon-(`${c.id}`).svg)}
           <a href="${c.href}">${c.label}</a>
         </li>
         `)}
