@@ -8,7 +8,10 @@
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script type="module" src="./jim-navbar.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jim-nielsen.com/shared/jim-site-switcher.js"
+    ></script>
 
     <!-- Custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,12 +73,19 @@
     />
 
     <!-- Inline the CSS -->
-    <!-- prettier-ignore -->
-    <style>${<styles.css>}</style>
+    <style>
+      ${<styles.css>}
+    </style>
   </head>
   <body>
-    <jim-navbar></jim-navbar>
+    <jim-site-switcher subdomain="www"></jim-site-switcher>
     <header>
+      <img
+        src="/jimniels.jpg"
+        alt="Photograph of Jim Nielsen"
+        width="640"
+        height="380"
+      />
       <h1 style="font-weight: 700; color: var(--color-text)">Jim Nielsen</h1>
       <p>
         <i>Designer. Engineer. Writer.</i>

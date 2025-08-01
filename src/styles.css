@@ -36,35 +36,15 @@ html {
 }
 
 body {
-  margin: 0 var(--spacer-16) 0 var(--spacer-32);
+  margin: 0 var(--spacer-16);
   font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  padding-bottom: 20vh;
 }
-
-/*
-      body::before {
-        content: "";
-        background: url(/logo-black.png) no-repeat 0 0;
-        background-size: contain;
-        width: 100%;
-        max-width: 315px;
-        height: 153px;
-        opacity: 0.5;
-        position: absolute;
-        top: var(--spacer-48);
-        right: -60px;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body::before {
-          background-image: url(/logo-white.png);
-        }
-      }
-      */
 
 h1,
 h2,
@@ -79,13 +59,6 @@ h5 {
 p {
   margin: 0 0 var(--spacer-24) 0;
 }
-
-/* h2 + p {
-        margin-bottom: 0;
-        font-size: 0.875rem;
-        line-height: 1.625;
-        color: var(--color-text-mutedest);
-      } */
 
 a {
   color: inherit;
@@ -136,16 +109,27 @@ section#passion-projects summary {
 
 header,
 section {
-  margin: var(--spacer-128) 0 var(--spacer-128);
+  margin: var(--spacer-128) auto var(--spacer-128);
 }
-@media (min-width: 1000px) {
-  body {
-    padding-left: var(--spacer-64);
-  }
+
+header {
+  margin-top: var(--spacer-24);
+}
+
+header img {
+  margin-bottom: var(--spacer-16);
+  max-width: 100%;
+  height: auto;
 }
 
 header h1 {
   font-size: 1.125rem;
+}
+
+header img {
+  margin-bottom: var(--spacer-16);
+  max-width: 100%;
+  height: auto;
 }
 
 header,
