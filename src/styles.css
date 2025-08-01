@@ -175,6 +175,7 @@ footer {
   z-index: 1;
   margin-top: var(--spacer-128);
   margin-bottom: var(--spacer-16);
+  text-align: center;
 }
 
 .contact {
