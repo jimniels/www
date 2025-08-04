@@ -311,11 +311,11 @@ interviews:
     href: https://shoptalkshow.com/605/
 activeSideProjects:
   - name: "<a href=https://blog.jim-nielsen.com>My Blog</a>"
-    content: Personal opinions on all things web related.
+    content: Personal opinions with a shelf life.
     date: 2012–Now
   - name: "<a href=https://notes.jim-nielsen.com>My Notes</a>"
     content:
-      Personal notes on other people’s writing plus <a href=https://blog.jim-nielsen.com/2023/notes-dot-jim-nielsen-dot-com/>my
+      Notes on other people’s writing plus <a href=https://blog.jim-nielsen.com/2023/notes-dot-jim-nielsen-dot-com/>my
       2¢</a>.
     date: 2019–Now
   - name: "<a href=https://iosicongallery.com>Icon Galleries</a>"
@@ -412,10 +412,10 @@ peopleSideProjects:
     href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
     project: The iOS App Icon Book
     quote: Take my money — I can’t wait to devour this book. It looks so good.
-  - name: John Gruber
-    href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
-    project: The macOS App Icon Book
-    quote: A sibling volume dedicated to Mac app icons? Hell yes.
+  # - name: John Gruber
+  #   href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
+  #   project: The macOS App Icon Book
+  #   quote: A sibling volume dedicated to Mac app icons? Hell yes.
 peopleSideProjects2:
   - name: Jason Snell
     href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/

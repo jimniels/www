@@ -79,6 +79,8 @@
   </head>
   <body>
     <jim-site-switcher subdomain="www"></jim-site-switcher>
+
+    <!-- Header ============================================================ -->
     <header>
       <img
         src="/jimniels.jpg"
@@ -114,8 +116,9 @@
       </details>
     </header>-->
 
+    <!-- Personal Projects ================================================= -->
     <section>
-      <h1>Recent Personal Projects</h1>
+      <h1>Personal Projects</h1>
 
       <ul class="list">
         ${Tree.map(_.activeSideProjects, (p) => `
@@ -139,8 +142,31 @@
         </li>
         `)}
       </ul>
+
+      <details>
+        <summary>More personal projects…</summary>
+        <ul class="list">
+          ${Tree.map(_.archivedSideProjects, (p) => `
+          <li>
+            <div>${p.name}</div>
+            <div>
+              ${p.content}
+              <span
+                style="
+                  display: block;
+                  font-size: 0.875rem;
+                  color: var(--color-text-mutedest);
+                "
+                >${p.date}</span
+              >
+            </div>
+          </li>
+          `)}
+        </ul>
+      </details>
     </section>
 
+    <!-- Social Validation ================================================= -->
     <section id="social-validation">
       <h1>Social Validation</h1>
       <p>People I’ve worked with are saying:</p>
@@ -209,48 +235,7 @@
       </ul>
     </section>
 
-    <section id="side-projects">
-      <h1>Archived Personal Projects</h1>
-
-      <style>
-        .illustration {
-          width: 210px;
-          height: 119px;
-          border: 1px solid var(--color-text);
-          background: var(--color-bg);
-          margin-bottom: var(--spacer-16);
-        }
-        .projects {
-          display: grid;
-          gap: var(--spacer-24);
-        }
-        .projects img {
-          margin-left: -10px;
-          margin-bottom: var(--spacer-8);
-        }
-      </style>
-
-      <ul class="list">
-        ${Tree.map(_.archivedSideProjects, (p) => `
-        <li>
-          <div>${p.name}</div>
-          <div>
-            ${p.content}
-            <span
-              style="
-                display: block;
-                font-size: 0.875rem;
-                color: var(--color-text-mutedest);
-              "
-              >${p.date}</span
-            >
-          </div>
-        </li>
-        `)}
-      </ul>
-    </section>
-
-    <!-- Employment \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/ -->
+    <!-- Employment ======================================================== -->
     <section id="employment">
       <h1>Employment</h1>
 
