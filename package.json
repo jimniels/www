@@ -4,17 +4,12 @@
   "description": "Personal web site",
   "main": "",
   "type": "module",
-  "engine": {
-    "node": ">=10.10.0"
-  },
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "parse5": "^7.1.2",
-    "mustache": "^4.2.0"
+    "@weborigami/origami": "0.3.4-jse.6"
   },
   "scripts": {
-    "build": "node scripts/build.js",
-    "start": "netlify dev static"
+    "build": "NODE_ENV=production ori copy src/site.jse, clear files:build",
+    "start": "ori serve watch src, =debug src/site.jse"
   },
   "repository": {
     "type": "git",
@@ -25,6 +20,5 @@
   "bugs": {
     "url": "https://github.com/jimniels/jimniels.github.io/issues"
   },
-  "homepage": "https://github.com/jimniels/jimniels.github.io#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/jimniels/jimniels.github.io#readme"
 }
