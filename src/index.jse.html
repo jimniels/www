@@ -88,42 +88,34 @@
       />
       <h1 style="font-weight: 700; color: var(--color-text)">Jim Nielsen</h1>
       <p>
-        <i>Designer. Engineer. Writer.</i>
+        <i>Designer. Coder. Writer.</i>
         <br />
-        20+ years at the intersection of design & code on the web.
+        Generalist with 20+ years of experience building on the web.
       </p>
       <ul class="contact">
         ${Tree.map(_.contact, (c) => `
         <li class="i-${c.id}">
-          ${Tree.text(svgs/icon-(`${c.id}`).svg)}
+          ${svgs[`icon-${c.id}.svg`]}
           <a href="${c.href}">${c.label}</a>
         </li>
-        `)}
+        ` )}
       </ul>
-
       <!--
-      <p style="margin-top: var(--spacer-48)">Reach out anytime:</p>
-
       <details style="margin-top: var(--spacer-16)">
         <summary style="max-width: 100px">Other…</summary>
         <p>Too many socials—in descending order of how often I look at them:</p>
         <ul class="contact">
-          {{#otherContact}}
-          <li class="i-{{id}}">
-            <a href="{{href}}">{{label}}</a>
+          ${Tree.map(_.otherContact, (c) => `
+          <li class="i-${c.id}">
+            <a href="${c.href}">${c.label}</a>
           </li>
-          {{/otherContact}}
+          `)}
         </ul>
-      </details>-->
-    </header>
+      </details>
+    </header>-->
 
     <section>
-      <h1>Active Personal Projects</h1>
-      <p>
-        <span class="highlight"
-          >If you only look at one thing of mine, make sure it’s these:</span
-        >
-      </p>
+      <h1>Recent Personal Projects</h1>
 
       <ul class="list">
         ${Tree.map(_.activeSideProjects, (p) => `

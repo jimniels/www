@@ -200,6 +200,9 @@ peopleBlog:
   - name: Chris Coyier
     href: https://css-tricks.com/system-things/
     quote: Jim was blowin’ minds the other day when he blogged…
+  - name: Simon Willison
+    href: https://bsky.app/profile/simonwillison.net/post/3ljyd7p7cuk2z
+    quote: "[Jim] has a really cool example here…"
   - name: Dave Rupert
     href: https://daverupert.com/2019/09/weeknotes-9/
     quote:
@@ -321,6 +324,16 @@ activeSideProjects:
       <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a>
       — designed, developed, and curated by me.
     date: 2010–Now
+  - name: "<a href=https://www.appiconbook.com>App Icon Books</a>"
+    content:
+      Crowdfunded books celebrating the history and art of app icon design for
+      <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>iOS</a>
+      & <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>macOS</a>
+      (I helped <a href=https://blog.jim-nielsen.com/tags/#iconGalleriesBook>design</a>
+      and <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>
+      them).
+    writeups: https://blog.jim-nielsen.com/tags/#iconGalleriesBook
+    date: 2018-2022
   - name: "<a href=https://omgimg.jim-nielsen.com>o(m)g:image</a>"
     content:
       A fun side project where you try to guess an article’s title from its social
@@ -332,16 +345,6 @@ activeSideProjects:
       the process</a>: pic or it didn’t happen."
     date: 2017–Now
 archivedSideProjects:
-  - name: "<a href=https://www.appiconbook.com>App Icon Books</a>"
-    content:
-      Crowdfunded books celebrating the history and art of app icon design for
-      <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>iOS</a>
-      & <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>macOS</a>
-      (I helped <a href=https://blog.jim-nielsen.com/tags/#iconGalleriesBook>design</a>
-      and <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>
-      them).
-    writeups: https://blog.jim-nielsen.com/tags/#iconGalleriesBook
-    date: 2018-2022
   - name: "<a href=https://github.com/jimniels/html>html</a>"
     content:
       Small, zero-dep JS library for doing JSX-like syntax with tagged template
