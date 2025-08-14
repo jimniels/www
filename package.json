@@ -5,7 +5,7 @@
   "main": "",
   "type": "module",
   "devDependencies": {
-    "@weborigami/origami": "0.3.4-jse.6"
+    "@weborigami/origami": "0.4.1"
   },
   "scripts": {
     "build": "NODE_ENV=production ori copy src/site.jse, clear files:build",
