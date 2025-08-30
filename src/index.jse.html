@@ -8,11 +8,6 @@
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script
-      type="module"
-      src="https://cdn.jim-nielsen.com/shared/jim-site-switcher.js"
-    ></script>
-
     <!-- Custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -78,12 +73,32 @@
     </style>
   </head>
   <body>
-    <script type="module" src="https://cdn.jim-nielsen.com/shared/jim-site-switcher-2.js"></script>
-    <div class="wrapper" style="position: relative; padding: 2.5rem 0; display: flex; align-items: center; gap: 1rem; justify-content: space-between;">
-      <a href="/"><img src="/favicon.ico" alt="Jim Nielsen’s Blog" width="36" height="36" style="border-radius: 50%;" /></a>
+    <script
+      type="module"
+      src="https://cdn.jim-nielsen.com/shared/jim-site-switcher-2.js"
+    ></script>
+    <div
+      class="wrapper"
+      style="
+        position: relative;
+        padding: 2.5rem 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+        margin: 0 auto;
+      "
+    >
+      <a href="/" style="border: none"
+        ><img
+          src="/favicon.ico"
+          alt="Jim Nielsen’s Blog"
+          width="36"
+          height="36"
+          style="border-radius: 50%"
+      /></a>
       <jim-site-switcher subdomain="blog"></jim-site-switcher>
     </div>
-    
 
     <!-- Header ============================================================ -->
     <header>
@@ -118,8 +133,8 @@
           </li>
           `)}
         </ul>
-      </details>
-    </header>-->
+      </details>-->
+    </header>
 
     <!-- Personal Projects ================================================= -->
     <section>
