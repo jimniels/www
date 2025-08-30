@@ -133,7 +133,8 @@ header img {
 }
 
 header,
-section {
+section,
+.wrapper {
   position: relative;
   max-width: 40rem;
   clear: both;
