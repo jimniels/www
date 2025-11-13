@@ -188,16 +188,15 @@
     </div>
 
     <div class="sect">
-      <h2 class="list-heading">Linked from industry conversations</h2>
+      <h2 class="list-heading">Mentioned in industry publications</h2>
       <ul class="list list--has-dividers">
-      
         ${Tree.map(_.pubs, (p) => `
         <li>
           <a
             href="TODO"
             class="list-item list-item--link list-item--gap"
           >
-            <img src="${p.origin}/favicon.ico" alt="Favicon for ${p.name}" width="24" height="24">
+            <img src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48" alt="Favicon for ${p.name}" width="24" height="24">
             <span class="list-item__primary">${p.name}</span>
             <span class="list-item__secondary ml-auto"
               >${p.refs.length} links</time
