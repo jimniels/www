@@ -116,6 +116,52 @@
       </details>-->
     </header>
 
+    <div class="sect">
+      <h2 class="list-heading">I’m Blogging <a href="">R</a></h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map(Tree.take(<https://blog.jim-nielsen.com/feed.json>/items, 3),
+        (post) => `
+        <li>
+          <a
+            href="${post.url}"
+            class="list-item list-item--between list-item--link"
+          >
+            <span class="list-item__primary">${post.title}</span>
+            <time class="list-item__secondary" datetime="${post.date_published}"
+              >${date.js(post.date_published)}</time
+            >
+          </a>
+        </li>
+        `)}
+      </ul>
+      <p class="list-footer">
+        10+ years of writing opinions with a shelf life. Loved by many.
+      </p>
+    </div>
+
+    <div class="sect">
+      <h2 class="list-heading">I’m Microblogging <a href="">R</a></h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map(Tree.take(<https://notes.jim-nielsen.com/feed.json>/items,
+        3), (post) => `
+        <li>
+          <a
+            href="${post.url}"
+            class="list-item list-item--between list-item--link"
+          >
+            <span class="list-item__primary">${post.title}</span>
+            <span class="list-item__secondary"
+              >${post._external_url_domain}</time
+            >
+          </a>
+        </li>
+        `)}
+      </ul>
+      <p class="list-footer">
+        10+ years of writing opinions with a shelf life. Loved by many.
+      </p>
+    </div>
+
     <!-- Personal Projects ================================================= -->
     <section>
       <h1>Personal Projects</h1>
