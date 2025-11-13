@@ -1,6 +1,7 @@
 ---
 pubs:
   - name: CSS Tricks
+    origin: https://css-tricks.com
     refs:
       - - "Newsletter "
       - - "#202"
@@ -40,6 +41,7 @@ pubs:
         - https://www.google.com/search?q=jim+nielsen&as_sitesearch=css-tricks.com
       - - "."
   - name: Smashing Magazine
+    origin: https://smashingmagazine.com
     refs:
       - - "Newsletter "
       - - "#443"
@@ -52,12 +54,14 @@ pubs:
         - https://google.com/search?q=jim+nielsen&as_sitesearch=smashingmagazine.com
       - - "."
   - name: JavaScript Weekly
+    origin: https://javascriptweekly.com
     refs:
       - - "Issue "
       - - "#573"
         - https://javascriptweekly.com/issues/573
       - - "."
   - name: Frontend Focus
+    origin: https://frontendfoc.us
     refs:
       - - "Issues "
       - - "#598"
@@ -86,12 +90,14 @@ pubs:
         - https://bytes.dev/archives/246
       - - "."
   - name: Sidebar.io
+    origin: https://sidebar.io
     refs:
       - - "Linked in "
       - - over 20 daily newsletters
         - https://sidebar.io/domain/blog.jim-nielsen.com
       - - "."
   - name: Changelog
+    origin: https://changelog.com
     refs:
       - - "News from "
       - - Feb. 2023
@@ -104,6 +110,7 @@ pubs:
         - https://changelog.com/search?q=jim+nielsen
       - - "."
   - name: Frontend Masters
+    origin: https://frontendmasters.com
     refs:
       - - Linked in
       - - " Dec. 2023"
@@ -116,6 +123,7 @@ pubs:
         - https://frontendmasters.com/blog?s=jim-nielsen
       - - "."
   - name: Hacker News
+    origin: https://news.ycombinator.com
     content: ""
     refs:
       - - "Triggered "
@@ -132,10 +140,12 @@ pubs:
         - https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story
       - - "."
   - name: Lobsters
+    origin: https://lobste.rs
     refs:
       - - 19+ stories across 9+ submitters
         - https://lobste.rs/domains/blog.jim-nielsen.com
   - name: HeyDesigner
+    origin: https://heydesigner.com
     refs:
       - - "Issues "
       - - "#82"

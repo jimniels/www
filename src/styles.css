@@ -54,6 +54,8 @@ body {
 
   max-width: 36rem;
   margin: 0 auto;
+  padding-left: var(--spacer-16);
+  padding-right: var(--spacer-16);
 }
 
 h1,
@@ -257,6 +259,18 @@ footer {
   align-items: center;
   padding: var(--spacer-16);
 }
+.list-item--avatar {
+  flex-direction: row;
+  gap: var(--spacer-16);
+}
+.list-item-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item--link {
+  padding-right: var(--spacer-48);
+}
 .list-item--link:hover {
   background-color: #f0f0f0;
 }
@@ -275,4 +289,13 @@ footer {
   font-size: var(--font-size-base);
   color: var(--color-text-muted);
   flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.list-item--gap {
+  gap: var(--spacer-16);
 }
