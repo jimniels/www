@@ -234,6 +234,12 @@ footer {
 }
 .list-heading a {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.list-heading svg {
+  width: 24px;
+  height: 24px;
 }
 
 .list-footer {
@@ -268,9 +274,6 @@ footer {
   flex-direction: column;
 }
 
-.list-item--link {
-  padding-right: var(--spacer-48);
-}
 .list-item--link:hover {
   background-color: #f0f0f0;
 }
@@ -280,6 +283,10 @@ footer {
 }
 .list-item--between .list-item__secondary {
   text-align: right;
+  /* Truncate text */
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .list-item__primary {
@@ -298,4 +305,8 @@ footer {
 
 .list-item--gap {
   gap: var(--spacer-16);
+}
+
+.list-item img[src*="google.com"] {
+  mix-blend-mode: multiply;
 }

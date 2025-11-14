@@ -307,19 +307,29 @@ otherContact:
 interviews:
   - name: JS Party
     label: "#288: Refined Thinking"
-    href: https://jsparty.fm/288
+    labelShort: "Ep. 288"
+    href: https://changelog.com/jsparty/288
+    origin: changelog.com
   - name: ShopTalk Show
     label: "#504: Blogging, App Icons, Color, and Images"
+    labelShort: "Ep. 504"
     href: https://shoptalkshow.com/504/
+    origin: shoptalkshow.com
   - name: Postlight Podcast
     label: "#314: (Icon)ic Design"
+    labelShort: "Ep. 314"
     href: https://web.archive.org/web/20220308045842/https://postlight.com/podcast/iconic-design-with-jim-nielsen-and-michael-flarup
+    origin: postlight.com
   - name: People and Blogs
     label: P&B Jim Nielsen
+    labelShort: "Ed. 8"
     href: https://manuelmoreale.com/pb-jim-nielsen
+    origin: manuelmoreale.com
   - name: ShopTalk Show
     label: "#605: Subversive URLs, Blogging + AI, and Design Engineers"
+    labelShort: "Ep. 605"
     href: https://shoptalkshow.com/605/
+    origin: shoptalkshow.com
 activeSideProjects:
   - name: "<a href=https://blog.jim-nielsen.com>My Blog</a>"
     content: Personal opinions with a shelf life.
