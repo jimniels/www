@@ -2,7 +2,7 @@
 pubs2:
   - name: CSS Tricks
     origin: css-tricks.com
-    quote: "a very interesting post…"
+    quote: "[Jim has] a very interesting post…"
     href: https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
   - name: Smashing Magazine
     origin: smashingmagazine.com
@@ -20,16 +20,6 @@ pubs2:
     origin: javascriptweekly.com
     quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
     href: https://javascriptweekly.com/issues/573
-hackernews:
-  - name: Sanding UI
-    meta: 1,300 points, 400 comments
-    href: https://news.ycombinator.com/item?id=41612154
-  - name: We’re All Just Temporarily Abled
-    meta: 919 points, 513 comments
-    href: https://news.ycombinator.com/item?id=37205731
-  - name: You Are What You Read, Even If You Don’t Always Remember It
-    meta: 887 points, 444 comments
-    href: asdf
 pubs:
   - name: CSS Tricks
     origin: css-tricks.com
