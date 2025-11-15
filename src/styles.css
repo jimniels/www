@@ -5,6 +5,18 @@
   --color-text-mutedest: rgb(0 0 0 / 35%);
   --color-bg: #fff;
 
+  --color-red: rgb(255, 56, 60);
+  --color-orange: rgb(255, 141, 40);
+  --color-yellow: rgb(255, 204, 0);
+  --color-green: rgb(62, 199, 89);
+  --color-mint: rgb(0, 200, 179);
+  --color-teal: rgb(0, 193, 205);
+  --color-cyan: rgb(0, 192, 232);
+  --color-blue: rgb(10, 126, 230);
+  --color-indigo: rgb(97, 86, 245);
+  --color-purple: rgb(203, 80, 224);
+  --color-pink: rgb(255, 86, 145);
+
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
@@ -17,6 +29,7 @@
   --spacer-16: 1rem;
   --spacer-24: 1.5rem;
   --spacer-32: 2rem;
+  --spacer-40: 2.5rem;
   --spacer-48: 3rem;
   --spacer-64: 4rem;
   --spacer-72: 4.5rem;
@@ -36,7 +49,7 @@
 html {
   background: var(--color-bg);
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.3;
   color-scheme: light dark;
   color: var(--color-text);
   scroll-behavior: smooth;
@@ -77,11 +90,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-text) !important;
-  border-bottom-color: var(--color-text);
-}
-
 .unmuted {
   color: var(--color-text);
 }
@@ -107,43 +115,16 @@ h2 {
   /* font-weight: 700; */
 }
 
-summary {
-  margin-bottom: var(--spacer-24);
-  color: var(--color-text-mutedest);
-}
-
 section#passion-projects summary {
   margin-left: var(--spacer-24);
 }
 
 /* Section =============================================================*/
 
-header,
 section {
   margin: var(--spacer-128) auto var(--spacer-128);
 }
 
-header {
-  margin-top: 0;
-}
-
-header img {
-  margin-bottom: var(--spacer-16);
-  max-width: 100%;
-  height: auto;
-}
-
-header h1 {
-  font-size: 1.125rem;
-}
-
-header img {
-  margin-bottom: var(--spacer-16);
-  max-width: 100%;
-  height: auto;
-}
-
-header,
 section {
   position: relative;
   max-width: 40rem;
@@ -189,31 +170,6 @@ footer {
   text-align: center;
 }
 
-.contact {
-  overflow: visible;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-top: calc(var(--spacer-16) * -1);
-}
-.contact li {
-  color: var(--color-text);
-  display: flex;
-  gap: 6px;
-  align-items: center;
-  position: relative;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: var(--spacer-24);
-  margin-bottom: var(--spacer-12);
-  flex-wrap: wrap;
-}
-.contact li svg {
-  width: 21px;
-  height: 21px;
-}
-
 .highlight {
   background-color: hsl(60deg 100% 50% / 20%);
 }
@@ -247,6 +203,13 @@ footer {
   color: var(--color-text-muted);
   padding: 0 var(--spacer-16);
 }
+.list-footer a {
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
 
 .list {
   /* padding: var(--spacer-16); */
@@ -272,6 +235,41 @@ footer {
 .list-item-stack {
   display: flex;
   flex-direction: column;
+}
+.list-item--toggle {
+  user-select: none;
+}
+.list-item--toggle,
+.list-item--link {
+  padding-right: var(--spacer-40);
+  position: relative;
+}
+.list-item--toggle::after,
+.list-item--link::after {
+  content: url("/heroicon-chevron-down.svg");
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+  position: absolute;
+  right: var(--spacer-16);
+  top: 50%;
+  margin-top: -8px;
+  transform-origin: 50%;
+}
+.list-item--link::after {
+  transform: rotate(-90deg);
+}
+
+:open .list-item--toggle::after {
+  transform: rotate(180deg);
+}
+.list-item__toggle-content {
+  padding: 0 var(--spacer-16) var(--spacer-16);
+  color: var(--color-text-muted);
+}
+
+.list-item__toggle-content a {
+  text-decoration: underline;
 }
 
 .list-item--link:hover {
@@ -309,4 +307,85 @@ footer {
 
 .list-item img[src*="google.com"] {
   mix-blend-mode: multiply;
+}
+
+.list-item--quote .list-item__secondary {
+  text-indent: -0.33333em;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+#blog .list-heading {
+  color: var(--color-red);
+}
+#notes .list-heading {
+  color: var(--color-blue);
+}
+#people .list-heading {
+  color: var(--color-pink);
+}
+#pubs .list-heading {
+  color: var(--color-red);
+}
+#hackernews .list-heading {
+  color: var(--color-orange);
+}
+#interviews .list-heading {
+  color: var(--color-purple);
+}
+
+/* Header =================================================================== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: var(--spacer-96);
+  text-align: center;
+  gap: var(--spacer-16);
+}
+.header img {
+  height: auto;
+  width: calc(100% + var(--spacer-16) * 2);
+  margin: 0 calc(-1 * var(--spacer-16));
+}
+.header h2 {
+  font-size: var(--font-size-xl);
+  line-height: 1.2;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacer-16);
+  font-size: var(--font-size-lg);
+  margin: 0;
+  padding: 0;
+}
+.header__contact a:hover {
+  text-decoration: underline;
+}
+.header__contact a[href*="mastodon"] {
+  color: #563acc;
+}
+.header__contact a[href*="bsky"] {
+  color: #006aff;
+}
+.header__contact a[href*="linkedin"] {
+  color: #0077b5;
+}
+.header__contact a[href*="mailto"] {
+  color: var(--color-blue);
+}
+.header__contact a[href*="mailto"] span:nth-child(2) {
+  color: var(--color-red);
+}
+.header__contact a[href*="mailto"] span:nth-child(3) {
+  color: var(--color-green);
+}
+.header__contact a[href*="mailto"] span:nth-child(4) {
+  color: var(--color-orange);
 }

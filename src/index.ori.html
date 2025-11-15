@@ -81,26 +81,33 @@
     <jim-site-switcher subdomain="www"></jim-site-switcher>
 
     <!-- Header ============================================================ -->
-    <header>
+    <header class="header">
       <img
         src="/jimniels.jpg"
         alt="Photograph of Jim Nielsen"
-        width="640"
-        height="380"
+        width="580"
+        height="376"
       />
-      <h1 style="font-weight: 700; color: var(--color-text)">Jim Nielsen</h1>
-      <p>
-        <i>Designer. Coder. Writer. Nice guy.</i>
-        <br />
-        Generalist with 20+ years of experience building on the web.
-      </p>
-      <ul class="contact">
-        ${Tree.map(_.contact, (c) => `
-        <li class="i-${c.id}">
-          ${svgs[`icon-${c.id}.svg`]}
-          <a href="${c.href}">${c.label}</a>
+      <h1 hidden>Jim Nielsen</h1>
+      <h2>
+        Web designer, developer, & blogger. 20+ years at the intersection of art and engineering on the web.
+      </h2>
+      <ul class="header__contact">
+        <li>
+          <a href="https://mastodon.social/@jimniels">Mastodon</a>
         </li>
-        ` )}
+        <li>
+          <a href="https://bsky.app/profile/jim-nielsen.com">Bluesky</a>
+        </li>
+        <li>
+          <a href="mailto:jimniels@gmail.com">
+            <span>E</span><span>m</span><span>a</span><span>i</span><span>l</span>
+          </a>
+        </li>
+        <li>
+          <a href="/linkedin">LinkedIn</a>
+        </li>
+        
       </ul>
       <!--
       <details style="margin-top: var(--spacer-16)">
@@ -116,9 +123,9 @@
       </details>-->
     </header>
 
-    <div class="sect">
+    <div class="sect" id="blog">
       <h2 class="list-heading">
-        Latest blog posts
+        I’m blogging
         <a href="https://blog.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -144,9 +151,9 @@
       </p>
     </div>
 
-    <div class="sect">
+    <div class="sect" id="notes">
       <h2 class="list-heading">
-        Latest microblog posts
+        I’m microblogging
         <a href="https://notes.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -172,16 +179,16 @@
       </p>
     </div>
 
-    <div class="sect">
-      <h2 class="list-heading">Love from</h2>
+    <div class="sect" id="people">
+      <h2 class="list-heading">People are saying…</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.peopleBlog, (p) => `
         <li>
           <a
             href="${p.href}"
-            class="list-item list-item--avatar list-item--link"
+            class="list-item list-item--avatar list-item--link list-item--quote"
           >
-            <img src="https://avatar.iran.liara.run/public/37" alt="" width="40" height="40">
+            <img src="/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg" alt="" width="40" height="40" class="avatar">
             <span class="list-item-stack">
               <span class="list-item__primary">${p.name}</span>
               <span class="list-item__secondary"
@@ -194,28 +201,53 @@
       </ul>
     </div>
 
-    <div class="sect">
-      <h2 class="list-heading">Linked to by</h2>
+    <div class="sect" id="pubs">
+      <h2 class="list-heading">Publications are linking to me</h2>
       <ul class="list list--has-dividers">
-        ${Tree.map(_.pubs, (p) => `
+        ${Tree.map(_.pubs2, (p) => `
         <li>
           <a
-            href="TODO"
-            class="list-item list-item--link list-item--gap"
+            href="${p.href}"
+            class="list-item list-item--avatar list-item--link list-item--quote"
           >
-            <img src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48" alt="Favicon for ${p.name}" width="24" height="24">
-            <span class="list-item__primary">${p.name}</span>
-            <span class="list-item__secondary ml-auto"
-              >${p.refs.length} links</time
-            >
+            <img src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=64" alt="Favicon for ${p.name}" width="32" height="32">
+            <span class="list-item-stack">
+              <span class="list-item__primary">${p.name}</span>
+              <span class="list-item__secondary ml-auto"
+                >“${p.quote}”</time
+              >
+            </span>
           </a>
         </li>
         `)}
       </ul>
     </div>
 
-    <div class="sect">
-      <h2 class="list-heading">Podcasts / interviews</h2>
+    <div class="sect" id="hackernews">
+      <h2 class="list-heading">My writing’s being diss-cussed on HN</h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map(Tree.take(getHackerNewsPosts.js(), 5), (hit) => `
+        <li>
+          <a
+            href="https://news.ycombinator.com/item?id=${hit.story_id}"
+            class="list-item list-item--link list-item--gap"
+          >
+            <img src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32" alt="Favicon for ${p.name}" width="16" height="16">
+            <span class="list-item__primary">${hit.title}</span>
+            <span class="list-item__secondary ml-auto"
+              ><!-- ${hit.points} points -->${hit.num_comments} comments</time
+            >
+          </a>
+        </li>
+        `)}
+      </ul>
+      <p class="list-footer">
+        And <a href="https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story">many more</a>.
+      </p>
+    </div>
+
+    <div class="sect" id="interviews">
+      <h2 class="list-heading">I’m doing interviews</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.interviews, (p) => `
         <li>
@@ -229,6 +261,32 @@
               >${p.labelShort}</time
             >
           </a>
+        </li>
+        `)}
+      </ul>
+      <p class="list-footer">
+        I’m open to more invitations to talk about the web. <a href="mailto:jimniels@gmail.com">Reach out!</a>
+      </p>
+    </div>
+
+    
+
+    <div class="sect" id="employment">
+      <h2 class="list-heading">I’m working</h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map(_.employment, (job) => `
+        <li>
+          <details>
+            <summary class="list-item list-item--gap list-item--toggle">
+              <span class="list-item__primary">${job.title} @ ${job.company}</span>
+              <span class="list-item__secondary ml-auto"
+                >${job.meta}</time
+              >
+            </summary>
+            <div class="list-item__toggle-content">
+              ${job.content}
+            </div>
+          </details>
         </li>
         `)}
       </ul>
@@ -353,30 +411,6 @@
       </ul>
     </section>
 
-    <!-- Employment ======================================================== -->
-    <section id="employment">
-      <h1>Employment</h1>
-
-      <ul class="list">
-        ${Tree.map(_.employment, (p) => `
-        <li>
-          <div>${p.title}</div>
-          <div>
-            ${p.company ? `@ <a href="${p.href}">${p.company}</a>:` : ''}
-            ${p.content}
-            <span
-              style="
-                display: block;
-                font-size: 0.875rem;
-                color: var(--color-text-mutedest);
-              "
-              >${p.meta}</span
-            >
-          </div>
-        </li>
-        `)}
-      </ul>
-    </section>
 
     <footer>Thank you for visiting this personal website.</footer>
   </body>

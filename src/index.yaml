@@ -1,4 +1,35 @@
 ---
+pubs2:
+  - name: CSS Tricks
+    origin: css-tricks.com
+    quote: "a very interesting post…"
+    href: https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+  - name: Smashing Magazine
+    origin: smashingmagazine.com
+    quote: "[Jim explores] an interesting design pattern that completely rethinks how users input information…"
+    href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+  - name: Bytes
+    origin: bytes.dev
+    quote: "[Jim] wrote an insightful post about Data flow in Remix…"
+    href: https://bytes.dev/archives/107
+  - name: Frontend Masters
+    origin: frontendmasters.com
+    quote: "Jim Nielsen has a nice way of saying it…"
+    href: https://frontendmasters.com/blog/light-dom-only/
+  - name: JavaScript Weekly
+    origin: javascriptweekly.com
+    quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
+    href: https://javascriptweekly.com/issues/573
+hackernews:
+  - name: Sanding UI
+    meta: 1,300 points, 400 comments
+    href: https://news.ycombinator.com/item?id=41612154
+  - name: We’re All Just Temporarily Abled
+    meta: 919 points, 513 comments
+    href: https://news.ycombinator.com/item?id=37205731
+  - name: You Are What You Read, Even If You Don’t Always Remember It
+    meta: 887 points, 444 comments
+    href: asdf
 pubs:
   - name: CSS Tricks
     origin: css-tricks.com
@@ -227,16 +258,16 @@ peopleBlog:
   - name: Rich Harris
     href: https://twitter.com/Rich_Harris/status/1286330991229927426
     quote: "…a really good blog post by [Jim]"
-  - name: Stefan Judis
-    href: https://twitter.com/stefanjudis/status/1527648201989292033
-    quote:
-      If you’re not following Jim or are subscribed to his blog, you’re missing
-      out!
-  - name: Chris Ferdinandi
-    href: https://gomakethings.com/entropy-developer-experience-and-vanilla-js/
-    quote:
-      "[Jim] published a post...that hit on so many things I’ve experienced and
-      feel strongly about."
+  # - name: Stefan Judis
+  #   href: https://twitter.com/stefanjudis/status/1527648201989292033
+  #   quote:
+  #     If you’re not following Jim or are subscribed to his blog, you’re missing
+  #     out!
+  # - name: Chris Ferdinandi
+  #   href: https://gomakethings.com/entropy-developer-experience-and-vanilla-js/
+  #   quote:
+  #     "[Jim] published a post...that hit on so many things I’ve experienced and
+  #     feel strongly about."
 peopleAlt:
   - name: Brian Kardell
     href: https://twitter.com/briankardell/status/1372279388331474944?s=21
@@ -455,47 +486,47 @@ employment:
     content:
       Design, code, and <a href=https://www.quadratichq.com/blog/2023-05-15-coordinate-system-for-infinite-spreadsheet>writing</a>
       for a startup building a next generation spreadsheet powered by code.
-    meta: 2023–Now · Remote
+    meta: 2023–Now
   - title: Director of Design
     company: Remix
     href: https://blog.jim-nielsen.com/tags#remix
     content:
       Design, code, and <a href=https://remix.run/blog/remix-data-flow>writing</a>
       for a web application framework startup. Acquired by Shopify.
-    meta: 2022 · Remote
+    meta: 2022
   - title: Director of Design
     company: SageSure
     href: https://blog.jim-nielsen.com/tags#sagesure
     content:
       Design, code, <a href=https://tech.sagesure.com/blog/2021-11-30-design-systems-and-trade-offs/>writing</a>,
       and team leadership at an insurance company with 10x growth during my tenure.
-    meta: 2016–2022 · Remote
+    meta: 2016–2022
   - title: UI Engineer
     company: Timshel
     href: https://blog.jim-nielsen.com/tags#timshel
     content:
       Design and code for a startup building a platform to empower nonprofits,
       brands, and other social impact orgs.
-    meta: 2016 · Remote
+    meta: 2016
   - title: Design Engineer
     company: Postlight
     href: https://blog.jim-nielsen.com/tags#postlight
     content:
       Design and code as a contractor building software tools for clients like
       Time Inc.
-    meta: 2016 · Remote
+    meta: 2016
   - title: Lead Designer
     company: Kindling
     href: https://blog.jim-nielsen.com/tags#kindling
     content:
       Design and code for a startup building social innovation software. Acquired
       2016.
-    meta: 2012–2016 · NYC
+    meta: 2012–2016
   - title: Web Designer
     company: Arc90
     href: https://blog.jim-nielsen.com/tags#arc90
     content: Design and code for a digital agency and its clients.
-    meta: 2012 · NYC
+    meta: 2012
 _employement:
   - title: Multimedia Designer
     company: Utah Tech University
