@@ -125,7 +125,7 @@
 
     <div class="sect" id="blog">
       <h2 class="list-heading">
-        I’m blogging
+        My blog
         <a href="https://blog.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -147,13 +147,13 @@
         `)}
       </ul>
       <p class="list-footer">
-        10+ years of writing opinions with a shelf life. Loved by many.
+        10+ years writing about the web. <a href="#people">Loved by many</a>.
       </p>
     </div>
 
     <div class="sect" id="notes">
       <h2 class="list-heading">
-        I’m microblogging
+        My mircoblog
         <a href="https://notes.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -202,7 +202,7 @@
     </div>
 
     <div class="sect" id="pubs">
-      <h2 class="list-heading">Publications are linking to me</h2>
+      <h2 class="list-heading">Mentions in publications</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.pubs2, (p) => `
         <li>
@@ -224,7 +224,7 @@
     </div>
 
     <div class="sect" id="hackernews">
-      <h2 class="list-heading">My writing’s being diss-cussed on HN</h2>
+      <h2 class="list-heading">My writing on HN</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(Tree.take(getHackerNewsPosts.js(), 5), (hit) => `
         <li>
@@ -242,12 +242,12 @@
         `)}
       </ul>
       <p class="list-footer">
-        And <a href="https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story">many more</a>.
+        There’s more. I keep <a href="https://blog.jim-nielsen.com/posts/hacker-news/">a running list on my blog </a>.
       </p>
     </div>
 
     <div class="sect" id="interviews">
-      <h2 class="list-heading">I’m doing interviews</h2>
+      <h2 class="list-heading">Interviews</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.interviews, (p) => `
         <li>
@@ -272,7 +272,7 @@
     
 
     <div class="sect" id="employment">
-      <h2 class="list-heading">I’m working</h2>
+      <h2 class="list-heading">Employment</h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.employment, (job) => `
         <li>
@@ -355,15 +355,7 @@
         `)}
       </ul>
 
-      <p>People who enjoy my writing are saying:</p>
-      <ul class="list">
-        ${Tree.map(_.peopleBlog, (p) => `
-        <li>
-          <div><a href="${p.href}" class="unmuted">${p.name}</a></div>
-          <div><q cite="${p.href}">${p.quote}</q></div>
-        </li>
-        `)}
-      </ul>
+ 
 
       <p>Sites and newsletters are linking to my writing:</p>
       <ul class="list">
@@ -399,16 +391,7 @@
         `)}
       </ul>
 
-      <p>Podcasts and publications are interviewing me:</p>
-
-      <ul class="list">
-        ${Tree.map(_.interviews, (p) => `
-        <li>
-          <div><a href="${p.href}">${p.name}</a></div>
-          <div>${p.label}</div>
-        </li>
-        `)}
-      </ul>
+     
     </section>
 
 
