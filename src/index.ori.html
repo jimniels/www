@@ -179,6 +179,53 @@
       </p>
     </div>
 
+    <div class="sect" id="icons">
+      <h2 class="list-heading">
+        My icon galleries
+        <a href="https://www.iosicongallery.com/feed.xml">
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+      
+      <a href="https://www.iosicongallery.com">
+        <ul class="list list--link list--has-dividers">
+          <li class="list-item list-item--images">
+            ${Tree.map(Tree.take(<https://www.iosicongallery.com/feed.json>/items,
+            7), (post) => `
+              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="iOS app icon for ${post.title}" />
+            `)}
+          </li>
+          <li class="list-item list-item--link">iOS Icon Gallery</li>
+        </ul>
+      </a>
+      <a href="https://www.macosicongallery.com">
+        <ul class="list list--link list--has-dividers">
+          <li class="list-item list-item--images">
+            ${Tree.map(Tree.take(<https://www.macosicongallery.com/feed.json>/items,
+            7), (post) => `
+              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="macOS app icon for ${post.title}" />
+            `)}
+          </li>
+          <li class="list-item list-item--link">macOS Icon Gallery</li>
+        </ul>
+      </a>
+      <a href="https://www.watchosicongallery.com">
+        <ul class="list list--link list--has-dividers">
+          <li class="list-item list-item--images">  
+            ${Tree.map(Tree.take(<https://www.watchosicongallery.com/feed.json>/items,
+            7), (post) => `
+              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="watchOS app icon for ${post.title}" />
+            `)}
+          </li>
+          <li class="list-item list-item--link">watchOS Icon Gallery</li>
+        </ul>
+      </a>
+      
+      <p class="list-footer">
+        I’ve been collecting, curating, and developing these galleries since ~2010. These were also turned into <a href="https://flarup.shop/collections/frontpage/products/the-ios-app-icon-book"><em>The iOS App Icon Book</em></a> and <a href="https://flarup.shop/collections/frontpage/products/the-macos-app-icon-book"><em>The macOS App Icon Book</em></a>.
+      </p>
+    </div>
+
     <div class="sect" id="people">
       <h2 class="list-heading">Compliments</h2>
       <ul class="list list--has-dividers">
