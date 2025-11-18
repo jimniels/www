@@ -26,6 +26,8 @@
     <link rel="me" href="https://twitter.com/jimniels" />
     <link rel="me" href="https://mastodon.social/@jimniels" />
     <link rel="me" href="https://dribbble.com@jimniels" />
+    <link rel="me" href="https://github.com/jimniels" />
+    <link rel="me" href="https://bsky.app/profile/jim-nielsen.com" />
 
     <!-- Social previews -->
     <meta property="og:title" content="Jim Nielsen" />
@@ -36,15 +38,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.jim-nielsen.com" />
     <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:creator" content="@jimniels" />
-    <meta name="twitter:title" content="Jim Nielsen" />
-    <meta
-      name="twitter:description"
-      content="The personal website of Jim Nielsen."
-    />
-    <meta name="twitter:image" content="https://www.jim-nielsen.com/og.png" />
 
     <!-- RSS for subdomains -->
     <link
@@ -107,7 +100,9 @@
         <li>
           <a href="/linkedin">LinkedIn</a>
         </li>
-        
+        <li>
+          <a href="https://twitter.com/jimniels" onclick="event.preventDefault();">Twitter</a>
+        </li>
       </ul>
       <!--
       <details style="margin-top: var(--spacer-16)">
@@ -191,7 +186,7 @@
         <ul class="list list--link list--has-dividers">
           <li class="list-item list-item--images">
             ${Tree.map(Tree.take(<https://www.iosicongallery.com/feed.json>/items,
-            7), (post) => `
+            8), (post) => `
               <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="iOS app icon for ${post.title}" />
             `)}
           </li>
@@ -202,7 +197,7 @@
         <ul class="list list--link list--has-dividers">
           <li class="list-item list-item--images">
             ${Tree.map(Tree.take(<https://www.macosicongallery.com/feed.json>/items,
-            7), (post) => `
+            8), (post) => `
               <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="macOS app icon for ${post.title}" />
             `)}
           </li>
@@ -213,7 +208,7 @@
         <ul class="list list--link list--has-dividers">
           <li class="list-item list-item--images">  
             ${Tree.map(Tree.take(<https://www.watchosicongallery.com/feed.json>/items,
-            7), (post) => `
+            8), (post) => `
               <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="watchOS app icon for ${post.title}" />
             `)}
           </li>

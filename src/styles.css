@@ -24,6 +24,7 @@
 
   --border-radius: 16px;
 
+  --spacer-4: 0.25rem;
   --spacer-8: 0.5rem;
   --spacer-12: 0.75rem;
   --spacer-16: 1rem;
@@ -232,27 +233,10 @@ footer {
 .list--link:hover {
   background-color: #f0f0f0;
 }
-.list--images {
-  display: grid;
-  flex-wrap: wrap;
-  gap: var(--spacer-16);
-  padding: var(--spacer-16);
-  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-}
-#ios.list--images img {
-  border-radius: 22%;
-}
-#watchos.list--images img {
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.33);
-}
-.list--images .list-item {
-  padding: 0;
-}
 
 .list-item--images {
   display: flex;
-  gap: var(--spacer-16);
+  gap: var(--spacer-4);
   overflow-x: scroll;
 }
 .list-item--images img[src*="/ios/"] {
@@ -429,6 +413,10 @@ footer {
 }
 .header__contact a[href*="linkedin"] {
   color: #0077b5;
+}
+.header__contact a[href*="twitter"] {
+  color: var(--color-text-mutedest);
+  text-decoration: line-through;
 }
 .header__contact a[href*="mailto"] {
   color: var(--color-blue);
