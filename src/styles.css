@@ -392,15 +392,17 @@ footer {
 .header {
   display: flex;
   flex-direction: column;
-
+  margin-top: var(--spacer-8);
   margin-bottom: var(--spacer-96);
   text-align: center;
   gap: var(--spacer-16);
 }
 .header img {
   height: auto;
-  width: calc(100% + var(--spacer-16) * 2);
-  margin: 0 calc(-1 * var(--spacer-16));
+  width: 100%;
+  /* width: calc(100% + var(--spacer-16) * 2); */
+  /* margin: 0 calc(-1 * var(--spacer-16)); */
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .header h2 {
   font-size: var(--font-size-xl);
