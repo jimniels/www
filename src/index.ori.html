@@ -83,7 +83,8 @@
       />
       <h1 hidden>Jim Nielsen</h1>
       <h2>
-        Web designer, developer, & blogger. 20+ years at the intersection of art and engineering.
+        Web designer, developer, & blogger. 20+ years at the intersection of art
+        and engineering.
       </h2>
       <ul class="header__contact">
         <li>
@@ -94,14 +95,19 @@
         </li>
         <li>
           <a href="mailto:jimniels@gmail.com">
-            <span>E</span><span>m</span><span>a</span><span>i</span><span>l</span>
+            <span>E</span><span>m</span><span>a</span><span>i</span
+            ><span>l</span>
           </a>
         </li>
         <li>
           <a href="/linkedin">LinkedIn</a>
         </li>
         <li>
-          <a href="https://twitter.com/jimniels" onclick="event.preventDefault();">Twitter</a>
+          <a
+            href="https://twitter.com/jimniels"
+            onclick="event.preventDefault();"
+            >Twitter</a
+          >
         </li>
       </ul>
       <!--
@@ -163,7 +169,7 @@
           >
             <span class="list-item__primary">${post.title}</span>
             <span class="list-item__secondary"
-              >${post._external_url_domain}</time
+              >${post._external_url_domain}</span
             >
           </a>
         </li>
@@ -175,19 +181,19 @@
     </div>
 
     <div class="sect" id="icons">
-      <h2 class="list-heading">
-        My icon galleries
-        <a href="https://www.iosicongallery.com/feed.xml">
-          ${<svgs/heroicon-rss.svg>}
-        </a>
-      </h2>
-      
+      <h2 class="list-heading">My icon collections</h2>
+
       <a href="https://www.iosicongallery.com">
         <ul class="list list--link list--has-dividers">
           <li class="list-item list-item--images">
             ${Tree.map(Tree.take(<https://www.iosicongallery.com/feed.json>/items,
             8), (post) => `
-              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="iOS app icon for ${post.title}" />
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="iOS app icon for ${post.title}"
+            />
             `)}
           </li>
           <li class="list-item list-item--link">iOS Icon Gallery</li>
@@ -198,7 +204,12 @@
           <li class="list-item list-item--images">
             ${Tree.map(Tree.take(<https://www.macosicongallery.com/feed.json>/items,
             8), (post) => `
-              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="macOS app icon for ${post.title}" />
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="macOS app icon for ${post.title}"
+            />
             `)}
           </li>
           <li class="list-item list-item--link">macOS Icon Gallery</li>
@@ -206,44 +217,120 @@
       </a>
       <a href="https://www.watchosicongallery.com">
         <ul class="list list--link list--has-dividers">
-          <li class="list-item list-item--images">  
+          <li class="list-item list-item--images">
             ${Tree.map(Tree.take(<https://www.watchosicongallery.com/feed.json>/items,
             8), (post) => `
-              <img src="${post.attachments[0].url.replace('512', '128')}" width="64" height="64" alt="watchOS app icon for ${post.title}" />
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="watchOS app icon for ${post.title}"
+            />
             `)}
           </li>
           <li class="list-item list-item--link">watchOS Icon Gallery</li>
         </ul>
       </a>
-      
+
       <p class="list-footer">
-        I’ve been collecting, curating, and developing these galleries since ~2010. These were also turned into <a href="https://flarup.shop/collections/frontpage/products/the-ios-app-icon-book"><em>The iOS App Icon Book</em></a> and <a href="https://flarup.shop/collections/frontpage/products/the-macos-app-icon-book"><em>The macOS App Icon Book</em></a>.
+        I’ve been collecting, curating, and developing these galleries since
+        ~2010. These were also turned into
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-ios-app-icon-book"
+          ><em>The iOS App Icon Book</em></a
+        >
+        and
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-macos-app-icon-book"
+          ><em>The macOS App Icon Book</em></a
+        >.
       </p>
     </div>
 
     <div class="sect" id="people">
-      <h2 class="list-heading">Compliments</h2>
-      <ul class="list list--has-dividers">
-        ${Tree.map(_.peopleBlog, (p) => `
-        <li>
-          <a
-            href="${p.href}"
-            class="list-item list-item--avatar list-item--link list-item--quote"
-          >
-            <img src="/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg" alt="" width="40" height="40" class="avatar">
-            <span class="list-item-stack">
-              <span class="list-item__primary">${p.name}</span>
-              <span class="list-item__secondary"
-                >“${p.quote}”</time
-              >
-            </span>
-          </a>
-        </li>
-        `)}
-      </ul>
-      <p class="list-footer">
-        There’s more, including compliments from kind folks like <a href="https://mastodon.social/@Jayhoffmann/113254651304370133">Jay Hoffmann</a>, <a href="https://twitter.com/briankardell/status/1372279388331474944?s=21">Brian Kardell</a>, <a href="https://twitter.com/ebey_jacob/status/1599823317799952385?s=20">Jacob Ebey</a>, and more. Thank you everyone.
-      </p>
+      <h2 class="list-heading">Compliments from my…</h2>
+
+      <div class="tabs">
+        <div class="tabs-list" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Readers
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="2"
+              class="tabs-input"
+            />
+            Co-workers
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="3"
+              class="tabs-input"
+            />
+            Users
+          </label>
+        </div>
+
+        <div class="tabs-panels">
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleBlog, p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+            <p class="list-footer">Test...</p>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleWork, p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+            <p class="list-footer">Test...</p>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleSideProjects, p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+            <p class="list-footer">
+              There’s more, including compliments from kind folks like
+              <a href="https://mastodon.social/@Jayhoffmann/113254651304370133"
+                >Jay Hoffmann</a
+              >,
+              <a
+                href="https://twitter.com/briankardell/status/1372279388331474944?s=21"
+                >Brian Kardell</a
+              >,
+              <a
+                href="https://twitter.com/ebey_jacob/status/1599823317799952385?s=20"
+                >Jacob Ebey</a
+              >, and more. Thank you everyone.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="sect" id="pubs">
@@ -255,19 +342,24 @@
             href="${p.href}"
             class="list-item list-item--avatar list-item--link list-item--quote"
           >
-            <img src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=64" alt="Favicon for ${p.name}" width="32" height="32">
+            <img
+              src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=64"
+              alt="Favicon for ${p.name}"
+              width="32"
+              height="32"
+            />
             <span class="list-item-stack">
               <span class="list-item__primary">${p.name}</span>
-              <span class="list-item__secondary ml-auto"
-                >“${p.quote}”</time
-              >
+              <span class="list-item__secondary ml-auto">“${p.quote}”</span>
             </span>
           </a>
         </li>
         `)}
       </ul>
       <p class="list-footer">
-        There’s more, including mentions in <a href="">Sidebar</a>, <a href="">Changelog</a>, <a href="">Frontend Focus</a>, <a href="">HeyDesigner</a>, and more I’m sure I don’t even know of.
+        There’s more, including mentions in <a href="">Sidebar</a>,
+        <a href="">Changelog</a>, <a href="">Frontend Focus</a>,
+        <a href="">HeyDesigner</a>, and more I’m sure I don’t even know of.
       </p>
     </div>
 
@@ -280,17 +372,25 @@
             href="https://news.ycombinator.com/item?id=${hit.story_id}"
             class="list-item list-item--link list-item--gap"
           >
-            <img src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32" alt="Favicon for ${p.name}" width="16" height="16">
+            <img
+              src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
+              alt="Favicon for ${p.name}"
+              width="16"
+              height="16"
+            />
             <span class="list-item__primary">${hit.title}</span>
             <span class="list-item__secondary ml-auto"
-              ><!-- ${hit.points} points -->${hit.num_comments} comments</time
+              ><!-- ${hit.points} points -->${hit.num_comments} comments</span
             >
           </a>
         </li>
         `)}
       </ul>
       <p class="list-footer">
-        There’s more. I keep <a href="https://blog.jim-nielsen.com/posts/hacker-news/">a running list on my blog </a>.
+        There’s more. I keep
+        <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+          >a running list on my blog </a
+        >.
       </p>
     </div>
 
@@ -299,25 +399,24 @@
       <ul class="list list--has-dividers">
         ${Tree.map(_.interviews, (p) => `
         <li>
-          <a
-            href="${p.href}"
-            class="list-item list-item--link list-item--gap"
-          >
-            <img src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48" alt="Favicon for ${p.name}" width="24" height="24">
+          <a href="${p.href}" class="list-item list-item--link list-item--gap">
+            <img
+              src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+              alt="Favicon for ${p.name}"
+              width="24"
+              height="24"
+            />
             <span class="list-item__primary">${p.name}</span>
-            <span class="list-item__secondary ml-auto"
-              >${p.labelShort}</time
-            >
+            <span class="list-item__secondary ml-auto">${p.labelShort}</span>
           </a>
         </li>
         `)}
       </ul>
       <p class="list-footer">
-        I’m open to more invitations to talk about the web. <a href="mailto:jimniels@gmail.com">Reach out!</a>
+        I’m open to more invitations to talk about the web.
+        <a href="mailto:jimniels@gmail.com">Reach out!</a>
       </p>
     </div>
-
-    
 
     <div class="sect" id="employment">
       <h2 class="list-heading">Employment</h2>
@@ -326,14 +425,12 @@
         <li>
           <details>
             <summary class="list-item list-item--gap list-item--toggle">
-              <span class="list-item__primary">${job.title} @ ${job.company}</span>
-              <span class="list-item__secondary ml-auto"
-                >${job.meta}</time
+              <span class="list-item__primary"
+                >${job.title} @ ${job.company}</span
               >
+              <span class="list-item__secondary ml-auto">${job.meta}</span>
             </summary>
-            <div class="list-item__toggle-content">
-              ${job.content}
-            </div>
+            <div class="list-item__toggle-content">${job.content}</div>
           </details>
         </li>
         `)}
@@ -393,17 +490,6 @@
     <!-- Social Validation ================================================= -->
     <section id="social-validation">
       <h1>Social Validation</h1>
-      <p>People I’ve worked with are saying:</p>
-      <ul class="list">
-        ${Tree.map(_.peopleWork, (p) => `
-        <li>
-          <div><a href="${p.href}" class="unmuted">${p.name}</a></div>
-          <div><q cite="${p.href}">${p.quote}</q></div>
-        </li>
-        `)}
-      </ul>
-
- 
 
       <p>Sites and newsletters are linking to my writing:</p>
       <ul class="list">
@@ -438,10 +524,7 @@
         </li>
         `)}
       </ul>
-
-     
     </section>
-
 
     <footer>Thank you for visiting this personal website.</footer>
   </body>

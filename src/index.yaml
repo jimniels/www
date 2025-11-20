@@ -219,6 +219,12 @@ peopleWork:
   - name: Michael Flarup
     href: https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b
     quote: "[Jim’s] as much an icon nut as me [and] he’s got great curation abilities."
+  - name: Chance Strickland
+    href: https://x.com/chancethedev/status/1599813034712924161
+    quote: Hire Jim…[he is] a *fantastic* designer/developer combo
+  - name: Jacob Ebey
+    href: https://twitter.com/ebey_jacob/status/1599823317799952385?s=20
+    quote: Jim is a joy to work with
 peopleBlog:
   - name: Eric Bailey
     href: https://twitter.com/ericwbailey/status/1571572550873792513?s=20
@@ -275,9 +281,6 @@ peopleAlt:
   - name: Robin Rendle
     href: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
     quote: Over the weekend I read this post by Jim Nielsen…that I really enjoyed.
-  - name: Jacob Ebey
-    href: https://twitter.com/ebey_jacob/status/1599823317799952385?s=20
-    quote: Jim is a joy to work with
   - name: Vitaly Friedman
     href: https://twitter.com/vitalyf/status/1610150390896508928?s=20
     quote: An interesting design pattern by @jimniels
@@ -435,29 +438,29 @@ peopleSideProjects:
   - name: Brian Lovin
     href: https://twitter.com/user/status/1365042604132368385
     project: Icon Galleries
-    quote: Love these [sites] Nicely done [Jim]
+    quote: "Love these [icon galleries] Nicely done [Jim]"
   - name: Val Head
     href: https://twitter.com/vlh/status/361846594364112896
     project: SassMe
-    quote: Super helpful tool for visualizing Sass colour functions.
-  - name: Sarah Drasner
-    href: https://twitter.com/sarah_edo/status/488822972224765952
-    project: SassMe
-    quote: my new favorite toy.
-  - name: Jeremy Keith
-    href: https://adactio.com/links/18383
-    project: canistilluse.com
-    quote:
-      It’s weirdly gratifying to see a hastily-written sarcastic quip tuned into
-      something real.
+    quote: "[SassMe is a] Super helpful tool for visualizing Sass colour functions."
+  # - name: Jeremy Keith
+  #   href: https://adactio.com/links/18383
+  #   project: canistilluse.com
+  #   quote:
+  #     It’s weirdly gratifying to see a hastily-written sarcastic quip tuned into
+  #     something real.
   - name: John Gruber
     href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
     project: The iOS App Icon Book
-    quote: Take my money — I can’t wait to devour this book. It looks so good.
-  # - name: John Gruber
-  #   href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
-  #   project: The macOS App Icon Book
-  #   quote: A sibling volume dedicated to Mac app icons? Hell yes.
+    quote: "Take my money — I can’t wait to devour [The iOS App Icon Book]. It looks so good."
+  - name: Sarah Drasner
+    href: https://twitter.com/sarah_edo/status/488822972224765952
+    project: SassMe
+    quote: "[SassMe is] my new favorite toy."
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
+    project: The macOS App Icon Book
+    quote: "a sibling volume dedicated to Mac app icons? Hell yes."
 peopleSideProjects2:
   - name: Jason Snell
     href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/

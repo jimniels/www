@@ -25,6 +25,7 @@
   --border-radius: 16px;
 
   --spacer-4: 0.25rem;
+  --spacer-6: 0.375rem;
   --spacer-8: 0.5rem;
   --spacer-12: 0.75rem;
   --spacer-16: 1rem;
@@ -429,4 +430,49 @@ footer {
 }
 .header__contact a[href*="mailto"] span:nth-child(4) {
   color: var(--color-orange);
+}
+
+.tabs-list {
+  display: flex;
+  justify-items: stretch;
+  background-color: #f0f0f0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  padding: 4px;
+  margin-bottom: var(--spacer-8);
+}
+.tabs-label {
+  padding: var(--spacer-6) var(--spacer-16);
+  border-radius: calc(var(--border-radius) - 2px);
+  flex-grow: 1;
+  text-align: center;
+  color: var(--color-text-muted);
+  position: relative;
+}
+.tabs-label:hover {
+  color: var(--color-text);
+}
+
+.tabs-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.tabs-label:has(.tabs-input:checked) {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  /* color: var(--color-bg); */
+}
+
+.tabs-panel {
+  display: none;
+}
+.tabs:has(.tabs-label:nth-child(1) .tabs-input:checked)
+  .tabs-panel:nth-child(1),
+.tabs:has(.tabs-label:nth-child(2) .tabs-input:checked)
+  .tabs-panel:nth-child(2),
+.tabs:has(.tabs-label:nth-child(3) .tabs-input:checked)
+  .tabs-panel:nth-child(3) {
+  display: block;
 }
