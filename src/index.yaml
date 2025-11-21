@@ -1,25 +1,83 @@
 ---
-pubs2:
+mentions:
+  - name: A11y Weekly
+    href: https://a11yweekly.com/issue/342/
+    origin: a11yweekly.com
+  - name: CSS Weekly
+    href: https://css-weekly.com/issue-485/
+    origin: css-weekly.com
   - name: CSS Tricks
+    href: https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/
     origin: css-tricks.com
-    quote: "[Jim has] a very interesting post…"
-    href: https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+  - name: Frontend Focus
+    href: https://frontendfoc.us/issues/598
+    origin: frontendfoc.us
+  - name: Sidebar.io
+    href: https://sidebar.io/date/2025-05-06
+    origin: sidebar.io
   - name: Smashing Magazine
     origin: smashingmagazine.com
-    quote: "[Jim explores] an interesting design pattern that completely rethinks how users input information…"
     href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
-  - name: Bytes
-    origin: bytes.dev
-    quote: "[Jim] wrote an insightful post about Data flow in Remix…"
-    href: https://bytes.dev/archives/107
   - name: Frontend Masters
     origin: frontendmasters.com
-    quote: "Jim Nielsen has a nice way of saying it…"
     href: https://frontendmasters.com/blog/light-dom-only/
+  - name: Changelog
+    origin: changelog.com
+    href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+
+mentionsSites:
+  - name: CSS Tricks
+    origin: css-tricks.com
+    count: 36
+    href: https://css-tricks.com/?s=jim%20nielsen
+    # quote: "[Jim has] a very interesting post…"
+    # href: https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+  - name: Smashing Magazine
+    origin: smashingmagazine.com
+    count: 2
+    href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+    quote: "[Jim explores] an interesting design pattern that completely rethinks how users input information…"
+  - name: Frontend Masters
+    origin: frontendmasters.com
+    count: 3
+    href: https://frontendmasters.com/blog?s=jim%20nielsen
+    # quote: "Jim Nielsen has a nice way of saying it…"
+    # href: https://frontendmasters.com/blog/light-dom-only/
+  - name: Changelog
+    origin: changelog.com
+    quote: "This short piece by Jim Nielsen resonated with me"
+    href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+  - name: Netlify
+    origin: netlify.com
+    quote: "[quote…]"
+    href: https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/
+mentionsNewsletters:
   - name: JavaScript Weekly
     origin: javascriptweekly.com
     quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
     href: https://javascriptweekly.com/issues/573
+  - name: Bytes
+    origin: bytes.dev
+    quote: "[Jim] wrote an insightful post about Data flow in Remix…"
+    href: https://bytes.dev/archives/107
+  # - name: Frontend Focus
+  #   origin: frontendfoc.us
+  #   quote: "[quote…]"
+  # href: https://frontendfoc.us/issues/598
+  - name: Sidebar.io
+    origin: sidebar.io
+    quote: "[quote…]"
+    href: https://sidebar.io/date/2025-05-06
+  - name: CSS Weekly
+    quote: "[Jim] explores a new way to think about design systems…"
+    href: https://css-weekly.com/issue-485/
+    origin: css-weekly.com
+  - name: A11y Weekly
+    href: https://a11yweekly.com/issue/342/
+    origin: a11yweekly.com
+  - name: TLDR Dev
+    href: https://tldr.tech/dev/2024-01-05
+    origin: tldr.tech
 pubs:
   - name: CSS Tricks
     origin: css-tricks.com
@@ -97,6 +155,7 @@ pubs:
       - - "#444"
         - https://frontendfoc.us/issues/444
       - - "."
+      # https://frontendfoc.us/issues/612
   - name: Bytes
     origin: bytes.dev
     refs:

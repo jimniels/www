@@ -248,7 +248,7 @@
     </div>
 
     <div class="sect" id="people">
-      <h2 class="list-heading">Compliments from my…</h2>
+      <h2 class="list-heading">Compliments from…</h2>
 
       <div class="tabs">
         <div class="tabs-list" role="tablist">
@@ -333,33 +333,129 @@
       </div>
     </div>
 
-    <div class="sect" id="pubs">
-      <h2 class="list-heading">Mentions</h2>
+    <div class="sect" id="pubs" style="display: nonez">
+      <h2 class="list-heading">Featured on…</h2>
+      <div class="tabs">
+        <div class="tabs-list" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="pubs"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Sites
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="pubs" value="2" class="tabs-input" />
+            Newsletters
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="pubs" value="2" class="tabs-input" />
+            Hacker News
+          </label>
+        </div>
+        <div class="tabs-panels">
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.mentionsSites, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+                    alt="Favicon for ${p.name}"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.mentionsNewsletters, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--avatar list-item--link list-item--quote"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+                    alt="Favicon for ${p.name}"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(Tree.take(getHackerNewsPosts.js(), 5), (hit) => `
+              <li>
+                <a
+                  href="https://news.ycombinator.com/item?id=${hit.story_id}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
+                    alt="Favicon for ${p.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item__primary">${hit.title}</span>
+                  <span class="list-item__secondary ml-auto"
+                    ><!-- ${hit.points} points -->${hit.num_comments}
+                    comments</span
+                  >
+                </a>
+              </li>
+              `)}
+            </ul>
+            <p class="list-footer">
+              There’s more. I keep
+              <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+                >a running list on my blog </a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect" id="hackernews">
+      <h2 class="list-heading">Linked to by…</h2>
       <ul class="list list--has-dividers">
-        ${Tree.map(_.pubs2, (p) => `
+        ${Tree.map(_.mentions, (mention) => `
         <li>
           <a
-            href="${p.href}"
-            class="list-item list-item--avatar list-item--link list-item--quote"
+            href="${mention.href}"
+            class="list-item list-item--link list-item--gap"
           >
             <img
-              src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=64"
-              alt="Favicon for ${p.name}"
-              width="32"
-              height="32"
+              src="https://www.google.com/s2/favicons?domain=${mention.origin}&sz=32"
+              alt="Favicon for ${mention.name}"
+              width="16"
+              height="16"
             />
-            <span class="list-item-stack">
-              <span class="list-item__primary">${p.name}</span>
-              <span class="list-item__secondary ml-auto">“${p.quote}”</span>
-            </span>
+            <span class="list-item__primary">${mention.name}</span>
           </a>
         </li>
         `)}
       </ul>
       <p class="list-footer">
-        There’s more, including mentions in <a href="">Sidebar</a>,
-        <a href="">Changelog</a>, <a href="">Frontend Focus</a>,
-        <a href="">HeyDesigner</a>, and more I’m sure I don’t even know of.
+        There’s more. I keep
+        <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+          >a running list on my blog </a
+        >.
       </p>
     </div>
 
@@ -485,45 +581,6 @@
           `)}
         </ul>
       </details>
-    </section>
-
-    <!-- Social Validation ================================================= -->
-    <section id="social-validation">
-      <h1>Social Validation</h1>
-
-      <p>Sites and newsletters are linking to my writing:</p>
-      <ul class="list">
-        ${Tree.map(_.pubs, (p) => `
-        <li>
-          <div>${p.name}</div>
-          <div>
-            ${Tree.text`${Tree.map(p.refs, (r) => r[1] ? `<a href="${r[1]}"
-              >${r[0]}</a
-            >` : r[0])}`}
-          </div>
-        </li>
-        `)}
-      </ul>
-
-      <p>People who enjoy my side projects are saying:</p>
-      <ul class="list">
-        ${Tree.map(_.peopleSideProjects, (p) => `
-        <li>
-          <div><a href="${p.href}">${p.name}</a></div>
-          <div>
-            <q cite="${p.href}">${p.quote}</q>
-            <span
-              style="
-                font-size: 0.875rem;
-                color: var(--color-text-mutedest);
-                display: block;
-              "
-              >Project: ${p.project}</span
-            >
-          </div>
-        </li>
-        `)}
-      </ul>
     </section>
 
     <footer>Thank you for visiting this personal website.</footer>

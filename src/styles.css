@@ -433,8 +433,9 @@ footer {
 }
 
 .tabs-list {
-  display: flex;
-  justify-items: stretch;
+  display: grid;
+  /* justify-items: stretch; */
+  grid-template-columns: repeat(3, 1fr);
   background-color: #f0f0f0;
   border-radius: var(--border-radius);
   overflow: hidden;
