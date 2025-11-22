@@ -126,7 +126,7 @@
 
     <div class="sect" id="blog">
       <h2 class="list-heading">
-        My blog
+        My Blog
         <a href="https://blog.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -146,6 +146,14 @@
           </a>
         </li>
         `)}
+        <li>
+          <a
+            href="https://blog.jim-nielsen.com"
+            class="list-item list-item--between list-item--link"
+          >
+            <span class="list-item__primary">More…</span>
+          </a>
+        </li>
       </ul>
       <p class="list-footer">
         10+ years writing about the web. <a href="#people">Loved by many</a>.
@@ -154,7 +162,7 @@
 
     <div class="sect" id="notes">
       <h2 class="list-heading">
-        My mircoblog
+        My Notes Microblog
         <a href="https://notes.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -174,9 +182,161 @@
           </a>
         </li>
         `)}
+        <li>
+          <a
+            href="https://notes.jim-nielsen.com"
+            class="list-item list-item--between list-item--link"
+          >
+            <span class="list-item__primary">More…</span>
+          </a>
+        </li>
       </ul>
       <p class="list-footer">
         Where I take notes from what I read and add my two cents.
+      </p>
+    </div>
+
+    <div class="sect" id="icons" hidden>
+      <h2 class="list-heading">
+        My Icon Galleries
+        <a href="https://www.iosicongallery.com/feed.xml">
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+
+      <div class="tabs">
+        <div class="tabs-list" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="icons"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            iOS
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="icons" value="2" class="tabs-input" />
+            macOS
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="icons" value="3" class="tabs-input" />
+            watchOS
+          </label>
+        </div>
+        <div class="tabs-panels">
+          <div class="tabs-panel">
+            <ul class="list list--link">
+              <li class="list-item list-item--images">
+                ${Tree.map(Tree.take(<https://www.iosicongallery.com/feed.json>/items,
+                8), (post) => `
+                <img
+                  src="${post.attachments[0].url.replace('512', '128')}"
+                  width="64"
+                  height="64"
+                  alt="iOS app icon for ${post.title}"
+                />
+                `)}
+              </li>
+              <li class="list-item list-item--images">
+                ${Tree.map(<https://www.iosicongallery.com/feed.json>/items/slice(8,
+                16), (post) => `
+                <img
+                  src="${post.attachments[0].url.replace('512', '128')}"
+                  width="64"
+                  height="64"
+                  alt="iOS app icon for ${post.title}"
+                />
+                `)}
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--link">
+              <li class="list-item list-item--images">
+                ${Tree.map(Tree.take(<https://www.macosicongallery.com/feed.json>/items,
+                8), (post) => `
+                <img
+                  src="${post.attachments[0].url.replace('512', '128')}"
+                  width="64"
+                  height="64"
+                  alt="macOS app icon for ${post.title}"
+                />
+                `)}
+              </li>
+              <li class="list-item list-item--images">
+                ${Tree.map(<https://www.macosicongallery.com/feed.json>/items/slice(8,
+                16), (post) => `
+                <img
+                  src="${post.attachments[0].url.replace('512', '128')}"
+                  width="64"
+                  height="64"
+                  alt="macOS app icon for ${post.title}"
+                />
+                `)}
+              </li>
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--link list--has-dividers">
+              <li class="list-item list-item--images">
+                ${Tree.map(Tree.take(<https://www.watchosicongallery.com/feed.json>/items,
+                8), (post) => `
+                <img
+                  src="${post.attachments[0].url.replace('512', '128')}"
+                  width="64"
+                  height="64"
+                  alt="watchOS app icon for ${post.title}"
+                />
+                `)}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <p class="list-footer">
+        A collection of beautiful iOS icons I’ve been collecting since ~2010. We
+        even made it into a
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-ios-app-icon-book"
+          >book</a
+        >.
+      </p>
+    </div>
+
+    <div class="sect" id="icons" hidden>
+      <h2 class="list-heading">
+        macOS Icon Gallery
+        <a href="https://www.iosicongallery.com/feed.xml">
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+
+      <a href="https://www.iosicongallery.com">
+        <ul class="list list--link list--has-dividers">
+          <li class="list-item list-item--images">
+            ${Tree.map(Tree.take(<https://www.macosicongallery.com/feed.json>/items,
+            8), (post) => `
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="iOS app icon for ${post.title}"
+            />
+            `)}
+          </li>
+        </ul>
+      </a>
+      <p class="list-footer">
+        A collection of beautiful macOS icons I’ve been collecting since ~2012.
+        We made a
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-macos-app-icon-book"
+          >book</a
+        >
+        about it.
       </p>
     </div>
 
@@ -248,10 +408,63 @@
     </div>
 
     <div class="sect" id="people">
+      <h2 class="list-heading">Compliments</h2>
+
+      <div class="tabs">
+        <div class="tabs-list tabs-list--2" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments-1"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Featured
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments-1"
+              value="2"
+              class="tabs-input"
+            />
+            More
+          </label>
+        </div>
+
+        <div class="tabs-panels">
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleBlog.slice(0, 6), p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+            <p class="list-footer">Test...</p>
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map([..._.peopleWork, ..._.peopleAlt], p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+            <p class="list-footer">Test...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect" id="people" hidden>
       <h2 class="list-heading">Compliments from…</h2>
 
       <div class="tabs">
-        <div class="tabs-list" role="tablist">
+        <div class="tabs-list tabs-list--3" role="tablist">
           <label class="tabs-label">
             <input
               type="radio"
@@ -333,10 +546,10 @@
       </div>
     </div>
 
-    <div class="sect" id="pubs" style="display: nonez">
-      <h2 class="list-heading">Featured on…</h2>
+    <div class="sect" id="pubs" hidden>
+      <h2 class="list-heading">Talked about on…</h2>
       <div class="tabs">
-        <div class="tabs-list" role="tablist">
+        <div class="tabs-list tabs-list--3" role="tablist">
           <label class="tabs-label">
             <input
               type="radio"
@@ -431,26 +644,74 @@
       </div>
     </div>
 
-    <div class="sect" id="hackernews">
-      <h2 class="list-heading">Linked to by…</h2>
-      <ul class="list list--has-dividers">
-        ${Tree.map(_.mentions, (mention) => `
-        <li>
-          <a
-            href="${mention.href}"
-            class="list-item list-item--link list-item--gap"
-          >
-            <img
-              src="https://www.google.com/s2/favicons?domain=${mention.origin}&sz=32"
-              alt="Favicon for ${mention.name}"
-              width="16"
-              height="16"
+    <div class="sect" id="">
+      <h2 class="list-heading">Mentions</h2>
+      <div class="tabs">
+        <div class="tabs-list tabs-list--2" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="mentions-foo"
+              value="1"
+              class="tabs-input"
+              checked
             />
-            <span class="list-item__primary">${mention.name}</span>
-          </a>
-        </li>
-        `)}
-      </ul>
+            Featured
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="mentions-foo"
+              value="2"
+              class="tabs-input"
+            />
+            More
+          </label>
+        </div>
+        <div class="tabs-panels">
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.mentions.slice(0, 6), (mention) => `
+              <li>
+                <a
+                  href="${mention.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${mention.origin}&sz=32"
+                    alt="Favicon for ${mention.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item__primary">${mention.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.mentions.slice(6), (mention) => `
+              <li>
+                <a
+                  href="${mention.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${mention.origin}&sz=32"
+                    alt="Favicon for ${mention.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item__primary">${mention.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <p class="list-footer">
         There’s more. I keep
         <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
@@ -460,7 +721,8 @@
     </div>
 
     <div class="sect" id="hackernews">
-      <h2 class="list-heading">My writing on HN</h2>
+      <h2 class="list-heading">My writing on Hacker News</h2>
+
       <ul class="list list--has-dividers">
         ${Tree.map(Tree.take(getHackerNewsPosts.js(), 5), (hit) => `
         <li>
@@ -474,10 +736,12 @@
               width="16"
               height="16"
             />
-            <span class="list-item__primary">${hit.title}</span>
-            <span class="list-item__secondary ml-auto"
-              ><!-- ${hit.points} points -->${hit.num_comments} comments</span
-            >
+            <span class="list-item-stack">
+              <span class="list-item__primary">${hit.title}</span>
+              <span class="list-item__secondary"
+                >${hit.points} points · ${hit.num_comments} comments</span
+              >
+            </span>
           </a>
         </li>
         `)}

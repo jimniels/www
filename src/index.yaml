@@ -24,7 +24,32 @@ mentions:
   - name: Changelog
     origin: changelog.com
     href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
-
+  - name: JavaScript Weekly
+    origin: javascriptweekly.com
+    quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
+    href: https://javascriptweekly.com/issues/573
+  - name: Bytes
+    origin: bytes.dev
+    quote: "[Jim] wrote an insightful post about Data flow in Remix…"
+    href: https://bytes.dev/archives/107
+  - name: Frontend Focus
+    origin: frontendfoc.us
+    quote: "[quote…]"
+    href: https://frontendfoc.us/issues/598
+  - name: Sidebar.io
+    origin: sidebar.io
+    quote: "[quote…]"
+    href: https://sidebar.io/date/2025-05-06
+  - name: CSS Weekly
+    quote: "[Jim] explores a new way to think about design systems…"
+    href: https://css-weekly.com/issue-485/
+    origin: css-weekly.com
+  - name: A11y Weekly
+    href: https://a11yweekly.com/issue/342/
+    origin: a11yweekly.com
+  - name: TLDR Dev
+    href: https://tldr.tech/dev/2024-01-05
+    origin: tldr.tech
 mentionsSites:
   - name: CSS Tricks
     origin: css-tricks.com
