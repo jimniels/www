@@ -1,36 +1,40 @@
 ---
 mentions:
-  - name: A11y Weekly
-    href: https://a11yweekly.com/issue/342/
-    origin: a11yweekly.com
   - name: CSS Weekly
-    href: https://css-weekly.com/issue-485/
+    href: https://css-weekly.com/issue-485/#:~:text=Jim%20Nielsen
     origin: css-weekly.com
+    type: Newsletter
   - name: CSS Tricks
-    href: https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/
+    href: https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/#:~:text=Jim%20Nielsen
     origin: css-tricks.com
+    type: Newsletter
   - name: Frontend Focus
     href: https://frontendfoc.us/issues/598
     origin: frontendfoc.us
+    type: Newsletter
   - name: Sidebar.io
     href: https://sidebar.io/date/2025-05-06
     origin: sidebar.io
+    type: Newsletter
   - name: Smashing Magazine
     origin: smashingmagazine.com
     href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+    type: Article
   - name: Frontend Masters
     origin: frontendmasters.com
     href: https://frontendmasters.com/blog/light-dom-only/
+    type: Article
   - name: Changelog
     origin: changelog.com
     href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+    type: News
   - name: JavaScript Weekly
     origin: javascriptweekly.com
-    quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
-    href: https://javascriptweekly.com/issues/573
+    href: https://javascriptweekly.com/issues/573#:~:text=Jim%20Nielsen
+    type: Newsletter
   - name: Bytes
     origin: bytes.dev
-    quote: "[Jim] wrote an insightful post about Data flow in Remix…"
+    type: Newsletter
     href: https://bytes.dev/archives/107
   - name: Frontend Focus
     origin: frontendfoc.us
@@ -47,9 +51,22 @@ mentions:
   - name: A11y Weekly
     href: https://a11yweekly.com/issue/342/
     origin: a11yweekly.com
+    links:
+      - href: https://a11yweekly.com/issue/472/#:~:text=jim%2Dnielsen
+        type: Newsletter
+      - href: https://a11yweekly.com/issue/342/#:~:text=jim%2Dnielsen
+        type: Newsletter
   - name: TLDR Dev
     href: https://tldr.tech/dev/2024-01-05
     origin: tldr.tech
+  - name: Alex Ziskind
+    href: https://youtu.be/R2KkJ_Zawnk?t=15
+    origin: youtube.com
+    type: Video
+  - name: Codrops
+    href: https://tympanus.net/codrops/collective/collective-676/#:~:text=Jim%20Nielsen
+    origin: tympanus.net
+    type: Post
 mentionsSites:
   - name: CSS Tricks
     origin: css-tricks.com
@@ -348,6 +365,18 @@ peopleBlog:
   #   quote:
   #     "[Jim] published a post...that hit on so many things I’ve experienced and
   #     feel strongly about."
+  - name: Guillermo Rauch
+    href: https://x.com/rauchg/status/1837924595506028668
+    origin: x.com
+    quote: "Good writeup by @jimniels"
+  - name: Tom MacWright
+    href: https://macwright.com/2024/08/12/blogging-under-ai
+    origin: macwright.com
+    quote: "I find some comfort in [Jim’s] perspective…"
+  - name: Robin Rendle
+    href: https://robinrendle.com/notes/taking-shortcuts/#:~:text=Jim
+    origin: robinrendle.com
+    quote: "As I was reading this post from Jim about his setup I got wildly, incomprehensibly jealous…"
 peopleAlt:
   - name: Brian Kardell
     href: https://twitter.com/briankardell/status/1372279388331474944?s=21

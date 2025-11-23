@@ -239,6 +239,19 @@ footer {
   background-color: #f0f0f0;
 }
 
+.list--has-more li:nth-child(n + 4) {
+  display: none;
+}
+.list--has-more li:last-child {
+  display: block;
+}
+.list--has-more:has(input:checked) li:nth-child(n + 4) {
+  display: block;
+}
+.list--has-more input[type="checkbox"] {
+  display: none;
+}
+
 .list-item--images {
   display: flex;
   gap: var(--spacer-4);
@@ -316,7 +329,7 @@ footer {
   text-decoration: underline;
 }
 
-.list-item--link:hover {
+.list-item:hover {
   background-color: #f0f0f0;
 }
 .list-item--between {
@@ -371,7 +384,7 @@ footer {
   color: var(--color-pink);
 }
 #pubs .list-heading {
-  color: var(--color-red);
+  color: var(--color-indigo);
 }
 #hackernews .list-heading {
   color: var(--color-orange);
