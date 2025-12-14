@@ -4,6 +4,8 @@
   --color-text-muted: rgb(0 0 0 / 50%);
   --color-text-mutedest: rgb(0 0 0 / 35%);
   --color-bg: #fff;
+  --color-fg: #f7f7f7;
+  --color-fg-2: #f0f0f0;
 
   --color-red: rgb(255, 56, 60);
   --color-orange: rgb(255, 141, 40);
@@ -39,14 +41,16 @@
   --spacer-128: 8rem;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255 255 255);
     --color-text-muted: rgb(255 255 255 / 66%);
     --color-text-mutedest: rgb(255 255 255 / 33%);
-    --color-bg: #1a1a1a;
+    --color-bg: #1f1f1f;
+    --color-fg: #272727;
+    --color-fg-2: #303030;
   }
-} */
+}
 
 [hidden] {
   display: none !important;
@@ -228,28 +232,80 @@ footer {
   /* padding: var(--spacer-16); */
   padding: 0;
   margin: 0;
-  background-color: #f7f7f7;
+  background-color: var(--color-fg);
   border-radius: var(--border-radius);
   overflow: hidden;
 }
 .list--has-dividers > li:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.033);
+  border-bottom: 1px solid var(--color-bg);
 }
 .list--link:hover {
-  background-color: #f0f0f0;
+  background-color: var(--color-fg-2);
 }
 
 .list--has-more li:nth-child(n + 4) {
   display: none;
 }
+
 .list--has-more li:last-child {
   display: block;
+}
+label.list-item {
+  color: var(--color-text-mutedest);
 }
 .list--has-more:has(input:checked) li:nth-child(n + 4) {
   display: block;
 }
 .list--has-more input[type="checkbox"] {
   display: none;
+}
+.list--has-more:has(input:checked) .list-item--more {
+  display: none;
+}
+
+[href*="icongallery.com"] .list--has-images {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+[href*="icongallery.com"] .list--has-images .list-item {
+  width: 64px;
+  height: 64px;
+}
+[href*="instagram.com"] .list--has-images {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: var(--spacer-8);
+}
+[href*="instagram.com"] .list--has-images img {
+  border-radius: calc(var(--border-radius) - 8px);
+}
+.list--has-images {
+  display: grid;
+  gap: var(--spacer-4);
+  overflow-x: scroll;
+  padding: var(--spacer-16);
+}
+.list--has-images .list-item {
+  padding: 0;
+}
+
+.list--has-images img[src*="/ios/"] {
+  width: 52px;
+  height: 52px;
+  margin: 0 6px;
+  border-radius: 22%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.033);
+}
+.list--has-images img[src*="/watchos/"] {
+  width: 52px;
+  height: 52px;
+  margin: 0 6px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.033);
+}
+.list--has-images img[src*="/macos/"] {
+  width: 64px;
+  height: 64px;
 }
 
 .list-item--images {
@@ -330,7 +386,7 @@ footer {
 }
 
 .list-item:hover {
-  background-color: #f0f0f0;
+  background-color: var(--color-fg-2);
 }
 .list-item--between {
   justify-content: space-between;
@@ -363,7 +419,7 @@ footer {
 }
 
 .list-item img[src*="google.com"] {
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
 }
 
 .list-item--quote .list-item__secondary {
@@ -382,9 +438,13 @@ footer {
 }
 #people .list-heading {
   color: var(--color-pink);
+  color: #e19000;
 }
 #pubs .list-heading {
-  color: var(--color-indigo);
+  color: var(--color-teal);
+}
+#pies .list-heading {
+  color: var(--color-purple);
 }
 #hackernews .list-heading {
   color: var(--color-orange);
@@ -465,7 +525,7 @@ footer {
   display: grid;
   /* justify-items: stretch; */
 
-  background-color: #f0f0f0;
+  background-color: var(--color-fg);
   border-radius: var(--border-radius);
   overflow: hidden;
   padding: 4px;
