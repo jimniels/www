@@ -83,8 +83,8 @@
       />
       <h1 hidden>Jim Nielsen</h1>
       <h2>
-        I’m a web designer, developer, & blogger with 20+ years at the
-        intersection of art and engineering.
+        Web designer, developer, & blogger. 20+ years at the intersection of art
+        and engineering.
       </h2>
       <ul class="header__contact" id="contact">
         <li>
@@ -102,32 +102,13 @@
         <li>
           <a href="/linkedin">LinkedIn</a>
         </li>
-        <li>
-          <a
-            href="https://twitter.com/jimniels"
-            onclick="event.preventDefault();"
-            >Twitter</a
-          >
-        </li>
       </ul>
-      <!--
-      <details style="margin-top: var(--spacer-16)">
-        <summary style="max-width: 100px">Other…</summary>
-        <p>Too many socials—in descending order of how often I look at them:</p>
-        <ul class="contact">
-          ${Tree.map(_.otherContact, (c) => `
-          <li class="i-${c.id}">
-            <a href="${c.href}">${c.label}</a>
-          </li>
-          `)}
-        </ul>
-      </details>-->
     </header>
 
     <!-- Blog ============================================================ -->
     <div class="sect" id="blog">
       <h2 class="list-heading">
-        I’m Blogging
+        <a href="https://blog.jim-nielsen.com">I’m Blogging</a>
         <a href="https://blog.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -163,7 +144,7 @@
 
     <div class="sect" id="notes">
       <h2 class="list-heading">
-        I’m Microblogging
+        <a href="https://notes.jim-nielsen.com">I’m Microblogging</a>
         <a href="https://notes.jim-nielsen.com/feed.xml">
           ${<svgs/heroicon-rss.svg>}
         </a>
@@ -423,10 +404,7 @@
 
     <div class="sect" id="pies">
       <h2 class="list-heading">
-        I’m Baking Pies
-        <a href="https://instagram.com/flyingjpies">
-          ${<svgs/heroicon-rss.svg>}
-        </a>
+        <a href="https://instagram.com/flyingjpies">I’m Baking Pies</a>
       </h2>
       <a href="https://instagram.com/flyingjpies">
         <ul class="list list--link list--has-images">
@@ -443,8 +421,10 @@
         </ul>
       </a>
       <p class="list-footer">
-        In my quest to find a great pie, I realized if you want it done right,
-        you have to do it yourself.
+        In
+        <a href="https://blog.jim-nielsen.com/2022/flying-j-pies/"
+          >my quest to find a great pie</a
+        >, I realized if you want it done right, you have to do it yourself.
       </p>
     </div>
 
@@ -852,7 +832,7 @@
       </div>
     </div>
 
-    <div class="sect" id="pubs">
+    <div class="sect" id="pubs" hidden>
       <h2 class="list-heading">I’m Being Linked To By…</h2>
       <ul class="list list--has-dividers list--has-more">
         ${Tree.map(_.mentions, (mention) => `
@@ -961,7 +941,111 @@
     </div>
 
     <div class="sect" id="hackernews">
-      <h2 class="list-heading">I’m Stirring Diss-cussions on Hacker News</h2>
+      <h2 class="list-heading">I’m Seeing My Writing Linked To From…</h2>
+      <div class="tabs">
+        <div class="tabs-list tabs-list--3" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="featured"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Hacker News
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="featured" value="2" class="tabs-input" />
+            Newsletters
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="featured" value="3" class="tabs-input" />
+            Publications
+          </label>
+        </div>
+        <div class="tabs-panels">
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(getHackerNewsPosts.js().slice(0, 5), (hit) => `
+              <li>
+                <a
+                  href="https://news.ycombinator.com/item?id=${hit.story_id}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
+                    alt="Favicon for ${p.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item-stack">
+                    <span class="list-item__primary">${hit.title}</span>
+                    <span class="list-item__secondary"
+                      >${hit.points} points · ${hit.num_comments} comments</span
+                    >
+                  </span>
+                </a>
+              </li>
+              `)}
+            </ul>
+            <p class="list-footer">
+              I keep
+              <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+                >a running list on my blog </a
+              >.
+            </p>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.mentionsNewsletters, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=32"
+                    alt="Favicon for ${p.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map(_.pubs, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=32"
+                    alt="Favicon for ${p.name}"
+                    width="16"
+                    height="16"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect" id="hackernews" hidden>
+      <h2 class="list-heading">
+        <span
+          >I’m Seeing My Writing Diss(cuss)ed on
+          <abbr title="Hacker News">HN</abbr></span
+        >
+      </h2>
 
       <ul class="list list--has-dividers list--has-more">
         ${Tree.map(getHackerNewsPosts.js(), (hit) => `
@@ -993,10 +1077,11 @@
         </li>
       </ul>
       <p class="list-footer">
-        My blogging keeps ending up on the front page of Hacker News. I keep
+        I keep
         <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
-          >a running list of hits on my blog</a
-        >.
+          >a running list</a
+        >
+        of my Hacker News hits on my blog.
       </p>
     </div>
 

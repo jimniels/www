@@ -5,7 +5,7 @@
   --color-text-mutedest: rgb(0 0 0 / 35%);
   --color-bg: #fff;
   --color-fg: #f7f7f7;
-  --color-fg-2: #f0f0f0;
+  --color-fg-2: #eee;
 
   --color-red: rgb(255, 56, 60);
   --color-orange: rgb(255, 141, 40);
@@ -205,7 +205,7 @@ footer {
   display: flex;
   align-items: center;
 }
-.list-heading a {
+.list-heading a[href*="feed.xml"] {
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -237,7 +237,7 @@ footer {
   overflow: hidden;
 }
 .list--has-dividers > li:not(:last-child) {
-  border-bottom: 1px solid var(--color-bg);
+  border-bottom: 1px solid var(--color-fg-2);
 }
 .list--link:hover {
   background-color: var(--color-fg-2);

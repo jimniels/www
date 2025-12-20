@@ -420,27 +420,6 @@ contact:
     label: LinkedIn
     link: jim-nielsen
     href: "/linkedin"
-otherContact:
-  - id: github
-    label: GitHub
-    link: jimniels
-    href: https://github.com/jimniels
-  - id: discord
-    label: Discord
-    link: jimniels
-    href: https://discord.com/users/jimniels
-  - id: instagram
-    label: Instagram
-    link: "@jimniels"
-    href: https://instagram.com/jimniels
-  - id: dribbble
-    label: Dribbble
-    link: jimniels
-    href: https://dribbble.com/jimniels
-  - id: threads
-    label: Threads
-    link: "@jimniels"
-    href: https://threads.net/@jimniels
 interviews:
   - name: JS Party
     label: "#288: Refined Thinking"
