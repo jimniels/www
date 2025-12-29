@@ -41,7 +41,7 @@
   --spacer-128: 8rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* TODO dark mode @media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255 255 255);
     --color-text-muted: rgb(255 255 255 / 66%);
@@ -50,7 +50,7 @@
     --color-fg: #272727;
     --color-fg-2: #303030;
   }
-}
+} */
 
 [hidden] {
   display: none !important;
@@ -178,7 +178,6 @@ cite {
 }
 
 footer {
-  color: var(--color-text-mutedest);
   font-size: 0.8rem;
   position: relative;
   z-index: 1;
@@ -219,6 +218,7 @@ footer {
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
   padding: 0 var(--spacer-16);
+  line-height: 1.4;
 }
 .list-footer a {
   text-decoration: underline;
@@ -428,29 +428,6 @@ label.list-item {
 
 .avatar {
   border-radius: 50%;
-}
-
-#blog .list-heading {
-  color: var(--color-red);
-}
-#notes .list-heading {
-  color: var(--color-blue);
-}
-#people .list-heading {
-  color: var(--color-pink);
-  color: #e19000;
-}
-#pubs .list-heading {
-  color: var(--color-teal);
-}
-#pies .list-heading {
-  color: var(--color-purple);
-}
-#hackernews .list-heading {
-  color: var(--color-orange);
-}
-#interviews .list-heading {
-  color: var(--color-green);
 }
 
 /* Header =================================================================== */
