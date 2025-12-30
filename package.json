@@ -5,7 +5,7 @@
   "main": "",
   "type": "module",
   "devDependencies": {
-    "@weborigami/origami": "0.6.4",
+    "@weborigami/origami": "0.6.5",
     "psl": "^1.15.0"
   },
   "scripts": {
