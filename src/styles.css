@@ -100,81 +100,14 @@ a {
 }
 
 ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.unmuted {
-  color: var(--color-text);
-}
-
-section h1 {
-  font-size: 1.125rem;
-  /* text-transform: uppercase;
-        letter-spacing: 0.1rem; */
-  color: var(--color-text);
-  font-weight: 700;
-  margin: 0 0 var(--spacer-64);
-  position: relative;
-
-  /* background: var(--color-text-mutedest);
-        color: var(--color-bg);
-        display: inline-block;
-        padding: 0 var(--spacer-8);
-        margin-left: calc(-1 * var(--spacer-8));*/
-}
-
-h2 {
-  color: var(--color-text);
-  /* font-weight: 700; */
-}
-
-section#passion-projects summary {
-  margin-left: var(--spacer-24);
-}
-
-/* Section =============================================================*/
-
-section {
-  margin: var(--spacer-128) auto var(--spacer-128);
-}
-
-section {
-  position: relative;
-  max-width: 40rem;
-  clear: both;
-}
-
-section#employment p a[href*="blog.jim-nielsen.com"] {
-  color: var(--color-text-mutedest);
-}
-
-ul,
+ol,
 li {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
-dl,
-p:has(q) {
-  width: 100%;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-}
 
-#contact dt {
-  color: var(--color-text);
-}
-
-p:has(q) {
-  margin-bottom: var(--spacer-24);
-  margin-left: var(--spacer-16);
-}
-
-cite {
-  font-style: normal;
-}
+/* Sections =============================================================*/
 
 footer {
   font-size: 0.8rem;
@@ -183,10 +116,6 @@ footer {
   margin-top: var(--spacer-128);
   margin-bottom: var(--spacer-16);
   text-align: center;
-}
-
-.highlight {
-  background-color: hsl(60deg 100% 50% / 20%);
 }
 
 .sect {
