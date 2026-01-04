@@ -76,8 +76,7 @@
       />
       <h1 hidden>Jim Nielsen</h1>
       <h2>
-        Web designer, developer, & blogger. 20+ years at the intersection of art
-        and engineering.
+        I’m a web designer, developer, & blogger with 20+ years of experience.
       </h2>
       <ul class="header__contact" id="contact">
         <li>
@@ -100,9 +99,13 @@
 
     <!-- Blog ============================================================== -->
     <div class="sect" id="blog">
-      <h2 class="list-heading" style="color: var(--color-red)">
-        I’m Blogging
-        <a href="https://blog.jim-nielsen.com/feed.xml">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-red)">Blogging</span>
+        <a
+          href="https://blog.jim-nielsen.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-red)"
+        >
           ${<svgs/heroicon-rss.svg>}
         </a>
       </h2>
@@ -154,9 +157,13 @@
 
     <!-- Notes ============================================================== -->
     <div class="sect" id="notes">
-      <h2 class="list-heading" style="color: var(--color-blue)">
-        I’m Microblogging
-        <a href="https://notes.jim-nielsen.com/feed.xml">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-blue)">Microblogging</span>
+        <a
+          href="https://notes.jim-nielsen.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-blue)"
+        >
           ${<svgs/heroicon-rss.svg>}
         </a>
       </h2>
@@ -185,10 +192,12 @@
     <!-- iOS Icons ========================================================= -->
     <div class="sect" id="icons">
       <h2 class="list-heading">
-        I’m Collecting
-        <span style="color: var(--color-pink)">iOS</span>
-        Icons
-        <a href="https://www.iosicongallery.com/feed.xml">
+        I’m Collecting <span style="color: var(--color-pink)">iOS Icons</span>
+        <a
+          href="https://www.iosicongallery.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-pink)"
+        >
           ${<svgs/heroicon-rss.svg>}
         </a>
       </h2>
@@ -223,9 +232,13 @@
     <div class="sect" id="icons">
       <h2 class="list-heading">
         I’m Collecting
-        <span style="color: var(--color-teal)">macOS</span>
-        Icons
-        <a href="https://www.macosicongallery.com/feed.xml">
+        <span style="color: var(--color-teal)">macOS Icons</span>
+
+        <a
+          href="https://www.macosicongallery.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-teal)"
+        >
           ${<svgs/heroicon-rss.svg>}
         </a>
       </h2>
@@ -468,7 +481,8 @@
             <span class="list-item-stack">
               <span class="list-item__primary">${hit.title}</span>
               <span class="list-item__secondary"
-                >${hit.points} points · ${hit.num_comments} comments</span
+                >${hit.points.toLocaleString()} points ·
+                ${hit.num_comments.toLocaleString()} comments</span
               >
             </span>
           </a>
@@ -491,7 +505,9 @@
     </div>
 
     <div class="sect" id="interviews">
-      <h2 class="list-heading">I’m Doing Interviews</h2>
+      <h2 class="list-heading">
+        I’m Doing <span style="color: var(--color-green)">Interviews</span>
+      </h2>
       <ul class="list list--has-dividers">
         ${Tree.map(_.interviews, (p) => `
         <li>

@@ -73,7 +73,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  padding-bottom: 20vh;
 
   max-width: 36rem;
   margin: 0 auto;
@@ -201,14 +200,20 @@ footer {
   font-size: var(--font-size-xl);
   font-weight: 700;
   padding: 0 var(--spacer-16);
-  display: flex;
-  align-items: center;
-  gap: var(--spacer-6);
+  position: relative;
+}
+.list-heading:has(a[href*="feed.xml"]) {
+  padding-right: var(--spacer-40);
 }
 .list-heading a[href*="feed.xml"] {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
+  position: absolute;
+  right: var(--spacer-16);
+  top: 0;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1) rotate(-8deg);
+  }
 }
 .list-heading svg {
   width: 24px;
