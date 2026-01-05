@@ -336,7 +336,7 @@
         <div class="tabs-panels">
           <!-- prettier-ignore -->
           <div class="tabs-panel">
-            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleBlog.slice(0,4), p => ({
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).readers.slice(0,4), p => ({
               href: p.href,
               imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
               imgAlt: `Avatar for ${p.name}`,
@@ -346,7 +346,7 @@
           </div>
           <!-- prettier-ignore -->
           <div class="tabs-panel">
-            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleWork.slice(0,4), p => ({
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).coworkers.slice(0,4), p => ({
               href: `https://web.archive.org/web/` + p.href,
               imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
               imgAlt: `Avatar for ${p.name}`,
@@ -356,7 +356,7 @@
           </div>
           <!-- prettier-ignore -->
           <div class="tabs-panel">
-            ${components/ListPeopleQuotes.ori.html(Tree.map(_.peopleSideProjects.slice(0,4), p => ({
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).users.slice(0,4), p => ({
               href: p.href,
               imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
               imgAlt: `Avatar for ${p.name}`,
@@ -396,14 +396,14 @@
         <div class="tabs-panels">
           <div class="tabs-panel">
             <ul class="list list--has-dividers">
-              ${Tree.map(_.mentionsSites, (p) => `
+              ${Tree.map((data/mentions.yml).sites, (p) => `
               <li>
                 <a
                   href="${p.href}"
                   class="list-item list-item--link list-item--gap"
                 >
                   <img
-                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+                    src="https://www.google.com/s2/favicons?domain=${getDomain.js(p.href)}&sz=48"
                     alt="Favicon for ${p.name}"
                     width="24"
                     height="24"
@@ -416,14 +416,14 @@
           </div>
           <div class="tabs-panel">
             <ul class="list list--has-dividers">
-              ${Tree.map(_.mentionsNewsletters, (p) => `
+              ${Tree.map((data/mentions.yml).newsletters, (p) => `
               <li>
                 <a
                   href="${p.href}"
                   class="list-item list-item--avatar list-item--link list-item--quote"
                 >
                   <img
-                    src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+                    src="https://www.google.com/s2/favicons?domain=${getDomain.js(p.href)}&sz=48"
                     alt="Favicon for ${p.name}"
                     width="24"
                     height="24"
@@ -436,7 +436,7 @@
           </div>
           <div class="tabs-panel">
             <ul class="list list--has-dividers">
-              ${Tree.map(_.mentionsBloggers, (p) => `
+              ${Tree.map((data/mentions.yml).bloggers, (p) => `
               <li>
                 <a
                   href="${p.href}"
@@ -509,7 +509,7 @@
         I’m Doing <span style="color: var(--color-green)">Interviews</span>
       </h2>
       <ul class="list list--has-dividers">
-        ${Tree.map(_.interviews, (p) => `
+        ${Tree.map(data/interviews.yml, (p) => `
         <li>
           <a href="${p.href}" class="list-item list-item--link list-item--gap">
             <img
@@ -536,7 +536,7 @@
       </h2>
 
       <ul class="list list--has-dividers">
-        ${Tree.map(data/side-projects.yml/slice(0,4), (p) => `
+        ${Tree.map(data/side-projects.yml/slice(0,3), (p) => `
         <li>
           <a
             href="${p.url}"
@@ -564,7 +564,7 @@
       </ul>
       <!-- prettier-ignore -->
       <p class="list-footer">
-        There’s more, such as ${Tree.plain((data/side-projects.yml).slice(4).map((p, i, arr) => 
+        There’s more, such as ${Tree.plain((data/side-projects.yml).slice(3).map((p, i, arr) => 
           (arr.length - 1 === i ? 'and ' : '') + `<a href="${p.url}">${p.title} (${p.date})</a>`)
         ).join(', ')} (to name a few — I know, I have a problem).
       </p>
@@ -631,7 +631,7 @@
         `)*/""}
       </ul>
       <p class="list-footer">
-        And more, going all the way back to Lifeguard at age 16.
+        And more, including Lifeguard at age 16.
         <a href="#contact">Ask</a> if you want to know.
       </p>
     </div>
