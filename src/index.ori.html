@@ -117,7 +117,7 @@
           <a href="${url}" class="list-item list-item--between list-item--link">
             <span class="list-item__primary">${title}</span>
             <time class="list-item__secondary" datetime="${date_published}"
-              >${date.js(date_published)}</time
+              >${helpers/formatDate.js(date_published)}</time
             >
           </a>
         </li>
@@ -134,7 +134,7 @@
           >
             <span class="list-item__primary">${post.title}</span>
             <time class="list-item__secondary" datetime="${post.date_published}"
-              >${date.js(post.date_published)}</time
+              >${helpers/formatDate.js(post.date_published)}</time
             >
           </a>
         </li>
@@ -403,7 +403,7 @@
                   class="list-item list-item--link list-item--gap"
                 >
                   <img
-                    src="https://www.google.com/s2/favicons?domain=${getDomain.js(p.href)}&sz=48"
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=48"
                     alt="Favicon for ${p.name}"
                     width="24"
                     height="24"
@@ -423,7 +423,7 @@
                   class="list-item list-item--avatar list-item--link list-item--quote"
                 >
                   <img
-                    src="https://www.google.com/s2/favicons?domain=${getDomain.js(p.href)}&sz=48"
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=48"
                     alt="Favicon for ${p.name}"
                     width="24"
                     height="24"
@@ -443,7 +443,7 @@
                   class="list-item list-item--link list-item--gap"
                 >
                   <img
-                    src="https://www.google.com/s2/favicons?domain=${getDomain.js(p.href)}&sz=32"
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=32"
                     alt="Favicon for ${p.name}"
                     width="24"
                     height="24"
@@ -466,7 +466,7 @@
       </h2>
 
       <ul class="list list--has-dividers list--has-more">
-        ${Tree.map(getHackerNewsPosts.js(), (hit) => `
+        ${Tree.map(helpers/getHackerNewsPosts.js(), (hit) => `
         <li>
           <a
             href="https://news.ycombinator.com/item?id=${hit.story_id}"
