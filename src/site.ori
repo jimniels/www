@@ -1,4 +1,4 @@
 {
-  ...(<../static>)
+  ...(../static)
   index.html = index.ori.html()
 }
