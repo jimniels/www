@@ -347,7 +347,7 @@
           <!-- prettier-ignore -->
           <div class="tabs-panel">
             ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).coworkers.slice(0,4), p => ({
-              href: `https://web.archive.org/web/` + p.href,
+              href: p.href,
               imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
               imgAlt: `Avatar for ${p.name}`,
               title: p.name,

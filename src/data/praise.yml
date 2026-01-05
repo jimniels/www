@@ -42,11 +42,11 @@ readers:
   #   origin: x.com
   #   quote: "Good writeup by @jimniels"
 coworkers:
-  - name: Tim Meaney
-    href: https://twitter.com/timothymeaney/status/1599859017597059072?s=20
-    quote:
-      I’ve had the pleasure of working with [Jim] for a decade, he’s one of the
-      best.
+  # - name: Tim Meaney
+  #   href: https://twitter.com/timothymeaney/status/1599859017597059072?s=20
+  #   quote:
+  #     I’ve had the pleasure of working with [Jim] for a decade, he’s one of the
+  #     best.
   - name: Matt Brophy
     href: https://twitter.com/brophdawg11/status/1599818035023396864?s=20
     quote:
@@ -58,7 +58,7 @@ coworkers:
       Jim is someone I've followed for a while, and someone who has a deep understanding
       of and appreciation for the web.
   - name: Michael Flarup
-    href: https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b
+    href: https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b#:~:text=Jim%20Nielsen
     quote: "[Jim’s] as much an icon nut as me [and] he’s got great curation abilities."
   - name: Chance Strickland
     href: https://x.com/chancethedev/status/1599813034712924161
