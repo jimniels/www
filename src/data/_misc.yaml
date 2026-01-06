@@ -1,0 +1,332 @@
+---
+mentions:
+  - name: CSS Weekly
+    href: https://css-weekly.com/issue-485/#:~:text=Jim%20Nielsen
+    origin: css-weekly.com
+    type: Newsletter
+  - name: CSS Tricks
+    href: https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/#:~:text=Jim%20Nielsen
+    origin: css-tricks.com
+    type: Newsletter
+  - name: Frontend Focus
+    href: https://frontendfoc.us/issues/598
+    origin: frontendfoc.us
+    type: Newsletter
+  - name: Sidebar.io
+    href: https://sidebar.io/date/2025-05-06
+    origin: sidebar.io
+    type: Newsletter
+  - name: Smashing Magazine
+    origin: smashingmagazine.com
+    href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+    type: Article
+  - name: Frontend Masters
+    origin: frontendmasters.com
+    href: https://frontendmasters.com/blog/light-dom-only/
+    type: Article
+  - name: Changelog
+    origin: changelog.com
+    href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+    type: News
+  - name: JavaScript Weekly
+    origin: javascriptweekly.com
+    href: https://javascriptweekly.com/issues/573#:~:text=Jim%20Nielsen
+    type: Newsletter
+  - name: Bytes
+    origin: bytes.dev
+    type: Newsletter
+    href: https://bytes.dev/archives/107
+  - name: Frontend Focus
+    origin: frontendfoc.us
+    quote: "[quote…]"
+    href: https://frontendfoc.us/issues/598
+  - name: Sidebar.io
+    origin: sidebar.io
+    quote: "[quote…]"
+    href: https://sidebar.io/date/2025-05-06
+  - name: CSS Weekly
+    quote: "[Jim] explores a new way to think about design systems…"
+    href: https://css-weekly.com/issue-485/
+    origin: css-weekly.com
+  - name: A11y Weekly
+    href: https://a11yweekly.com/issue/342/
+    origin: a11yweekly.com
+    links:
+      - href: https://a11yweekly.com/issue/472/#:~:text=jim%2Dnielsen
+        type: Newsletter
+      - href: https://a11yweekly.com/issue/342/#:~:text=jim%2Dnielsen
+        type: Newsletter
+  - name: TLDR Dev
+    href: https://tldr.tech/dev/2024-01-05
+    origin: tldr.tech
+  - name: Alex Ziskind
+    href: https://youtu.be/R2KkJ_Zawnk?t=15
+    origin: youtube.com
+    type: Video
+  - name: Codrops
+    href: https://tympanus.net/codrops/collective/collective-676/#:~:text=Jim%20Nielsen
+    origin: tympanus.net
+    type: Post
+
+pubs:
+  - name: CSS Tricks
+    origin: css-tricks.com
+    refs:
+      - - "Newsletter "
+      - - "#202"
+        - https://css-tricks.com/newsletter/202-how-to-improve-site-performance-tricks-for-using-css-variables/
+      - - ", "
+      - - "#213"
+        - https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+      - - ", "
+      - - "#218"
+        - https://css-tricks.com/newsletter/218-web-components-colorful-design-systems-onboarding-animations/
+      - - ", "
+      - - "#220"
+        - https://css-tricks.com/newsletter/220-the-principle-of-least-power/
+      - - ", "
+      - - "#246"
+        - https://css-tricks.com/newsletter/246-communication-is-key/
+      - - ", "
+      - - "#249"
+        - https://css-tricks.com/newsletter/249-decoding-async-tree-rings-and-flexbox-gap/
+      - - ", "
+      - - "#256"
+        - https://css-tricks.com/newsletter/256-when-to-use-container-queries/
+      - - ", "
+      - - "#284"
+        - https://css-tricks.com/newsletter/284-new-year-new-color-newsletter/
+      - - ", "
+      - - "#289"
+        - https://css-tricks.com/newsletter/289-the-problem-with-evergreen-browsers/
+      - - ", "
+      - - "#297"
+        - https://css-tricks.com/newsletter/297-desks-dashes-document-outline-drama/
+      - - ", "
+      - - "#300"
+        - https://css-tricks.com/newsletter/300-waxing-nostalgic-on-the-virtual-townsquare/
+      - - " and "
+      - - more
+        - https://www.google.com/search?q=jim+nielsen&as_sitesearch=css-tricks.com
+      - - "."
+  - name: Smashing Magazine
+    origin: https://smashingmagazine.com
+    refs:
+      - - "Newsletter "
+      - - "#443"
+        - https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/
+      - - ", "
+      - - "#362"
+        - https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-362/
+      - - ", and "
+      - - more
+        - https://google.com/search?q=jim+nielsen&as_sitesearch=smashingmagazine.com
+      - - "."
+  - name: JavaScript Weekly
+    origin: javascriptweekly.com
+    refs:
+      - - "Issue "
+      - - "#573"
+        - https://javascriptweekly.com/issues/573
+      - - "."
+  - name: Frontend Focus
+    origin: frontendfoc.us
+    refs:
+      - - "Issues "
+      - - "#598"
+        - https://frontendfoc.us/issues/598
+      - - ", "
+      - - "#595"
+        - https://frontendfoc.us/issues/595
+      - - ", "
+      - - "#541"
+        - https://frontendfoc.us/issues/541
+      - - ", and "
+      - - "#444"
+        - https://frontendfoc.us/issues/444
+      - - "."
+      # https://frontendfoc.us/issues/612
+  - name: Bytes
+    origin: bytes.dev
+    refs:
+      - - "Issues "
+      - - "#107"
+        - https://bytes.dev/archives/107
+      - - ", "
+      - - "#174"
+        - https://bytes.dev/archives/174
+      - - ", "
+      - - "and "
+      - - "#246"
+        - https://bytes.dev/archives/246
+      - - "."
+  - name: Sidebar.io
+    origin: sidebar.io
+    refs:
+      - - "Linked in "
+      - - over 20 daily newsletters
+        - https://sidebar.io/domain/blog.jim-nielsen.com
+      - - "."
+  - name: Changelog
+    origin: changelog.com
+    refs:
+      - - "News from "
+      - - Feb. 2023
+        - https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+      - - ", "
+      - - Mar. 2022
+        - https://changelog.com/news/inspecting-web-views-in-macos-8OeO
+      - - ", and "
+      - - more
+        - https://changelog.com/search?q=jim+nielsen
+      - - "."
+  - name: Frontend Masters
+    origin: frontendmasters.com
+    refs:
+      - - Linked in
+      - - " Dec. 2023"
+        - https://frontendmasters.com/blog/the-case-for-design-engineers/
+      - - ", "
+      - - Feb. 2024
+        - https://frontendmasters.com/blog/light-dom-only/
+      - - ", and "
+      - - more
+        - https://frontendmasters.com/blog?s=jim-nielsen
+      - - "."
+  - name: Hacker News
+    origin: news.ycombinator.com
+    content: ""
+    refs:
+      - - "Triggered "
+      - - "500"
+        - https://news.ycombinator.com/item?id=37205731
+      - - ", "
+      - - "300"
+        - https://news.ycombinator.com/item?id=28309885
+      - - ", "
+      - - "200"
+        - https://news.ycombinator.com/item?id=35626015
+      - - " comments and "
+      - - more
+        - https://hn.algolia.com/?dateRange=all&query=blog.jim-nielsen.com&sort=byPopularity&type=story
+      - - "."
+  - name: Lobsters
+    origin: lobste.rs
+    refs:
+      - - 19+ stories across 9+ submitters
+        - https://lobste.rs/domains/blog.jim-nielsen.com
+  - name: HeyDesigner
+    origin: heydesigner.com
+    refs:
+      - - "Issues "
+      - - "#82"
+        - https://heydesigner.com/newsletter/daily-issues/2021-82/
+      - - ", "
+      - - "#162"
+        - https://heydesigner.com/newsletter/daily-issues/2021-162/
+      - - ", "
+      - - "#182"
+        - https://heydesigner.com/newsletter/daily-issues/2021-182/
+      - - ", "
+      - - "#190"
+        - https://heydesigner.com/newsletter/daily-issues/2021-190/
+      - - ", and "
+      - - "#196"
+        - https://heydesigner.com/newsletter/daily-issues/2021-196/
+      - - " in 2021 alone. "
+      - - More in other years
+        - https://www.bing.com/search?q=%22jim+nielsen%22+site%3aheydesigner.com
+      - - "."
+quotes:
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
+    quote: Take my money — I can’t wait to devour this book. It looks so good.
+  - name: Jason Snell
+    href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/
+    quote:
+      A gorgeous art book/coffee table book that preserves the history of iOS app
+      icon art.
+  - name: John Voorhees
+    href: https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/
+    quote: My expectations were high, and I’m happy to report that it doesn’t disappoint.
+activeSideProjects:
+  - name: "<a href=https://blog.jim-nielsen.com>My Blog</a>"
+    content: Personal opinions with a shelf life.
+    date: 2012–Now
+  - name: "<a href=https://notes.jim-nielsen.com>My Notes</a>"
+    content:
+      Notes on other people’s writing plus <a href=https://blog.jim-nielsen.com/2023/notes-dot-jim-nielsen-dot-com/>my
+      2¢</a>.
+    date: 2019–Now
+  - name: "<a href=https://iosicongallery.com>Icon Galleries</a>"
+    content:
+      Personal collection of beautiful icons for <a href=https://www.iosicongallery.com>iOS</a>,
+      <a href=https://www.macosicongallery.com>macOS</a>, and <a href=https://www.watchosicongallery.com>watchOS</a>
+      — designed, developed, and curated by me.
+    date: 2010–Now
+  - name: "<a href=https://www.appiconbook.com>App Icon Books</a>"
+    content:
+      Crowdfunded books celebrating the history and art of app icon design for
+      <a href=https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book>iOS</a>
+      & <a href=https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book>macOS</a>
+      (I helped <a href=https://blog.jim-nielsen.com/tags/#iconGalleriesBook>design</a>
+      and <a href=https://blog.jim-nielsen.com/2022/short-history-of-ios-app-icons/>write</a>
+      them).
+    writeups: https://blog.jim-nielsen.com/tags/#iconGalleriesBook
+    date: 2018-2022
+  - name: "<a href=https://omgimg.jim-nielsen.com>o(m)g:image</a>"
+    content:
+      A fun side project where you try to guess an article’s title from its social
+      share image.
+    date: "2024"
+  - name: "<a href=https://instagram.com/flyingjpies>Flying J Pies</a>"
+    content:
+      "Making pies and <a href=https://blog.jim-nielsen.com/2022/flying-j-pies/>documenting
+      the process</a>: pic or it didn’t happen."
+    date: 2017–Now
+archivedSideProjects:
+  # - name: "<a href=https://github.com/jimniels/html>html</a>"
+  #   content:
+  #     Small, zero-dep JS library for doing JSX-like syntax with tagged template
+  #     literals.
+  #   writeups: https://blog.jim-nielsen.com/2019/jsx-like-syntax-for-tagged-template-literals/
+  #   date: "2022"
+  - name: Can I Still Use?
+    href: https://www.canistilluse.com
+    content:
+      A satirical website illustrating the problems of normalizing habitul breakage
+      on the web.
+    writeups: https://blog.jim-nielsen.com/2021/canistilluse.com
+    date: "2021"
+  - name: "<a href=https://readlists.jim-nielsen.com>Readlists</a>"
+    content:
+      Mixtapes for reading. Collect info across the web into an ebook or feed
+      for reading on your favorite device.
+    writeups: https://blog.jim-nielsen.com/2021/reintroducing-readlists/
+    date: "2021"
+  - name: "<a href=https://netlibox.netlify.app>Netlibox</a>"
+    content:
+      An experiment in publishing from Dropbox to Netlify. Published on <a href=https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/>Netlify’s
+      blog</a>.
+    date: "2018"
+  - name: "<a href=https://gimmiedaticon.jim-nielsen.com>Gimmie Dat iCon</a>"
+    content:
+      A tool to fetch full-sized icon artwork from the App Store. Published as
+      <a href=https://webdesign.tutsplus.com/series/building-a-mini-api-driven-web-app--cms-866>a
+      tutorial for Web Design Tuts+</a>.
+    date: "2015"
+  - name: "<a href=https://logo-integrity.jim-nielsen.com>Logo Integrity</a>"
+    content:
+      How far out of focus can an logo be yet remain recognizeable? <a href=https://blog.jim-nielsen.com/2014/logo-integrity/>My
+      experiment</a> to find out.
+    date: "2014"
+  - name: "<a href=https://teamcolors.jim-nielsen.com>TeamColors</a>"
+    content:
+      A color reference for your favorite sports teams (<a href=https://blog.jim-nielsen.com/2015/team-colors-2-0/>made
+      during a hackathon</a>).
+    date: "2013"
+  - name: "<a href=https://sassme.jim-nielsen.com>SassMe</a>"
+    content:
+      A tool to visualize Sass color functions without compiling (initially <a
+      href=https://blog.jim-nielsen.com/2016/sassme-v2/>made during a hackathon</a>)
+    date: "2012"

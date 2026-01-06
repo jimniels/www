@@ -1,0 +1,56 @@
+sites:
+  - name: CSS Tricks
+    href: https://css-tricks.com/?s=jim%20nielsen
+  - name: Smashing Magazine
+    href: https://www.smashingmagazine.com/the-smashing-newsletter/smashing-newsletter-issue-433/#:~:text=Jim%20Nielsen
+  - name: Frontend Masters
+    href: https://frontendmasters.com/blog/the-case-for-design-engineers/#:~:text=Jim%20Nielsen
+    # href: https://frontendmasters.com/blog?s=jim%20nielsen
+  - name: The Verge
+    href: https://www.theverge.com/politics/698148/white-house-wire-youtube#:~:text=Jim%20Nielsen%2C%20a%20web%20developer%20and%20founding%20engineer%20at%20the%20data%20analytics%20company%20Quadratic%2C%20ran%20an%20analysis
+  - name: The Wall Street Journal
+    href: https://www.wsj.com/tech/personal-tech/before-you-buy-a-chromebook-check-the-expiration-date-11646538322#:~:text=Jim%20Nielsen
+newsletters:
+  - name: JavaScript Weekly
+    # quote: "[Jim has] a story of device obsolescence, accessibility, and progressive enhancement…"
+    href: https://javascriptweekly.com/issues/573
+  - name: Bytes
+    # quote: "[Jim] wrote an insightful post about Data flow in Remix…"
+    href: https://bytes.dev/archives/107
+  # - name: Frontend Focus
+  #   origin: frontendfoc.us
+  #   quote: "[quote…]"
+  # href: https://frontendfoc.us/issues/598
+  - name: Changelog
+    # quote: "This short piece by Jim Nielsen resonated with me"
+    href: https://changelog.com/news/the-art-of-knowing-when-to-quit-3L62
+  - name: Sidebar.io
+    href: https://sidebar.io/domain/blog.jim-nielsen.com
+  # - name: CSS Weekly
+  #   quote: "[Jim] explores a new way to think about design systems…"
+  #   href: https://css-weekly.com/issue-485/
+  #   origin: css-weekly.com
+  # - name: A11y Weekly
+  #   href: https://a11yweekly.com/issue/342/
+  #   origin: a11yweekly.com
+  - name: TLDR Dev
+    href: https://tldr.tech/dev/2024-01-05#:~:text=Cold-blooded%20Software%20(
+bloggers:
+  - name: Maggie Appleton
+    href: https://maggieappleton.com/design-engineers#:~:text=Jim%20Nielsen
+  - name: Tom MacWright
+    href: https://macwright.com/2024/08/12/blogging-under-ai
+    # quote: "I find some comfort in [Jim’s] perspective…"
+  - name: Robin Rendle
+    href: https://robinrendle.com/notes/taking-shortcuts/#:~:text=Jim
+    # quote: "As I was reading this post from Jim about his setup I got wildly, incomprehensibly jealous…"
+  - name: Dave Rupert
+    href: https://daverupert.com/2019/09/weeknotes-9/#:~:text=Jim%20Nielsen
+    # quote:
+    #   I love the frequency and depth of Jim’s thoughts, he uses his blog really
+    #   well.
+  - name: Om Malik
+    href: https://om.co/2022/02/01/the-daily-om-02-01-2022/#:~:text=Jim%20Nielsen
+    # quote:
+    #   A fantastic read from one of my favorite bloggers/web-technologists, Jim
+    #   Nielsen.

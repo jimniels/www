@@ -1,0 +1,128 @@
+- title: Director of Design and UI Architecture
+  company: SageSure
+  companyUrl: https://www.sagesure.com
+  byline: 2016 to Present · Jersey City, New Jersey
+  description: "More info to come..."
+  projects:
+    - title: Agent Portal
+      tools: Sketch, Sass
+      description: Web application allowing agents to quote and bind insurance policies via Insight’s platform. Initial work has included redesigning exisiting problematic UI interfaces and simplifying front-end implementation approaches.
+      links:
+        - title: Text as UI
+          url: https://blog.jim-nielsen.com/2016/text-as-ui/
+        - title: Designing and Engineering Color Usage in Agent Portal
+          url: https://blog.jim-nielsen.com/2017/designing-and-engineering-color-usage/
+        - title: Migrating Away from Compass and Susy to Sass Exclusively
+          url: https://blog.jim-nielsen.com/2017/migrating-away-from-compass-and-susy/
+- title: UI Engineer
+  company: Timshel
+  companyUrl: https://timshel.com/
+  byline: 2016 · Chicago / New York City
+  description: "Worked on the front-end team doing engineering, design, and product management for a variety of web applicaitons and services. In other words, when stuff needed to be built, we built and shipped it."
+  projects:
+    - title: Admin
+      tools: Sketch, Sass, CSS Modules, Radium, Javascript, React.js, Redux, Bootstrap, Material UI, Git
+      description: Web interface for clients administering their account on The Groundwork platform. Handled creating, designing, and engineering various features for the application’s view layer.
+      links:
+        - title: Redesigning and Engineering the UI/UX for Unauthenticated Users of Timshel’s “Admin”
+          url: https://blog.jim-nielsen.com/2016/redesigning-and-engineering-timshel-admin/
+        - title: Designing Integrations for the Admin Application at Timshel
+          url: https://blog.jim-nielsen.com/2017/designing-integrations-at-timshel/
+- title: Designer & Front-end Developer
+  company: Postlight
+  companyUrl: https://www.postlight.com/
+  byline: 2016 · New York City
+  description: "Succeeded in consulting, designing, and building internal web applications (on tight deadlines) for one of Postlight’s biggest clients: Time Inc."
+  projects:
+    - title: Assignment Desk
+      tools: Sketch, Sass, Javascript, React.js, Redux, Bootstrap, Git
+      description: Part one in a series of internal web applications for Time Inc. Handled sketching, wireframeing, and mocking the UI/UX of the application while simultaneously engineering the view layer.
+      links:
+        - title: Designing and Building the Assignment Desk Application for Time Inc.
+          url: https://blog.jim-nielsen.com/2016/designing-and-building-assignment-desk
+        - title: Going the Extra Mile with Tasks and Feature Requests
+          url: https://blog.jim-nielsen.com/2016/going-the-extra-mile-with-tasks-and-feature-requests/
+        - title: Assignment Desk Logo
+          url: https://blog.jim-nielsen.com/2015/assignment-desk-logo/
+    - title: Digital Content Production
+      tools: Sketch, Invision, Sass, Javascript, React.js, Redux, Bootstrap, Git
+      description: "Designed and built based on the Assignment Desk application framework. Handled everything from UI/UX to product management to front-end development."
+      links:
+        - title: Designing and Developing the DCP Application for Time Inc.
+          url: https://blog.jim-nielsen.com/2016/designing-developing-dcp-application/
+- title: Lead Designer, Front-end Developer
+  company: Kindling
+  companyUrl: http://kindlingapp.com/
+  byline: 2012 to 2016 · New York City
+  description: "Led this startup’s design vision (product, brand and identity, marketing). Wrote code. Wore lots of hats. Built software people enjoyed using."
+  projects:
+    - title: Kindling the Application
+      tools: Sketch, Photoshop, PHP, Sass, Git, Invision, Asana, Trac
+      description: "A fully-responsive web application used to discover, discuss, evaluate, and decide on great ideas. Handled 100% of the app’s UI/UX: from ideation on paper to digital wireframes/mocks to browser code to cross-device testing and more."
+      links:
+        - title: Innovation Sales Sheet
+          url: https://blog.jim-nielsen.com/2015/innovation-sales-sheet/
+        - title: Skinning the Idea Poster Anew
+          url: https://blog.jim-nielsen.com/2015/skinning-the-idea-poster-anew/
+        - title: Creating Apple Touch Icons
+          url: https://blog.jim-nielsen.com/2014/creating-apple-touch-icons/
+    - title: Kindling the Marketing Site
+      description: "Designed and built two different versions of this site: the first powered by Wordpress, the second by a static site generator. Hands were full with conceptualization, UI/UX, code, and everything in-between."
+      tools: Photoshop, PHP, Wordpress, Sass, Javascript, Metalsmith, Node, Git, Hubspot & Google Analytics, Asana, Mailchimp
+      links:
+        - title: Kindling Marketing Site 2.0
+          url: https://blog.jim-nielsen.com/2015/marketing2/
+        - title: Designing Kindling’s Pricing Page
+          url: https://blog.jim-nielsen.com/2015/designing-kindlings-pricing-page/
+        - title: Conceiving Blog Post artwork
+          url: https://blog.jim-nielsen.com/2015/conceiving-blog-post-artwork/
+        - title: Everything But Visual Design
+          url: https://blog.jim-nielsen.com/2015/everything-but-visual-design/
+        - title: "Words Have Meaning: Creating the “Let’s Talk Innovation” Page"
+          url: https://blog.jim-nielsen.com/2014/innovation-talk-page/
+        - title: Designing a Successful Transaction Receipt
+          url: https://blog.jim-nielsen.com/2014/successful-transaction-receipt/
+        - title: Home Page Redesign of kindlingapp.com
+          url: https://blog.jim-nielsen.com/2013/kindlingapp-home-page-redesign/
+    - title: Kindling the Brand
+      description: Owned the Kindling brand and identity, which encompassed everything from business cards to company-wide email signatures, as well as a guidebook which fostered internal standards and awareness around maintaing brand integrity.
+      tools: Photoshop, Illustrator, InDesign
+      links:
+        - title: Kindling Rubber Stamp
+          url: https://blog.jim-nielsen.com/2014/kindling-rubber-stamp/
+    - title: Kindling Loves Startups
+      description: Designed and developed this responsive website as the central piece of a marketing campaign. It employed a few (at the time) cutting-edge tricks, including a progressively-enhanced pulse animation.
+      tools: Photoshop, PHP, Sass, Javascript, jQuery
+      links:
+        - title: "[Archived]: kindlinglovesstartups.com"
+          url: http://jim-nielsen.com/sandbox/kindlinglovesstartups/
+- title: Web Designer
+  company: Arc90
+  companyUrl: http://arc90.com/
+  byline: 2012 · New York City
+  description: Solved problems for clients with design and code. Updated and enhanced the agency’s website. Hacked cool (and useful) side projects.
+  projects:
+    - title: Knovel
+      description: Worked on designing product landing pages and diving into application code – right before the client’s contract was cut short.
+      tools: Photoshop, Javascript, jQuery, Backbone.js
+    - title: arc90.com
+      description: Created new artwork and assets for Arc’s exisiting website, then implemented them in code.
+      tools: Photoshop, Wordpress, PHP, CSS
+      links:
+        - title: Arc90 “Work” Page Design Updates
+          url: https://blog.jim-nielsen.com/2016/acr90-work-page-design-updates/
+- title: Marketing & Multimedia Designer
+  company: Dixie State University
+  companyUrl: http://dixie.edu/
+  byline: 2010 to 2011 · St. George, Utah
+  description: "Raised design bar 110% on every public-facing widget I could get my cursor on: web design and development, graphic design, page layout, marketing campaigns, social media promotion, annual reports, brand identity, and more."
+- title: Multimedia Development Intern
+  company: SkyWest Airlines
+  companyUrl: http://skywest.com/
+  byline: 2010 · St. George, Utah
+  description: Interface design, logo creation, web maintenance, layout design, product photography, and more.
+# -
+#     title: BA Integrated Studies @ Dixie State University, Emphasis in Visual Technologies
+#     byline: 2007—2010 · St. George, Utah
+#     description: Graduated Summa Cum Laude along with extracurricular achievements such <a href="http://dixie.edu/news/news.php?id=447">State and National Champion in the FBLA-PBL “Web Site Development” category</a>.
+#     link: More Info

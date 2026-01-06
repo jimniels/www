@@ -1,0 +1,50 @@
+- url: "https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book"
+  image: "/sp-app-icon-book.png"
+  title: "The iOS App Icon Book"
+  description: "A Kickstarter with Michael Flarup. Raised €136,420 across 1,450 backers. Featured on daringfireball, macstories, and more."
+  # blogLink: "https://blog.jim-nielsen.com/tags/#iconGalleriesBook"
+  date: "2022"
+- url: "https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book"
+  image: "/sp-app-icon-book-macos.png"
+  title: "The macOS App Icon Book"
+  description: "Kickstarter sequel to “The iOS App Icon Book”. Raised €112,139 across 982 backers."
+  date: "2023"
+- url: "https://omgimg.jim-nielsen.com"
+  image: "https://omgimg.jim-nielsen.com/preview.png"
+  title: "o(m)g:image"
+  description: "A fun side project where you try to guess an article’s title from its social share image."
+  date: "2024"
+- url: "https://canistilluse.com"
+  image: "https://canistilluse.com/favicon.ico"
+  title: "Can I Still Use?"
+  description: "A satirical website illustrating the problems of normalizing habitual breakage on the web."
+  date: "2021"
+- url: "https://readlists.jim-nielsen.com"
+  title: "Readlists"
+  # blogLink: "https://blog.jim-nielsen.com/2021/reintroducing-readlists/"
+  date: "2021"
+  description:
+    Mixtapes for reading. Collect info across the web into an ebook or feed
+    for reading on your favorite device.
+  # writeups: https://blog.jim-nielsen.com/2021/reintroducing-readlists/
+- url: "https://www.netlify.com/blog/2018/10/15/combining-netlify-with-dropbox-for-a-one-click-publishing-process/"
+  title: Netlibox
+  description: An experiment in publishing from Dropbox to Netlify.
+  date: "2018"
+- url: "https://gimmiedaticon.jim-nielsen.com"
+  title: "Gimmie Dat iCon"
+  description: A tool to fetch full-sized icon artwork from the App Store.
+  date: "2015"
+- url: "https://logo-integrity.jim-nielsen.com"
+  title: Logo Integrity
+  description: How far out of focus can an logo be yet remain recognizable? My experiment to find out.
+  date: "2014"
+- url: "https://teamcolors.jim-nielsen.com"
+  title: TeamColors
+  description: A color reference for your favorite sports teams made
+    during a hackathon.
+  date: "2013"
+- url: "https://sassme.jim-nielsen.com"
+  title: SassMe
+  description: A tool to visualize Sass color functions without compiling (initially made during a hackathon)
+  date: "2012"

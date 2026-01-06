@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <title>Jim Nielsen</title>
+    <meta name="description" content="The personal website of Jim Nielsen." />
+    <meta name="author" content="Jim Nielsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Custom font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- rel=me links -->
+    <link rel="me" href="https://github.com/jimniels" />
+    <link rel="me" href="https://twitter.com/jimniels" />
+    <link rel="me" href="https://mastodon.social/@jimniels" />
+    <link rel="me" href="https://dribbble.com@jimniels" />
+    <link rel="me" href="https://github.com/jimniels" />
+    <link rel="me" href="https://bsky.app/profile/jim-nielsen.com" />
+
+    <!-- Social previews -->
+    <meta property="og:title" content="Jim Nielsen" />
+    <meta
+      property="og:description"
+      content="The personal website of Jim Nielsen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jim-nielsen.com" />
+    <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <!-- RSS for subdomains -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://blog.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Blog: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://blog.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Blog: JSON Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://notes.jim-nielsen.com/feed.xml"
+      title="Jim Nielsen’s Notes: RSS Feed"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://notes.jim-nielsen.com/feed.json"
+      title="Jim Nielsen’s Notes: JSON Feed"
+    />
+
+    <!-- Inline the CSS -->
+    <style>
+      ${<styles.css>}
+    </style>
+  </head>
+  <body>
+    <!-- Header ============================================================ -->
+    <header class="header">
+      <img
+        src="/jimniels.jpg"
+        alt="Photograph of Jim Nielsen"
+        width="580"
+        height="376"
+      />
+      <h1 hidden>Jim Nielsen</h1>
+      <h2>
+        I’m a web designer, developer, & blogger with 20+ years of experience.
+      </h2>
+      <ul class="header__contact" id="contact">
+        <li>
+          <a href="https://mastodon.social/@jimniels">Mastodon</a>
+        </li>
+        <li>
+          <a href="https://bsky.app/profile/jim-nielsen.com">Bluesky</a>
+        </li>
+        <li>
+          <a href="mailto:jimniels@gmail.com">
+            <span>E</span><span>m</span><span>a</span><span>i</span
+            ><span>l</span>
+          </a>
+        </li>
+        <li>
+          <a href="/linkedin">LinkedIn</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Blog ============================================================== -->
+    <div class="sect" id="blog">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-red)">Blogging</span>
+        <a
+          href="https://blog.jim-nielsen.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-red)"
+        >
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+
+      <ul class="list list--has-dividers">
+        ${Tree.map(<https://blog.jim-nielsen.com/feed.json>/items/slice(0, 3),
+        ({ url, title, date_published }) => `
+        <li>
+          <a href="${url}" class="list-item list-item--between list-item--link">
+            <span class="list-item__primary">${title}</span>
+            <time class="list-item__secondary" datetime="${date_published}"
+              >${helpers/formatDate.js(date_published)}</time
+            >
+          </a>
+        </li>
+        `)}
+      </ul>
+
+      ${/*
+      <ul class="list list--has-dividers list--has-more">
+        ${Tree.map(<https://blog.jim-nielsen.com/feed.json>/items, (post) => `
+        <li>
+          <a
+            href="${post.url}"
+            class="list-item list-item--between list-item--link"
+          >
+            <span class="list-item__primary">${post.title}</span>
+            <time class="list-item__secondary" datetime="${post.date_published}"
+              >${helpers/formatDate.js(post.date_published)}</time
+            >
+          </a>
+        </li>
+        `)}
+        <li hidden>
+          <label class="list-item list-item--between list-item--more">
+            More…
+            <input type="checkbox" />
+          </label>
+        </li>
+      </ul>
+      */""}
+
+      <p class="list-footer">
+        My blog is
+        <a href="#hackernews">popular on Hacker News</a> as well as
+        <a href="#pubs">linked to</a> and <a href="#people">praised by many</a>.
+      </p>
+    </div>
+
+    <!-- Notes ============================================================== -->
+    <div class="sect" id="notes">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-blue)">Microblogging</span>
+        <a
+          href="https://notes.jim-nielsen.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-blue)"
+        >
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map((https://notes.jim-nielsen.com/feed.json).items.slice(0, 3),
+        ({ url, title, _external_url_domain }) => `
+        <li>
+          <a href="${url}" class="list-item list-item--between list-item--link">
+            <span class="list-item__primary">${title}</span>
+            <span class="list-item__secondary">${_external_url_domain}</span>
+          </a>
+        </li>
+        `)}
+        <!-- <li hidden>
+          <label class="list-item list-item--between list-item--more">
+            More…
+            <input type="checkbox" />
+          </label>
+        </li> -->
+      </ul>
+      <p class="list-footer">
+        Taking notes of what I read and adding my two cents.
+      </p>
+    </div>
+
+    <!-- iOS Icons ========================================================= -->
+    <div class="sect" id="icons">
+      <h2 class="list-heading">
+        I’m Collecting <span style="color: var(--color-pink)">iOS Icons</span>
+        <a
+          href="https://www.iosicongallery.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-pink)"
+        >
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+      <a href="https://www.iosicongallery.com">
+        <ul class="list list--link list--has-images">
+          ${Tree.map((https://www.iosicongallery.com/feed.json).items.slice(0,
+          16), (post) => `
+          <li class="list-item">
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="iOS app icon for ${post.title}"
+            />
+          </li>
+          `)}
+        </ul>
+      </a>
+      <p class="list-footer">
+        <a href="https://blog.jim-nielsen.com/tags/#iconGalleries"
+          >Designing, developing, and curating</a
+        >
+        since ~2012. Helped turn my collection into
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-ios-app-icon-book"
+          >a book</a
+        >.
+      </p>
+    </div>
+
+    <!-- macOS Icons ======================================================= -->
+    <div class="sect" id="icons">
+      <h2 class="list-heading">
+        I’m Collecting
+        <span style="color: var(--color-teal)">macOS Icons</span>
+
+        <a
+          href="https://www.macosicongallery.com/feed.xml"
+          title="RSS Feed"
+          style="color: var(--color-teal)"
+        >
+          ${<svgs/heroicon-rss.svg>}
+        </a>
+      </h2>
+
+      <a href="https://www.macosicongallery.com">
+        <ul class="list list--link list--has-images">
+          ${Tree.map((https://www.macosicongallery.com/feed.json).items.slice(0,
+          16), (post) => `
+          <li class="list-item">
+            <img
+              src="${post.attachments[0].url.replace('512', '128')}"
+              width="64"
+              height="64"
+              alt="macOS app icon for ${post.title}"
+            />
+          </li>
+          `)}
+        </ul>
+      </a>
+      <p class="list-footer">
+        Helped turn these into
+        <a
+          href="https://flarup.shop/collections/frontpage/products/the-macos-app-icon-book"
+          >a book</a
+        >
+        too.
+      </p>
+    </div>
+
+    <!-- Pies ============================================================= -->
+    <div class="sect" id="pies">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-purple)">Baking Pies</span>
+      </h2>
+      <a href="https://instagram.com/flyingjpies">
+        <ul class="list list--link list--has-images">
+          ${Tree.map(<data/pies.yaml>, (filename) => `
+          <li class="list-item">
+            <img
+              src="https://cdn.jim-nielsen.com/flyingjpies/${filename}"
+              width="128"
+              height="128"
+              alt="Photograph of a pie from @flyingjpies on Instagram"
+            />
+          </li>
+          `)}
+        </ul>
+      </a>
+      <p class="list-footer">
+        In
+        <a href="https://blog.jim-nielsen.com/2022/flying-j-pies/"
+          >my quest for a great pie</a
+        >, I realized if you want it done right you gotta do it yourself.
+      </p>
+    </div>
+
+    <!-- Praise =========================================================== -->
+    <div class="sect" id="people">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-blue)">Gettin’ Praise</span> From…
+      </h2>
+
+      <div class="tabs">
+        <div class="tabs-list tabs-list--3" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Readers
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="2"
+              class="tabs-input"
+            />
+            Co-workers
+          </label>
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="compliments"
+              value="3"
+              class="tabs-input"
+            />
+            Users
+          </label>
+        </div>
+
+        <div class="tabs-panels">
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).readers.slice(0,4), p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).coworkers.slice(0,4), p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+          </div>
+          <!-- prettier-ignore -->
+          <div class="tabs-panel">
+            ${components/ListPeopleQuotes.ori.html(Tree.map((data/praise.yml).users.slice(0,4), p => ({
+              href: p.href,
+              imgSrc: `/avatar-${p.name.toLowerCase().replace(/ /g, '-')}.jpg`,
+              imgAlt: `Avatar for ${p.name}`,
+              title: p.name,
+              subtitle: p.quote
+            })))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sect" id="pubs">
+      <h2 class="list-heading">
+        I’m <span style="color: var(--color-red)">Linked To</span> By…
+      </h2>
+      <div class="tabs">
+        <div class="tabs-list tabs-list--3" role="tablist">
+          <label class="tabs-label">
+            <input
+              type="radio"
+              name="pubs"
+              value="1"
+              class="tabs-input"
+              checked
+            />
+            Sites
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="pubs" value="2" class="tabs-input" />
+            Newsletters
+          </label>
+          <label class="tabs-label">
+            <input type="radio" name="pubs" value="2" class="tabs-input" />
+            Bloggers
+          </label>
+        </div>
+        <div class="tabs-panels">
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map((data/mentions.yml).sites, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=48"
+                    alt="Favicon for ${p.name}"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map((data/mentions.yml).newsletters, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--avatar list-item--link list-item--quote"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=48"
+                    alt="Favicon for ${p.name}"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+          <div class="tabs-panel">
+            <ul class="list list--has-dividers">
+              ${Tree.map((data/mentions.yml).bloggers, (p) => `
+              <li>
+                <a
+                  href="${p.href}"
+                  class="list-item list-item--link list-item--gap"
+                >
+                  <img
+                    src="https://www.google.com/s2/favicons?domain=${helpers/getDomain.js(p.href)}&sz=32"
+                    alt="Favicon for ${p.name}"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="list-item__primary">${p.name}</span>
+                </a>
+              </li>
+              `)}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hacker News ======================================================= -->
+    <div class="sect" id="hackernews">
+      <h2 class="list-heading">
+        I’m Writing
+        <span style="color: var(--color-orange)">Hits on Hacker News</span>
+      </h2>
+
+      <ul class="list list--has-dividers list--has-more">
+        ${Tree.map(helpers/getHackerNewsPosts.js(), (hit) => `
+        <li>
+          <a
+            href="https://news.ycombinator.com/item?id=${hit.story_id}"
+            class="list-item list-item--link list-item--gap"
+          >
+            <img
+              src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
+              alt="Favicon for ${p.name}"
+              width="16"
+              height="16"
+            />
+            <span class="list-item-stack">
+              <span class="list-item__primary">${hit.title}</span>
+              <span class="list-item__secondary"
+                >${hit.points.toLocaleString()} points ·
+                ${hit.num_comments.toLocaleString()} comments</span
+              >
+            </span>
+          </a>
+        </li>
+        `)}
+        <li hidden>
+          <label class="list-item list-item--between">
+            More…
+            <input type="checkbox" />
+          </label>
+        </li>
+      </ul>
+      <p class="list-footer">
+        I keep
+        <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+          >a longer running list</a
+        >
+        on my blog.
+      </p>
+    </div>
+
+    <div class="sect" id="interviews">
+      <h2 class="list-heading">
+        I’m Doing <span style="color: var(--color-green)">Interviews</span>
+      </h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map(data/interviews.yml, (p) => `
+        <li>
+          <a href="${p.href}" class="list-item list-item--link list-item--gap">
+            <img
+              src="https://www.google.com/s2/favicons?domain=${p.origin}&sz=48"
+              alt="Favicon for ${p.name}"
+              width="24"
+              height="24"
+            />
+            <span class="list-item__primary">${p.name}</span>
+            <span class="list-item__secondary ml-auto">${p.labelShort}</span>
+          </a>
+        </li>
+        `)}
+      </ul>
+      <p class="list-footer">
+        I’m open invitations to talk about the web.
+        <a href="#contact">Reach out!</a>
+      </p>
+    </div>
+
+    <div class="sect" id="side-projects">
+      <h2 class="list-heading">
+        I’m Doing <span style="color: var(--color-pink)">Side Projects</span>
+      </h2>
+
+      <ul class="list list--has-dividers">
+        ${Tree.map(data/side-projects.yml/slice(0,3), (p) => `
+        <li>
+          <a
+            href="${p.url}"
+            class="list-item list-item--avatar list-item--link"
+          >
+            <img
+              src="${p.image}"
+              alt="Graphic for ${p.title}"
+              width="64"
+              height="64"
+              style="
+                object-fit: cover;
+                border-radius: calc(var(--border-radius) - 8px);
+              "
+            />
+            <span class="list-item-stack">
+              <span class="list-item__primary">${p.title}</span>
+              <span class="list-item__secondary"
+                >${p.description} (${p.date})</span
+              >
+            </span>
+          </a>
+        </li>
+        `)}
+      </ul>
+      <!-- prettier-ignore -->
+      <p class="list-footer">
+        There’s more, such as ${Tree.plain((data/side-projects.yml).slice(3).map((p, i, arr) => 
+          (arr.length - 1 === i ? 'and ' : '') + `<a href="${p.url}">${p.title} (${p.date})</a>`)
+        ).join(', ')} (to name a few — I know, I have a problem).
+      </p>
+    </div>
+
+    <div class="sect" id="publishings" hidden>
+      <h2 class="list-heading">I Used to Write On Other People’s Websites</h2>
+      <ul class="list list--has-dividers list--has-more">
+        ${Tree.map(<data/publishings.yml>, (p) => `
+        <li>
+          <a href="${p.link}" class="list-item list-item--link list-item--gap">
+            <img
+              src="https://www.google.com/s2/favicons?domain=${p.publisherDomain}&sz=32"
+              width="16"
+              height="16"
+              alt="Favicon for ${p.publisherDomain}"
+            />
+            <span class="list-item__primary">${p.title}</span>
+            <span class="list-item__secondary ml-auto"
+              >${p.date.slice(0,4)}</span
+            >
+          </a>
+        </li>
+        `)}
+        <li>
+          <label class="list-item list-item--between">
+            More…
+            <input type="checkbox" />
+          </label>
+        </li>
+      </ul>
+      <p class="list-footer">
+        I keep a running list of my publications on my blog.
+      </p>
+    </div>
+
+    <div class="sect" id="employment">
+      <h2 class="list-heading" style="opacity: 0.75">I’m Employable</h2>
+      <ul class="list list--has-dividers">
+        ${Tree.map((data/employment.yml).slice(0,7), (job) => `
+        <li>
+          <a
+            href="${job.href}"
+            class="list-item list-item--gap list-item--link"
+          >
+            <span class="list-item__primary"
+              >${job.title} @ ${job.company}</span
+            >
+            <span class="list-item__secondary ml-auto">${job.meta}</span>
+          </a>
+        </li>
+        `)} ${/*Tree.map(_.employment, (job) => `
+        <li>
+          <details>
+            <summary class="list-item list-item--gap list-item--toggle">
+              <span class="list-item__primary"
+                >${job.title} @ ${job.company}</span
+              >
+              <span class="list-item__secondary ml-auto">${job.meta}</span>
+            </summary>
+            <div class="list-item__toggle-content">${job.content}</div>
+          </details>
+        </li>
+        `)*/""}
+      </ul>
+      <p class="list-footer">
+        And more, including Lifeguard at age 16.
+        <a href="#contact">Ask</a> if you want to know.
+      </p>
+    </div>
+
+    <footer>Thank you for visiting this personal website.</footer>
+  </body>
+</html>

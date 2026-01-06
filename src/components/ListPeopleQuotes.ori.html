@@ -1,0 +1,22 @@
+<ul class="list list--has-dividers">
+  ${Tree.map(_, ({ href, imgSrc, imgAlt, title, subtitle }) => `
+  <li>
+    <a
+      href="${href}"
+      class="list-item list-item--avatar list-item--link list-item--quote"
+    >
+      <img
+        src="${imgSrc}"
+        alt="${imgAlt}"
+        width="40"
+        height="40"
+        class="avatar"
+      />
+      <span class="list-item-stack">
+        <span class="list-item__primary">${title}</span>
+        <span class="list-item__secondary">“${subtitle}”</span>
+      </span>
+    </a>
+  </li>
+  `)}
+</ul>

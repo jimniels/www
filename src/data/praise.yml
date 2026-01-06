@@ -1,0 +1,131 @@
+readers:
+  # - name: Eric Bailey
+  #   href: https://twitter.com/ericwbailey/status/1571572550873792513?s=20
+  #   quote: Anything by Jim is an insta-read, as far as I’m concerned.
+  - name: Jeremy Keith
+    href: https://adactio.com/journal/18008
+    quote: damn, do I enjoy reading [Jim’s] blog.
+  - name: Chris Coyier
+    href: https://css-tricks.com/system-things/
+    quote: Jim was blowin’ minds the other day when he blogged…
+  - name: Simon Willison
+    href: https://bsky.app/profile/simonwillison.net/post/3ljyd7p7cuk2z
+    quote: "[Jim] has a really cool example here…"
+  - name: Sara Soueidan
+    href: https://twitter.com/sarasoueidan/status/1428686530332303361?s=21
+    quote: I, for one, love seeing [Jim’s] posts in my RSS reader.
+  # - name: Dave Rupert
+  #   href: https://daverupert.com/2019/09/weeknotes-9/
+  #   quote:
+  #     I love the frequency and depth of Jim’s thoughts, he uses his blog really
+  #     well.
+  # - name: Om Malik
+  #   href: https://om.co/2022/02/01/the-daily-om-02-01-2022/
+  #   quote:
+  #     A fantastic read from one of my favorite bloggers/web-technologists, Jim
+  #     Nielsen.
+  - name: Rich Harris
+    href: https://twitter.com/Rich_Harris/status/1286330991229927426
+    quote: "…a really good blog post by [Jim]"
+  # - name: Stefan Judis
+  #   href: https://twitter.com/stefanjudis/status/1527648201989292033
+  #   quote:
+  #     If you’re not following Jim or are subscribed to his blog, you’re missing
+  #     out!
+  # - name: Chris Ferdinandi
+  #   href: https://gomakethings.com/entropy-developer-experience-and-vanilla-js/
+  #   quote:
+  #     "[Jim] published a post...that hit on so many things I’ve experienced and
+  #     feel strongly about."
+  # - name: Guillermo Rauch
+  #   href: https://x.com/rauchg/status/1837924595506028668
+  #   origin: x.com
+  #   quote: "Good writeup by @jimniels"
+coworkers:
+  # - name: Tim Meaney
+  #   href: https://twitter.com/timothymeaney/status/1599859017597059072?s=20
+  #   quote:
+  #     I’ve had the pleasure of working with [Jim] for a decade, he’s one of the
+  #     best.
+  - name: Matt Brophy
+    href: https://twitter.com/brophdawg11/status/1599818035023396864?s=20
+    quote:
+      "[Jim] crosses the boundary between designer/developer better than anyone
+      I've worked with."
+  - name: Michael Jackson
+    href: https://twitter.com/mjackson/status/1521526982898450433?s=20
+    quote:
+      Jim is someone I've followed for a while, and someone who has a deep understanding
+      of and appreciation for the web.
+  - name: Michael Flarup
+    href: https://medium.com/@flarup/app-icon-book-progress-1-setting-up-9a432fb65a2b#:~:text=Jim%20Nielsen
+    quote: "[Jim’s] as much an icon nut as me [and] he’s got great curation abilities."
+  - name: Chance Strickland
+    href: https://x.com/chancethedev/status/1599813034712924161
+    quote: Hire Jim…[he is] a *fantastic* designer/developer combo
+  - name: Jacob Ebey
+    href: https://twitter.com/ebey_jacob/status/1599823317799952385?s=20
+    quote: Jim is a joy to work with
+users:
+  - name: Brian Lovin
+    href: https://twitter.com/user/status/1365042604132368385
+    project: Icon Galleries
+    quote: "Love these [icon galleries] Nicely done [Jim]"
+  - name: Val Head
+    href: https://twitter.com/vlh/status/361846594364112896
+    project: SassMe
+    quote: "[SassMe is a] Super helpful tool for visualizing Sass colour functions."
+  # - name: Jeremy Keith
+  #   href: https://adactio.com/links/18383
+  #   project: canistilluse.com
+  #   quote:
+  #     It’s weirdly gratifying to see a hastily-written sarcastic quip tuned into
+  #     something real.
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
+    project: The iOS App Icon Book
+    quote: "Take my money — I can’t wait to devour [The iOS App Icon Book]. It looks so good."
+  - name: Sarah Drasner
+    href: https://twitter.com/sarah_edo/status/488822972224765952
+    project: SassMe
+    quote: "[SassMe is] my new favorite toy."
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2023/09/05/macos-app-icon-book
+    project: The macOS App Icon Book
+    quote: "a sibling volume dedicated to Mac app icons? Hell yes."
+  - name: Jason Snell
+    href: https://sixcolors.com/link/2021/11/the-ios-app-icon-book/
+    project: App Icon Books
+    quote:
+      A gorgeous art book/coffee table book that preserves the history of iOS app
+      icon art.
+  - name: John Voorhees
+    href: https://www.macstories.net/reviews/the-ios-app-icon-book-the-macstories-review/
+    project: App Icon Books
+    quote: My expectations were high, and I’m happy to report that it doesn’t disappoint.
+other:
+  - name: Brian Kardell
+    href: https://twitter.com/briankardell/status/1372279388331474944?s=21
+    quote:
+      "@jimniels I just read a piece of yours...just wanted to say it was an enjoyable/relatable
+      post."
+  - name: Remy Sharp
+    href: https://remysharp.com/links/2020-09-24-e9aa7591
+    quote:
+      I really like [Jim’s idea]…I’ll be adding this to my blog shortly - very
+      clever.
+  - name: Andy Bell
+    href: https://archive.hankchizljaw.com/feed/page/61/
+    quote: "[Jim’s post] was an absolute joy to read."
+  - name: Robin Rendle
+    href: https://css-tricks.com/newsletter/213-are-we-just-moving-problems-around/
+    quote: Over the weekend I read this post by Jim Nielsen…that I really enjoyed.
+  - name: Vitaly Friedman
+    href: https://twitter.com/vitalyf/status/1610150390896508928?s=20
+    quote: An interesting design pattern by @jimniels
+  - name: Paul Ford
+    href: https://twitter.com/ftrain/status/1353733405293359105?s=20
+    quote: JIM WOW this is a nice thing to read. Thank you for making this!
+  - name: Kyle Simpson
+    href: https://www.linkedin.com/posts/getify_website-fidelity-activity-6987815816150880256-ffhG/
+    quote: I just read this really great blog post by Jim Nielsen…
