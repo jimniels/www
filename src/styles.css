@@ -41,7 +41,7 @@
   --spacer-128: 8rem;
 }
 
-/* TODO dark mode @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255 255 255);
     --color-text-muted: rgb(255 255 255 / 66%);
@@ -50,7 +50,7 @@
     --color-fg: #272727;
     --color-fg-2: #303030;
   }
-} */
+}
 
 [hidden] {
   display: none !important;
@@ -300,6 +300,12 @@ label.list-item {
   margin-top: -8px;
   transform-origin: 50%;
 }
+@media (prefers-color-scheme: dark) {
+  .list-item--toggle::after,
+  .list-item--link::after {
+    filter: invert(1);
+  }
+}
 .list-item--link::after {
   transform: rotate(-90deg);
 }
@@ -400,7 +406,7 @@ label.list-item {
   text-decoration: underline;
 }
 .header__contact a[href*="mastodon"] {
-  color: #563acc;
+  color: var(--color-indigo);
 }
 .header__contact a[href*="bsky"] {
   color: #006aff;
