@@ -64,8 +64,14 @@
     <style>
       ${<styles.css>}
     </style>
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jim-nielsen.com/shared/jim-site-switcher.js"
+    ></script> -->
   </head>
   <body>
+    <!-- <jim-site-switcher subdomain="www"></jim-site-switcher> -->
     <!-- Header ============================================================ -->
     <header class="header">
       <img
@@ -203,8 +209,8 @@
       </h2>
       <a href="https://www.iosicongallery.com">
         <ul class="list list--link list--has-images">
-          ${Tree.map((https://www.iosicongallery.com/feed.json).items.slice(0,
-          16), (post) => `
+          ${Tree.map((https://www.iosicongallery.com/feed.json).items.slice(0,16),
+          (post) => `
           <li class="list-item">
             <img
               src="${post.attachments[0].url.replace('512', '128')}"
@@ -273,12 +279,13 @@
       <h2 class="list-heading">
         I’m <span style="color: var(--color-purple)">Baking Pies</span>
       </h2>
-      <a href="https://instagram.com/flyingjpies">
+      <a href="https://pies.jim-nielsen.com">
         <ul class="list list--link list--has-images">
-          ${Tree.map(<data/pies.yaml>, (filename) => `
+          ${Tree.map((https://pies.jim-nielsen.com/feed.json).items.slice(0, 7),
+          ({ id, attachments }) => `
           <li class="list-item">
             <img
-              src="https://cdn.jim-nielsen.com/flyingjpies/${filename}"
+              src="${attachments[0].url}"
               width="128"
               height="128"
               alt="Photograph of a pie from @flyingjpies on Instagram"

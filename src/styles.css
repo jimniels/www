@@ -206,12 +206,12 @@ label.list-item {
   width: 64px;
   height: 64px;
 }
-[href*="instagram.com"] .list--has-images {
+[href*="pies.jim-nielsen.com"] .list--has-images {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: var(--spacer-8);
 }
-[href*="instagram.com"] .list--has-images img {
+[href*="pies.jim-nielsen.com"] .list--has-images img {
   border-radius: calc(var(--border-radius) - 8px);
 }
 .list--has-images {
