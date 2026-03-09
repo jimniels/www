@@ -131,10 +131,10 @@ footer {
   padding: 0 var(--spacer-16);
   position: relative;
 }
-.list-heading:has(a[href*="feed.xml"]) {
+.list-heading:has(a[href*="feed."]) {
   padding-right: var(--spacer-40);
 }
-.list-heading a[href*="feed.xml"] {
+.list-heading a[href*="feed."] {
   position: absolute;
   right: var(--spacer-16);
   top: 0;
