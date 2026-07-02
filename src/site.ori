@@ -1,4 +1,7 @@
 {
   ...(../static)
   index.html = index.ori.html()
+  blank = {
+    index.html = blank.html
+  }
 }
