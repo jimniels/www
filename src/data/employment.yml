@@ -1,58 +1,101 @@
-- title: Founding Engineer
+- id: quadratic
+  title: Founding Engineer
   company: Quadratic
-  href: https://blog.jim-nielsen.com/tags#jobQuadratic
-  content:
-    Design, code, and <a href=https://www.quadratichq.com/blog/2023-05-15-coordinate-system-for-infinite-spreadsheet>writing</a>
-    for a startup building a next generation spreadsheet powered by code.
   meta: 2023–Now
-- title: Director of Design
+  context: >
+    I was the first hire at this startup building a next-generation
+    spreadsheet powered by code and AI, watching it grow from 0 to 350,000+ users.
+  role: >
+    Product and visual design along with front-end engineering. I wore many hats, often taking ideas
+    from concept to design to implementation, then measuring impact and iterating.
+  examples: >
+    See one of
+    <a href="https://www.quadratichq.com/blog/coordinate-system-for-infinite-spreadsheet">my posts on the company blog</a>
+    or a write-up of
+    <a href="https://blog.jim-nielsen.com/2024/discovering-newsletter-links-with-quadratic/">how I used the product</a>.
+
+- id: remix
+  title: Director of Design
   company: Remix
-  href: https://blog.jim-nielsen.com/tags#remix
-  content:
-    Design, code, and <a href=https://remix.run/blog/remix-data-flow>writing</a>
-    for a web application framework startup. Acquired by Shopify.
   meta: 2022
-- title: Director of Design
+  context: >
+    Remix is a web framework startup — acquired by Shopify — building
+    an alternative to the client-heavy default of React apps.
+  role: >
+    Design leadership, developer education, and hands-on UI and front-end work around data loading,
+    routing, and the launch of React Router 6.4.
+  examples: >
+    I wrote highly-valued articles by the community on topics like <a href="https://remix.run/blog/remix-and-the-edge">the edge</a> and
+    <a href="https://remix.run/blog/remix-data-flow">data flow in Remix</a>. Here’s an example of my contributions to
+    <a href="https://blog.jim-nielsen.com/2022/my-contribution-to-react-router/">shipping React Router 6.4</a>.
+
+- id: sagesure
+  title: Director of Design
   company: SageSure
-  href: https://blog.jim-nielsen.com/tags#jobSagesure
-  content:
-    Design, code, <a href=https://tech.sagesure.com/blog/2021-11-30-design-systems-and-trade-offs/>writing</a>,
-    and team leadership at an insurance company with 10x growth during my tenure.
   meta: 2016–2022
-- title: UI Engineer
+  context: >
+    SageSure is an insurance company. I was there through a stretch of about
+    10x growth, from a small product team to a much larger org.
+  role: >
+    I contributed in design, front-end engineering, and team leadership, helping lead the formation of a design system, high-impact business automations, internal design and front-end teams, and more.
+  examples: >
+    A few write-ups of my hands-on work in
+    <a href="https://blog.jim-nielsen.com/2017/designing-login-screens-and-business-relationships/">designing cross-app login screens</a>,
+    <a href="https://blog.jim-nielsen.com/2017/designing-and-engineering-color-usage/">systemizing color usage</a>, and <a href="https://blog.jim-nielsen.com/tags/#jobSagesure">more</a>.
+
+- id: timshel
+  title: UI Engineer
   company: Timshel
-  href: https://blog.jim-nielsen.com/tags#jobTimshel
-  content:
-    Design and code for a startup building a platform to empower nonprofits,
-    brands, and other social impact orgs.
   meta: 2016
-- title: Design Engineer
+  context: >
+    Timshel was a startup building a platform for nonprofits and other
+    social-impact orgs.
+  role: >
+    Design and front-end engineering on the Admin app — the interface
+    clients used to run their accounts.
+  examples: >
+    I wrote about some of my hands-on work around
+    <a href="https://blog.jim-nielsen.com/2016/redesigning-and-engineering-timshel-admin/">unauthenticated UX</a>
+    and
+    <a href="https://blog.jim-nielsen.com/2017/designing-integrations-at-timshel/">designing integrations</a>.
+
+- id: postlight
+  title: Design Engineer
   company: Postlight
-  href: https://blog.jim-nielsen.com/tags#jobPostlight
-  content:
-    Design and code as a contractor building software tools for clients like
-    Time Inc.
   meta: 2016
-- title: Lead Designer
+  context: >
+    I contracted with Postlight, a digital agency based out of New York City.
+  role: >
+    Product design and front-end engineering for the view layer of two internal tools at Time Inc., working from drawings, wireframes, and prototypes to produce a production application used by thousands of internal employees.
+  examples: >
+    I posted a few write-ups on my blog about my hands-on work with the
+    <a href="https://blog.jim-nielsen.com/2016/designing-and-building-assignment-desk/">Assignment Desk</a>
+    and
+    <a href="https://blog.jim-nielsen.com/2016/designing-developing-dcp-application/">Digital Content Production</a> applications.
+
+- id: kindling
+  title: Lead Designer
   company: Kindling
-  href: https://blog.jim-nielsen.com/tags#jobKindling
-  content:
-    Design and code for a startup building social innovation software. Acquired
-    2016.
   meta: 2012–2016
-- title: Web Designer
+  context: >
+    Kindling was a startup building social innovation software. It was
+    acquired in 2016.
+  role: >
+    I led product, brand, and marketing design, and wrote a lot of the
+    front-end — the app, the marketing site, and the identity.
+  examples: >
+    I posted a few write-ups on my blog about the work I did on the 
+    <a href="https://blog.jim-nielsen.com/2015/marketing2/">marketing site</a>, 
+    <a href="https://blog.jim-nielsen.com/2015/designing-kindlings-pricing-page/">pricing page</a>, and <a href="https://blog.jim-nielsen.com/tags/#jobKindling">more</a>.
+
+- id: arc90
+  title: Web Designer
   company: Arc90
-  href: https://blog.jim-nielsen.com/tags#jobArc90
-  content: Design and code for a digital agency and its clients.
   meta: 2012
-# - title: Multimedia Designer
-#   company: Utah Tech University
-#   href: https://utahtech.edu
-#   content: Web design and code, print, and video for the Department of Student Affairs.
-#   meta: 2011 · UT
-# - title: "[Other]"
-#   content:
-#     Web design for people off Cragislist, retails sales at a sporting goods
-#     store, lifeguard for the municipal pool, newspaper delivery for the local paper,
-#     and other pre-college jobs.
-#   meta: 2002—2012
+  context: >
+    Arc90 was a digital agency in New York City.
+  role: >
+    Design and code for the agency’s web site as well as client projects.
+  examples: >
+    I have a write-up from a long time ago about some of my hands-on work 
+    <a href="https://blog.jim-nielsen.com/2016/acr90-work-page-design-updates/">updating to the agency’s website</a>.

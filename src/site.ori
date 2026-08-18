@@ -4,4 +4,7 @@
   blank = {
     index.html = blank.html
   }
+  resume = {
+    index.html = resume.ori.html()
+  }
 }

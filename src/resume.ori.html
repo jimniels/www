@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Resume — Jim Nielsen</title>
+    <meta
+      name="description"
+      content="Work history and writing from Jim Nielsen."
+    />
+    <meta name="author" content="Jim Nielsen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="Resume — Jim Nielsen" />
+    <meta
+      property="og:description"
+      content="Work history and writing from Jim Nielsen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jim-nielsen.com/resume" />
+    <meta property="og:image" content="https://www.jim-nielsen.com/og.png" />
+
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      :target {
+        background: Highlight;
+      }
+
+      html {
+        font: 1rem/1.45 system-ui, sans-serif;
+        color: CanvasText;
+        background: Canvas;
+      }
+
+      body {
+        max-width: 36em;
+        margin: 2rem auto 4rem;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0 0 0.25rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0 0 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      header {
+        margin-bottom: 2.5rem;
+      }
+
+      header p,
+      .dates {
+        color: color-mix(in srgb, CanvasText 55%, transparent);
+      }
+
+      header p {
+        margin: 0 0 0.25rem;
+      }
+
+      .dates {
+        font-weight: 400;
+        flex-shrink: 0;
+      }
+
+      section + section {
+        margin-top: 2.25rem;
+      }
+
+      dl {
+        margin: 0;
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 6.5em 1fr;
+        gap: 0.35rem 1rem;
+        margin: 0 0 0.55rem;
+      }
+
+      dt {
+        margin: 0;
+        color: color-mix(in srgb, CanvasText 50%, transparent);
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      a {
+        color: LinkText;
+      }
+
+      a:visited {
+        color: VisitedText;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jim Nielsen’s Resume</h1>
+      <p>A short work history. Talk to me for more details and examples.</p>
+      <p>
+        <a href="mailto:jimniels@gmail.com">jimniels@gmail.com</a>
+        ·
+        <a href="/">jim-nielsen.com</a>
+      </p>
+    </header>
+
+    ${Tree.map(data/employment.yml, (job) => `
+    <section id="${job.id}">
+      <h2>
+        <span>${job.title}, ${job.company}</span>
+        <span class="dates">${job.meta}</span>
+      </h2>
+      <dl>
+        <div>
+          <dt>Background</dt>
+          <dd>${job.context}</dd>
+        </div>
+        <div>
+          <dt>Role</dt>
+          <dd>${job.role}</dd>
+        </div>
+        <div>
+          <dt>Examples</dt>
+          <dd>${job.examples}</dd>
+        </div>
+      </dl>
+    </section>
+    `)}
+  </body>
+</html>

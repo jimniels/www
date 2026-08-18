@@ -97,9 +97,9 @@
             ><span>l</span>
           </a>
         </li>
-        <li>
+        <!-- <li>
           <a href="/linkedin">LinkedIn</a>
-        </li>
+        </li> -->
       </ul>
     </header>
 
@@ -622,7 +622,7 @@
         ${Tree.map((data/employment.yml).slice(0,7), (job) => `
         <li>
           <a
-            href="${job.href}"
+            href="/resume#${job.id}"
             class="list-item list-item--gap list-item--link"
           >
             <span class="list-item__primary"
@@ -631,23 +631,11 @@
             <span class="list-item__secondary ml-auto">${job.meta}</span>
           </a>
         </li>
-        `)} ${/*Tree.map(_.employment, (job) => `
-        <li>
-          <details>
-            <summary class="list-item list-item--gap list-item--toggle">
-              <span class="list-item__primary"
-                >${job.title} @ ${job.company}</span
-              >
-              <span class="list-item__secondary ml-auto">${job.meta}</span>
-            </summary>
-            <div class="list-item__toggle-content">${job.content}</div>
-          </details>
-        </li>
-        `)*/""}
+        `)}
       </ul>
       <p class="list-footer">
-        And more, including Lifeguard at age 16.
-        <a href="#contact">Ask</a> if you want to know.
+        A longer version is on my
+        <a href="/resume/">resume</a>.
       </p>
     </div>
 
