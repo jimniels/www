@@ -1,101 +1,72 @@
 - id: quadratic
   title: Founding Engineer
   company: Quadratic
+  tag: jobQuadratic
   meta: 2023–Now
-  context: >
-    I was the first hire at this startup building a next-generation
-    spreadsheet powered by code and AI, watching it grow from 0 to 350,000+ users.
-  role: >
-    Product and visual design along with front-end engineering. I wore many hats, often taking ideas
-    from concept to design to implementation, then measuring impact and iterating.
-  examples: >
-    See one of
-    <a href="https://www.quadratichq.com/blog/coordinate-system-for-infinite-spreadsheet">my posts on the company blog</a>
-    or a write-up of
-    <a href="https://blog.jim-nielsen.com/2024/discovering-newsletter-links-with-quadratic/">how I used the product</a>.
+  blurb: Spreadsheet startup powered by code and AI.
+  bullets:
+    - First full-time hire and employee three; helped mature a browser-local prototype into a cloud-based collaborative product serving 350,000+ registered users and supporting a $5.6M seed round led by GV.
+    - Partnered with the founder on cloud architecture and led its full-stack implementation using React, Express.js, and Postgres, including migrating user files from localStorage and replacing Auth0 with WorkOS.
+    - Designed and built the product layer surrounding the spreadsheet, including file management, team workspaces, dashboards, third-party data connections, and a ground-up access-control model governing sharing within and across teams.
+    - Shaped product direction through customer interviews, usage and AI-prompt analysis, rapid prototyping, and session-replay insights as the company grew from 3 to 10 people.
 
 - id: remix
   title: Director of Design
   company: Remix
+  tag: remix
   meta: 2022
-  context: >
-    Remix is a web framework startup — acquired by Shopify — building
-    an alternative to the client-heavy default of React apps.
-  role: >
-    Design leadership, developer education, and hands-on UI and front-end work around data loading,
-    routing, and the launch of React Router 6.4.
-  examples: >
-    I wrote highly-valued articles by the community on topics like <a href="https://remix.run/blog/remix-and-the-edge">the edge</a> and
-    <a href="https://remix.run/blog/remix-data-flow">data flow in Remix</a>. Here’s an example of my contributions to
-    <a href="https://blog.jim-nielsen.com/2022/my-contribution-to-react-router/">shipping React Router 6.4</a>.
+  blurb: Open-source web framework startup, acquired by Shopify shortly after I joined.
+  bullets:
+    - Recruited to translate sophisticated web-development concepts into approachable education, product storytelling, visual design, and hands-on front-end work.
+    - Supported the React Router 6.4 launch through visual identity work and by turning founder-built prototypes into polished, approachable developer demos.
+    - Wrote well-received articles explaining Remix’s data flow and edge architecture, and created visual materials for the inaugural Remix Conference.
 
 - id: sagesure
   title: Director of Design
   company: SageSure
+  tag: jobSagesure
   meta: 2016–2022
-  context: >
-    SageSure is an insurance company. I was there through a stretch of about
-    10x growth, from a small product team to a much larger org.
-  role: >
-    I contributed in design, front-end engineering, and team leadership, helping lead the formation of a design system, high-impact business automations, internal design and front-end teams, and more.
-  examples: >
-    A few write-ups of my hands-on work in
-    <a href="https://blog.jim-nielsen.com/2017/designing-login-screens-and-business-relationships/">designing cross-app login screens</a>,
-    <a href="https://blog.jim-nielsen.com/2017/designing-and-engineering-color-usage/">systemizing color usage</a>, and <a href="https://blog.jim-nielsen.com/tags/#jobSagesure">more</a>.
+  blurb: Insurance technology company that grew roughly 10× during my tenure.
+  bullets:
+    - Led design for replacing the company’s Flash-based Agent Portal before browser support ended, successfully moving all new policy bindings—the company’s primary revenue channel—to the new system.
+    - Designed Policy Actions, a system for configuring state-specific insurance rules and enabling self-service policy changes across agent and internal applications, dramatically reducing reliance on the call center.
+    - Led design across strategic, cross-team initiatives—including the company’s expansion into commercial insurance, a next-generation quoting experience, and paperless billing—using prototypes to define direction, align teams, and validate ideas before implementation.
+    - Helped establish design as an internal function and grow it from one designer plus contractors to a team of 5+, introducing shared practices for defining problems and collaborating across product teams.
+    - Established front-end engineering as a dedicated discipline, helped hire its foundational engineers, and championed the company’s first design system across its product portfolio.
 
 - id: timshel
   title: UI Engineer
   company: Timshel
+  tag: jobTimshel
   meta: 2016
-  context: >
-    Timshel was a startup building a platform for nonprofits and other
-    social-impact orgs.
-  role: >
-    Design and front-end engineering on the Admin app — the interface
-    clients used to run their accounts.
-  examples: >
-    I wrote about some of my hands-on work around
-    <a href="https://blog.jim-nielsen.com/2016/redesigning-and-engineering-timshel-admin/">unauthenticated UX</a>
-    and
-    <a href="https://blog.jim-nielsen.com/2017/designing-integrations-at-timshel/">designing integrations</a>.
+  blurb: Social-impact software platform.
+  bullets:
+    - Designed and built the client administration application and third-party integration experiences.
 
 - id: postlight
   title: Design Engineer
   company: Postlight
+  tag: jobPostlight
   meta: 2016
-  context: >
-    I contracted with Postlight, a digital agency based out of New York City.
-  role: >
-    Product design and front-end engineering for the view layer of two internal tools at Time Inc., working from drawings, wireframes, and prototypes to produce a production application used by thousands of internal employees.
-  examples: >
-    I posted a few write-ups on my blog about my hands-on work with the
-    <a href="https://blog.jim-nielsen.com/2016/designing-and-building-assignment-desk/">Assignment Desk</a>
-    and
-    <a href="https://blog.jim-nielsen.com/2016/designing-developing-dcp-application/">Digital Content Production</a> applications.
+  blurb: Digital product agency.
+  bullets:
+    - Designed and built internal publishing tools used by thousands of Time Inc. employees, taking them from early concepts through production.
 
 - id: kindling
   title: Lead Designer
   company: Kindling
+  tag: jobKindling
   meta: 2012–2016
-  context: >
-    Kindling was a startup building social innovation software. It was
-    acquired in 2016.
-  role: >
-    I led product, brand, and marketing design, and wrote a lot of the
-    front-end — the app, the marketing site, and the identity.
-  examples: >
-    I posted a few write-ups on my blog about the work I did on the 
-    <a href="https://blog.jim-nielsen.com/2015/marketing2/">marketing site</a>, 
-    <a href="https://blog.jim-nielsen.com/2015/designing-kindlings-pricing-page/">pricing page</a>, and <a href="https://blog.jim-nielsen.com/tags/#jobKindling">more</a>.
+  blurb: Social innovation startup, acquired in 2016.
+  bullets:
+    - Led product, brand, and marketing design while contributing production front-end code across the application and company website.
+    - Designed key product and growth experiences as the company matured from an early startup through acquisition.
 
 - id: arc90
   title: Web Designer
   company: Arc90
+  tag: jobArc90
   meta: 2012
-  context: >
-    Arc90 was a digital agency in New York City.
-  role: >
-    Design and code for the agency’s web site as well as client projects.
-  examples: >
-    I have a write-up from a long time ago about some of my hands-on work 
-    <a href="https://blog.jim-nielsen.com/2016/acr90-work-page-design-updates/">updating to the agency’s website</a>.
+  blurb: Digital agency in New York City.
+  bullets:
+    - Designed and built work for the agency site and client projects.
