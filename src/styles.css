@@ -134,6 +134,10 @@ footer {
 .list-heading:has(a[href*="feed."]) {
   padding-right: var(--spacer-40);
 }
+.list-heading a:not([href*="feed."]):hover {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
 .list-heading a[href*="feed."] {
   position: absolute;
   right: var(--spacer-16);
