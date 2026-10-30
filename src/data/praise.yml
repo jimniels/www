@@ -27,6 +27,9 @@ readers:
   - name: Rich Harris
     href: https://twitter.com/Rich_Harris/status/1286330991229927426
     quote: "…a really good blog post by [Jim]"
+  - name: John Gruber
+    href: https://daringfireball.net/linked/2026/01/06/nielsen-icons-in-menus
+    quote: "Nielsen’s post [is] crackerjack good"
   # - name: Stefan Judis
   #   href: https://twitter.com/stefanjudis/status/1527648201989292033
   #   quote:

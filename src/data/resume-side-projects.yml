@@ -1,0 +1,64 @@
+- title: iOS Icon Gallery
+  date: "2012–Present"
+  url: https://www.iosicongallery.com
+  image: /resume-sideproject-iosicons.png
+  alt: A selection of iOS app icons from the gallery.
+  description: Designed, built, and curated a collection of iOS app icons since 2012, documenting the craft of app icon design along the way.
+
+- title: The iOS App Icon Book
+  date: "2022"
+  url: https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book
+  image: /resume-sideproject-iosbook.png
+  alt: An open copy of The iOS App Icon Book showing icon artwork and text.
+  description: Helped Michael Flarup design this book, drawing on years of artwork curated for my gallery.
+  links:
+    - label: "Kickstarter: €136,420 from 1,450 backers"
+      url: https://www.kickstarter.com/projects/flarup/the-ios-app-icon-book
+    - prefix: Featured in
+      label: Daring Fireball
+      url: https://daringfireball.net/linked/2021/11/12/the-ios-app-icon-book
+
+- title: macOS Icon Gallery
+  date: "2012–Present"
+  url: https://www.macosicongallery.com
+  image: /resume-sideproject-macosicons.png
+  alt: A selection of macOS app icons from the gallery.
+  description: Designed, built, and curated a collection of macOS app icons, preserving examples of the platform’s distinctive visual craft.
+
+- title: The macOS App Icon Book
+  date: "2023"
+  url: https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book
+  image: /resume-sideproject-macosbook.png
+  alt: The cover of The macOS App Icon Book.
+  description: Helped Michael Flarup design this follow-up, with my gallery serving as the primary source of artwork.
+  links:
+    - label: "Kickstarter: €112,139 from 982 backers"
+      url: https://www.kickstarter.com/projects/flarup/the-macos-app-icon-book
+
+- title: o(m)g:image
+  date: "2024"
+  url: https://omgimg.jim-nielsen.com
+  image: /resume-sideproject-omgimg.png
+  alt: The o(m)g:image article guessing game.
+  description: Designed and built a silly game asking players to guess an article’s title from its social share image. (Served as a way to explore view transitions on the web.)
+
+- title: Readlists
+  date: "2021"
+  url: https://readlists.jim-nielsen.com
+  image: /resume-sideproject-readlists.png
+  alt: The Readlists interface for collecting web articles.
+  description: Designed and built a tool for collecting web articles into ebooks and feeds for reading on your favorite device.
+
+- title: Can I Still Use?
+  date: "2021"
+  url: https://canistilluse.com
+  image: /resume-sideproject-canistilluse.png
+  alt: The Can I Still Use? website.
+  description: Designed and built a satirical browser-compatibility reference highlighting the problems of normalizing habitual breakage on the web.
+
+- title: SassMe
+  date: "2012"
+  url: https://sassme.jim-nielsen.com
+  image: /resume-sideproject-sassme.png
+  alt: The SassMe color tool.
+  description: Designed and built an interactive tool for visualizing Sass color functions without compiling. Originally created during a hackathon in 2012.

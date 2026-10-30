@@ -1,14 +1,51 @@
+# Work images: use 1600 × 1200 assets, displayed at up to 800 × 600.
+# Each work item has an image path, image alt text, title, and description.
 - id: quadratic
   title: Founding Engineer
   company: Quadratic
   tag: jobQuadratic
   meta: 2023–Now
   blurb: Spreadsheet startup powered by code and AI.
+  resumeDescription: Startup building AI- and code-native spreadsheet. First full-time hire and employee three. Helped turn a browser-local prototype into a cloud-based collaborative product serving 350,000+ registered users (and supporting a $5.6M seed round led by GV).
   bullets:
     - First full-time hire and employee three; helped mature a browser-local prototype into a cloud-based collaborative product serving 350,000+ registered users and supporting a $5.6M seed round led by GV.
     - Partnered with the founder on cloud architecture and led its full-stack implementation using React, Express.js, and Postgres, including migrating user files from localStorage and replacing Auth0 with WorkOS.
     - Designed and built the product layer surrounding the spreadsheet, including file management, team workspaces, dashboards, third-party data connections, and a ground-up access-control model governing sharing within and across teams.
     - Shaped product direction through customer interviews, usage and AI-prompt analysis, rapid prototyping, and session-replay insights as the company grew from 3 to 10 people.
+  work:
+    - image: quadratic-dashboard.png
+      alt: ""
+      title: File Management
+      description: Designed and built the desktop and mobile dashboard for organizing files, including sorting, filtering, backend APIs, and the database schema for file metadata. Migrated users’ files from browser storage to the cloud.
+    - image: quadratic-sharing.png
+      alt: "Quadratic sharing interface"
+      title: File Sharing
+      description: Designed the sharing experience and built the frontend, backend API, and permissions model governing file access within and across teams.
+    - image: quadratic-onboarding.png
+      alt: ""
+      title: Onboarding
+      description: Designed and built the onboarding experience, including its underlying data schema and usage dashboards. Used those dashboards and customer feedback to track behavior and guide subsequent iterations.
+    - image: quadratic-templates.png
+      alt: ""
+      title: Templates
+      description: Built a template publishing system spanning the marketing site and app. Designed the data structure, integrated Sanity, and implemented both frontends.
+    - image: quadratic-db-connectors.png
+      alt: ""
+      title: Database Connectors
+      description: Designed and implemented interfaces for configuring and managing database connections, translating connector requirements into complex forms and guided interactions.
+    - image: quadratic-code-editor.png
+      alt: ""
+      title: Code Editor
+      description: Helped design and implement the spreadsheet’s code-editing experience, from instructional empty states to the integrated editor and console for writing, running, and debugging code.
+    - image: quadratic-theme.png
+      alt: ""
+      title: Theming
+      description: Implemented a semantic color system across the app, enabling dark mode in the spreadsheet (a user favorite).
+    - image: quadratic-marketing.png
+      alt: ""
+      title: Marketing
+      description: Designed and developed various iterations of the marketing site, along with explanatory and promotional graphics to help convey the story around the app.
+
 
 - id: remix
   title: Director of Design
@@ -16,10 +53,36 @@
   tag: remix
   meta: 2022
   blurb: Open-source web framework startup, acquired by Shopify shortly after I joined.
+  resumeDescription: Open-source web framework startup, acquired by Shopify shortly after I joined. Recruited to make sophisticated web-development concepts approachable through developer education, product storytelling, visual design, and hands-on front-end work.
   bullets:
     - Recruited to translate sophisticated web-development concepts into approachable education, product storytelling, visual design, and hands-on front-end work.
     - Supported the React Router 6.4 launch through visual identity work and by turning founder-built prototypes into polished, approachable developer demos.
     - Wrote well-received articles explaining Remix’s data flow and edge architecture, and created visual materials for the inaugural Remix Conference.
+  work:
+    - image: remix-conf.png
+      alt: ""
+      title: Remix Conf
+      description: Designed and implemented various aspects of the conference’s visual identity and website.
+    - image: remix-rr.png
+      alt: ""
+      title: React Router 6.4
+      description: Supported the launch through visual identity work and by turning founder-built prototypes into polished, approachable developer demos.
+    - image: remix-education.png
+      alt: ""
+      title: Education
+      description: Wrote articles explaining Remix concepts like data flow and edge-readiness, pairing technical explanations with visuals to help developers understand how the framework works.
+    - image: remix-store.png
+      alt: ""
+      title: Remix Store
+      description: Designed the initial merchandise store, serving both as a storefront for Remix swag and a working reference demo of Remix in a production e-commerce site.
+    - image: remix-website.png
+      alt: ""
+      title: Remix Website
+      description: Expanded the original website with a color-based identity for distinct sections, designing and building new pages for the conference, store, and other initiatives.
+    - image: remix-styleguide.png
+      alt: ""
+      title: Style Guide
+      description: Documented visual and interface patterns as the website grew, establishing a shared reference for subsequent design and development.
 
 - id: sagesure
   title: Director of Design
@@ -27,12 +90,31 @@
   tag: jobSagesure
   meta: 2016–2022
   blurb: Insurance technology company that grew roughly 10× during my tenure.
+  resumeDescription: Insurance technology company that grew roughly 10× during my tenure. Led design across agent-facing and internal software.
+  resumeBullets:
+    - Led design across strategic, cross-team initiatives—including commercial insurance, next-generation quoting, and paperless billing—using prototypes to define direction, align teams, and validate ideas before implementation.
+    - Helped establish design as an internal function and grow it from one designer plus contractors to a team of 5+, introducing shared practices for defining problems and collaborating across product teams.
+    - Championed the company’s first design system across its product portfolio and helped establish front-end engineering as a dedicated discipline, including hiring its foundational engineers.
   bullets:
     - Led design for replacing the company’s Flash-based Agent Portal before browser support ended, successfully moving all new policy bindings—the company’s primary revenue channel—to the new system.
     - Designed Policy Actions, a system for configuring state-specific insurance rules and enabling self-service policy changes across agent and internal applications, dramatically reducing reliance on the call center.
     - Led design across strategic, cross-team initiatives—including the company’s expansion into commercial insurance, a next-generation quoting experience, and paperless billing—using prototypes to define direction, align teams, and validate ideas before implementation.
     - Helped establish design as an internal function and grow it from one designer plus contractors to a team of 5+, introducing shared practices for defining problems and collaborating across product teams.
     - Established front-end engineering as a dedicated discipline, helped hire its foundational engineers, and championed the company’s first design system across its product portfolio.
+  work:
+    - image: ss-logins.png
+      alt: ""
+      title: Agent Portal
+      description: Led design for replacing the Flash-based Agent Portal, moving all new policy bindings—the company’s primary revenue channel—to the new system before browser support ended.
+    - image: ss-pac.png
+      alt: ""
+      title: Policy Actions
+      description: Designed a system for configuring state-specific insurance rules and enabling self-service policy changes across agent and internal applications, dramatically reducing costs via reliance on the call center.
+    - image: ss-blog.png
+      alt: ""
+      title: Tech Blog
+      description: Established the company’s tech blog, designed and built the site, wrote articles, and recruited contributors to share the engineering team’s work.
+
 
 - id: timshel
   title: UI Engineer
@@ -40,8 +122,22 @@
   tag: jobTimshel
   meta: 2016
   blurb: Social-impact software platform.
+  resumeDescription: Social-impact software platform providing grassroots organizations with digital tools to organize communities, host events, and fund their causes.
   bullets:
     - Designed and built the client administration application and third-party integration experiences.
+  work:
+    - image: timshel-events.png
+      alt: ""
+      title: Events
+      description: Designed and built tools for users to host their own events, including calendar invitations, ticketing, and attendee messaging.
+    - image: timshel-login.png
+      alt: ""
+      title: Login
+      description: Designed and built authentication flows, including signup, login, and password reset.
+    - image: timshel-integrations.png
+      alt: ""
+      title: Integrations
+      description: Designed and built integrations with third-party services, including Stripe for payments and subscriptions.
 
 - id: postlight
   title: Design Engineer
@@ -49,8 +145,22 @@
   tag: jobPostlight
   meta: 2016
   blurb: Digital product agency.
+  resumeDescription: Digital product agency. Designed and built internal publishing tools used by thousands of Time Inc. employees, taking them from early concepts through production.
   bullets:
     - Designed and built internal publishing tools used by thousands of Time Inc. employees, taking them from early concepts through production.
+  # work:
+  #   - image: postlight-styleguide.png
+  #     alt: ""
+  #     title: Project 1
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: postlight-assignmentdesk.png
+  #     alt: ""
+  #     title: Project 2
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: postlight-dam.png
+  #     alt: ""
+  #     title: Project 3
+  #     description: A short description of the work and my contribution will go here.
 
 - id: kindling
   title: Lead Designer
@@ -58,9 +168,23 @@
   tag: jobKindling
   meta: 2012–2016
   blurb: Social innovation startup, acquired in 2016.
+  resumeDescription: Social innovation startup, acquired in 2016. Led product, brand, and marketing design and contributed production front-end code across the application and company website, shaping product and growth experiences from early startup through acquisition.
   bullets:
     - Led product, brand, and marketing design while contributing production front-end code across the application and company website.
     - Designed key product and growth experiences as the company matured from an early startup through acquisition.
+  # work:
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 1
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 2
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 3
+  #     description: A short description of the work and my contribution will go here.
 
 - id: arc90
   title: Web Designer
@@ -68,5 +192,19 @@
   tag: jobArc90
   meta: 2012
   blurb: Digital agency in New York City.
+  resumeDescription: Digital agency in New York City. Designed and built work for the agency website and client projects.
   bullets:
     - Designed and built work for the agency site and client projects.
+  # work:
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 1
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 2
+  #     description: A short description of the work and my contribution will go here.
+  #   - image: /resume-placeholder.svg
+  #     alt: ""
+  #     title: Project 3
+  #     description: A short description of the work and my contribution will go here.
