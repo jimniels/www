@@ -164,6 +164,52 @@
       </p>
     </div>
 
+    <!-- Hacker News ======================================================= -->
+    <div class="sect" id="hackernews">
+      <h2 class="list-heading">
+        I’m Writing
+        <span style="color: var(--color-orange)">Hits on Hacker News</span>
+      </h2>
+
+      <ul class="list list--has-dividers list--has-more">
+        ${Tree.map(helpers/getHackerNewsPosts.js(), (hit) => `
+        <li>
+          <a
+            href="https://news.ycombinator.com/item?id=${hit.story_id}"
+            class="list-item list-item--link list-item--gap"
+          >
+            <img
+              src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
+              alt="Favicon for ${p.name}"
+              width="16"
+              height="16"
+            />
+            <span class="list-item-stack">
+              <span class="list-item__primary">${hit.title}</span>
+              <span class="list-item__secondary"
+                >${hit.points.toLocaleString()} points ·
+                ${hit.num_comments.toLocaleString()} comments</span
+              >
+            </span>
+          </a>
+        </li>
+        `)}
+        <li hidden>
+          <label class="list-item list-item--between">
+            More…
+            <input type="checkbox" />
+          </label>
+        </li>
+      </ul>
+      <p class="list-footer">
+        I keep
+        <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
+          >a longer running list</a
+        >
+        on my blog.
+      </p>
+    </div>
+
     <!-- Notes ============================================================== -->
     <div class="sect" id="notes">
       <h2 class="list-heading">
@@ -489,52 +535,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Hacker News ======================================================= -->
-    <div class="sect" id="hackernews">
-      <h2 class="list-heading">
-        I’m Writing
-        <span style="color: var(--color-orange)">Hits on Hacker News</span>
-      </h2>
-
-      <ul class="list list--has-dividers list--has-more">
-        ${Tree.map(helpers/getHackerNewsPosts.js(), (hit) => `
-        <li>
-          <a
-            href="https://news.ycombinator.com/item?id=${hit.story_id}"
-            class="list-item list-item--link list-item--gap"
-          >
-            <img
-              src="https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=32"
-              alt="Favicon for ${p.name}"
-              width="16"
-              height="16"
-            />
-            <span class="list-item-stack">
-              <span class="list-item__primary">${hit.title}</span>
-              <span class="list-item__secondary"
-                >${hit.points.toLocaleString()} points ·
-                ${hit.num_comments.toLocaleString()} comments</span
-              >
-            </span>
-          </a>
-        </li>
-        `)}
-        <li hidden>
-          <label class="list-item list-item--between">
-            More…
-            <input type="checkbox" />
-          </label>
-        </li>
-      </ul>
-      <p class="list-footer">
-        I keep
-        <a href="https://blog.jim-nielsen.com/posts/hacker-news/"
-          >a longer running list</a
-        >
-        on my blog.
-      </p>
     </div>
 
     <div class="sect" id="interviews">
