@@ -159,7 +159,6 @@
 
       <p class="list-footer">
         My blog is
-        <a href="#hackernews">popular on Hacker News</a> as well as
         <a href="#pubs">linked to</a> and <a href="#people">praised by many</a>.
       </p>
     </div>
@@ -597,7 +596,7 @@
       </ul>
       <!-- prettier-ignore -->
       <p class="list-footer">
-        There’s more, such as ${Tree.plain((data/side-projects.yml).slice(3).map((p, i, arr) => 
+        There’s more, such as ${Tree.plain((data/side-projects.yml).slice(3).map((p, i, arr) =>
           (arr.length - 1 === i ? 'and ' : '') + `<a href="${p.url}">${p.title} (${p.date})</a>`)
         ).join(', ')} (to name a few — I know, I have a problem).
       </p>
