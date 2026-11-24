@@ -7,6 +7,7 @@
     <meta name="description" content="The personal website of Jim Nielsen." />
     <meta name="author" content="Jim Nielsen" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f1f1f" />
 
     <!-- Custom font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -71,16 +72,27 @@
     ></script> -->
   </head>
   <body>
+    <!-- iOS Safari samples this fixed strip to match the status bar to the page frame. -->
+    <div class="status-bar-tint" aria-hidden="true"></div>
     <!-- <jim-site-switcher subdomain="www"></jim-site-switcher> -->
     <!-- Header ============================================================ -->
     <header class="header">
-      <img
-        src="/jimniels.jpg"
-        alt="Photograph of Jim Nielsen"
-        width="580"
-        height="350"
-      />
-      <h1 hidden>Jim Nielsen</h1>
+      <div class="header__hero">
+        <img
+          src="/jim-nielsen-portrait.jpg"
+          alt="Photograph of Jim Nielsen"
+          width="1520"
+          height="934"
+        />
+      </div>
+      <h1 class="header__wordmark">
+        <img
+          src="/jim-nielsen-type.png"
+          alt="Jim Nielsen"
+          width="1760"
+          height="359"
+        />
+      </h1>
       <h2>
         I’m a web designer, developer, & blogger with 20+ years of experience.
       </h2>

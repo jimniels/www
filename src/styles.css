@@ -6,6 +6,9 @@
   --color-bg: #fff;
   --color-fg: #f7f7f7;
   --color-fg-2: #eee;
+  --color-frame: #1f1f1f;
+  --page-frame: 0px;
+  --content-width: 36rem;
 
   --color-red: rgb(255, 56, 60);
   --color-orange: rgb(255, 141, 40);
@@ -41,6 +44,12 @@
   --spacer-128: 8rem;
 }
 
+@media (min-width: 1024px) {
+  :root {
+    --page-frame: 8px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-text: rgb(255 255 255);
@@ -57,7 +66,7 @@
 }
 
 html {
-  background: var(--color-bg);
+  background: var(--color-frame);
   font-size: 1rem;
   line-height: 1.2;
   color-scheme: light dark;
@@ -66,18 +75,14 @@ html {
 }
 
 body {
-  margin: 0 var(--spacer-16);
+  margin: 0;
+  background: var(--color-bg);
   font-family: "Atkinson Hyperlegible", ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-
-  max-width: 36rem;
-  margin: 0 auto;
-  padding-left: var(--spacer-16);
-  padding-right: var(--spacer-16);
+  border-inline: var(--page-frame) solid var(--color-frame);
 }
 
 h1,
@@ -110,11 +115,11 @@ li {
 /* Sections =============================================================*/
 
 footer {
+  background: var(--color-frame);
+  color: white;
   font-size: 0.8rem;
-  position: relative;
-  z-index: 1;
-  margin-top: var(--spacer-128);
-  margin-bottom: var(--spacer-16);
+  margin: var(--spacer-128) calc(-1 * var(--page-frame)) 0;
+  padding: var(--spacer-16);
   text-align: center;
 }
 
@@ -122,7 +127,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--spacer-8);
-  margin-bottom: var(--spacer-64);
+  width: min(var(--content-width), calc(100% - 2 * var(--spacer-16)));
+  margin: 0 auto var(--spacer-64);
 }
 
 .list-heading {
@@ -377,22 +383,61 @@ label.list-item {
 
 /* Header =================================================================== */
 
+/* iOS Safari 26 can derive its status bar tint from an opaque fixed element
+   at the top edge when the theme-color meta tag has no effect. */
+.status-bar-tint {
+  display: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  @media (hover: none) and (pointer: coarse) {
+    .status-bar-tint {
+      display: block;
+      position: fixed;
+      inset: 0 0 auto;
+      height: 8px;
+      z-index: 2;
+      background-color: var(--color-frame);
+      pointer-events: none;
+    }
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
-  margin-top: var(--spacer-8);
   margin-bottom: var(--spacer-96);
   text-align: center;
   gap: var(--spacer-16);
 }
-.header img {
+.header__hero {
+  margin-inline: calc(-1 * var(--page-frame));
+  border-inline: var(--page-frame) solid var(--color-frame);
+  padding-block: min(2%, 0.875rem) min(10%, 5.5rem);
+  background: var(--color-frame);
+  background-clip: padding-box;
+}
+.header__hero img,
+.header__wordmark img {
+  display: block;
   height: auto;
+}
+.header__hero img {
+  width: min(100%, 48rem);
+  margin-inline: auto;
+}
+.header__wordmark {
+  position: relative;
+  width: min(calc(100% - 2 * var(--spacer-16)), 55rem);
+  margin: calc(-1 * (min(12%, 6.5rem) + var(--spacer-16))) auto 0;
+}
+.header__wordmark img {
   width: 100%;
-  /* width: calc(100% + var(--spacer-16) * 2); */
-  /* margin: 0 calc(-1 * var(--spacer-16)); */
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .header h2 {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--spacer-16);
   font-size: var(--font-size-xl);
   line-height: 1.2;
 }
@@ -401,6 +446,7 @@ label.list-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: var(--spacer-16);
   font-size: var(--font-size-lg);
   margin: 0;
